@@ -1,4 +1,4 @@
-# Le Bon Matin, La Laitue, et La Toamte
+# Le Bon Matin, La Laitue, et La Tomate
 
 ## Scénario
 
@@ -28,13 +28,17 @@ L'enchevêtrement des noms par des Dieux est une puissante force inhérente au c
 
 Dagoth Ig, un magicien pourri, surgit un jour du Cristal Brun. Il fut alors coincé dans le Monde, parce que changer de Plan était précisément le genre de choses qu'il n'était pas capable de faire. Aucun des quelques magiciens du Monde n'étaient capables de l'aider, et Ig devenait rapidement de plus en plus frustré d'être forcé de faire autant de fetch quest pour des Mcguffins qui se révélaient tous complètement inutiles.
 
-Dagoth Ig finit par se faire contacter par [REDACTED], le dieu du chaos temporel. [REDACTED] trouvait vraiment hilarante l'idée de foutre la merde un peu partout, et les Protagonistes étaient typiquement les meilleures agents pour accomplir ses objectifs. Il montra 
+Dagoth Ig finit donc par conclure que la seule solution était d'arrêter de protagoniser, et plutôt de commencer à antagoniser.
+
+[LE IG COMMENCE À ÊTRE DÉSESPÉRÉ, ALORS IL SE TOURNE AU MYSTICISME POUR ESSAYER DE CONVAINCRE UN DIEU DE LE PRENDRE EN PITIÉ]
+
+[TWADO DANS SON INFINIE [REDACTED] LUI MONTRE COMMENT CAPTURER LE TEMPS - LE IG FAIT CONSTUIRE 4 TEMPLES DÉDIÉS AU BONJOUR, AU BONSOIR, AU BONNUIT, ET BIEN ÉVIDEMMENT AU BON MATIN, MAIS IL DOIT CRÉER UNE CONNEXION ENTRE LES CRISTAUX ET LES TEMPLES AFIN DE MANIFESTER LES MARQUES DU TEMPS, ET CAPTER L'ESSENCE DU BON MATIN, DU BONJOUR, ET DU BONSOIR]
 
 ### L'arrivée des Aventuriers du Brun, et leur manipulation par le Ig
 
 C'était inévitable, et un jour de nouvelles victimes furent transportées malgrés elles à travers le Cristal Brun. Wwwelchior, Gabspar, Balthathig et Jésus (aucune relation avec l'autre connu, celui là se limitait à parler en paraboles, et était complètement incapable de faire de miracles).
 
-Aucun d'eux n'étaient de vrais magiciens, 
+[LE IG LEUR DONNE LA QUÊTE D'ALLER VAINCRE LES GARDIENS DE MUTUS POUR "LIBÉRER" LES CRISTAUX, ARRIVÉ AU CRISTAL ]
 
 ### Le Ig s'empare du temps
 
