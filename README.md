@@ -1,6 +1,12 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
+## Rouler sans RPG Maker MV
+
+Plop un serveur http sur la racine. Voilà c'est tout.
+
 ## Scénario
+
+C'est un midi d'hiver - Personne Véritable se pointe affamé(e?) au petit village
 
 ## Lore
 
@@ -38,7 +44,7 @@ Dagoth Ig finit donc par conclure que la seule solution était d'arrêter de pro
 
 C'était inévitable, et un jour de nouvelles victimes furent transportées malgrés elles à travers le Cristal Brun. Wwwelchior, Gabspar, Balthathig et Jésus (aucune relation avec l'autre connu, celui là se limitait à parler en paraboles, et était complètement incapable de faire de miracles).
 
-[LE IG LEUR DONNE LA QUÊTE D'ALLER VAINCRE LES GARDIENS DE MUTUS POUR "LIBÉRER" LES CRISTAUX, ARRIVÉ AU CRISTAL ]
+[LE IG LEUR DONNE LA QUÊTE D'ALLER VAINCRE LES GARDIENS DE MUTUS POUR "LIBÉRER" LES CRISTAUX. ARRIVÉ AU CRISTAL DU BONMATIN, Y TORCHENT WHATEVS. TOUT LES MATINS DISPARAISSENT ALORS SUBITEMENT ET C'EST TRÈS CURIEUX]
 
 ### Le Ig s'empare du temps
 
