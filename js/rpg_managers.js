@@ -1177,7 +1177,7 @@ AudioManager.playBgm = function(bgm, pos) {
         this.updateBgmParameters(bgm);
     } else {
         this.stopBgm();
-        if (bgm.name) { 
+        if (bgm.name) {
             if(Decrypter.hasEncryptedAudio && this.shouldUseHtml5Audio()){
                 this.playEncryptedBgm(bgm, pos);
             }
@@ -2460,6 +2460,7 @@ BattleManager.endTurn = function() {
     if (this.isForcedTurn()) {
         this._turnForced = false;
     }
+    this._logWindow.endTurn();
 };
 
 BattleManager.isForcedTurn = function () {

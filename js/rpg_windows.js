@@ -4863,11 +4863,11 @@ Window_BattleLog.prototype.wait = function() {
 };
 
 Window_BattleLog.prototype.waitForEffect = function() {
-    this.setWaitMode('effect');
+    //this.setWaitMode('effect');
 };
 
 Window_BattleLog.prototype.waitForMovement = function() {
-    this.setWaitMode('movement');
+    //this.setWaitMode('movement');
 };
 
 Window_BattleLog.prototype.addText = function(text) {
@@ -4888,13 +4888,13 @@ Window_BattleLog.prototype.popBaseLine = function() {
 };
 
 Window_BattleLog.prototype.waitForNewLine = function() {
-    var baseLine = 0;
+    /*var baseLine = 0;
     if (this._baseLineStack.length > 0) {
         baseLine = this._baseLineStack[this._baseLineStack.length - 1];
     }
     if (this._lines.length > baseLine) {
         this.wait();
-    }
+    }*/
 };
 
 Window_BattleLog.prototype.popupDamage = function(target) {
@@ -4987,11 +4987,11 @@ Window_BattleLog.prototype.showNormalAnimation = function(targets, animationId, 
 };
 
 Window_BattleLog.prototype.animationBaseDelay = function() {
-    return 8;
+    return 0;//8;
 };
 
 Window_BattleLog.prototype.animationNextDelay = function() {
-    return 12;
+    return 0;//12;
 };
 
 Window_BattleLog.prototype.refresh = function() {
@@ -5035,11 +5035,15 @@ Window_BattleLog.prototype.drawLineText = function(index) {
 };
 
 Window_BattleLog.prototype.startTurn = function() {
-    this.push('wait');
+};
+
+Window_BattleLog.prototype.endTurn = function() {
+    this.push('clear');
 };
 
 Window_BattleLog.prototype.startAction = function(subject, action, targets) {
     var item = action.item();
+    this.push('clear');
     this.push('performActionStart', subject, action);
     this.push('waitForMovement');
     this.push('performAction', subject, action);
@@ -5049,7 +5053,6 @@ Window_BattleLog.prototype.startAction = function(subject, action, targets) {
 
 Window_BattleLog.prototype.endAction = function(subject) {
     this.push('waitForNewLine');
-    this.push('clear');
     this.push('performActionEnd', subject);
 };
 
@@ -5077,9 +5080,6 @@ Window_BattleLog.prototype.displayAction = function(subject, item) {
         }
     } else {
         this.push('addText', TextManager.useItem.format(subject.name(), item.name));
-    }
-    if (this._methods.length === numMethods) {
-        this.push('wait');
     }
 };
 
@@ -5114,7 +5114,9 @@ Window_BattleLog.prototype.displayActionResults = function(subject, target) {
 };
 
 Window_BattleLog.prototype.displayFailure = function(target) {
-    if (target.result().isHit() && !target.result().success) {
+    var result = target.result()
+    var actionItem = result.action && result.action.item()
+    if (result.isHit() && !result.success && (!actionItem || actionItem.effects.length)) {
         this.push('addText', TextManager.actionFailure.format(target.name()));
     }
 };

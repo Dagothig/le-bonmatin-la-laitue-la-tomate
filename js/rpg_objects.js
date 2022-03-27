@@ -1647,6 +1647,7 @@ Game_Action.prototype.apply = function(target) {
     var result = target.result();
     this.subject().clearResult();
     result.clear();
+    result.action = this;
     result.used = this.testApply(target);
     result.missed = (result.used && Math.random() >= this.itemHit(target));
     result.evaded = (!result.missed && Math.random() < this.itemEva(target));
@@ -2008,6 +2009,7 @@ Game_ActionResult.prototype.clear = function() {
     this.addedBuffs = [];
     this.addedDebuffs = [];
     this.removedBuffs = [];
+    this.action = null;
 };
 
 Game_ActionResult.prototype.addedStateObjects = function() {
