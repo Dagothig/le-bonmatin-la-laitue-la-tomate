@@ -12,6 +12,18 @@ function aaa_fireplace(eventId, strength = 100) {
     $gameScreen._tone = $gameScreen._toneTarget = tmin.map((c, i) => c + p * (tmax[i] - tmin[i]));
 }
 
+function aaa_se(eventId, se) {
+    var e = $gameMap.event(eventId);
+    se.volume = se.volume || 90;
+    se.pitch = se.pitch | 100;
+    se.pan = se.pan || 0;
+    se.strength = se.strength || 100;
+    var dst = Math.sqrt(Math.pow($gamePlayer.x - e.x, 2) + Math.pow($gamePlayer.y - e.y, 2));
+    var p = (1 - Math.min(Math.max(dst - 1, 0) / 8, 1)) * se.strength / 100;
+    se.volume *= p
+    AudioManager.playSe(se);
+}
+
 function aaa_map_switch(name, value) {
     if (typeof value === "undefined") {
         return window[$gameMap._mapId + ":" + name];
@@ -43,8 +55,12 @@ function aaa_map_switch(name, value) {
         lukVar: { get: function() {
             return 1 + Math.random() * (this.luk - 95) / 100;
         } },
+        grd: { get: function() {
+            return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1);
+        } },
         def: { get: function() {
-            return originalDef.get.call(this) * (this.isGuard() ? 2 : 1);
+            console.log(this.grd);
+            return originalDef.get.call(this) * (this.isGuard() ? 2 : 1) + (this.isGuard() ? this.grd : 0);
         } }
     });
 
@@ -155,7 +171,6 @@ function aaa_map_switch(name, value) {
         this._targetOffsetX = x;
         this._targetOffsetY = y;
         this._movementDuration = duration;
-        console.log([x1, y1], [x2, y2], [x3, y3], this.paraA, this.paraB, this.paraC);
     }
 
     var original_updateMove = Sprite_Battler.prototype.updateMove;
@@ -177,7 +192,6 @@ function aaa_map_switch(name, value) {
                 this._offsetX = (this._offsetX * (d - 1) + this._targetOffsetX) / d;
                 var x2 = this._offsetX * this._offsetX;
                 this._offsetY = x2 * this.paraA + this._offsetX * this.paraB + this.paraC;
-                console.log(this._offsetX, this._offsetY);
                 break;
         }
         this._movementDuration--;
