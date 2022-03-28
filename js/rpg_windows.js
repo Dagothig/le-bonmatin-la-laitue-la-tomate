@@ -4783,7 +4783,7 @@ Window_BattleLog.prototype.numLines = function() {
 };
 
 Window_BattleLog.prototype.messageSpeed = function() {
-    return 16;
+    return 24;
 };
 
 Window_BattleLog.prototype.isBusy = function() {

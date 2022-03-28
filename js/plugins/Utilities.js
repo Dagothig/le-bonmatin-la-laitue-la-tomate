@@ -91,6 +91,12 @@ function aaa_map_switch(name, value) {
             case "wiggle":
                 sprite.pushMove([WIGGLE, -5, -2, 5, 0, 30]);
                 break;
+            case "step_back":
+                sprite.pushMove([MOVE, -30, 0, 12]);
+                break;
+            case "step_down":
+                sprite.pushMove([MOVE, -5, 30, 12]);
+                break;
             case "lunge":
                 sprite.pushMove([PARABOLA, 20, 0, -10, 8]);
                 sprite.pushMove([MOVE, 0, 0, 3]);

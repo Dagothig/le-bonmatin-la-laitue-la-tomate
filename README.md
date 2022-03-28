@@ -1,5 +1,41 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
+## Backlog à record
+
+(Jacques)
+[Manoeuvre évasive]
+[Dit... à ma maman...
+
+
+Que j'étais méchaaant...]
+[Nooooooon Jeaaaaaaan!
+On allait devenir des bandits de
+grand chemin!]
+
+(Jean)
+[Encoche]
+[Vise]
+[Jaaaaaacques!
+On allait devenir des bandits de grands
+chemin!]
+
+(Narrateur)
+[Une pioche!
+Pointue et solide. Les roches tremblent.]
+
+(Personne véritable)
+[Oh non! C'est pas juste des rats là!
+C'est des personnes véritables!]
+
+(Narrateur)
+[Bonjour, je suis Guillaume Noël-Martel]
+[Vous avez appris l'Adrénaline!
+Permet de prendre trois actions le prochain tour!]
+[L'Adrénaline utilise du stamina!
+Vous pouvez en reprendre durant les combats en
+attaquant ou en vous défendant.
+Mais se défendre est bien plus reposant.]
+
 ## Rouler sans RPG Maker MV
 
 Plop un serveur http sur la racine. Voilà c'est tout.
@@ -14,7 +50,7 @@ C'est un midi d'hiver - Personne Véritable se pointe affamé(e?) au petit villa
 
 Le Monde a été créé par le dieu Mutus. Typiquement lorqu'un dieu crée un nouveau Plan d'existence, il s'arrange pour qu'il soit stable, comme ça il peut arrêter de se faire chier après et retourner vaquer à ses occupations. Le Monde est tout le contraire - Il s'agit d'une plaque plate qui tourne sur un arc comme si c'était l'intérieur d'une sphère, et qui orbite autour d'une étoile. Cette idée a toute sorte de conséquences malheureuses.
 
-Comme la plaque n'est pas retenue par la gravité, toute erosion et écoulement qui se produit sur son périmètre est perdu à tout jamais, condamné à errer l'espace en quête d'un monde moins taré. Pire, il n'y a rien qui retient la plaque sur sa trajectoire. Mutus dans sa folie en conlut donc que la seule solution pour maintenir sa création serait de venir poser ses Marques sur le monde - 
+Comme la plaque n'est pas retenue par la gravité, toute erosion et écoulement qui se produit sur son périmètre est perdu à tout jamais, condamné à errer l'espace en quête d'un monde moins taré. Pire, il n'y a rien qui retient la plaque sur sa trajectoire. Mutus dans sa folie en conlut donc que la seule solution pour maintenir sa création serait de venir poser ses Marques sur le monde -
 
 Le Cristal Vert, caché parmis les nuages, génère des quantités prodigieuses d'air parce que calice l'air ça s'échappe vite.
 
