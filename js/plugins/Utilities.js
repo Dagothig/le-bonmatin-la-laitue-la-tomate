@@ -75,7 +75,7 @@ function aaa_map_switch(name, value) {
         return speed;
     };
 
-    var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola";
+    var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola", WAIT = "startWait";
 
     function aaa_anim(args) {
         var i = parseInt(args[0]) || 0;
@@ -93,6 +93,14 @@ function aaa_map_switch(name, value) {
                 break;
             case "step_back":
                 sprite.pushMove([MOVE, -30, 0, 12]);
+                break;
+            case "shuffle":
+                sprite.pushMove([WAIT, 4]);
+                sprite.pushMove([PARABOLA, 10, -10, -20, 12]);
+                sprite.pushMove([WAIT, 8]);
+                sprite.pushMove([PARABOLA, -15, 10, -30, 12]);
+                sprite.pushMove([WAIT, 6]);
+                sprite.pushMove([PARABOLA, -30, 0, -10, 12]);
                 break;
             case "step_down":
                 sprite.pushMove([MOVE, -5, 30, 12]);
@@ -178,6 +186,10 @@ function aaa_map_switch(name, value) {
         this._targetOffsetY = y;
         this._movementDuration = duration;
     }
+
+    Sprite_Battler.prototype.startWait = function (duration) {
+        this._movementDuration = duration;
+    };
 
     var original_updateMove = Sprite_Battler.prototype.updateMove;
     Sprite_Battler.prototype.updateMove = function() {

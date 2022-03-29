@@ -2,6 +2,10 @@
 
 ## Backlog à record
 
+(Narrateur)
+[Des radis et des patates.
+La tradition régionale, quoi.]
+
 (Jacques)
 [Manoeuvre évasive]
 [Dit... à ma maman...
@@ -11,6 +15,19 @@ Que j'étais méchaaant...]
 [Nooooooon Jeaaaaaaan!
 On allait devenir des bandits de
 grand chemin!]
+[Jean tu vois-tu ça?
+C'est notre chance!
+Un protagoniste!]
+[Halte-là voyageur!
+C'est votre argent ou votre vie!
+En date de là là, on est des bandits de
+grands chemin!]
+[Tu me niaises-là?
+Une épingle à cheveux?
+T'as même pas les cheveux longs!]
+[Mais vous êtes...]
+[C'est chez nous ça! Vous pensez que vous
+allez où comme ça?]
 
 (Jean)
 [Encoche]
@@ -18,23 +35,23 @@ grand chemin!]
 [Jaaaaaacques!
 On allait devenir des bandits de grands
 chemin!]
+[On est plus comme des bandits du petit
+passage montagneux...]
+[Non mais si y'a rien ça donne pas grand
+chose de lui expliquer la couleur du jus de
+betterave...]
+[Huh. Vous avez comme un air
+caractéristique...]
 
-(Narrateur)
-[Une pioche!
-Pointue et solide. Les roches tremblent.]
-
-(Personne véritable)
-[Oh non! C'est pas juste des rats là!
-C'est des personnes véritables!]
-
-(Narrateur)
-[Bonjour, je suis Guillaume Noël-Martel]
-[Vous avez appris l'Adrénaline!
-Permet de prendre trois actions le prochain tour!]
-[L'Adrénaline utilise du stamina!
-Vous pouvez en reprendre durant les combats en
-attaquant ou en vous défendant.
-Mais se défendre est bien plus reposant.]
+(Personne Véritable)
+[Huh, ben c'est que... En fait vous allez
+voir.]
+[De toute façon ça change rien!
+J'vous pète!]
+[Ben c'est que,
+voyez vous j'étais,
+je me disais que,
+Voila.]
 
 ## Rouler sans RPG Maker MV
 
