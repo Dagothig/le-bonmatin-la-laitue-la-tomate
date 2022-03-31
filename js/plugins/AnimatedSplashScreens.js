@@ -51,6 +51,19 @@ function Scene_SplashScreens() {
     }
 
     var steps = [
+        ["color", [0, 0, 0]],
+        ["sound", "CoffeeBlandPre"],
+        ["wait", 60],
+        ["img", "CoffeeBland"],
+        ["color", [72, 72, 72]],
+        ["fadeIn"],
+        ["wait", 15],
+        ["sound", "CoffeeBland"],
+        ["wait", 180],
+        ["break"],
+        ["fadeOut"],
+        ["wait", 15],
+        ["color", [0, 0, 0]],
         ["img", "gabceal-9"],
         ["fadeIn"],
         ["wait", 15],
@@ -73,6 +86,25 @@ function Scene_SplashScreens() {
         ["wait", 3],
         ["img", "gabceal-9"],
         ["wait", 15],
+        ["img", "gabceal-1"],
+        ["wait", 3],
+        ["img", "gabceal-2"],
+        ["wait", 3],
+        ["img", "gabceal-3"],
+        ["wait", 3],
+        ["img", "gabceal-4"],
+        ["wait", 3],
+        ["img", "gabceal-5"],
+        ["wait", 3],
+        ["img", "gabceal-6"],
+        ["wait", 3],
+        ["img", "gabceal-7"],
+        ["wait", 3],
+        ["img", "gabceal-8"],
+        ["wait", 3],
+        ["img", "gabceal-9"],
+        ["wait", 15],
+        ["break"],
         ["fadeOut"]
     ];
 
@@ -111,6 +143,9 @@ function Scene_SplashScreens() {
         this._ticker = 0;
         this._stepIndex = 0;
 
+        this._bgSprite = new ScreenSprite();
+        this._bgSprite.opacity = 255;
+        this.addChild(this._bgSprite);
         this._steps = steps.map(step => {
             switch (step[0]) {
                 case "img":
@@ -165,6 +200,13 @@ function Scene_SplashScreens() {
                     break;
                 case "fadeOut":
                     this.startFadeOut(this.fadeSpeed(), false);
+                    break;
+                case "color":
+                    this._bgSprite.setColor.apply(this._bgSprite, step[1]);
+                    break;
+                case "break":
+                    this._skip = false;
+                    this._ticker = -1;
                     break;
             }
             this._stepIndex++;
