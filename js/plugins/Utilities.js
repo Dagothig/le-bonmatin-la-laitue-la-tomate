@@ -33,6 +33,22 @@ function aaa_map_switch(name, value) {
 }
 
 (function () {
+    var aaaExtend = /\[aaa_extend (.*)\]/;
+    var original_onLoad = DataManager.onLoad;
+    DataManager.onLoad = function(object) {
+        original_onLoad.call(DataManager, object);
+        if (object === $dataStates) {
+            for (const state of object) {
+                if (state) {
+                    const extStr = (state.note.match(aaaExtend) || [])[1];
+                    const ext = JSON.parse(extStr || "{}");
+                    Object.assign(state, ext);
+                    console.log(state);
+                }
+            }
+        }
+    };
+
     var original_meetsConditions = Game_Event.prototype.meetsConditions;
     Game_Event.prototype.meetsConditions = function(page) {
         var cmd = page.list && page.list[0] && page.list[0];

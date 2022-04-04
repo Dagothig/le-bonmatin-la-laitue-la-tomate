@@ -2,7 +2,163 @@
 
 ## Backlog à record
 
-ISS EMPTY
+[Vieux]
+> Bon, et maintenant retournez chercher le \
+> Cossin!
+
+> Je vous dit que je n'ai pas de Bons Matins! \
+> Déjà vous avez percé un trou dans mon mur - \
+> Je vous ai entendu. Ensuite, cette craque \
+> était là quand j'ai emménagé.
+
+> Incidemment, saviez-vous que j'ai construit \
+> ma maison? Les jeunes de nos jours prennent \
+> tout pour acquis!
+
+> Hey mais qu'est que vous fouttez en bas!? \
+> \
+> Vous n'êtes pas en train de détruire ma \
+> maison j'espère?
+
+> C'est pas parce que vous dites rien que je \
+> ne sais pas que vous êtes là!
+
+[Protagoniste]
+> J'ai vu que vous aviez un autel au Bon \
+> Matin en bas! Pas de niaiseries, j'en ai \
+> besoin et c'est très urgent!
+
+> Anger
+
+> Huuuh...
+
+> Mais attendez un instant - Vous venez de \
+> couper en deux ce pauvre homme qui annonce \
+> vaguement le moment de la journée où la  \
+> journée se produit!
+
+> Des histoires de ... prophécie? \
+> Pourtant vous n'avez pas l'air d'avoir pris \
+> un coup à la tête -
+
+> Vous ne faites aucun sens...
+
+> Ici? Le chemin est tout ouvert juste là.
+
+> Le Repositoire des Textes Sacrés?
+
+> Et si je ne veux pas de votre aide?
+
+> Ah comme logique c'est impeccable.
+
+> Huh, il semble que je n'ai pas vraiment le \
+> choix...
+
+[Prêtre]
+> Bonjour. Malheureusement, le temple est  \
+> actuellement fermé. \
+> Mais si vous revenez demain midi, nous  \
+> seront ouvert pour le Bonjour.
+
+[Wwwelchior]
+> Vous êtes sûr que vous pouvez pas me faire \
+> rentrer *maintenant*?
+
+> . . .
+
+> Oh allo! \
+>  \
+> ... \
+> Votre face me dit quelque chose.
+
+> En fait vous avez les traits d'un  \
+> Protagoniste! \
+> Ça doit être vous que le Repositoire des  \
+> Textes Sacrés mentionnait!
+
+> Aaaah. \
+> Non vous devez comprendre, je ne suis pas  \
+> le vrai Murder Hobo.
+
+> De toute façon il n'y a eu aucune mention \
+> de prophécie chamboulée alors ça veut dire \
+> que le prêtre n'était pas important.
+
+> Non c'est correct Gabspart! Regardes j'ai  \
+> trouvé la clé sur lui.
+
+> On l'a jamais rencontrée alors c'est pas  \
+> impossible qu'elle n'existe même pas - \
+> Ou peut-être qu'elle n'aura rien de  \
+> nouveau à dire sur le sujet!
+
+> Oui! \
+> J'ai tout fait! \
+> J'ai trouvé la solution à la porte ET le \
+> Protagoniste!
+
+> Vous êtes Protagoniste? Bien voila, on est  \
+> vos Personnages Secondaires.
+
+> Aucune idée. Il m'a dit que c'était  \
+> "Vraiment important" que je trouve la  \
+> solution tout seul, et ensuite il est juste \
+> parti.
+
+> Quelque chose à propos d'aller chercher des \
+> "cadeaux".
+
+> On y va?
+
+[Gabspart]
+> Wwwelchior, j'ai trouvé comment passer la  \
+> porte. Le Repositoire des Textes Sacrés dit \
+> qu'il faut trouver la fille du prêtre, pour \
+> qu'il renoue ses liens avec elle et qu'il -
+
+> Anger
+
+> Wwwelchior.
+
+> Mais... \
+>  \
+> La fille du prêtre...
+
+> Hey t'as trouvé le Protagoniste!
+
+> *Une* solution peut-être. \
+> *La* solution je suis pas convaincu.
+
+> Comment dire... \
+> Huh... \
+> On - \
+> Mmmmh.
+
+> On ne vient pas d'ici. J'irai pas en détail \
+> comme les tripes de ce pauvre prêtre par  \
+> terre, mais on est coincé ici.
+
+> "Ici" comme dans ce monde.  \
+> On vient du Brun. C'est huh... Un autre \
+> Plan d'Existence.
+
+> C'est pas trop clair comment on s'est  \
+> retrouvé ici, on est en train de chercher à \
+> comprendre, mais le Repositoire des Textes \
+> Sacrés donne pas tout le backstory.
+
+> Heh, pas besoin de savoir c'est quoi.  \
+> On l'utilise seulement si vous devenez  \
+> coincé.
+
+> Mais en tout les cas on va vous aider à  \
+> trouver votre Bonjour - J'pense bien que \
+> le pêcheur vous a donné la quête? Après ça  \
+> on pourra regarder pour le Bon Matin.
+
+> Il est où Balthathig?
+
+> Bon, on l'attendra pas alors.
 
 ## Rouler sans RPG Maker MV
 

@@ -1,7 +1,8 @@
 [
 null,
-{"id":1,"battlerName":"ActorUIUI_2","characterIndex":1,"characterName":"ActorUIUI","classId":1,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"UIUI","traits":[],"initialLevel":1,"maxLevel":1,"name":"Personne Véritable","nickname":"Personne","note":"","profile":"La Légende Veut que Personne a un backstory."},
+{"id":1,"battlerName":"ActorUIUI_2","characterIndex":1,"characterName":"ActorUIUI","classId":1,"equips":[0,0,0,0,0],"faceIndex":1,"faceName":"UIUI","traits":[],"initialLevel":1,"maxLevel":1,"name":"Personne Véritable","nickname":"Personne Véritable","note":"","profile":"La Légende Veut que Personne a un backstory."},
 {"id":2,"battlerName":"ActorUIUI_1","characterIndex":0,"characterName":"ActorUIUI","classId":2,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"UIUI","traits":[],"initialLevel":1,"maxLevel":99,"name":"UIUI","nickname":"Fleuri","note":"","profile":"La chemise fleurie ne cache pas très bien le caractère \nsinistre de ce personnage."},
-{"id":3,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":4,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
+{"id":3,"battlerName":"ActorUIUI_3","characterIndex":6,"characterName":"ActorUIUI","classId":2,"equips":[4,0,0,0,0],"faceIndex":6,"faceName":"UIUI","traits":[],"initialLevel":1,"maxLevel":1,"name":"Balthathig","nickname":"Balthathig","note":"","profile":""},
+{"id":4,"battlerName":"ActorUIUI_4","characterIndex":7,"characterName":"ActorUIUI","classId":3,"equips":[3,5,0,0,0],"faceIndex":7,"faceName":"UIUI","traits":[],"initialLevel":1,"maxLevel":1,"name":"Wwwelchior","nickname":"Wwwelchior","note":"","profile":""},
+{"id":5,"battlerName":"ActorUIUI_5","characterIndex":0,"characterName":"ActorUIUI2","classId":2,"equips":[2,0,0,0,0],"faceIndex":0,"faceName":"UIUI2","traits":[],"initialLevel":1,"maxLevel":1,"name":"Gabspart","nickname":"Gabspart","note":"","profile":""}
 ]
