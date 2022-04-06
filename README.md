@@ -2,6 +2,30 @@
 
 ## Backlog à record
 
+[Narrateur]
+> Gabspart sort de sa poche un petit papier griffoné.
+
+> Le socle est plutôt endommagé et poussiéreux, et il ne  \
+> reste que quelques débris de ce qui se trouvait par  \
+> dessus autrefois. La plaque est à peine lisible: \
+>                        BON MATIN                       
+
+> Il semblerait que le Vieux a des radis plein les \
+> oreilles.
+
+> En fouillant un peu plus vous voyez une petit fiole \
+> qui brille sous la poussière!
+
+> Il y a toutes sortes de beaux petits griboullis sur les \
+> papiers devant le vieux. \
+> Un genre de sphère avec de gros yeux, une houpe et des \
+> pieds. Pas de bras.
+
+> Un chariot de mine. \
+> Malgré la folle envie de vous embarquer dans une  \
+> séquence à obstacles que vous ressentez, vous décidez \
+> de laisser le chariot tranquille.
+
 [Vieux]
 > Bon, et maintenant retournez chercher le \
 > Cossin!
@@ -32,12 +56,11 @@
 
 > Huuuh...
 
-> Mais attendez un instant - Vous venez de \
+> Mais attendez un instant - Vous venez de  \
 > couper en deux ce pauvre homme qui annonce \
-> vaguement le moment de la journée où la  \
-> journée se produit!
+> vaguement le moment actuel de la journée! 
 
-> Des histoires de ... prophécie? \
+> Des histoires de ... prophétie? \
 > Pourtant vous n'avez pas l'air d'avoir pris \
 > un coup à la tête -
 
@@ -54,6 +77,17 @@
 > Huh, il semble que je n'ai pas vraiment le \
 > choix...
 
+> Le... pêcheur? Quelle quête? \
+> Moi je cherche que le Bon Matin.
+
+> Ah c'est sans équivoque.
+
+> À bien y penser ça serait une bonne idée \
+> si j'équipais cette fameuse dague!
+
+> En ce moment ma main est plutôt toute \
+> nue...
+
 [Prêtre]
 > Bonjour. Malheureusement, le temple est  \
 > actuellement fermé. \
@@ -61,42 +95,53 @@
 > seront ouvert pour le Bonjour.
 
 [Wwwelchior]
+
+(énervé / impatient)
 > Vous êtes sûr que vous pouvez pas me faire \
 > rentrer *maintenant*?
 
+(onomatopée de pascontentitude)
 > . . .
 
+(candide)
 > Oh allo! \
 >  \
 > ... \
 > Votre face me dit quelque chose.
 
+(surpris / content)
 > En fait vous avez les traits d'un  \
 > Protagoniste! \
 > Ça doit être vous que le Repositoire des  \
 > Textes Sacrés mentionnait!
 
+(sarcastique)
 > Aaaah. \
 > Non vous devez comprendre, je ne suis pas  \
 > le vrai Murder Hobo.
 
+(apologétique)
 > De toute façon il n'y a eu aucune mention \
-> de prophécie chamboulée alors ça veut dire \
+> de prophétie chamboulée alors ça veut dire \
 > que le prêtre n'était pas important.
 
+(confiant)
 > Non c'est correct Gabspart! Regardes j'ai  \
 > trouvé la clé sur lui.
 
-> On l'a jamais rencontrée alors c'est pas  \
-> impossible qu'elle n'existe même pas - \
-> Ou peut-être qu'elle n'aura rien de  \
-> nouveau à dire sur le sujet!
+(apologétique)
+> Peut-être qu'elle n'aura rien de  \
+> nouveau à dire sur le sujet! Même qu'on l'a \
+> jamais rencontrée alors c'est pas  \
+> impossible qu'elle n'existe même pas - 
 
+(vindiqué)
 > Oui! \
 > J'ai tout fait! \
 > J'ai trouvé la solution à la porte ET le \
 > Protagoniste!
 
+()
 > Vous êtes Protagoniste? Bien voila, on est  \
 > vos Personnages Secondaires.
 
@@ -159,6 +204,13 @@
 > Il est où Balthathig?
 
 > Bon, on l'attendra pas alors.
+
+> Ah!
+
+> "Chapitre 1: \
+> Le Protagoniste obtient le Bonjour" \
+>  \
+> Vous voyez?
 
 ## Rouler sans RPG Maker MV
 

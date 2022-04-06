@@ -32,10 +32,16 @@ function aaa_map_switch(name, value) {
     $gameMap.requestRefresh();
 }
 
+function aaa_jump(e, x, y, h) {
+    e.jump(x, y);
+    e._jumpPeak += h;
+    e._jumpCount = e._jumpPeak * 2;
+}
+
 (function () {
     var aaaExtend = /\[aaa_extend (.*)\]/;
     var original_onLoad = DataManager.onLoad;
-    DataManager.onLoad = function(object) {
+    DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
         if (object === $dataStates) {
             for (const state of object) {
@@ -43,14 +49,13 @@ function aaa_map_switch(name, value) {
                     const extStr = (state.note.match(aaaExtend) || [])[1];
                     const ext = JSON.parse(extStr || "{}");
                     Object.assign(state, ext);
-                    console.log(state);
                 }
             }
         }
     };
 
     var original_meetsConditions = Game_Event.prototype.meetsConditions;
-    Game_Event.prototype.meetsConditions = function(page) {
+    Game_Event.prototype.meetsConditions = function (page) {
         var cmd = page.list && page.list[0] && page.list[0];
         if (cmd && cmd.code === 356) { // Plugin command lol
             if (cmd.parameters[0] === "aaa_condition") {
@@ -62,25 +67,30 @@ function aaa_map_switch(name, value) {
     };
 
     var original_applyGuard = Game_Action.prototype.applyGuard;
-    Game_Action.prototype.applyGuard = function(damage, target) {
+    Game_Action.prototype.applyGuard = function (damage, target) {
         return damage;
     };
 
     var originalDef = Object.getOwnPropertyDescriptor(Game_BattlerBase.prototype, 'def');
     Object.defineProperties(Game_BattlerBase.prototype, {
-        lukVar: { get: function() {
-            return 1 + Math.random() * (this.luk - 95) / 100;
-        } },
-        grd: { get: function() {
-            return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1);
-        } },
-        def: { get: function() {
-            console.log(this.grd);
-            return originalDef.get.call(this) * (this.isGuard() ? 2 : 1) + (this.isGuard() ? this.grd : 0);
-        } }
+        lukVar: {
+            get: function () {
+                return 1 + Math.random() * (this.luk - 95) / 100;
+            }
+        },
+        grd: {
+            get: function () {
+                return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1);
+            }
+        },
+        def: {
+            get: function () {
+                return originalDef.get.call(this) * (this.isGuard() ? 2 : 1) + (this.isGuard() ? this.grd : 0);
+            }
+        }
     });
 
-    Game_Action.prototype.speed = function() {
+    Game_Action.prototype.speed = function () {
         var speed = this.subject().agi;
         if (this.item()) {
             speed += this.item().speed;
@@ -129,7 +139,7 @@ function aaa_map_switch(name, value) {
     }
 
     var original_pluginCommand = Game_Interpreter.prototype.pluginCommand;
-    Game_Interpreter.prototype.pluginCommand = function(command, args) {
+    Game_Interpreter.prototype.pluginCommand = function (command, args) {
         original_pluginCommand.call(this, command, args);
 
         if (command === "aaa_anim") {
@@ -138,12 +148,12 @@ function aaa_map_switch(name, value) {
     }
 
     var original_initMembers = Sprite_Battler.prototype.initMembers;
-    Sprite_Battler.prototype.initMembers = function() {
+    Sprite_Battler.prototype.initMembers = function () {
         original_initMembers.call(this);
         this._moves = [];
     }
 
-    Sprite_Battler.prototype.dequeueMove = function() {
+    Sprite_Battler.prototype.dequeueMove = function () {
         while (!this.isMoving() && this._moves.length) {
             var nextMove = this._moves.shift();
             var type = nextMove.shift();
@@ -151,13 +161,13 @@ function aaa_map_switch(name, value) {
         }
     };
 
-    Sprite_Battler.prototype.pushMove = function(args) {
+    Sprite_Battler.prototype.pushMove = function (args) {
         this._moves.push(args);
         this.dequeueMove();
     }
 
     var original_onMoveEnd = Sprite_Battler.prototype.onMoveEnd;
-    Sprite_Battler.prototype.onMoveEnd = function() {
+    Sprite_Battler.prototype.onMoveEnd = function () {
         original_onMoveEnd.call(this);
         switch (this._moveType) {
             case WIGGLE:
@@ -170,12 +180,12 @@ function aaa_map_switch(name, value) {
     };
 
     var original_startMove = Sprite_Battler.prototype.startMove;
-    Sprite_Battler.prototype.startMove = function(x, y, duration) {
+    Sprite_Battler.prototype.startMove = function (x, y, duration) {
         this._moveType = MOVE;
         original_startMove.call(this, x, y, duration);
     };
 
-    Sprite_Battler.prototype.startWiggle = function(mx, my, Mx, My, duration) {
+    Sprite_Battler.prototype.startWiggle = function (mx, my, Mx, My, duration) {
         this._moveType = WIGGLE;
         this._targetOffsetX = this._offsetX;
         this._targetOffsetY = this._offsetY;
@@ -186,7 +196,7 @@ function aaa_map_switch(name, value) {
         this._movementDuration = duration;
     };
 
-    Sprite_Battler.prototype.startParabola = function(x, y, h, duration) {
+    Sprite_Battler.prototype.startParabola = function (x, y, h, duration) {
         this._moveType = PARABOLA;
 
         var x1 = this._offsetX || 0, y1 = this._offsetY || 0;
@@ -195,7 +205,7 @@ function aaa_map_switch(name, value) {
         var denom = (x1 - x2) * (x1 - x3) * (x2 - x3);
 
         this.paraA = (x3 * (y2 - y1) + x2 * (y1 - y3) + x1 * (y3 - y2)) / denom;
-        this.paraB = (x3*x3 * (y1 - y2) + x2*x2 * (y3 - y1) + x1*x1 * (y2 - y3)) / denom;
+        this.paraB = (x3 * x3 * (y1 - y2) + x2 * x2 * (y3 - y1) + x1 * x1 * (y2 - y3)) / denom;
         this.paraC = (x2 * x3 * (x2 - x3) * y1 + x3 * x1 * (x3 - x1) * y2 + x1 * x2 * (x1 - x2) * y3) / denom;
 
         this._targetOffsetX = x;
@@ -208,7 +218,7 @@ function aaa_map_switch(name, value) {
     };
 
     var original_updateMove = Sprite_Battler.prototype.updateMove;
-    Sprite_Battler.prototype.updateMove = function() {
+    Sprite_Battler.prototype.updateMove = function () {
         if (this._moveType === MOVE)
             return original_updateMove.call(this);
         if (this._movementDuration <= 0) {
@@ -236,7 +246,7 @@ function aaa_map_switch(name, value) {
 
     var noteRegexp = /\[aaa_anim (.*)\]/;
     var original_performActionStart = Game_Enemy.prototype.performActionStart;
-    Game_Enemy.prototype.performActionStart = function(action) {
+    Game_Enemy.prototype.performActionStart = function (action) {
         original_performActionStart.call(this, action);
         var item = action.item();
         var note = item && item.note || "";
