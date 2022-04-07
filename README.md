@@ -49,21 +49,25 @@
 > J'ai trouvé la solution à la porte ET le \
 > Protagoniste!
 
-()
+(tac-au-tac)
 > Vous êtes Protagoniste? Bien voila, on est  \
 > vos Personnages Secondaires.
 
+(un peu agacé)
 > Aucune idée. Il m'a dit que c'était  \
 > "Vraiment important" que je trouve la  \
 > solution tout seul, et ensuite il est juste \
 > parti.
 
+(un peu agacé)
 > Quelque chose à propos d'aller chercher des \
 > "cadeaux".
 
+(impatient)
 > On y va?
 
 [Gabspart]
+(vaguement excité d'avoir trouvé la quête dans le wiki)
 > Wwwelchior, j'ai trouvé comment passer la  \
 > porte. Le Repositoire des Textes Sacrés dit \
 > qu'il faut trouver la fille du prêtre, pour \
@@ -71,50 +75,64 @@
 
 > Anger
 
+(wwwelchior is at it again)
 > Wwwelchior.
 
+(ci-git, le wiki)
 > Mais... \
 >  \
 > La fille du prêtre...
 
+(content)
 > Hey t'as trouvé le Protagoniste!
 
+(sas)
 > *Une* solution peut-être. \
 > *La* solution je suis pas convaincu.
 
+(manque de fin de phrases)
 > Comment dire... \
 > Huh... \
 > On - \
 > Mmmmh.
 
+(ah merde faut faire de l'exposition)
 > On ne vient pas d'ici. J'irai pas en détail \
 > comme les tripes de ce pauvre prêtre par  \
 > terre, mais on est coincé ici.
 
+(ah merde faut faire de l'exposition)
 > "Ici" comme dans ce monde.  \
 > On vient du Brun. C'est huh... Un autre \
 > Plan d'Existence.
 
+(ah merde faut faire de l'exposition)
 > C'est pas trop clair comment on s'est  \
 > retrouvé ici, on est en train de chercher à \
 > comprendre, mais le Repositoire des Textes \
 > Sacrés donne pas tout le backstory.
 
+(explicatif)
 > Heh, pas besoin de savoir c'est quoi.  \
 > On l'utilise seulement si vous devenez  \
 > coincé.
 
+(explicatif)
 > Mais en tout les cas on va vous aider à  \
 > trouver votre Bonjour - J'pense bien que \
 > le pêcheur vous a donné la quête? Après ça  \
 > on pourra regarder pour le Bon Matin.
 
+(agacé)
 > Il est où Balthathig?
 
+(agacé)
 > Bon, on l'attendra pas alors.
 
+(it turns out que Balthathig fait dla shit)
 > Ah!
 
+(énnervé par le protagoniste)
 > "Chapitre 1: \
 > Le Protagoniste obtient le Bonjour" \
 >  \
