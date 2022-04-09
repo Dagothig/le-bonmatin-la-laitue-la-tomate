@@ -101,6 +101,44 @@ function aaa_jump(e, x, y, h) {
         return speed;
     };
 
+    var original_setupParallax = Game_Map.prototype.setupParallax;
+    Game_Map.prototype.setupParallax = function() {
+        original_setupParallax.call(this);
+        this._parallaxPosX = 0;
+        this._parallaxPosY = 0;
+    }
+
+    var original_changeParallax = Game_Map.prototype.changeParallax;
+    Game_Map.prototype.changeParallax = function(name, loopX, loopY, sx, sy, x, y) {
+        original_changeParallax.call(this, name, loopX, loopY, sx, sy);
+        this._parallaxPosX = x || 0;
+        this._parallaxPosY = y || 0;
+    }
+
+    var original_parallaxOx = Game_Map.prototype.parallaxOx;
+    Game_Map.prototype.parallaxOx = function() {
+        if (Number.isFinite(this._parallaxPosX)) {
+            return 256 - this.adjustX(this.parallaxPX() + 0.5) * this.tileWidth();
+        }
+        return original_parallaxOx.call(this);
+    };
+
+    var original_parallaxOy = Game_Map.prototype.parallaxOy;
+    Game_Map.prototype.parallaxOy = function() {
+        if (Number.isFinite(this._parallaxPosY)) {
+            return 256 - this.adjustY(this.parallaxPY() + 0.5) * this.tileWidth();
+        }
+        return original_parallaxOy.call(this);
+    };
+
+    Game_Map.prototype.parallaxPX = function() {
+        return this._parallaxPosX;
+    };
+
+    Game_Map.prototype.parallaxPY = function() {
+        return this._parallaxPosY;
+    };
+
     var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola", WAIT = "startWait";
 
     function aaa_anim(args) {
