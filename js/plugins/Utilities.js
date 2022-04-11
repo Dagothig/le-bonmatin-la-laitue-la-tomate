@@ -24,20 +24,86 @@ function aaa_se(eventId, se) {
     AudioManager.playSe(se);
 }
 
-function aaa_map_switch(name, value) {
-    if (typeof value === "undefined") {
-        return window[$gameMap._mapId + ":" + name];
-    }
-    window[$gameMap._mapId + ":" + name] = value;
-    $gameMap.requestRefresh();
-}
-
 function aaa_jump(e, x, y, h) {
     e.jump(x, y);
     e._jumpPeak += h;
     e._jumpCount = e._jumpPeak * 2;
 }
 
+// Extend vars
+var $gameMapSwitches = {};
+function aaa_map_switch(name, value) {
+    var switches = $gameMapSwitches[$gameMap._mapId] || ($gameMapSwitches[$gameMap._mapId] = {});
+    if (typeof value === "undefined") {
+        return switches[name];
+    }
+    switches[name] = value;
+    $gameMap.requestRefresh();
+}
+
+(function () {
+    var original_var_initialize = Game_Variables.prototype.initialize;
+    Game_Variables.prototype.initialize = function() {
+        original_var_initialize.call(this);
+        this.byKey = {};
+        var self = this;
+        for (var i = 0; i < $dataSystem.variables.length; i++) {
+            const key = $dataSystem.variables[i].trim();
+            if (key) {
+                const variableId = i;
+                Object.defineProperty(this.byKey, key, {
+                    get() {
+                        return self.value(variableId);
+                    },
+                    set(value) {
+                        return self.setValue(variableId, value);
+                    }
+                })
+            }
+        }
+    }
+
+    Object.defineProperties(window, {
+        $gvars: {
+            get() {
+                return $gameVariables.byKey;
+            }
+        }
+    });
+
+    var original_makeSaveContents = DataManager.makeSaveContents;
+    DataManager.makeSaveContents = function() {
+        var contents = original_makeSaveContents.call(this);
+        contents.mapSwitches = $gameMapSwitches;
+        return contents;
+    };
+
+    var original_extractSaveContents = DataManager.extractSaveContents;
+    DataManager.extractSaveContents = function(contents) {
+        original_extractSaveContents.call(this);
+        $gameMapSwitches = contents.mapSwitches || {};
+    }
+
+    var original_setupPage = Game_Event.prototype.setupPage;
+    Game_Event.prototype.setupPage = function() {
+        this._hasRun = false;
+        original_setupPage.call(this);
+    }
+
+    var original_meetsConditions = Game_Event.prototype.meetsConditions;
+    Game_Event.prototype.meetsConditions = function (page) {
+        var cmd = page.list && page.list[0] && page.list[0];
+        if (cmd && cmd.code === 356) { // Plugin command lol
+            if (cmd.parameters[0] === "aaa_condition") {
+                if (!eval(page.list[1].parameters[0]))
+                    return false;
+            }
+        }
+        return original_meetsConditions.apply(this, arguments);
+    };
+})();
+
+// Extendoooooo
 (function () {
     var aaaExtend = /\[aaa_extend (.*)\]/;
     var original_onLoad = DataManager.onLoad;
@@ -52,18 +118,6 @@ function aaa_jump(e, x, y, h) {
                 }
             }
         }
-    };
-
-    var original_meetsConditions = Game_Event.prototype.meetsConditions;
-    Game_Event.prototype.meetsConditions = function (page) {
-        var cmd = page.list && page.list[0] && page.list[0];
-        if (cmd && cmd.code === 356) { // Plugin command lol
-            if (cmd.parameters[0] === "aaa_condition") {
-                if (!eval(page.list[1].parameters[0]))
-                    return false;
-            }
-        }
-        return original_meetsConditions.apply(this, arguments);
     };
 
     var original_applyGuard = Game_Action.prototype.applyGuard;
@@ -182,6 +236,12 @@ function aaa_jump(e, x, y, h) {
 
         if (command === "aaa_anim") {
             aaa_anim(args);
+        } else if (command === "aaa_run_once") {
+            if (this._hasRun) {
+                this.command115(); // Exit event processing
+            } else {
+                this._hasRun = true;
+            }
         }
     }
 

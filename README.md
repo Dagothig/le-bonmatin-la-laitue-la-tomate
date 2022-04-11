@@ -2,6 +2,13 @@
 
 ## Backlog à record
 
+[Narrateur]
+
+> Ah dans le Barril il y a... \
+> Un casque? \
+> C'est hum, c'est pratique, mais c'est pas clair  \
+> pourquoi c'est dans ce baril.
+
 [Wwwelchior]
 
 (énervé / impatient)
