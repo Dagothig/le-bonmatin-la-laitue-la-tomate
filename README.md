@@ -4,10 +4,12 @@
 
 [Narrateur]
 
-> Ah dans le Barril il y a... \
+> Ah dans le baril il y a... \
 > Un casque? \
 > C'est hum, c'est pratique, mais c'est pas clair  \
 > pourquoi c'est dans ce baril.
+
+> Vous avez obtenu le Bonjour!
 
 [Wwwelchior]
 

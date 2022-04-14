@@ -41,6 +41,59 @@ function aaa_map_switch(name, value) {
     $gameMap.requestRefresh();
 }
 
+var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola", WAIT = "startWait";
+
+function aaa_anim(target, anim, delay) {
+    var sprite = target._sprite;
+    sprite._aaaX = sprite._aaaX || 0;
+    sprite._aaaY = sprite._aaaY || 0;
+    delay = delay || 0;
+    if (delay) {
+        sprite.pushMove([WAIT, delay]);
+    }
+    switch (anim) {
+        case "jump_in":
+        default:
+            sprite.pushMove([MOVE, -100, 50, 0]);
+            sprite.pushMove([PARABOLA, -20, 0, -60, 12]);
+            sprite.pushMove([PARABOLA, 0, 0, -10, 4]);
+            break;
+        case "wiggle":
+            sprite.pushMove([WIGGLE, -5, -2, 5, 0, 30]);
+            break;
+        case "step_back":
+            sprite._aaaX -= 30;
+            sprite._aaaY += 0;
+            sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
+            break;
+        case "step_forward":
+            sprite._aaaX += 20;
+            sprite._aaaY += 0;
+            sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
+            break;
+        case "shuffle":
+            sprite.pushMove([WAIT, 4]);
+            sprite.pushMove([PARABOLA, 10, -10, -20, 12]);
+            sprite.pushMove([WAIT, 8]);
+            sprite.pushMove([PARABOLA, -15, 10, -30, 12]);
+            sprite.pushMove([WAIT, 6]);
+            sprite.pushMove([PARABOLA, -30, 0, -10, 12]);
+            break;
+        case "step_down":
+            sprite._aaaX += -5;
+            sprite._aaaY += 30;
+            sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
+            break;
+        case "lunge":
+            sprite._aaaX += 20;
+            sprite.pushMove([PARABOLA, sprite._aaaX, sprite._aaaY, -10, 8]);
+            sprite._aaaX = 0;
+            sprite._aaaY = 0;
+            sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 3]);
+            break;
+    }
+}
+
 (function () {
     var original_var_initialize = Game_Variables.prototype.initialize;
     Game_Variables.prototype.initialize = function() {
@@ -61,12 +114,38 @@ function aaa_map_switch(name, value) {
                 })
             }
         }
-    }
+    };
+
+    var original_sw_intialize = Game_Switches.prototype.initialize;
+    Game_Switches.prototype.initialize = function() {
+        original_sw_intialize.call(this);
+        this.byKey = {};
+        var self = this;
+        for (var i = 0; i < $dataSystem.switches.length; i++) {
+            const key = $dataSystem.switches[i].trim();
+            if (key) {
+                const switchId = i;
+                Object.defineProperty(this.byKey, key, {
+                    get() {
+                        return self.value(switchId);
+                    },
+                    set(value) {
+                        return self.setValue(switchId, value);
+                    }
+                });
+            }
+        }
+    };
 
     Object.defineProperties(window, {
         $gvars: {
             get() {
                 return $gameVariables.byKey;
+            }
+        },
+        $gsw: {
+            get() {
+                return $gameSwitches.byKey;
             }
         }
     });
@@ -103,20 +182,54 @@ function aaa_map_switch(name, value) {
     };
 })();
 
+function eval_fn_expr(expr, args) {
+    if (expr.trim().startsWith("{")) {
+        return eval("(function(" + (args || "") + ") " + expr + ")");
+    } else {
+        return eval("(function(" + (args || "") + ") { return " + expr + " })");
+    }
+}
+
 // Extendoooooo
 (function () {
     var aaaExtend = /\[aaa_extend (.*)\]/;
+    var targetsRegexp = /\[aaa_targets ([\s\S]*?)\]/;
+    var actionRegexp = /\[aaa_action ([\s\S]*?)\]/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
-        if (object === $dataStates) {
-            for (const state of object) {
-                if (state) {
+        switch (object) {
+            case $dataStates:
+                for (const state of object) {
+                    if (!state)
+                        continue;
                     const extStr = (state.note.match(aaaExtend) || [])[1];
                     const ext = JSON.parse(extStr || "{}");
                     Object.assign(state, ext);
                 }
-            }
+                break;
+            case $dataSkills:
+                for (const skill of object) {
+                    if (!skill)
+                        continue;
+                    const note = skill && skill.note || "";
+                    const targetMatch = note.match(targetsRegexp);
+                    targetMatch && targetMatch[1] && console.log(note, targetMatch && targetMatch[1]);
+                    skill._customTargets = targetMatch && targetMatch[1] && eval_fn_expr(targetMatch[1]);
+                    const actionMatch = note.match(actionRegexp);
+                    actionMatch && actionMatch[1] && console.log(note, actionMatch && actionMatch[1]);
+                    skill._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "target");
+                }
+                break;
+            case $dataEnemies:
+                for (const enemy of object) {
+                    if (!enemy)
+                        continue;
+                    const note = enemy && enemy.note || "";
+                    const actionMatch = note.match(actionRegexp);
+                    actionMatch && actionMatch[1] && console.log(note, actionMatch && actionMatch[1]);
+                    enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList ratingZero");
+                }
         }
     };
 
@@ -193,49 +306,12 @@ function aaa_map_switch(name, value) {
         return this._parallaxPosY;
     };
 
-    var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola", WAIT = "startWait";
-
-    function aaa_anim(args) {
-        var i = parseInt(args[0]) || 0;
-        var anim = args[1];
-        var sprite = $gameTroop.members()[i]._sprite;
-        switch (anim) {
-            case "jump_in":
-            default:
-                sprite.pushMove([MOVE, -100, 50, 0]);
-                sprite.pushMove([PARABOLA, -20, 0, -60, 12]);
-                sprite.pushMove([PARABOLA, 0, 0, -10, 4]);
-                break;
-            case "wiggle":
-                sprite.pushMove([WIGGLE, -5, -2, 5, 0, 30]);
-                break;
-            case "step_back":
-                sprite.pushMove([MOVE, -30, 0, 12]);
-                break;
-            case "shuffle":
-                sprite.pushMove([WAIT, 4]);
-                sprite.pushMove([PARABOLA, 10, -10, -20, 12]);
-                sprite.pushMove([WAIT, 8]);
-                sprite.pushMove([PARABOLA, -15, 10, -30, 12]);
-                sprite.pushMove([WAIT, 6]);
-                sprite.pushMove([PARABOLA, -30, 0, -10, 12]);
-                break;
-            case "step_down":
-                sprite.pushMove([MOVE, -5, 30, 12]);
-                break;
-            case "lunge":
-                sprite.pushMove([PARABOLA, 20, 0, -10, 8]);
-                sprite.pushMove([MOVE, 0, 0, 3]);
-                break;
-        }
-    }
-
     var original_pluginCommand = Game_Interpreter.prototype.pluginCommand;
     Game_Interpreter.prototype.pluginCommand = function (command, args) {
         original_pluginCommand.call(this, command, args);
 
         if (command === "aaa_anim") {
-            aaa_anim(args);
+            aaa_anim($gameTroop.members()[parseInt(args[0]) || 0], args[1], args[2]);
         } else if (command === "aaa_run_once") {
             if (this._hasRun) {
                 this.command115(); // Exit event processing
@@ -342,25 +418,106 @@ function aaa_map_switch(name, value) {
         }
     };
 
-    var noteRegexp = /\[aaa_anim (.*)\]/;
+    var original_sceneBattleStart = Scene_Battle.prototype.start;
+    Scene_Battle.prototype.start = function() {
+        original_sceneBattleStart.call(this);
+        window.$btl = {};
+    };
+
+    var original_selectAction = Game_Enemy.prototype.selectAction;
+    Game_Enemy.prototype.selectAction = function(actionList, ratingZero) {
+        var enemy = this.enemy();
+        return (
+            enemy._customAction && enemy._customAction.call(this, actionList, ratingZero) ||
+            original_selectAction.call(this, actionList, ratingZero));
+    }
+
+    var animRegexp = /\[aaa_anim (.*)\]/;
     var original_performActionStart = Game_Enemy.prototype.performActionStart;
     Game_Enemy.prototype.performActionStart = function (action) {
         original_performActionStart.call(this, action);
         var item = action.item();
         var note = item && item.note || "";
-        var match = note.match(noteRegexp);
+        var match = note.match(animRegexp);
         var args = match && match[1];
         if (args) {
             args = args.split(" ");
             switch (args[0]) {
                 case "self":
-                    args[0] = action._subjectEnemyIndex;
+                    aaa_anim(action.subject(), args[1], args[2]);
                     break;
                 case "target":
-                    args[0] = action._targetIndex;
+                    aaa_anim(action.target(), args[1], args[2]);
                     break;
             }
-            aaa_anim(args);
         }
     }
+
+    var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
+    Game_Action.prototype.targetsForOpponents = function() {
+        var item = this.item();
+        var customTargets = item._customTargets && item._customTargets();
+        return customTargets || originalTargetsForOpponents.call(this);
+    }
+
+    var original_actionApply = Game_Action.prototype.apply;
+    Game_Action.prototype.apply = function(target) {
+        original_actionApply.call(this, target);
+        var item = this.item();
+        item._customAction && item._customAction.call(this, target);
+    }
+})();
+
+// Ding!
+(function() {
+    var original_actionApply = Game_Action.prototype.apply;
+    Game_Action.prototype.apply = function(target) {
+        original_actionApply.call(this, target);
+        target.result().blocked =
+            target.result().isHit() &&
+            target.isGuard() &&
+            target.result().hpAffected &&
+            target.result().hpDamage >= 0 &&
+            target.result().hpDamage < 5 &&
+            !target.result().drain;
+    }
+
+    const ding = { name: "Ding", volume: 90, pitch: 100 };
+    var original_displayDamage = Window_BattleLog.prototype.displayDamage;
+    Window_BattleLog.prototype.displayDamage = function(target) {
+
+        if (target.result().blocked) {
+            AudioManager.playSe(ding);
+        }
+
+        original_displayDamage.call(this, target);
+    };
+})();
+
+// Display target in log
+(function() {
+    Window_BattleLog.prototype.startAction = function(subject, action, targets) {
+        var item = action.item();
+        this.push('clear');
+        this.push('performActionStart', subject, action);
+        this.push('waitForMovement');
+        this.push('performAction', subject, action);
+        this.push('showAnimation', subject, targets.clone(), item.animationId);
+        this.displayAction(subject, item, targets);
+    };
+
+    var original_battleLogDisplayAction = Window_BattleLog.prototype.displayAction;
+    Window_BattleLog.prototype.displayAction = function(subject, item, targets) {
+        if (DataManager.isSkill(item)) {
+            var target = targets.map(t => t.name()).join(", ");
+            if (item.message1) {
+                this.push('addText', subject.name() + item.message1.format(item.name, target));
+            }
+            if (item.message2) {
+                this.push('addText', item.message2.format(item.name, target));
+            }
+        } else {
+            original_battleLogDisplayAction.call(this, subject, item);
+        }
+    };
 })();
