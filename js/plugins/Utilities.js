@@ -67,7 +67,7 @@ function aaa_anim(target, anim, delay) {
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
         case "step_forward":
-            sprite._aaaX += 20;
+            sprite._aaaX += 30;
             sprite._aaaY += 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
@@ -183,18 +183,25 @@ function aaa_anim(target, anim, delay) {
 })();
 
 function eval_fn_expr(expr, args) {
-    if (expr.trim().startsWith("{")) {
-        return eval("(function(" + (args || "") + ") " + expr + ")");
-    } else {
-        return eval("(function(" + (args || "") + ") { return " + expr + " })");
+    expr = expr.trim();
+    if (!expr.startsWith("{")) {
+        expr = "{ return " + expr + " }";
+    }
+    expr = "(function(" + (args || "") + ") " + expr + ")";
+    try {
+        return eval(expr);
+    } catch(err) {
+        console.error(expr);
+        throw err;
     }
 }
 
 // Extendoooooo
 (function () {
-    var aaaExtend = /\[aaa_extend (.*)\]/;
-    var targetsRegexp = /\[aaa_targets ([\s\S]*?)\]/;
-    var actionRegexp = /\[aaa_action ([\s\S]*?)\]/;
+    var aaaExtend = /\<<aaa_extend (.*)\>>/;
+    var targetsRegexp = /\<<aaa_targets ([\s\S]*?)\>>/;
+    var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
+    var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -214,10 +221,8 @@ function eval_fn_expr(expr, args) {
                         continue;
                     const note = skill && skill.note || "";
                     const targetMatch = note.match(targetsRegexp);
-                    targetMatch && targetMatch[1] && console.log(note, targetMatch && targetMatch[1]);
                     skill._customTargets = targetMatch && targetMatch[1] && eval_fn_expr(targetMatch[1]);
                     const actionMatch = note.match(actionRegexp);
-                    actionMatch && actionMatch[1] && console.log(note, actionMatch && actionMatch[1]);
                     skill._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "target");
                 }
                 break;
@@ -227,8 +232,9 @@ function eval_fn_expr(expr, args) {
                         continue;
                     const note = enemy && enemy.note || "";
                     const actionMatch = note.match(actionRegexp);
-                    actionMatch && actionMatch[1] && console.log(note, actionMatch && actionMatch[1]);
-                    enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList ratingZero");
+                    enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList, ratingZero");
+                    const setupMatch = note.match(setupRegexp);
+                    enemy._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1], "enemyId, x, y");
                 }
         }
     };
@@ -424,6 +430,13 @@ function eval_fn_expr(expr, args) {
         window.$btl = {};
     };
 
+    var original_enemySetup = Game_Enemy.prototype.setup;
+    Game_Enemy.prototype.setup = function(enemyId, x, y) {
+        original_enemySetup.call(this, enemyId, x, y);
+        var enemy = this.enemy();
+        enemy._customSetup && enemy._customSetup.call(this, enemyId, x, y);
+    }
+
     var original_selectAction = Game_Enemy.prototype.selectAction;
     Game_Enemy.prototype.selectAction = function(actionList, ratingZero) {
         var enemy = this.enemy();
@@ -432,7 +445,7 @@ function eval_fn_expr(expr, args) {
             original_selectAction.call(this, actionList, ratingZero));
     }
 
-    var animRegexp = /\[aaa_anim (.*)\]/;
+    var animRegexp = /\<<aaa_anim (.*)\>>/;
     var original_performActionStart = Game_Enemy.prototype.performActionStart;
     Game_Enemy.prototype.performActionStart = function (action) {
         original_performActionStart.call(this, action);
@@ -456,7 +469,7 @@ function eval_fn_expr(expr, args) {
     var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
     Game_Action.prototype.targetsForOpponents = function() {
         var item = this.item();
-        var customTargets = item._customTargets && item._customTargets();
+        var customTargets = item._customTargets && item._customTargets.call(this);
         return customTargets || originalTargetsForOpponents.call(this);
     }
 
