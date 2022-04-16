@@ -24,6 +24,14 @@ function aaa_se(eventId, se) {
     AudioManager.playSe(se);
 }
 
+function aaa_jump_forward(e, d, h) {
+    var x = $gameMap.xWithDirection(0, e.direction()) * d;
+    var y = $gameMap.yWithDirection(0, e.direction()) * d;
+    e.jump(x, y);
+    e._jumpPeak += h;
+    e._jumpCount = e._jumpPeak * 2;
+}
+
 function aaa_jump(e, x, y, h) {
     e.jump(x, y);
     e._jumpPeak += h;
