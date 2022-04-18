@@ -104,7 +104,7 @@ function aaa_anim(target, anim, delay) {
 
 (function () {
     var original_var_initialize = Game_Variables.prototype.initialize;
-    Game_Variables.prototype.initialize = function() {
+    Game_Variables.prototype.initialize = function () {
         original_var_initialize.call(this);
         this.byKey = {};
         var self = this;
@@ -125,7 +125,7 @@ function aaa_anim(target, anim, delay) {
     };
 
     var original_sw_intialize = Game_Switches.prototype.initialize;
-    Game_Switches.prototype.initialize = function() {
+    Game_Switches.prototype.initialize = function () {
         original_sw_intialize.call(this);
         this.byKey = {};
         var self = this;
@@ -159,20 +159,20 @@ function aaa_anim(target, anim, delay) {
     });
 
     var original_makeSaveContents = DataManager.makeSaveContents;
-    DataManager.makeSaveContents = function() {
+    DataManager.makeSaveContents = function () {
         var contents = original_makeSaveContents.call(this);
         contents.mapSwitches = $gameMapSwitches;
         return contents;
     };
 
     var original_extractSaveContents = DataManager.extractSaveContents;
-    DataManager.extractSaveContents = function(contents) {
+    DataManager.extractSaveContents = function (contents) {
         original_extractSaveContents.call(this);
         $gameMapSwitches = contents.mapSwitches || {};
     }
 
     var original_setupPage = Game_Event.prototype.setupPage;
-    Game_Event.prototype.setupPage = function() {
+    Game_Event.prototype.setupPage = function () {
         this._hasRun = false;
         original_setupPage.call(this);
     }
@@ -198,7 +198,7 @@ function eval_fn_expr(expr, args) {
     expr = "(function(" + (args || "") + ") " + expr + ")";
     try {
         return eval(expr);
-    } catch(err) {
+    } catch (err) {
         console.error(expr);
         throw err;
     }
@@ -283,21 +283,21 @@ function eval_fn_expr(expr, args) {
     };
 
     var original_setupParallax = Game_Map.prototype.setupParallax;
-    Game_Map.prototype.setupParallax = function() {
+    Game_Map.prototype.setupParallax = function () {
         original_setupParallax.call(this);
         this._parallaxPosX = 0;
         this._parallaxPosY = 0;
     }
 
     var original_changeParallax = Game_Map.prototype.changeParallax;
-    Game_Map.prototype.changeParallax = function(name, loopX, loopY, sx, sy, x, y) {
+    Game_Map.prototype.changeParallax = function (name, loopX, loopY, sx, sy, x, y) {
         original_changeParallax.call(this, name, loopX, loopY, sx, sy);
         this._parallaxPosX = x || 0;
         this._parallaxPosY = y || 0;
     }
 
     var original_parallaxOx = Game_Map.prototype.parallaxOx;
-    Game_Map.prototype.parallaxOx = function() {
+    Game_Map.prototype.parallaxOx = function () {
         if (Number.isFinite(this._parallaxPosX)) {
             return 256 - this.adjustX(this.parallaxPX() + 0.5) * this.tileWidth();
         }
@@ -305,18 +305,18 @@ function eval_fn_expr(expr, args) {
     };
 
     var original_parallaxOy = Game_Map.prototype.parallaxOy;
-    Game_Map.prototype.parallaxOy = function() {
+    Game_Map.prototype.parallaxOy = function () {
         if (Number.isFinite(this._parallaxPosY)) {
             return 256 - this.adjustY(this.parallaxPY() + 0.5) * this.tileWidth();
         }
         return original_parallaxOy.call(this);
     };
 
-    Game_Map.prototype.parallaxPX = function() {
+    Game_Map.prototype.parallaxPX = function () {
         return this._parallaxPosX;
     };
 
-    Game_Map.prototype.parallaxPY = function() {
+    Game_Map.prototype.parallaxPY = function () {
         return this._parallaxPosY;
     };
 
@@ -433,20 +433,20 @@ function eval_fn_expr(expr, args) {
     };
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;
-    Scene_Battle.prototype.start = function() {
+    Scene_Battle.prototype.start = function () {
         original_sceneBattleStart.call(this);
         window.$btl = {};
     };
 
     var original_enemySetup = Game_Enemy.prototype.setup;
-    Game_Enemy.prototype.setup = function(enemyId, x, y) {
+    Game_Enemy.prototype.setup = function (enemyId, x, y) {
         original_enemySetup.call(this, enemyId, x, y);
         var enemy = this.enemy();
         enemy._customSetup && enemy._customSetup.call(this, enemyId, x, y);
     }
 
     var original_selectAction = Game_Enemy.prototype.selectAction;
-    Game_Enemy.prototype.selectAction = function(actionList, ratingZero) {
+    Game_Enemy.prototype.selectAction = function (actionList, ratingZero) {
         var enemy = this.enemy();
         return (
             enemy._customAction && enemy._customAction.call(this, actionList, ratingZero) ||
@@ -475,14 +475,14 @@ function eval_fn_expr(expr, args) {
     }
 
     var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
-    Game_Action.prototype.targetsForOpponents = function() {
+    Game_Action.prototype.targetsForOpponents = function () {
         var item = this.item();
         var customTargets = item._customTargets && item._customTargets.call(this);
         return customTargets || originalTargetsForOpponents.call(this);
     }
 
     var original_actionApply = Game_Action.prototype.apply;
-    Game_Action.prototype.apply = function(target) {
+    Game_Action.prototype.apply = function (target) {
         original_actionApply.call(this, target);
         var item = this.item();
         item._customAction && item._customAction.call(this, target);
@@ -490,9 +490,9 @@ function eval_fn_expr(expr, args) {
 })();
 
 // Ding!
-(function() {
+(function () {
     var original_actionApply = Game_Action.prototype.apply;
-    Game_Action.prototype.apply = function(target) {
+    Game_Action.prototype.apply = function (target) {
         original_actionApply.call(this, target);
         target.result().blocked =
             target.result().isHit() &&
@@ -505,7 +505,7 @@ function eval_fn_expr(expr, args) {
 
     const ding = { name: "Ding", volume: 90, pitch: 100 };
     var original_displayDamage = Window_BattleLog.prototype.displayDamage;
-    Window_BattleLog.prototype.displayDamage = function(target) {
+    Window_BattleLog.prototype.displayDamage = function (target) {
 
         if (target.result().blocked) {
             AudioManager.playSe(ding);
@@ -516,8 +516,8 @@ function eval_fn_expr(expr, args) {
 })();
 
 // Display target in log
-(function() {
-    Window_BattleLog.prototype.startAction = function(subject, action, targets) {
+(function () {
+    Window_BattleLog.prototype.startAction = function (subject, action, targets) {
         var item = action.item();
         this.push('clear');
         this.push('performActionStart', subject, action);
@@ -528,7 +528,7 @@ function eval_fn_expr(expr, args) {
     };
 
     var original_battleLogDisplayAction = Window_BattleLog.prototype.displayAction;
-    Window_BattleLog.prototype.displayAction = function(subject, item, targets) {
+    Window_BattleLog.prototype.displayAction = function (subject, item, targets) {
         if (DataManager.isSkill(item)) {
             var target = targets.map(t => t.name()).join(", ");
             if (item.message1) {
@@ -540,5 +540,21 @@ function eval_fn_expr(expr, args) {
         } else {
             original_battleLogDisplayAction.call(this, subject, item);
         }
+    };
+})();
+
+// Tapocher lés fenêtres
+(function () {
+
+    Window_Base.prototype.drawActorSimpleStatus = function (actor, x, y, width) {
+        var lineHeight = this.lineHeight();
+        var availWidth = width - this.textPadding();
+        var colWidth = (availWidth - this.standardPadding()) / 2;
+        var x2 = x + this.standardPadding() + colWidth;
+        this.drawActorName(actor, x, y, availWidth);
+        this.drawActorClass(actor, x, y + lineHeight * 1, colWidth);
+        this.drawActorIcons(actor, x2, y + lineHeight * 1, colWidth);
+        this.drawActorHp(actor, x, y + lineHeight * 2, colWidth);
+        this.drawActorMp(actor, x2, y + lineHeight * 2, colWidth);
     };
 })();
