@@ -210,6 +210,7 @@ function eval_fn_expr(expr, args) {
     var targetsRegexp = /\<<aaa_targets ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
+    var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -243,6 +244,8 @@ function eval_fn_expr(expr, args) {
                     enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList, ratingZero");
                     const setupMatch = note.match(setupRegexp);
                     enemy._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1], "enemyId, x, y");
+                    const deathMatch = note.match(deathRegexp);
+                    enemy._customDeath = deathMatch && deathMatch[1] && eval_fn_expr(deathMatch[1]);
                 }
         }
     };
@@ -261,7 +264,7 @@ function eval_fn_expr(expr, args) {
         },
         grd: {
             get: function () {
-                return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1);
+                return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1) * 100;
             }
         },
         def: {
@@ -434,15 +437,22 @@ function eval_fn_expr(expr, args) {
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;
     Scene_Battle.prototype.start = function () {
-        original_sceneBattleStart.call(this);
         window.$btl = {};
+        original_sceneBattleStart.call(this);
     };
 
-    var original_enemySetup = Game_Enemy.prototype.setup;
-    Game_Enemy.prototype.setup = function (enemyId, x, y) {
-        original_enemySetup.call(this, enemyId, x, y);
+    var original_enemySetup = Game_Enemy.prototype.onBattleStart;
+    Game_Enemy.prototype.onBattleStart = function () {
+        original_enemySetup.call(this);
         var enemy = this.enemy();
-        enemy._customSetup && enemy._customSetup.call(this, enemyId, x, y);
+        enemy._customSetup && enemy._customSetup.call(this);
+    }
+
+    var original_enemyCollapse = Game_Enemy.prototype.performCollapse;
+    Game_Enemy.prototype.performCollapse = function () {
+        original_enemyCollapse.call(this);
+        var enemy = this.enemy();
+        enemy._customDeath && enemy._customDeath.call(this);
     }
 
     var original_selectAction = Game_Enemy.prototype.selectAction;
@@ -546,15 +556,86 @@ function eval_fn_expr(expr, args) {
 // Tapocher lés fenêtres
 (function () {
 
+    Window_MenuStatus.prototype.drawItemStatus = function (index) {
+        var actor = $gameParty.members()[index];
+        var rect = this.itemRect(index);
+        var x = rect.x + 162;
+        var y = rect.y + rect.height / 2 - this.lineHeight() * 2;
+        var width = rect.width - x - this.textPadding();
+        this.drawActorSimpleStatus(actor, x, y, width);
+    };
+
+    Window_SkillStatus.prototype.refresh = function () {
+        this.contents.clear();
+        if (this._actor) {
+            var w = this.width - this.padding * 2;
+            var h = this.height - this.padding * 2;
+            var y = h / 2 - this.lineHeight() * 2;
+            var width = w - 162 - this.textPadding();
+            this.drawActorFace(this._actor, 0, 0, 144, h);
+            this.drawActorSimpleStatus(this._actor, 162, y, width);
+        }
+    };
+
     Window_Base.prototype.drawActorSimpleStatus = function (actor, x, y, width) {
         var lineHeight = this.lineHeight();
         var availWidth = width - this.textPadding();
         var colWidth = (availWidth - this.standardPadding()) / 2;
         var x2 = x + this.standardPadding() + colWidth;
         this.drawActorName(actor, x, y, availWidth);
-        this.drawActorClass(actor, x, y + lineHeight * 1, colWidth);
-        this.drawActorIcons(actor, x2, y + lineHeight * 1, colWidth);
-        this.drawActorHp(actor, x, y + lineHeight * 2, colWidth);
-        this.drawActorMp(actor, x2, y + lineHeight * 2, colWidth);
+        this.drawActorClass(actor, x, y + lineHeight * 1, availWidth);
+        this.drawActorIcons(actor, x, y + lineHeight * 2, colWidth);
+        this.drawActorHp(actor, x, y + lineHeight * 3, colWidth);
+        this.drawActorMp(actor, x2, y + lineHeight * 3, colWidth);
+    };
+
+    Window_Status.prototype.maxEquipmentLines = function () {
+        return 5;
+    };
+
+    var description = [
+        "Calcul des dégâts: ",
+        "  a.atk * a.luk - b.def * b.luk",
+        "où luk est:",
+        "  uniform(1, (mardité + 5) / 100)",
+        "Agileté détermine l'ordre des tours"];
+
+    Window_Status.prototype.refresh = function () {
+        this.contents.clear();
+        if (!this._actor) {
+            return
+        }
+        var lineHeight = this.lineHeight();
+
+        this.drawActorFace(this._actor, 0, lineHeight * 0.5);
+        var x1 = Window_Base._faceWidth + this.standardPadding();
+        var colWidth = (this.contentsWidth() - x1 - this.standardPadding()) / 2;
+        var x2 = x1 + colWidth + this.standardPadding();
+        this.drawActorSimpleStatus(this._actor, x1, lineHeight * 0.5, colWidth);
+        this.drawEquipments(x2, lineHeight * 0);
+
+        this.drawHorzLine(lineHeight * 5);
+
+        this.drawParameters(this.standardPadding(), lineHeight * 6);
+
+        this.changeTextColor(this.systemColor());
+        for (var i = 0; i < description.length; i++) {
+            var y2 = lineHeight * (i + 6);
+            this.drawText(description[i], this.standardPadding() + 160 + 60 + this.standardPadding(), y2);
+        }
+
+        this.drawHorzLine(lineHeight * 12);
+
+        this.drawProfile(6, lineHeight * 13);
+    };
+
+    Window_EquipStatus.prototype.refresh = function () {
+        this.contents.clear();
+        if (this._actor) {
+            this.drawActorName(this._actor, this.textPadding(), 0, 270);
+            for (var i = 0; i < 6; i++) {
+                this.drawItem(0, this.lineHeight() * (1 + i), 2 + i);
+            }
+        }
     };
 })();

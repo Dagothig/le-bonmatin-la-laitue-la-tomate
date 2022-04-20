@@ -7,5 +7,6 @@ var $plugins =
 {"name":"GALV_DisableDash","status":true,"description":"Disable dash in your game.","parameters":{"Disable Option":"true"}},
 {"name":"AnimatedSplashScreens","status":true,"description":"Set up animated splash screens that show before the title screen.","parameters":{}},
 {"name":"TitleCommandPosition","status":true,"description":"Changes the position of the title command window.","parameters":{"Offset X":"-125","Offset Y":"15","Width":"240","Background":"2"}},
+{"name":"AltMenuScreen","status":false,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"Utilities","status":true,"description":"","parameters":{}}
 ];

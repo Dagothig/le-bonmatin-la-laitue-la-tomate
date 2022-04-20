@@ -4,6 +4,28 @@
 
 [Narrateur]
 
+_NarrateurLettreTable
+> Ah il y a une lettre sur la table:
+
+_NarrateurLettrePretre
+> Bonjour Bonjourette, \
+> Malheureusement avec l'hiver je ne peux pas quitter le \
+> Temple mais j'ai très hâte de pouvoir te revoir ma \
+> petite.
+
+_NarrateurLettreSigneePretre
+> C'est signé "Le Prêtre"
+
+_NarrateurFeuilleterPhotosCachees
+> Ah non en fait si vous feuilletez un peu, vous \
+> remarquez qu'il ya des photos cachées entre les pages.
+
+_NarrateurCoquinBonjoursSuggestifs
+> Oh c'est coquin. \
+> Il s'agit d'images suggestives de Bonjours. \
+> \
+> Ce n'est pas clair comment ça fonctionne.
+
 _NarrateurBarilCasque
 > Ah dans le baril il y a... \
 > Un casque? \
@@ -112,6 +134,29 @@ _NarrateurDuCharbonCa
 > Vous n'êtes pas géologue. \
 > Mais à tout les coups c'est du charbon ça.
 
+_NarrateurSacsFarine
+> Des sacs de farine.
+
+_NarrateurInvestigationSacsSucre
+> Ah non, après avoir fait une investigation détaillée, \
+> vous réalisez que c'est des sacs de sucre. \
+> \
+> Woo.
+
+_NarrateurVieuxMaterielUsage
+> Il n'y a que du vieux matériel usagé.
+
+_NarrateurVictuailles
+> Des victuailles! \
+> C'est comestible!
+
+_NarrateurPasAbuserVictuailles
+> Non non, faudrait pas abuser des victuailles.
+
+_NarrateurLampeHuileEteinte
+> Une lampe a huile, mais éteinte. \
+> Pas de génie inclus.
+
 [Personne Véritable]
 
 _ProtagonisteOuchFeu
@@ -126,6 +171,15 @@ _ProtagonisteHelloQuestion
 _ProtagonisteCaCestDuSommeil
 > Ah oui, ça c'est du sommeil tellement \
 > profond que y'a pas de contenu à écrire.
+
+_ProtagonisteFillePretreReelle
+> Ah merde, donc la fille du prêtre est \
+> réelle?
+
+_ProtagonisteCaAideSonTiCoeur
+> C'est vrai que maintenant que tu le dis... \
+> \
+> Ça aide mon 'ti coeur.
 
 [Wwwelchior]
 
@@ -190,6 +244,11 @@ _ProtagonisteCaCestDuSommeil
 
 (impatient)
 > On y va?
+
+_WwwelchiorFilleBonjourette
+> Non mais clairement sa fille peut pas \
+> l'aimer s'il lui a donné un nom comme \
+> "Bonjourette".
 
 [Gabspart]
 (vaguement excité d'avoir trouvé la quête dans le wiki)
