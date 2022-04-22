@@ -69,13 +69,19 @@ function aaa_anim(target, anim, delay) {
         case "wiggle":
             sprite.pushMove([WIGGLE, -5, -2, 5, 0, 30]);
             break;
+        case "reset":
+            sprite._aaaX = 0;
+            sprite._aaaY = 0;
+            sprite.pushMove([PARABOLA, -5, 5, -10, 12]);
+            sprite.pushMove([PARABOLA, 0, 0, -6, 12]);
+            break;
         case "step_back":
             sprite._aaaX -= 30;
             sprite._aaaY += 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
         case "step_forward":
-            sprite._aaaX += 30;
+            sprite._aaaX += 50;
             sprite._aaaY += 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
@@ -102,10 +108,19 @@ function aaa_anim(target, anim, delay) {
     }
 }
 
+function override(obj) {
+    for (let i = 1; i < arguments.length; i++) {
+        let fn = arguments[i];
+        let original = obj[fn.name];
+        obj[fn.name] = function(a, b, c, d, e, f) {
+            return fn.call(this, original, a, b, c, d, e, f);
+        }
+    }
+}
+
 (function () {
-    var original_var_initialize = Game_Variables.prototype.initialize;
-    Game_Variables.prototype.initialize = function () {
-        original_var_initialize.call(this);
+    override(Game_Variables.prototype, function initialize(initialize) {
+        initialize.call(this);
         this.byKey = {};
         var self = this;
         for (var i = 0; i < $dataSystem.variables.length; i++) {
@@ -122,11 +137,10 @@ function aaa_anim(target, anim, delay) {
                 })
             }
         }
-    };
+    });
 
-    var original_sw_intialize = Game_Switches.prototype.initialize;
-    Game_Switches.prototype.initialize = function () {
-        original_sw_intialize.call(this);
+    override(Game_Switches.prototype, function initialize(initialize) {
+        initialize.call(this);
         this.byKey = {};
         var self = this;
         for (var i = 0; i < $dataSystem.switches.length; i++) {
@@ -143,7 +157,7 @@ function aaa_anim(target, anim, delay) {
                 });
             }
         }
-    };
+    });
 
     Object.defineProperties(window, {
         $gvars: {
@@ -158,36 +172,33 @@ function aaa_anim(target, anim, delay) {
         }
     });
 
-    var original_makeSaveContents = DataManager.makeSaveContents;
-    DataManager.makeSaveContents = function () {
-        var contents = original_makeSaveContents.call(this);
-        contents.mapSwitches = $gameMapSwitches;
-        return contents;
-    };
+    override(DataManager,
+        function makeSaveContents(makeSaveContents) {
+            var contents = makeSaveContents.call(this);
+            contents.mapSwitches = $gameMapSwitches;
+            return contents;
+        },
+        function extractSaveContents(extractSaveContents, contents) {
+            extractSaveContents.call(this, contents);
+            $gameMapSwitches = contents.mapSwitches || {};
+        });
 
-    var original_extractSaveContents = DataManager.extractSaveContents;
-    DataManager.extractSaveContents = function (contents) {
-        original_extractSaveContents.call(this);
-        $gameMapSwitches = contents.mapSwitches || {};
-    }
+    override(Game_Event.prototype,
+        function setupPage(setupPage) {
+            this._hasRun = false;
+            setupPage.call(this);
 
-    var original_setupPage = Game_Event.prototype.setupPage;
-    Game_Event.prototype.setupPage = function () {
-        this._hasRun = false;
-        original_setupPage.call(this);
-    }
-
-    var original_meetsConditions = Game_Event.prototype.meetsConditions;
-    Game_Event.prototype.meetsConditions = function (page) {
-        var cmd = page.list && page.list[0] && page.list[0];
-        if (cmd && cmd.code === 356) { // Plugin command lol
-            if (cmd.parameters[0] === "aaa_condition") {
-                if (!eval(page.list[1].parameters[0]))
-                    return false;
+        },
+        function meetsConditions(meetsConditions, page) {
+            var cmd = page.list && page.list[0] && page.list[0];
+            if (cmd && cmd.code === 356) { // Plugin command lol
+                if (cmd.parameters[0] === "aaa_condition") {
+                    if (!eval(page.list[1].parameters[0]))
+                        return false;
+                }
             }
-        }
-        return original_meetsConditions.apply(this, arguments);
-    };
+            return meetsConditions.call(this, page);
+        });
 })();
 
 function eval_fn_expr(expr, args) {
@@ -208,9 +219,12 @@ function eval_fn_expr(expr, args) {
 (function () {
     var aaaExtend = /\<<aaa_extend (.*)\>>/;
     var targetsRegexp = /\<<aaa_targets ([\s\S]*?)\>>/;
+    var targettedRegexp = /\<<aaa_targetted ([\s\S]*?)\>>/;
+    var applyRegexp = /\<<aaa_apply ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
+    var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -219,9 +233,14 @@ function eval_fn_expr(expr, args) {
                 for (const state of object) {
                     if (!state)
                         continue;
-                    const extStr = (state.note.match(aaaExtend) || [])[1];
+                    const note = state && state.note || "";
+                    const extStr = (note.match(aaaExtend) || [])[1];
                     const ext = JSON.parse(extStr || "{}");
                     Object.assign(state, ext);
+                    const targettedMatch = note.match(targettedRegexp);
+                    state._customTargetted = targettedMatch && targettedMatch[1] && eval_fn_expr(targettedMatch[1], "target");
+                    const applyMatch = note.match(applyRegexp);
+                    state._customApply = applyMatch && applyMatch[1] && eval_fn_expr(applyMatch[1], "action, target");
                 }
                 break;
             case $dataSkills:
@@ -242,6 +261,8 @@ function eval_fn_expr(expr, args) {
                     const note = enemy && enemy.note || "";
                     const actionMatch = note.match(actionRegexp);
                     enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList, ratingZero");
+                    const restrictedMatch = note.match(restrictedRegexp);
+                    enemy._customOnRestrict = restrictedMatch && restrictedMatch[1] && eval_fn_expr(restrictedMatch[1]);
                     const setupMatch = note.match(setupRegexp);
                     enemy._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1], "enemyId, x, y");
                     const deathMatch = note.match(deathRegexp);
@@ -405,6 +426,7 @@ function eval_fn_expr(expr, args) {
     }
 
     Sprite_Battler.prototype.startWait = function (duration) {
+        this._moveType = null;
         this._movementDuration = duration;
     };
 
@@ -483,6 +505,15 @@ function eval_fn_expr(expr, args) {
             }
         }
     }
+
+    override(Game_Enemy.prototype,
+        function onRestrict(onRestrict) {
+            onRestrict.call(this);
+            if (this.isAlive()) {
+                var enemy = this.enemy();
+                enemy._customOnRestrict && enemy._customOnRestrict.call(this);
+            }
+        });
 
     var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
     Game_Action.prototype.targetsForOpponents = function () {
@@ -638,4 +669,50 @@ function eval_fn_expr(expr, args) {
             }
         }
     };
+})();
+
+// State ameliorations
+(function () {
+
+    override(BattleManager,
+        function applySubstitute(applySubstitute, target) {
+            let newTarget;
+            for (const state of target.states()) {
+                newTarget = state._customTargetted && state._customTargetted(target);
+                if (newTarget && newTarget.isAlive() && newTarget.canMove()) {
+                    this._logWindow.displaySubstitute(newTarget, target);
+                    return newTarget;
+                }
+            }
+            return applySubstitute.call(this, target);
+        });
+
+    override(Game_Action.prototype,
+        function itemEffectAddAttackState(itemEffectAddAttackState, target, effect) {
+            this.subject().attackStates().forEach(function(stateId) {
+                var chance = effect.value1;
+                chance *= target.stateRate(stateId);
+                chance *= this.subject().attackStatesRate(stateId);
+                chance *= this.lukEffectRate(target);
+                if (Math.random() < chance) {
+                    var state = $dataStates[effect.dataId];
+                    state._customApply && state._customApply(this, target);
+                    target.addState(stateId);
+                    this.makeSuccess(target);
+                }
+            }.bind(this), target);
+        },
+        function itemEffectAddNormalState(itemEffectAddNormalState, target, effect) {
+            var chance = effect.value1;
+            if (!this.isCertainHit()) {
+                chance *= target.stateRate(effect.dataId);
+                chance *= this.lukEffectRate(target);
+            }
+            if (Math.random() < chance) {
+                var state = $dataStates[effect.dataId];
+                state._customApply && state._customApply(this, target);
+                target.addState(effect.dataId);
+                this.makeSuccess(target);
+            }
+        });
 })();
