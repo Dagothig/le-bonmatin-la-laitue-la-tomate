@@ -8,7 +8,7 @@ _GabspartTrouveCommentPasserPorte
 > qu'il renoue ses liens avec elle et qu'il -
 
 _GabspartPasContent
-> Anger
+(onomatopée de pascontentitude)
 
 _GabspartWwwelchior
 (wwwelchior is at it again)
