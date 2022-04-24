@@ -2,7 +2,7 @@
 
 ## Backlog à record
 
-[Narrateur]
+### Narrateur
 
 _NarrateurLettreTable
 > Ah il y a une lettre sur la table:
@@ -157,7 +157,10 @@ _NarrateurLampeHuileEteinte
 > Une lampe a huile, mais éteinte. \
 > Pas de génie inclus.
 
-[Personne Véritable]
+_NarrateurMitainesFour
+> Des... Mitaines de Four?
+
+### Personne Véritable
 
 _ProtagonisteOuchFeu
 > Ouch! \
@@ -181,146 +184,108 @@ _ProtagonisteCaAideSonTiCoeur
 > \
 > Ça aide mon 'ti coeur.
 
-[Wwwelchior]
+_ProtagonisteIciPourPrendreBonjour
+> Ah oui c'est vrai! \
+> \
+> Je suis ici pour prendre le Bonjour!
 
-(énervé / impatient)
-> Vous êtes sûr que vous pouvez pas me faire \
-> rentrer *maintenant*?
+_ProtagonisteAVuLesLivres
+> On a vu les piles de livres! \
+> Vous n'êtes qu'une bande de charlatants et \
+> vous ne gardez le Bonjour que pour votre \
+> avarice!
 
-(onomatopée de pascontentitude)
-> . . .
+_ProtagonisteHeilleNotrePhrase
+> Heille c'est notre phrase ça!
 
-(candide)
-> Oh allo! \
->  \
-> ... \
-> Votre face me dit quelque chose.
+_ProtagonisteCetaitDeLAutodefense
+> Non mais c'était que de l'autodéfense! \
+> Le fait qu'on a tué tout le monde dans la \
+> bâtisse pour se rendre ici c'était que de \
+> l'autodéfense!
 
-(surpris / content)
-> En fait vous avez les traits d'un  \
-> Protagoniste! \
-> Ça doit être vous que le Repositoire des  \
-> Textes Sacrés mentionnait!
+_ProtagonisteAUTODEFENSE
+> AUTO \
+> \
+> DÉFENSE
 
-(sarcastique)
-> Aaaah. \
-> Non vous devez comprendre, je ne suis pas  \
-> le vrai Murder Hobo.
+_ProtagonisteGererSituation
+> Non non, je suis sûr que je peux gérer la \
+> situation grâce à mes talents de \
+> diplomatie!
 
-(apologétique)
-> De toute façon il n'y a eu aucune mention \
-> de prophétie chamboulée alors ça veut dire \
-> que le prêtre n'était pas important.
+_ProtagonisteBonMessieursBonjour
+> Bons messieurs! Désolé de vous déranger. \
+> On est un peu perdus, je suis en quête pour \
+> le Bonjour!
 
-(confiant)
-> Non c'est correct Gabspart! Regardes j'ai  \
-> trouvé la clé sur lui.
+_ProtagonisteVousMeNiaisez
+> Vous me niaisez là...
 
-(apologétique)
-> Peut-être qu'elle n'aura rien de  \
-> nouveau à dire sur le sujet! Même qu'on l'a \
-> jamais rencontrée alors c'est pas  \
-> impossible qu'elle n'existe même pas - 
+_ProtagonisteSaitQueCEstPasOuvert
+> Je sais que c'est pas ouvert aujourd'hui,\
+> mais l'équilibre cosmique ne peut pas \
+> attendre.
 
-(vindiqué)
-> Oui! \
-> J'ai tout fait! \
-> J'ai trouvé la solution à la porte ET le \
-> Protagoniste!
+_ProtagonisteNonMaisMais
+> Non mais... mais...
 
-(tac-au-tac)
-> Vous êtes Protagoniste? Bien voila, on est  \
-> vos Personnages Secondaires.
+_ProtagonistePasFachuPlusDeBonjours
+> Bon, je ne suis pas fâché qu'ils ne nous \
+> disent plus bonjour, mais j'ai comme le \
+> mauvais pressentiment qu'on n'est pas les \
+> Gentils (tm) ici...
 
-(un peu agacé)
-> Aucune idée. Il m'a dit que c'était  \
-> "Vraiment important" que je trouve la  \
-> solution tout seul, et ensuite il est juste \
-> parti.
+_ProtagonistePasRassure
+> Je ne sais pas pourquoi mais quand c'est \
+> toi qui le dit ça ne me rassure pas du \
+> tout.
 
-(un peu agacé)
-> Quelque chose à propos d'aller chercher des \
-> "cadeaux".
+### Premiere
 
-(impatient)
-> On y va?
+_PremiereBruitEnHaut
+> Ah c'est curieux, pourquoi y'a du bruit en \
+> haut?
 
-_WwwelchiorFilleBonjourette
-> Non mais clairement sa fille peut pas \
-> l'aimer s'il lui a donné un nom comme \
-> "Bonjourette".
+_PremiereQueFouttezVous
+> Mais qu'est-ce que vous pensez que vous \
+> faites-là!
 
-[Gabspart]
-(vaguement excité d'avoir trouvé la quête dans le wiki)
-> Wwwelchior, j'ai trouvé comment passer la  \
-> porte. Le Repositoire des Textes Sacrés dit \
-> qu'il faut trouver la fille du prêtre, pour \
-> qu'il renoue ses liens avec elle et qu'il -
+_PremierePauvresFous
+> Pauvres fous! Si vous prenez le Bonjour, \
+> des choses terribles se produiront!
 
-> Anger
+_PremierePasIntimide
+> Ha. Si vous pensez que ça m'intimide...
 
-(wwwelchior is at it again)
-> Wwwelchior.
+_PremiereUnMoine
+> Un moine! Je veux un moine!
 
-(ci-git, le wiki)
-> Mais... \
->  \
-> La fille du prêtre...
+_PremiereToutLesMoines
+> Non mais pas littéralement! \
+> Je veux tout les moines!
 
-(content)
-> Hey t'as trouvé le Protagoniste!
+_PremiereSontOuLesAutres
+> Ils sont où les autres? \
+> \
+> Non laissez faire, je sais que c'est demain \
+> qu'on ouvre.
 
-(sas)
-> *Une* solution peut-être. \
-> *La* solution je suis pas convaincu.
+_PremiereVousPete
+> On vous pète!
 
-(manque de fin de phrases)
-> Comment dire... \
-> Huh... \
-> On - \
-> Mmmmh.
+_PremiereMemePasLeTempsDeMurPorteur
+> Nooooooooon! \
+> Je n'ai même pas eu le temps de devenir un \
+> mur porteur!
 
-(ah merde faut faire de l'exposition)
-> On ne vient pas d'ici. J'irai pas en détail \
-> comme les tripes de ce pauvre prêtre par  \
-> terre, mais on est coincé ici.
+### Pretre
 
-(ah merde faut faire de l'exposition)
-> "Ici" comme dans ce monde.  \
-> On vient du Brun. C'est huh... Un autre \
-> Plan d'Existence.
-
-(ah merde faut faire de l'exposition)
-> C'est pas trop clair comment on s'est  \
-> retrouvé ici, on est en train de chercher à \
-> comprendre, mais le Repositoire des Textes \
-> Sacrés donne pas tout le backstory.
-
-(explicatif)
-> Heh, pas besoin de savoir c'est quoi.  \
-> On l'utilise seulement si vous devenez  \
-> coincé.
-
-(explicatif)
-> Mais en tout les cas on va vous aider à  \
-> trouver votre Bonjour - J'pense bien que \
-> le pêcheur vous a donné la quête? Après ça  \
-> on pourra regarder pour le Bon Matin.
-
-(agacé)
-> Il est où Balthathig?
-
-(agacé)
-> Bon, on l'attendra pas alors.
-
-(it turns out que Balthathig fait dla shit)
-> Ah!
-
-(énnervé par le protagoniste)
-> "Chapitre 1: \
-> Le Protagoniste obtient le Bonjour" \
->  \
-> Vous voyez?
+_PretreQuEstCeQueVousFaitesIci
+> Bonjour. Mais qu'est-ce que vous faites \
+> ici? Le Temple est actuellement fermé. \
+> Si vous revenez demain midi, nous \
+> seront ouvert pour le Bonjour.
 
 ## Rouler sans RPG Maker MV
 

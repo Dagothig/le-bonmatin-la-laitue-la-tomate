@@ -72,8 +72,8 @@ function aaa_anim(target, anim, delay) {
         case "reset":
             sprite._aaaX = 0;
             sprite._aaaY = 0;
-            sprite.pushMove([PARABOLA, -5, 5, -10, 12]);
-            sprite.pushMove([PARABOLA, 0, 0, -6, 12]);
+            sprite.pushMove([PARABOLA, -3, 3, -6, 12]);
+            sprite.pushMove([PARABOLA, 0, 0, -4, 12]);
             break;
         case "step_back":
             sprite._aaaX -= 30;
