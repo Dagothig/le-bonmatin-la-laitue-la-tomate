@@ -4,161 +4,24 @@
 
 ### Narrateur
 
-_NarrateurLettreTable
-> Ah il y a une lettre sur la table:
-
-_NarrateurLettrePretre
-> Bonjour Bonjourette, \
-> Malheureusement avec l'hiver je ne peux pas quitter le \
-> Temple mais j'ai très hâte de pouvoir te revoir ma \
-> petite.
-
-_NarrateurLettreSigneePretre
-> C'est signé "Le Prêtre"
-
-_NarrateurFeuilleterPhotosCachees
-> Ah non en fait si vous feuilletez un peu, vous \
-> remarquez qu'il ya des photos cachées entre les pages.
-
-_NarrateurCoquinBonjoursSuggestifs
-> Oh c'est coquin. \
-> Il s'agit d'images suggestives de Bonjours. \
-> \
-> Ce n'est pas clair comment ça fonctionne.
-
-_NarrateurBarilCasque
-> Ah dans le baril il y a... \
-> Un casque? \
-> C'est hum, c'est pratique, mais c'est pas clair  \
-> pourquoi c'est dans ce baril.
-
-_NarrateurObtenuBonjour
-> Vous avez obtenu le Bonjour!
-
-_NarrateurCaisseRavagee
-> Bien que la caisse ravagée par le temps et l'humidité, \
-> il se rend à votre nez une belle odeur de rouille.
-
-_NarrateurPierreTravailleeImplementPointu
-> La pierre ici a été travaillée à coup d'implément \
-> pointu. \
-> Vous n'êtes toujours pas géologue, mais il semble qu'il \
-> y avait un minerai de fer ici.
-
-_NarrateurBouteillesColorees
-> Une petite collection de bouteilles colorées. \
-> \
-> \
-> Voila.
-
-_NarrateurEnclume
-> Ça paraît pas tant, mais c'est une enclume. \
-> Je vous le jure.
-
-_NarrateurPlaqueBonjour
->       BONJOUR ET BIENVENUE AU TEMPLE DU BONJOUR \
-> \
-> POUR TOUT VOS BESOINS DE BONJOURITUDE, VEUILLEZ VOUS \
->                  RÉFÉRER AU COMPTOIR
-
-_NarrateurLecturesPremiere
-> Ah les lectures de la Première - \
-
-_NarrateurBONJOURETVOUS
->                   LE BONJOUR ET VOUS \
-> Le début d'une grande aventure du milieu de la journée
-
-_Narrateur10ETAPESFACILES
->         10 ÉTAPES FACILES POUR DEVENIR RICHE \
->           Vous ne croirez pas la troisième!
-
-_NarrateurResteNonDignifie
-> Le reste n'est pas plus dignifié.
-
-_NarrateurPileParchemins
-> Une belle pile de parchemins.
-
-_NarrateurBonjours
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR \
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR \
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR \
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR
-
-_NarrateurDuBeauPapier
-> C'est hum, c'est du beau papier ça.
-
-_NarrateurCartesPostalesBonjour
-> Des cartes postales. \
-> L'image c'est un gros BONJOUR mal écrit à la main. \
-> Il y a une petite étiquette de prix, mais c'est plus \
-> cher qu'une épingle à cheveux.
-
-_NarrateurCaisseDuTemple
-> La caisse du Temple. C'est beaucoup d'or pour un lieu  \
-> religieux. \
+_NarrateurBoiteSansInteret
+> Un boîte sans intérêt. \
 >  \
-> En fait, pas tant.
-
-_NarrateurHorlogeBonjour
-> En investiguant l'horloge vous réalisez qu'il n'y a pas \
-> d'aiguilles en fait. \
-> Il y a juste deux traits peints qui pointe vers midi.
-
-_NarrateurLivresCopies
-> Les livres sont tous des copies -
-
-_NarrateurStatuePremiereBonjour
->                   PREMIERE DU BONJOUR \
 >  \
-> La douce lueur de son visage est comme quand le regard \
->              se fixe sur le Soleil à midi
+> Pour l'instant.
 
-_NarrateurChandailBonjour
-> Un chandail écrit BONJOUR dessus... \
-> \
-> Ça fait un peu désespéré.
+_NarrateurBraises
+> Mmmh. Des braises caractéristiques d'une poêle en fonte \
+> sur laquelle on aurait cuit des oeufs brouillés.
 
-_NarrateurElixirChair
-> Un élixir de chair! \
-> L'inventeur clame que ça goûte 5pt de poulet. \
-> Va falloir l'essayer pour comprendre ce que ça  \
-> implique.
+_NarrateurBoisCoupe
+> Bien que vous passez une temps fou à regarder de près\
+> ce bois coupé, vous ne trouvez toujours rien de \
+> pertinent.
 
-_NarrateurBoiteChandailsBonjours
-> La boîte est remplie de chandails avec BONJOUR d'écrit \
-> dessus. Bien que c'est pareil à  celui qui se trouve  \
-> dans le coffre juste à côté, vous décidez de laisser la \
-> boîte tranquille.
-
-_NarrateurDuCharbonCa
-> Vous n'êtes pas géologue. \
-> Mais à tout les coups c'est du charbon ça.
-
-_NarrateurSacsFarine
-> Des sacs de farine.
-
-_NarrateurInvestigationSacsSucre
-> Ah non, après avoir fait une investigation détaillée, \
-> vous réalisez que c'est des sacs de sucre. \
-> \
-> Woo.
-
-_NarrateurVieuxMaterielUsage
-> Il n'y a que du vieux matériel usagé.
-
-_NarrateurVictuailles
-> Des victuailles! \
-> C'est comestible!
-
-_NarrateurPasAbuserVictuailles
-> Non non, faudrait pas abuser des victuailles.
-
-_NarrateurLampeHuileEteinte
-> Une lampe a huile, mais éteinte. \
-> Pas de génie inclus.
-
-_NarrateurMitainesFour
-> Des... Mitaines de Four?
+_NarrateurBoisCoupe2
+> Non, même après un autre passage ça reste du bois \
+> coupé.
 
 ### Personne Véritable
 
