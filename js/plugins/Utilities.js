@@ -222,6 +222,7 @@ function eval_fn_expr(expr, args) {
     var targettedRegexp = /\<<aaa_targetted ([\s\S]*?)\>>/;
     var applyRegexp = /\<<aaa_apply ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
+    var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
@@ -252,6 +253,8 @@ function eval_fn_expr(expr, args) {
                     skill._customTargets = targetMatch && targetMatch[1] && eval_fn_expr(targetMatch[1]);
                     const actionMatch = note.match(actionRegexp);
                     skill._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "target");
+                    const performActionStartMatch = note.match(performActionStartRegexp);
+                    skill._customPerformActionStart = performActionStartMatch && performActionStartMatch[1] && eval_fn_expr(performActionStartMatch[1], "battler");
                 }
                 break;
             case $dataEnemies:
@@ -713,6 +716,15 @@ function eval_fn_expr(expr, args) {
                 state._customApply && state._customApply(this, target);
                 target.addState(effect.dataId);
                 this.makeSuccess(target);
+            }
+        });
+
+    override(Game_Battler.prototype,
+        function performActionStart(performActionStart, action) {
+            performActionStart.call(this, action);
+            var item = action.item();
+            if (item._customPerformActionStart) {
+                item._customPerformActionStart.call(action, this);
             }
         });
 })();
