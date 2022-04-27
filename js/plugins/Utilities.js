@@ -221,6 +221,7 @@ function eval_fn_expr(expr, args) {
     var targetsRegexp = /\<<aaa_targets ([\s\S]*?)\>>/;
     var targettedRegexp = /\<<aaa_targetted ([\s\S]*?)\>>/;
     var applyRegexp = /\<<aaa_apply ([\s\S]*?)\>>/;
+    var removedRegexp = /\<<aaa_removed ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
@@ -242,6 +243,8 @@ function eval_fn_expr(expr, args) {
                     state._customTargetted = targettedMatch && targettedMatch[1] && eval_fn_expr(targettedMatch[1], "target");
                     const applyMatch = note.match(applyRegexp);
                     state._customApply = applyMatch && applyMatch[1] && eval_fn_expr(applyMatch[1], "action, target");
+                    const removedMatch = note.match(removedRegexp);
+                    state._customRemoved = removedMatch && removedMatch[1] && eval_fn_expr(removedMatch[1], "affected");
                 }
                 break;
             case $dataSkills:
@@ -720,11 +723,33 @@ function eval_fn_expr(expr, args) {
         });
 
     override(Game_Battler.prototype,
+        function removeState(removeState, stateId) {
+            if (this.isStateAffected(stateId)) {
+                var state = $dataStates[stateId];
+                state._customRemoved && state._customRemoved(this);
+            }
+            removeState.call(this, stateId);
+        },
         function performActionStart(performActionStart, action) {
             performActionStart.call(this, action);
             var item = action.item();
             if (item._customPerformActionStart) {
                 item._customPerformActionStart.call(action, this);
+            }
+        },
+        function chargeTpByDamage() {});
+
+    var defVol = {
+        bgmVolume: 60
+    };
+
+    override(ConfigManager,
+        function readVolume(readVolume, config, name) {
+            var value = config[name];
+            if (value !== undefined) {
+                return Number(value).clamp(0, 100);
+            } else {
+                return name in defVol ? defVol[name] : 100;
             }
         });
 })();
