@@ -172,7 +172,7 @@ function Scene_SplashScreens() {
             return;
         }
 
-        if (Input.isTriggered('ok')) {
+        if (Input.isTriggered('ok') || TouchInput.isTriggered('pointerdown')) {
             this._skip = true;
         };
 

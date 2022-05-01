@@ -740,8 +740,27 @@ function eval_fn_expr(expr, args) {
         function chargeTpByDamage() {});
 
     var defVol = {
-        bgmVolume: 60
+        generalVolume: 100,
+        bgmVolume: 60,
+        bgsVolume: 80,
+        meVolume: 80,
+        seVolume: 80,
+        speechVolume: 100,
     };
+
+    override(AudioManager,
+        function updateSeParameters(updateSeParameters, buffer, se) {
+            var configVolume = se.name.startsWith("_") ? this._speechVolume : this._seVolume;
+            this.updateBufferParameters(buffer, configVolume, se);
+        },
+        function audioFileExt() {
+            return ".ogg";
+        });
+
+    override(WebAudio,
+        function canPlayM4a() {
+            return false;
+        });
 
     override(ConfigManager,
         function readVolume(readVolume, config, name) {
@@ -751,5 +770,50 @@ function eval_fn_expr(expr, args) {
             } else {
                 return name in defVol ? defVol[name] : 100;
             }
+        },
+        function makeData(makeData) {
+            var config = makeData.call(this);
+            config.masterVolume = this.masterVolume;
+            config.speechVolume = this.speechVolume;
+            return config;
+        },
+        function applyData(applyData, config) {
+            applyData.call(this, config);
+            this.masterVolume = this.readVolume(config, "masterVolume");
+            this.speechVolume = this.readVolume(config, "speechVolume");
+        });
+
+    Object.defineProperty(AudioManager, "speechVolume", {
+        get() {
+            return this._speechVolume;
+        },
+        set(value) {
+            this._speechVolume = value;
+        }
+    });
+
+    Object.defineProperty(ConfigManager, "masterVolume", {
+        get() {
+            return AudioManager.masterVolume * 100;
+        },
+        set(value) {
+            AudioManager.masterVolume = value / 100;
+        }
+    });
+
+    Object.defineProperty(ConfigManager, "speechVolume", {
+        get() {
+            return AudioManager.speechVolume;
+        },
+        set(value) {
+            AudioManager.speechVolume = value;
+        }
+    });
+
+    override(Window_Options.prototype,
+        function addVolumeOptions(addVolumeOptions) {
+            this.addCommand("Volume général", "masterVolume");
+            addVolumeOptions.call(this);
+            this.addCommand("Volume voix", "speechVolume");
         });
 })();
