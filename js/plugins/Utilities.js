@@ -816,4 +816,23 @@ function eval_fn_expr(expr, args) {
             addVolumeOptions.call(this);
             this.addCommand("Volume voix", "speechVolume");
         });
+
+    var passableMask = 1 | 2 | 4 | 8;
+    var idMasks = {
+        2: 1, // Down
+        4: 2, // Left
+        6: 4, // Right
+        8: 8 // Up
+    };
+
+    override(Game_Map.prototype,
+        function isPassable(isPassable, x, y, d) {
+            var regionId = this.regionId(x, y) & passableMask;
+            if (!regionId) {
+                return isPassable.call(this, x, y, d);
+            }
+            return !!(regionId & idMasks[d]);
+        });
+
+
 })();
