@@ -112,66 +112,13 @@ function override(obj) {
     for (let i = 1; i < arguments.length; i++) {
         let fn = arguments[i];
         let original = obj[fn.name];
-        obj[fn.name] = function(a, b, c, d, e, f) {
+        obj[fn.name] = function (a, b, c, d, e, f) {
             return fn.call(this, original, a, b, c, d, e, f);
         }
     }
 }
 
 (function () {
-    override(Game_Variables.prototype, function initialize(initialize) {
-        initialize.call(this);
-        this.byKey = {};
-        var self = this;
-        for (var i = 0; i < $dataSystem.variables.length; i++) {
-            const key = $dataSystem.variables[i].trim();
-            if (key) {
-                const variableId = i;
-                Object.defineProperty(this.byKey, key, {
-                    get() {
-                        return self.value(variableId);
-                    },
-                    set(value) {
-                        return self.setValue(variableId, value);
-                    }
-                })
-            }
-        }
-    });
-
-    override(Game_Switches.prototype, function initialize(initialize) {
-        initialize.call(this);
-        this.byKey = {};
-        var self = this;
-        for (var i = 0; i < $dataSystem.switches.length; i++) {
-            const key = $dataSystem.switches[i].trim();
-            if (key) {
-                const switchId = i;
-                Object.defineProperty(this.byKey, key, {
-                    get() {
-                        return self.value(switchId);
-                    },
-                    set(value) {
-                        return self.setValue(switchId, value);
-                    }
-                });
-            }
-        }
-    });
-
-    Object.defineProperties(window, {
-        $gvars: {
-            get() {
-                return $gameVariables.byKey;
-            }
-        },
-        $gsw: {
-            get() {
-                return $gameSwitches.byKey;
-            }
-        }
-    });
-
     override(DataManager,
         function makeSaveContents(makeSaveContents) {
             var contents = makeSaveContents.call(this);
@@ -180,6 +127,7 @@ function override(obj) {
         },
         function extractSaveContents(extractSaveContents, contents) {
             extractSaveContents.call(this, contents);
+            console.log(contents);
             $gameMapSwitches = contents.mapSwitches || {};
         });
 
@@ -274,6 +222,40 @@ function eval_fn_expr(expr, args) {
                     const deathMatch = note.match(deathRegexp);
                     enemy._customDeath = deathMatch && deathMatch[1] && eval_fn_expr(deathMatch[1]);
                 }
+                break;
+            case $dataSystem:
+                var $gvars = window.$gvars = {};
+                for (var i = 0; i < $dataSystem.variables.length; i++) {
+                    const key = $dataSystem.variables[i].trim();
+                    if (key) {
+                        const variableId = i;
+                        Object.defineProperty($gvars, key, {
+                            get() {
+                                return $gameVariables.value(variableId);
+                            },
+                            set(value) {
+                                return $gameVariables.setValue(variableId, value);
+                            }
+                        })
+                    }
+                }
+
+                var $gsw = window.$gsw = {};
+                for (var i = 0; i < $dataSystem.switches.length; i++) {
+                    const key = $dataSystem.switches[i].trim();
+                    if (key) {
+                        const switchId = i;
+                        Object.defineProperty($gsw, key, {
+                            get() {
+                                return $gameSwitches.value(switchId);
+                            },
+                            set(value) {
+                                return $gameSwitches.setValue(switchId, value);
+                            }
+                        });
+                    }
+                }
+                break;
         }
     };
 
@@ -695,7 +677,7 @@ function eval_fn_expr(expr, args) {
 
     override(Game_Action.prototype,
         function itemEffectAddAttackState(itemEffectAddAttackState, target, effect) {
-            this.subject().attackStates().forEach(function(stateId) {
+            this.subject().attackStates().forEach(function (stateId) {
                 var chance = effect.value1;
                 chance *= target.stateRate(stateId);
                 chance *= this.subject().attackStatesRate(stateId);
@@ -737,7 +719,7 @@ function eval_fn_expr(expr, args) {
                 item._customPerformActionStart.call(action, this);
             }
         },
-        function chargeTpByDamage() {});
+        function chargeTpByDamage() { });
 
     var defVol = {
         generalVolume: 100,

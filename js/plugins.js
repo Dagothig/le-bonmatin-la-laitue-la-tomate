@@ -8,5 +8,7 @@ var $plugins =
 {"name":"AnimatedSplashScreens","status":true,"description":"Set up animated splash screens that show before the title screen.","parameters":{}},
 {"name":"TitleCommandPosition","status":true,"description":"Changes the position of the title command window.","parameters":{"Offset X":"-160","Offset Y":"15","Width":"305","Background":"2"}},
 {"name":"AltMenuScreen","status":false,"description":"Alternative menu screen layout.","parameters":{}},
-{"name":"Utilities","status":true,"description":"","parameters":{}}
+{"name":"Utilities","status":true,"description":"","parameters":{}},
+{"name":"Irina_PerformanceUpgrade","status":true,"description":"<PerformanceUpgrade> for RPG Maker MV version 1.6.2.","parameters":{"":"","AnimationHue":"true","BlurMenuBackground":"true","BlurIntensity":"0.5","CacheTextColors":"true","EnemyHue":"true","PixiContainerFlush":"true","SkipUnnecessarySnapshots":"true"}},
+{"name":"TDDP_PreloadManager","status":false,"description":"2.0.0-RC7 Preload resources on scene/map load as well as game startup for a smoother gameplay experience.          id:TDDP_PreloadManager","parameters":{"System Audio Boot Preload":"true","System Images Boot Preload":"true","Image Cache Limit":"500","Audio Cache Limit":"200","Simulate Latency":"0","Print Debug to Console":"true","Print Debug Level":"debug","Startup Preload 1":"","Startup Preload 2":"","Startup Preload 3":"","Startup Preload 4":"","Startup Preload 5":"","Startup Preload 6":"","Startup Preload 7":"","Startup Preload 8":"","Startup Preload 9":"","Startup Preload 10":"","Startup Preload 11":"","Startup Preload 12":"","Startup Preload 13":"","Startup Preload 14":"","Startup Preload 15":""}}
 ];
