@@ -1,14 +1,45 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
+## À tester
+
+Dague skip forgeronne
+Dague avec forgeronne
+
 ## Backlog à record
 
 ### Narrateur
 
+_NarrateurEntraillesRat
+> En fouillant dans les entrailles du trenchcat,
+> vous remarquez quelque chose qui brille.
+
+_NarrateurDague
+> Une dague!
+> L'arme Canonique des Protagonistes débutants.
+
 ### Personne Véritable
+
+_ProtagonisteQuitterVillageSansDague
+> Mmmh... Je regarde ma main, et j'ai comme
+> un mauvais pressentiement - Elle est toute
+> vide! Peut-être que je devrais fouiller le
+> village avant de partir.
 
 ### Premiere
 
 ### Pretre
+
+### Gabspart
+
+_GabspartWikiTempleBonjour
+> Je dis ça de même pour rien, mais mettons
+> que, y'a 3 leviers au total, et qu'y
+> faudrait tout les mettre vers le bas, puis
+> ensuite tout les mettre vers le haut.
+
+_GabspartRuineLeGameplay
+> Je sais, je sais, ça ruine le gameplay.
+> Mais c'est pour le mieux en fait.
 
 ## Rouler sans RPG Maker MV
 
