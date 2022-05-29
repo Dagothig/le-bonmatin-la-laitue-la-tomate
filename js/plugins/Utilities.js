@@ -720,10 +720,13 @@ function eval_fn_expr(expr, args) {
             }
         },
         function chargeTpByDamage() { });
+})();
 
+// Audio ameliorations
+(function () {
     var defVol = {
         generalVolume: 100,
-        bgmVolume: 60,
+        bgmVolume: 80,
         bgsVolume: 80,
         meVolume: 80,
         seVolume: 80,
@@ -799,6 +802,86 @@ function eval_fn_expr(expr, args) {
             this.addCommand("Volume voix", "speechVolume");
         });
 
+    var speechRegexp = /audio\/se\/_.*/;
+
+    AudioManager._ongoingSpeech = 0;
+    Object.defineProperty(AudioManager, "ongoingSpeech", {
+        get: function() {
+            return this._ongoingSpeech;
+        },
+        set: function(value) {
+            var previousVolume = this._bgmBuffer && this._bgmBuffer.volume;
+            this._ongoingSpeech = value;
+            this.updateBgmParameters(this._currentBgm);
+            var newVolume = this._bgmBuffer && this._bgmBuffer.volume;
+            if (previousVolume !== newVolume) {
+                this._bgmBuffer.aaa_fade(previousVolume < newVolume ? 1 : 0.25, previousVolume, newVolume);
+            }
+        }
+    });
+
+    override(AudioManager,
+        function updateBgmParameters(updateBgmParameters, bgm) {
+            this.updateBufferParameters(
+                this._bgmBuffer,
+                this._bgmVolume * (this.ongoingSpeech ? 0.25 : 1),
+                bgm);
+        });
+
+    function _startPlaying(_startPlaying, loop, offset) {
+        if (!this._isOngoingSpeech && (this._url || "").match(speechRegexp)) {
+            this._isOngoingSpeech = true;
+            AudioManager.ongoingSpeech++;
+        }
+        return _startPlaying.call(this, loop, offset);
+    }
+
+    function stop(stop) {
+        if (this._isOngoingSpeech) {
+            this._isOngoingSpeech = false;
+            AudioManager.ongoingSpeech--;
+        }
+        return stop.call(this);
+    }
+
+    override(WebAudio.prototype,
+        _startPlaying,
+        stop,
+        function aaa_fade(_, duration, from, to) {
+            if (this.isReady()) {
+                if (this._gainNode) {
+                    var gain = this._gainNode.gain;
+                    var currentTime = WebAudio._context.currentTime;
+                    gain.setValueAtTime(from, currentTime);
+                    gain.linearRampToValueAtTime(to, currentTime + duration);
+                }
+            } else if (this._autoPlay) {
+                this.addLoadListener(function () {
+                    this.fadeIn(duration);
+                }.bind(this));
+            }
+        });
+
+    override(Html5Audio.prototype,
+        _startPlaying,
+        stop,
+        function aaa_fade(_, duration, from, to) {
+            if (this.isReady()) {
+                if (this._audioElement) {
+                    this._tweenTargetGain = to;
+                    this._tweenGain = from;
+                    this._startGainTween(duration);
+                }
+            } else if (this._autoPlay) {
+                this.addLoadListener(function () {
+                    this.fadeIn(duration);
+                }.bind(this));
+            }
+        });
+})();
+
+// Map ameliorations
+(function () {
     var passableMask = 1 | 2 | 4 | 8;
     var idMasks = {
         2: 1, // Down
@@ -815,6 +898,4 @@ function eval_fn_expr(expr, args) {
             }
             return !!(regionId & idMasks[d]);
         });
-
-
 })();
