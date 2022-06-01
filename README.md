@@ -15,9 +15,60 @@ _GaboueGaboue1
 _GaboueGaboue111
 > Gaboué!!!
 
+_GaboueGaboue1ForRealThisTimeProd2
+> Gaboué!
+
+_GaboueDotDotDot
+> Gaboué...
+
+_GaboueGrosGaboue1
+> GABOUÉ!
+
+_GaboueGaboue6
+> Gaboué?
+
+_GaboueGaboue1Again
+> Gaboué!
+
 ### Narrateur
 
+_NarrateurNonBranche
+> Contrairement à ce que vous penseriez, ils ne s'agit
+> pas de branches.
+
 ### Personne Véritable
+
+_ProtagonistePasConvaincuFenetre
+> Je veux bien qu'il soit pris de peur devant \
+> une fenêtre, mais ça nous dit pas grand \
+> chose.
+
+_ProtagonisteOuiEtDonc
+> Oui bon, et donc?
+
+_ProtagonisteVousAvezPasPlusDeBarbe
+> Non mais vous avez pas plus de barbe que \
+> moi là, y'a que Wwwelchior qui a de la \
+> barbe ici.
+
+_ProtagonisteDouteGaboue
+> Je commence à douter un peu du fameux \
+> Gaboué...
+
+_ProtagonisteDe
+> De?
+
+_ProtagonisteAccepteQuete
+> Une autre quête qui n'est pas obtenir le \
+> Bon Matin? \
+> Jamais je n'aurais pu le voir venir!
+
+_ProtagonisteACompris
+> Oui oui, j'ai compris.
+
+_ProtagonisteGaboueAPasDejaUneBranche
+> Mais je regarde là, c'est pas une branche \
+> qu'il tient déjà dans sa main?
 
 ### Premiere
 
@@ -34,6 +85,113 @@ _GabspartWikiTempleBonjour
 _GabspartRuineLeGameplay
 > Je sais, je sais, ça ruine le gameplay. \
 > Mais c'est pour le mieux en fait.
+
+_GabspartLeGere
+> Tu t'y prends tout croche. laisses-moi
+> faire.
+
+_GabspartGaboue1
+> Gaboué!
+
+_GabspartVaTraduire
+> Oui parfait, donc il dit:
+
+_GabspartTraduitGaboueChasserDetah
+> > J'étais dans la forêt, \
+> > comme l'envie me prend. \
+> > Chassant la tradition, \
+> > idée fondamentale.
+
+_GabspartTraduitGaboueWindoSurgit
+> > Jusqu'à ce qu'un malfrat \
+> > surgit en guet-apens! \
+> > L'horreure encadrée, \
+> > vitreuse et de métal!
+
+_GabspartTraduitGabouePeutPasPasser
+> > Ne pouvant passer ni, \
+> > par dessus, par dessous. \
+> > Comme le proverbe, \
+> > Je pris donc le côté.
+
+_GabspartFautPatienter
+> Ah mais il faut un peu de patience avec le
+> Gaboué!
+
+_GabspartGggaboue6
+> G-g-g-aboué?
+
+_GabspartGaboueDot
+> Gaboué.
+
+_GabspartAOublieQueProtagonisteSuck
+> Ah oui désolé, j'avais oublié votre
+> imberbitude un instant.
+
+_GabspartTristeMaisDoitContinuer
+> La Barbe de l'âme voyons donc! \
+> Vous n'êtes que des philistins. \
+> \
+> Enfin bon, donc il a continué ainsi:
+
+_GabspartTraduitGaboueOracleSurgit
+> > Poursuivant mon chemin, \
+> > j'ouïe un marabout. \
+> > Décret prophétique \
+> > du besoin exploité!
+
+_GabspartEtDoncOnContinue
+> Oui merci, et il n'avait pas terminé:
+
+_GabspartTraduitGaboueTroisiemePeripetie
+> > Pourchassé, apeuré \
+> > je me trouvai ainsi. \
+> > Que devant moi jaillit, \
+> > Connu ou admis comme tel:
+
+_GabspartTraduitGaboueDetahSurgit
+> > Le renseignement qui, \
+> > servant de point d'appui. \
+> > Le réceptacle de l'esprit, \
+> > Le susnommé DETAH.
+
+_GabspartTraduitGabouePeutPasPasserCote
+> > Ne pouvant passer ni, \
+> > par dessus, par dessous. \
+> > Et ne pouvant passer \
+> > pas même de côté.
+
+_GabspartTraduitGabouePerdu
+> > Et alors que malheur, \
+> > ma douce, mon bambou. \
+> > Elle me fut prise, \
+> > outreusement volée.
+
+_GabspartExpliqueQuete
+> Voila! Et il va nous laisser passer si on \
+> accepte de l'aider à la retrouver.
+
+_GabspartCestUnBaton
+> Non c'est pas pareil, c'est juste un baton \
+> ça.
+
+### Wwwelchior
+
+_WwwelchiorComprendPasPlusGaboue
+> Vous pensez vraiment que j'y comprends plus \
+> au Gaboué? J'ai entendu les légendes... \
+> mais c'est tout.
+
+_WwwelchiorAdversairesDuGaboue
+> Le mythe annonce que ce sont des \
+> adversaires redoutables! Le Gaboué est \
+> simplement aiguillé au danger qu'ils \
+> posent.
+
+_WwwelchiorPasLaBronche
+> Oh non! \
+> \
+> Sa BRONCHE!
 
 ## Rouler sans RPG Maker MV
 
