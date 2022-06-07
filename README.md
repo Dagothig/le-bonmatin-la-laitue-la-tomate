@@ -9,27 +9,6 @@ Dague avec forgeronne
 
 ### Gaboué
 
-_GaboueGaboue1
-> Gaboué!
-
-_GaboueGaboue111
-> Gaboué!!!
-
-_GaboueGaboue1ForRealThisTimeProd2
-> Gaboué!
-
-_GaboueDotDotDot
-> Gaboué...
-
-_GaboueGrosGaboue1
-> GABOUÉ!
-
-_GaboueGaboue6
-> Gaboué?
-
-_GaboueGaboue1Again
-> Gaboué!
-
 ### Narrateur
 
 _NarrateurNonBranche
@@ -75,105 +54,6 @@ _ProtagonisteGaboueAPasDejaUneBranche
 ### Pretre
 
 ### Gabspart
-
-_GabspartWikiTempleBonjour
-> Je dis ça de même pour rien, mais mettons \
-> que, y'a 3 leviers au total, et qu'y \
-> faudrait tout les mettre vers le bas, puis \
-> ensuite tout les mettre vers le haut.
-
-_GabspartRuineLeGameplay
-> Je sais, je sais, ça ruine le gameplay. \
-> Mais c'est pour le mieux en fait.
-
-_GabspartLeGere
-> Tu t'y prends tout croche. laisses-moi
-> faire.
-
-_GabspartGaboue1
-> Gaboué!
-
-_GabspartVaTraduire
-> Oui parfait, donc il dit:
-
-_GabspartTraduitGaboueChasserDetah
-> > J'étais dans la forêt, \
-> > comme l'envie me prend. \
-> > Chassant la tradition, \
-> > idée fondamentale.
-
-_GabspartTraduitGaboueWindoSurgit
-> > Jusqu'à ce qu'un malfrat \
-> > surgit en guet-apens! \
-> > L'horreure encadrée, \
-> > vitreuse et de métal!
-
-_GabspartTraduitGabouePeutPasPasser
-> > Ne pouvant passer ni, \
-> > par dessus, par dessous. \
-> > Comme dans le proverbe, \
-> > Je pris donc le côté.
-
-_GabspartFautPatienter
-> Ah mais il faut un peu de patience avec le
-> Gaboué!
-
-_GabspartGggaboue6
-> G-g-g-aboué?
-
-_GabspartGaboueDot
-> Gaboué.
-
-_GabspartAOublieQueProtagonisteSuck
-> Ah oui désolé, j'avais oublié un instant
-> votre imberbitude.
-
-_GabspartTristeMaisDoitContinuer
-> La Barbe de l'âme voyons donc! \
-> Vous n'êtes que des philistins. \
-> \
-> Enfin bon, donc il a continué ainsi:
-
-_GabspartTraduitGaboueOracleSurgit
-> > Poursuivant mon chemin, \
-> > j'ouïe un marabout. \
-> > Le décret prophétique \
-> > du besoin exploité!
-
-_GabspartEtDoncOnContinue
-> Oui merci, et il n'avait pas terminé:
-
-_GabspartTraduitGaboueTroisiemePeripetie
-> > Pourchassé, apeuré \
-> > je me trouvai ainsi. \
-> > Que devant moi jaillit, \
-> > Donc ainsi présenté,
-
-_GabspartTraduitGaboueDetahSurgit
-> > Le renseignement qui, \
-> > servant de point d'appui. \
-> > Réceptacle de l'esprit, \
-> > Le susnommé DETAH.
-
-_GabspartTraduitGabouePeutPasPasserCote
-> > Ne pouvant passer ni, \
-> > par dessus, par dessous. \
-> > Et ne pouvant passer \
-> > pas même de côté.
-
-_GabspartTraduitGabouePerdu
-> > Et alors que malheur, \
-> > ma douce, mon bambou. \
-> > Elle me fut dérobée, \
-> > outreusement volée.
-
-_GabspartExpliqueQuete
-> Voila! Et il va nous laisser passer si on \
-> accepte de l'aider à la retrouver.
-
-_GabspartCestUnBaton
-> Non c'est pas pareil, c'est juste un baton \
-> ça.
 
 ### Wwwelchior
 
