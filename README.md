@@ -111,7 +111,7 @@ _GabspartTraduitGaboueWindoSurgit
 _GabspartTraduitGabouePeutPasPasser
 > > Ne pouvant passer ni, \
 > > par dessus, par dessous. \
-> > Comme le proverbe, \
+> > Comme dans le proverbe, \
 > > Je pris donc le côté.
 
 _GabspartFautPatienter
@@ -125,8 +125,8 @@ _GabspartGaboueDot
 > Gaboué.
 
 _GabspartAOublieQueProtagonisteSuck
-> Ah oui désolé, j'avais oublié votre
-> imberbitude un instant.
+> Ah oui désolé, j'avais oublié un instant
+> votre imberbitude.
 
 _GabspartTristeMaisDoitContinuer
 > La Barbe de l'âme voyons donc! \
@@ -137,7 +137,7 @@ _GabspartTristeMaisDoitContinuer
 _GabspartTraduitGaboueOracleSurgit
 > > Poursuivant mon chemin, \
 > > j'ouïe un marabout. \
-> > Décret prophétique \
+> > Le décret prophétique \
 > > du besoin exploité!
 
 _GabspartEtDoncOnContinue
@@ -147,12 +147,12 @@ _GabspartTraduitGaboueTroisiemePeripetie
 > > Pourchassé, apeuré \
 > > je me trouvai ainsi. \
 > > Que devant moi jaillit, \
-> > Connu ou admis comme tel:
+> > Donc ainsi présenté,
 
 _GabspartTraduitGaboueDetahSurgit
 > > Le renseignement qui, \
 > > servant de point d'appui. \
-> > Le réceptacle de l'esprit, \
+> > Réceptacle de l'esprit, \
 > > Le susnommé DETAH.
 
 _GabspartTraduitGabouePeutPasPasserCote
@@ -164,7 +164,7 @@ _GabspartTraduitGabouePeutPasPasserCote
 _GabspartTraduitGabouePerdu
 > > Et alors que malheur, \
 > > ma douce, mon bambou. \
-> > Elle me fut prise, \
+> > Elle me fut dérobée, \
 > > outreusement volée.
 
 _GabspartExpliqueQuete
