@@ -1,11 +1,31 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
-## À tester
+## TODO
 
-Dague skip forgeronne
-Dague avec forgeronne
+* Tester Dague skip forgeronne
+* Tester Dague avec forgeronne
+* Se patch de la forêt avec Gaboué provoque un dialogue malaisant et mortel
 
 ## Backlog à record
+
+### Pêcheur
+
+_PecheurAutreQuete
+> Bonjour.
+> \
+> Vous avez trouvé une autre quête?\
+> Pas pire, pas pire.\
+
+_PecheurARealiseMoules
+> Il est venu à mon attention récemment que \
+> c'était des moules que je pêchais au \
+> Village.
+
+_PecheurAPasDeCanneAPeche
+> Et bon, à date... c'est pas vargeux. \
+> À chaque fois les poissons me glissent des \
+> doigts! Je comprends pas, pourtant c'était \
+> jamais un problème au Village.
 
 ### Gaboué
 

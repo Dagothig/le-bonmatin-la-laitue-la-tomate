@@ -892,10 +892,30 @@ function eval_fn_expr(expr, args) {
 
     override(Game_Map.prototype,
         function isPassable(isPassable, x, y, d) {
-            var regionId = this.regionId(x, y) & passableMask;
+            var regionId = this.regionId(x, y);
+            if (regionId === 16)
+                return true;
+            if (regionId === 17)
+                return false;
+            regionId &= passableMask;
             if (!regionId) {
                 return isPassable.call(this, x, y, d);
             }
             return !!(regionId & idMasks[d]);
+        },
+
+        function isBoatPassable(isBoatPassable, x, y) {
+            var regionId = this.regionId(x, y);
+            return regionId === 16 || regionId !== 17 && isBoatPassable.call(this, x, y);
+        },
+
+        function isShipPassable(isShipPassable, x, y) {
+            var regionId = this.regionId(x, y);
+            return regionId === 16 || regionId !== 17 && isShipPassable.call(this, x, y);
+        },
+
+        function isAirshipLandOk(isAirshipLandOk, x, y) {
+            var regionId = this.regionId(x, y);
+            return regionId === 16 || regionId !== 17 && isAirshipLandOk.call(this, x, y);
         });
 })();
