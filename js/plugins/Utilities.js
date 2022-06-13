@@ -919,3 +919,8 @@ function eval_fn_expr(expr, args) {
             return regionId === 16 || regionId !== 17 && isAirshipLandOk.call(this, x, y);
         });
 })();
+
+Input.keyMapper[87] = "up"; // w
+Input.keyMapper[83] = "down"; // s
+Input.keyMapper[65] = "left"; // a
+Input.keyMapper[68] = "right"; // d
