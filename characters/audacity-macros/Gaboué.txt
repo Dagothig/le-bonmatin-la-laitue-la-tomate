@@ -1,0 +1,12 @@
+SelectAll:
+NoiseReduction:Use_Preset="<Factory Defaults>"
+Copy:
+NewStereoTrack:
+NextTrack:
+Paste:
+ChangePitch:Percentage="-5.613" SBSMS="0"
+SelectAll:
+MixAndRender:
+SelectAll:
+Compressor:AttackTime="0.2" NoiseFloor="-40" Normalize="1" Ratio="2" ReleaseTime="1" Threshold="-12" UsePeak="1"
+Normalize:ApplyGain="1" PeakLevel="-1" RemoveDcOffset="1" StereoIndependent="0"
