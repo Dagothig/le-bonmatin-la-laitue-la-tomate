@@ -852,6 +852,7 @@ function eval_fn_expr(expr, args) {
                 if (this._gainNode) {
                     var gain = this._gainNode.gain;
                     var currentTime = WebAudio._context.currentTime;
+                    gain.cancelScheduledValues(currentTime);
                     gain.setValueAtTime(from, currentTime);
                     gain.linearRampToValueAtTime(to, currentTime + duration);
                 }
