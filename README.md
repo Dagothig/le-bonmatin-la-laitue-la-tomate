@@ -2,78 +2,33 @@
 
 ## TODO
 
-* Tester Dague skip forgeronne
-* Tester Dague avec forgeronne
 * Se patch de la forêt avec Gaboué provoque un dialogue malaisant et mortel
 
 ## Backlog à record
 
 ### Pêcheur
 
-_PecheurAutreQuete
-> Bonjour.
-> \
-> Vous avez trouvé une autre quête?\
-> Pas pire, pas pire.\
-
-_PecheurARealiseMoules
-> Il est venu à mon attention récemment que \
-> c'était des moules que je pêchais au \
-> Village.
-
-_PecheurAPasDeCanneAPeche
-> Et bon, à date... c'est pas vargeux. \
-> À chaque fois les poissons me glissent des \
-> doigts! Je comprends pas, pourtant c'était \
-> jamais un problème au Village.
-
 ### Gaboué
 
 ### Narrateur
 
-_NarrateurNonBranche
-> Contrairement à ce que vous penseriez, ils ne s'agit
-> pas de branches.
-
 ### Personne Véritable
-
-_ProtagonistePasConvaincuFenetre
-> Je veux bien qu'il soit pris de peur devant \
-> une fenêtre, mais ça nous dit pas grand \
-> chose.
-
-_ProtagonisteOuiEtDonc
-> Oui bon, et donc?
-
-_ProtagonisteVousAvezPasPlusDeBarbe
-> Non mais vous avez pas plus de barbe que \
-> moi là, y'a que Wwwelchior qui a de la \
-> barbe ici.
-
-_ProtagonisteDouteGaboue
-> Je commence à douter un peu du fameux \
-> Gaboué...
-
-_ProtagonisteDe
-> De?
-
-_ProtagonisteAccepteQuete
-> Une autre quête qui n'est pas obtenir le \
-> Bon Matin? \
-> Jamais je n'aurais pu le voir venir!
-
-_ProtagonisteACompris
-> Oui oui, j'ai compris.
-
-_ProtagonisteGaboueAPasDejaUneBranche
-> Mais je regarde là, c'est pas une branche \
-> qu'il tient déjà dans sa main?
 
 ### Premiere
 
 ### Pretre
 
 ### Gabspart
+
+_GabspartDesFoisChangeurForme
+> Si ça avait été dans un placard ça aurait \
+> été moins certain. \
+> \
+> Des fois que c'est un changeur de forme...
+
+_GabspartPouletsPasCommeCa
+> Mettons que, typiquement, les poulets ça
+> se comporte pas comme ça.
 
 ### Wwwelchior
 
@@ -91,7 +46,15 @@ _WwwelchiorAdversairesDuGaboue
 _WwwelchiorPasLaBronche
 > Oh non! \
 > \
-> Sa BRONCHE!
+> Sa BRANCHE!
+
+_WwwelchiorChangeurFormeReferencePourrie
+> Et puis un changeur de forme ça veut rien \
+> dire, je ferais pas trop attention à ce \
+> genre de référence.
+
+_WwwelchiorJustement
+> Justement.
 
 ## Rouler sans RPG Maker MV
 

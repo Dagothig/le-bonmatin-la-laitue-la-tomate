@@ -1,3 +1,6 @@
+const GROUND = 0;
+const FLYING = 1;
+
 function aaa_fireplace(eventId, strength = 100) {
     var vmin = 0, vmax = 90, pmin = 0, pmax = 100;
     var tmin = [0, 0, 0, 0], tmax = [24, 12, 0, 0];
@@ -105,6 +108,10 @@ function aaa_anim(target, anim, delay) {
             sprite._aaaY = 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 3]);
             break;
+        case "jump":
+            sprite.pushMove([PARABOLA, -3, 3, -6, 12]);
+            sprite.pushMove([PARABOLA, 0, 0, -20, 12]);
+            break;
     }
 }
 
@@ -146,6 +153,26 @@ function override(obj) {
                 }
             }
             return meetsConditions.call(this, page);
+        },
+        function isMapPassable(_isMapPassable, x, y, d) {
+            var x2 = $gameMap.roundXWithDirection(x, d);
+            var y2 = $gameMap.roundYWithDirection(y, d);
+            var d2 = this.reverseDir(d);
+            switch (this.movementType) {
+                case FLYING:
+                    return (
+                        ($gameMap.isPassable(x, y, d) && $gameMap.isPassable(x2, y2, d2)) ||
+                        $gameMap.isBoatPassable(x2, y2) ||
+                        $gameMap.isShipPassable(x2, y2));
+                case GROUND:
+                default:
+                    return $gameMap.isPassable(x, y, d) && $gameMap.isPassable(x2, y2, d2);
+            }
+        },
+        function isCollidedWithEvents(_isCollidedWithEvents, x, y) {
+            return this.movementType !== FLYING &&
+                $gameMap.eventsXyNt(x, y).some(event =>
+                    event.movementType !== FLYING);
         });
 })();
 
@@ -516,6 +543,17 @@ function eval_fn_expr(expr, args) {
         var item = this.item();
         item._customAction && item._customAction.call(this, target);
     }
+})();
+
+// Tinting
+(function() {
+    override(Sprite_Character.prototype,
+        function updateOther(updateOther) {
+            updateOther.call(this);
+            if (this._character.tint !== undefined) {
+                this.tint = this._character.tint;
+            }
+        });
 })();
 
 // Ding!
