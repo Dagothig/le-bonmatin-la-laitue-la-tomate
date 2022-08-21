@@ -206,6 +206,17 @@ function eval_fn_expr(expr, args) {
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
         switch (object) {
+            case $dataMapInfos:
+                var $gms = window.$gms = {};
+                for (const map of object) {
+                    if (!map)
+                        continue;
+                    $gms[map.name] = map;
+                    Object.defineProperty(map, "$sw", {
+                        get() { return $gameMapSwitches[map.id] || ($gameMapSwitches[map.id] = {}); }
+                    })
+                }
+                break;
             case $dataStates:
                 for (const state of object) {
                     if (!state)

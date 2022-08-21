@@ -6,6 +6,22 @@
 
 ## Backlog à record
 
+### Bûcheronne
+
+_BucheronVousAvezAimeLeTemple
+> Bonsoir. \
+>  \
+> Vous avez bien aimé le Temple? Y sont un \
+> peu spéciaux mais sinon y sont bin gentils.
+
+_BucheronVousAvezDuMonde
+> Ah, je vois que vous avez rencontré du \
+> monde.
+
+_BucheronOccupe
+> Ok... Je suis un peu occupée là, si ça vous \
+> dérange pas.
+
 ### Pêcheur
 
 ### Gaboué
@@ -13,6 +29,10 @@
 ### Narrateur
 
 ### Personne Véritable
+
+_ProtagonisteGabspartWwwelchiorDuMonde
+> Effectivement, on pourrait dire que \
+> Gabspart et Wwwelchior sont du monde.
 
 ### Premiere
 
@@ -55,6 +75,12 @@ _WwwelchiorChangeurFormeReferencePourrie
 
 _WwwelchiorJustement
 > Justement.
+
+_WwwelchiorAccueil
+> Oui, on a reçu tout un accueil!
+
+_WwwelchiorPrinceDesTenebres
+> On dit Wwwelchior, Prince des Ténèbres!
 
 ## Rouler sans RPG Maker MV
 
