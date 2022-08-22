@@ -1,5 +1,7 @@
 const GROUND = 0;
 const FLYING = 1;
+const EMPTY_OBJ = {};
+const EMPTY_ARR = [];
 
 function aaa_fireplace(eventId, strength = 100) {
     var vmin = 0, vmax = 90, pmin = 0, pmax = 100;
@@ -27,16 +29,20 @@ function aaa_se(eventId, se) {
     AudioManager.playSe(se);
 }
 
-function aaa_jump_forward(e, d, h) {
-    var x = $gameMap.xWithDirection(0, e.direction()) * d;
-    var y = $gameMap.yWithDirection(0, e.direction()) * d;
+function aaa_jump(e, x, y, h) {
     e.jump(x, y);
     e._jumpPeak += h;
     e._jumpCount = e._jumpPeak * 2;
+    for (const follower of (e._followers || EMPTY_OBJ)._data || EMPTY_ARR) {
+        follower._jumpPeak += h;
+        follower._jumpCount = e._jumpPeak * 2;
+    }
 }
 
-function aaa_jump(e, x, y, h) {
-    e.jump(x, y);
+function aaa_jump_forward(e, d, h) {
+    var x = $gameMap.xWithDirection(0, e.direction()) * d;
+    var y = $gameMap.yWithDirection(0, e.direction()) * d;
+    aaa_jump(e, x, y, h);
     e._jumpPeak += h;
     e._jumpCount = e._jumpPeak * 2;
 }
