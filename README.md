@@ -22,6 +22,11 @@ _BucheronOccupe
 > Ok... Je suis un peu occupée là, si ça vous \
 > dérange pas.
 
+_BucheronVousEtesPedant
+> Non mais lâchez-moi, vous êtes pédant ou \
+> quoi? \
+> J'ai dis que j'étais occupée.
+
 ### Pêcheur
 
 ### Gaboué
@@ -29,10 +34,6 @@ _BucheronOccupe
 ### Narrateur
 
 ### Personne Véritable
-
-_ProtagonisteGabspartWwwelchiorDuMonde
-> Effectivement, on pourrait dire que \
-> Gabspart et Wwwelchior sont du monde.
 
 ### Premiere
 
@@ -49,6 +50,11 @@ _GabspartDesFoisChangeurForme
 _GabspartPouletsPasCommeCa
 > Mettons que, typiquement, les poulets ça
 > se comporte pas comme ça.
+
+_GabspartNonFaussitude
+> Ah ça c'est pas faux. \
+> C'est d'une pas-faussité à en retordre la \
+> véracité dudit Protagoniste.
 
 ### Wwwelchior
 
@@ -78,9 +84,6 @@ _WwwelchiorJustement
 
 _WwwelchiorAccueil
 > Oui, on a reçu tout un accueil!
-
-_WwwelchiorPrinceDesTenebres
-> On dit Wwwelchior, Prince des Ténèbres!
 
 ## Rouler sans RPG Maker MV
 
