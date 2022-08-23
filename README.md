@@ -8,25 +8,6 @@
 
 ### Bûcheronne
 
-_BucheronVousAvezAimeLeTemple
-> Bonsoir. \
->  \
-> Vous avez bien aimé le Temple? Y sont un \
-> peu spéciaux mais sinon y sont bin gentils.
-
-_BucheronVousAvezDuMonde
-> Ah, je vois que vous avez rencontré du \
-> monde.
-
-_BucheronOccupe
-> Ok... Je suis un peu occupée là, si ça vous \
-> dérange pas.
-
-_BucheronVousEtesPedant
-> Non mais lâchez-moi, vous êtes pédant ou \
-> quoi? \
-> J'ai dis que j'étais occupée.
-
 ### Pêcheur
 
 ### Gaboué
