@@ -5,7 +5,7 @@ const EMPTY_ARR = [];
 
 function aaa_fireplace(eventId, strength = 100) {
     var vmin = 0, vmax = 90, pmin = 0, pmax = 100;
-    var tmin = [0, 0, 0, 0], tmax = [24, 12, 0, 0];
+    var tmin = [-16, -8, 0, 64], tmax = [48, 24, 12, 0];
     var e = $gameMap.event(eventId);
     var dst = Math.sqrt(Math.pow($gamePlayer.x - e.x, 2) + Math.pow($gamePlayer.y - e.y, 2));
     var p = (1 - Math.min(Math.max(dst - 1, 0) / 8, 1)) * strength / 100;
