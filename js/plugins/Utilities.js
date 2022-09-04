@@ -208,6 +208,7 @@ function eval_fn_expr(expr, args) {
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
+    var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -252,6 +253,15 @@ function eval_fn_expr(expr, args) {
                     skill._customPerformActionStart = performActionStartMatch && performActionStartMatch[1] && eval_fn_expr(performActionStartMatch[1], "battler");
                 }
                 break;
+            case $dataActors:
+                for (const actor of object) {
+                    if (!actor)
+                        continue;
+                    const note = actor && actor.note || "";
+                    const setupMatch = note.match(setupRegexp);
+                    actor._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1]);
+                }
+                break;
             case $dataEnemies:
                 for (const enemy of object) {
                     if (!enemy)
@@ -265,6 +275,18 @@ function eval_fn_expr(expr, args) {
                     enemy._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1], "enemyId, x, y");
                     const deathMatch = note.match(deathRegexp);
                     enemy._customDeath = deathMatch && deathMatch[1] && eval_fn_expr(deathMatch[1]);
+                    const tilingMatch = note.match(tilingRegexp);
+                    if (tilingMatch) {
+                        enemy.tw = parseInt(tilingMatch[1]) || 0;
+                        enemy.th = parseInt(tilingMatch[2]) || 0;
+                        enemy.patternType = JSON.parse(tilingMatch[3]) || null;
+                        enemy.patternFrameDuration =
+                            JSON.parse(tilingMatch[4]) ||
+                            (enemy.patternType
+                                ? new Array(enemy.patternType.length)
+                                    .fill(parseInt(tilingMatch[4]) || 0)
+                                : null);
+                    }
                 }
                 break;
             case $dataSystem:
@@ -495,55 +517,107 @@ function eval_fn_expr(expr, args) {
         original_sceneBattleStart.call(this);
     };
 
-    var original_enemySetup = Game_Enemy.prototype.onBattleStart;
-    Game_Enemy.prototype.onBattleStart = function () {
-        original_enemySetup.call(this);
-        var enemy = this.enemy();
-        enemy._customSetup && enemy._customSetup.call(this);
-    }
-
-    var original_enemyCollapse = Game_Enemy.prototype.performCollapse;
-    Game_Enemy.prototype.performCollapse = function () {
-        original_enemyCollapse.call(this);
-        var enemy = this.enemy();
-        enemy._customDeath && enemy._customDeath.call(this);
-    }
-
-    var original_selectAction = Game_Enemy.prototype.selectAction;
-    Game_Enemy.prototype.selectAction = function (actionList, ratingZero) {
-        var enemy = this.enemy();
-        return (
-            enemy._customAction && enemy._customAction.call(this, actionList, ratingZero) ||
-            original_selectAction.call(this, actionList, ratingZero));
-    }
-
     var animRegexp = /\<<aaa_anim (.*)\>>/;
-    var original_performActionStart = Game_Enemy.prototype.performActionStart;
-    Game_Enemy.prototype.performActionStart = function (action) {
-        original_performActionStart.call(this, action);
-        var item = action.item();
-        var note = item && item.note || "";
-        var match = note.match(animRegexp);
-        var args = match && match[1];
-        if (args) {
-            args = args.split(" ");
-            switch (args[0]) {
-                case "self":
-                    aaa_anim(action.subject(), args[1], args[2]);
-                    break;
-                case "target":
-                    aaa_anim(action.target(), args[1], args[2]);
-                    break;
-            }
-        }
-    }
+
+    override(Game_Actor.prototype,
+        function onBattleStart(onBattleStart) {
+            onBattleStart.call(this);
+            var actor = this.actor();
+            actor._customSetup && actor._customSetup.call(this);
+        });
 
     override(Game_Enemy.prototype,
+        function onBattleStart(onBattleStart) {
+            onBattleStart.call(this);
+            var enemy = this.enemy();
+            enemy._customSetup && enemy._customSetup.call(this);
+        },
+        function performCollapse(performCollapse) {
+            performCollapse.call(this);
+            var enemy = this.enemy();
+            enemy._customDeath && enemy._customDeath.call(this);
+        },
+        function selectAction(selectAction, actionList, ratingZero) {
+            var enemy = this.enemy();
+            return (
+                enemy._customAction && enemy._customAction.call(this, actionList, ratingZero) ||
+                selectAction.call(this, actionList, ratingZero));
+        },
+        function performActionStart(performActionStart, action) {
+            performActionStart.call(this, action);
+            var item = action.item();
+            var note = item && item.note || "";
+            var match = note.match(animRegexp);
+            var args = match && match[1];
+            if (args) {
+                args = args.split(" ");
+                switch (args[0]) {
+                    case "self":
+                        aaa_anim(action.subject(), args[1], args[2]);
+                        break;
+                    case "target":
+                        aaa_anim(action.target(), args[1], args[2]);
+                        break;
+                }
+            }
+        },
         function onRestrict(onRestrict) {
             onRestrict.call(this);
             if (this.isAlive()) {
                 var enemy = this.enemy();
                 enemy._customOnRestrict && enemy._customOnRestrict.call(this);
+            }
+        });
+
+    Object.defineProperties(Game_Enemy.prototype, {
+        patternX: {
+            get() { return this._sprite && this._sprite.patternX; },
+            set(val) { this._sprite && (this._sprite.patternX = val); },
+        },
+        patternY: {
+            get() { return this._sprite && this._sprite.patternY; },
+            set(val) { this._sprite && (this._sprite.patternY = val); }
+        }
+    });
+
+    override(Sprite_Enemy.prototype,
+        function initMembers(initMembers) {
+            this.patternX = 0;
+            this.patternY = 0;
+            initMembers.call(this);
+        },
+        function setBattler(setBattler, battler) {
+            setBattler.call(this, battler);
+            this.patternFrameDuration = battler.enemy().patternFrameDuration;
+        },
+        function startBossCollapse(startBossCollapse) {
+            startBossCollapse.call(this);
+            this._effectDuration = this.th || this.bitmap.height;
+        },
+        function updateFrame(_) {
+            Sprite_Battler.prototype.updateFrame.call(this);
+            const enemy = this._enemy && this._enemy.enemy();
+            const frameWidth = enemy && enemy.tw || this.bitmap.width;
+            let frameHeight = enemy && enemy.th || this.bitmap.height;
+            if (this._effectType === 'bossCollapse') {
+                frameHeight = this._effectDuration;
+            }
+            let frameX = enemy.patternType ?
+                enemy.patternType[this.patternX % enemy.patternType.length] :
+                this.patternX;
+            this.setFrame(
+                frameX * frameWidth,
+                this.patternY * frameHeight,
+                frameWidth,
+                frameHeight);
+
+            if (enemy.patternType) {
+                if (this.patternFrameDuration > 0) {
+                    this.patternFrameDuration--;
+                } else {
+                    this.patternX++;
+                    this.patternFrameDuration = enemy.patternFrameDuration[this.patternX % enemy.patternFrameDuration.length];
+                }
             }
         });
 
@@ -973,6 +1047,44 @@ function eval_fn_expr(expr, args) {
         function isAirshipLandOk(isAirshipLandOk, x, y) {
             var regionId = this.regionId(x, y);
             return regionId === 16 || regionId !== 17 && isAirshipLandOk.call(this, x, y);
+        });
+})();
+
+const BASE_PATTERN_TYPE = [0, 1, 2, 1];
+
+// Characters
+(function() {
+    override(Game_CharacterBase.prototype,
+        function initMembers(initMembers) {
+            initMembers.call(this);
+            this.setPatternType(BASE_PATTERN_TYPE);
+            this.resetPattern();
+            this._animationWaitMultiplier = 3;
+        },
+        function straighten() {
+            if (this.hasWalkAnime() || this.hasStepAnime()) {
+                this.resetPattern();
+            }
+            this._animationCount = 0;
+        },
+        function maxPattern() {
+            return this._patternType.length;
+        },
+        function pattern() {
+            return this._patternType[this._pattern];
+        },
+        function resetPattern() {
+            return this._pattern = this._patternReset;
+        },
+        function setPatternType(_, patternType) {
+            this._patternType = patternType;
+            this._patternReset = patternType[patternType.length - 1];
+        },
+        function animationWait() {
+            return (9 - this.realMoveSpeed()) * this._animationWaitMultiplier;
+        },
+        function dstSE(_, se) {
+            aaa_se(this.eventId(), se);
         });
 })();
 

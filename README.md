@@ -1,9 +1,5 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
-## TODO
-
-* Se patch de la forêt avec Gaboué provoque un dialogue malaisant et mortel
-
 ## Backlog à record
 
 ### Bûcheronne
