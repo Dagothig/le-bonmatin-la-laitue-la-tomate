@@ -1047,7 +1047,58 @@ function eval_fn_expr(expr, args) {
         function isAirshipLandOk(isAirshipLandOk, x, y) {
             var regionId = this.regionId(x, y);
             return regionId === 16 || regionId !== 17 && isAirshipLandOk.call(this, x, y);
+        },
+
+        function setupEvents(setupEvents) {
+            setupEvents.call(this);
+            this.eventsByName = {};
+            for (var i = 0; i < this._events.length; i++) {
+                var dataEvent = $dataMap.events[i];
+                if (dataEvent && dataEvent.name) {
+                    this.eventsByName[dataEvent.name] = i;
+                }
+            }
         });
+})();
+
+// Zoomies
+(function() {
+    override(Game_Screen.prototype,
+        function clearZoom(clearZoom) {
+            clearZoom.call(this);
+            this.zoomTarget = null;
+            this.zoomTargetScale = 1;
+            this.zoomTargetDuration = 0;
+        },
+
+        function zoomOn(_, eventId, scale, duration = 15) {
+            var event = $gameMap.event(eventId);
+            this.startZoom(
+                event && event.screenX() || 0,
+                event && (event.screenY() - 24) || 0,
+                scale,
+                duration);
+        },
+
+        function resetZoom(_, duration = 15) {
+            this.startZoom(this._zoomX, this._zoomY, 1, duration);
+        });
+
+    /*override(Spriteset_Base.prototype,
+        function updatePosition(_updatePosition) {
+            var screen = $gameScreen;
+            var scale = screen.zoomScale();
+            this.scale.x = scale;
+            this.scale.y = scale;
+            var t = 1;//Math.max(0, Math.min((scale - 1) * 2, 1));
+            this.x = Math.round(
+                t * (Graphics.width / 2 - screen.zoomX() * scale) +
+                (1 - t) * (-screen.zoomX() * (scale - 1)));
+            this.y = Math.round(
+                t * (Graphics.height / 2 - screen.zoomY() * scale) +
+                (1 - t) * (-screen.zoomY() * (scale - 1)));
+            this.x += Math.round(screen.shake());
+        });*/
 })();
 
 const BASE_PATTERN_TYPE = [0, 1, 2, 1];

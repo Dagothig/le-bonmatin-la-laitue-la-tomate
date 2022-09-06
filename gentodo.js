@@ -7,8 +7,11 @@ const todos = Array
     .map(match => [match[1], match[2].replace(/[>\\\r\n]/g, "").trim()]);
 
 for (const [file, content] of todos) {
-    console.log("Generating for " + file);
-    console.log(content);
-    const espeak = spawnSync("espeak", ["-v", "fr-fr", "-w", "tmp.wav", content]);
-    const ffmpeg = spawnSync("ffmpeg", ["-i", "tmp.wav", "-y", "./audio/se/" + file + ".ogg", ]);
+    const fp = "./audio/se/" + file + ".ogg";
+    if (!fs.existsSync(fp)) {
+        console.log("Generating for " + file);
+        console.log(content);
+        const espeak = spawnSync("espeak", ["-v", "fr-fr", "-w", "tmp.wav", content]);
+        const ffmpeg = spawnSync("ffmpeg", ["-i", "tmp.wav", "-y", fp]);
+    }
 }
