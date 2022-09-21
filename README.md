@@ -187,6 +187,8 @@ _WwwelchiorLeWindoBougePas
 > De toute façon la grosse fenêtre elle bouge \
 > pas de son coin.
 
+## Windo
+
 ## Rouler sans RPG Maker MV
 
 Plop un serveur http sur la racine. Voilà c'est tout.

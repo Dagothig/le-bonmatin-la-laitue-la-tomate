@@ -56,9 +56,15 @@ function aaa_map_switch(name, value) {
     }
     switches[name] = value;
     $gameMap.requestRefresh();
-}
 
-var MOVE = "startMove", WIGGLE = "startWiggle", PARABOLA = "startParabola", WAIT = "startWait";
+}
+var MOVE = "startMove",
+    WIGGLE = "startWiggle",
+    PARABOLA = "startParabola",
+    WAIT = "startWait",
+    PATTERN = "setPattern",
+    SE = "playSe",
+    SHAKE = "gogoGadgetShake";
 
 function aaa_anim(target, anim, delay) {
     var sprite = target._sprite;
@@ -209,6 +215,8 @@ function eval_fn_expr(expr, args) {
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
     var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
+    const actorSpriteRegexp = /\<<aaa_actor_sprite *(\w+)?\>>/;
+    const shadowRegexp = /\<<shadow *(\w+)? *(-?\d+)?\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -287,6 +295,13 @@ function eval_fn_expr(expr, args) {
                                     .fill(parseInt(tilingMatch[4]) || 0)
                                 : null);
                     }
+                    const shadowMatch = note.match(shadowRegexp);
+                    if (shadowMatch) {
+                        enemy.shadowImg = shadowMatch[1] || Galv.BES.img;
+                        enemy.shadowOffset = parseFloat(shadowMatch[2]) || Galv.BES.os
+                    }
+                    const actorSpriteMatch = note.match(actorSpriteRegexp);
+                    enemy.actorSprite = actorSpriteMatch && (actorSpriteMatch[1] || "Actor1_1");
                 }
                 break;
             case $dataSystem:
@@ -413,103 +428,137 @@ function eval_fn_expr(expr, args) {
         }
     }
 
-    var original_initMembers = Sprite_Battler.prototype.initMembers;
-    Sprite_Battler.prototype.initMembers = function () {
-        original_initMembers.call(this);
-        this._moves = [];
-    }
+    override(Sprite_Battler.prototype,
+        function initMembers(initMembers) {
+            initMembers.call(this);
+            this._moves = [];
+        },
+        function dequeueMove() {
+            while (!this.isMoving() && this._moves.length) {
+                var nextMove = this._moves.shift();
+                var type = nextMove.shift();
+                this[type].apply(this, nextMove);
+            }
+        },
+        function pushMove(_, args) {
+            this._moves.push(args);
+            this.dequeueMove();
+        },
+        function pushMoves(_, moveses) {
+            for (const move of moveses)
+                this._moves.push(move);
+            this.dequeueMove();
+        },
+        function onMoveEnd(onMoveEnd) {
+            onMoveEnd.call(this);
+            switch (this._moveType) {
+                case WIGGLE:
+                case PARABOLA:
+                    this._offsetX = this._targetOffsetX;
+                    this._offsetY = this._targetOffsetY;
+            }
 
-    Sprite_Battler.prototype.dequeueMove = function () {
-        while (!this.isMoving() && this._moves.length) {
-            var nextMove = this._moves.shift();
-            var type = nextMove.shift();
-            this[type].apply(this, nextMove);
-        }
-    };
+            this.dequeueMove();
+        },
+        function startMove(startMove, x, y, duration) {
+            this._moveType = MOVE;
+            startMove.call(this, x, y, duration);
+        },
+        function startWiggle(_, mx, my, Mx, My, duration) {
+            this._moveType = WIGGLE;
+            this._targetOffsetX = this._offsetX;
+            this._targetOffsetY = this._offsetY;
+            this._wiggleX = mx;
+            this._wiggleDX = Mx - mx;
+            this._wiggleY = my;
+            this._wiggleDY = My - my;
+            this._movementDuration = duration;
+        },
+        function startParabola(_, x, y, h, duration) {
+            this._moveType = PARABOLA;
 
-    Sprite_Battler.prototype.pushMove = function (args) {
-        this._moves.push(args);
-        this.dequeueMove();
-    }
+            var x1 = this._offsetX || 0, y1 = this._offsetY || 0;
+            var x3 = x, y3 = y;
+            var x2 = (x1 + x3) / 2, y2 = h;
+            var denom = (x1 - x2) * (x1 - x3) * (x2 - x3);
 
-    var original_onMoveEnd = Sprite_Battler.prototype.onMoveEnd;
-    Sprite_Battler.prototype.onMoveEnd = function () {
-        original_onMoveEnd.call(this);
-        switch (this._moveType) {
-            case WIGGLE:
-            case PARABOLA:
-                this._offsetX = this._targetOffsetX;
-                this._offsetY = this._targetOffsetY;
-        }
+            this.paraA = (x3 * (y2 - y1) + x2 * (y1 - y3) + x1 * (y3 - y2)) / denom;
+            this.paraB = (x3 * x3 * (y1 - y2) + x2 * x2 * (y3 - y1) + x1 * x1 * (y2 - y3)) / denom;
+            this.paraC = (x2 * x3 * (x2 - x3) * y1 + x3 * x1 * (x3 - x1) * y2 + x1 * x2 * (x1 - x2) * y3) / denom;
 
-        this.dequeueMove();
-    };
+            this._targetOffsetX = x;
+            this._targetOffsetY = y;
+            this._offsetBaseY = this._offsetY;
+            this._movementDuration = duration;
+        },
+        function startWait(_, duration) {
+            this._moveType = null;
+            this._movementDuration = duration;
+        },
+        function playSe(_, se) {
+            se.volume = se.volume || 90;
+            se.pitch = se.pitch | 100;
+            se.pan = se.pan || 0;
+            AudioManager.playSe(se);
+        },
+        function gogoGadgetShake(_, shake) {
+            $gameScreen.startShake(shake.power, shake.speed, shake.duration);
+        },
+        function updateMove(updateMove) {
+            if (this._moveType === MOVE)
+                return updateMove.call(this);
+            if (this._movementDuration <= 0) {
+                return;
+            }
+            switch (this._moveType) {
+                case WIGGLE:
+                    var rx = Math.random();
+                    var ry = Math.random();
+                    this._offsetX = this._targetOffsetX + this._wiggleX + rx * this._wiggleDX;
+                    this._offsetY = this._targetOffsetY + this._wiggleY + ry * this._wiggleDY;
+                    break;
+                case PARABOLA:
+                    var d = this._movementDuration;
+                    this._offsetX = (this._offsetX * (d - 1) + this._targetOffsetX) / d;
+                    var x2 = this._offsetX * this._offsetX;
+                    this._offsetY = x2 * this.paraA + this._offsetX * this.paraB + this.paraC;
+                    this._offsetBaseY = (this._offsetBaseY * (d - 1) + this._targetOffsetY) / d;
+                    break;
+            }
+            this._movementDuration--;
+            if (this._movementDuration === 0) {
+                this.onMoveEnd();
+            }
+        });
 
-    var original_startMove = Sprite_Battler.prototype.startMove;
-    Sprite_Battler.prototype.startMove = function (x, y, duration) {
-        this._moveType = MOVE;
-        original_startMove.call(this, x, y, duration);
-    };
-
-    Sprite_Battler.prototype.startWiggle = function (mx, my, Mx, My, duration) {
-        this._moveType = WIGGLE;
-        this._targetOffsetX = this._offsetX;
-        this._targetOffsetY = this._offsetY;
-        this._wiggleX = mx;
-        this._wiggleDX = Mx - mx;
-        this._wiggleY = my;
-        this._wiggleDY = My - my;
-        this._movementDuration = duration;
-    };
-
-    Sprite_Battler.prototype.startParabola = function (x, y, h, duration) {
-        this._moveType = PARABOLA;
-
-        var x1 = this._offsetX || 0, y1 = this._offsetY || 0;
-        var x3 = x, y3 = y;
-        var x2 = (x1 + x3) / 2, y2 = h;
-        var denom = (x1 - x2) * (x1 - x3) * (x2 - x3);
-
-        this.paraA = (x3 * (y2 - y1) + x2 * (y1 - y3) + x1 * (y3 - y2)) / denom;
-        this.paraB = (x3 * x3 * (y1 - y2) + x2 * x2 * (y3 - y1) + x1 * x1 * (y2 - y3)) / denom;
-        this.paraC = (x2 * x3 * (x2 - x3) * y1 + x3 * x1 * (x3 - x1) * y2 + x1 * x2 * (x1 - x2) * y3) / denom;
-
-        this._targetOffsetX = x;
-        this._targetOffsetY = y;
-        this._movementDuration = duration;
-    }
-
-    Sprite_Battler.prototype.startWait = function (duration) {
-        this._moveType = null;
-        this._movementDuration = duration;
-    };
-
-    var original_updateMove = Sprite_Battler.prototype.updateMove;
-    Sprite_Battler.prototype.updateMove = function () {
-        if (this._moveType === MOVE)
-            return original_updateMove.call(this);
-        if (this._movementDuration <= 0) {
-            return;
-        }
-        switch (this._moveType) {
-            case WIGGLE:
-                var rx = Math.random();
-                var ry = Math.random();
-                this._offsetX = this._targetOffsetX + this._wiggleX + rx * this._wiggleDX;
-                this._offsetY = this._targetOffsetY + this._wiggleY + ry * this._wiggleDY;
-                break;
-            case PARABOLA:
-                var d = this._movementDuration;
-                this._offsetX = (this._offsetX * (d - 1) + this._targetOffsetX) / d;
-                var x2 = this._offsetX * this._offsetX;
-                this._offsetY = x2 * this.paraA + this._offsetX * this.paraB + this.paraC;
-                break;
-        }
-        this._movementDuration--;
-        if (this._movementDuration === 0) {
-            this.onMoveEnd();
-        }
-    };
+    override(Sprite_Enemy.prototype,
+        function loadBitmap(loadBitmap, name, hue) {
+            loadBitmap.call(this, name, hue);
+            const data = $dataEnemies[this._enemy._enemyId];
+            if (data.shadowImg) {
+                if (!this.shadow) {
+                    this.shadow = new Sprite_Base();
+                    this.shadow.anchor.x = 0.5;
+                    this.shadow.anchor.y = 1;
+                    this.parent.addChildAt(this.shadow, this.parent.children.indexOf(this));
+                }
+                this.shadow.bitmap = ImageManager.loadSystem(data.shadowImg);
+                this.shadow.offset = data.shadowOffset;
+            } else if (this.shadow) {
+                this.parent.removeChild(this.shadow);
+            }
+        },
+        function update(update) {
+            update.call(this);
+            if (this.shadow) {
+                this.shadow.x = this.x;
+                this.shadow.y =
+                    (Number.isFinite(this._offsetBaseY) ? this._offsetBaseY : this._offsetY) +
+                    this._homeY +
+                    this.shadow.offset;
+            }
+            this.shadow.opacity = this.opacity;
+        });
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;
     Scene_Battle.prototype.start = function () {
@@ -567,6 +616,144 @@ function eval_fn_expr(expr, args) {
                 var enemy = this.enemy();
                 enemy._customOnRestrict && enemy._customOnRestrict.call(this);
             }
+        },
+
+        function paramBase(paramBase, paramId) {
+            return this._cloneParams ?
+                this._cloneParams[paramId] :
+                paramBase.call(this, paramId);
+        },
+
+        function xparam(xparam, xparamId) {
+            return (this._cloneXParams ? this._cloneXParams[xparamId] : 0) +
+                xparam.call(this, xparamId);
+        },
+
+        function sparam(sparam, sparamId) {
+            return (this._cloneSParams ? this._cloneSParams[sparamId] : 1) *
+                sparam.call(this, sparamId);
+        },
+
+        function performAction(performAction, action) {
+            if (this.enemy().actorSprite) {
+                Game_Actor.prototype.performAction.call(this, action);
+            } else {
+                performAction.call(this, action);
+            }
+        },
+
+        function weapons() {
+            return this._cloneWeapons || [];
+        },
+
+        function performAttack(performAttack) {
+            if (this.enemy().actorSprite) {
+                Game_Actor.prototype.performAttack.call(this);
+            } else {
+                performAttack.call(this);
+            }
+        },
+
+        function performDamage(performDamage) {
+            performDamage.call(this);
+            if (this.enemy().actorSprite && this.isSpriteVisible()) {
+                this.requestMotion("damage");
+            }
+        },
+
+        function performEvasion(performEvasion) {
+            if (this.enemy().actorSprite) {
+                Game_Actor.prototype.performEvasion.call(this);
+            } else {
+                performEvasion.call(this);
+            }
+        },
+
+        function performMagicEvasion(performMagicEvasion) {
+            if (this.enemy().actorSprite) {
+                Game_Actor.prototype.performMagicEvasion.call(this);
+            } else {
+                performMagicEvasion.call(this);
+            }
+        },
+
+        function performCounter(performCounter) {
+            if (this.enemy().actorSprite) {
+                Game_Actor.prototype.performCounter.call(this);
+            } else {
+                performCounter.call(this);
+            }
+        },
+
+        function makeActions(makeActions) {
+            if (this._cloneActions) {
+                Game_Battler.prototype.makeActions.call(this);
+                if (this.numActions() > 0) {
+                    var actionList = this._cloneActions.filter(function(a) {
+                        return this.isActionValid(a);
+                    }, this);
+                    if (actionList.length > 0) {
+                        this.selectAllActions(actionList);
+                    }
+                }
+                this.setActionState('waiting');
+            } else {
+                makeActions.call(this);
+            }
+        },
+
+        function originalName(originalName) {
+            return this._cloneName || originalName.call(this);
+        },
+
+        function battlerName(battlerName) {
+            return this._cloneBattlerName || this.enemy().actorSprite || battlerName.call(this);
+        },
+
+        function transformAsClone(_, actor) {
+            this._cloneParams = new Array(8).fill().map((_, paramId) => {
+                var value = actor.paramBase(paramId) + actor.paramPlus(paramId);
+                var maxValue = actor.paramMax(paramId);
+                var minValue = actor.paramMin(paramId);
+                return Math.round(value.clamp(minValue, maxValue));
+            });
+            this._cloneXParams = new Array(10).fill().map((_, xparamId) => {
+                return actor.traitsSum(Game_BattlerBase.TRAIT_XPARAM, xparamId);
+            });
+            this._cloneSParams = new Array(10).fill().map((_, sparamId) => {
+                return actor.traitsPi(Game_BattlerBase.TRAIT_SPARAM, sparamId);
+            });
+            console.log(this._cloneParams, this._cloneXParams, this._cloneSParams);
+            this._cloneActions = actor.skills().map(skill => ({
+                conditionParam1: 0,
+                conditionParam2: 0,
+                conditionType: 0,
+                rating: 5,
+                skillId: skill.id
+            }));
+            this._cloneActions.push(
+                {
+                    conditionParam1: 0,
+                    conditionParam2: 0,
+                    conditionType: 0,
+                    rating: 5,
+                    skillId: 1
+                },
+                {
+                    conditionParam1: 0,
+                    conditionParam2: 0,
+                    conditionType: 0,
+                    rating: 3,
+                    skillId: 2
+                })
+            this._cloneName = actor.name();
+            this._cloneBattlerName = actor.battlerName();
+            this._cloneWeapons = actor.weapons();
+            this._letter = '';
+            this._plural = false;
+            this.refresh();
+            this.recoverAll();
+            this.numActions() > 0 && this.makeActions();
         });
 
     Object.defineProperties(Game_Enemy.prototype, {
@@ -579,6 +766,22 @@ function eval_fn_expr(expr, args) {
             set(val) { this._sprite && (this._sprite.patternY = val); }
         }
     });
+
+    override (Spriteset_Battle.prototype,
+        function createEnemies() {
+            var enemies = $gameTroop.members();
+            var sprites = [];
+            for (var i = 0; i < enemies.length; i++) {
+                enemies[i]._sprite = sprites[i] = enemies[i].enemy().actorSprite ?
+                    new Sprite_EnemyActor(enemies[i]) :
+                    new Sprite_Enemy(enemies[i]);
+            }
+            sprites.sort(this.compareEnemySprite.bind(this));
+            for (var j = 0; j < sprites.length; j++) {
+                this._battleField.addChild(sprites[j]);
+            }
+            this._enemySprites = sprites;
+        })
 
     override(Sprite_Enemy.prototype,
         function initMembers(initMembers) {
@@ -593,6 +796,10 @@ function eval_fn_expr(expr, args) {
         function startBossCollapse(startBossCollapse) {
             startBossCollapse.call(this);
             this._effectDuration = this.th || this.bitmap.height;
+        },
+        function setPattern(_, x = this.patternX, y = this.patternY) {
+            this.patternX = x;
+            this.patternY = y;
         },
         function updateFrame(_) {
             Sprite_Battler.prototype.updateFrame.call(this);
@@ -611,13 +818,19 @@ function eval_fn_expr(expr, args) {
                 frameWidth,
                 frameHeight);
 
-            if (enemy.patternType) {
+            if (enemy.patternType && !this._moves.length) {
                 if (this.patternFrameDuration > 0) {
                     this.patternFrameDuration--;
                 } else {
                     this.patternX++;
                     this.patternFrameDuration = enemy.patternFrameDuration[this.patternX % enemy.patternFrameDuration.length];
                 }
+            }
+        },
+        function setupEffect(setupEffect) {
+            setupEffect.call(this);
+            if (this._appeared && this._enemy.isAlive() && !this.opacity && !this._effectType) {
+                this.startEffect("appear");
             }
         });
 
@@ -634,6 +847,155 @@ function eval_fn_expr(expr, args) {
         var item = this.item();
         item._customAction && item._customAction.call(this, target);
     }
+
+    function Sprite_EnemyActor(enemy) {
+        Sprite_Actor.call(this, enemy);
+    }
+
+    Sprite_EnemyActor.prototype = Object.create(Sprite_Actor.prototype);
+    Sprite_EnemyActor.prototype.constructor = Sprite_EnemyActor;
+
+    override(Sprite_EnemyActor.prototype,
+        function initMembers(_) {
+            Sprite_Battler.prototype.initMembers.call(this);
+            this._enemy = null;
+            this._appeared = false;
+            this._effectType = null;
+            this._effectDuration = 0;
+            this._shake = 0;
+            this.createShadowSprite();
+            this._shadowSprite.scale.x = -1;
+            this.createWeaponSprite();
+            this._weaponSprite.scale.x = -1;
+            this._weaponSprite.x = 16;
+            this.createMainSprite();
+            this._mainSprite.scale.x = -1;
+            Sprite_Enemy.prototype.createStateIconSprite.call(this);
+        },
+        function setBattler(_, battler) {
+            Sprite_Battler.prototype.setBattler.call(this, battler);
+            var changed = (battler !== this._actor);
+            if (changed) {
+                this._actor = this._enemy = battler;
+                if (battler) {
+                    this.setHome(battler.screenX(), battler.screenY());
+                }
+                this.startEntryMotion();
+                this._stateIconSprite.setup(battler);
+            }
+        },
+        function update(update) {
+            update.call(this);
+            if (this._enemy) {
+                this.updateEffect();
+                this.updateStateSprite();
+            }
+        },
+        function updateBitmap(updateBitmap) {
+            const shouldInitVisibility = this._battlerName !== this._enemy.battlerName();
+            updateBitmap.call(this);
+            shouldInitVisibility && this.initVisibility();
+        },
+        function initVisibility() {
+            Sprite_Enemy.prototype.initVisibility.call(this);
+        },
+        function updateFrame(_) {
+            Sprite_Battler.prototype.updateFrame.call(this);
+            var bitmap = this._mainSprite.bitmap;
+            if (bitmap) {
+                var motionIndex = this._motion ? this._motion.index : 0;
+                var pattern = this._pattern < 3 ? this._pattern : 1;
+                var cw = bitmap.width / 9;
+                var ch = bitmap.height / 6;
+                var cx = Math.floor(motionIndex / 6) * 3 + pattern;
+                var cy = motionIndex % 6;
+                var fch = this._effectType === 'bossCollapse' ? this._effectDuration : ch;
+                this._mainSprite.setFrame(cx * cw, cy * ch, cw, fch);
+            }
+        },
+        function updatePosition(updatePosition) {
+            updatePosition.call(this);
+            this.x += this._shake;
+        },
+        function updateStateSprite() {
+            this._stateIconSprite.y = -Math.round((this._mainSprite.bitmap.height / 6 + 40) * 0.9);
+            if (this._stateIconSprite.y < 20 - this.y) {
+                this._stateIconSprite.y = 20 - this.y;
+            }
+        },
+        function initVisibility() {
+            Sprite_Enemy.prototype.initVisibility.call(this);
+        },
+        function setupEffect() {
+            Sprite_Enemy.prototype.setupEffect.call(this);
+        },
+        function startEffect(_, effectType) {
+            Sprite_Enemy.prototype.startEffect.call(this, effectType);
+        },
+        function startAppear() {
+            Sprite_Enemy.prototype.startAppear.call(this);
+        },
+        function startDisappear() {
+            Sprite_Enemy.prototype.startDisappear.call(this);
+        },
+        function startWhiten() {
+            Sprite_Enemy.prototype.startWhiten.call(this);
+        },
+        function startBlink() {
+            Sprite_Enemy.prototype.startBlink.call(this);
+        },
+        function startCollapse() {
+            Sprite_Enemy.prototype.startCollapse.call(this);
+        },
+        function startBossCollapse() {
+            this._effectDuration = this._mainSprite.bitmap.height / 6;
+            this._appeared = false;
+        },
+        function startInstantCollapse() {
+            Sprite_Enemy.prototype.startInstantCollapse.call(this);
+        },
+        function updateEffect() {
+            Sprite_Enemy.prototype.updateEffect.call(this);
+        },
+        function isEffecting() {
+            Sprite_Enemy.prototype.isEffecting.call(this);
+        },
+        function revertToNormal() {
+            Sprite_Enemy.prototype.revertToNormal.call(this);
+        },
+        function updateWhiten() {
+            Sprite_Enemy.prototype.updateWhiten.call(this);
+        },
+        function updateBlink() {
+            Sprite_Enemy.prototype.updateBlink.call(this);
+        },
+        function updateAppear() {
+            Sprite_Enemy.prototype.updateAppear.call(this);
+        },
+        function updateDisappear() {
+            Sprite_Enemy.prototype.updateDisappear.call(this);
+        },
+        function updateCollapse() {
+            Sprite_Enemy.prototype.updateCollapse.call(this);
+        },
+        function updateBossCollapse() {
+            Sprite_Enemy.prototype.updateBossCollapse.call(this);
+        },
+        function updateInstantCollapse() {
+            Sprite_Enemy.prototype.updateInstantCollapse.call(this);
+        },
+        function stepForward() {
+            this.startMove(48, 0, 12);
+        },
+        function stepBack() {
+            this.startMove(0, 0, 12);
+        },
+        function retreat() {
+            this.startMove(-300, 0, 30);
+        },
+        function damageOffsetX(damageOffsetX) {
+            return damageOffsetX.call(this) * -1;
+        });
 })();
 
 // Tinting
@@ -654,7 +1016,6 @@ function eval_fn_expr(expr, args) {
         original_actionApply.call(this, target);
         target.result().blocked =
             target.result().isHit() &&
-            target.isGuard() &&
             target.result().hpAffected &&
             target.result().hpDamage >= 0 &&
             target.result().hpDamage < 5 &&
