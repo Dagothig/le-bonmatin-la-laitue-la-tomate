@@ -146,7 +146,6 @@ function override(obj) {
         },
         function extractSaveContents(extractSaveContents, contents) {
             extractSaveContents.call(this, contents);
-            console.log(contents);
             $gameMapSwitches = contents.mapSwitches || {};
         });
 

@@ -75,6 +75,29 @@ _ProtagonisteNotreSurvie
 > survie que je vais assurer en te faisant \
 > tomber pendant qu'on court!
 
+_ProtagonisteSeFaitCharmerParWindo
+> C'est pas si pire finalement, la fenêtre \
+> elle est gentille! Elle fait des beaux \
+> calins, je me suis jamais mieux senti!
+
+_ProtagonisteLuiAUneBelleBette
+> Il a une belle bette lui!
+
+_ProtagonisteOuchMaDignite
+> Ouch, ma dignité!
+
+_ProtagonisteSeSentTrahi
+> Je me sens trahi... \
+> On a abusé de ma confiance!
+
+_ProtagonisteSassLesAliterations
+> Ça s'arrange pas les alitérations, huh?
+
+_ProtagonisteProcrastineLeCombat
+> Je sais, je sais. \
+> Et donc il dit, cri de guerre et tout le \
+> bataclan...
+
 ### Premiere
 
 ### Pretre
@@ -131,6 +154,16 @@ _GabspartCertes
 _GabspartCetaitNotreCombatCestCa
 > C'était \{notre\} combat c'est ça?
 
+_GabspartWindoAUnModusOperandi
+> Ça commence comme ça, mais le Windô a tout \
+> un modus opérandi! Au début ça va bien...
+
+_GabspartDonnesYUneSeconde
+> Donnes-y une seconde...
+
+_GabspartVoilaCaCommence
+> Et voilà. Ça commence.
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -186,6 +219,15 @@ _WwwelchiorNeReculeJamais
 _WwwelchiorLeWindoBougePas
 > De toute façon la grosse fenêtre elle bouge \
 > pas de son coin.
+
+_WwwelchiorAlitereLeClone
+> Ressaisis-toi Personne Véritable! Ce n'est \
+> qu'un simulacre! Une copie corporelle \
+> corporative croustillante!
+
+_WwwelchiorTreveDeProcrastination
+> Trêve de procrastination! Je, Wwwelchior, \
+> le Prince des Ténèbres, pulvérise les fenêtres!
 
 ## Windo
 
