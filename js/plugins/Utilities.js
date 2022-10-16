@@ -71,14 +71,15 @@ function aaa_anim(target, anim, delay) {
     sprite._aaaX = sprite._aaaX || 0;
     sprite._aaaY = sprite._aaaY || 0;
     delay = delay || 0;
+    var sideSign = target instanceof Game_Actor ? -1 : 1;
     if (delay) {
         sprite.pushMove([WAIT, delay]);
     }
     switch (anim) {
         case "jump_in":
         default:
-            sprite.pushMove([MOVE, -100, 50, 0]);
-            sprite.pushMove([PARABOLA, -20, 0, -60, 12]);
+            sprite.pushMove([MOVE, sideSign * -100, 50, 0]);
+            sprite.pushMove([PARABOLA, sideSign * -20, 0, -60, 12]);
             sprite.pushMove([PARABOLA, 0, 0, -10, 4]);
             break;
         case "wiggle":
@@ -87,42 +88,42 @@ function aaa_anim(target, anim, delay) {
         case "reset":
             sprite._aaaX = 0;
             sprite._aaaY = 0;
-            sprite.pushMove([PARABOLA, -3, 3, -6, 12]);
+            sprite.pushMove([PARABOLA, sideSign * -3, 3, -6, 12]);
             sprite.pushMove([PARABOLA, 0, 0, -4, 12]);
             break;
         case "step_back":
-            sprite._aaaX -= 30;
+            sprite._aaaX += sideSign * -30;
             sprite._aaaY += 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
         case "step_forward":
-            sprite._aaaX += 50;
+            sprite._aaaX += sideSign * 50;
             sprite._aaaY += 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
         case "shuffle":
             sprite.pushMove([WAIT, 4]);
-            sprite.pushMove([PARABOLA, 10, -10, -20, 12]);
+            sprite.pushMove([PARABOLA, sideSign * 10, -10, -20, 12]);
             sprite.pushMove([WAIT, 8]);
-            sprite.pushMove([PARABOLA, -15, 10, -30, 12]);
+            sprite.pushMove([PARABOLA, sideSign * -15, 10, -30, 12]);
             sprite.pushMove([WAIT, 6]);
-            sprite.pushMove([PARABOLA, -30, 0, -10, 12]);
+            sprite.pushMove([PARABOLA, sideSign * -30, 0, -10, 12]);
             break;
         case "step_down":
-            sprite._aaaX += -5;
+            sprite._aaaX += sideSign * -5;
             sprite._aaaY += 30;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 12]);
             break;
         case "lunge":
-            sprite._aaaX += 20;
+            sprite._aaaX += sideSign * 20;
             sprite.pushMove([PARABOLA, sprite._aaaX, sprite._aaaY, -10, 8]);
             sprite._aaaX = 0;
             sprite._aaaY = 0;
             sprite.pushMove([MOVE, sprite._aaaX, sprite._aaaY, 3]);
             break;
         case "jump":
-            sprite.pushMove([PARABOLA, -3, 3, -6, 12]);
-            sprite.pushMove([PARABOLA, 0, 0, -20, 12]);
+            sprite.pushMove([PARABOLA, sprite._aaaX + sideSign * 3, 3, -6, 12]);
+            sprite.pushMove([PARABOLA, sprite._aaaX, 0, -20, 12]);
             break;
     }
 }
@@ -216,6 +217,7 @@ function eval_fn_expr(expr, args) {
     var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
     const actorSpriteRegexp = /\<<aaa_actor_sprite *(\w+)?\>>/;
     const shadowRegexp = /\<<shadow *(\w+)? *(-?\d+)?\>>/;
+    const overlayRegexp = /\<<aaa_overlay (\d+)\>>/
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -245,6 +247,8 @@ function eval_fn_expr(expr, args) {
                     state._customApply = applyMatch && applyMatch[1] && eval_fn_expr(applyMatch[1], "action, target");
                     const removedMatch = note.match(removedRegexp);
                     state._customRemoved = removedMatch && removedMatch[1] && eval_fn_expr(removedMatch[1], "affected");
+                    const overlayMatch = note.match(overlayRegexp);
+                    overlayMatch && (state.overlay = parseInt(overlayMatch[1]) || 0);
                 }
                 break;
             case $dataSkills:
@@ -555,8 +559,8 @@ function eval_fn_expr(expr, args) {
                     (Number.isFinite(this._offsetBaseY) ? this._offsetBaseY : this._offsetY) +
                     this._homeY +
                     this.shadow.offset;
+                this.shadow.opacity = this.opacity;
             }
-            this.shadow.opacity = this.opacity;
         });
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;
@@ -567,11 +571,22 @@ function eval_fn_expr(expr, args) {
 
     var animRegexp = /\<<aaa_anim (.*)\>>/;
 
+    override(Game_BattlerBase.prototype,
+        function statesCount(_) {
+            return this._states.length;
+        });
+
     override(Game_Actor.prototype,
         function onBattleStart(onBattleStart) {
             onBattleStart.call(this);
             var actor = this.actor();
             actor._customSetup && actor._customSetup.call(this);
+            ($btl.party || ($btl.party = {}))[actor.name] = this;
+        },
+        function onBattleEnd(onBattleEnd) {
+            onBattleEnd.call(this);
+            if ($btl.party)
+                delete $btl.party[this.actor().name];
         });
 
     override(Game_Enemy.prototype,
@@ -722,7 +737,6 @@ function eval_fn_expr(expr, args) {
             this._cloneSParams = new Array(10).fill().map((_, sparamId) => {
                 return actor.traitsPi(Game_BattlerBase.TRAIT_SPARAM, sparamId);
             });
-            console.log(this._cloneParams, this._cloneXParams, this._cloneSParams);
             this._cloneActions = actor.skills().map(skill => ({
                 conditionParam1: 0,
                 conditionParam2: 0,
@@ -742,7 +756,7 @@ function eval_fn_expr(expr, args) {
                     conditionParam1: 0,
                     conditionParam2: 0,
                     conditionType: 0,
-                    rating: 3,
+                    rating: 1,
                     skillId: 2
                 })
             this._cloneName = actor.name();
@@ -752,6 +766,7 @@ function eval_fn_expr(expr, args) {
             this._plural = false;
             this.refresh();
             this.recoverAll();
+            this._tp = this.maxTp();
             this.numActions() > 0 && this.makeActions();
         });
 
@@ -780,7 +795,7 @@ function eval_fn_expr(expr, args) {
                 this._battleField.addChild(sprites[j]);
             }
             this._enemySprites = sprites;
-        })
+        });
 
     override(Sprite_Enemy.prototype,
         function initMembers(initMembers) {
@@ -831,6 +846,43 @@ function eval_fn_expr(expr, args) {
             if (this._appeared && this._enemy.isAlive() && !this.opacity && !this._effectType) {
                 this.startEffect("appear");
             }
+        });
+
+    override(Sprite_Actor.prototype,
+        function setBattler(setBattler, battler) {
+            setBattler.call(this, battler);
+            if (battler) {
+                battler._sprite = this;
+            }
+        },
+        function update(update) {
+            update.call(this);
+            this._shadowSprite.y =
+                (-this._offsetY) +
+                (Number.isFinite(this._offsetBaseY) ? this._offsetBaseY : 0) +
+                (-2);
+        },
+        function startEntryMotion(startEntryMotion) {
+            if (this._actor && this._actor.canMove()) {
+                this.pushMove([MOVE, 200, 50, 0]);
+                this.pushMove([WAIT, this._actor.index() * 8]);
+                this.pushMove([PARABOLA, 20, 0, -60, 12]);
+                this.pushMove([PARABOLA, 0, 0, -10, 4]);
+            } else {
+                startEntryMotion.call(this);
+            }
+        },
+        function startParabola(startParabola, x, y, h, duration) {
+            startParabola.call(this, x, y, h, duration);
+            this._actor.requestMotion("escape");
+        },
+        function stepForward(stepForward) {
+            stepForward.call(this);
+            this._aaaX = -48;
+        },
+        function stepBack(stepBack) {
+            stepBack.call(this);
+            this._aaaX = 0;
         });
 
     var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
@@ -995,6 +1047,31 @@ function eval_fn_expr(expr, args) {
         function damageOffsetX(damageOffsetX) {
             return damageOffsetX.call(this) * -1;
         });
+
+    override(Sprite_StateOverlay.prototype,
+        function updatePattern(_) {
+            this._pattern++;
+            this._pattern %= 8;
+        },
+        function update(update) {
+            update.call(this);
+            this._overlayCount--;
+            if (!this._overlayCount) {
+                findOverlay: if (this._battler) {
+                    for (let i = 1, n = this._battler.statesCount(); i <= n; i++) {
+                        let overlayIndex = ((this._overlayIndex || 0) + i) % n;
+                        let stateId = this._battler._states[overlayIndex];
+                        let state = $dataStates[stateId];
+                        if (state.overlay) {
+                            this._overlayIndex = state.overlay;
+                            break findOverlay;
+                        }
+                    }
+                    this._overlayIndex = 0;
+                }
+                this._overlayCount = 60;
+            }
+        })
 })();
 
 // Tinting
@@ -1195,11 +1272,18 @@ function eval_fn_expr(expr, args) {
 
     override(Game_Battler.prototype,
         function removeState(removeState, stateId) {
-            if (this.isStateAffected(stateId)) {
+            var wasAffected = this.isStateAffected(stateId);
+            removeState.call(this, stateId);
+            if (wasAffected) {
                 var state = $dataStates[stateId];
                 state._customRemoved && state._customRemoved(this);
             }
-            removeState.call(this, stateId);
+        },
+        function performCollapse(performCollapse) {
+            for (const state of this.states()) {
+                state._customRemoved && state._customRemoved(this);
+            }
+            performCollapse.call(this);
         },
         function performActionStart(performActionStart, action) {
             performActionStart.call(this, action);
@@ -1440,25 +1524,28 @@ function eval_fn_expr(expr, args) {
                 duration);
         },
 
+        function zoomOnBattler(_, battler, scale, duration = 15) {
+            this.startZoom(
+                battler && battler._sprite && battler._sprite.x || 0,
+                battler && battler._sprite && battler._sprite.y || 0,
+                scale,
+                duration);
+        },
+
         function resetZoom(_, duration = 15) {
             this.startZoom(this._zoomX, this._zoomY, 1, duration);
         });
 
-    /*override(Spriteset_Base.prototype,
-        function updatePosition(_updatePosition) {
-            var screen = $gameScreen;
-            var scale = screen.zoomScale();
-            this.scale.x = scale;
-            this.scale.y = scale;
-            var t = 1;//Math.max(0, Math.min((scale - 1) * 2, 1));
-            this.x = Math.round(
-                t * (Graphics.width / 2 - screen.zoomX() * scale) +
-                (1 - t) * (-screen.zoomX() * (scale - 1)));
-            this.y = Math.round(
-                t * (Graphics.height / 2 - screen.zoomY() * scale) +
-                (1 - t) * (-screen.zoomY() * (scale - 1)));
-            this.x += Math.round(screen.shake());
-        });*/
+    override(Game_Party.prototype,
+        function getBattleMemberByName(_, name) {
+            for (let i = 0; i < this.maxBattleMembers(); i++) {
+                const id = this._actors[i];
+                const actor = $gameActors.actor(id);
+                if (actor.name() === name && actor.isAppeared()) {
+                    return actor;
+                }
+            }
+        });
 })();
 
 const BASE_PATTERN_TYPE = [0, 1, 2, 1];

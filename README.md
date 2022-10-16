@@ -10,6 +10,19 @@
 
 ### Narrateur
 
+_NarrateurUnLivreAvecUneChansonnette
+> Un livre avec une Chansonnette dedans!
+
+_NarrateurFinsDePhrases
+> L'aboutisement, la résolution tant recherchée des discours sommairement achevés.
+
+_NarrateurUnLivreAvecLesFinsDePhrases
+> Un livre avec les Fins de Phrases dedans!
+
+_NarrateurCuirrasseRouillee
+> Une Cuirasse Rouillée! \
+> Oubliée, mais pas encore tout à fait inutilisable.
+
 ### Personne Véritable
 
 _ProtagonisteGrosseFenetre
@@ -98,6 +111,51 @@ _ProtagonisteProcrastineLeCombat
 > Et donc il dit, cri de guerre et tout le \
 > bataclan...
 
+_ProtagonisteEstUnTiCul
+> Non mais justement, le Gaboué me prédate!
+> Tu penses que ça date d'hier qu'il est sur
+> son pont à proférer des "GABOUÉ"?
+
+_ProtagonisteKosseca
+> Kosséça.
+
+_ProtagonisteDemeureConfus
+> Bon par contre ça clarifie rien à ce qu'on
+> a devant nous là.
+
+_ProtagonisteVeutPasLaSoupeDeMot
+> ... le Sage Pingouin? \
+>  \
+> ... les Scriptouilles?
+
+_ProtagonisteVeutPasLaSoupeDeMotPt2
+> À quel point Gaboué fait juste déblatérer \
+> un soupe de mots en fait? \
+> En plus ça rimait pas à la fin...
+
+_ProtagonisteLesScriptouillesCEstDangereux6
+> Bon, je m'excuse. \
+>  \
+> Pis huh... ces "Scriptouilles" c'est  \
+> dangereux?
+
+_ProtagonisteFinsDePhrasesPasPertinent
+> Mmmh, ça a pas tant l'air pertinent on \
+> dirait. Genre je feuillette rapidement, pis \
+> c'est principalement juste des mots \
+> individuels suivis de points -
+
+_ProtagonisteFinsDePhrasesExemple
+> J'en prends un au pif, comme ça: \
+> "[...] des chevaliers." \
+>  \
+> Ça n'a aucun intérêt...
+
+_ProtagonisteGaboueAPasBesoinDeFinsDePhrases
+> Hein? Comment Gaboué peut avoir de la \
+> misère à finir une phrase? Il dit "GABOUÉ" \
+> puis ensuite c'est tout dit!
+
 ### Premiere
 
 ### Pretre
@@ -164,6 +222,42 @@ _GabspartDonnesYUneSeconde
 _GabspartVoilaCaCommence
 > Et voilà. Ça commence.
 
+_GabspartTraduitGabouePingouin
+> > Lorsque jadis j'errais,\
+> > en quête de savoir.\
+> > Apprenti vorace,\
+> > du sage Pingouin.
+
+_GabspartTraduitGaboueScriptouilles
+> > Je ne su m'expliquer, \
+> > Jaillissent tabouéerre! \
+> > Préceptes profèrent, \
+> > toutes les Scriptouilles!
+
+_GabspartFautFaireAttentionAuxIncantations
+> Les Scriptouilles elles-mêmes, non. \
+> Mais les mots qu'elles incantent... \
+> Je m'y méfierais.
+
+_GabspartVoirQueYaLesFinsDePhrases
+> Bin non! Voir que y'a les Fins de Phrases \
+> drette ici comme ça! \
+> Depuis le temps que je... huh je veux dire, \
+> depuis le temps que Gaboué les cherche!
+
+_GabspartCaAPasToujoursEteAinsi
+> Disons seulement que ça n'a pas toujours \
+> été ainsi.
+
+_GabspartLivreVautOr
+> Dans tous les cas je te garantis que ça \
+> vaut de l'or ce petit livre-là.
+
+_GabspartOnSaitJamaisQuandOnPerdFinsDePhrases
+> On sait jamais quand est-ce qu'on se \
+> retrouve pris de stupeur par manque de \
+> complétude phrasique.
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -228,6 +322,17 @@ _WwwelchiorAlitereLeClone
 _WwwelchiorTreveDeProcrastination
 > Trêve de procrastination! Je, Wwwelchior, \
 > le Prince des Ténèbres, pulvérise les fenêtres!
+
+_WwwelchiorPensaisQueProtagonisteSaurait
+> Je pensais que tu vivais dans cette forêt?
+
+_WwwelchiorLesLegendesCEstLong
+> C'est vrai que ça prend un moment à se
+> former les légendes...
+
+_WwwelchiorCEtaitMechantCommentaire
+> Effectivement, c'était juste méchant comme \
+> commentaire.
 
 ## Windo
 
