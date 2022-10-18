@@ -6,6 +6,18 @@
 
 ### Pêcheur
 
+_PecheurAutreQuete
+> Bonsoir. \
+> \
+> Vous avez trouvé une autre quête? \
+> Pas pire, pas pire.
+
+_PecheurProtagonisteEstUnHermite
+> C'est pas vraiment mon problème si vous
+> êtes une hermite, et qu'en plusieurs années
+> vous n'avez jamais été foutu d'apprendre à
+> connaître votre voisin.
+
 ### Gaboué
 
 ### Narrateur
@@ -22,6 +34,15 @@ _NarrateurUnLivreAvecLesFinsDePhrases
 _NarrateurCuirrasseRouillee
 > Une Cuirasse Rouillée! \
 > Oubliée, mais pas encore tout à fait inutilisable.
+
+_NarrateurTombePecheurSenior
+>                          ci-git \
+>                    Le Pêcheur Senior \
+> Sauvagement arraché à la vie par la Grande Innondation \
+>             de la-petite-rivière-de-la-forêt \
+
+_NarrateurCanneAPeche
+> Une canne à pêche!
 
 ### Personne Véritable
 
@@ -156,6 +177,73 @@ _ProtagonisteGaboueAPasBesoinDeFinsDePhrases
 > misère à finir une phrase? Il dit "GABOUÉ" \
 > puis ensuite c'est tout dit!
 
+_ProtagonisteConfusPecheurCoteForet
+> Hum Bonsoir. \
+>  \
+> Je vais avouer que je suis un peu confus \
+> comment vous êtes arrivé ici?
+
+_ProtagonisteBloqueParGaboue
+> Depuis des lunes et des lunes que je tentes \
+> de venir de ce côté-ci de la forêt, mais \
+> que le Gaboué me perplexe!
+
+_ProtagonisteGrandeInnondationAvantSonTemps
+> Tu étais proche de Pêcheur Senior, c'est \
+> ça? La Grand Innondation c'était avant mon \
+> temps, mais le Vieux m'a compté à quel \
+> point ce fut terrible...
+
+_ProtagonisteAComprisLeSentiment
+> Non non, c'est bon, je pense qu'on a \
+> compris le sentiment.
+
+_ProtagonisteCestGlauqueIci
+> Je sais pas pourquoi je suis surpris, mais \
+> caline c'est glauque ici.
+
+_ProtagonisteTouristiques
+> ...Touristiques?
+
+_ProtagonisteOnVaVraimentFaireCa
+> Bon, on va vraiment faire ça?
+
+_ProtagonisteCEstPasTresHeroique
+> Je veux bien mais c'est pas très héroïque.
+
+_ProtagonisteNonNonLaDiplomatie
+> Non non attends! La diplomatie! \
+> Cette fois-ci j'ai un bon sentiment.
+
+_ProtagonisteMrPecheurVientEnPaix
+> Mr Pêcheur - Nous venons en paix! Nous \
+> avons été envoyé par votre fils, qui tente \
+> désespérément de suivre dans vos pas!
+
+_ProtagonisteMauvaiseExcusePourFantome
+> On espérait que vous auriez laissé quelque \
+> chose pour lui derrière vous...
+
+_ProtagonisteAvoirSuQueGaboueCopainFantomeP1
+> Bon, à avoir su que tu étais copain avec \
+> Le Pêcheur Senior, ça aurait été bien de \
+> l'indiquer à son fils.
+
+_ProtagonisteAvoirSuQueGaboueCopainFantomeP2
+> Juste une seconde - Son repos éternel ça \
+> inclut sortir avec Gaboué les samedis? \
+> Même plus il aurait pu dire coucou lui-même \
+> à son fils!
+
+_ProtagonisteEconomieDesFantomes
+> Et là ensuite si tout les fantômes d'avant \
+> se pointent ça ferait un achalandage \
+> monstre, et on s'en sortirait jamais... \
+> Ouin bon je vois le genre.
+
+_ProtagonisteRefuseAAA
+> Je refuse, aaaaaaaaaa!
+
 ### Premiere
 
 ### Pretre
@@ -258,6 +346,27 @@ _GabspartOnSaitJamaisQuandOnPerdFinsDePhrases
 > retrouve pris de stupeur par manque de \
 > complétude phrasique.
 
+_GabspartTuVeuxPasLaTraduction
+> Tu veux pas la traduction de ce que Gaboué \
+> a réellement dit?
+
+_GabspartSaufsSiVivants
+> Sauf s'ils sonts vivants.
+
+_GabspartTuEsSurBonneIdee
+> Attends, tu es sûr que c'est une bonne idée \
+> de -
+
+_GabspartFautEpicerPromenadeForet
+> C'est important d'épicer un peu les \
+> promenades dans la forêt!
+
+_GabspartFantomeTraumatisant
+> Non mais tu t'imagines le traumatisme! \
+> Son père est mort et enterré, et paf un \
+> matin un fantôme se pointe pour lui \
+> demander s'il veut bruncher?
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -334,7 +443,54 @@ _WwwelchiorCEtaitMechantCommentaire
 > Effectivement, c'était juste méchant comme \
 > commentaire.
 
-## Windo
+_WwwelchiorTombesPasTouristiques1
+> Les tombes pas touristiques c'est \
+> typiquement pas très accueillant.
+
+_WwwelchiorTombesPasTouristiques2
+> Des fois y'a des quêtes, et c'est comme un \
+> genre de parc d'attractions!
+
+_WwwelchiorPossessionsPrecieusesDuPecheur
+> À tout les coups le Pêcheur Senior a été \
+> enterré avec ses possessions précieuses!
+
+_WwwelchiorLesMortsCaSenFiche
+> Non mais de toute façon les morts c'est pas \
+> dérangé si on prend leurs choses.
+
+_WwwelchiorPoudreFantomeVautCher
+> La poudre de fantôme ça vaut cher!
+
+_WwwelchiorPasExactementVrai
+> C'est pas exactement vrai...
+
+### Fantôme
+
+_FantomeGaboue
+> Gaboué
+
+_FantomeMonReposEternel
+> Mais qu'est-ce que vous foutez ici! \
+> Mon repos éternel! \
+> Il éternel plus très fort là.
+
+_FantomePasConvaincu
+> C'est pas très convaincant là, vous croisez \
+> mon fils qui pêche pas bien, puis vous vous \
+> pointez à ma tombe autour de mon cercueil?
+
+_FantomeVousPouvezAvoirCannePeche
+> Bon, de toute façon elle ne me sert plus. \
+> Vous pouvez bien prendre ma canne à pêche.
+
+_FantomeSamediProchain
+> Samedi prochain, c'est un bon moment?
+
+_FantomeNon
+> Non!
+
+### Windo
 
 ## Rouler sans RPG Maker MV
 
