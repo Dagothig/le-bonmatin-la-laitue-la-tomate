@@ -18,6 +18,32 @@ _PecheurProtagonisteEstUnHermite
 > vous n'avez jamais été foutu d'apprendre à
 > connaître votre voisin.
 
+_PecheurAJamaisVuCannePeche
+> Oh. Un baton avec une corde? Je vois pas \
+> trop ça sert à quoi.
+
+_PecheurHuuuh
+> Huuuh...
+
+_PecheurAhBenCaline
+> Ah ben caline!
+
+_PecheurOffreCorde
+> Je... vous remercie donc infiniment? \
+> Et je vous offre...  \
+> Cette Corde Auto-Portante!? \
+> \}j'avais ça moi?\{
+
+_PecheurALeManuelInstructions
+> Bonsoir. Oui oui, j'ai le manuel \
+> d'instructions et à date ça a l'air de \
+> mieux fonctionner.
+
+_PecheurTristeHutte
+> Bonsoir. Finalement cette hutte est vraiment en mauvais \
+> état, je suis pas convaincu que je vais rester \
+> longtemps.
+
 ### Gaboué
 
 ### Narrateur
@@ -43,6 +69,18 @@ _NarrateurTombePecheurSenior
 
 _NarrateurCanneAPeche
 > Une canne à pêche!
+
+_NarrateurSquelette
+> Un squelette. Une vision macabre du futur.
+
+_NarrateurPecheurSortPapier
+> Le pêcheur sort un petit bout de papier de sa poche.
+
+_NarrateurCorde
+> Une Corde Auto-Portante! \
+> Elle permet de monter et de descendre à des endroits \
+> spécifiques et désormais identifiés! \
+> Non, ce n'est pas une corde à usage général.
 
 ### Personne Véritable
 
@@ -244,6 +282,31 @@ _ProtagonisteEconomieDesFantomes
 _ProtagonisteRefuseAAA
 > Je refuse, aaaaaaaaaa!
 
+_ProtagonisteAttendCommentaireSquelette
+> On va pas commenter sur le squelette? \
+> \
+> ... \
+> Bon je vais le faire moi-même alors.
+
+_ProtagonisteSquelette
+> Un squelette. Une vision macabre du futur.
+
+_ProtagonisteApporteCanneAPeche
+> Bon, une source sûre nous a recommandé de \
+> vous faire essayer ça plutôt que vos mains.
+
+_ProtagonisteRefuseDeSexpliquer
+> Vous aviez pas des choses que vous vous \
+> deviez de savoir? Je suis pas mal sûr que \
+> s'en est une autre.
+
+_ProtagonisteConfusParCorde
+> Hum, merci je suppose?
+
+_ProtagonisteImpressionneParManuelCannePeche
+> Ah oui vous quand vous vous devez de savoir \
+> des choses ça niaise pas.
+
 ### Premiere
 
 ### Pretre
@@ -366,6 +429,12 @@ _GabspartFantomeTraumatisant
 > Son père est mort et enterré, et paf un \
 > matin un fantôme se pointe pour lui \
 > demander s'il veut bruncher?
+
+_GabspartCordeADesUsages
+> L'entrée sur la Corde Auto-Portante dans \
+> le Repositoire des Textes Sacrés est pas \
+> tout à fait vide, alors c'est pas le pire \
+> cadeau.
 
 ### Wwwelchior
 
