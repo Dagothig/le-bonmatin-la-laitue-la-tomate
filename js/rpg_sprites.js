@@ -2632,7 +2632,7 @@ Spriteset_Battle.prototype.createEnemies = function() {
     var enemies = $gameTroop.members();
     var sprites = [];
     for (var i = 0; i < enemies.length; i++) {
-        enemies[i]._sprite = new Sprite_Enemy(enemies[i]);
+        sprites[i] = new Sprite_Enemy(enemies[i]);
     }
     sprites.sort(this.compareEnemySprite.bind(this));
     for (var j = 0; j < sprites.length; j++) {

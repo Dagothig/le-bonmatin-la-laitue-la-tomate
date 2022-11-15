@@ -67,7 +67,7 @@ var MOVE = "startMove",
     SHAKE = "gogoGadgetShake";
 
 function aaa_anim(target, anim, delay) {
-    var sprite = target._sprite;
+    var sprite = SceneManager.battlerSprite(target);
     sprite._aaaX = sprite._aaaX || 0;
     sprite._aaaY = sprite._aaaY || 0;
     delay = delay || 0;
@@ -574,6 +574,14 @@ function eval_fn_expr(expr, args) {
     override(Game_BattlerBase.prototype,
         function statesCount(_) {
             return this._states.length;
+        },
+        function pushMove(_, args) {
+            const sprite = SceneManager.battlerSprite(this);
+            sprite && sprite.pushMove(args);
+        },
+        function pushMoves(_, moveses) {
+            const sprite = SceneManager.battlerSprite(this);
+            sprite && sprite.pushMoves(moveses);
         });
 
     override(Game_Actor.prototype,
@@ -770,23 +778,22 @@ function eval_fn_expr(expr, args) {
             this.numActions() > 0 && this.makeActions();
         });
 
-    Object.defineProperties(Game_Enemy.prototype, {
-        patternX: {
-            get() { return this._sprite && this._sprite.patternX; },
-            set(val) { this._sprite && (this._sprite.patternX = val); },
-        },
-        patternY: {
-            get() { return this._sprite && this._sprite.patternY; },
-            set(val) { this._sprite && (this._sprite.patternY = val); }
-        }
-    });
+    override(SceneManager,
+        function battlerSprite(_, battler) {
+            return (
+                this._scene &&
+                this._scene._spriteset &&
+                this._scene._spriteset.battlerSprites &&
+                this._scene._spriteset.battlerSprites().find(s =>
+                    s._battler === battler));
+        })
 
-    override (Spriteset_Battle.prototype,
+    override(Spriteset_Battle.prototype,
         function createEnemies() {
             var enemies = $gameTroop.members();
             var sprites = [];
             for (var i = 0; i < enemies.length; i++) {
-                enemies[i]._sprite = sprites[i] = enemies[i].enemy().actorSprite ?
+                sprites[i] = enemies[i].enemy().actorSprite ?
                     new Sprite_EnemyActor(enemies[i]) :
                     new Sprite_Enemy(enemies[i]);
             }
@@ -849,12 +856,6 @@ function eval_fn_expr(expr, args) {
         });
 
     override(Sprite_Actor.prototype,
-        function setBattler(setBattler, battler) {
-            setBattler.call(this, battler);
-            if (battler) {
-                battler._sprite = this;
-            }
-        },
         function update(update) {
             update.call(this);
             this._shadowSprite.y =
@@ -1525,9 +1526,10 @@ function eval_fn_expr(expr, args) {
         },
 
         function zoomOnBattler(_, battler, scale, duration = 15) {
+            const sprite = SceneManager.battlerSprite(battler);
             this.startZoom(
-                battler && battler._sprite && battler._sprite.x || 0,
-                battler && battler._sprite && battler._sprite.y || 0,
+                sprite && sprite.x || 0,
+                sprite && sprite.y || 0,
                 scale,
                 duration);
         },
