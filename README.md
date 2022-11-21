@@ -797,6 +797,12 @@ _DarkGeorginaAEuSaVengeance
 > Huh? Vous tuer? Non non, vous pouvez partir \
 > maintenant.
 
+### SFX
+
+Cough
+
+Card
+
 ## Rouler sans RPG Maker MV
 
 Plop un serveur http sur la racine. Voilà c'est tout.
