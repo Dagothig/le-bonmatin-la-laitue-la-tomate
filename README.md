@@ -440,6 +440,62 @@ _ProtagonisteDefendTempleBonjour
 > jamais un Concept du monde en soit, il \
 > faudrait quand même vivre.
 
+_ProtagonisteNon6
+> Non?
+
+_ProtagonisteInspirezPasConfiance
+> Vous inspirez pas fort la confiance...
+
+_ProtagonisteDiseuseBonneAventure
+> Ah c'est... Vous êtes... une diseuse de \
+> bonne aventure? C'est des cartes de tarot, \
+> c'est ça? \
+> Vous voyez j'ai la tour et tout.
+
+_ProtagonisteTarotBizarre
+> Ah vous connaissez? C'est un peu bizarre, \
+> d'habitude on tire les cartes une à la fois \
+> avec ça, non?
+
+_ProtagonisteAUnNom
+> Ah et puis j'ai un nom! C'est Personne \
+> Véritable! \
+> \
+> Vous n'êtes pas un très bon oracle...
+
+_ProtagonisteGabspartEnsorcelle
+> Qu'avez-vous fait à Gabspart!? Vous l'avez \
+> ensorcelé!
+
+_ProtagonistePerduSuppose
+> Quoi?... \
+> \
+> Je... \
+> Je suis perdu je suppose...
+
+_ProtagonistePasTraducteur
+> Huh... Oui? Non? \
+> On a perdu le traducteur...
+
+_ProtagonistePasToiAussi
+> Non! Pas toi aussi!?
+
+_ProtagonisteVousAllezPayer
+> Vous allez payer pour ce que vous avez fait \
+> à mes camarades!
+
+_ProtagonisteWwwelchiorCharme
+> Raaaaa et Wwwelchior est sous son charme!
+
+_ProtagonisteNeTientQueSurPete
+> Ça ne tient que sur moi donc, je vous pète!
+
+_ProtagonisteRienQuiSePasse
+> Huh, y'a rien qui se passe?
+
+_ProtagonisteParleDuMiens
+> Tu veux qu'on parle du miens?
+
 ### Premiere
 
 ### Pretre
@@ -449,6 +505,9 @@ _ProtagonisteDefendTempleBonjour
 
 _Gaboue61
 > Gaboué?!
+
+_GaboueEnAMarre
+> Gaboué.
 
 ### Gabspart
 
@@ -594,6 +653,19 @@ _GabspartSelonRepoGnagnagna
 > Selon la légende, ce serait de l'autre côté \
 > de la Montagne qui entoure cette vallée. \
 
+_GabspartOhNon
+> Oh non.
+
+_GabspartNonJeRefuse
+> Non non non, je refuse!
+
+_GabspartMalDeTete
+> C'est fini, je vais avoir un mal de tête \
+> pour toute la journée...
+
+_GabspartPasLeMonopole
+> Non non, c'est bon, j'ai pas le monopole.
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -703,6 +775,33 @@ _WwwelchiorDoitBienYAvoirTempleBonMatin
 > Forcément il doit bien y avoir un Temple du \
 > Bon Matin, non?
 
+_WwwelchiorCartesPasStandard
+> Au moins c'est pas les cartes standards...
+
+_WwwelchiorVousPataugez
+> Ah mais vous pataugez là!
+
+_WwwelchiorPasBesoinDeMagie
+> Pas besoin de beaucoup de magie pour \
+> reproduire cette situation...
+
+_WwwelchiorPogneTour1
+> Enfin bon, c'est faux, il était pas affamé \
+> le Protagoniste!
+
+_WwwelchiorPogneTour2
+> Il était perdu!
+
+_WwwelchiorPogneTour3
+> Attends! C'est même pas ton tour! \
+> Parce que vois-tu, le Protagoniste perdu, \
+> il devint tellement perdu, qu'il se pris \
+> une soif de violence!
+
+_WwwelchiorPogneTour4
+> Ah c'est dommage, je pense que j'avais une \
+> bonne histoire dans la main.
+
 ### Fantôme
 
 _FantomeGaboue
@@ -758,6 +857,73 @@ _VieilleEvitageContenu
 _VieilleFenetresOracleParDessous
 > Des fois les fenêtres et les oracles on \
 > peut vraiment passer par dessous.
+
+### Oracle
+
+_OracleDotDotDotNon
+> ... \
+> \
+> Non.
+
+_OracleTraversezPont
+> Traversez le pont, vous allez voir ça va \
+> pas prendre long.
+
+_OracleSiVousVoulezPas
+> Après, si vous voulez pas, vous voulez pas.
+
+_OracleBon
+> Bon.
+
+_OracleCompteCartes
+> Donc on est cinq? Onze moins cinq ça fait \
+> six. \
+> \
+> Donc prenez chacuns ces six cartes.
+
+_OracleCarteDePlus
+> Et je vous donne aussi à chacun cette \
+> autre carte de plus.
+
+_OracleIlEtaitUneFois
+> On pourrait dire. Tenez je vais commencer \
+> pour que vous voyez comment ça fonctionne. \
+> \
+> Donc voyez, Il Était Une Fois...
+
+_OracleUnProtagoniste
+> Un Protagoniste!
+
+_OraclePatauge
+> Huh? \
+> \
+> Mmmh des fois... Des fois le... attendez...
+
+_OracleIlEtaitUneFois2
+> Non non, ça s'en vient! Vous m'arrêtez à \
+> tout bout de champ! \
+> Oui donc, Il Était Une Fois un \
+> protagoniste...
+
+_OracleAffame
+> Affamé! Tiens vous voyez, y'a une mise en \
+> situation et tout...
+
+_OracleCeSeraPlusCourt
+> Ah c'est pas grave, ça sera plus court.
+
+_OraclePigeUneCarte
+> Ah, je pige une carte donc...
+
+_OracleProtagonistesPasPacifiques
+> Oui, ça a du sens... Les Protagonistes \
+> perdus c'est pas très pacifique d'habitude.
+
+_OraclePreditQuiproquos
+> Non mais, si vous voulez pas, vous voulez \
+> pas. \
+> Je vous prédis de nombreux quiproquos, avec \
+> toute cette... aggression qui vous habite.
 
 ### Windo
 

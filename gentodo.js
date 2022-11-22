@@ -3,7 +3,7 @@ const { spawnSync } = require("child_process");
 
 const text = fs.readFileSync("README.md").toString();
 const todos = Array
-    .from(text.matchAll(/(_\w+)\r\n((>.*\r\n)+)/mg))
+    .from(text.matchAll(/(_\w+)\r?\n((>.*\r?\n)+)/mg))
     .map(match => [match[1], match[2].replace(/[>\\\r\n]/g, "").trim()]);
 
 for (const [file, content] of todos) {
