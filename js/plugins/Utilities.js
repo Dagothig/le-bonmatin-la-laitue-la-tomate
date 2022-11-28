@@ -1174,7 +1174,6 @@ function eval_fn_expr(expr, args) {
         this.drawActorHp(actor, x, y + lineHeight * 3, colWidth);
         this.drawActorMp(actor, x2, y + lineHeight * 3, colWidth);
     };
-
     Window_Status.prototype.maxEquipmentLines = function () {
         return 5;
     };
@@ -1224,6 +1223,27 @@ function eval_fn_expr(expr, args) {
             }
         }
     };
+
+    override(Window_ScrollText.prototype,
+        function scrollSpeed(scrollSpeed) {
+            return (this.aaaSpeed *
+                    (this.isFastForward() ? this.fastForwardRate() : 1)) ||
+                scrollSpeed.call(this);
+        },
+        function fastForwardRate() {
+            return 9;
+        },
+        function processEscapeCharacter(processEscapeCharacter, code, textState) {
+            switch (code) {
+                case "S":
+                    const param = this.obtainEscapeParam(textState)
+                    this.aaaSpeed = Number.isFinite(param) ? param / 10 : 1;
+                    break;
+                default:
+                    return processEscapeCharacter.call(this, code, textState);
+            }
+        });
+
 })();
 
 // State ameliorations

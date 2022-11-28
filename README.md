@@ -147,6 +147,22 @@ _NarrateurEcriteauDarkGeorgina
 _NarrateurPasTresHumble
 > Pas très humble.
 
+_NarrateurElixirMagie
+> Un élixir de magie! \
+> Lorsque bu, l'Univers se prend soudainement l'envie \
+> d'ajouter 5pt de magie à la personne!
+
+_NarrateurVinPlombe
+> Une jarre de vin. \
+> Mais vous ne voulez pas en boire, le vin a un drôle de \
+> goût. Un certain aplomb sucré.
+
+_NarrateurLectureDangereuse
+> Vous êtes soudain pris de l'horrible réalisation que ce \
+> n'est pas forcément une bonne idée de laisser Gabspart \
+> lire les passages.
+
+
 ### Personne Véritable
 
 _ProtagonisteGrosseFenetre
@@ -240,7 +256,7 @@ _ProtagonisteEstUnTiCul
 > Tu penses que ça date d'hier qu'il est sur
 > son pont à proférer des "GABOUÉ"?
 
-_ProtagonisteKosseca
+ragonisteKosseca
 > Kosséça.
 
 _ProtagonisteDemeureConfus
@@ -496,6 +512,21 @@ _ProtagonisteRienQuiSePasse
 _ProtagonisteParleDuMiens
 > Tu veux qu'on parle du miens?
 
+_ProtagonisteOhNonNonNon
+> Oh Non. Non Non Non Non Non.
+
+_ProtagonisteNeSaitPasLire
+> Ah c'est... pas une langue que je sais \
+> lire.
+
+_ProtagonistePlusTard
+> Peut-être plus tard? Maintenant on n'a pas \
+> le temps. Le Bon Matin et tout ça.
+
+_ProtagonisteYAller
+> Oh... Huh, c'était. C'était bien? On peut y \
+> aller maintenant, oui?
+
 ### Premiere
 
 ### Pretre
@@ -665,6 +696,23 @@ _GabspartMalDeTete
 
 _GabspartPasLeMonopole
 > Non non, c'est bon, j'ai pas le monopole.
+
+_GabspartSaitLire
+> Oooh, je pourrais te lire des passages si \
+> tu veux!
+
+_GabspartDommageManque
+> Dommage, tu ne sais pas ce que tu manques.
+
+_GabspartAutrePassage
+> Oh attends, il y a un autre passage que je \
+> veux lire!
+
+_GabspartCestBeau
+> C'est beau, hein?
+
+_GabspartCestBon
+> C'est bon, c'est bon.
 
 ### Wwwelchior
 
