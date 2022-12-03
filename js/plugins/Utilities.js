@@ -561,6 +561,15 @@ function eval_fn_expr(expr, args) {
                     this.shadow.offset;
                 this.shadow.opacity = this.opacity;
             }
+        },
+        function updateStateSprite() {
+            this._stateIconSprite.scale.x = 1 / this.scale.x;
+            this._stateIconSprite.scale.y = 1 / this.scale.y;
+            this._stateIconSprite.y = -Math.round((this.bitmap.height * this.scale.y + 40) * 0.9);
+            if (this._stateIconSprite.y < 20 - this.y) {
+                this._stateIconSprite.y = 20 - this.y;
+            }
+            this._stateIconSprite.y /= this.scale.y;
         });
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;

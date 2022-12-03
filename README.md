@@ -162,6 +162,11 @@ _NarrateurLectureDangereuse
 > n'est pas forcément une bonne idée de laisser Gabspart \
 > lire les passages.
 
+_NarrateurBaseDeDetah
+> La pancarte lit: \
+>  \
+>                    BASE DE DETAH
+
 
 ### Personne Véritable
 
@@ -527,6 +532,14 @@ _ProtagonisteYAller
 > Oh... Huh, c'était. C'était bien? On peut y \
 > aller maintenant, oui?
 
+_ProtagonisteBeauTexteRetentissant
+> Du beau texte retentissant, ça.
+
+_ProtagonistePeteDarkGeorgina
+> Non Dark Georgina! Ton règne du \
+> en-dessous-du-cimetière-du-village tire à \
+> sa fin! Nous te terrassons aujourd'hui!
+
 ### Premiere
 
 ### Pretre
@@ -850,6 +863,9 @@ _WwwelchiorPogneTour4
 > Ah c'est dommage, je pense que j'avais une \
 > bonne histoire dans la main.
 
+_WwwelchiorBienDit
+> Ah enfin! Pour une fois c'est bien dit!
+
 ### Fantôme
 
 _FantomeGaboue
@@ -1011,11 +1027,34 @@ _DarkGeorginaAEuSaVengeance
 > Huh? Vous tuer? Non non, vous pouvez partir \
 > maintenant.
 
+_DarkGeorginaJeSuisEternel
+> Je suis éterneeeeel!
+
+_DarkGeorginaHaha
+> HAHAHAHAHAHAHAHAHAHA
+
+_DarkGeorginaGniaha
+> Gniaha
+
+### Detah
+
+_Detah
+> DETAH!
+
+_Detaaah
+> DEEETAAAAAAAAH!
+
 ### SFX
 
 Cough
 
 Card
+
+MaPhrase
+
+Omnomnomnom
+
+Blblbl
 
 ## Rouler sans RPG Maker MV
 
