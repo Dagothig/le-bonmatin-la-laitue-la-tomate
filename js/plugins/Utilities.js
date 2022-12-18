@@ -217,7 +217,7 @@ function eval_fn_expr(expr, args) {
     var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
     const actorSpriteRegexp = /\<<aaa_actor_sprite *(\w+)?\>>/;
     const shadowRegexp = /\<<shadow *(\w+)? *(-?\d+)?\>>/;
-    const overlayRegexp = /\<<aaa_overlay (\d+)\>>/
+    const overlayRegexp = /\<<aaa_overlay (\d+)\>>/;
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -230,8 +230,11 @@ function eval_fn_expr(expr, args) {
                     $gms[map.name] = map;
                     Object.defineProperty(map, "$sw", {
                         get() { return $gameMapSwitches[map.id] || ($gameMapSwitches[map.id] = {}); }
-                    })
+                    });
                 }
+                break;
+            case $dataMap:
+                $dataMap.bgm.filters = ($dataMap.meta.bgmFilter || "").split(",").filter(i => i);
                 break;
             case $dataStates:
                 for (const state of object) {
@@ -1343,6 +1346,27 @@ function eval_fn_expr(expr, args) {
         },
         function audioFileExt() {
             return ".ogg";
+        },
+        function updateBgmParameters(updateBgmParameters, bgm) {
+            this.updateBufferParameters(
+                this._bgmBuffer,
+                this._bgmVolume * (this.ongoingSpeech ? 0.25 : 1),
+                bgm);
+        },
+        function updateBufferParameters(updateBufferParameters, buffer, configVolume, audio) {
+            updateBufferParameters.call(this, buffer, configVolume, audio);
+            if (buffer && audio) {
+                buffer.filters = audio.filters || null;
+            }
+        },
+        function updateCurrentBgm(updateCurrentBgm, bgm, pos) {
+            updateCurrentBgm.call(this, bgm, pos);
+            this._currentBgm.filters = bgm.filters;
+        },
+        function saveBgm(saveBgm) {
+            const bgm = saveBgm.call(this);
+            this._currentBgm && (bgm.filters = this._currentBgm.filters);
+            return bgm;
         });
 
     override(WebAudio,
@@ -1423,33 +1447,22 @@ function eval_fn_expr(expr, args) {
         }
     });
 
-    override(AudioManager,
-        function updateBgmParameters(updateBgmParameters, bgm) {
-            this.updateBufferParameters(
-                this._bgmBuffer,
-                this._bgmVolume * (this.ongoingSpeech ? 0.25 : 1),
-                bgm);
-        });
-
-    function _startPlaying(_startPlaying, loop, offset) {
-        if (!this._isOngoingSpeech && (this._url || "").match(speechRegexp)) {
-            this._isOngoingSpeech = true;
-            AudioManager.ongoingSpeech++;
-        }
-        return _startPlaying.call(this, loop, offset);
-    }
-
-    function stop(stop) {
-        if (this._isOngoingSpeech) {
-            this._isOngoingSpeech = false;
-            AudioManager.ongoingSpeech--;
-        }
-        return stop.call(this);
-    }
 
     override(WebAudio.prototype,
-        _startPlaying,
-        stop,
+        function _startPlaying(_startPlaying, loop, offset) {
+            if (!this._isOngoingSpeech && (this._url || "").match(speechRegexp)) {
+                this._isOngoingSpeech = true;
+                AudioManager.ongoingSpeech++;
+            }
+            return _startPlaying.call(this, loop, offset);
+        },
+        function stop(stop) {
+            if (this._isOngoingSpeech) {
+                this._isOngoingSpeech = false;
+                AudioManager.ongoingSpeech--;
+            }
+            return stop.call(this);
+        },
         function aaa_fade(_, duration, from, to) {
             if (this.isReady()) {
                 if (this._gainNode) {
@@ -1464,24 +1477,50 @@ function eval_fn_expr(expr, args) {
                     this.fadeIn(duration);
                 }.bind(this));
             }
-        });
+        },
+        function _createNodes(_createNodes) {
+            const context = WebAudio._context;
+            _createNodes.call(this);
 
-    override(Html5Audio.prototype,
-        _startPlaying,
-        stop,
-        function aaa_fade(_, duration, from, to) {
-            if (this.isReady()) {
-                if (this._audioElement) {
-                    this._tweenTargetGain = to;
-                    this._tweenGain = from;
-                    this._startGainTween(duration);
-                }
-            } else if (this._autoPlay) {
-                this.addLoadListener(function () {
-                    this.fadeIn(duration);
-                }.bind(this));
+            this._lowpassNode = context.createBiquadFilter();
+            this._lowpassNode.type = "lowpass";
+            this._lowpassDry = context.createGain();
+            this._lowpassWet = context.createGain();
+
+            this._updateFilters();
+        },
+        function _connectNodes() {
+            this._gainNode.connect(this._pannerNode);
+            this._pannerNode.connect(this._lowpassDry);
+            this._pannerNode.connect(this._lowpassNode);
+            this._lowpassNode.connect(this._lowpassWet);
+            this._lowpassDry.connect(WebAudio._masterGainNode);
+            this._lowpassWet.connect(WebAudio._masterGainNode);
+        },
+        function _removeNodes(_removeNodes) {
+            _removeNodes.call(this);
+            this._lowpassNode = null;
+            this._lowpassDry = null;
+            this._lowpassWet = null;
+        },
+        function _updateFilters() {
+            const context = WebAudio._context;
+            if (this._lowpassDry) {
+                this._lowpassDry.gain.linearRampToValueAtTime(this._shouldLowpass ? 0 : 1, context.currentTime + 0.5);
+                this._lowpassWet.gain.linearRampToValueAtTime(this._shouldLowpass ? 1 : 0, context.currentTime + 0.5);
             }
         });
+
+    Object.defineProperty(WebAudio.prototype, "filters", {
+        get() {
+            return this._filters;
+        },
+        set(filters) {
+            this._filters = this._filters;
+            this._shouldLowpass = filters && filters.includes("lowpass");
+            this._updateFilters();
+        }
+    });
 })();
 
 // Map ameliorations
