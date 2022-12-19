@@ -540,6 +540,10 @@ _ProtagonistePeteDarkGeorgina
 > en-dessous-du-cimetière-du-village tire à \
 > sa fin! Nous te terrassons aujourd'hui!
 
+_ProtagonisteATrouveFinsPhrases
+> Non mais justement on a trouvé des fins de \
+> phrases dans la forêt tantôt!
+
 ### Premiere
 
 ### Pretre
