@@ -10447,6 +10447,7 @@ Game_Interpreter.prototype.command337 = function() {
 
 // Force Action
 Game_Interpreter.prototype.command339 = function() {
+    console.log(this._params);
     this.iterateBattler(this._params[0], this._params[1], function(battler) {
         if (!battler.isDeathStateAffected()) {
             battler.forceAction(this._params[2], this._params[3]);

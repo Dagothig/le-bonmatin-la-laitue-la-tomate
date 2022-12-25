@@ -1194,7 +1194,7 @@ function eval_fn_expr(expr, args) {
         "Calcul des dégâts: ",
         "  a.atk * a.luk - b.def * b.luk",
         "où luk est:",
-        "  uniform(1, (mardité + 5) / 100)",
+        "  1 + uniform(0, mardité - 95) / 100",
         "Agileté détermine l'ordre des tours"];
 
     Window_Status.prototype.refresh = function () {
