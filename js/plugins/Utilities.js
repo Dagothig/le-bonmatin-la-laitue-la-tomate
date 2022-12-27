@@ -210,6 +210,7 @@ function eval_fn_expr(expr, args) {
     var applyRegexp = /\<<aaa_apply ([\s\S]*?)\>>/;
     var removedRegexp = /\<<aaa_removed ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
+    var actionsRegexp = /\<<aaa_actions ([\s\S]*?)\>>/;
     var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
@@ -283,6 +284,8 @@ function eval_fn_expr(expr, args) {
                     const note = enemy && enemy.note || "";
                     const actionMatch = note.match(actionRegexp);
                     enemy._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "actionList, ratingZero");
+                    const actionsMatch = note.match(actionsRegexp);
+                    enemy._customActions = actionsMatch && actionsMatch[1] && eval_fn_expr(actionsMatch[1], "actionList");
                     const restrictedMatch = note.match(restrictedRegexp);
                     enemy._customOnRestrict = restrictedMatch && restrictedMatch[1] && eval_fn_expr(restrictedMatch[1]);
                     const setupMatch = note.match(setupRegexp);
@@ -625,6 +628,17 @@ function eval_fn_expr(expr, args) {
             return (
                 enemy._customAction && enemy._customAction.call(this, actionList, ratingZero) ||
                 selectAction.call(this, actionList, ratingZero));
+        },
+        function selectAllActions(selectAllActions, actionList) {
+            let enemy = this.enemy();
+            let actions = enemy._customActions && enemy._customActions.call(this, actionList);
+            if (actions) {
+                for (let i = 0; i < this.numActions(); i++) {
+                    this.action(i).setEnemyAction(actions[i]);
+                }
+            } else {
+                return selectAllActions.call(this, actionList);
+            }
         },
         function performActionStart(performActionStart, action) {
             performActionStart.call(this, action);
@@ -1083,6 +1097,17 @@ function eval_fn_expr(expr, args) {
                     this._overlayIndex = 0;
                 }
                 this._overlayCount = 60;
+            }
+        });
+    override(Sprite_StateIcon.prototype,
+        function update(update) {
+            update.call(this);
+            let hue = this._hue || 0;
+            let battlerHue = this._battler && this._battler.battlerHue() || 0;
+            if (hue !== battlerHue) {
+                this.bitmap = ImageManager.loadSystem('IconSet', -battlerHue);
+                this.updateFrame();
+                this._hue = battlerHue;
             }
         })
 })();

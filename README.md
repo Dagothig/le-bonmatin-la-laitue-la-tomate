@@ -544,6 +544,45 @@ _ProtagonisteATrouveFinsPhrases
 > Non mais justement on a trouvé des fins de \
 > phrases dans la forêt tantôt!
 
+_ProtagonistePrefereDiplo
+> Même pas une petite discussion? Une petite \
+> tasse de thé, je sais pas?
+
+_ProtagonisteFuillons
+> Fuillons!
+
+_ProtagonisteAuraitTriche
+> Attends mais y'a pleins de moments où tu \
+> aurais pu le faire! On est là à se faire \
+> chier et depuis tout ce temps tu peux juste \
+> faire ça?
+
+_ProtagonisteAcide6
+> Acide?
+
+_ProtagonisteRitDuRouge
+> Ha! Regardez y pense que le rouge ça fait \
+> peur!
+
+_ProtagonisteEnAMarreDesTables
+> Ok mais ça fera là! Y'a combien de table à \
+> faire tomber lui-là!?
+
+_ProtagonisteEnAMarreDesTables2
+> Bin non, si c'était le cas on verrait sa \
+> pile de tables! \
+> Mais là ça sort du néant son affaire.
+
+_ProtagonisteProcedure
+> ... Une procédure?
+> Y nous niaise. Quant à faire je peux bien
+> lui expliquer la procédure de comment on va
+> lui péter sa face!
+
+_ProtagonisteOffreMercantile
+> ... Quoi? Tu veux nous faire une offre \
+> mercantile?
+
 ### Premiere
 
 ### Pretre
@@ -731,6 +770,15 @@ _GabspartCestBeau
 _GabspartCestBon
 > C'est bon, c'est bon.
 
+_GabspartSeSentGenereux
+> Bon, par contre mettons qu'on se tape pas \
+> de faire tout le tour du monde pour un \
+> petit lit?
+
+_GabspartTuVeuxPasLeSavoir
+> Non mais tu veux même pas le savoir, ça te \
+> mettrais juste en colère...
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -869,6 +917,45 @@ _WwwelchiorPogneTour4
 
 _WwwelchiorBienDit
 > Ah enfin! Pour une fois c'est bien dit!
+
+_WwwelchiorRegardezBranche
+> Oh! Regardez dans sa main! La BRANCHE!
+
+_WwwelchiorVeutPasNegocier
+> Tu niaises! Il fait genre trois fois ta \
+> taille! On va lui faire tomber sa table!
+
+_WwwelchiorExpliqueLaRaison
+> Tsk tsk tsk Personne Véritable, tu le sais \
+> bien qu'il faut pas abuser de ces choses- \
+> là. Un jour tu te dis "Ah juste une ptit \
+> disparition de mon problème"...
+
+_WwwelchiorExpliqueDangerTriche
+> Et puis paf tu te réveilles le lendemain \
+> à moitié à travers le plancher et il reste \
+> plus une âme de vivante! T'imagines \
+> l'ennui?
+
+_WwwelchiorExpliquerCouleurBetterave
+> C'est bon on a réussi à lui expliquer la \
+> couleur du jus de betterave!
+
+_WwwelchiorTableEspace
+> Tant qu'il lui reste de l'espace, il peut \
+> en faire autant qu'il veut!
+
+_WwwelchiorDetahDangereux
+> Justement! Devines pourquoi le Detah est \
+> dangereux!
+
+_WwwelchiorBienDaccord
+> C'est bien dit ça! Et dire que tu voulais \
+> t'asseoir pour une tasse de thé!
+
+_WwwelchiorNeVeutPasTransaction
+> Assurément tu ne veux rien échanger avec un \
+> Detah qui veut faire une transaction!
 
 ### Fantôme
 
@@ -1047,6 +1134,17 @@ _Detah
 
 _Detaaah
 > DEEETAAAAAAAAH!
+
+_DetahBoast
+> Hey ho! Si vous pensez que ça va changer \
+> quelque chose! Ma base est même ACID! Vous \
+> n'avez aucune chance!
+
+_DetahVaVousBriser
+> Suffit! Je vais vous briser!
+
+_DetahHehe
+> He he...
 
 ### SFX
 
