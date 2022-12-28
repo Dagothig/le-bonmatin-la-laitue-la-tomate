@@ -167,6 +167,17 @@ _NarrateurBaseDeDetah
 >  \
 >                    BASE DE DETAH
 
+_NarrateurRienVu
+> Bien que votre vue sur les environs est nettement \
+> meilleure depuis ici, vous avez la drôle d'impression \
+> de ne rien avoir vu de nouveau.
+
+_NarrateurRadeau
+> Une palette de bois? \
+> Ah, il y a radeau d'écrit dessus. \
+>  \
+> Un radeau!
+
 
 ### Personne Véritable
 
@@ -583,6 +594,55 @@ _ProtagonisteOffreMercantile
 > ... Quoi? Tu veux nous faire une offre \
 > mercantile?
 
+_ProtagonisteVictoireDetah
+> Victoire! On a pété le Detah!!!
+
+_ProtagonistePrejugeBleus
+> Mais non! C'est pas pareil quand tu tues
+> un gros bonhomme bleu! C'est pas une vraie
+> personne!
+
+_ProtagonisteFacileEmporter
+> Mmmh. Effectivement... \
+> C'est facile de s'emporter dans la violence \
+> des fois.
+
+_ProtagonisteGrandePersBleue
+> Une grande personne bleue, ça reste une \
+> personne.
+
+_ProtagonistePretPourGaboue
+> Ah oui je l'attendais bien lui.
+
+_ProtagonisteAhOui
+> Ah. Oui.
+
+_ProtagonisteSiVousVoulez
+> ... Si vous voulez vraiment.
+
+_ProtagonisteCestPetitIci
+> C'est petit ici quand même, considérant la \
+> taille du bonhomme.
+
+_ProtagonisteHocheTete
+> Huhuh. Je vais tranquillement hocher de la \
+> tête comme si ça expliquait quoi que ce \
+> soit, c'est bon?
+
+_ProtagonisteToutVoir
+> La vue est pas pire d'ici quand même, je \
+> peux presque tout voir dans les alentours!
+
+_ProtagonistePontCasse1
+> Le pont est "cassé"? D'habitude ça reste \
+> d'un seul morceau ou ça s'écroule un pont, \
+> non?
+
+_ProtagonistePontCasse2
+> ... \
+> Je confirme que vous avez donné une \
+> information.
+
 ### Premiere
 
 ### Pretre
@@ -779,6 +839,36 @@ _GabspartTuVeuxPasLeSavoir
 > Non mais tu veux même pas le savoir, ça te \
 > mettrais juste en colère...
 
+_GabspartReactionProta
+> Ça fait changement de sa réaction quand on \
+> a rencontré la Première Bonjoure, huh...
+
+_GabspartHuuh
+> Huuuuuuh...
+
+_GabspartPlusieursMurderHobos
+> En tant que groupe, les actions de l'un \
+> parlent pour les autres, hein. \
+> Et puis en plus tu as déjà de l'avance \
+> là-dessus.
+
+_GabspartTraduitGaboueVictwere
+> Victwere Victwere Victwere Victwere \
+> Victwere Victwere Victwere Victwere \
+> Victwere Victwere Victwere Victwere \
+> Victwere Victwere Victwere Victwere
+
+_GabspartPasMalSurLHeure
+> Pas mal sûr qu'il est l'heure.
+
+_GabspartRespectGameplay
+> Quand même, ça prend un peu de respect pour \
+> les modalités du gameplay!
+
+_GabspartDensificationDetah
+> Ces jours-ci, on arrête pas la \
+> densification du Detah tu sais.
+
 ### Wwwelchior
 
 _WwwelchiorComprendPasPlusGaboue
@@ -956,6 +1046,19 @@ _WwwelchiorBienDaccord
 _WwwelchiorNeVeutPasTransaction
 > Assurément tu ne veux rien échanger avec un \
 > Detah qui veut faire une transaction!
+
+_WwwelchiorGoutSang
+> À tous les coups c'est le goût du sang j'te \
+> dis.
+
+_WwwelchiorDeclarationPasCorrecte
+> Ah non mais ça c'est pas correct comme \
+> déclaration. Detah y'était pas très gentil, \
+> mais là tu le dénigres tout simplement.
+
+_WwwelchiorPasConvaincuParProta
+> M-mh. M-mh. Tu dis ça, mais tantôt on verra \
+> bien c'est qui le Vrai Murder Hobo.
 
 ### Fantôme
 
@@ -1145,6 +1248,15 @@ _DetahVaVousBriser
 
 _DetahHehe
 > He he...
+
+### Informateur
+
+_InformateurPontCasse1
+> Comme vous pouvez voir, le pont est cassé.
+
+_InformateurPontCasse2
+> Huh? Je sais pas moi je suis juste là pour
+> disséminer l'information.
 
 ### SFX
 

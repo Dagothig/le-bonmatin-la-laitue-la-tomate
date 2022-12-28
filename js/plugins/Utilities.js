@@ -1807,3 +1807,13 @@ Input.keyMapper[87] = "up"; // w
 Input.keyMapper[83] = "down"; // s
 Input.keyMapper[65] = "left"; // a
 Input.keyMapper[68] = "right"; // d
+
+// Vehicles
+(function () {
+    override(Game_Vehicle.prototype,
+        function playBgm(playBgm) {
+            if (this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name)) {
+                playBgm.call(this);
+            }
+        });
+})();
