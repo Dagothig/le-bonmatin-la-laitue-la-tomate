@@ -6,8 +6,6 @@
 
 ### Pêcheur
 
-### Gaboué
-
 ### Narrateur
 
 ### Personne Véritable
@@ -555,49 +553,6 @@ _OraclePreditQuiproquos
 ### Windo
 
 ### Dark Georgina
-
-_DarkGeorginaRaaaaaaa
-> Raaaaaaa!
-
-_DarkGeorginaSiPresDuBut
-> J'étais si près du but! Mais drame! \
-> Ils trouvèrent la finalité que j'eusse \
-> caché, et me terrassèrent d'une grande \
-> déclaration grandiloquente!
-
-_DarkGeorginaNeMeDerangezPlus
-> Non ne me dérangez pas plus! Je suis occupé \
-> à être éternellement salé!
-
-_DarkGeorginaAuraSaVengeance
-> Vous aussi? Nooooon! \
-> Je refuuuuuuse! \
-> Dark Georgina aura sa vengeance!
-
-_DarkGeorginaFinsDePhrases
-> Non... \
-> Pas encore... \
-> Mes... \
-> Mes fins...!
-
-_DarkGeorginaEstEternel
-> Ha! Vous pouvez courrir mais je suis \
-> éternel!
-
-_DarkGeorginaAEuSaVengeance
-> Hahahaha! \
-> J'ai eu ma vengeance! \
-> Huh? Vous tuer? Non non, vous pouvez partir \
-> maintenant.
-
-_DarkGeorginaJeSuisEternel
-> Je suis éterneeeeel!
-
-_DarkGeorginaHaha
-> HAHAHAHAHAHAHAHAHAHA
-
-_DarkGeorginaGniaha
-> Gniaha
 
 ### Detah
 
