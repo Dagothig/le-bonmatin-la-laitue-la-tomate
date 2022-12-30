@@ -429,59 +429,7 @@ _WwwelchiorPasConvaincuParProta
 
 ### Fantôme
 
-_FantomeGaboue
-> Gaboué
-
-_FantomeMonReposEternel
-> Mais qu'est-ce que vous foutez ici! \
-> Mon repos éternel! \
-> Il éternel plus très fort là.
-
-_FantomePasConvaincu
-> C'est pas très convaincant là, vous croisez \
-> mon fils qui pêche pas bien, puis vous vous \
-> pointez à ma tombe autour de mon cercueil?
-
-_FantomeVousPouvezAvoirCannePeche
-> Bon, de toute façon elle ne me sert plus. \
-> Vous pouvez bien prendre ma canne à pêche.
-
-_FantomeSamediProchain
-> Samedi prochain, c'est un bon moment?
-
-_FantomeNon
-> Non!
-
 ### Vieille
-
-_VieilleGaboueDejaVerifie
-> Non. Gaboué l'a déjà vérifé. Il n'y a plus \
-> de génie ici.
-
-_VieilleFaireAttentionGenie
-> Il faut faire attention avec les génies. \
-> Des fois on demande un peu de paix et on \
-> devient un hermite...
-
-_VieilleImmole
-> Vous allez rallumer la lampe ou je dois \
-> vous immoler?
-
-_VieilleVisiteurs
-> Bonsoir \
-> C'est rare que j'ai des visiteurs!
-
-_VieilleArthrite
-> Hein? Non non, mon arthrite va très bien, \
-> merci.
-
-_VieilleEvitageContenu
-> Ça sent l'évitage de contenu un peu, vous \
-> trouvez pas?
-
-_VieilleFenetresOracleParDessous
-> Des fois les fenêtres et les oracles on \
-> peut vraiment passer par dessous.
 
 ### Oracle
 
@@ -556,23 +504,6 @@ _OraclePreditQuiproquos
 
 ### Detah
 
-_Detah
-> DETAH!
-
-_Detaaah
-> DEEETAAAAAAAAH!
-
-_DetahBoast
-> Hey ho! Si vous pensez que ça va changer \
-> quelque chose! Ma base est même ACID! Vous \
-> n'avez aucune chance!
-
-_DetahVaVousBriser
-> Suffit! Je vais vous briser!
-
-_DetahHehe
-> He he...
-
 ### Informateur
 
 _InformateurPontCasse1
@@ -583,16 +514,6 @@ _InformateurPontCasse2
 > disséminer l'information.
 
 ### SFX
-
-Cough
-
-Card
-
-MaPhrase
-
-Omnomnomnom
-
-Blblbl
 
 ## Rouler sans RPG Maker MV
 
