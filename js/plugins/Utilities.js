@@ -800,7 +800,7 @@ function eval_fn_expr(expr, args) {
             this._plural = false;
             this.refresh();
             this.recoverAll();
-            this._tp = this.maxTp();
+            this._tp = 0;
             this.numActions() > 0 && this.makeActions();
         });
 
