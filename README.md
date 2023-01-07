@@ -14,9 +14,24 @@ _ProtagonisteFameusesVictuailles
 > Ah les fameuses victuailles, moi j'adore \
 > ça!
 
+_ProtagonisteDireAutre
+> Ah finalement vous savez dire autre chose!
+
+_ProtagonisteDagueNon
+> Mais qu'est ce que vous faites avec cette \
+> dague?  \
+> \
+> Non!
+
 ### Premiere
 
 ### Pretre
+
+_PretreSuicide
+> Première! La douce lueur de ton visage \
+> était comme quand le regard se fixait sur \
+> le Soleil à midi! \
+> Mais maintenant, je ne vois que noirceur!
 
 
 ### Gaboué
