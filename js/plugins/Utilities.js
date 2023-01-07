@@ -1261,6 +1261,40 @@ function eval_fn_expr(expr, args) {
         }
     };
 
+    override(Window_Message.prototype,
+        function startMessage(startMessage) {
+            startMessage.call(this);
+            this._softWaitCount = 0;
+        },
+        function processCharacter(processCharacter, textState) {
+            if (this._softWaitCount > 0) {
+                this._softWaitCount--;
+                return;
+            }
+            switch (textState.text[textState.index]) {
+                case ",":
+                    this._softWaitCount = 10;
+                    break;
+                case ".":
+                case "!":
+                case "?":
+                    this._softWaitCount = 20;
+                    break;
+            }
+            processCharacter.call(this, textState);
+        },
+        function processNormalCharacter(processNormalCharacter, textState) {
+            switch (textState.text[textState.index]) {
+                case ",":
+                case ".":
+                    break;
+                default:
+                    this._softWaitCount = 1;
+                    break;
+            }
+            processNormalCharacter.call(this, textState);
+        });
+
     override(Window_ScrollText.prototype,
         function scrollSpeed(scrollSpeed) {
             return (this.aaaSpeed *
