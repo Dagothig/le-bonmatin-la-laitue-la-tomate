@@ -1278,21 +1278,10 @@ function eval_fn_expr(expr, args) {
                 case ".":
                 case "!":
                 case "?":
-                    this._softWaitCount = 20;
+                    this._softWaitCount = 15;
                     break;
             }
             processCharacter.call(this, textState);
-        },
-        function processNormalCharacter(processNormalCharacter, textState) {
-            switch (textState.text[textState.index]) {
-                case ",":
-                case ".":
-                    break;
-                default:
-                    this._softWaitCount = 1;
-                    break;
-            }
-            processNormalCharacter.call(this, textState);
         });
 
     override(Window_ScrollText.prototype,

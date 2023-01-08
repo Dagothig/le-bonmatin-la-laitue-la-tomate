@@ -10,33 +10,9 @@
 
 ### Personne Véritable
 
-_ProtagonisteFameusesVictuailles
-> Ah les fameuses victuailles, moi j'adore \
-> ça!
-
-_ProtagonisteDireAutre
-> Ah finalement vous savez dire autre chose!
-
-_ProtagonisteDagueNon
-> Mais qu'est ce que vous faites avec cette \
-> dague?  \
-> \
-> Non!
-
-_ProtagonisteLapin
-> Je connais pas bien les lapins, mais me \
-> semble ça ne sonne pas comme ça...
-
 ### Premiere
 
 ### Pretre
-
-_PretreSuicide
-> Première! La douce lueur de ton visage \
-> était comme quand le regard se fixait sur \
-> le Soleil à midi! \
-> Mais maintenant, je ne vois que noirceur!
-
 
 ### Gaboué
 
@@ -49,71 +25,6 @@ _PretreSuicide
 ### Vieille
 
 ### Oracle
-
-_OracleDotDotDotNon
-> ... \
-> \
-> Non.
-
-_OracleTraversezPont
-> Traversez le pont, vous allez voir ça va \
-> pas prendre long.
-
-_OracleSiVousVoulezPas
-> Après, si vous voulez pas, vous voulez pas.
-
-_OracleBon
-> Bon.
-
-_OracleCompteCartes
-> Donc on est cinq? Onze moins cinq ça fait \
-> six. \
-> \
-> Donc prenez chacuns ces six cartes.
-
-_OracleCarteDePlus
-> Et je vous donne aussi à chacun cette \
-> autre carte de plus.
-
-_OracleIlEtaitUneFois
-> On pourrait dire. Tenez je vais commencer \
-> pour que vous voyez comment ça fonctionne. \
-> \
-> Donc voyez, Il Était Une Fois...
-
-_OracleUnProtagoniste
-> Un Protagoniste!
-
-_OraclePatauge
-> Huh? \
-> \
-> Mmmh des fois... Des fois le... attendez...
-
-_OracleIlEtaitUneFois2
-> Non non, ça s'en vient! Vous m'arrêtez à \
-> tout bout de champ! \
-> Oui donc, Il Était Une Fois un \
-> protagoniste...
-
-_OracleAffame
-> Affamé! Tiens vous voyez, y'a une mise en \
-> situation et tout...
-
-_OracleCeSeraPlusCourt
-> Ah c'est pas grave, ça sera plus court.
-
-_OraclePigeUneCarte
-> Ah, je pige une carte donc...
-
-_OracleProtagonistesPasPacifiques
-> Oui, ça a du sens... Les Protagonistes \
-> perdus c'est pas très pacifique d'habitude.
-
-_OraclePreditQuiproquos
-> Non mais, si vous voulez pas, vous voulez \
-> pas. \
-> Je vous prédis de nombreux quiproquos, avec \
-> toute cette... aggression qui vous habite.
 
 ### Windo
 
