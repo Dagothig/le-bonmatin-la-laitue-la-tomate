@@ -23,6 +23,10 @@ _ProtagonisteDagueNon
 > \
 > Non!
 
+_ProtagonisteLapin
+> Je connais pas bien les lapins, mais me \
+> semble ça ne sonne pas comme ça...
+
 ### Premiere
 
 ### Pretre
