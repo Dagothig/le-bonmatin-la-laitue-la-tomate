@@ -1109,7 +1109,12 @@ function eval_fn_expr(expr, args) {
                 this.updateFrame();
                 this._hue = battlerHue;
             }
-        })
+        });
+
+    override(BattleManager,
+        function makeEscapeRatio() {
+            this._escapeRatio = 1;
+        });
 })();
 
 // Tinting
