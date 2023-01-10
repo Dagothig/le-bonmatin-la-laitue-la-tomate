@@ -1483,6 +1483,7 @@ function eval_fn_expr(expr, args) {
         });
 
     var speechRegexp = /audio\/se\/_.*/;
+    var bgmRegexp = /audio\/bgm\/.*/;
 
     AudioManager._ongoingSpeech = 0;
     Object.defineProperty(AudioManager, "ongoingSpeech", {
@@ -1500,13 +1501,52 @@ function eval_fn_expr(expr, args) {
         }
     });
 
+    override(WebAudio,
+        function _createContext(_createContext) {
+            _createContext.call(this);
+
+            impulseResponse = ( duration, decay, reverse ) => {
+                let sampleRate = this._context.sampleRate;
+                let length = sampleRate * duration;
+                let impulse = this._context.createBuffer(2, length, sampleRate);
+                let impulseL = impulse.getChannelData(0);
+                let impulseR = impulse.getChannelData(1);
+
+                if (!decay)
+                    decay = 2.0;
+                for (let i = 0; i < length; i++){
+                    let n = reverse ? length - i : i;
+                    impulseL[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, decay);
+                    impulseR[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, decay);
+                }
+                return impulse;
+            };
+            this._convolverBuffer = impulseResponse(1, 1, false);
+
+            this.filters = {
+                insideAway: {
+                    _lowpass: { wet: 1 },
+                    _reverb: { wet: 0, dry: 1 }
+                },
+                farAway: {
+                    _lowpass: { wet: 0.5 },
+                    _reverb: { wet: 1, dry: 0.5 }
+                },
+                default: {
+                    _lowpass: { wet: 0 },
+                    _reverb: { wet: 0, dry: 1 }
+                }
+            }
+        });
 
     override(WebAudio.prototype,
         function _startPlaying(_startPlaying, loop, offset) {
-            if (!this._isOngoingSpeech && (this._url || "").match(speechRegexp)) {
+            let url = this._url || "";
+            if (!this._isOngoingSpeech && url.match(speechRegexp)) {
                 this._isOngoingSpeech = true;
                 AudioManager.ongoingSpeech++;
             }
+            this._isBgm = !!url.match(bgmRegexp);
             return _startPlaying.call(this, loop, offset);
         },
         function stop(stop) {
@@ -1532,35 +1572,66 @@ function eval_fn_expr(expr, args) {
             }
         },
         function _createNodes(_createNodes) {
-            const context = WebAudio._context;
+            if (!this._isBgm) {
+                return _createNodes.call(this);
+            }
+
             _createNodes.call(this);
+
+            const context = WebAudio._context;
 
             this._lowpassNode = context.createBiquadFilter();
             this._lowpassNode.type = "lowpass";
             this._lowpassDry = context.createGain();
             this._lowpassWet = context.createGain();
+            this._reverbNode = context.createConvolver();
+            this._reverbNode.buffer = WebAudio._convolverBuffer;
+            this._reverbDry = context.createGain();
+            this._reverbWet = context.createGain();
 
-            this._updateFilters();
+            this._updateFilters(false);
         },
-        function _connectNodes() {
+        function _connectNodes(_connectNodes) {
+            if (!this._isBgm) {
+                return _connectNodes.call(this);
+            }
+
             this._gainNode.connect(this._pannerNode);
-            this._pannerNode.connect(this._lowpassDry);
-            this._pannerNode.connect(this._lowpassNode);
+            this._pannerNode.connect(this._reverbDry);
+            this._pannerNode.connect(this._reverbNode);
+            this._reverbNode.connect(this._reverbWet);
+            this._reverbDry.connect(this._lowpassDry);
+            this._reverbDry.connect(this._lowpassNode);
+            this._reverbWet.connect(this._lowpassDry);
+            this._reverbWet.connect(this._lowpassNode);
             this._lowpassNode.connect(this._lowpassWet);
             this._lowpassDry.connect(WebAudio._masterGainNode);
             this._lowpassWet.connect(WebAudio._masterGainNode);
         },
         function _removeNodes(_removeNodes) {
+            if (!this._isBgm) {
+                return _removeNodes.call(this);
+            }
+
             _removeNodes.call(this);
+
             this._lowpassNode = null;
             this._lowpassDry = null;
             this._lowpassWet = null;
+            this._reverbNode = null;
+            this._reverbDry = null;
+            this._reverbWet = null;
         },
-        function _updateFilters() {
+        function _updateFilters(ramp) {
             const context = WebAudio._context;
+            const rampTime = ramp ? 1 : 0;
             if (this._lowpassDry) {
-                this._lowpassDry.gain.linearRampToValueAtTime(this._shouldLowpass ? 0 : 1, context.currentTime + 0.5);
-                this._lowpassWet.gain.linearRampToValueAtTime(this._shouldLowpass ? 1 : 0, context.currentTime + 0.5);
+                this._lowpassDry.gain.linearRampToValueAtTime(1 - this._lowpass.wet, context.currentTime + rampTime);
+                this._lowpassWet.gain.linearRampToValueAtTime(this._lowpass.wet, context.currentTime + rampTime);
+            }
+            if (this._reverbDry) {
+                this._reverbDry.gain.linearRampToValueAtTime(this._reverb.dry, context.currentTime + rampTime);
+                this._reverbWet.gain.linearRampToValueAtTime(this._reverb.wet, context.currentTime + rampTime);
             }
         });
 
@@ -1570,8 +1641,12 @@ function eval_fn_expr(expr, args) {
         },
         set(filters) {
             this._filters = this._filters;
-            this._shouldLowpass = filters && filters.includes("lowpass");
-            this._updateFilters();
+            const filter = filters && filters[0] || null;
+            const toApply = WebAudio.filters[filter] || WebAudio.filters.default;
+            for (const key in toApply) {
+                this[key] = toApply[key];
+            }
+            this._updateFilters(true);
         }
     });
 })();
@@ -1623,6 +1698,15 @@ function eval_fn_expr(expr, args) {
                 if (dataEvent && dataEvent.name) {
                     this.eventsByName[dataEvent.name] = i;
                 }
+            }
+        },
+
+        function autoplay(autoplay) {
+            autoplay.call(this);
+            if (!$dataMap.autoplayBgm && AudioManager._bgmBuffer && AudioManager._currentBgm) {
+                AudioManager._currentBgm.filters =
+                AudioManager._bgmBuffer.filters =
+                    $dataMap.bgm && $dataMap.bgm.filters || null;
             }
         });
 })();

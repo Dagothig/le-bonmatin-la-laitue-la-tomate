@@ -116,7 +116,6 @@ function Scene_SplashScreens() {
             var kind = step[0];
             switch (kind) {
                 case "img": ImageManager.loadSystem(step[1]); break;
-                case "sound": AudioManager.loadStaticSe({ name: step[1] }); break;
             }
         }
     };
