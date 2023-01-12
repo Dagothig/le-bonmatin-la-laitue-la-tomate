@@ -10,6 +10,40 @@
 
 ### Personne Véritable
 
+_ProtagonisteChercheDoncIlDit
+> Oh. Hum... \
+> Gabspart tu as un petit "donc il dit" pour \
+> nous?
+
+_ProtagonisteBin
+> Bin...
+
+_ProtagonisteInsinuationsMises
+> Oh mais là c'est toi qui me mets des \
+> insinuations dans la bouche! Je me disais \
+> juste que tu avais l'air d'un lettré...
+
+_ProtagonistePlusUnCossin
+> C'est plus un cossin qu'une chose \
+> honnêtement... \
+> \
+> Y'er un peu laid.
+
+_ProtagonisteTrouveCossin1
+> Le Cossin! Le Cossin Lette! \
+> C'est pas lui que le Vieux cherchait?
+
+_ProtagonisteTrouveCossin2
+> Bon par contre... je suppose qu'on peut \
+> aller dire au Vieux que vous êtes ici \
+> maintenant?
+
+_ProtagonisteBonjourConfus
+> Oui ... Bonjour?
+
+_ProtagonisteTropTard
+> Je suis désolé, mais il est trop tard.
+
 ### Premiere
 
 ### Pretre
@@ -17,6 +51,17 @@
 ### Gaboué
 
 ### Gabspart
+
+_GabspartPasRapport
+> Hein? Je vois pas le rapport.
+
+_GabspartOffusqueCossin
+> Oui Gaboué!
+> Voir que t'insinues que Gaboué et cette... \
+> chose sont pareils. \
+
+_GabspartSassLettres
+> Oui et tu en entends des lettres, toi?
 
 ### Wwwelchior
 
@@ -46,7 +91,7 @@ _InformateurPontCasse2
 _MarchandFacheuxCassure
 > C'est très facheux cette cassure. \
 > J'étais sensé apporter ces belles  \
-> victuailles au Village l'autre côté de la \
+> victuailles au Village l'autre cô#té de la \
 > Forêt, mais là je suis complètement coincé!
 
 _MarchandRacheter
