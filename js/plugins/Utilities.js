@@ -387,15 +387,23 @@ function eval_fn_expr(expr, args) {
     var original_setupParallax = Game_Map.prototype.setupParallax;
     Game_Map.prototype.setupParallax = function () {
         original_setupParallax.call(this);
-        this._parallaxPosX = 0;
-        this._parallaxPosY = 0;
+        this._parallaxPosX = null;
+        this._parallaxPosY = null;
+        const sxFromMeta = parseFloat($dataMap.meta.bgSx);
+        if (isFinite(sxFromMeta)) {
+            this._parallaxSx = sxFromMeta;
+        }
+        const syFromMeta = parseFloat($dataMap.meta.bgSy);
+        if (isFinite(syFromMeta)) {
+            this._parallaxSy = syFromMeta;
+        }
     }
 
     var original_changeParallax = Game_Map.prototype.changeParallax;
     Game_Map.prototype.changeParallax = function (name, loopX, loopY, sx, sy, x, y) {
         original_changeParallax.call(this, name, loopX, loopY, sx, sy);
-        this._parallaxPosX = x || 0;
-        this._parallaxPosY = y || 0;
+        this._parallaxPosX = Number.isFinite(x) ? x : null;
+        this._parallaxPosY = Number.isFinite(y) ? y : null;
     }
 
     var original_parallaxOx = Game_Map.prototype.parallaxOx;
