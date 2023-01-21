@@ -1937,3 +1937,69 @@ Input.keyMapper[68] = "right"; // d
             }
         });
 })();
+
+// Transitiooooons
+(function () {
+    const CROSSFADE = 0;
+    let crossfadeSprite;
+    let crossfadeBitmap;
+    let crossfadeRenderTexture;
+    override(Graphics,
+        function initialize(initialize, width, height, type) {
+            initialize.call(this, width, height, type);
+
+            crossfadeBitmap = new Bitmap(width, height);
+            crossfadeRenderTexture = PIXI.RenderTexture.create(width, height);
+            crossfadeSprite = new Sprite();
+            crossfadeSprite.bitmap = crossfadeBitmap;
+        })
+    override(Scene_Map.prototype,
+        function createCrossfadeSprite(_, fadein) {
+            if (this._fadeSprite !== crossfadeSprite) {
+                if (this._fadeSprite) {
+                    this.removeChild(this._fadeSprite);
+                }
+                this._fadeSprite = crossfadeSprite;
+                this.addChild(this._fadeSprite);
+            }
+            if (!fadein) {
+                Graphics._renderer.render(this._spriteset, crossfadeRenderTexture);
+                this.worldTransform.identity();
+                let canvas = Graphics._renderer.extract.canvas(crossfadeRenderTexture);
+                crossfadeBitmap._context.drawImage(canvas, 0, 0);
+                crossfadeBitmap._setDirty();
+            }
+        },
+        function createFadeSprite(createFadeSprite, white) {
+            if (this._fadeSprite === crossfadeSprite) {
+                this.removeChild(crossfadeSprite);
+                delete this._fadeSprite;
+            }
+            createFadeSprite.call(this);
+        },
+        function startFadeIn(startFadeIn, duration, type) {
+            if (type === CROSSFADE) {
+                this.createCrossfadeSprite(true);
+                this._fadeSign = 1;
+                this._fadeDuration = duration || 30;
+                this._fadeSprite.opacity = 255;
+            } else {
+                startFadeIn.call(this, duration, type);
+            }
+        },
+        function startFadeOut(startFadeOut, duration, type) {
+            if (type === CROSSFADE) {
+                this.createCrossfadeSprite(false);
+                this._fadeDuration = -1;
+                this._fadeSprite.opacity = 0;
+            } else {
+                startFadeOut.call(this, duration, type);
+            }
+        },
+        function fadeInForTransfer() {
+            this.startFadeIn(this.fadeSpeed(), CROSSFADE);
+        },
+        function fadeOutForTransfer() {
+            this.startFadeOut(-1, CROSSFADE);
+        });
+})();

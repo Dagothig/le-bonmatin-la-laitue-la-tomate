@@ -39,7 +39,7 @@ _ProtagonisteTrouveCossin2
 > maintenant?
 
 _ProtagonisteBonjourConfus
-> Oui ... Bonjour?
+> Oui ... Bonsoir?
 
 _ProtagonisteTropTard
 > Je suis désolé, mais il est trop tard.
