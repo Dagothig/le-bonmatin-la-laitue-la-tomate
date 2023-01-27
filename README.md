@@ -8,6 +8,42 @@
 
 ### Narrateur
 
+_NarrateurProtolixir
+> Un Protolixir de Chair! \
+> Ça goûte le proto-poulet! \
+> \
+> Il y a un effet, probablement.
+
+_NarrateurSacGrain
+> Un sac de grain. \
+> \
+> Quel type de grain? \
+> L'Histoire ne le dit pas.
+
+_NarrateurMaterielLouche
+> Du matériel louche. \
+> Ça sent plutôt le poulet.
+
+_NarrateurGrandChaudronPoulet
+> Un grand, grand, grand chaudron. \
+> Ça sent plutôt le poulet.
+
+_NarrateurEauTrouble
+> De l'eau trouble. Vous êtes tenté d'y goûter...
+
+_NarrateurBonneDecision
+> Mais vous décidez de prendre une bonne décision.
+
+_NarrateurFermePancarte
+> La pancarte lit...
+> BIENVENUE DANS LE LIEU CHAMPÊTRE
+> Et il y a une direction vers le haut...
+> LA VILLE
+
+_NarrateurPuisFine
+> Au fond du puits vous entrevoyez un peu d'eau. \
+> Pas d'odeur nauséabonde.
+
 ### Personne Véritable
 
 _ProtagonisteChercheDoncIlDit
@@ -44,6 +80,24 @@ _ProtagonisteBonjourConfus
 _ProtagonisteTropTard
 > Je suis désolé, mais il est trop tard.
 
+_ProtagonisteDisperserElixir
+> Mmmh oui, je peux bien m'imaginer. \
+> C'est vous qui avez dispersé le Fameux \
+> Élixir un peu partout? \
+
+_ProtagonistePasDerangerPoulets
+> Bon, je vais pas vous déranger et vos \
+> poulets plus longtemps... \
+> \
+> Bonsoir.
+
+_ProtagonisteSentPasBien
+> Oh... huh... Je me sens différement tout \
+> d'un coup.
+
+_ProtagonisteParlePlus
+> Donc on n'en parle plus, c'est bon?
+
 ### Premiere
 
 ### Pretre
@@ -64,6 +118,10 @@ _GabspartSassLettres
 > Oui et tu en entends des lettres, toi?
 
 ### Wwwelchior
+
+_WwwelchiorTristheroisme
+> Niveau héroïsme c'était un Moment, \
+> quand même...
 
 ### Fantôme
 
@@ -116,6 +174,20 @@ _MarchandDiantre
 
 _MarchandYaha
 > Ya-ha!
+
+### Inventeur
+
+_InventeurBonsoir
+> Bonsoir! Vous allez devoir m'excuser, je \
+> suis très occupé! \
+> \
+> Un poulet n'attend pas l'autre!
+
+_InventeurRiche
+> Oui oui! C'est ma stratégie publicitaire \
+> voyez-vous! Tout les aventuriers du Monde \
+> seront complètement accros à mon produit! \
+> Je serai riche! Riiiiiche!
 
 ### SFX
 

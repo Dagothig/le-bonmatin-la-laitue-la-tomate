@@ -1428,6 +1428,11 @@ function eval_fn_expr(expr, args) {
             const bgm = saveBgm.call(this);
             this._currentBgm && (bgm.filters = this._currentBgm.filters);
             return bgm;
+        },
+        function playSe(playSe, se) {
+            if (!Number.isFinite(se.pitch)) se.pitch = 100;
+            if (!Number.isFinite(se.volume)) se.volume = 90;
+            playSe.call(this, se);
         });
 
     override(WebAudio,
