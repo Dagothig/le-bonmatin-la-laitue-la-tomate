@@ -8,310 +8,136 @@
 
 ### Narrateur
 
+_NarrateurProtolixir
+> Un Protolixir de Chair! \
+> Ça goûte le proto-poulet! \
+> \
+> Il y a un effet, probablement.
+
+_NarrateurSacGrain
+> Un sac de grain. \
+> \
+> Quel type de grain? \
+> L'Histoire ne le dit pas.
+
+_NarrateurMaterielLouche
+> Du matériel louche. \
+> Ça sent plutôt le poulet.
+
+_NarrateurGrandChaudronPoulet
+> Un grand, grand, grand chaudron. \
+> Ça sent plutôt le poulet.
+
+_NarrateurEauTrouble
+> De l'eau trouble. Vous êtes tenté d'y goûter...
+
+_NarrateurBonneDecision
+> Mais vous décidez de prendre une bonne décision.
+
+_NarrateurFermePancarte
+> La pancarte lit...
+> BIENVENUE DANS LE LIEU CHAMPÊTRE
+> Et il y a une direction vers le haut...
+> LA VILLE
+
+_NarrateurPuisFine
+> Au fond du puits vous entrevoyez un peu d'eau. \
+> Pas d'odeur nauséabonde.
+
+_NarrateurEauCoule
+> Vous ne voyez pas grand chose en bas du puits, mais en \
+> tendant l'oreille vous entendez comme le son de l'eau \
+> qui coule.
+
+_NarrateurPuitsVieille
+> Vous voyez un peu d'eau dans le fond, mais surtout, \
+> en tendant l'oreille... \
+> Vous entendez le son d'un ronflement?
+
 ### Personne Véritable
 
-_ProtagonisteFameusesVictuailles
-> Ah les fameuses victuailles, moi j'adore \
-> ça!
+_ProtagonisteChercheDoncIlDit
+> Oh. Hum... \
+> Gabspart tu as un petit "donc il dit" pour \
+> nous?
+
+_ProtagonisteBin
+> Bin...
+
+_ProtagonisteInsinuationsMises
+> Oh mais là c'est toi qui me mets des \
+> insinuations dans la bouche! Je me disais \
+> juste que tu avais l'air d'un lettré...
+
+_ProtagonistePlusUnCossin
+> C'est plus un cossin qu'une chose \
+> honnêtement... \
+> \
+> Y'er un peu laid.
+
+_ProtagonisteTrouveCossin1
+> Le Cossin! Le Cossin Lette! \
+> C'est pas lui que le Vieux cherchait?
+
+_ProtagonisteTrouveCossin2
+> Bon par contre... je suppose qu'on peut \
+> aller dire au Vieux que vous êtes ici \
+> maintenant?
+
+_ProtagonisteBonjourConfus
+> Oui ... Bonsoir?
+
+_ProtagonisteTropTard
+> Je suis désolé, mais il est trop tard.
+
+_ProtagonisteDisperserElixir
+> Mmmh oui, je peux bien m'imaginer. \
+> C'est vous qui avez dispersé le Fameux \
+> Élixir un peu partout? \
+
+_ProtagonistePasDerangerPoulets
+> Bon, je vais pas vous déranger et vos \
+> poulets plus longtemps... \
+> \
+> Bonsoir.
+
+_ProtagonisteSentPasBien
+> Oh... huh... Je me sens différement tout \
+> d'un coup.
+
+_ProtagonisteParlePlus
+> Donc on n'en parle plus, c'est bon?
 
 ### Premiere
 
 ### Pretre
 
-
 ### Gaboué
-
-_Gaboue61
-> Gaboué?!
-
-_GaboueEnAMarre
-> Gaboué.
 
 ### Gabspart
 
-_GabspartDesFoisChangeurForme
-> Si ça avait été dans un placard ça aurait \
-> été moins certain. \
-> \
-> Des fois que c'est un changeur de forme...
+_GabspartPasRapport
+> Hein? Je vois pas le rapport.
 
-_GabspartPouletsPasCommeCa
-> Mettons que, typiquement, les poulets ça
-> se comporte pas comme ça.
+_GabspartOffusqueCossin
+> Oui Gaboué!
+> Voir que t'insinues que Gaboué et cette... \
+> chose sont pareils. \
 
-_GabspartNonFaussitude
-> Ah ça c'est pas faux. \
-> C'est d'une pas-faussité à en retordre la \
-> véracité dudit Protagoniste.
-
-_GabspartAEcouteGaboueLui
-> Il me semble que Gaboué a été très clair.
-
-_GabspartLaSituationObtuse
-> C'est toute la situation qui est obtuse, \
-> mais non je pense que Personne Véritable \
-> est juste confus.
-
-_GabspartAEcouteGaboue2
-> Je sais pas pour toi mais je vois ni chemin \
-> par dessus, ni chemin par dessous.
-
-_GabspartDoncIlDit
-> Donc il dit:
-
-_GabspartVaTraduireQueTuLeVeuilleOuNon
-> Silence! \
-> J'veux rien entendre! \
-> \
-> Donc il dit:
-
-_GabspartCriDeGuerre
-> AAA
-
-_GabspartRencheritLeProtagonisme
-> Non mais ça fait ça être le protagoniste, \
-> ça monte à la tête et ça veut tout le \
-> mérite.
-
-_GabspartCertes
-> Certes...
-
-_GabspartCetaitNotreCombatCestCa
-> C'était \{notre\} combat c'est ça?
-
-_GabspartWindoAUnModusOperandi
-> Ça commence comme ça, mais le Windô a tout \
-> un modus opérandi! Au début ça va bien...
-
-_GabspartDonnesYUneSeconde
-> Donnes-y une seconde...
-
-_GabspartVoilaCaCommence
-> Et voilà. Ça commence.
-
-_GabspartTraduitGabouePingouin
-> > Lorsque jadis j'errais,\
-> > en quête de savoir.\
-> > Apprenti vorace,\
-> > du sage Pingouin.
-
-_GabspartTraduitGaboueScriptouilles
-> > Je ne su m'expliquer, \
-> > Jaillissent tabouéerre! \
-> > Préceptes profèrent, \
-> > toutes les Scriptouilles!
-
-_GabspartFautFaireAttentionAuxIncantations
-> Les Scriptouilles elles-mêmes, non. \
-> Mais les mots qu'elles incantent... \
-> Je m'y méfierais.
-
-_GabspartVoirQueYaLesFinsDePhrases
-> Bin non! Voir que y'a les Fins de Phrases \
-> drette ici comme ça! \
-> Depuis le temps que je... huh je veux dire, \
-> depuis le temps que Gaboué les cherche!
-
-_GabspartCaAPasToujoursEteAinsi
-> Disons seulement que ça n'a pas toujours \
-> été ainsi.
-
-_GabspartLivreVautOr
-> Dans tous les cas je te garantis que ça \
-> vaut de l'or ce petit livre-là.
-
-_GabspartOnSaitJamaisQuandOnPerdFinsDePhrases
-> On sait jamais quand est-ce qu'on se \
-> retrouve pris de stupeur par manque de \
-> complétude phrasique.
-
-_GabspartTuVeuxPasLaTraduction
-> Tu veux pas la traduction de ce que Gaboué \
-> a réellement dit?
-
-_GabspartSaufsSiVivants
-> Sauf s'ils sonts vivants.
-
-_GabspartTuEsSurBonneIdee
-> Attends, tu es sûr que c'est une bonne idée \
-> de -
-
-_GabspartFautEpicerPromenadeForet
-> C'est important d'épicer un peu les \
-> promenades dans la forêt!
-
-_GabspartFantomeTraumatisant
-> Non mais tu t'imagines le traumatisme! \
-> Son père est mort et enterré, et paf un \
-> matin un fantôme se pointe pour lui \
-> demander s'il veut bruncher?
-
-_GabspartCordeADesUsages
-> L'entrée sur la Corde Auto-Portante dans \
-> le Repositoire des Textes Sacrés est pas \
-> tout à fait vide, alors c'est pas le pire \
-> cadeau.
-
-_GabspartToiLeNonGeologue
-> C'est toi le non-géologue.
-
-_GabspartPresumesSante
-> T'en présumes des choses sur sa santé...
-
-_GabspartOminousPasGrave
-> Ah oui c'est vrai quand même, mais je suis \
-> sûr que ce n'est pas grave.
-
-_GabspartSelonLegende
-> Selon la légende...
-
-_GabspartSelonRepoGnagnagna
-> ... du Repositoire des Textes Gagnagna. \
-> \
-> Selon la légende, ce serait de l'autre côté \
-> de la Montagne qui entoure cette vallée. \
-
-_GabspartOhNon
-> Oh non.
-
-_GabspartNonJeRefuse
-> Non non non, je refuse!
-
-_GabspartMalDeTete
-> C'est fini, je vais avoir un mal de tête \
-> pour toute la journée...
-
-_GabspartPasLeMonopole
-> Non non, c'est bon, j'ai pas le monopole.
-
-_GabspartSaitLire
-> Oooh, je pourrais te lire des passages si \
-> tu veux!
-
-_GabspartDommageManque
-> Dommage, tu ne sais pas ce que tu manques.
-
-_GabspartAutrePassage
-> Oh attends, il y a un autre passage que je \
-> veux lire!
-
-_GabspartCestBeau
-> C'est beau, hein?
-
-_GabspartCestBon
-> C'est bon, c'est bon.
-
-_GabspartSeSentGenereux
-> Bon, par contre mettons qu'on se tape pas \
-> de faire tout le tour du monde pour un \
-> petit lit?
-
-_GabspartTuVeuxPasLeSavoir
-> Non mais tu veux même pas le savoir, ça te \
-> mettrais juste en colère...
-
-_GabspartReactionProta
-> Ça fait changement de sa réaction quand on \
-> a rencontré la Première Bonjoure, huh...
-
-_GabspartHuuh
-> Huuuuuuh...
-
-_GabspartPlusieursMurderHobos
-> En tant que groupe, les actions de l'un \
-> parlent pour les autres, hein. \
-> Et puis en plus tu as déjà de l'avance \
-> là-dessus.
-
-_GabspartTraduitGaboueVictwere
-> Victwere Victwere Victwere Victwere \
-> Victwere Victwere Victwere Victwere \
-> Victwere Victwere Victwere Victwere \
-> Victwere Victwere Victwere Victwere
-
-_GabspartPasMalSurLHeure
-> Pas mal sûr qu'il est l'heure.
-
-_GabspartRespectGameplay
-> Quand même, ça prend un peu de respect pour \
-> les modalités du gameplay!
-
-_GabspartDensificationDetah
-> Ces jours-ci, on arrête pas la \
-> densification du Detah tu sais.
+_GabspartSassLettres
+> Oui et tu en entends des lettres, toi?
 
 ### Wwwelchior
+
+_WwwelchiorTristheroisme
+> Niveau héroïsme c'était un Moment, \
+> quand même...
 
 ### Fantôme
 
 ### Vieille
 
 ### Oracle
-
-_OracleDotDotDotNon
-> ... \
-> \
-> Non.
-
-_OracleTraversezPont
-> Traversez le pont, vous allez voir ça va \
-> pas prendre long.
-
-_OracleSiVousVoulezPas
-> Après, si vous voulez pas, vous voulez pas.
-
-_OracleBon
-> Bon.
-
-_OracleCompteCartes
-> Donc on est cinq? Onze moins cinq ça fait \
-> six. \
-> \
-> Donc prenez chacuns ces six cartes.
-
-_OracleCarteDePlus
-> Et je vous donne aussi à chacun cette \
-> autre carte de plus.
-
-_OracleIlEtaitUneFois
-> On pourrait dire. Tenez je vais commencer \
-> pour que vous voyez comment ça fonctionne. \
-> \
-> Donc voyez, Il Était Une Fois...
-
-_OracleUnProtagoniste
-> Un Protagoniste!
-
-_OraclePatauge
-> Huh? \
-> \
-> Mmmh des fois... Des fois le... attendez...
-
-_OracleIlEtaitUneFois2
-> Non non, ça s'en vient! Vous m'arrêtez à \
-> tout bout de champ! \
-> Oui donc, Il Était Une Fois un \
-> protagoniste...
-
-_OracleAffame
-> Affamé! Tiens vous voyez, y'a une mise en \
-> situation et tout...
-
-_OracleCeSeraPlusCourt
-> Ah c'est pas grave, ça sera plus court.
-
-_OraclePigeUneCarte
-> Ah, je pige une carte donc...
-
-_OracleProtagonistesPasPacifiques
-> Oui, ça a du sens... Les Protagonistes \
-> perdus c'est pas très pacifique d'habitude.
-
-_OraclePreditQuiproquos
-> Non mais, si vous voulez pas, vous voulez \
-> pas. \
-> Je vous prédis de nombreux quiproquos, avec \
-> toute cette... aggression qui vous habite.
 
 ### Windo
 
@@ -333,7 +159,7 @@ _InformateurPontCasse2
 _MarchandFacheuxCassure
 > C'est très facheux cette cassure. \
 > J'étais sensé apporter ces belles  \
-> victuailles au Village l'autre côté de la \
+> victuailles au Village l'autre cô#té de la \
 > Forêt, mais là je suis complètement coincé!
 
 _MarchandRacheter
@@ -358,6 +184,20 @@ _MarchandDiantre
 
 _MarchandYaha
 > Ya-ha!
+
+### Inventeur
+
+_InventeurBonsoir
+> Bonsoir! Vous allez devoir m'excuser, je \
+> suis très occupé! \
+> \
+> Un poulet n'attend pas l'autre!
+
+_InventeurRiche
+> Oui oui! C'est ma stratégie publicitaire \
+> voyez-vous! Tout les aventuriers du Monde \
+> seront complètement accros à mon produit! \
+> Je serai riche! Riiiiiche!
 
 ### SFX
 

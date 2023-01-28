@@ -387,15 +387,23 @@ function eval_fn_expr(expr, args) {
     var original_setupParallax = Game_Map.prototype.setupParallax;
     Game_Map.prototype.setupParallax = function () {
         original_setupParallax.call(this);
-        this._parallaxPosX = 0;
-        this._parallaxPosY = 0;
+        this._parallaxPosX = null;
+        this._parallaxPosY = null;
+        const sxFromMeta = parseFloat($dataMap.meta.bgSx);
+        if (isFinite(sxFromMeta)) {
+            this._parallaxSx = sxFromMeta;
+        }
+        const syFromMeta = parseFloat($dataMap.meta.bgSy);
+        if (isFinite(syFromMeta)) {
+            this._parallaxSy = syFromMeta;
+        }
     }
 
     var original_changeParallax = Game_Map.prototype.changeParallax;
     Game_Map.prototype.changeParallax = function (name, loopX, loopY, sx, sy, x, y) {
         original_changeParallax.call(this, name, loopX, loopY, sx, sy);
-        this._parallaxPosX = x || 0;
-        this._parallaxPosY = y || 0;
+        this._parallaxPosX = Number.isFinite(x) ? x : null;
+        this._parallaxPosY = Number.isFinite(y) ? y : null;
     }
 
     var original_parallaxOx = Game_Map.prototype.parallaxOx;
@@ -800,7 +808,7 @@ function eval_fn_expr(expr, args) {
             this._plural = false;
             this.refresh();
             this.recoverAll();
-            this._tp = this.maxTp();
+            this._tp = 0;
             this.numActions() > 0 && this.makeActions();
         });
 
@@ -1109,7 +1117,12 @@ function eval_fn_expr(expr, args) {
                 this.updateFrame();
                 this._hue = battlerHue;
             }
-        })
+        });
+
+    override(BattleManager,
+        function makeEscapeRatio() {
+            this._escapeRatio = 1;
+        });
 })();
 
 // Tinting
@@ -1261,6 +1274,29 @@ function eval_fn_expr(expr, args) {
         }
     };
 
+    override(Window_Message.prototype,
+        function startMessage(startMessage) {
+            startMessage.call(this);
+            this._softWaitCount = 0;
+        },
+        function processCharacter(processCharacter, textState) {
+            if (this._softWaitCount > 0) {
+                this._softWaitCount--;
+                return;
+            }
+            switch (textState.text[textState.index]) {
+                case ",":
+                    this._softWaitCount = 10;
+                    break;
+                case ".":
+                case "!":
+                case "?":
+                    this._softWaitCount = 15;
+                    break;
+            }
+            processCharacter.call(this, textState);
+        });
+
     override(Window_ScrollText.prototype,
         function scrollSpeed(scrollSpeed) {
             return (this.aaaSpeed *
@@ -1392,6 +1428,11 @@ function eval_fn_expr(expr, args) {
             const bgm = saveBgm.call(this);
             this._currentBgm && (bgm.filters = this._currentBgm.filters);
             return bgm;
+        },
+        function playSe(playSe, se) {
+            if (!Number.isFinite(se.pitch)) se.pitch = 100;
+            if (!Number.isFinite(se.volume)) se.volume = 90;
+            playSe.call(this, se);
         });
 
     override(WebAudio,
@@ -1455,6 +1496,7 @@ function eval_fn_expr(expr, args) {
         });
 
     var speechRegexp = /audio\/se\/_.*/;
+    var bgmRegexp = /audio\/bgm\/.*/;
 
     AudioManager._ongoingSpeech = 0;
     Object.defineProperty(AudioManager, "ongoingSpeech", {
@@ -1472,13 +1514,52 @@ function eval_fn_expr(expr, args) {
         }
     });
 
+    override(WebAudio,
+        function _createContext(_createContext) {
+            _createContext.call(this);
+
+            impulseResponse = ( duration, decay, reverse ) => {
+                let sampleRate = this._context.sampleRate;
+                let length = sampleRate * duration;
+                let impulse = this._context.createBuffer(2, length, sampleRate);
+                let impulseL = impulse.getChannelData(0);
+                let impulseR = impulse.getChannelData(1);
+
+                if (!decay)
+                    decay = 2.0;
+                for (let i = 0; i < length; i++){
+                    let n = reverse ? length - i : i;
+                    impulseL[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, decay);
+                    impulseR[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, decay);
+                }
+                return impulse;
+            };
+            this._convolverBuffer = impulseResponse(1, 1, false);
+
+            this.filters = {
+                insideAway: {
+                    _lowpass: { wet: 1 },
+                    _reverb: { wet: 0, dry: 1 }
+                },
+                farAway: {
+                    _lowpass: { wet: 0.5 },
+                    _reverb: { wet: 1, dry: 0.5 }
+                },
+                default: {
+                    _lowpass: { wet: 0 },
+                    _reverb: { wet: 0, dry: 1 }
+                }
+            }
+        });
 
     override(WebAudio.prototype,
         function _startPlaying(_startPlaying, loop, offset) {
-            if (!this._isOngoingSpeech && (this._url || "").match(speechRegexp)) {
+            let url = this._url || "";
+            if (!this._isOngoingSpeech && url.match(speechRegexp)) {
                 this._isOngoingSpeech = true;
                 AudioManager.ongoingSpeech++;
             }
+            this._isBgm = !!url.match(bgmRegexp);
             return _startPlaying.call(this, loop, offset);
         },
         function stop(stop) {
@@ -1504,35 +1585,66 @@ function eval_fn_expr(expr, args) {
             }
         },
         function _createNodes(_createNodes) {
-            const context = WebAudio._context;
+            if (!this._isBgm) {
+                return _createNodes.call(this);
+            }
+
             _createNodes.call(this);
+
+            const context = WebAudio._context;
 
             this._lowpassNode = context.createBiquadFilter();
             this._lowpassNode.type = "lowpass";
             this._lowpassDry = context.createGain();
             this._lowpassWet = context.createGain();
+            this._reverbNode = context.createConvolver();
+            this._reverbNode.buffer = WebAudio._convolverBuffer;
+            this._reverbDry = context.createGain();
+            this._reverbWet = context.createGain();
 
-            this._updateFilters();
+            this._updateFilters(false);
         },
-        function _connectNodes() {
+        function _connectNodes(_connectNodes) {
+            if (!this._isBgm) {
+                return _connectNodes.call(this);
+            }
+
             this._gainNode.connect(this._pannerNode);
-            this._pannerNode.connect(this._lowpassDry);
-            this._pannerNode.connect(this._lowpassNode);
+            this._pannerNode.connect(this._reverbDry);
+            this._pannerNode.connect(this._reverbNode);
+            this._reverbNode.connect(this._reverbWet);
+            this._reverbDry.connect(this._lowpassDry);
+            this._reverbDry.connect(this._lowpassNode);
+            this._reverbWet.connect(this._lowpassDry);
+            this._reverbWet.connect(this._lowpassNode);
             this._lowpassNode.connect(this._lowpassWet);
             this._lowpassDry.connect(WebAudio._masterGainNode);
             this._lowpassWet.connect(WebAudio._masterGainNode);
         },
         function _removeNodes(_removeNodes) {
+            if (!this._isBgm) {
+                return _removeNodes.call(this);
+            }
+
             _removeNodes.call(this);
+
             this._lowpassNode = null;
             this._lowpassDry = null;
             this._lowpassWet = null;
+            this._reverbNode = null;
+            this._reverbDry = null;
+            this._reverbWet = null;
         },
-        function _updateFilters() {
+        function _updateFilters(ramp) {
             const context = WebAudio._context;
+            const rampTime = ramp ? 1 : 0;
             if (this._lowpassDry) {
-                this._lowpassDry.gain.linearRampToValueAtTime(this._shouldLowpass ? 0 : 1, context.currentTime + 0.5);
-                this._lowpassWet.gain.linearRampToValueAtTime(this._shouldLowpass ? 1 : 0, context.currentTime + 0.5);
+                this._lowpassDry.gain.linearRampToValueAtTime(1 - this._lowpass.wet, context.currentTime + rampTime);
+                this._lowpassWet.gain.linearRampToValueAtTime(this._lowpass.wet, context.currentTime + rampTime);
+            }
+            if (this._reverbDry) {
+                this._reverbDry.gain.linearRampToValueAtTime(this._reverb.dry, context.currentTime + rampTime);
+                this._reverbWet.gain.linearRampToValueAtTime(this._reverb.wet, context.currentTime + rampTime);
             }
         });
 
@@ -1542,8 +1654,12 @@ function eval_fn_expr(expr, args) {
         },
         set(filters) {
             this._filters = this._filters;
-            this._shouldLowpass = filters && filters.includes("lowpass");
-            this._updateFilters();
+            const filter = filters && filters[0] || null;
+            const toApply = WebAudio.filters[filter] || WebAudio.filters.default;
+            for (const key in toApply) {
+                this[key] = toApply[key];
+            }
+            this._updateFilters(true);
         }
     });
 })();
@@ -1595,6 +1711,15 @@ function eval_fn_expr(expr, args) {
                 if (dataEvent && dataEvent.name) {
                     this.eventsByName[dataEvent.name] = i;
                 }
+            }
+        },
+
+        function autoplay(autoplay) {
+            autoplay.call(this);
+            if (!$dataMap.autoplayBgm && AudioManager._bgmBuffer && AudioManager._currentBgm) {
+                AudioManager._currentBgm.filters =
+                AudioManager._bgmBuffer.filters =
+                    $dataMap.bgm && $dataMap.bgm.filters || null;
             }
         });
 })();
@@ -1815,5 +1940,71 @@ Input.keyMapper[68] = "right"; // d
             if (this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name)) {
                 playBgm.call(this);
             }
+        });
+})();
+
+// Transitiooooons
+(function () {
+    const CROSSFADE = 0;
+    let crossfadeSprite;
+    let crossfadeBitmap;
+    let crossfadeRenderTexture;
+    override(Graphics,
+        function initialize(initialize, width, height, type) {
+            initialize.call(this, width, height, type);
+
+            crossfadeBitmap = new Bitmap(width, height);
+            crossfadeRenderTexture = PIXI.RenderTexture.create(width, height);
+            crossfadeSprite = new Sprite();
+            crossfadeSprite.bitmap = crossfadeBitmap;
+        })
+    override(Scene_Map.prototype,
+        function createCrossfadeSprite(_, fadein) {
+            if (this._fadeSprite !== crossfadeSprite) {
+                if (this._fadeSprite) {
+                    this.removeChild(this._fadeSprite);
+                }
+                this._fadeSprite = crossfadeSprite;
+                this.addChild(this._fadeSprite);
+            }
+            if (!fadein) {
+                Graphics._renderer.render(this._spriteset, crossfadeRenderTexture);
+                this.worldTransform.identity();
+                let canvas = Graphics._renderer.extract.canvas(crossfadeRenderTexture);
+                crossfadeBitmap._context.drawImage(canvas, 0, 0);
+                crossfadeBitmap._setDirty();
+            }
+        },
+        function createFadeSprite(createFadeSprite, white) {
+            if (this._fadeSprite === crossfadeSprite) {
+                this.removeChild(crossfadeSprite);
+                delete this._fadeSprite;
+            }
+            createFadeSprite.call(this);
+        },
+        function startFadeIn(startFadeIn, duration, type) {
+            if (type === CROSSFADE) {
+                this.createCrossfadeSprite(true);
+                this._fadeSign = 1;
+                this._fadeDuration = duration || 30;
+                this._fadeSprite.opacity = 255;
+            } else {
+                startFadeIn.call(this, duration, type);
+            }
+        },
+        function startFadeOut(startFadeOut, duration, type) {
+            if (type === CROSSFADE) {
+                this.createCrossfadeSprite(false);
+                this._fadeDuration = -1;
+                this._fadeSprite.opacity = 0;
+            } else {
+                startFadeOut.call(this, duration, type);
+            }
+        },
+        function fadeInForTransfer() {
+            this.startFadeIn(this.fadeSpeed(), CROSSFADE);
+        },
+        function fadeOutForTransfer() {
+            this.startFadeOut(-1, CROSSFADE);
         });
 })();
