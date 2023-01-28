@@ -44,6 +44,16 @@ _NarrateurPuisFine
 > Au fond du puits vous entrevoyez un peu d'eau. \
 > Pas d'odeur nauséabonde.
 
+_NarrateurEauCoule
+> Vous ne voyez pas grand chose en bas du puits, mais en \
+> tendant l'oreille vous entendez comme le son de l'eau \
+> qui coule.
+
+_NarrateurPuitsVieille
+> Vous voyez un peu d'eau dans le fond, mais surtout, \
+> en tendant l'oreille... \
+> Vous entendez le son d'un ronflement?
+
 ### Personne Véritable
 
 _ProtagonisteChercheDoncIlDit
