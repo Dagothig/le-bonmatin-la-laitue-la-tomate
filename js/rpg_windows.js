@@ -4863,11 +4863,11 @@ Window_BattleLog.prototype.wait = function () {
 };
 
 Window_BattleLog.prototype.waitForEffect = function () {
-    //this.setWaitMode('effect');
+    this.setWaitMode('effect');
 };
 
 Window_BattleLog.prototype.waitForMovement = function () {
-    //this.setWaitMode('movement');
+    this.setWaitMode('movement');
 };
 
 Window_BattleLog.prototype.addText = function (text) {
@@ -4888,13 +4888,13 @@ Window_BattleLog.prototype.popBaseLine = function () {
 };
 
 Window_BattleLog.prototype.waitForNewLine = function () {
-    /*var baseLine = 0;
+    var baseLine = 0;
     if (this._baseLineStack.length > 0) {
         baseLine = this._baseLineStack[this._baseLineStack.length - 1];
     }
     if (this._lines.length > baseLine) {
         this.wait();
-    }*/
+    }
 };
 
 Window_BattleLog.prototype.popupDamage = function (target) {

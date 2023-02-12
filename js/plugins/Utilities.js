@@ -63,8 +63,10 @@ var MOVE = "startMove",
     PARABOLA = "startParabola",
     WAIT = "startWait",
     PATTERN = "setPattern",
+    MOTION = "startMotion",
     SE = "playSe",
-    SHAKE = "gogoGadgetShake";
+    SHAKE = "gogoGadgetShake",
+    OPACITY = "setOpacity";
 
 function aaa_anim(target, anim, delay) {
     var sprite = SceneManager.battlerSprite(target);
@@ -216,7 +218,8 @@ function eval_fn_expr(expr, args) {
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
     var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
-    const actorSpriteRegexp = /\<<aaa_actor_sprite *(\w+)?\>>/;
+    var battlerIconRegexp = /\<<aaa_icon *(\d+)? *(\d+)? *(\d+)? *(\d+)? *([-_/\w]+)?\>>/;
+    const actorSpriteRegexp = /\<<aaa_actor_sprite *([-_\w]+)?\>>/;
     const shadowRegexp = /\<<shadow *(\w+)? *(-?\d+)?\>>/;
     const overlayRegexp = /\<<aaa_overlay (\d+)\>>/;
     var original_onLoad = DataManager.onLoad;
@@ -269,12 +272,29 @@ function eval_fn_expr(expr, args) {
                 }
                 break;
             case $dataActors:
+                window.$btl = {};
                 for (const actor of object) {
                     if (!actor)
                         continue;
                     const note = actor && actor.note || "";
                     const setupMatch = note.match(setupRegexp);
                     actor._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1]);
+                    const shadowMatch = note.match(shadowRegexp);
+                    if (shadowMatch) {
+                        actor.shadowImg = shadowMatch[1];
+                        actor.shadowOffset = parseFloat(shadowMatch[2])
+                    }
+                    const deathMatch = note.match(deathRegexp);
+                    actor._customDeath = deathMatch && deathMatch[1] && eval_fn_expr(deathMatch[1]);
+                    const iconMatch = note.match(battlerIconRegexp);
+                    if (iconMatch) {
+                        window.iconMatch = iconMatch;
+                        actor._iconX = parseInt(iconMatch[1]) || 0;
+                        actor._iconY = parseInt(iconMatch[2]) || 0;
+                        actor._iconW = parseInt(iconMatch[3]) || 0;
+                        actor._iconH = parseInt(iconMatch[4]) || 0;
+                        actor._iconSrc = iconMatch[iconMatch.length - 1] || null;
+                    }
                 }
                 break;
             case $dataEnemies:
@@ -311,6 +331,22 @@ function eval_fn_expr(expr, args) {
                     }
                     const actorSpriteMatch = note.match(actorSpriteRegexp);
                     enemy.actorSprite = actorSpriteMatch && (actorSpriteMatch[1] || "Actor1_1");
+                    const iconMatch = note.match(battlerIconRegexp);
+                    if (iconMatch) {
+                        window.iconMatch = iconMatch;
+                        let i = 1;
+                        for (; i <= Math.min(5, iconMatch.length); i++ ) {
+                            const n = parseInt(iconMatch[i]);
+                            if (iconMatch[i] && !Number.isFinite(n)) {
+                                const parts = iconMatch[i].split("/");
+                                enemy._iconSrc = parts.pop();
+                                enemy._iconFolder = "img/" + parts.join("/") + "/";
+                                break;
+                            } else {
+                                enemy[["_iconX", "_iconY", "_iconW", "_iconH"][i - 1]] = n || 0;
+                            }
+                        }
+                    }
                 }
                 break;
             case $dataSystem:
@@ -521,6 +557,9 @@ function eval_fn_expr(expr, args) {
         function gogoGadgetShake(_, shake) {
             $gameScreen.startShake(shake.power, shake.speed, shake.duration);
         },
+        function setOpacity(_, opacity){
+          this.opacity = opacity;
+        },
         function updateMove(updateMove) {
             if (this._moveType === MOVE)
                 return updateMove.call(this);
@@ -588,11 +627,35 @@ function eval_fn_expr(expr, args) {
 
     var original_sceneBattleStart = Scene_Battle.prototype.start;
     Scene_Battle.prototype.start = function () {
-        window.$btl = {};
         original_sceneBattleStart.call(this);
     };
 
     var animRegexp = /\<<aaa_anim (.*)\>>/;
+
+    override(Game_Actors.prototype,
+        function actor(base, actorId) {
+            const wasLoaded = this._data[actorId];
+            const actor = base.call(this, actorId);
+            if (!wasLoaded && actor) {
+                $dataActors[actorId]._customSetup && $dataActors[actorId]._customSetup.call(actor);
+                ($btl.party || ($btl.party = {}))[actor.name()] = actor;
+            }
+            return actor;
+        })
+
+    override(Game_Party.prototype,
+        function addActor(addActor, actorId) {
+            addActor.call(this, actorId);
+            if (this.inBattle()) {
+                $gameActors.actor(actorId).onBattleStart();
+            }
+        },
+        function removeActor(removeActor, actorId) {
+            if (this.inBattle()) {
+                $gameActors.actor(actorId).onBattleEnd();
+            }
+            removeActor.call(this, actorId);
+        })
 
     override(Game_BattlerBase.prototype,
         function statesCount(_) {
@@ -605,19 +668,56 @@ function eval_fn_expr(expr, args) {
         function pushMoves(_, moveses) {
             const sprite = SceneManager.battlerSprite(this);
             sprite && sprite.pushMoves(moveses);
+        },
+        function tpRate(tpRate) {
+            return this.maxTp() > 0 ? tpRate.call(this) : 0;
+        });
+
+    override(Game_Battler.prototype,
+        function performActionStart(performActionStart, action) {
+            performActionStart.call(this, action);
+            var item = action.item();
+            var note = item && item.note || "";
+            var match = note.match(animRegexp);
+            var args = match && match[1];
+            if (args) {
+                args = args.split(" ");
+                switch (args[0]) {
+                    case "self":
+                        aaa_anim(action.subject(), args[1], args[2]);
+                        break;
+                    case "target":
+                        aaa_anim(action.target(), args[1], args[2]);
+                        break;
+                }
+            }
         });
 
     override(Game_Actor.prototype,
         function onBattleStart(onBattleStart) {
             onBattleStart.call(this);
-            var actor = this.actor();
-            actor._customSetup && actor._customSetup.call(this);
-            ($btl.party || ($btl.party = {}))[actor.name] = this;
         },
         function onBattleEnd(onBattleEnd) {
             onBattleEnd.call(this);
             if ($btl.party)
                 delete $btl.party[this.actor().name];
+        },
+        function performCollapse(performCollapse) {
+            Game_Battler.prototype.performCollapse.call(this);
+            if ($gameParty.inBattle()) {
+                this.actor()._customDeath ?
+                    this.actor()._customDeath() :
+                    SoundManager.playActorCollapse();
+            }
+        },
+        function maxTp(maxTp) {
+            return Number.isFinite(this._maxTp) ? this._maxTp : maxTp.call(this);
+        },
+        function atkRate() {
+            return this.atk / this.maxAtk();
+        },
+        function maxAtk() {
+            return 100;
         });
 
     override(Game_Enemy.prototype,
@@ -646,24 +746,6 @@ function eval_fn_expr(expr, args) {
                 }
             } else {
                 return selectAllActions.call(this, actionList);
-            }
-        },
-        function performActionStart(performActionStart, action) {
-            performActionStart.call(this, action);
-            var item = action.item();
-            var note = item && item.note || "";
-            var match = note.match(animRegexp);
-            var args = match && match[1];
-            if (args) {
-                args = args.split(" ");
-                switch (args[0]) {
-                    case "self":
-                        aaa_anim(action.subject(), args[1], args[2]);
-                        break;
-                    case "target":
-                        aaa_anim(action.target(), args[1], args[2]);
-                        break;
-                }
             }
         },
         function onRestrict(onRestrict) {
@@ -779,13 +861,17 @@ function eval_fn_expr(expr, args) {
             this._cloneSParams = new Array(10).fill().map((_, sparamId) => {
                 return actor.traitsPi(Game_BattlerBase.TRAIT_SPARAM, sparamId);
             });
-            this._cloneActions = actor.skills().map(skill => ({
-                conditionParam1: 0,
-                conditionParam2: 0,
-                conditionType: 0,
-                rating: 5,
-                skillId: skill.id
-            }));
+            this._cloneActions = actor.skills()
+                // No chicken fo u!
+                // TODO lol
+                .filter(skill => skill.id !== 58)
+                .map(skill => ({
+                    conditionParam1: 0,
+                    conditionParam2: 0,
+                    conditionType: 0,
+                    rating: 5,
+                    skillId: skill.id
+                }));
             this._cloneActions.push(
                 {
                     conditionParam1: 0,
@@ -895,29 +981,56 @@ function eval_fn_expr(expr, args) {
             this._shadowSprite.y =
                 (-this._offsetY) +
                 (Number.isFinite(this._offsetBaseY) ? this._offsetBaseY : 0) +
+                (this._shadowOffset || 0) +
                 (-2);
+        },
+        function refreshMotion(refreshMotion) {
+            const actor = this._actor;
+            const motionGuard = Sprite_Actor.MOTIONS['guard'];
+            if (actor &&
+                (this._motion !== motionGuard || BattleManager.isInputting()) &&
+                actor.isActing()) {
+                return;
+            }
+            refreshMotion.call(this);
         },
         function startEntryMotion(startEntryMotion) {
             if (this._actor && this._actor.canMove()) {
-                this.pushMove([MOVE, 200, 50, 0]);
-                this.pushMove([WAIT, this._actor.index() * 8]);
-                this.pushMove([PARABOLA, 20, 0, -60, 12]);
-                this.pushMove([PARABOLA, 0, 0, -10, 4]);
+                if (this._noEntry) {
+                    delete this._noEntry;
+                } else {
+                    this.pushMove([MOVE, 200, 50, 0]);
+                    this.pushMove([WAIT, this._actor.index() * 8]);
+                    this.pushMove([PARABOLA, 20, 0, -60, 12]);
+                    this.pushMove([PARABOLA, 0, 0, -10, 4]);
+                }
             } else {
                 startEntryMotion.call(this);
             }
         },
-        function startParabola(startParabola, x, y, h, duration) {
+        function startParabola(startParabola, x, y, h, duration, skipMotion) {
             startParabola.call(this, x, y, h, duration);
-            this._actor.requestMotion("escape");
+            skipMotion || this._actor.requestMotion("escape");
         },
         function stepForward(stepForward) {
-            stepForward.call(this);
+            if (this._targetOffsetX !== -48 || this._targetOffsetY !== 0) {
+                this.startParabola(-48, 0, -12, 12, true);
+            }
             this._aaaX = -48;
         },
         function stepBack(stepBack) {
-            stepBack.call(this);
+            this.startParabola(0, 0, -6, 12);
             this._aaaX = 0;
+        },
+        function updateBitmap(updateBitmap) {
+            const name = this._actor.battlerName();
+            const isDifferent = this._battlerName !== name;
+            updateBitmap.call(this);
+            if (isDifferent && this._actor.actor) {
+                const data = this._actor.actor();
+                this._shadowSprite.bitmap = ImageManager.loadSystem(data.shadowImg || "Shadow2");
+                this._shadowOffset = data.shadowOffset || 0;
+            }
         });
 
     var originalTargetsForOpponents = Game_Action.prototype.targetsForOpponents;
@@ -1076,9 +1189,7 @@ function eval_fn_expr(expr, args) {
         function stepBack() {
             this.startMove(0, 0, 12);
         },
-        function retreat() {
-            this.startMove(-300, 0, 30);
-        },
+        function retreat() {},
         function damageOffsetX(damageOffsetX) {
             return damageOffsetX.call(this) * -1;
         });
@@ -1167,7 +1278,6 @@ function eval_fn_expr(expr, args) {
         var item = action.item();
         this.push('clear');
         this.push('performActionStart', subject, action);
-        this.push('waitForMovement');
         this.push('performAction', subject, action);
         this.push('showAnimation', subject, targets.clone(), item.animationId);
         this.displayAction(subject, item, targets);
@@ -1187,6 +1297,34 @@ function eval_fn_expr(expr, args) {
             original_battleLogDisplayAction.call(this, subject, item);
         }
     };
+
+    override(Window_BattleLog.prototype,
+        function waitForNewLine() {});
+
+    override(Window_BattleStatus.prototype,
+        function noop(_) {},
+        function drawGaugeArea(drawGaugeArea, rect, actor) {
+            if (actor._gauges) {
+                let x = 0;
+                for (let i = 0; i < actor._gauges.length; i++) {
+                    const gauge = actor._gauges[i];
+                    this[gauge[0] || "noop"](actor, rect.x + x, rect.y, gauge[1]);
+                    x += 15 + gauge[1]
+                }
+            } else {
+                drawGaugeArea.call(this, rect, actor);
+            }
+        },
+        function drawActorAtk(_, actor, x, y, width) {
+            let valueWidth = this.textWidth("999");
+            width = width || 186;
+            this.drawGauge(x, y, width, actor.atkRate(), this.powerUpColor(), this.powerDownColor());
+            this.changeTextColor(this.systemColor());
+            const fs = this.contents.fontSize;
+            this.drawText("Violence", x, y, width - valueWidth);
+            this.changeTextColor(this.normalColor());
+            this.drawText(actor.atk, x + width - valueWidth, y, valueWidth, "right");
+        });
 })();
 
 // Tapocher lés fenêtres
@@ -1264,6 +1402,36 @@ function eval_fn_expr(expr, args) {
         this.drawProfile(6, lineHeight * 13);
     };
 
+    override(Window_Base.prototype,
+        function drawActorMp(drawActorMp, actor, x, y, width) {
+            if (actor.mmp) {
+                drawActorMp.call(this, actor, x, y, width);
+            }
+        },
+        function drawActorTp(drawActorTp, actor, x, y, width) {
+            if (actor.maxTp()) {
+                drawActorTp.call(this, actor, x, y, width);
+            }
+        },
+        function drawGauge(drawGauge, x, y, width, rate, color1, color2) {
+            rate = Math.min(Math.max(0, rate), 1);
+            const parsed1 = [
+                color1.substring(1, 3),
+                color1.substring(3, 5),
+                color1.substring(5, 7)
+            ].map(p => Number.parseInt(p, 16));
+            const parsed2 = [
+                color2.substring(1, 3),
+                color2.substring(3, 5),
+                color2.substring(5, 7)
+            ].map(p => Number.parseInt(p, 16));
+            const curColor = "#" + parsed1
+                .map((v, i) => v * (1 - rate) + parsed2[i] * rate)
+                .map(p => Math.floor(p).toString(16).padStart(2, "0"))
+                .join("");
+            drawGauge.call(this, x, y, width, rate, color1, curColor);
+        });
+
     Window_EquipStatus.prototype.refresh = function () {
         this.contents.clear();
         if (this._actor) {
@@ -1328,6 +1496,20 @@ function eval_fn_expr(expr, args) {
             for (const state of target.states()) {
                 newTarget = state._customTargetted && state._customTargetted(target);
                 if (newTarget && newTarget.isAlive() && newTarget.canMove()) {
+                    const targetSprite = SceneManager.battlerSprite(target);
+                    const newTargetSprite = SceneManager.battlerSprite(newTarget);
+                    let sideSign = target instanceof Game_Actor ? -1 : 1;
+                    let offset = Math.max(targetSprite.width / 2, 36);
+                    const dx = (targetSprite.x - newTargetSprite.x);
+                    const dy = (targetSprite.y - newTargetSprite.y);
+                    target.pushMoves([
+                        [PARABOLA, sideSign * -3 * offset / 4, 0, -24, 8],
+                        [WAIT, 30],
+                        [PARABOLA, 0, 0, -24, 8]]);
+                    newTarget.pushMoves([
+                        [PARABOLA, dx + sideSign * offset / 2, dy + Math.sign(dy) * -4, -48, 12],
+                        [WAIT, 30],
+                        [PARABOLA, 0, 0, -24, 12]])
                     this._logWindow.displaySubstitute(newTarget, target);
                     return newTarget;
                 }
@@ -1373,11 +1555,11 @@ function eval_fn_expr(expr, args) {
                 state._customRemoved && state._customRemoved(this);
             }
         },
-        function performCollapse(performCollapse) {
+        function die(die) {
             for (const state of this.states()) {
                 state._customRemoved && state._customRemoved(this);
             }
-            performCollapse.call(this);
+            die.call(this);
         },
         function performActionStart(performActionStart, action) {
             performActionStart.call(this, action);
@@ -1770,6 +1952,27 @@ function eval_fn_expr(expr, args) {
                     return actor;
                 }
             }
+        },
+        function transformActor(_, fromActorId, toActorId, initialize) {
+            const actorIdx = $gameParty._actors.indexOf(fromActorId);
+            if (actorIdx !== -1) {
+                const battlerSprite = SceneManager.battlerSprite($gameParty.members()[actorIdx]);
+                $gameParty._actors[actorIdx] = toActorId;
+                const actor = $gameActors.actor(toActorId);
+                // Assume transforms are the same "person"
+                const fromActor = $gameActors.actor(fromActorId);
+                $btl.party[actor.name()] = actor;
+                $btl.party[fromActor.name()] = actor;
+                initialize && (
+                    actor.setup(toActorId),
+                    actor.recoverAll(),
+                    actor.clearResult());
+                $gamePlayer.refresh();
+                $gameMap.requestRefresh();
+                if (battlerSprite) {
+                    battlerSprite._noEntry = true;
+                }
+            }
         });
 })();
 
@@ -2006,5 +2209,144 @@ Input.keyMapper[68] = "right"; // d
         },
         function fadeOutForTransfer() {
             this.startFadeOut(-1, CROSSFADE);
+        });
+})();
+
+// Turn orderidoo
+(function () {
+    function Window_BattleOrder() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_BattleOrder.prototype = Object.create(Window_Base.prototype);
+    Window_BattleOrder.prototype.constructor = Window_BattleOrder;
+
+    const drawOffset = Math.round(Window_Base._iconWidth * (2/3));
+
+    override(Window_BattleOrder.prototype,
+        function initialize(initialize, x, y) {
+            initialize.call(this, x || 0, y || 0,
+                Graphics.boxWidth,
+                Window_Base._iconHeight + this.standardPadding() * 2);
+            this.opacity = 0;
+        },
+        function standardPadding() {
+            return 8;
+        },
+        function refresh() {
+            this.contents.clear();
+
+            let x = 0;
+            let battlers = [BattleManager._subject].concat(BattleManager._actionBattlers);
+            for (const battler of battlers) {
+                if (battler && battler.canMove()) {
+                    // Compute the space necessary
+                    let w = (battler._actions.length + 1) * drawOffset;
+                    let subx = x + w - drawOffset;
+
+                    for (let i = battler._actions.length - 1; i >= 0; i--) {
+                        const action = battler._actions[i];
+                        const item = action.item();
+                        this.drawIcon(item && item.iconIndex || 16, subx, 0);
+                        subx -= drawOffset;
+                    }
+
+                    this.drawBattlerIcon(battler, subx, 0);
+
+                    x += w + Window_Base._iconWidth - drawOffset + this.standardPadding();
+                }
+            }
+        });
+
+    override(Window_Base.prototype,
+        function drawBattlerIcon(_, battler, x, y) {
+            const w = Window_Base._iconWidth;
+            const h = Window_Base._iconHeight;
+            const data = battler.isActor() ? battler.actor() : battler.enemy();
+            let bitmap, sx, sy, sw, sh;
+
+            if (data._iconSrc) {
+                bitmap = ImageManager.loadBitmap(data._iconFolder, data._iconSrc);
+            } else if (battler.isActor() || data.actorSprite) {
+                bitmap = ImageManager.loadSvActor(battler.battlerName());
+            } else {
+                bitmap = ImageManager.loadSvEnemy(battler.battlerName());
+            }
+            // Lol.
+            if (!bitmap.isReady()) {
+                bitmap.addLoadListener(() => this.drawBattlerIcon(battler, x, y));
+            }
+
+            if (Number.isFinite(data._iconX)) {
+                sx = data._iconX || 0;
+                sy = data._iconY || 0;
+                sw = data._iconW || w;
+                sh = data._iconH || h;
+            } else if (battler.isActor() || data.actorSprite) {
+                sw = battler.isActor() ? w : -w;
+                sh = h;
+                sx = 12;
+                sy = 8;
+            } else {
+                const tw = battler.enemy().tw || bitmap.width;
+                const th = battler.enemy().th || bitmap.height;
+                const widthRatio = Math.max(tw, w) / w;
+                const heightRatio = Math.max(th, h) / h;
+                const ratio = Math.min(Math.min(widthRatio, heightRatio), 2);
+                sx = (tw - sw) / 2;
+                sy = (th - sh) / 4;
+                sw = w * ratio;
+                sh = h * ratio;
+            }
+
+            if (sw < 0) {
+                sw = -sw;
+                x = -(x + w);
+                this.contents._context.scale(-1, 1);
+                this.contents.blt(bitmap, sx, sy, sw, sh, x, y, w, h);
+                this.contents._context.scale(-1, 1);
+            } else {
+                this.contents.blt(bitmap, sx, sy, sw, sh, x, y, w, h);
+            }
+        });
+
+    override(BattleManager,
+        function setOrderWindow(_, orderWindow) {
+            this._orderWindow = orderWindow;
+        },
+        function makeActionOrders(makeActionOrders) {
+            makeActionOrders.call(this);
+            this._orderWindow && this._orderWindow.refresh();
+        });
+
+    override(Scene_Battle.prototype,
+        function createLogWindow(createLogWindow) {
+            createLogWindow.call(this);
+            this._logWindow.y = Window_Base._iconHeight + 16 - this._logWindow.standardPadding();
+            this._orderWindow = new Window_BattleOrder();
+            this.addWindow(this._orderWindow);
+        },
+        function createDisplayObjects(createDisplayObjects) {
+            createDisplayObjects.call(this);
+            BattleManager.setOrderWindow(this._orderWindow);
+        });
+
+    override(Window_ActorCommand.prototype,
+        function activate(activate) {
+            activate.call(this);
+            const action = this._actor && this._actor.inputtingAction();
+            action && action.setItemObject(null);
+        });
+
+    override(Game_Item.prototype,
+        function setObject(setObject, item) {
+            setObject.call(this, item);
+            BattleManager.makeActionOrders();
+        });
+
+    override(Game_Battler.prototype,
+        function removeCurrentAction(removeCurrentAction) {
+            removeCurrentAction.call(this);
+            BattleManager._orderWindow && BattleManager._orderWindow.refresh();
         });
 })();

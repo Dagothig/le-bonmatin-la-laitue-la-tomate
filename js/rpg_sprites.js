@@ -846,7 +846,7 @@ Sprite_Actor.prototype.refreshMotion = function() {
     var motionGuard = Sprite_Actor.MOTIONS['guard'];
     if (actor) {
         if (this._motion === motionGuard && !BattleManager.isInputting()) {
-                return;
+            return;
         }
         var stateMotion = actor.stateMotionIndex();
         if (actor.isInputting() || actor.isActing()) {
