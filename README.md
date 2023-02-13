@@ -54,6 +54,17 @@ _NarrateurPuitsVieille
 > en tendant l'oreille... \
 > Vous entendez le son d'un ronflement?
 
+_NarrateurBroche
+> Une petite broche en bois. Le vernis est noirci et usé.
+
+_NarrateurBoisPoulet
+> Du bois coupé. \
+> Ça sent plutôt le poulet.
+
+_NarrateurFiolesPoulet
+> Une panoplie de fioles vides. \
+> Ça sent plutôt le poulet.
+
 ### Personne Véritable
 
 _ProtagonisteChercheDoncIlDit
@@ -108,6 +119,74 @@ _ProtagonisteSentPasBien
 _ProtagonisteParlePlus
 > Donc on n'en parle plus, c'est bon?
 
+_ProtagonistePouPou
+> Pou - \
+> \
+> Pouuuuuu -
+
+_ProtagonisteDoitDormir
+> Je dois... dormir... \
+> \
+> Dodo.
+
+_ProtagonisteRevePoulet
+> Vous allez pas me croire - J'ai eu un de \
+> ces rêves... \
+> \
+> Bah il est où l'inventeur?
+
+_ProtagonisteAimePasSilence
+> Huuuuh... \
+> \
+> Vous êtes sûr que vous voulez pas me donner \
+> une petite réponse?
+
+_ProtagonisteVoisinePasContente
+> C'est un beau plan ça, mais y'a votre \
+> voisine dehors qui est pas du tout \
+> contente!
+
+_ProtagonisteVeutPasTantSeFaireChier
+> Erf, j'ai pas tant envie de me faire plus \
+> chier que ça...
+
+_ProtagonisteBonneEau
+> Mmmmh ça c'est de la bonne eau!
+
+_ProtagonisteQuetePasPrioritaire
+> Bientôt, bientôt! \
+> C'est ma priorité principale! \
+> \}ou secondaire... peut-être tertiaire? \
+> vous m'avez rien promis comme récompense...\{
+
+_ProtagonisteSentPouletRoti
+> Moi je trouve ça pas trop pire comme \
+> odeur, c'est un peu comme du poulet roti.
+
+_ProtagonisteVaAllerVoir
+> Je vais aller voir ce que je peux faire, \
+> c'est bon?
+
+_ProtagonisteDefendQuete
+> Voyons! C'est dans ma description de rôle \
+> de Protagoniste d'accepter toutes les \
+> petites quêtes qui me viennent!
+
+_ProtagonisteVeutPasLeFaire
+> \}et puis, ça veut pas dire qu'on va réellement le faire...\{
+
+_ProtagonisteAh
+> Ah.
+
+_ProtagonisteSoirSoleil
+> Beaucoup de soleil pour un soir...
+
+_ProtagonisteBoisProtolixir
+> Bon ça goûte le poulet, mais je ressens pas \
+> trop grand chose autrement... \
+> Peut-être que l'inventeur aura quelque \
+> chose à dire là-dessus.
+
 ### Premiere
 
 ### Pretre
@@ -127,11 +206,28 @@ _GabspartOffusqueCossin
 _GabspartSassLettres
 > Oui et tu en entends des lettres, toi?
 
+_GabspartCaVaBienAller
+> Je suis sûr que tu vas bien aller!
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
 > Niveau héroïsme c'était un Moment, \
 > quand même...
+
+_WwwelchiorInventeurVaBien
+> L'inventeur va très bien, il dort en bas. \
+> Mais... je ne sais pas pour toi.
+
+_WwwelchiorReitere
+> Personne Véritable réitérait seulement sa \
+> dévotion à vous aider dans votre problème \
+> de pas-dans-votre-cour!
+
+_WwwelchiorPasConvaicuQuete
+> Pfff, ça dit vouloir assouvir une faim \
+> Cosmique, puis voilà que ça accepte d'aider \
+> avec une histoire de voisinage...
 
 ### Fantôme
 
@@ -198,6 +294,85 @@ _InventeurRiche
 > voyez-vous! Tout les aventuriers du Monde \
 > seront complètement accros à mon produit! \
 > Je serai riche! Riiiiiche!
+
+_InventeurOh
+> Oh.
+
+_InventeurSentezNormal
+> Vous vous sentez normal? \
+> Parfait, parfait!
+
+_InventeurProtolixirDejaBu
+> Bon en fait je m'imagine que c'est du \
+> pareil au même... Comme vous avez déjà bu \
+> mon Protolixir, il est impératif que \
+> j'effectue quelques tests!
+
+_InventeurEndormi
+> Donc bougez pas trop, vous allez devoir \
+> être endormi...
+
+_InventeurBuvezProtolixir
+> Seulement... \
+> Vous devez boire mon Protolixir!
+
+_InventeurVoisinePerdue
+> Raaaaaa... Elle n'a aucune idée de \
+> l'importance de mes recherches! \
+> \}C'est pas parce que tout ses rêves concernent des poulets que je vais \
+> ralentir...\{
+
+_InventeurProposition
+> Ah en fait j'ai une proposition!
+
+_InventeurNouvelleVersion
+> Je suis en train de concocter une nouvelle \
+> version de mon élixir! Si vous acceptez de \
+> le tester pour moi ça m'avancera d'au moins \
+> une journée dans mes recherches! Ou deux!
+
+_InventeurPause
+> Alors je pourrai faire une petite pause \
+> afin de satisfaire ma voisine!
+
+### Fermière
+
+_FermiereFichuPoulet
+> Aaaaaaah! \
+> Ce fichu Monsieur Poulet!
+
+_FermierePuParlerInventeur
+> Vous avez pu lui parler?
+
+_FermiereVousDites
+> Vous dites?
+
+_FermiereAllergies
+> Avec ses... expérimentations, mes allergies \
+> n'arrêtent plus! \
+> \
+> Regardez cette fûmée Pouléienne!
+
+_FermiereAllergies2
+> Vous dites ça parce que vous êtes juste \
+> de passage! Mais ça sent comme ça à toutes \
+> les heures de la journée!
+
+_FermiereRespireBien
+> Haaa! On respire bien!
+
+_FermiereRespireBien2
+> Je ne sais pas c'est quand la \
+> dernière fois que j'ai pu sentir autre \
+> chose que le poulet.
+
+_FermiereRemercieModerement
+> Je vous remercie modérément! \
+> Voici une broche qui a été dans ma famille \
+> depuis des générations!
+
+_FermiereBonsoir
+> Bonsoir. Il fait beau, hein?
 
 ### SFX
 

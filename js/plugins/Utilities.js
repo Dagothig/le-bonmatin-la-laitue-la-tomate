@@ -140,6 +140,19 @@ function override(obj) {
     }
 }
 
+override(Array.prototype,
+    function remove() {
+        for (let i = arguments.length - 1; i > 0; i--) {
+            let idx = this.indexOf(arguments[i]);
+            if (idx >= 0) {
+                this.splice(idx, 1);
+            }
+        }
+    },
+    function random() {
+        return this[(Math.random() * (this.length - 1)) | 0];
+    });
+
 (function () {
     override(DataManager,
         function makeSaveContents(makeSaveContents) {
@@ -2348,5 +2361,49 @@ Input.keyMapper[68] = "right"; // d
         function removeCurrentAction(removeCurrentAction) {
             removeCurrentAction.call(this);
             BattleManager._orderWindow && BattleManager._orderWindow.refresh();
+        });
+})();
+
+// Scoping
+(function () {
+    override(Scene_Battle.prototype,
+        function selectActorSelection(selectActorSelection) {
+            const action = BattleManager.inputtingAction();
+            const item = action && action.item();
+            if (item.meta.scope === "except_self" && action.subject().isActor()) {
+                this._actorWindow.setDisabled([$gameParty.battleMembers().indexOf(action.subject())]);
+            } else {
+                this._actorWindow.setDisabled();
+            }
+            selectActorSelection.call(this);
+        });
+
+    override(Window_Selectable.prototype,
+        function setDisabled(_, idxes) {
+            this._disabledIdxes = idxes;
+        },
+        function isCurrentItemEnabled(isCurrentItemEnabled) {
+            return (
+                !this._disabledIdxes || !this._disabledIdxes.includes(this.index())) &&
+                isCurrentItemEnabled.call(this);
+        });
+
+    override(Game_Action.prototype,
+        function targetsForFriends(targetsForFriends) {
+            targets = targetsForFriends.call(this);
+            if (this.item().meta.scope === "except_self") {
+                targets.remove(this.subject());
+                if (this.isForOne()) {
+                    const otherFriend = this
+                        .friendsUnit()
+                        .members()
+                        .filter(m => m !== this.subject() && m.isAlive())
+                        .random();
+                    if (otherFriend) {
+                        targets.push(otherFriend);
+                    }
+                }
+            }
+            return targets;
         });
 })();
