@@ -66,7 +66,8 @@ var MOVE = "startMove",
     MOTION = "startMotion",
     SE = "playSe",
     SHAKE = "gogoGadgetShake",
-    OPACITY = "setOpacity";
+    OPACITY = "setOpacity",
+    FLIP = "flippendo";
 
 function aaa_anim(target, anim, delay) {
     var sprite = SceneManager.battlerSprite(target);
@@ -573,6 +574,9 @@ function eval_fn_expr(expr, args) {
         function setOpacity(_, opacity){
           this.opacity = opacity;
         },
+        function flippendo() {
+            this.scale.x = -this.scale.x;
+        },
         function updateMove(updateMove) {
             if (this._moveType === MOVE)
                 return updateMove.call(this);
@@ -709,6 +713,7 @@ function eval_fn_expr(expr, args) {
     override(Game_Actor.prototype,
         function onBattleStart(onBattleStart) {
             onBattleStart.call(this);
+            ($btl.party || ($btl.party = {}))[this.name()] = this;
         },
         function onBattleEnd(onBattleEnd) {
             onBattleEnd.call(this);
@@ -1006,34 +1011,60 @@ function eval_fn_expr(expr, args) {
                 return;
             }
             refreshMotion.call(this);
+            if (this._motion === Sprite_Actor.MOTIONS["walk"] &&
+                this._moveType === PARABOLA &&
+                this._movementDuration > 0 &&
+                (this._targetOffsetX + 50 < this._offsetX ||
+                    this._targetOffsetX > this._offsetX)) {
+                this.startMotion("escape");
+            }
         },
         function startEntryMotion(startEntryMotion) {
             if (this._actor && this._actor.canMove()) {
                 if (this._noEntry) {
                     delete this._noEntry;
                 } else {
-                    this.pushMove([MOVE, 200, 50, 0]);
-                    this.pushMove([WAIT, this._actor.index() * 8]);
-                    this.pushMove([PARABOLA, 20, 0, -60, 12]);
-                    this.pushMove([PARABOLA, 0, 0, -10, 4]);
+                    this.pushMoves([
+                        [MOTION, "escape"],
+                        [MOVE, 200, 50, 0],
+                        [WAIT, this._actor.index() * 8],
+                        [PARABOLA, 20, 0, -60, 12],
+                        [PARABOLA, 0, 0, -10, 4]]);
                 }
             } else {
                 startEntryMotion.call(this);
             }
         },
-        function startParabola(startParabola, x, y, h, duration, skipMotion) {
+        function startParabola(startParabola, x, y, h, duration) {
             startParabola.call(this, x, y, h, duration);
-            skipMotion || this._actor.requestMotion("escape");
         },
         function stepForward(stepForward) {
             if (this._targetOffsetX !== -48 || this._targetOffsetY !== 0) {
-                this.startParabola(-48, 0, -12, 12, true);
+                this.startParabola(-48, 0, -12, 12);
             }
             this._aaaX = -48;
         },
         function stepBack(stepBack) {
+            this._actor.requestMotion("escape");
             this.startParabola(0, 0, -6, 12);
             this._aaaX = 0;
+        },
+        function retreat() {
+            if (!this._moves.length &&
+                (this._targetOffsetX !== 300 || this._targetOffsetY !== 0)) {
+                this._actor.clearMotion();
+                this.pushMoves([
+                    [MOTION, "guard"],
+                    [WAIT, (3 - this._actor.index()) * 8],
+                    [MOTION, "escape"],
+                    [PARABOLA, 50, 0, -20, 12],
+                    [FLIP],
+                    [MOTION, "walk"],
+                    [PARABOLA, 70, 0, -10, 8],
+                    [MOTION, "escape"],
+                    [PARABOLA, 300, 0, -50, 18]
+                ]);
+            }
         },
         function updateBitmap(updateBitmap) {
             const name = this._actor.battlerName();
@@ -1872,14 +1903,14 @@ function eval_fn_expr(expr, args) {
     override(Game_Map.prototype,
         function isPassable(isPassable, x, y, d) {
             var regionId = this.regionId(x, y);
+            if (!regionId || regionId > 17) {
+                return isPassable.call(this, x, y, d);
+            }
             if (regionId === 16)
                 return true;
             if (regionId === 17)
                 return false;
             regionId &= passableMask;
-            if (!regionId) {
-                return isPassable.call(this, x, y, d);
-            }
             return !!(regionId & idMasks[d]);
         },
 
@@ -2152,9 +2183,40 @@ Input.keyMapper[68] = "right"; // d
 // Vehicles
 (function () {
     override(Game_Vehicle.prototype,
-        function playBgm(playBgm) {
-            if (this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name)) {
-                playBgm.call(this);
+        function hasBgm() {
+            return this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name);
+        },
+        function getOn() {
+            this._driving = true;
+            this.setWalkAnime(true);
+            this.setStepAnime(true);
+            if (this.hasBgm()) {
+                $gameSystem.saveWalkingBgm();
+                this.playBgm();
+            }
+        },
+        function getOff() {
+            this._driving = false;
+            this.setWalkAnime(false);
+            this.setStepAnime(false);
+            this.resetDirection();
+            if (this.hasBgm()) {
+                $gameSystem.replayWalkingBgm();
+            }
+        });
+
+    override(Game_Map.prototype,
+        function autoplay() {
+            if ($dataMap.autoplayBgm) {
+                const vehicle = $gamePlayer.isInVehicle() && $gamePlayer.vehicle();
+                if (vehicle && vehicle.hasBgm()) {
+                    $gameSystem.saveWalkingBgm2();
+                } else {
+                    AudioManager.playBgm($dataMap.bgm);
+                }
+            }
+            if ($dataMap.autoplayBgs) {
+                AudioManager.playBgs($dataMap.bgs);
             }
         });
 })();
@@ -2393,7 +2455,7 @@ Input.keyMapper[68] = "right"; // d
             targets = targetsForFriends.call(this);
             if (this.item().meta.scope === "except_self") {
                 targets.remove(this.subject());
-                if (this.isForOne()) {
+                if (this.isForOne() && !targets.length) {
                     const otherFriend = this
                         .friendsUnit()
                         .members()

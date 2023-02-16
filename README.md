@@ -187,6 +187,70 @@ _ProtagonisteBoisProtolixir
 > Peut-être que l'inventeur aura quelque \
 > chose à dire là-dessus.
 
+_ProtagonistePeurVieuxOubli
+> Hey ho mais vous avez oublié? \
+> Le Lieu Champêtre! Le Pont cassé!
+
+_ProtagonisteAnnonceCossinTrouve1
+> Ah mais au fait, votre fameux Cossin, on \
+> l'a trouvé!
+
+_ProtagonisteAnnonceCossinTrouve2
+> C'est bien un genre de sphère avec de gros \
+> yeux, une houpe et des pieds? Pas de bras?
+
+_ProtagonisteAnnonceCossinTrouve3
+> C'est pas compliqué, il est dans le \
+> Lieu Champêtre de l'autre côté de la Forêt, \
+> de l'autre côté du Pont.
+
+_ProtagonisteVraiPontCase
+> C'est vrai qu'avec le Pont cassé...
+
+_ProtagonisteConnaitPasPont
+> Huh? On marche sur un pont vous savez...
+
+_ProtagonisteAnnonceCossinTrouve4
+> Heille mais comment savez vous que j'allais \
+> vous proposer de venir sur mon radeau!?
+
+_ProtagonisteAnnonceCossinTrouve5
+> Non laissez faire, j'ai une petite idée de \
+> comment ça se fait.
+
+### Vieux
+
+_VieuxJamaisOubli
+> Huuuh... Si je savais où trouver le Cossin, \
+> jamais je ne l'oublierais! C'est tellement \
+> important!
+
+_VieuxCherche10Ans
+> Impossible! Ça fait plus de 10 ans que je \
+> le cherche!
+
+_VieuxOuTrouverCossin
+> Vous dites donc vrai! Alors où se \
+> trouve-t-il?
+
+_VieuxNager
+> J'ai l'air de savoir nager? Et puis j'ai
+> une peur bleue des radeaux!
+
+_VieuxPontCasseLongtemps
+> Ça fait longtemps que le Pont est cassé en \
+> plus! \
+> Mais le Maire de la Ville n'y fait rien...
+
+_VieuxPontCasseConnu
+> Ça fait longtemps que le Pont est cassé en \
+> plus! \
+> Mais le Maire de la Ville n'y fait rien...
+
+
+_VieuxIlYaDes
+> Il y a des -
+
 ### Premiere
 
 ### Pretre

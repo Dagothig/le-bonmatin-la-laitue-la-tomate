@@ -2820,7 +2820,6 @@ Window_SavefileList.prototype.drawItem = function (index) {
     var id = index + 1;
     var valid = DataManager.isThisGameFile(id);
     var info = DataManager.loadSavefileInfo(id);
-    console.log(info);
     var rect = this.itemRectForText(index);
     this.resetTextColor();
     if (this._mode === 'load') {
