@@ -2050,6 +2050,9 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             this._patternType = patternType;
             this._patternReset = patternType[patternType.length - 1];
         },
+        function realMoveSpeed(realMoveSpeed) {
+            return realMoveSpeed.call(this)  + 0.5;
+        },
         function animationWait() {
             return (9 - this.realMoveSpeed()) * this._animationWaitMultiplier;
         },
