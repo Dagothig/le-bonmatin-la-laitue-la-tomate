@@ -65,6 +65,34 @@ _NarrateurFiolesPoulet
 > Une panoplie de fioles vides. \
 > Ça sent plutôt le poulet.
 
+_NarrateurSpotFeuCamp
+> Un bon endroit pour faire une feu de camp. \
+> \
+> Si vous aviez de quoi partir un feu.
+
+_NarrateurChouLaitue
+> Du chou? De la laitue? \
+> \
+> Pas clair...
+
+_NarrateurDorure
+> La belle dorure du blé. Oh. De l'orge? \
+> \
+> La belle dorure des céréales.
+
+_NarrateurDesCarottes
+> Des carottes!
+
+_NarrateurVigne1
+> Une vigne bien remplie.
+
+_NarrateurVigne2
+> ... Bien observé.
+
+_NarrateurEpouvantailNavet
+> Un épouvantail bien habillé. La tête en navet est une \
+> belle touche.
+
 ### Personne Véritable
 
 _ProtagonisteChercheDoncIlDit
@@ -217,6 +245,16 @@ _ProtagonisteAnnonceCossinTrouve4
 _ProtagonisteAnnonceCossinTrouve5
 > Non laissez faire, j'ai une petite idée de \
 > comment ça se fait.
+
+_ProtagonisteDuVert
+> Du vert!
+
+_ProtagonisteMauve
+> Mauve!
+
+_ProtagonisteEpouvantailGueule
+> Il a un peu plus de gueule que ceux du \
+> village quand même...
 
 ### Vieux
 

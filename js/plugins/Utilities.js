@@ -2029,7 +2029,7 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             initMembers.call(this);
             this.setPatternType(BASE_PATTERN_TYPE);
             this.resetPattern();
-            this._animationWaitMultiplier = 3;
+            this._animationWaitMultiplier = 2;
         },
         function straighten() {
             if (this.hasWalkAnime() || this.hasStepAnime()) {
