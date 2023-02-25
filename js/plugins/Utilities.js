@@ -2472,3 +2472,126 @@ Input.keyMapper[68] = "right"; // d
             return targets;
         });
 })();
+
+// Damage indicator
+(function () {
+    function Sprite_BarChange() {
+        this.initialize.apply(this, arguments);
+        this.windowskin = ImageManager.loadSystem('Window');
+    }
+
+    Sprite_BarChange.prototype = Object.create(Sprite.prototype);
+    Sprite_BarChange.prototype.constructor = Sprite_BarChange;
+
+    override(Sprite_BarChange.prototype,
+        function initialize(initialize) {
+            initialize.call(this);
+            this._width = 80;
+            this._height = 6;
+            this._delay = 60;
+            this._duration = this._totalDuration = 150;
+            this.anchor.x = 0.5;
+        },
+        function textColor(_, n) {
+            return Window_Base.prototype.textColor.call(this, n);
+        },
+        function setup(_, value1, value2, valueTotal, color1, color2) {
+            this.bitmap = new Bitmap(this._width, this._height);
+            this._rate = value1 / valueTotal;
+            this._targetRate = value2 / valueTotal;
+            this._gaugeBackColor = Window_Base.prototype.gaugeBackColor.call(this);
+            this._color1 = this.textColor(color1);
+            this._color2 = this.textColor(color2);
+
+        },
+        function isPlaying() {
+            return this._duration > 0;
+        },
+        function update() {
+            Sprite.prototype.update.call(this);
+            if (this._duration > 0) {
+                this._duration--;
+                if (this._duration < this._totalDuration - this._delay) {
+                    const rateDuration = Math.max(this._duration - this._delay, 0);
+                    this._rate = (rateDuration * this._rate + this._targetRate) / (rateDuration + 1);
+                }
+            }
+            this.draw();
+        },
+        function draw() {
+            this.bitmap.fillRect(0, 0, this._width, this._height, this._gaugeBackColor);
+
+            const rate = Math.min(Math.max(0, this._rate), 1);
+            const parsed1 = [
+                this._color1.substring(1, 3),
+                this._color1.substring(3, 5),
+                this._color1.substring(5, 7)
+            ].map(p => Number.parseInt(p, 16));
+            const parsed2 = [
+                this._color2.substring(1, 3),
+                this._color2.substring(3, 5),
+                this._color2.substring(5, 7)
+            ].map(p => Number.parseInt(p, 16));
+            const curColor = "#" + parsed1
+                .map((v, i) => v * (1 - rate) + parsed2[i] * rate)
+                .map(p => Math.floor(p).toString(16).padStart(2, "0"))
+                .join("");
+
+            this.bitmap.gradientFillRect(0, 0, Math.floor(this._width * rate), this._height, this._color1, curColor);
+        });
+
+    override(Game_BattlerBase.prototype,
+        function initialize(initialize) {
+            initialize.call(this);
+            this.mpChange = 0;
+            this.tpChange = 0;
+        },
+        function paySkillCost(paySkillCost, skill) {
+            const mp = this._mp;
+            const tp = this._tp;
+            paySkillCost.call(this, skill);
+            if (this._mp !== mp) {
+                this.mpChange += (this._mp - mp);
+            }
+            if (this._tp !== tp) {
+                this.tpChange += (this._tp - tp);
+            }
+        })
+
+    override(Sprite_Enemy.prototype,
+        function setupDamagePopup(setupDamagePopup) {
+            let mpChange = this._battler.mpChange;
+            if (this._battler.isDamagePopupRequested()) {
+                const result = this._battler.result();
+                if (result.hpAffected) {
+                    const sprite = new Sprite_BarChange();
+                    sprite.x = this.x;
+                    sprite.y = this.y;
+                    sprite.setup(
+                        this._battler.hp + result.hpDamage,
+                        this._battler.hp,
+                        this._battler.mhp,
+                        20, 21);
+                    this._damages.push(sprite);
+                    this.parent.addChild(sprite);
+                }
+                mpChange += result.mpDamage;
+            }
+
+            if (mpChange) {
+                const sprite = new Sprite_BarChange();
+                sprite.x = this.x;
+                sprite.y = this.y + sprite._height;
+                sprite.setup(
+                    this._battler.mp - mpChange,
+                    this._battler.mp,
+                    this._battler.mmp,
+                    22, 23);
+                this._damages.push(sprite);
+                this.parent.addChild(sprite);
+                this._battler.mpChange = 0;
+            }
+
+            setupDamagePopup.call(this);
+        });
+})();
