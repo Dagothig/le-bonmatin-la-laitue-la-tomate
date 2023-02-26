@@ -256,6 +256,59 @@ _ProtagonisteEpouvantailGueule
 > Il a un peu plus de gueule que ceux du \
 > village quand même...
 
+_ProtagonisteAutedefenseFaible
+> Non! Ce n'était pas intentionnel! Ce \
+> n'était que de l'autodéfense!
+
+_ProtagonisteOuilleTete
+> Oh, ouille ma tête...
+
+_ProtagonisteBosse
+> ...Ça va laisser une bosse...
+
+_ProtagonisteAttache
+> Merde je suis attaché... Vous allez pas \
+> m'aider? Je suis un peu pris là.
+
+_ProtagonisteAutedefenseFaible2
+> L'autodéfense! Il a frappé en premier! Vous \
+> allez pas me laisser tout seul!?
+
+_ProtagonisteOhNon
+> Oh non...
+
+_ProtagonisteNononon
+> Nonononon.
+
+_ProtagonisteAppealToGaboue
+> Gaboué! Tu le sais que j'ai raison!
+
+_ProtagonistePeurMerciWwwelchior
+> Oh j'ai eu peur... Merci Wwwlechior!
+
+_ProtagonisteDarkProta
+> Je... Je ne sais pas... Ça doit être que je
+> suis un anti-héro, c'est sûr.
+
+_ProtagonisteParlePasPoulet
+> Si ça vous aide, on parlera pas de poulet!
+
+_ProtagonisteVousPleurez1
+> Est-ce que vous... pleurez?
+
+_ProtagonisteVousPleurez2
+> Je crois qu'on est mieux de partir en fait.
+
+_ProtagonisteOuiAppris
+> Huuuh... Oui, c'est ça, on a appris.
+
+_Protagoniste4Contre1
+> Vous êtes certain? C'est quatre-contre-un \
+> et on est armés...
+
+_ProtagonisteMieuxPartir
+> On est peut-être mieux de partir...
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -311,6 +364,47 @@ _GabspartSassLettres
 _GabspartCaVaBienAller
 > Je suis sûr que tu vas bien aller!
 
+_GabspartTaper
+> ahha
+
+_GabspartResponsabilite
+> Ah non mais tu prends les décisions hein, \
+> tu as toute la responsabilité sur les \
+> épaules.
+
+_GabspartBonBonk
+> C'était un bon BONK tout de même.
+
+_GabspartMetsPasGaboueSituation
+> Ah mais mets-le pas dans une posture de \
+> même!
+
+_GabspartSiTenteGaboue
+> Bon, si ça lui tente.
+> Donc il dit:
+
+_GabspartPasFierDuMeurtre
+> En tout cas je pense qu'on a maintenant \
+> confirmé que vous êtes du même calibre. \
+> Pour quelqu'un qui parlait d'être un \
+> Protagoniste...
+
+_GabspartDesillusionProta
+> Mmmmmmmmh. Je suis sûr que ça va bien finir \
+> comme manière de voir les choses.
+
+_GabspartPartirRemarque
+> On devrait partir avant que quelqu'un \
+> remarque ce qu'on vient de faire.
+
+_GabspartCouverColere
+> Surtout que couver de la colère ça peut
+> être dangereux des fois...
+
+_GabspartToujoursOption
+> C'est presque toujours une option, hein.
+
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -330,6 +424,29 @@ _WwwelchiorPasConvaicuQuete
 > Pfff, ça dit vouloir assouvir une faim \
 > Cosmique, puis voilà que ça accepte d'aider \
 > avec une histoire de voisinage...
+
+_WwwelchiorTaper
+> ahha
+
+_WwwelchiorMurderHoboFaible
+> Je ne suis pas sûr que tu es très \
+> convaincant dans le rôle du Murder Hobo en \
+> fait. Ça prend les reins plus solides. \
+> Un petit coup de poing sur ta tête et...
+
+_WwwelchiorVaMurderHoboiser
+> Bon tout ça c'est drôle, et je m'excuse, \
+> mais l'Équilibre Cosmique ne sera pas \
+> rétabli si ça continue comme ça.
+
+_WwwelchiorPasDeTemoin
+> Si on déclare qu'ils étaient déjà en train \
+> de faire un repos des yeux éternel à notre \
+> arrivée, je suis sûr que personne ne nous \
+> questionnera.
+
+_WwwelchiorPointPondre
+> On oserait point pondre une telle idée...
 
 ### Fantôme
 
@@ -475,6 +592,67 @@ _FermiereRemercieModerement
 
 _FermiereBonsoir
 > Bonsoir. Il fait beau, hein?
+
+_FermiereTuerGerard
+> Vous avez tué un pauvre homme désarmé! \
+> Mon Gérard! Vous allez payer!
+
+_FermiereAutodefense
+> De l'autodéfense complètement démesurée, \
+> oui!
+
+_FermiereOminous
+> C'est pas ce que je m'inquièterais le plus \
+> à votre place. Le garde est encore occupé \
+> avec le pont pour une raison qui m'échappe. \
+> Alors je prends les choses dans mes mains.
+
+_FermiereSuffit
+> Suffit! Ou je vous y mets aussi. \
+> \
+> J'aurai ma vengeance servie  \
+> chaudement!
+
+_FermiereVengeance
+> Mais c'est insuffisant! Vous êtes un \
+> meurtrier et vous allez payer!
+
+_FermiereGerardNon
+> Gérard! Noooon!
+
+### Fermier
+
+_FermierPoulet1
+> Si on me parle une fois de plus de poulet, \
+> je vous jure je vais vous éplumer! \
+> \
+> Oh vous n'êtes pas mon épouse! Bonsoir!
+
+_FermierPoulet2
+> Non mais! Je vais pas tolérer qu'on me \
+> niaise comme ça!
+
+_FermierLaissezMoi
+> ... Laissez moi.
+
+_FermierPouletRoti
+> Dites... à mon épouse... qu'en fait \
+> j'aimais l'odeur du poulet roti!
+
+_FermierCaVousApprendra
+> Ha! Ça vous apprendra!
+
+_FermierPilerPieds
+> Je refuse de me laisser piler sur les pieds \
+> une seconde de plus, aaaaaah!
+
+_FermierFatigueLaisserTranquille
+> Haaa... Haaa... Je vais vous apprendre à \
+> laisser tranquille les gens!
+
+_FermierAuraJamaisDeRespect
+> Ouch... Je... Je n'aurai donc jamais de
+> respect...
 
 ### SFX
 

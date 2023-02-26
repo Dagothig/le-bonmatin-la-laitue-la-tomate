@@ -200,7 +200,26 @@ override(Array.prototype,
         function isCollidedWithEvents(_isCollidedWithEvents, x, y) {
             return this.movementType !== FLYING &&
                 $gameMap.eventsXyNt(x, y).some(event =>
-                    event.movementType !== FLYING);
+                    event.movementType !== FLYING &&
+                    event._priorityType);
+        });
+
+    override(Game_Player.prototype,
+        function triggerButtonAction() {
+            if (Input.isTriggered('ok')) {
+                if (this.getOnOffVehicle()) {
+                    return true;
+                }
+                this.checkEventTriggerThere([0,1,2]);
+                if ($gameMap.setupStartingEvent()) {
+                    return true;
+                }
+                this.checkEventTriggerHere([0]);
+                if ($gameMap.setupStartingEvent()) {
+                    return true;
+                }
+            }
+            return false;
         });
 })();
 
@@ -492,6 +511,8 @@ function eval_fn_expr(expr, args) {
             } else {
                 this._hasRun = true;
             }
+        } else if (command === "se") {
+            AudioManager.playSe({ name: args[0] });
         }
     }
 
@@ -1095,6 +1116,7 @@ function eval_fn_expr(expr, args) {
         Sprite_Actor.call(this, enemy);
     }
 
+    window.Sprite_EnemyActor = Sprite_EnemyActor;
     Sprite_EnemyActor.prototype = Object.create(Sprite_Actor.prototype);
     Sprite_EnemyActor.prototype.constructor = Sprite_EnemyActor;
 
@@ -1123,7 +1145,6 @@ function eval_fn_expr(expr, args) {
                 if (battler) {
                     this.setHome(battler.screenX(), battler.screenY());
                 }
-                this.startEntryMotion();
                 this._stateIconSprite.setup(battler);
             }
         },
@@ -1227,11 +1248,19 @@ function eval_fn_expr(expr, args) {
         function updateInstantCollapse() {
             Sprite_Enemy.prototype.updateInstantCollapse.call(this);
         },
+        function moveToStartPosition() {
+
+        },
         function stepForward() {
-            this.startMove(48, 0, 12);
+            if (this._targetOffsetX !== 48 || this._targetOffsetY !== 0) {
+                this.startParabola(48, 0, -12, 12);
+            }
+            this._aaaX = 48;
         },
         function stepBack() {
-            this.startMove(0, 0, 12);
+            this._actor.requestMotion("escape");
+            this.startParabola(0, 0, -6, 12);
+            this._aaaX = 0;
         },
         function retreat() {},
         function damageOffsetX(damageOffsetX) {
@@ -2051,13 +2080,31 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             this._patternReset = patternType[patternType.length - 1];
         },
         function realMoveSpeed(realMoveSpeed) {
-            return realMoveSpeed.call(this)  + 0.5;
+            return realMoveSpeed.call(this) + 0.25;
         },
         function animationWait() {
             return (9 - this.realMoveSpeed()) * this._animationWaitMultiplier;
         },
         function dstSE(_, se) {
             aaa_se(this.eventId(), se);
+        },
+        function jump(jump, xPlus, yPlus) {
+            const x = this._x + xPlus;
+            const y = this._y + yPlus;
+            if ((!xPlus && !yPlus) ||
+                this.isThrough() || this.isDebugThrough() ||
+                (this.isMapPassable(x, y) && !this.isCollidedWithCharacters(x, y))) {
+                jump.call(this, xPlus, yPlus);
+                this._jumpPeak = Math.round(this._jumpPeak);
+                this._jumpCount = Math.round(this._jumpCount);
+            } else {
+                this.setMovementSuccess(false);
+            }
+        });
+
+    override(Game_Follower.prototype,
+        function realMoveSpeed() {
+            return this._moveSpeed + (this.isDashing() ? 1 : 0);
         });
 
     override(Game_Character.prototype,
@@ -2556,42 +2603,84 @@ Input.keyMapper[68] = "right"; // d
             if (this._tp !== tp) {
                 this.tpChange += (this._tp - tp);
             }
-        })
+        });
 
-    override(Sprite_Enemy.prototype,
-        function setupDamagePopup(setupDamagePopup) {
-            let mpChange = this._battler.mpChange;
-            if (this._battler.isDamagePopupRequested()) {
-                const result = this._battler.result();
-                if (result.hpAffected) {
-                    const sprite = new Sprite_BarChange();
-                    sprite.x = this.x;
-                    sprite.y = this.y;
-                    sprite.setup(
-                        this._battler.hp + result.hpDamage,
-                        this._battler.hp,
-                        this._battler.mhp,
-                        20, 21);
-                    this._damages.push(sprite);
-                    this.parent.addChild(sprite);
-                }
-                mpChange += result.mpDamage;
-            }
+    override(Game_Action.prototype,
+        function apply(apply, target) {
+            const targetResult = target.result();
+            const subject = this.subject();
+            const subjectResult = subject.result();
+            targetResult.startHp = target.hp;
+            targetResult.startMp = target.mp;
+            targetResult.startTp = target.tp;
+            const subjectHp = subject.hp;
+            const subjectMp = subject.mp;
+            const subjectTp = subject.tp;
+            apply.call(this, target);
+            targetResult.endHp = target.hp;
+            targetResult.endMp = target.mp;
+            targetResult.endTp = target.tp;
+            subjectResult.startHp = subjectHp;
+            subjectResult.startMp = subjectMp;
+            subjectResult.startTp = subjectTp;
+            subjectResult.endHp = subject.hp;
+            subjectResult.endMp = subject.mp;
+            subjectResult.endTp = subject.tp;
+        });
 
-            if (mpChange) {
+    function setupDamagePopup(setupDamagePopup) {
+        let mpChange = this._battler.mpChange;
+        if (this._battler.isDamagePopupRequested()) {
+            const result = this._battler.result();
+            if (result.hpAffected) {
                 const sprite = new Sprite_BarChange();
                 sprite.x = this.x;
-                sprite.y = this.y + sprite._height;
+                sprite.y = this.y;
                 sprite.setup(
-                    this._battler.mp - mpChange,
-                    this._battler.mp,
-                    this._battler.mmp,
-                    22, 23);
+                    result.startHp || 0,
+                    result.endHp || 0,
+                    this._battler.mhp,
+                    20, 21);
                 this._damages.push(sprite);
                 this.parent.addChild(sprite);
-                this._battler.mpChange = 0;
             }
+            mpChange += result.mpDamage;
+        }
 
-            setupDamagePopup.call(this);
+        if (mpChange) {
+            const sprite = new Sprite_BarChange();
+            sprite.x = this.x;
+            sprite.y = this.y + sprite._height;
+            sprite.setup(
+                this._battler.mp - mpChange,
+                this._battler.mp,
+                this._battler.mmp,
+                22, 23);
+            this._damages.push(sprite);
+            this.parent.addChild(sprite);
+            this._battler.mpChange = 0;
+        }
+
+        setupDamagePopup.call(this);
+    }
+
+    override(Sprite_Enemy.prototype,
+        setupDamagePopup);
+
+    override(Sprite_EnemyActor.prototype,
+        setupDamagePopup);
+})();
+
+// Event sprite control
+(function() {
+    override(Game_CharacterBase.prototype,
+        function screenX(screenX) {
+            return screenX.call(this) + (this._offsetX || 0);
+        },
+        function screenY(screenY) {
+            return screenY.call(this) + (this._offsetY || 0);
+        },
+        function screenZ(screenZ) {
+            return screenZ.call(this) + (this._offsetZ || 0);
         });
 })();
