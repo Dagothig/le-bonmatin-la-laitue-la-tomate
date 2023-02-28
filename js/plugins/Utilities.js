@@ -2684,3 +2684,107 @@ Input.keyMapper[68] = "right"; // d
             return screenZ.call(this) + (this._offsetZ || 0);
         });
 })();
+
+// Checkpoints
+(function () {
+    override(DataManager,
+        function loadCheckpoint(_, name) {
+            var xhr = new XMLHttpRequest();
+            var url = 'save/' + name + ".rpgsave";
+            xhr.open('GET', url);
+            xhr.overrideMimeType('application/json');
+            xhr.onload = function() {
+                if (xhr.status < 400) {
+                    const json = LZString.decompressFromBase64(xhr.responseText);
+                    DataManager.createGameObjects();
+                    DataManager.extractSaveContents(JsonEx.parse(json));
+                    SoundManager.playLoad();
+                    if ($gameSystem.versionId() !== $dataSystem.versionId) {
+                        $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
+                        $gamePlayer.requestMapReload();
+                    }
+                    SceneManager.goto(Scene_Map);
+                }
+            };
+            xhr.send();
+        });
+
+    const code = [
+        38,
+        38,
+        40,
+        40,
+        37,
+        39,
+        37,
+        39,
+        66,
+        65];
+
+    override(Scene_Title.prototype,
+        function start(start) {
+            start.call(this);
+            this.codeIndex = 0;
+            this.onKeyDown = e => {
+                if (e.keyCode === code[this.codeIndex]) {
+                    this.codeIndex++;
+                    if (this.codeIndex === code.length) {
+                        SceneManager.push(Scene_Checkpoints);
+                    }
+                } else {
+                    this.codeIndex = 0;
+                }
+            };
+            document.addEventListener("keydown", this.onKeyDown);
+        },
+        function stop(stop) {
+            document.removeEventListener("keydown", this.onKeyDown)
+            stop.call(this);
+        });
+
+        function Scene_Checkpoints() {
+            this.initialize.apply(this, arguments);
+        }
+
+        Scene_Checkpoints.prototype = Object.create(Scene_MenuBase.prototype);
+        Scene_Checkpoints.prototype.constructor = Scene_Checkpoints;
+
+        override(Scene_Checkpoints.prototype,
+            function create(create) {
+                create.call(this);
+                this._checkpointsWindow = new Window_Checkpoints();
+                this._checkpointsWindow.setHandler("cancel", this.popScene.bind(this));
+                this.addWindow(this._checkpointsWindow);
+            });
+
+        function Window_Checkpoints() {
+            this.initialize.apply(this, arguments);
+        }
+
+        Window_Checkpoints.prototype = Object.create(Window_Command.prototype);
+        Window_Checkpoints.prototype.constructor = Window_Checkpoints;
+
+        override(Window_Checkpoints.prototype,
+            function initialize(initialize) {
+                initialize.call(this);
+                this.updatePlacement();
+            },
+            function windowWidth() {
+                return 400;
+            },
+            function windowHeight() {
+                return this.fittingHeight(Math.min(this.numVisibleRows(), 12));
+            },
+            function updatePlacement() {
+                this.x = (Graphics.boxWidth - this.width) / 2;
+                this.y = (Graphics.boxHeight - this.height) / 2;
+            },
+            function makeCommandList() {
+                for (const name of ["detah"]) {
+                    this.addCommand(name, name);
+                }
+            },
+            function processOk() {
+                DataManager.loadCheckpoint(this.commandSymbol(this.index()));
+            });
+})();
