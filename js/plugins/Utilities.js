@@ -2335,6 +2335,14 @@ Input.keyMapper[68] = "right"; // d
         function fadeOutForTransfer() {
             this.startFadeOut(-1, CROSSFADE);
         });
+    override(DataManager,
+        function loadGame(loadGame, savefileId) {
+            const result = loadGame.call(this, savefileId);
+            if (result) {
+                crossfadeSprite.bitmap.clear();
+            }
+            return result;
+        });
 })();
 
 // Turn orderidoo
@@ -2787,4 +2795,112 @@ Input.keyMapper[68] = "right"; // d
             function processOk() {
                 DataManager.loadCheckpoint(this.commandSymbol(this.index()));
             });
+})();
+
+// Disable dash
+(function() {
+    override(Game_Map.prototype,
+        function isDashDisabled() {
+            return true;
+        });
+
+    override(Window_Options.prototype,
+        function addCommand(addCommand, name, symbol, enabled, ext) {
+            symbol !== "alwaysDash" && addCommand.call(this, name, symbol, enabled, ext);
+        });
+})();
+
+// Savefilelist
+(function () {
+    override(DataManager,
+        function makeSavefileInfo(makeSavefileInfo) {
+            const info = makeSavefileInfo.call(this);
+            info.title = $dataMap.displayName || info.title;
+            info.version = 1;
+            return info;
+        },
+        function saveGlobalInfo(saveGlobalInfo, info) {
+            saveGlobalInfo.call(this, info);
+            this._globalInfo = info;
+        },
+        function loadGlobalInfo(loadGlobalInfo) {
+            if (this._globalInfo) {
+                return this._globalInfo;
+            }
+            const globalInfo = loadGlobalInfo.call(this);
+            (async () => {
+                let dirty = false;
+                await Promise.all(globalInfo.map(async (info, i) => {
+                    if (!info) {
+                        return;
+                    }
+                    try {
+                        if (!info.version) {
+                            info.version = 0;
+                        }
+                        if (info.version < 1) {
+                            const json = JSON.parse(StorageManager.load(i));
+                            const mapId = json.map._mapId;
+                            const mapRes = await fetch("data/" + 'Map%1.json'.format(mapId.padZero(3)));
+                            const map = await mapRes.json();
+                            info.title = map.displayName || info.title;
+                            info.version = 1;
+                            dirty = true;
+                        }
+                    } catch (err) {
+                        console.log("Could not update file info");
+                        console.trace(err);
+                    }
+                }));
+                if (dirty) {
+                    this.saveGlobalInfo(globalInfo);
+                }
+            })();
+            return this._globalInfo = globalInfo;
+        });
+
+    override(Window_SavefileList.prototype,
+        function itemHeight() {
+            return 48 + this.textPadding() * 2;
+        },
+        function textHeight() {
+            return this.contents.fontSize + 8;
+        },
+        function drawItem(_, index) {
+            const id = index + 1;
+            const valid = DataManager.isThisGameFile(id);
+            const info = DataManager.loadSavefileInfo(id);
+            this.resetTextColor();
+            this.changePaintOpacity(valid || this._mode !== "load");
+
+            const rect = this.itemRectForText(index);
+            rect.y += this.textPadding();
+            rect.height -= this.textPadding() * 2
+            let right = rect.x + rect.width;
+            const bottom = rect.y + rect.height;
+            const textCenterY = rect.y + (rect.height - this.textHeight()) / 2;
+
+            let x = rect.x;
+
+            const idWidth = this.textWidth("99:");
+            this.drawText(id + ":", rect.x, textCenterY, idWidth, "right");
+            x += idWidth + this.textPadding();
+
+            if (valid) {
+                this.drawText(info.title, x, textCenterY);
+
+                const playTimeWidth = this.textWidth("99:99:99");
+                this.drawPlaytime(info, right - playTimeWidth, textCenterY, playTimeWidth);
+                right -= playTimeWidth + this.standardPadding();
+
+                const charsWidth = 4 * 48;
+                right -= charsWidth;
+                if (info.characters) {
+                    for (let i = 0; i < info.characters.length; i++) {
+                        let data = info.characters[i];
+                        this.drawCharacter(data[0], data[1], right + (i + 0.5) * 48, bottom);
+                    }
+                }
+            }
+        })
 })();
