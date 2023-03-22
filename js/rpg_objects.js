@@ -1449,7 +1449,7 @@ Game_Action.prototype.makeTargets = function() {
     } else if (this.isForFriend()) {
         targets = this.targetsForFriends();
     }
-    return this.repeatTargets(targets);
+    return targets;//this.repeatTargets(targets);
 };
 
 Game_Action.prototype.repeatTargets = function(targets) {

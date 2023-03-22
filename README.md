@@ -93,6 +93,34 @@ _NarrateurEpouvantailNavet
 > Un épouvantail bien habillé. La tête en navet est une \
 > belle touche.
 
+_NarrateurBiereUtilise
+> Une bière en cours d'utilisation.
+
+_NarrateurPetiteCle
+> Une petite clé!
+
+_NarrateurUnSeulMarteau2
+> Bien que vous êtes certains avoir volé deux marteaux \
+> aux fermiers, vous observez qu'il n'y en a qu'un seul \
+> dans vos mains, et aucun sur le mur.
+
+_NarrateurBabioles
+> Des babioles sans valeur.
+
+_NarrateurCailloux1
+> ... Vous fouillez dans le sac, mais vous n'y trouvez \
+> que des petits cailloux inutiles.
+
+_NarrateurCailloux2
+> Des cailloux! C'est... huh.. vous pouvez les lancer. \
+> Des fois ça assomme.
+
+_NarrateurUneBoite
+> Une boîte.
+
+_NarrateurCarottesOrange
+> Des carottes, l'Essence même du Orange.
+
 ### Personne Véritable
 
 _ProtagonisteChercheDoncIlDit
@@ -308,6 +336,27 @@ _Protagoniste4Contre1
 
 _ProtagonisteMieuxPartir
 > On est peut-être mieux de partir...
+
+_ProtagonistePetitSac
+> Vous dites ça mais regardez là, y'a un \
+> petit sac que je suis sûr qu'y contient des \
+> choses de valeur!
+
+_ProtagonisteCailloux
+> Ha! Trop tard j'ai mis les cailloux dans ma \
+> poche.
+
+_ProtagonisteQuoiDansBoite
+> Heille niaisez-moi pas. C'est quoi qu'il y \
+> a dans la boîte?
+
+_ProtagonisteOranges1
+> C'est pas les oranges ça?
+
+_ProtagonisteOranges2
+> Ha! J'vous ai pogné. \
+> \
+> Bon par contre j'ai pas besoin de carottes.
 
 ### Vieux
 
@@ -653,6 +702,11 @@ _FermierFatigueLaisserTranquille
 _FermierAuraJamaisDeRespect
 > Ouch... Je... Je n'aurai donc jamais de
 > respect...
+
+_FermierBiere
+> Une bonne bière rafraîchissante après une \
+> longue journée ça calme bien les nerfs tout \
+> de même.
 
 ### SFX
 

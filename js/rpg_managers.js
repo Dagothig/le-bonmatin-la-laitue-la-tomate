@@ -2420,6 +2420,7 @@ BattleManager.updateTurn = function() {
     $gameParty.requestMotionRefresh();
     if (!this._subject) {
         this._subject = this.getNextSubject();
+        delete this._repeatCounter;
     }
     if (this._subject) {
         this.processTurn();
@@ -2444,6 +2445,7 @@ BattleManager.processTurn = function() {
         this._logWindow.displayCurrentState(subject);
         this._logWindow.displayRegeneration(subject);
         this._subject = this.getNextSubject();
+        delete this._repeatCounter;
     }
 };
 
@@ -2515,6 +2517,18 @@ BattleManager.startAction = function() {
     this._action.applyGlobal();
     this.refreshStatus();
     this._logWindow.startAction(subject, action, targets);
+
+    if (!action._isRepeat) {
+        this._repeatCounter = action.item().repeats;
+    }
+    this._repeatCounter--;
+    if (this._repeatCounter >= 1) {
+        const repeatAction = new Game_Action(subject);
+        repeatAction._isRepeat = true;
+        repeatAction.setTarget(action._targetIndex);
+        repeatAction.setItemObject(action.item());
+        subject._actions.push(repeatAction);
+    }
 };
 
 BattleManager.updateAction = function() {
@@ -2597,6 +2611,7 @@ BattleManager.processForcedAction = function() {
     if (this._actionForcedBattler) {
         this._turnForced = true;
         this._subject = this._actionForcedBattler;
+        delete this._repeatCounter;
         this._actionForcedBattler = null;
         this.startAction();
         this._subject.removeCurrentAction();

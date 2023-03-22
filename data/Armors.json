@@ -11,5 +11,6 @@ null,
 {"id":9,"atypeId":1,"description":"Un chandail écrit BONJOUR dessus.\nÇa fait un peu désespéré.","etypeId":4,"traits":[],"iconIndex":135,"name":"Chandail du Bonjour","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
 {"id":10,"atypeId":2,"description":"Oubliée, mais pas encore tout à fait inutilisable.","etypeId":4,"traits":[],"iconIndex":136,"name":"Cuirasse Rouillée","note":"","params":[0,0,0,5,0,0,-3,0],"price":0},
 {"id":11,"atypeId":3,"description":"Surprenament gros. Au point où il tient sur la tête.\nVous permet de faire appel au Côté Obscur de la Phrase.","etypeId":3,"traits":[{"code":43,"dataId":42,"value":1}],"iconIndex":298,"name":"Crâne de Dark Georgina","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":12,"atypeId":0,"description":"Une petite broche en bois. Le vernis est noirci et usé.","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Broche","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
+{"id":12,"atypeId":1,"description":"Une petite broche en bois. Le vernis est noirci et usé.","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":147,"name":"Broche","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":13,"atypeId":1,"description":"Un bandana vraiment très edgy. Grâce à tout ce \ntranchant vous pouvez porter deux armes.","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0},{"code":55,"dataId":1,"value":1},{"code":44,"dataId":2,"value":1}],"iconIndex":150,"name":"Bandana de Ninja","note":"","params":[0,0,0,0,0,0,5,0],"price":0}
 ]
