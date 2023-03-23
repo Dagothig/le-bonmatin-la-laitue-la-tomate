@@ -121,7 +121,7 @@ _NarrateurUneBoite
 _NarrateurCarottesOrange
 > Des carottes, l'Essence même du Orange.
 
-### Personne Véritable
+### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
 > Oh. Hum... \
@@ -358,6 +358,12 @@ _ProtagonisteOranges2
 > \
 > Bon par contre j'ai pas besoin de carottes.
 
+_ProtagonisteEssayeUneAutre
+> ... mais si j'en essaye une autre.
+
+_ProtagonisteBouteilleBouchonnee
+> Oh. La bouteille est pas mal bouchonnée.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -452,7 +458,6 @@ _GabspartCouverColere
 
 _GabspartToujoursOption
 > C'est presque toujours une option, hein.
-
 
 ### Wwwelchior
 
