@@ -6,7 +6,7 @@ const CODES = {
     PLUGIN: 356,
     SE: 250,
     TEXT: 401
-}
+};
 
 async function genTODOFile(file, content) {
     console.log("Missing file for TODO");
@@ -69,14 +69,21 @@ async function genTODOFile(file, content) {
                         file = item.parameters[0].substring(3);
                     else if (item.code === CODES.SE)
                         file = item.parameters[0].name;
+
                     if (file && !audioFiles[file + ".ogg"]) {
-                        const [, name, description] = file.match(/_([A-ZÔÈÉÊË][a-zôèéêë]*)(\w+)/) ?? [];
+                        let [, name, description] = file.match(/_([A-ZÔÈÉÊË][a-zôèéêë]*)(\w+)/) ?? [];
+                        if (!name) {
+                            name = "SFX";
+                            description = file;
+                        }
                         // Self + Image + 4 lines per box => 6
                         const contentItems = page?.list?.slice(i, i + 6).filter(item => item?.code === CODES.TEXT);
                         const contentLines = contentItems?.length ?
                             contentItems.map(item => item?.parameters?.[0]) :
                             [description];
+
                         await genTODOFile(file, contentLines.join("\n"));
+
                         section = sectionsByName[name];
                         if (!section) {
                             section = sectionsByName[name] =
@@ -86,6 +93,7 @@ async function genTODOFile(file, content) {
                             };
                             readmeSections.splice(readmeSections.findIndex(s => s.header === "SFX"), 0, section);
                         }
+
                         section.lines.push(
                             "",
                             file,

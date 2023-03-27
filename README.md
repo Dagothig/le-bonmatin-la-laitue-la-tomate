@@ -121,6 +121,34 @@ _NarrateurUneBoite
 _NarrateurCarottesOrange
 > Des carottes, l'Essence même du Orange.
 
+_NarrateurDuPain
+> Du pain! C'est équivalent à des victuailles.
+
+_NarrateurPoeleCuillereCouteau
+> Une poêle, deux cuillères et un couteau!\
+> \
+> Y'a moyen d'argumenter qu'un couteau et une dague c'est\
+> la même chose.
+
+_NarrateurPotChambreFermier
+> Le fond du sceau est un peu jaunâtre.
+
+_NarrateurRobeFleurie
+> Une belle robe fleurie!
+
+_NarrateurLivreIntimeResident
+> Le journal intime d'un des résidents.
+
+_NarrateurEnFaitRecette
+> Vous vous apprêter à le lire, lorsque vous réaliser \
+> qu'en fait il s'agit d'un livre de recette.
+
+_NarrateurRecettePouletFour
+> POULET AU FOUR\
+> Ingrédient: Un poulet\
+> Outils: Un four\
+> Étapes: Mettre le poulet au four. Retirer lorsque cuît.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -363,6 +391,28 @@ _ProtagonisteEssayeUneAutre
 
 _ProtagonisteBouteilleBouchonnee
 > Oh. La bouteille est pas mal bouchonnée.
+
+_ProtagonisteFillettePasConvaincu
+> Je sais pas, il n'a pas trop l'air concerné\
+> à te chercher?
+
+_ProtagonisteUtilisePasRadis
+> Mmmh, une procédure arcane.\
+> \
+> Les radis ça n'a pas de place dans le BMLT.
+
+_ProtagonisteRobeFleurie
+> Erf... Bon y'a l'air d'avoir une robe pas \
+> trop pire au moins.
+
+_ProtagonisteRobeFleurie
+> Une belle robe fleurie!
+
+_ProtagonisteRienInteressant
+> Erf, y'a rien d'intéressant...
+
+_ProtagonisteDecu
+> C'est plutôt décevant tout de même...
 
 ### Vieux
 
@@ -712,6 +762,18 @@ _FermierBiere
 > Une bonne bière rafraîchissante après une \
 > longue journée ça calme bien les nerfs tout \
 > de même.
+
+_FermierSonPain
+> Hey ho, mon pain!
+
+_FermierSaPoele
+> Hey ho, mes outils de cuisine!
+
+### Fillette
+
+_FilletteCossin
+> Chut! Faut pas trop faire de bruit, sinon\
+> le cossin bleu va me voir!
 
 ### SFX
 
