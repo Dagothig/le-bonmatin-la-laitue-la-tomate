@@ -176,6 +176,7 @@ override(Array.prototype,
             var cmd = page.list && page.list[0] && page.list[0];
             if (cmd && cmd.code === 356) { // Plugin command lol
                 if (cmd.parameters[0] === "aaa_condition") {
+                    // Assume the next item is a script to eval
                     if (!eval(page.list[1].parameters[0]))
                         return false;
                 }
@@ -255,6 +256,54 @@ function eval_fn_expr(expr, args) {
     const actorSpriteRegexp = /\<<aaa_actor_sprite *([-_\w]+)?\>>/;
     const shadowRegexp = /\<<shadow *(\w+)? *(-?\d+)?\>>/;
     const overlayRegexp = /\<<aaa_overlay (\d+)\>>/;
+
+    function extendoList(entries) {
+        for (let index = 0; index < entries.length; index++) {
+            const entry = entries[index];
+            switch (entry.code) {
+                // Set Movement Route
+                case 205:
+                    for (const routeEntry of entry.parameters[1].list)
+                        if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
+                            routeEntry.evalFn = eval_fn_expr(routeEntry.parameters[0], "command, gc, params");
+                    break;
+                // Conditional Branch
+                case 111:
+                    switch (entry.parameters[0]) {
+                        // Script
+                        case 12:
+                            entry.evalFn = eval_fn_expr(entry.parameters[1]);
+                            break;
+                    }
+                    break;
+                // Control Variables
+                case 122:
+                    // Operand
+                    switch (entry.parameters[3]) {
+                        // Script
+                        case 4:
+                            entry.evalFn = eval_fn_expr(entry.parameters[4]);
+                            break;
+                    }
+                    break;
+                // Script
+                case 355:
+                    let lines = "{\n" + entry.parameters[0] + "\n";
+                    while (index + 1 < entries.length) {
+                        const otherEntry = entries[index + 1];
+                        if (otherEntry.code === 655) {
+                            lines += otherEntry.parameters[0] + "\n";
+                            index++;
+                        }
+                        else
+                            break;
+                    }
+                    entry.evalFn = eval_fn_expr(lines + "}");
+                    break;
+            }
+        }
+    }
+
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -272,6 +321,22 @@ function eval_fn_expr(expr, args) {
                 break;
             case $dataMap:
                 $dataMap.bgm.filters = ($dataMap.meta.bgmFilter || "").split(",").filter(i => i);
+                for (const event of $dataMap.events)
+                    for (const page of event && event.pages || []) {
+                        extendoList(page && page.list || []);
+                        for (const routeEntry of (page && page.moveRoute || {}).list || [])
+                            if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
+                                routeEntry.evalFn = eval_fn_expr(routeEntry.parameters[0], "command, gc, params");
+                    }
+                break;
+            case $dataCommonEvents:
+                for (const event of $dataCommonEvents)
+                    extendoList(event && event.list || []);
+                break;
+            case $dataTroops:
+                for (const troop of $dataTroops)
+                    for (const page of troop && troop.pages || [])
+                        extendoList(page && page.list || [])
                 break;
             case $dataStates:
                 for (const state of object) {
@@ -295,6 +360,7 @@ function eval_fn_expr(expr, args) {
                 for (const skill of object) {
                     if (!skill)
                         continue;
+                    skill.damage.formulaFn = eval_fn_expr(skill.damage.formula, "target, item, a, b, v, sign");
                     const note = skill && skill.note || "";
                     const targetMatch = note.match(targetsRegexp);
                     skill._customTargets = targetMatch && targetMatch[1] && eval_fn_expr(targetMatch[1]);
@@ -2903,4 +2969,72 @@ Input.keyMapper[68] = "right"; // d
                 }
             }
         })
+})();
+
+// Avoid runtime evals
+(function () {
+    override(Game_Action.prototype,
+        function evalDamageFormula(evalDamageFormula, target) {
+            try {
+                var item = this.item();
+                var a = this.subject();
+                var b = target;
+                var v = $gameVariables._data;
+                var sign = ([3, 4].contains(item.damage.type) ? -1 : 1);
+                var value = Math.max(item.damage.formulaFn.call(this, target, item, a, b, v, sign), 0) * sign;
+                if (isNaN(value)) value = 0;
+                return value;
+            } catch (e) {
+                return 0;
+            }
+        })
+
+    override(Game_Character.prototype,
+        function processMoveCommand(processMoveCommand, command) {
+            if (command.code === Game_Character.ROUTE_SCRIPT) {
+                const gc = Game_Character;
+                const params = command.parameters;
+                return command.evalFn.call(this, command, gc, params);
+            } else {
+                return processMoveCommand.call(this, command);
+            }
+        })
+
+    override(Game_Interpreter.prototype,
+        function executeCommand(executeCommand) {
+            const command = this.currentCommand();
+            this._evalFn = command && command.evalFn;
+            return executeCommand.call(this);
+        },
+        function command111(command111) {
+            // Script
+            if (this._params[0] === 12) {
+                this._branch[this._indent] = !!this._evalFn.call(this);
+                if (this._branch[this._indent] === false) {
+                    this.skipBranch();
+                }
+                return true;
+            } else {
+                return command111.call(this);
+            }
+        },
+        function command122(command122) {
+            // Script
+            if (this._params[0] === 4) {
+                const value = this._evalFn.call(this);
+                for (var i = this._params[0]; i <= this._params[1]; i++) {
+                    this.operateVariable(i, this._params[2], value);
+                }
+                return true;
+            } else {
+                return command122.call(this);
+            }
+        },
+        function command355() {
+            this.currentCommand().evalFn.call(this);
+            while (this.nextEventCode() === 655) {
+                this._index++;
+            }
+            return true;
+        });
 })();
