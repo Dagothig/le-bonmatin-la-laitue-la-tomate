@@ -2885,6 +2885,10 @@ Input.keyMapper[68] = "right"; // d
             info.version = 1;
             return info;
         },
+        function isThisGameFile(isThisGameFile, savefileId) {
+            var globalInfo = this.loadGlobalInfo();
+            return !!(globalInfo && globalInfo[savefileId]);
+        },
         function saveGlobalInfo(saveGlobalInfo, info) {
             saveGlobalInfo.call(this, info);
             this._globalInfo = info;
