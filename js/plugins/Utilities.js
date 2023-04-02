@@ -265,14 +265,14 @@ function eval_fn_expr(expr, args) {
                 case 205:
                     for (const routeEntry of entry.parameters[1].list)
                         if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
-                            routeEntry.evalFn = eval_fn_expr(routeEntry.parameters[0], "command, gc, params");
+                            routeEntry.evalFn = eval_fn_expr("{\n" + routeEntry.parameters[0] + "\n}", "command, gc, params");
                     break;
                 // Conditional Branch
                 case 111:
                     switch (entry.parameters[0]) {
                         // Script
                         case 12:
-                            entry.evalFn = eval_fn_expr(entry.parameters[1]);
+                            entry.evalFn = eval_fn_expr("{\n" + entry.parameters[1] + "\n}");
                             break;
                     }
                     break;
@@ -282,7 +282,7 @@ function eval_fn_expr(expr, args) {
                     switch (entry.parameters[3]) {
                         // Script
                         case 4:
-                            entry.evalFn = eval_fn_expr(entry.parameters[4]);
+                            entry.evalFn = eval_fn_expr("{\n" + entry.parameters[4] + "\n}");
                             break;
                     }
                     break;
@@ -326,7 +326,7 @@ function eval_fn_expr(expr, args) {
                         extendoList(page && page.list || []);
                         for (const routeEntry of (page && page.moveRoute || {}).list || [])
                             if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
-                                routeEntry.evalFn = eval_fn_expr(routeEntry.parameters[0], "command, gc, params");
+                                routeEntry.evalFn = eval_fn_expr("{\n" + routeEntry.parameters[0] + "\n}", "command, gc, params");
                     }
                 break;
             case $dataCommonEvents:
