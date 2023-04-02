@@ -2339,46 +2339,63 @@ Input.keyMapper[68] = "right"; // d
 
 // Transitiooooons
 (function () {
-    const CROSSFADE = 0;
-    let crossfadeSprite;
-    let crossfadeBitmap;
-    let crossfadeRenderTexture;
-    override(Graphics,
-        function initialize(initialize, width, height, type) {
-            initialize.call(this, width, height, type);
-
-            crossfadeBitmap = new Bitmap(width, height);
-            crossfadeRenderTexture = PIXI.RenderTexture.create(width, height);
-            crossfadeSprite = new Sprite();
-            crossfadeSprite.bitmap = crossfadeBitmap;
-        })
-    override(Scene_Map.prototype,
-        function createCrossfadeSprite(_, fadein) {
-            if (this._fadeSprite !== crossfadeSprite) {
-                if (this._fadeSprite) {
-                    this.removeChild(this._fadeSprite);
+    const STABILITY_THRESHOLD = 20;
+    const MIN_STABLE_FRAMES = 4;
+    const MAX_TRANSITION_FRAMES = 60;
+    override(SceneManager,
+        function snapForBackground() {
+            this._backgroundBitmap = this.snap();
+        },
+        function updateScene(_) {
+            const now = new Date();
+            if (this._time) {
+                const dt = Math.max(1, Math.min(1000, now - this._time));
+                this._stableFrames = dt < STABILITY_THRESHOLD ? (this._stableFrames || 0) + 1 : 0;
+            }
+            this._time = now;
+            if (this._scene) {
+                if (!this._sceneStarted && this._scene.isReady()) {
+                    this._scene.start();
+                    this._sceneStarted = true;
+                    this._waitForStable = true;
+                    this._stableFrames = Math.min(this._stableFrames || 0, MIN_STABLE_FRAMES - 1);
+                    this._maxTransitionFrames = MAX_TRANSITION_FRAMES;
+                    this.onSceneStart();
                 }
-                this._fadeSprite = crossfadeSprite;
-                this.addChild(this._fadeSprite);
+                if (this.isCurrentSceneStarted()) upd: {
+                    if (this._waitForStable) {
+                        this._maxTransitionFrames--;
+                        if (this._stableFrames < MIN_STABLE_FRAMES &&
+                            this._maxTransitionFrames > 0) {
+                            break upd;
+                        } else {
+                            this._waitForStable = false;
+                        }
+                    }
+                    this._scene.update();
+                }
             }
-            if (!fadein) {
-                Graphics._renderer.render(this._spriteset, crossfadeRenderTexture);
-                this.worldTransform.identity();
-                let canvas = Graphics._renderer.extract.canvas(crossfadeRenderTexture);
-                crossfadeBitmap._context.drawImage(canvas, 0, 0);
-                crossfadeBitmap._setDirty();
-            }
+        });
+
+    const CROSSFADE = 0;
+    let lastFadeout = null;
+    override(Scene_Map.prototype,
+        function createCrossfadeSprite(_) {
+            const bitmap = SceneManager.backgroundBitmap();
+            this._fadeSprite && this.removeChild(this._fadeSprite);
+            this._fadeSprite = new Sprite(bitmap);
+            this.addChild(this._fadeSprite);
         },
         function createFadeSprite(createFadeSprite, white) {
-            if (this._fadeSprite === crossfadeSprite) {
-                this.removeChild(crossfadeSprite);
+            if (this._fadeSprite && !(this._fadeSprite instanceof ScreenSprite)) {
+                this.removeChild(this._fadeSprite);
                 delete this._fadeSprite;
             }
-            createFadeSprite.call(this);
+            createFadeSprite.call(this, white);
         },
         function startFadeIn(startFadeIn, duration, type) {
             if (type === CROSSFADE) {
-                this.createCrossfadeSprite(true);
+                this.createCrossfadeSprite();
                 this._fadeSign = 1;
                 this._fadeDuration = duration || 30;
                 this._fadeSprite.opacity = 255;
@@ -2386,28 +2403,22 @@ Input.keyMapper[68] = "right"; // d
                 startFadeIn.call(this, duration, type);
             }
         },
-        function startFadeOut(startFadeOut, duration, type) {
-            if (type === CROSSFADE) {
-                this.createCrossfadeSprite(false);
-                this._fadeDuration = -1;
-                this._fadeSprite.opacity = 0;
+        function fadeInForTransfer(fadeInForTransfer) {
+            if (lastFadeout === CROSSFADE) {
+                this.startFadeIn(this.fadeSpeed(), CROSSFADE);
             } else {
-                startFadeOut.call(this, duration, type);
+                fadeInForTransfer.call(this);
             }
         },
-        function fadeInForTransfer() {
-            this.startFadeIn(this.fadeSpeed(), CROSSFADE);
+        function stop(stop) {
+            lastFadeout = null;
+            stop.call(this);
         },
-        function fadeOutForTransfer() {
-            this.startFadeOut(-1, CROSSFADE);
-        });
-    override(DataManager,
-        function loadGame(loadGame, savefileId) {
-            const result = loadGame.call(this, savefileId);
-            if (result) {
-                crossfadeSprite.bitmap.clear();
-            }
-            return result;
+        function fadeOutForTransfer(fadeOutForTransfer) {
+            fadeOutForTransfer.call(this);
+            lastFadeout = CROSSFADE;
+            this._fadeDuration = -1;
+            this._fadeSprite.opacity = 0;
         });
 })();
 
