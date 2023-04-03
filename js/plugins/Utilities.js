@@ -272,7 +272,7 @@ function eval_fn_expr(expr, args) {
                     switch (entry.parameters[0]) {
                         // Script
                         case 12:
-                            entry.evalFn = eval_fn_expr("{\n" + entry.parameters[1] + "\n}");
+                            entry.evalFn = eval_fn_expr(entry.parameters[1]);
                             break;
                     }
                     break;
@@ -282,7 +282,7 @@ function eval_fn_expr(expr, args) {
                     switch (entry.parameters[3]) {
                         // Script
                         case 4:
-                            entry.evalFn = eval_fn_expr("{\n" + entry.parameters[4] + "\n}");
+                            entry.evalFn = eval_fn_expr(entry.parameters[4]);
                             break;
                     }
                     break;
@@ -565,22 +565,31 @@ function eval_fn_expr(expr, args) {
         return this._parallaxPosY;
     };
 
-    var original_pluginCommand = Game_Interpreter.prototype.pluginCommand;
-    Game_Interpreter.prototype.pluginCommand = function (command, args) {
-        original_pluginCommand.call(this, command, args);
-
-        if (command === "aaa_anim") {
-            aaa_anim($gameTroop.members()[parseInt(args[0]) || 0], args[1], args[2]);
-        } else if (command === "aaa_run_once") {
-            if (this._hasRun) {
-                this.command115(); // Exit event processing
-            } else {
-                this._hasRun = true;
+    override(Game_Interpreter.prototype,
+        function pluginCommand(pluginCommand,command, args) {
+            pluginCommand.call(this, command, args);
+            if (command === "aaa_anim") {
+                aaa_anim($gameTroop.members()[parseInt(args[0]) || 0], args[1], args[2]);
+            } else if (command === "aaa_run_once") {
+                if (this._hasRun) {
+                    this.command115(); // Exit event processing
+                } else {
+                    this._hasRun = true;
+                }
+            } else if (command === "se") {
+                AudioManager.playSe({ name: args[0] });
             }
-        } else if (command === "se") {
-            AudioManager.playSe({ name: args[0] });
-        }
-    }
+        },
+        function jumpToLabel(_, labelName) {
+            for (var i = 0; i < this._list.length; i++) {
+                var command = this._list[i];
+                if (command.code === 118 && command.parameters[0] === labelName) {
+                    this.jumpTo(i);
+                    return;
+                }
+            }
+            return true;
+        });
 
     override(Sprite_Battler.prototype,
         function initMembers(initMembers) {
