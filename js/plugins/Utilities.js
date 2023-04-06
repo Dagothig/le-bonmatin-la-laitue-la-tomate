@@ -481,6 +481,24 @@ function eval_fn_expr(expr, args) {
                     }
                 }
                 break;
+            case $dataArmors:
+            case $dataWeapons:
+                for (const item of object) {
+                    if (item && item.meta) {
+                        item.aaa_stats = {};
+                        item.aaa_states = [];
+                        for (key in item && item.meta) {
+                            const value = item.meta[key];
+                            if (key.startsWith("stat-")) {
+                                item.aaa_stats[key.substring(5)] = Number.parseFloat(value);
+                            }
+                            if (key === "state") {
+                                item.aaa_states.push(Number.parseInt(value));
+                            }
+                        }
+                    }
+                }
+                break;
         }
     };
 
@@ -581,6 +599,7 @@ function eval_fn_expr(expr, args) {
             }
         },
         function jumpToLabel(_, labelName) {
+            labelName = labelName + "";
             for (var i = 0; i < this._list.length; i++) {
                 var command = this._list[i];
                 if (command.code === 118 && command.parameters[0] === labelName) {
@@ -2699,6 +2718,12 @@ Input.keyMapper[68] = "right"; // d
             }
         });
 
+    override(Game_Battler.prototype,
+        // Fuck silent tp
+        function gainSilentTp(_, value) {
+            this.gainTp(value);
+        })
+
     override(Game_Action.prototype,
         function apply(apply, target) {
             const targetResult = target.result();
@@ -2763,6 +2788,19 @@ Input.keyMapper[68] = "right"; // d
 
     override(Sprite_EnemyActor.prototype,
         setupDamagePopup);
+
+    override(Sprite_Damage.prototype,
+        function setup(setup, target) {
+            const result = target.result();
+            setup.call(this, target);
+            if (!result.missed && !result.evaded &&
+                !result.hpAffected &&
+                !result.mpDamage &&
+                target.isAlive() &&
+                result.tpDamage) {
+                this.createDigits(1, result.tpDamage);
+            }
+        })
 })();
 
 // Event sprite control
@@ -3060,5 +3098,44 @@ Input.keyMapper[68] = "right"; // d
                 this._index++;
             }
             return true;
+        });
+})();
+
+// Additional stats
+(function () {
+    Object.defineProperties(Game_BattlerBase.prototype, {
+        // Health static regeneration
+        hsrg: {
+            get() {
+                return this.traitObjects().reduce((n, trait) => {
+                    return n + (trait.aaa_stats && trait.aaa_stats.hsrg || 0);
+                }, 0);
+            }
+        }
+    });
+
+    override(Game_Battler.prototype,
+        function refresh(refresh) {
+            refresh.call(this);
+            for (const trait of this.traitObjects()) {
+                if (trait.aaa_states) {
+                    for (const stateId of trait.aaa_states) {
+                        this.addState(stateId);
+                    }
+                }
+            }
+        });
+
+    override(Sprite_Battler.prototype,
+        function updatePosition(updatePosition) {
+            updatePosition.call(this);
+        });
+
+    override(Game_Battler.prototype,
+        function regenerateHp(_) {
+            const value = Math.max(
+                Math.floor(this.mhp * this.hrg + this.hsrg),
+                -this.maxSlipDamage());
+            value !== 0 && this.gainHp(value);
         });
 })();

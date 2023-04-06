@@ -1,5 +1,10 @@
 # Le Bon Matin, La Laitue, et La Tomate
 
+## TODO
+
+* Stat de la robe de Dureté
+* Effet visuel de la lévitation légère
+
 ## Backlog à record
 
 ### Bûcheronne
@@ -776,6 +781,8 @@ _FilletteCossin
 > le cossin bleu va me voir!
 
 ### SFX
+
+ExcusezMoi
 
 ## Rouler sans RPG Maker MV
 
