@@ -23,15 +23,6 @@ async function genTODOFile(file, content) {
         .map(f => [f, true]));
 
     const readmeText = (await fs.readFile("README.md")).toString();
-    const todos = Array
-        .from(readmeText.matchAll(/(_\w+)\r?\n((>.*\r?\n)+)/mg))
-        .map(match => [match[1], match[2].replace(/[>\\\r\n]/g, "").trim()]);
-
-    await Promise.all(todos.map(([file, content]) =>
-        audioFiles[file + ".ogg"] || (
-            audioFiles[file + ".ogg"] = true,
-            genTODOFile(file, content))));
-
     const readmeSectionsMatches = Array.from(readmeText.matchAll(/#+ (.*)/g));
     const readmeSections = readmeSectionsMatches.map((match, i) => ({
         header: match[1],
@@ -39,6 +30,24 @@ async function genTODOFile(file, content) {
             .substring(match.index, readmeSectionsMatches[i + 1]?.index ?? readmeText.length)
             .split(/\r?\n/)
     }));
+
+    const sectionsByName = Object.fromEntries(readmeSections.map(section =>
+        [section.header, section]));
+
+    const todos = Array
+        .from(readmeText.matchAll(/(_\w+)\r?\n((>.*\r?\n)+)/mg))
+        .map(match => [match[1], match[2].replace(/[>\\\r\n]/g, "").trim()])
+        .concat(sectionsByName.SFX?.lines
+            .slice(1)
+            .map(line => line.trim())
+            .filter(line => line)
+            .map(line => [line, line]));
+
+    await Promise.all(todos.map(([file, content]) =>
+        audioFiles[file + ".ogg"] || (
+            audioFiles[file + ".ogg"] = true,
+            genTODOFile(file, content))));
+
 
     // Trim sections.
     for (const section of readmeSections) {
@@ -50,9 +59,6 @@ async function genTODOFile(file, content) {
             }
         }
     }
-
-    const sectionsByName = Object.fromEntries(readmeSections.map(section =>
-        [section.header, section]));
 
     const data = await  fs.readdir("data");
     const maps = data.filter(f => f.startsWith("Map"));
@@ -103,5 +109,7 @@ async function genTODOFile(file, content) {
                 })));
     }));
 
-    await fs.writeFile("README.md", readmeSections.map(s => s.lines.join(os.EOL)).join(os.EOL + os.EOL));
+    const newReadmeText = readmeSections.map(s => s.lines.join(os.EOL)).join(os.EOL + os.EOL);
+    if (readmeText !== newReadmeText)
+        await fs.writeFile("README.md", newReadmeText);
 })()

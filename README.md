@@ -154,6 +154,19 @@ _NarrateurRecettePouletFour
 > Outils: Un four\
 > Étapes: Mettre le poulet au four. Retirer lorsque cuît.
 
+_NarrateurProtaFichePers
+> Le Protagoniste sort sa fiche de personnage.
+
+_NarrateurBouclierVert
+> Vous avez trouvé un Bouclier de Vert!
+
+_NarrateurCollierBreloque
+> Un collier sans intérêt. Une breloque.
+
+_NarrateurVolParchemins
+> Vous pourriez tenter de voler ces parchemins, mais vous\
+> n'allez pas le faire.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -419,6 +432,125 @@ _ProtagonisteRienInteressant
 _ProtagonisteDecu
 > C'est plutôt décevant tout de même...
 
+_ProtagonisteQueDesPatentes
+> À quel point y'a que des patentes ici?
+
+_ProtagonisteEnchant
+> Ah c'est une chose faire ses propres \
+> enchantements?
+
+_ProtagonisteCompletementInutile
+> Donc c'est complètement inutile. Parfait.
+
+_ProtagonisteCestMoi
+> C'est moi?
+
+_ProtagonisteMaitreHistoire
+> Hein? Mais je suis maître de ma propre \
+> histoire! \
+> Et puis vous êtes qui vous!?
+
+_ProtagonisteBalthaqui
+> Balthaqui?\
+> La tronche Brune? T'es sûr de la manière\
+> que tu viens de déclarer ça?
+
+_ProtagonistePourquoiBabioles
+> Et pourquoi on voudrait des babioles!
+
+_ProtagonisteBalthathigPrendsTemps
+> Ok... bon prenez votre temps, de toute \
+> façon avec Gaboué qui nous suit on a pas \
+> tant de place dans l'équipe.
+
+_ProtagonisteWTFPasTropPuissant
+> Pas trop puissant? C'est quoi que vous \
+> allez me sortir là? "Oh mais le gameplay!\
+> C'est juste pour que y'ait plus de saveur!"
+
+_ProtagonisteInventeurUIUIOfTravel
+> Ah c'est vous l'inventeur de cet anneau-là?\
+> J'ai vu ceux de Gabspart et Wwwelchior... \
+> Ça fait juste sauter sur place et casser \
+> les genous.
+
+_ProtagonisteFicheAcrobatie
+> Vous en voyez vous, une ligne "Acrobatie"?\
+> \
+> C'est ce que je me disais.
+
+_ProtagonisteVousAvezEcoute
+> Hu-huh. Je vois que vous avez bien écouté\
+> lors de notre dernière discussion...
+
+_ProtagonisteDeVertWTF
+> ... de "Vert"? \
+> Non mais c'est une couleur ça!
+
+_ProtagonistePasConvaincuVert
+> Wow belle originalité dans les termes. \
+> Aussi, tu me niaises? Tu te manges autant\
+> de dégâts que moi en général, et moi je \
+> porte juste mon linge, rien de spécial.
+
+_ProtagonisteBronchezPas
+> Vous bronchez pas vous, huh.
+
+_ProtagonisteExplicationsBrunesDeMarde
+> Erf, ça s'améliore vraiment pas les \
+> explications entourant votre Brun.
+
+_ProtagonisteChandailPers
+> Je suis pas certain que j'aime ce que vous\
+> insinuez. Vous dites que je m'habille mal?\
+> Ou que je n'ai pas de personnalité?\
+> C'est quoi cette insulte à peine voilée?
+
+_ProtagonisteUIUIOfFatigue
+> Hein? Je serai toujours fatigué? Vous êtes\
+> sûr que vous ne vous voulez pas dire \
+> l'inverse plutôt? Que je ne serai jamais\
+> fatigué? Ou que ça redonne du stamina?
+
+_ProtagonisteCanneLevitation
+> Ah oui! Quelque chose de réellement utile!\
+> Avec ça on va pouvoir passer par dessus\
+> la forêt et la montagne! Ou même le désert!
+
+_ProtagonisteUIUIOfVitalite
+> Mh-mh, mh-mh. Et là vous allez m'expliquer\
+> que le même enchantement du côté du Brun\
+> c'est incroyablement efficace, mais ici\
+> c'est plus lent c'est ça?
+
+_ProtagonisteUIUIOfFeu
+> Ah ça c'est pratique quand même!\
+> \
+> C'est quoi la pogne?
+
+_ProtagonisteUIUIOfFeu2
+> Oh. J'espère qu'il est gros votre feu...
+
+_ProtagonisteRobeDurete
+> Le poid de mon inventaire? Pas mal certain\
+> que je n'ai jamais ressenti le poid des \
+> objets dans mon sac.
+
+_ProtagonisteDiademeLumiere
+> Si vous le dites.
+
+_ProtagonisteLanceLancement
+> C'est assez rare que j'ai de problèmes avec\
+> les oiseaux en fait.
+
+_ProtagonisteLanceLancement2
+> Aussi je vois pas trop la différence entre\
+> la Lance de Lancement et juste un baton\
+> pointu?
+
+_ProtagonisteLanceLancement3
+> Je suppose...
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -514,6 +646,47 @@ _GabspartCouverColere
 _GabspartToujoursOption
 > C'est presque toujours une option, hein.
 
+_GabspartDefendEnchant
+> En fait si tu voulais faire tes propres\
+> enchantements c'est assez bon comme\
+> sélection.
+
+_GabspartSiTuBrun
+> Pas vraiment, mais mettons que tu venais\
+> du Brun, là tu pourrais!
+
+_GabspartBalthathigBrun
+> C'est Balthathig!\
+> J'aurais cru qu'il avait la tronche \
+> suffisament Brune pour que tu le réalises.
+
+_GabspartBouclierVert
+> Donnes-y une chance, c'est le même matériau \
+> que mon armure! C'est une roche volcanique \
+> légère super résiliente!
+
+_GabspartVaPasPlusProtegerVert
+> Écoutes, moi je fais juste te relayer \
+> l'info que je connais. Pas obligé de faire \
+> une montée de lait chaque fois que \
+> l'Univers décide de faire autrement...
+
+_GabspartExpliqueSainteDoree
+> C'est normal ça, c'est une Sainte Dorée \
+> tirée d'un autre plan d'existence adjacent\
+> au Brun. Ça fait partie du processus \
+> d'enchantement de Balthathig...
+
+_GabspartChandailPers
+> Je ne pense pas que tu as convaincu \
+> Personne Véritable de grand chose là...
+
+_GabspartCanneLevitation
+> Je pense que tu surestimes grandement la \
+> taille du Monde.\
+> \
+> Le M majuscule c'est pour aider l'ego.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -556,6 +729,28 @@ _WwwelchiorPasDeTemoin
 
 _WwwelchiorPointPondre
 > On oserait point pondre une telle idée...
+
+_WwwelchiorTempererAttentesProta
+> Oui, on a trouvé le Protagoniste!\
+> \
+> Bon par contre y faut tempérer les \
+> attentes...
+
+_WwwelchiorBalthaNum4
+> Normalement ça aurait été ton quatrième \
+> Personnage Secondaire, mais là comme tu \
+> peux observer il est occupé à faire je sais\
+> pas trop quoi...
+
+_WwwelchiorCanneLevitation
+> Ce serait pas plutôt les forêts, les \
+> montagnes et les déserts?
+
+_WwwelchiorLanceLancement
+> Il faut l'excuser un peu, là d'où y vient,\
+> les oiseaux terrorisent tout les chemins et\
+> les villages.\
+> C'est horrible.
 
 ### Fantôme
 
@@ -779,6 +974,148 @@ _FermierSaPoele
 _FilletteCossin
 > Chut! Faut pas trop faire de bruit, sinon\
 > le cossin bleu va me voir!
+
+### Enchanteure
+
+_EnchanteureBonsoir
+> Bonsoir, que puis-je faire pour vous?
+
+### Balthathig
+
+_BalthathigOhCestVous
+> Oh c'est vous!
+
+_BalthathigForcementProta
+> Forcément. \
+> \
+> C'est plutôt normal en fait, sinon on \
+> aurait pris un autre Protagoniste.
+
+_BalthathigQuelquesMinutes
+> Vous devez seulement me donner quelques\
+> minutes encore, vous allez voir quand \
+> j'aurai terminé, j'aurai plein de babioles\
+> intéressantes pour vous!
+
+_BalthathigGameplay
+> Pour le gameplay, c'est évident!
+
+_BalthathigRevenezCadeaux
+> C'est bien vrai, quatre c'est un bon nombre\
+> arbitraire.\
+> Bon vous reviendrez me voir, j'aurai des\
+> cadeaux.
+
+_BalthathigChefDOeuvre
+> Regardez-moi ça mon nouveau chef-d'oeuvre!\
+> C'est utile et pas trop puissant!
+
+_BalthathigFameuxUIUIOfTravel
+> Mon fameux UIUI of Travel!
+
+_BalthathigYVousManqueAcrobatics
+> Euuuh... Non mais si vous avez des talents\
+> d'acrobatie, vous pourriez aller tellement\
+> loin je suis sûr!
+
+_BalthathigBottesSautillage
+> Pour amplifier encore plus le \
+> UIUI of Travel, des Bottes de Sautillage!
+
+_BalthathigManqueAcrobatieProd2
+> Discu-quoi? Nonon, vous allez voir, quand\
+> votre Acrobatie sera un peu plus haute, \
+> vous allez filer à gaucher et à droite du \
+> Monde!
+
+_BalthathigChandailPers
+> Le Chandail de Personnalité! Avec ça les\
+> gens vous traiteront un poil mieux! \
+> Imaginez les bons prix que les vendeurs\
+> vous feront!
+
+_BalthathigChandailPers2
+> Non non, la personnalité c'est un talent!\
+> Et ce chandail fournit simplement un bonus\
+> à la personne qui le porte! Super pratique!
+
+_BalthathigUIUIOfFatigue
+> Ok ok, je sais que mes dernières inventions\
+> ne vous ont pas tout à fait convaincu, \
+> alors je vous présente le UIUI of Fatigue!
+
+_BalthathigUIUIOfFatigue2
+> Avec ça vous n'aurez plus jamais à devoir\
+> attendre plusieurs heures avant chaque\
+> combat! Votre fatigue sera toujours au\
+> maximum!
+
+_BalthathigUIUIOfFatigue3
+> Huuuuuh...\
+> \
+> Oui vous le dites!
+
+_BalthathigCanneLevitation
+> Donc, ce prochain là vous allez l'adorer!\
+> Avec ça vous aller pouvoir aller n'importe\
+> où!\
+> La Canne de Lévitation!
+
+_BalthathigUIUIOfVitalite
+> Donc, j'ai l'heureux plésir de vous \
+> présenter le UIUI of Vitalité!\
+> À vous l'immortalité! Enfin, du moment \
+> que vous ne prenez pas de dégâts trop vite.
+
+_BalthathigOuiVoila
+> ...\
+> ...\
+> ...\
+> Oui voilà.
+
+_BalthathigUIUIOfFeu
+> Si jamais vous aviez une envie pressente\
+> d'immoler des gens! Même pas besoin d'y\
+> mettre vos points de magie!\
+> Le UIUI of Feu!
+
+_BalthathigUIUIOfFeu2
+> Rien du tout! Seulement qu'il faut donner\
+> un peu de temps pour que l'enchantement se\
+> recharge entre les usages!
+
+_BalthathigUIUIOfFeu3
+> Quelque chose comme une fois par combat je\
+> dirais.
+
+_BalthathigRevenez
+> Vous allez devoir revenir, j'ai encore \
+> besoin de quelques minutes...
+
+_BalthathigRobeDurete
+> La Robe de Dureté!\
+> Avec ça fini les problèmes de poid de votre\
+> inventaire!\
+> C'est comme si vous portiez une armure!
+
+_BalthathigDiademeLumiere
+> Le Diadème de Lumière!\
+> Vos amis n'auront plus jamais à vous \
+> demander d'augmenter le gamma!
+
+_BalthathigLanceLancement
+> L'arme qu'il vous manquait pour finalement\
+> pouvoir trucider ces maudits oiseaux!\
+> La Lance de Lancement!\
+> Une lance! Mais que vous pouves lancer!
+
+_BalthathigLanceLancement2
+> Je suis certain que sans le titre vous \
+> n'auriez jamais eu l'idée de la lancer par\
+> contre!
+
+_BalthathigLaissezMoiPasse
+> Vous me laissez passer?
 
 ### SFX
 

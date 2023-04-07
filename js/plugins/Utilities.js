@@ -2800,7 +2800,11 @@ Input.keyMapper[68] = "right"; // d
                 result.tpDamage) {
                 this.createDigits(1, result.tpDamage);
             }
-        })
+        });
+
+    override(Window_BattleLog.prototype,
+        // Don't display tp changes in log
+        function displayTpDamage() {});
 })();
 
 // Event sprite control
