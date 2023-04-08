@@ -167,6 +167,17 @@ _NarrateurVolParchemins
 > Vous pourriez tenter de voler ces parchemins, mais vous\
 > n'allez pas le faire.
 
+_NarrateurPancarteVille
+> La pancarte lit...\
+> BIENVENUE DANS LA VILLE\
+> Et il y a une direction vers le bas...\
+> LE LIEU CHAMPÊTRE
+
+_NarrateurOraclePartieForet
+> Il y a une note sur la porte:\
+> Si vous avez besoin du futur maintenant, je suis partie\
+> dans la forêt.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -551,6 +562,18 @@ _ProtagonisteLanceLancement2
 _ProtagonisteLanceLancement3
 > Je suppose...
 
+_ProtagonisteOracleEau1
+> Oh. C'est vous l'Oracle. Bien évidemment...\
+> \
+> Ah par contre vous avez une belle \
+> thématique d'eau à ce que je vois.
+
+_ProtagonisteOracleEau2
+> Je dis ça mais, ça doit être pas super \
+> évident de vivre ici?\
+> Genre pas de lit, pas de foyer.\
+> Sans parler des problèmes de moisissures...
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -757,6 +780,16 @@ _WwwelchiorLanceLancement
 ### Vieille
 
 ### Oracle
+
+_OracleEau
+> Donc vous tenter d'abord de me trucider et\
+> puis maintenant vous venez insulter ma\
+> demeure?\
+> Vous en avez du culot.
+
+_OraclePoserVosQuestions
+> Enfin bon, vous pouvez venir me poser vos\
+> questions je suppose.
 
 ### Windo
 
