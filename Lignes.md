@@ -222,6 +222,18 @@ Liquid
 Break
 > Break
 
+Battle1
+> Battle1
+
+Sword5
+> Sword5
+
+Slash2
+> Slash2
+
+Slash3
+> Slash3
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1315,6 +1327,99 @@ _ProtagonisteQueDesPatentes
 _ProtagonisteCompletementInutile
 > Donc c'est complètement inutile. Parfait.
 
+_ProtagonisteOuilleLesRats
+> Ouille! C'est que ça fait mal les rats!\
+> \
+> C'est curieux, ils n'attaquent pas à tout\
+> les coups...
+
+_Protagoniste3RatsTrenchcat
+> Oh non! C'était pas un rat dans trenchcat!\
+> C'était 3 rats dans un trenchcat!
+
+_ProtagonistePasJusteDesRats
+> Oh non! C'est pas juste des rats là!\
+> C'est des personnes véritables!
+
+_ProtagonisteDireAutre
+> Ah finalement vous savez dire autre chose!
+
+_ProtagonisteDagueNon
+> Mais qu'est ce que vous faites avec cette\
+> dague?\
+> \
+> Non!
+
+_ProtagonistePasMieuxChangeurForme
+> Merde, et en quoi c'est mieux qu'un\
+> changeur de forme?
+
+_ProtagonisteReferenceAQuoi
+> Référence à quoi?
+
+_ProtagonisteCaFonctionnePasCommeCa
+> Je suis sûr et certain que des poules ça\
+> fonctionne pas comme ça!
+
+_ProtagonistePoufDeLogique
+> Non mais des fois que des Être Supérieurs\
+> entendent -\
+> Mettons-là, que du coup... pouf de logique!\
+> Vous disparaissez!
+
+_ProtagonisteSeFaitCharmerParWindo
+> C'est pas si pire finalement, la fenêtre\
+> elle est gentille! Elle fait des beaux\
+> calins, je me suis jamais mieux senti!
+
+_ProtagonisteLuiAUneBelleBette
+> Il a une belle bette lui!
+
+_ProtagonisteOuchMaDignite
+> Ouch, ma dignité!
+
+_ProtagonisteSeSentTrahi
+> Je me sens trahi...\
+> On a abusé de ma confiance!
+
+_ProtagonisteSassLesAliterations
+> Ça s'arrange pas les alitérations, huh?
+
+_ProtagonisteProcrastineLeCombat
+> Je sais, je sais.\
+> Et donc il dit, cri de guerre et tout le\
+> bataclan...
+
+_ProtagonistePeteDarkGeorgina
+> Non Dark Georgina! Ton règne du\
+> en-dessous-du-cimetière-du-village tire à\
+> sa fin! Nous te terrassons aujourd'hui!
+
+_ProtagonisteAuraitTriche
+> Attends mais y'a pleins de moments où tu\
+> aurais pu le faire! On est là à se faire\
+> chier et depuis tout ce temps tu peux juste\
+> faire ça?
+
+_ProtagonisteAcide6
+> Acide?
+
+_ProtagonisteRitDuRouge
+> Ha! Regardez y pense que le rouge ça fait\
+> peur!
+
+_ProtagonistePouPou
+> Pou -\
+> \
+> Pouuuuuu -
+
+_Protagoniste4Contre1
+> Vous êtes certain? C'est quatre-contre-un\
+> et on est armés...
+
+_ProtagonisteMieuxPartir
+> On est peut-être mieux de partir...
+
 ### Rip
 
 _RipFinsDePhrases
@@ -2185,6 +2290,23 @@ _NarrateurCarottesOrange
 _NarrateurCollierBreloque
 > Un collier sans intérêt. Une breloque.
 
+_NarrateurNervositeNouvelle
+> Personne Véritable ressent soudainement une nervosité\
+> nouvelle.
+
+_NarrateurBonjour
+> Bonjour, je suis Guillaume Noël-Martel
+
+_NarrateurApprisAdrenaline
+> Vous avez appris l'Adrénaline!\
+> Permet de prendre trois actions le prochain tour!
+
+_NarrateurAdrenalineStamina
+> L'Adrénaline utilise du stamina -\
+> Vous pouvez en reprendre durant les combats en\
+> attaquant ou en vous défendant.\
+> Mais se défendre est bien plus reposant.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -2378,6 +2500,12 @@ _PretrePasMort
 
 _PretreMal
 > Mal
+
+_PretreSuicide
+> Première! La douce lueur de ton visage\
+> était comme quand le regard se fixait sur\
+> le Soleil à midi!\
+> Mais maintenant, je ne vois que noirceur!
 
 ### Wwwelchior
 
@@ -2644,6 +2772,43 @@ _WwwelchiorPasExactementVrai
 
 _WwwelchiorPointPondre
 > On oserait point pondre une telle idée...
+
+_WwwelchiorChangeurFormeReferencePourrie
+> Et puis un changeur de forme ça veut rien\
+> dire, je ferais pas trop attention à ce\
+> genre de référence.
+
+_WwwelchiorJustement
+> Justement.
+
+_WwwelchiorAlitereLeClone
+> Ressaisis-toi Personne Véritable! Ce n'est\
+> qu'un simulacre! Une copie corporelle\
+> corporative croustillante!
+
+_WwwelchiorTreveDeProcrastination
+> Trêve de procrastination! Je, Wwwelchior,\
+> le Prince des Ténèbres, pulvérise les\
+> fenêtres!
+
+_WwwelchiorBienDit
+> Ah enfin! Pour une fois c'est bien dit!
+
+_WwwelchiorExpliqueLaRaison
+> Tsk tsk tsk Personne Véritable, tu le sais\
+> bien qu'il faut pas abuser de ces choses-\
+> là. Un jour tu te dis "Ah juste une ptit\
+> disparition de mon problème"...
+
+_WwwelchiorExpliqueDangerTriche
+> Et puis paf tu te réveilles le lendemain\
+> à moitié à travers le plancher et il te\
+> reste genre, une âme de vivante!\
+> T'imagines l'ennui?
+
+_WwwelchiorExpliquerCouleurBetterave
+> C'est bon on a réussi à lui expliquer la\
+> couleur du jus de betterave!
 
 ### Gabspart
 
@@ -3121,6 +3286,32 @@ _GabspartBonBonk
 _GabspartCaVaBienAller
 > Je suis sûr que tu vas bien aller!
 
+_GabspartPouletsPasCommeCa
+> Mettons que, typiquement, les poulets ça\
+> se comporte pas comme ça.
+
+_GabspartWindoAUnModusOperandi
+> Ça commence comme ça, mais le Windô a tout\
+> un modus opérandi! Au début ça va bien...
+
+_GabspartDonnesYUneSeconde
+> Donnes-y une seconde...
+
+_GabspartVoilaCaCommence
+> Et voilà. Ça commence.
+
+_GabspartSeSentGenereux
+> Bon, par contre mettons qu'on se tape pas\
+> de faire tout le tour du monde pour un\
+> petit lit?
+
+_GabspartTuVeuxPasLeSavoir
+> Non mais tu veux même pas le savoir, ça te\
+> mettrais juste en colère...
+
+_GabspartToujoursOption
+> C'est presque toujours une option, hein.
+
 ### Jacques
 
 _JacquesJeanTuVoisTuCa
@@ -3146,6 +3337,17 @@ _JacquesCesChezNous
 _JacquesMaisVousEtes
 > Mais vous êtes...
 
+_JacquesAllaitDevenirBanditGrandChemin
+> Nooooooon Jeaaaaaaan!\
+> On allait devenir des bandits de\
+> grand chemin!
+
+_JacquesMamanJetaisMechant
+> Dit... à ma maman...\
+> \
+> \
+> Que j'étais méchaaant...
+
 ### Jean
 
 _JeanAirCaracteristique
@@ -3160,6 +3362,11 @@ _JeanCouleurJusDeBetterave
 > Non mais si y'a rien ça donne pas grand\
 > chose de lui expliquer la couleur du jus de\
 > betterave...
+
+_JeanJaaaacques
+> Jaaaaaacques!\
+> On allait devenir des bandits de grands\
+> chemin!
 
 ### Forgeron
 
@@ -3308,6 +3515,11 @@ _PremiereUnMoine
 _PremiereVousPete
 > On vous pète!
 
+_PremiereMemePasLeTempsDeMurPorteur
+> Nooooooooon!\
+> Je n'ai même pas eu le temps de devenir un\
+> mur porteur!
+
 ### Gaboue
 
 _GaboueDotDotDot
@@ -3317,7 +3529,7 @@ _GaboueEnAMarre
 > Gaboué.
 
 _GaboueGaboue111
-> Gaboué!!!
+> Gaboué!
 
 _GaboueGaboue1
 > Gaboué!
@@ -3417,7 +3629,7 @@ _OraclePigeUneCarte
 ### Detaaa
 
 _Detaaah
-> h
+> DETAAAAAAAAAAAH!
 
 ### Deta
 
@@ -3432,6 +3644,9 @@ _PouletMettonsTuViensReverifier
 
 _PouletEnGarde
 > En garde!
+
+_PouletCestSeulementLaTuRealises
+> C'est seulement là là que tu le réalises?
 
 ### Fantome
 
@@ -3524,6 +3739,12 @@ _DarkGeorginaAEuSaVengeance
 
 _DarkGeorginaRaaaaaaa
 > Raaaaaaa!
+
+_DarkGeorginaJeSuisEternel
+> Je suis éterneeeeel!
+
+_DarkGeorginaHaha
+> GeorginaHaha
 
 ### Informateur
 
@@ -3666,6 +3887,18 @@ _FermierSonPain
 
 _FermierSaPoele
 > Hey ho, mes outils de cuisine!
+
+_FermierPilerPieds
+> Je refuse de me laisser piler sur les pieds\
+> une seconde de plus, aaaaaah!
+
+_FermierFatigueLaisserTranquille
+> Haaa... Haaa... Je vais vous apprendre à\
+> laisser tranquille les gens!
+
+_FermierAuraJamaisDeRespect
+> Ouch... Je... Je n'aurai donc jamais de\
+> respect...
 
 ### Balthathig
 
@@ -3862,3 +4095,13 @@ _InventeurOh
 
 _InventeurProposition
 > Ah en fait j'ai une proposition!
+
+### Detah
+
+_DetahBoast
+> Hey ho! Si vous pensez que ça va changer\
+> quelque chose! Ma base est même ACID! Vous\
+> n'avez aucune chance!
+
+_DetahVaVousBriser
+> Suffit! Je vais vous briser!

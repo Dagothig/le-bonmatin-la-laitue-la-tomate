@@ -972,7 +972,8 @@ _FermierFatigueLaisserTranquille
 > laisser tranquille les gens!
 
 _FermierAuraJamaisDeRespect
-> Ouch... Je... Je n'aurai donc jamais de
+> Ouch... Je... Je n'aurai donc jamais de\
+> respect...
 
 _FermierBiere
 > Une bonne bière rafraîchissante après une\
