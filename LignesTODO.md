@@ -557,10 +557,16 @@ _ProtagonisteOracleEau1
 > dirait.
 
 _ProtagonisteOracleEau2
-> Je dis ça et, ça doit être pas super\
+> Je dis ça et, ça doit pas être super\
 > évident de vivre ici?\
 > Genre pas de lit, pas de foyer.\
 > Sans parler des problèmes de moisissures...
+
+_ProtagonisteYaDiff
+> Y'a une différence?
+
+_ProtagonisteNoui
+> ... Noui.
 
 ### Vieux
 
@@ -776,6 +782,37 @@ _OracleEau
 _OraclePoserVosQuestions
 > Enfin bon, vous pouvez venir me poser vos\
 > questions je suppose.
+
+_OracleFinfinaud
+> Vous vous pensez vraiment intelligent hein?\
+> \
+> Je suis oracle, pas voyante.
+
+_OracleSavoirIntro
+> Alors qu'est-ce que vous voudriez \Shakesavoir?
+
+_OraclePasVoyante
+> Vous allumez pas si vite, huh?\
+> \
+> Je suis oracle, pas voyante.\
+> Je sais des choses, c'est tout.
+
+_OraclePasPedante
+> Assez de pédanterie.\
+> Je comprends que ce que vous avez besoin\
+> c'est de la guidance.
+
+_OraclePriereOuAller
+> Oh Choses-Dont-Il-Faut-Que-Je-Saches,\
+> entendez ma prière!\
+> \
+> Zwip zwip! Doubibi doubibi!
+
+_OracleVoitVoit
+> Je vois... je vois...
+
+_OracleQuestionRepondue
+> Bon ça répond à votre question?
 
 ### Windo
 

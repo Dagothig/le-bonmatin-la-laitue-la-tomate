@@ -176,7 +176,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
         console.log("Generated " + file);
         console.log("  > " + content);
         const fp = "./audio/se/" + file + ".ogg";
-        const espeak = spawnSync("espeak", ["-v", "fr-fr", "-w", "tmp.wav", content]);
+        const espeak = spawnSync("espeak", ["-v", "fr-fr", "-w", "tmp.wav", content.join(" ")]);
         const ffmpeg = spawnSync("ffmpeg", ["-i", "tmp.wav", "-y", fp]);
     }
 

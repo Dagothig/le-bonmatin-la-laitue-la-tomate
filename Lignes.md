@@ -234,6 +234,9 @@ Slash2
 Slash3
 > Slash3
 
+Magic4
+> Magic4
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1027,7 +1030,7 @@ _ProtagonisteOracleEau1
 > dirait.
 
 _ProtagonisteOracleEau2
-> Je dis ça et, ça doit être pas super\
+> Je dis ça et, ça doit pas être super\
 > évident de vivre ici?\
 > Genre pas de lit, pas de foyer.\
 > Sans parler des problèmes de moisissures...
@@ -1419,6 +1422,12 @@ _Protagoniste4Contre1
 
 _ProtagonisteMieuxPartir
 > On est peut-être mieux de partir...
+
+_ProtagonisteYaDiff
+> Y'a une différence?
+
+_ProtagonisteNoui
+> ... Noui.
 
 ### Rip
 
@@ -3625,6 +3634,37 @@ _OracleCeSeraPlusCourt
 
 _OraclePigeUneCarte
 > Ah, je pige une carte donc...
+
+_OracleFinfinaud
+> Vous vous pensez vraiment intelligent hein?\
+> \
+> Je suis oracle, pas voyante.
+
+_OracleSavoirIntro
+> Alors qu'est-ce que vous voudriez \Shakesavoir?
+
+_OraclePasVoyante
+> Vous allumez pas si vite, huh?\
+> \
+> Je suis oracle, pas voyante.\
+> Je sais des choses, c'est tout.
+
+_OraclePasPedante
+> Assez de pédanterie.\
+> Je comprends que ce que vous avez besoin\
+> c'est de la guidance.
+
+_OraclePriereOuAller
+> Oh Choses-Dont-Il-Faut-Que-Je-Saches,\
+> entendez ma prière!\
+> \
+> Zwip zwip! Doubibi doubibi!
+
+_OracleVoitVoit
+> Je vois... je vois...
+
+_OracleQuestionRepondue
+> Bon ça répond à votre question?
 
 ### Detaaa
 

@@ -583,6 +583,9 @@ function eval_fn_expr(expr, args) {
         return this._parallaxPosY;
     };
 
+    const defaultShadowColor = [0.0, 0.0, 0.0, 0.5];
+    window.$tileShadowColor = new Float32Array(defaultShadowColor);
+
     override(Game_Interpreter.prototype,
         function pluginCommand(pluginCommand,command, args) {
             pluginCommand.call(this, command, args);
@@ -596,6 +599,10 @@ function eval_fn_expr(expr, args) {
                 }
             } else if (command === "se") {
                 AudioManager.playSe({ name: args[0] });
+            } else if (command === "tileShadow") {
+                const color = args[0] || defaultShadowColor;
+                for (let i = 0; i < color.length; i++)
+                    window.$tileShadowColor[i] = color[i];
             }
         },
         function jumpToLabel(_, labelName) {
@@ -609,6 +616,14 @@ function eval_fn_expr(expr, args) {
             }
             return true;
         });
+
+    override(ShaderTilemap.prototype,
+        function _createLayers(_createLayers) {
+            _createLayers.call(this);
+            if (this.lowerLayer) {
+                this.lowerLayer.shadowColor = window.$tileShadowColor;
+            }
+        })
 
     override(Sprite_Battler.prototype,
         function initMembers(initMembers) {
@@ -2013,6 +2028,47 @@ function eval_fn_expr(expr, args) {
     });
 })();
 
+// Vehicles
+(function () {
+    override(Game_Vehicle.prototype,
+        function hasBgm() {
+            return this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name);
+        },
+        function getOn() {
+            this._driving = true;
+            this.setWalkAnime(true);
+            this.setStepAnime(true);
+            if (this.hasBgm()) {
+                $gameSystem.saveWalkingBgm();
+                this.playBgm();
+            }
+        },
+        function getOff() {
+            this._driving = false;
+            this.setWalkAnime(false);
+            this.setStepAnime(false);
+            this.resetDirection();
+            if (this.hasBgm()) {
+                $gameSystem.replayWalkingBgm();
+            }
+        });
+
+    override(Game_Map.prototype,
+        function autoplay() {
+            if ($dataMap.autoplayBgm) {
+                const vehicle = $gamePlayer.isInVehicle() && $gamePlayer.vehicle();
+                if (vehicle && vehicle.hasBgm()) {
+                    $gameSystem.saveWalkingBgm2();
+                } else {
+                    AudioManager.playBgm($dataMap.bgm);
+                }
+            }
+            if ($dataMap.autoplayBgs) {
+                AudioManager.playBgs($dataMap.bgs);
+            }
+        });
+})();
+
 // Map ameliorations
 (function () {
     var passableMask = 1 | 2 | 4 | 8;
@@ -2085,9 +2141,17 @@ function eval_fn_expr(expr, args) {
 
         function zoomOn(_, eventId, scale, duration = 15) {
             var event = $gameMap.event(eventId);
+            this.zoomOnCharacter(event, scale,duration);
+        },
+
+        function zoomOnPlayer(_, scale, duration = 15) {
+            this.zoomOnCharacter($gamePlayer, scale, duration);
+        },
+
+        function zoomOnCharacter(_, character, scale, duration = 15) {
             this.startZoom(
-                event && event.screenX() || 0,
-                event && (event.screenY() - 24) || 0,
+                character && character.screenX() || 0,
+                character && (character.screenY() - 24) || 0,
                 scale,
                 duration);
         },
@@ -2323,47 +2387,6 @@ Input.keyMapper[87] = "up"; // w
 Input.keyMapper[83] = "down"; // s
 Input.keyMapper[65] = "left"; // a
 Input.keyMapper[68] = "right"; // d
-
-// Vehicles
-(function () {
-    override(Game_Vehicle.prototype,
-        function hasBgm() {
-            return this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name);
-        },
-        function getOn() {
-            this._driving = true;
-            this.setWalkAnime(true);
-            this.setStepAnime(true);
-            if (this.hasBgm()) {
-                $gameSystem.saveWalkingBgm();
-                this.playBgm();
-            }
-        },
-        function getOff() {
-            this._driving = false;
-            this.setWalkAnime(false);
-            this.setStepAnime(false);
-            this.resetDirection();
-            if (this.hasBgm()) {
-                $gameSystem.replayWalkingBgm();
-            }
-        });
-
-    override(Game_Map.prototype,
-        function autoplay() {
-            if ($dataMap.autoplayBgm) {
-                const vehicle = $gamePlayer.isInVehicle() && $gamePlayer.vehicle();
-                if (vehicle && vehicle.hasBgm()) {
-                    $gameSystem.saveWalkingBgm2();
-                } else {
-                    AudioManager.playBgm($dataMap.bgm);
-                }
-            }
-            if ($dataMap.autoplayBgs) {
-                AudioManager.playBgs($dataMap.bgs);
-            }
-        });
-})();
 
 // Transitiooooons
 (function () {
@@ -3141,5 +3164,16 @@ Input.keyMapper[68] = "right"; // d
                 Math.floor(this.mhp * this.hrg + this.hsrg),
                 -this.maxSlipDamage());
             value !== 0 && this.gainHp(value);
+        });
+})();
+
+// Make title command quicker
+(function () {
+    override(Window_TitleCommand.prototype,
+        function open() {
+            this.openness = 255;
+        },
+        function close() {
+            this.openness = 0;
         });
 })();

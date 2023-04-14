@@ -6,6 +6,13 @@
 * Effet visuel de la lévitation légère
 * Montagne
 
+### Musique
+
+* Musique Lieu Champêtre
+* Musique Ville (même que Lieu Champêtre?)
+* Musique Pont (même que Lieu Champêtre)
+* Musique Oracle
+
 ## Rouler sans RPG Maker MV
 
 Plop un serveur http sur la racine. Voilà c'est tout.

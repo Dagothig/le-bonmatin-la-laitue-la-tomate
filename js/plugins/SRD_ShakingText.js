@@ -41,7 +41,7 @@
  * SumRndmDde
  *
  *
- * This Plugin allows you to add animated text effects to your Show Text 
+ * This Plugin allows you to add animated text effects to your Show Text
  * events.
  *
  * This can be done using very simple escape codes within the Show Text
@@ -56,25 +56,25 @@
  * Use the following escape codes in any Show Text event:
  *
  * \Shake                         -  Sets text to default shaking values
- * \Shake<power>                  -  Creates a shake effect from simple number 
+ * \Shake<power>                  -  Creates a shake effect from simple number
  * \Shake<xSpd, ySpd>             -  Creates shake from seperate x and y speeds
- * \Shake<xSpd, ySpd, xMax, yMax> -  Gives absolute control over shaking 
- *                                   effect; can control x/y speed, along with 
+ * \Shake<xSpd, ySpd, xMax, yMax> -  Gives absolute control over shaking
+ *                                   effect; can control x/y speed, along with
  *                                   the maximum distance the characters can
  *                                   travel before reversing.
  *
  * -------------------------------------------------------------------------
  *
- * \Wave                          -  Sets wave effect based off of default 
+ * \Wave                          -  Sets wave effect based off of default
  *                                   wave values
- * \Wave<speed, max>              -  Sets wave effect based off of speed and 
+ * \Wave<speed, max>              -  Sets wave effect based off of speed and
  *                                   max distance the characters can travel
  *
  * -------------------------------------------------------------------------
  *
- * \Slide                         -  Sets slide effect based off of default 
+ * \Slide                         -  Sets slide effect based off of default
  *                                   slide values
- * \Slide<speed, max>             -  Sets slide effect based off of speed and 
+ * \Slide<speed, max>             -  Sets slide effect based off of speed and
  *                                   max distance the characters can travel
  *
  * -------------------------------------------------------------------------
@@ -89,7 +89,7 @@
  * ==========================================================================
  *  End of Help File
  * ==========================================================================
- * 
+ *
  * Welcome to the bottom of the Help file.
  *
  *
@@ -133,19 +133,19 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 	}
 
 	//-----------------------------------------------------------------------------
-	// Window_Message
+	// Window_Base
 	//-----------------------------------------------------------------------------
 
-	var _Window_Message_initialize = Window_Message.prototype.initialize;
-	Window_Message.prototype.initialize = function(x, y, width, height) {
-		_Window_Message_initialize.call(this, x, y, width, height);
+	var _Window_Base_initialize = Window_Base.prototype.initialize;
+	Window_Base.prototype.initialize = function(x, y, width, height) {
+		_Window_Base_initialize.call(this, x, y, width, height);
 		this._textShaking = [0, 0, 0, 0];
 		this._shakingSprites = [];
 		this._fastShakeInterval = 0;
 	};
 
-	var _Window_Message_processNormalCharacter = Window_Message.prototype.processNormalCharacter;
-	Window_Message.prototype.processNormalCharacter = function(textState) {
+	var _Window_Base_processNormalCharacter = Window_Base.prototype.processNormalCharacter;
+	Window_Base.prototype.processNormalCharacter = function(textState) {
 		if(this.isShakingActive() && !this._checkWordWrapMode) {
 			if(Imported.YEP_MessageCore && this.checkWordWrap(textState)) {
 				return this.processNewLine(textState);
@@ -156,12 +156,12 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 			this.createShakingCharacter(textState, c, w, h);
 			textState.x += w;
 		} else {
-			_Window_Message_processNormalCharacter.call(this, textState);
+			_Window_Base_processNormalCharacter.call(this, textState);
 		}
 	};
 
-	var _Window_Message_obtainEscapeCode = Window_Message.prototype.obtainEscapeCode;
-	Window_Message.prototype.obtainEscapeCode = function(textState) {
+	var _Window_Base_obtainEscapeCode = Window_Base.prototype.obtainEscapeCode;
+	Window_Base.prototype.obtainEscapeCode = function(textState) {
 		var shake = (Imported.YEP_MessageCore) ? !this._checkWordWrapMode : true;
 		textState.index++;
 		if(textState.text.slice(textState.index, textState.index+5).match(/shake/i)) {
@@ -181,20 +181,20 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 			return (shake) ? "RESETSHAKE" : "";
 		} else {
 			textState.index--;
-			return _Window_Message_obtainEscapeCode.call(this, textState);
+			return _Window_Base_obtainEscapeCode.call(this, textState);
 		}
 	};
 
-	Window_Message.prototype.isShakingActive = function() {
-		return (this._textShaking[0] > 0 || this._textShaking[0] === 'circle') || 
+	Window_Base.prototype.isShakingActive = function() {
+		return (this._textShaking[0] > 0 || this._textShaking[0] === 'circle') ||
 			this._textShaking[1] > 0 || this._textShaking[2] > 0 || this._textShaking[3] > 0;
 	};
 
-	Window_Message.prototype.createShakingCharacter = function(textState, c, w, h) {
+	Window_Base.prototype.createShakingCharacter = function(textState, c, w, h) {
 		if(this._textShaking[0] === 'circle') {
 			var sprite = new Sprite_Shake(new Bitmap(w, h), 'circle', 0, 0, 0);
 		} else {
-			var sprite = new Sprite_Shake(new Bitmap(w, h), eval(this._textShaking[0]), eval(this._textShaking[1]), 
+			var sprite = new Sprite_Shake(new Bitmap(w, h), eval(this._textShaking[0]), eval(this._textShaking[1]),
 				eval(this._textShaking[2]), eval(this._textShaking[3]));
 		}
 		sprite.bitmap.textColor = this.contents.textColor;
@@ -219,8 +219,8 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 		}
 	};
 
-	var _Window_Message_processEscapeCharacter = Window_Message.prototype.processEscapeCharacter;
-	Window_Message.prototype.processEscapeCharacter = function(code, textState) {
+	var _Window_Base_processEscapeCharacter = Window_Base.prototype.processEscapeCharacter;
+	Window_Base.prototype.processEscapeCharacter = function(code, textState) {
 		switch (code) {
 		case 'SHAKE':
 			var params = this.obtainShakingTextParams(textState);
@@ -284,12 +284,12 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 			this.resetShaking();
 			break;
 		default:
-			_Window_Message_processEscapeCharacter.call(this, code, textState);
+			_Window_Base_processEscapeCharacter.call(this, code, textState);
 			break;
 		}
 	};
 
-	Window_Message.prototype.obtainShakingTextParams = function(textState) {
+	Window_Base.prototype.obtainShakingTextParams = function(textState) {
 		var arr = /^\<.+\>/.exec(textState.text.slice(textState.index));
 		if (arr) {
 			textState.index += arr[0].length;
@@ -299,29 +299,14 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 		}
 	};
 
-	var _Window_Message_open = Window_Message.prototype.open;
-	Window_Message.prototype.open = function() {
-		_Window_Message_open.call(this);
-		for(var i = 0; i < this._shakingSprites.length; i++) {
-			this._shakingSprites[i].opacity = 255;
-		}
-	};
-
-	var _Window_Message_close = Window_Message.prototype.close;
-	Window_Message.prototype.close = function() {
-		_Window_Message_close.call(this);
-		for(var i = 0; i < this._shakingSprites.length; i++) {
-			this._shakingSprites[i].opacity = 0;
-		}
-	};
-
-	Window_Message.prototype.removeShakingSprites = function() {
+	Window_Base.prototype.removeShakingSprites = function() {
 		for(var i = 0; i < this._shakingSprites.length; i++) {
 			this.removeChild(this._shakingSprites[i]);
 		}
+		this._shakingSprites.length = 0;
 	};
 
-	Window_Message.prototype.resetShaking = function() {
+	Window_Base.prototype.resetShaking = function() {
 		for(var i = 0; i < this._textShaking.length; i++) {
 			this._textShaking[i] = 0;
 		}
@@ -333,6 +318,42 @@ Imported["SumRndmDde Shaking Text"] = 1.12;
 		this.removeShakingSprites();
 		if(_.resetShaking) this.resetShaking();
 	};
+
+	for (const Window_Type of [
+		Window_Selectable,
+		Window_Help,
+		Window_Gold,
+		Window_ItemList,
+		Window_SkillStatus,
+		Window_SkillList,
+		Window_EquipStatus,
+		Window_Status,
+		Window_ShopBuy,
+		Window_ShopNumber,
+		Window_ShopStatus,
+		Window_NameEdit,
+		Window_NameInput,
+		Window_ScrollText,
+		Window_MapName,
+		Window_BattleLog,
+		Window_BattleStatus,
+		Window_DebugRange,
+		Window_DebugEdit
+	]) {
+		const _refresh = Window_Type.prototype.refresh;
+		Window_Type.prototype.refresh = function() {
+			this.removeShakingSprites();
+			this.resetShaking();
+			return _refresh.call(this);
+		}
+	}
+
+	const _Window_updateContents = Window.prototype._updateContents;
+	Window_Base.prototype._updateContents = function() {
+		_Window_updateContents.call(this);
+		for (let i = 0; i < this._shakingSprites.length; i++)
+			this._shakingSprites[i].visible = this._windowContentsSprite.visible;
+	}
 
 	//-----------------------------------------------------------------------------
 	// Sprite_Shake
