@@ -72,7 +72,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
 
     const linesByName = {};
 
-    function readPage(page) {
+    function readPageForLines(page) {
         page?.list?.forEach((item, i) => {
             let file;
             if (item.code === CODES.PLUGIN && item.parameters?.[0].startsWith("se "))
@@ -121,17 +121,70 @@ const sectionsByNameToLinesMD = sectionsByName =>
         });
     }
 
+    const itemLocations = {};
+    const mapTransfers = {};
+
     const dataFiles = await $dataFiles;
     for (const [dataFile, text] of dataFiles) {
         const json = JSON.parse(text);
-        if (dataFile.match(MAP_REGEX)) {
+        // Skip templates
+        if (dataFile === "Map006.json") {
+            continue;
+        }
+        const mapMatch = dataFile.match(MAP_REGEX);
+
+        if (mapMatch) {
             (json.events ?? [])
             .flatMap(event => event?.pages ?? [])
-            .forEach(readPage)
+            .forEach(readPageForLines);
+
+            for (const event of json.events ?? []) {
+                for (const page of event?.pages ?? []) {
+                    for (const entry of page?.list ?? []) {
+                        switch (entry?.code) {
+                            case 126:
+                                if (entry.parameters?.[0] === 1) {
+                                    console.log("Chair on", dataFile, event.x, event.y);
+                                }
+                                if (entry.parameters?.[0] === 2) {
+                                    console.log("Magic on", dataFile, event.x, event.y);
+                                }
+                                break;
+                            case 201:
+                                if (entry.parameters?.[0] === 0 &&
+                                    entry.parameters.slice(0, 4).every(x => Number.isFinite(x))) {
+                                    const sourceMapId = Number.parseInt(mapMatch[1]);
+                                    const targetMapId = entry.parameters[1];
+                                    const transfersForTarget = mapTransfers[targetMapId] = mapTransfers[targetMapId] || {};
+                                    transfersForTarget[]
+                                    if (mapTransfers[targetMapId]) {
+
+                                    } else {
+                                        mapTransfers[targetMapId] = {
+                                            map: Number.parseInt(mapMatch[1]),
+                                            x: event.x,
+                                            y: event.y,
+                                            count: 1
+                                        };
+                                    }
+                                    console.log(
+                                        "Travel from", dataFile, event.x, event.y,
+                                        "to", entry.parameters?.[1], entry.parameters?.[2], entry.parameters?.[3])
+                                }
+                        }
+                    }
+                }
+            }
         } else if (dataFile === "Troops.json") {
             json
             .flatMap(troop => troop?.pages ?? [])
-            .forEach(readPage)
+            .forEach(readPageForLines);
+        }
+
+        const newText = JSON.stringify(json, null, 2);
+        if (newText !== text) {
+            console.log("Formatting", dataFile);
+            await fs.writeFile("data/" + dataFile, newText);
         }
     }
 

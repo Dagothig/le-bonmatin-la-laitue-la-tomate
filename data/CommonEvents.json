@@ -1,24 +1,7315 @@
 [
-null,
-{"id":1,"list":[{"code":250,"indent":0,"parameters":[{"name":"_NarrateurBonjours","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "]},{"code":401,"indent":0,"parameters":["BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "]},{"code":401,"indent":0,"parameters":["BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "]},{"code":401,"indent":0,"parameters":["BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_NarrateurDuBeauPapier","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["C'est hum, c'est du beau papier ça."]},{"code":251,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Parchemin du BONJOUR","switchId":1,"trigger":0},
-{"id":2,"list":[{"code":205,"indent":0,"parameters":[-1,{"list":[{"code":44,"parameters":[{"name":"BrunAlterationCast","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":15,"parameters":[60],"indent":null},{"code":44,"parameters":[{"name":"BrunAlterationHit","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":15,"parameters":[15],"indent":null},{"code":45,"parameters":["aaa_jump(this, 0, 0, 100);"],"indent":null},{"code":44,"parameters":[{"name":"BrunOuch","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":16,"indent":null},{"code":15,"parameters":[5],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":0,"parameters":[{"code":44,"parameters":[{"name":"BrunAlterationCast","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":15,"parameters":[60],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":44,"parameters":[{"name":"BrunAlterationHit","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":15,"parameters":[15],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":45,"parameters":["aaa_jump(this, 0, 0, 100);"],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":44,"parameters":[{"name":"BrunOuch","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":16,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":15,"parameters":[5],"indent":null}]},{"code":322,"indent":0,"parameters":[1,"DamageUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":230,"indent":0,"parameters":[60]},{"code":322,"indent":0,"parameters":[1,"ActorUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":311,"indent":0,"parameters":[0,0,1,0,1,false]},{"code":0,"indent":0,"parameters":[]}],"name":"UIUI of Travel","switchId":1,"trigger":0},
-{"id":3,"list":[{"code":231,"indent":0,"parameters":[1,"CartePostaleBonjour",1,0,408,312,100,100,0,0]},{"code":232,"indent":0,"parameters":[1,0,1,0,408,312,100,100,255,0,15,true]},{"code":250,"indent":0,"parameters":[{"name":"Stare","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":0,"parameters":[60]},{"code":232,"indent":0,"parameters":[1,0,1,0,408,312,100,100,0,0,15,true]},{"code":235,"indent":0,"parameters":[1]},{"code":0,"indent":0,"parameters":[]}],"name":"Carte postale du BONJOUR","switchId":1,"trigger":0},
-{"id":4,"list":[{"code":122,"indent":0,"parameters":[1,1,0,3,7,0,0]},{"code":122,"indent":0,"parameters":[2,2,0,3,5,-1,0]},{"code":122,"indent":0,"parameters":[3,3,0,3,5,-1,1]},{"code":111,"indent":0,"parameters":[6,-1,2]},{"code":122,"indent":1,"parameters":[3,3,1,0,1]},{"code":0,"indent":1,"parameters":[]},{"code":411,"indent":0,"parameters":[]},{"code":111,"indent":1,"parameters":[6,-1,8]},{"code":122,"indent":2,"parameters":[3,3,2,0,1]},{"code":0,"indent":2,"parameters":[]},{"code":411,"indent":1,"parameters":[]},{"code":111,"indent":2,"parameters":[6,-1,4]},{"code":122,"indent":3,"parameters":[2,2,2,0,1]},{"code":0,"indent":3,"parameters":[]},{"code":411,"indent":2,"parameters":[]},{"code":122,"indent":3,"parameters":[2,2,1,0,1]},{"code":0,"indent":3,"parameters":[]},{"code":412,"indent":2,"parameters":[]},{"code":0,"indent":2,"parameters":[]},{"code":412,"indent":1,"parameters":[]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":202,"indent":0,"parameters":[0,1,1,2,3]},{"code":111,"indent":0,"parameters":[12,"$gameMap.isBoatPassable($gvars.TMP_B, $gvars.TMP_C)"]},{"code":206,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[30]},{"code":121,"indent":1,"parameters":[6,6,0]},{"code":0,"indent":1,"parameters":[]},{"code":411,"indent":0,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Beep4","volume":90,"pitch":100,"pan":0}]},{"code":202,"indent":1,"parameters":[0,0,6,7,5]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Radeau","switchId":1,"trigger":0},
-{"id":5,"list":[{"code":111,"indent":0,"parameters":[13,0]},{"code":0,"indent":1,"parameters":[]},{"code":411,"indent":0,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Equip2","volume":90,"pitch":100,"pan":0}]},{"code":202,"indent":1,"parameters":[0,0,6,6,6]},{"code":121,"indent":1,"parameters":[6,6,1]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Radeau Off","switchId":6,"trigger":2},
-{"id":6,"list":[{"code":122,"indent":0,"parameters":[21,21,1,0,1]},{"code":111,"indent":0,"parameters":[1,21,0,1,0]},{"code":335,"indent":1,"parameters":[1]},{"code":356,"indent":1,"parameters":["aaa_anim 1 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,2,0]},{"code":335,"indent":1,"parameters":[2]},{"code":356,"indent":1,"parameters":["aaa_anim 2 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,3,0]},{"code":335,"indent":1,"parameters":[3]},{"code":356,"indent":1,"parameters":["aaa_anim 3 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,4,0]},{"code":335,"indent":1,"parameters":[4]},{"code":356,"indent":1,"parameters":["aaa_anim 4 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,5,0]},{"code":335,"indent":1,"parameters":[5]},{"code":356,"indent":1,"parameters":["aaa_anim 5 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,6,0]},{"code":335,"indent":1,"parameters":[6]},{"code":356,"indent":1,"parameters":["aaa_anim 6 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,7,0]},{"code":335,"indent":1,"parameters":[7]},{"code":356,"indent":1,"parameters":["aaa_anim 7 jump"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":111,"indent":0,"parameters":[1,21,0,7,2]},{"code":250,"indent":1,"parameters":[{"name":"Battle1","volume":90,"pitch":100,"pan":0}]},{"code":121,"indent":1,"parameters":[8,8,0]},{"code":0,"indent":1,"parameters":[]},{"code":411,"indent":0,"parameters":[]},{"code":121,"indent":1,"parameters":[8,8,1]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Pondaison","switchId":1,"trigger":0},
-{"id":7,"list":[{"code":122,"indent":0,"parameters":[26,26,1,0,1]},{"code":111,"indent":0,"parameters":[1,26,0,4,0]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteCommeBonjourDisparu","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["C'est comme si... Depuis qu'on a visité le"]},{"code":401,"indent":1,"parameters":["Temple du Bonjour, le Bonjour-même c'était"]},{"code":401,"indent":1,"parameters":["volatilisé!"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorTempleAttrapeTouriste","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Ce serait un peu absurde non? Le temple"]},{"code":401,"indent":1,"parameters":["n'était qu'une attrape-touriste!"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteBonMatinVolatilise","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Oui mais pourquoi tout le monde ignorerait"]},{"code":401,"indent":1,"parameters":["le fait qu'on est encore l'après-midi!"]},{"code":401,"indent":1,"parameters":["C'est à croire que c'est la même chose qui"]},{"code":401,"indent":1,"parameters":["s'est passé pour le Bon Matin..."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteDefendTempleBonjour","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Et puis en plus, c'est pas mutuellement"]},{"code":401,"indent":1,"parameters":["exclusif: Si tu devais protéger à tout "]},{"code":401,"indent":1,"parameters":["jamais un Concept du monde en soit, il "]},{"code":401,"indent":1,"parameters":["faudrait quand même vivre."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorMmmPensif","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Mmmmh..."]},{"code":251,"indent":1,"parameters":[]},{"code":213,"indent":1,"parameters":[-1,8,true]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteQuelquunVoleBonMatin","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["On n'a pas de meilleures hypothèses? Moi je"]},{"code":401,"indent":1,"parameters":["vous le dis, quelqu'un a volé le Bon Matin."]},{"code":251,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[60]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteNeSaisPasDOu","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Merde je ne sais même pas de où!"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorDoitBienYAvoirTempleBonMatin","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Forcément il doit bien y avoir un Temple du"]},{"code":401,"indent":1,"parameters":["Bon Matin, non?"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_GabspartSelonLegende","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":1,"parameters":["Selon la légende..."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteDuWiki","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Du Repositoire des Textes Sacrés?"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_GabspartSelonRepoGnagnagna","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":1,"parameters":["... du Repositoire des Textes Gagnagna."]},{"code":401,"indent":1,"parameters":[""]},{"code":401,"indent":1,"parameters":["Selon la légende, ce serait de l'autre côté"]},{"code":401,"indent":1,"parameters":["de la Montagne qui entoure cette vallée."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteLegendeDesespoir","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Non mais des légendes comme ça c'est des"]},{"code":401,"indent":1,"parameters":["plans pour finir en désespoir."]},{"code":251,"indent":1,"parameters":[]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Bonjour Hint","switchId":1,"trigger":0},
-{"id":8,"list":[{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["Dormir?"]},{"code":102,"indent":0,"parameters":[["Dodo!","Non."],-2,0,2,0]},{"code":402,"indent":0,"parameters":[0,"Dodo!"]},{"code":122,"indent":1,"parameters":[1,1,0,3,5,-1,2]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":0},{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null},{"code":38,"indent":0},{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":19,"indent":0},{"code":15,"parameters":[2],"indent":null},{"code":18,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":17,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":16,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":19,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":18,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":17,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":16,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":322,"indent":1,"parameters":[1,"DamageUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":230,"indent":1,"parameters":[30]},{"code":355,"indent":1,"parameters":["window.tmp = $gameScreen.tone().slice();"]},{"code":221,"indent":1,"parameters":[]},{"code":216,"indent":1,"parameters":[1]},{"code":230,"indent":1,"parameters":[60]},{"code":249,"indent":1,"parameters":[{"name":"JingleSommeil","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[60]},{"code":223,"indent":1,"parameters":[[-92,-80,-64,128],1,false]},{"code":222,"indent":1,"parameters":[]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":221,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[60]},{"code":216,"indent":1,"parameters":[0]},{"code":314,"indent":1,"parameters":[0,0]},{"code":355,"indent":1,"parameters":["$gameScreen.startTint(window.tmp, 0);"]},{"code":222,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Equip2","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[10]},{"code":322,"indent":1,"parameters":[1,"ActorUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":null},{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null},{"code":22,"indent":null},{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null},{"code":38,"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":22,"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":null}]},{"code":0,"indent":1,"parameters":[]},{"code":402,"indent":0,"parameters":[1,"Non."]},{"code":0,"indent":1,"parameters":[]},{"code":403,"indent":0,"parameters":[6,null]},{"code":0,"indent":1,"parameters":[]},{"code":404,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Dodo Lit Haut","switchId":1,"trigger":0},
-{"id":9,"list":[{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["Dormir?"]},{"code":102,"indent":0,"parameters":[["Dodo!","Non."],-2,0,2,0]},{"code":402,"indent":0,"parameters":[0,"Dodo!"]},{"code":122,"indent":1,"parameters":[1,1,0,3,5,-1,2]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":0},{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null},{"code":14,"parameters":[0,-1],"indent":null},{"code":38,"indent":0},{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":19,"indent":0},{"code":15,"parameters":[2],"indent":null},{"code":18,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":17,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":16,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,-1],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":19,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":18,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":17,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":16,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":322,"indent":1,"parameters":[1,"DamageUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":230,"indent":1,"parameters":[30]},{"code":355,"indent":1,"parameters":["window.tmp = $gameScreen.tone().slice();"]},{"code":221,"indent":1,"parameters":[]},{"code":216,"indent":1,"parameters":[1]},{"code":230,"indent":1,"parameters":[60]},{"code":249,"indent":1,"parameters":[{"name":"JingleSommeil","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[60]},{"code":223,"indent":1,"parameters":[[-92,-80,-64,128],1,false]},{"code":222,"indent":1,"parameters":[]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":221,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[60]},{"code":216,"indent":1,"parameters":[0]},{"code":314,"indent":1,"parameters":[0,0]},{"code":355,"indent":1,"parameters":["$gameScreen.startTint(window.tmp, 0);"]},{"code":222,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Equip2","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[10]},{"code":322,"indent":1,"parameters":[1,"ActorUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":null},{"code":14,"parameters":[0,1],"indent":null},{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null},{"code":22,"indent":null},{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null},{"code":38,"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,1],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":22,"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["aaa_jump_forward(this, 1, 0)"],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":null}]},{"code":0,"indent":1,"parameters":[]},{"code":402,"indent":0,"parameters":[1,"Non."]},{"code":0,"indent":1,"parameters":[]},{"code":403,"indent":0,"parameters":[6,null]},{"code":0,"indent":1,"parameters":[]},{"code":404,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Dodo Lit Bas","switchId":1,"trigger":0},
-{"id":10,"list":[{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["Dormir?"]},{"code":102,"indent":0,"parameters":[["Dodo!","Non."],-2,0,2,0]},{"code":402,"indent":0,"parameters":[0,"Dodo!"]},{"code":122,"indent":1,"parameters":[1,1,0,3,5,-1,2]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":0},{"code":38,"indent":0},{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":19,"indent":0},{"code":15,"parameters":[2],"indent":null},{"code":18,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":17,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":16,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":19,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":18,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":17,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":16,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":322,"indent":1,"parameters":[1,"DamageUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":230,"indent":1,"parameters":[30]},{"code":355,"indent":1,"parameters":["window.tmp = $gameScreen.tone().slice();"]},{"code":221,"indent":1,"parameters":[]},{"code":216,"indent":1,"parameters":[1]},{"code":230,"indent":1,"parameters":[60]},{"code":249,"indent":1,"parameters":[{"name":"JingleSommeil","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[60]},{"code":223,"indent":1,"parameters":[[-92,-80,-64,128],1,false]},{"code":222,"indent":1,"parameters":[]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":221,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[60]},{"code":216,"indent":1,"parameters":[0]},{"code":314,"indent":1,"parameters":[0,0]},{"code":355,"indent":1,"parameters":["$gameScreen.startTint(window.tmp, 0);"]},{"code":222,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Equip2","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[10]},{"code":322,"indent":1,"parameters":[1,"ActorUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null}]},{"code":0,"indent":1,"parameters":[]},{"code":402,"indent":0,"parameters":[1,"Non."]},{"code":0,"indent":1,"parameters":[]},{"code":403,"indent":0,"parameters":[6,null]},{"code":0,"indent":1,"parameters":[]},{"code":404,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Dodo Lit Sol Haut","switchId":1,"trigger":0},
-{"id":11,"list":[{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["Dormir?"]},{"code":102,"indent":0,"parameters":[["Dodo!","Non."],-2,0,2,0]},{"code":402,"indent":0,"parameters":[0,"Dodo!"]},{"code":122,"indent":1,"parameters":[1,1,0,3,5,-1,2]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":37,"indent":0},{"code":14,"parameters":[0,-1],"indent":null},{"code":38,"indent":0},{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null},{"code":19,"indent":0},{"code":15,"parameters":[2],"indent":null},{"code":18,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":17,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":16,"indent":0},{"code":15,"parameters":[2],"indent":0},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":37,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,-1],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":38,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":44,"parameters":[{"name":"Jump2","volume":90,"pitch":100,"pan":0}],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":19,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":18,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":17,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":16,"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":15,"parameters":[2],"indent":0}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":322,"indent":1,"parameters":[1,"DamageUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":230,"indent":1,"parameters":[30]},{"code":355,"indent":1,"parameters":["window.tmp = $gameScreen.tone().slice();"]},{"code":221,"indent":1,"parameters":[]},{"code":216,"indent":1,"parameters":[1]},{"code":230,"indent":1,"parameters":[60]},{"code":249,"indent":1,"parameters":[{"name":"JingleSommeil","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[60]},{"code":223,"indent":1,"parameters":[[-92,-80,-64,128],1,false]},{"code":222,"indent":1,"parameters":[]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":213,"indent":1,"parameters":[-1,10,true]},{"code":230,"indent":1,"parameters":[30]},{"code":221,"indent":1,"parameters":[]},{"code":230,"indent":1,"parameters":[60]},{"code":216,"indent":1,"parameters":[0]},{"code":314,"indent":1,"parameters":[0,0]},{"code":355,"indent":1,"parameters":["$gameScreen.startTint(window.tmp, 0);"]},{"code":222,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"Equip2","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":1,"parameters":[10]},{"code":322,"indent":1,"parameters":[1,"ActorUIUI",1,"UIUI",1,"ActorUIUI_2"]},{"code":205,"indent":1,"parameters":[-1,{"list":[{"code":14,"parameters":[0,1],"indent":null},{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":1,"parameters":[{"code":14,"parameters":[0,1],"indent":null}]},{"code":505,"indent":1,"parameters":[{"code":45,"parameters":["this.setDirection($gvars.TMP_A)"],"indent":null}]},{"code":0,"indent":1,"parameters":[]},{"code":402,"indent":0,"parameters":[1,"Non."]},{"code":0,"indent":1,"parameters":[]},{"code":403,"indent":0,"parameters":[6,null]},{"code":0,"indent":1,"parameters":[]},{"code":404,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Dodo Lit Sol Bas","switchId":1,"trigger":0},
-{"id":12,"list":[{"code":249,"indent":0,"parameters":[{"name":"JingleQueteAcquise","volume":90,"pitch":100,"pan":0}]},{"code":205,"indent":0,"parameters":[-1,{"list":[{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":0,"indent":0,"parameters":[]}],"name":"Quete Acquise","switchId":1,"trigger":0},
-{"id":13,"list":[{"code":111,"indent":0,"parameters":[0,10,0]},{"code":115,"indent":1,"parameters":[]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":121,"indent":0,"parameters":[10,10,0]},{"code":355,"indent":0,"parameters":["$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteKosseca","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["Kosséça."]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party.Wwwelchior.setActionState(\"acting\");"]},{"code":250,"indent":0,"parameters":[{"name":"_WwwelchiorPensaisQueProtagonisteSaurait","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",7,0,2]},{"code":401,"indent":0,"parameters":["Je pensais que tu vivais dans cette forêt?"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["aaa_anim($btl.party[\"Personne Véritable\"], \"jump\");"]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteEstUnTiCul","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["Non mais justement, le Gaboué me prédate!"]},{"code":401,"indent":0,"parameters":["Tu penses que ça date d'hier qu'il est sur"]},{"code":401,"indent":0,"parameters":["son pont à proférer des \"GABOUÉ\"?"]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_WwwelchiorLesLegendesCEstLong","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",7,0,2]},{"code":401,"indent":0,"parameters":["C'est vrai que ça prend un moment à se "]},{"code":401,"indent":0,"parameters":["former les légendes..."]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party.Wwwelchior.setActionState(\"walk\");"]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteDemeureConfus","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["Bon par contre ça clarifie rien à ce qu'on"]},{"code":401,"indent":0,"parameters":["a devant nous là."]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["aaa_anim($btl.party.Gaboué, \"jump\");"]},{"code":250,"indent":0,"parameters":[{"name":"_GaboueGaboue1","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["Monster",2,0,2]},{"code":401,"indent":0,"parameters":["Gaboué!"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party.Gabspart.setActionState(\"acting\");"]},{"code":250,"indent":0,"parameters":[{"name":"_GabspartDoncIlDit","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":0,"parameters":["Donc il dit:"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$gameScreen.zoomOnBattler($btl.party.Gabspart, 3);"]},{"code":250,"indent":0,"parameters":[{"name":"_GabspartTraduitGabouePingouin","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":0,"parameters":["> Lorsque jadis j'errais,"]},{"code":401,"indent":0,"parameters":["> en quête de savoir."]},{"code":401,"indent":0,"parameters":["> Apprenti vorace,"]},{"code":401,"indent":0,"parameters":["> du sage Pingouin."]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_GabspartTraduitGaboueScriptouilles","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":0,"parameters":["> Je ne su m'expliquer,"]},{"code":401,"indent":0,"parameters":["> Jaillissent tabouéerre!"]},{"code":401,"indent":0,"parameters":["> Préceptes profèrent,"]},{"code":401,"indent":0,"parameters":["> toutes les Scriptouilles!"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$gameScreen.resetZoom();"]},{"code":655,"indent":0,"parameters":["$btl.party.Gabspart.setActionState(\"walk\");"]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteVeutPasLaSoupeDeMot","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["... le Sage Pingouin?"]},{"code":401,"indent":0,"parameters":[""]},{"code":401,"indent":0,"parameters":["... les Scriptouilles?"]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteVeutPasLaSoupeDeMotPt2","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["À quel point Gaboué fait juste déblatérer"]},{"code":401,"indent":0,"parameters":["une soupe de mots en fait?"]},{"code":401,"indent":0,"parameters":["\\}En plus ça rimait pas à la fin...\\{"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party.Gaboué.setActionState(\"acting\");"]},{"code":655,"indent":0,"parameters":["$btl.party.Gaboué.pushMoves(["]},{"code":655,"indent":0,"parameters":["  [PARABOLA, -48, 0, -48, 12],"]},{"code":655,"indent":0,"parameters":["  [MOTION, \"swing\"]]);"]},{"code":250,"indent":0,"parameters":[{"name":"_GaboueGaboue111","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["Monster",2,0,2]},{"code":401,"indent":0,"parameters":["Gaboué!"]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party.Gaboué.setActionState(\"walk\");"]},{"code":250,"indent":0,"parameters":[{"name":"_WwwelchiorCEtaitMechantCommentaire","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",7,0,2]},{"code":401,"indent":0,"parameters":["Effectivement, c'était juste méchant comme"]},{"code":401,"indent":0,"parameters":["commentaire."]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_ProtagonisteLesScriptouillesCEstDangereux6","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["Bon, je m'excuse."]},{"code":401,"indent":0,"parameters":[""]},{"code":401,"indent":0,"parameters":["Pis huh... ces \"Scriptouilles\" c'est "]},{"code":401,"indent":0,"parameters":["dangereux?"]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"_GabspartFautFaireAttentionAuxIncantations","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":0,"parameters":["UIUI2",0,0,2]},{"code":401,"indent":0,"parameters":["Les Scriptouilles elles-mêmes, non."]},{"code":401,"indent":0,"parameters":["Mais les mots qu'elles incantent..."]},{"code":401,"indent":0,"parameters":["Je m'y méfierais."]},{"code":251,"indent":0,"parameters":[]},{"code":355,"indent":0,"parameters":["$btl.party[\"Personne Véritable\"].setActionState(\"walk\");"]},{"code":0,"indent":0,"parameters":[]}],"name":"BARBE_AMORPHE","switchId":1,"trigger":0},
-{"id":14,"list":[{"code":249,"indent":0,"parameters":[{"name":"JingleQueteCompletee","volume":90,"pitch":100,"pan":0}]},{"code":205,"indent":0,"parameters":[-1,{"list":[{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":20,"indent":null},{"code":14,"parameters":[0,0],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":true}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":20,"indent":null}]},{"code":505,"indent":0,"parameters":[{"code":14,"parameters":[0,0],"indent":null}]},{"code":0,"indent":0,"parameters":[]}],"name":"Quete complétée","switchId":1,"trigger":0},
-{"id":15,"list":[{"code":111,"indent":0,"parameters":[0,17,1]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteOffreMercantile","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["... Quoi? Tu veux nous faire une offre "]},{"code":401,"indent":1,"parameters":["mercantile?"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_DetahHehe","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI2",2,0,2]},{"code":401,"indent":1,"parameters":["He he..."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorNeVeutPasTransaction","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Assurément tu ne veux rien échanger avec un"]},{"code":401,"indent":1,"parameters":["Detah qui veut faire une transaction!"]},{"code":251,"indent":1,"parameters":[]},{"code":121,"indent":1,"parameters":[17,17,0]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":122,"indent":0,"parameters":[29,29,0,3,4,0,0]},{"code":122,"indent":0,"parameters":[30,30,0,3,4,0,1]},{"code":0,"indent":0,"parameters":[]}],"name":"Sort Transaction","switchId":1,"trigger":0},
-{"id":16,"list":[{"code":333,"indent":0,"parameters":[-1,1,21]},{"code":333,"indent":0,"parameters":[-1,1,22]},{"code":122,"indent":0,"parameters":[2,2,0,3,4,0,0]},{"code":111,"indent":0,"parameters":[1,1,1,29,4]},{"code":122,"indent":1,"parameters":[1,1,0,1,29]},{"code":122,"indent":1,"parameters":[1,1,2,1,2]},{"code":339,"indent":1,"parameters":[0,0,52,-2]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":122,"indent":0,"parameters":[2,2,0,3,4,0,1]},{"code":111,"indent":0,"parameters":[1,1,1,30,4]},{"code":122,"indent":1,"parameters":[1,1,0,1,30]},{"code":122,"indent":1,"parameters":[1,1,2,1,2]},{"code":339,"indent":1,"parameters":[0,0,53,-2]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Annuler Transaction","switchId":1,"trigger":0},
-{"id":17,"list":[{"code":333,"indent":0,"parameters":[-1,1,21]},{"code":333,"indent":0,"parameters":[-1,1,22]},{"code":122,"indent":0,"parameters":[2,2,0,3,4,0,0]},{"code":111,"indent":0,"parameters":[1,1,1,29,4]},{"code":122,"indent":1,"parameters":[1,1,0,1,29]},{"code":122,"indent":1,"parameters":[1,1,2,1,2]},{"code":339,"indent":1,"parameters":[0,0,54,-2]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":122,"indent":0,"parameters":[2,2,0,3,4,0,1]},{"code":111,"indent":0,"parameters":[1,1,1,30,4]},{"code":122,"indent":1,"parameters":[1,1,0,1,30]},{"code":122,"indent":1,"parameters":[1,1,2,1,2]},{"code":339,"indent":1,"parameters":[0,0,55,-2]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Appliquer Transaction","switchId":1,"trigger":0},
-{"id":18,"list":[{"code":111,"indent":0,"parameters":[0,21,1]},{"code":355,"indent":1,"parameters":["$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"]},{"code":655,"indent":1,"parameters":["aaa_anim($btl.party[\"Personne Véritable\"], \"jump\");"]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteProcedure","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["... Une procédure?"]},{"code":401,"indent":1,"parameters":["Y nous niaise. Quant à faire je peux bien "]},{"code":401,"indent":1,"parameters":["lui expliquer la procédure de comment on va "]},{"code":401,"indent":1,"parameters":["lui péter sa face!"]},{"code":251,"indent":1,"parameters":[]},{"code":355,"indent":1,"parameters":["$btl.party.Wwwelchior.setActionState(\"acting\");"]},{"code":655,"indent":1,"parameters":["aaa_anim($btl.party[\"Wwwelchior\"], \"jump\");"]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorBienDaccord","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["C'est bien dit ça! Et dire que tu voulais"]},{"code":401,"indent":1,"parameters":["t'asseoir pour une tasse de thé!"]},{"code":251,"indent":1,"parameters":[]},{"code":355,"indent":1,"parameters":["$btl.party[\"Personne Véritable\"].setActionState(\"walk\");"]},{"code":655,"indent":1,"parameters":["$btl.party.Wwwelchior.setActionState(\"walk\");"]},{"code":121,"indent":1,"parameters":[21,21,0]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Sort Stored Proc Define","switchId":1,"trigger":0},
-{"id":19,"list":[{"code":122,"indent":0,"parameters":[31,31,1,0,1]},{"code":111,"indent":0,"parameters":[1,31,0,2,0]},{"code":355,"indent":1,"parameters":["let prot = $btl.party[\"Personne Véritable\"];"]},{"code":655,"indent":1,"parameters":["prot.setActionState(\"acting\");"]},{"code":655,"indent":1,"parameters":["let sprite = SceneManager.battlerSprite(prot);"]},{"code":655,"indent":1,"parameters":["sprite.pushMoves(new Array(4).fill().flatMap(() => ["]},{"code":655,"indent":1,"parameters":["  [PARABOLA, "]},{"code":655,"indent":1,"parameters":["    (Math.random() - 0.5), "]},{"code":655,"indent":1,"parameters":["    (Math.random() - 0.5), "]},{"code":655,"indent":1,"parameters":["    -20, "]},{"code":655,"indent":1,"parameters":["    12],"]},{"code":655,"indent":1,"parameters":["  [WAIT, "]},{"code":655,"indent":1,"parameters":["    24]"]},{"code":655,"indent":1,"parameters":["]));"]},{"code":355,"indent":1,"parameters":["let prot = $btl.party[\"Personne Véritable\"];"]},{"code":655,"indent":1,"parameters":["let sprite = SceneManager.battlerSprite(prot);"]},{"code":655,"indent":1,"parameters":["sprite.pushMove([PARABOLA, 0, 0, -20, 12]);"]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteEnAMarreDesTables","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Ok mais ça fera là! Y'a combien de tables à"]},{"code":401,"indent":1,"parameters":["faire tomber lui-là!?"]},{"code":251,"indent":1,"parameters":[]},{"code":355,"indent":1,"parameters":["aaa_anim($btl.party.Gabspart, \"jump\");"]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorTableEspace","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Tant qu'il lui reste de l'espace, il peut"]},{"code":401,"indent":1,"parameters":["en faire autant qu'il veut!"]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_ProtagonisteEnAMarreDesTables2","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",1,0,2]},{"code":401,"indent":1,"parameters":["Bin non, si c'était le cas on verrait sa"]},{"code":401,"indent":1,"parameters":["pile de tables! "]},{"code":401,"indent":1,"parameters":["Mais là ça sort du néant son affaire."]},{"code":251,"indent":1,"parameters":[]},{"code":250,"indent":1,"parameters":[{"name":"_WwwelchiorDetahDangereux","volume":90,"pitch":100,"pan":0}]},{"code":101,"indent":1,"parameters":["UIUI",7,0,2]},{"code":401,"indent":1,"parameters":["Justement! Devines pourquoi le Detah est"]},{"code":401,"indent":1,"parameters":["dangereux!"]},{"code":251,"indent":1,"parameters":[]},{"code":355,"indent":1,"parameters":["let prot = $btl.party[\"Personne Véritable\"];"]},{"code":655,"indent":1,"parameters":["prot.setActingState(\"walk\");"]},{"code":0,"indent":1,"parameters":[]},{"code":412,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Sort Lancer de Table","switchId":1,"trigger":0},
-{"id":20,"list":[{"code":122,"indent":0,"parameters":[1,1,0,0,0]},{"code":112,"indent":0,"parameters":[]},{"code":111,"indent":1,"parameters":[12,"$gvars.TMP_A >= $btl.storedProc.length"]},{"code":113,"indent":2,"parameters":[]},{"code":0,"indent":2,"parameters":[]},{"code":412,"indent":1,"parameters":[]},{"code":355,"indent":1,"parameters":["let call = $btl.storedProc[$gvars.TMP_A];"]},{"code":655,"indent":1,"parameters":["this.iterateBattler(0, 0, battler => {"]},{"code":655,"indent":1,"parameters":["  battler.forceAction(call, -1);"]},{"code":655,"indent":1,"parameters":["  BattleManager.forceAction(battler);"]},{"code":655,"indent":1,"parameters":["  this.setWaitMode('action');"]},{"code":655,"indent":1,"parameters":["});"]},{"code":122,"indent":1,"parameters":[1,1,1,0,1]},{"code":0,"indent":1,"parameters":[]},{"code":413,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Sort Stored Proc Call","switchId":1,"trigger":0},
-{"id":21,"list":[{"code":121,"indent":0,"parameters":[26,26,0]},{"code":230,"indent":0,"parameters":[10]},{"code":250,"indent":0,"parameters":[{"name":"Cossin","volume":90,"pitch":50,"pan":0}]},{"code":230,"indent":0,"parameters":[10]},{"code":250,"indent":0,"parameters":[{"name":"Liquid","volume":90,"pitch":50,"pan":0}]},{"code":230,"indent":0,"parameters":[20]},{"code":251,"indent":0,"parameters":[]},{"code":250,"indent":0,"parameters":[{"name":"Gulp","volume":90,"pitch":100,"pan":0}]},{"code":230,"indent":0,"parameters":[60]},{"code":355,"indent":0,"parameters":["AudioManager.playSe({ name: \"_ProtagonisteBoisProtolixir\" });"]},{"code":101,"indent":0,"parameters":["UIUI",1,0,2]},{"code":401,"indent":0,"parameters":["Bon ça goûte le poulet, mais je ressens pas"]},{"code":401,"indent":0,"parameters":["trop grand chose autrement..."]},{"code":401,"indent":0,"parameters":["Peut-être que l'inventeur aura quelque "]},{"code":401,"indent":0,"parameters":["chose à dire là-dessus."]},{"code":251,"indent":0,"parameters":[]},{"code":0,"indent":0,"parameters":[]}],"name":"Protolixir de Chair","switchId":1,"trigger":0}
+  null,
+  {
+    "id": 1,
+    "list": [
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_NarrateurBonjours",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR "
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_NarrateurDuBeauPapier",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "C'est hum, c'est du beau papier ça."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Parchemin du BONJOUR",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 2,
+    "list": [
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "BrunAlterationCast",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  60
+                ],
+                "indent": null
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "BrunAlterationHit",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  15
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "aaa_jump(this, 0, 0, 100);"
+                ],
+                "indent": null
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "BrunOuch",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  5
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "BrunAlterationCast",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              60
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "BrunAlterationHit",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              15
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "aaa_jump(this, 0, 0, 100);"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "BrunOuch",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              5
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 0,
+        "parameters": [
+          1,
+          "DamageUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 0,
+        "parameters": [
+          1,
+          "ActorUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 311,
+        "indent": 0,
+        "parameters": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "UIUI of Travel",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 3,
+    "list": [
+      {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          1,
+          "CartePostaleBonjour",
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          255,
+          0,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Stare",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Carte postale du BONJOUR",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 4,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          5,
+          -1,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          3,
+          3,
+          0,
+          3,
+          5,
+          -1,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          6,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          3,
+          3,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          6,
+          -1,
+          8
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          3,
+          3,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          6,
+          -1,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          2,
+          2,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          2,
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 202,
+        "indent": 0,
+        "parameters": [
+          0,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.isBoatPassable($gvars.TMP_B, $gvars.TMP_C)"
+        ]
+      },
+      {
+        "code": 206,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          6,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Beep4",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 202,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          6,
+          7,
+          5
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Radeau",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 5,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          13,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Equip2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 202,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          6,
+          6,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Radeau Off",
+    "switchId": 6,
+    "trigger": 2
+  },
+  {
+    "id": 6,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          21,
+          21,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 1 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          2
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 2 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          3
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 3 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          4
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 4 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 5 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          6
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 6 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 335,
+        "indent": 1,
+        "parameters": [
+          7
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim 7 jump"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          21,
+          0,
+          7,
+          2
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Battle1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          8,
+          8,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          8,
+          8,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Pondaison",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 7,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          26,
+          26,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          26,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteCommeBonjourDisparu",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "C'est comme si... Depuis qu'on a visité le"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Temple du Bonjour, le Bonjour-même c'était"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "volatilisé!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorTempleAttrapeTouriste",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Ce serait un peu absurde non? Le temple"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "n'était qu'une attrape-touriste!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteBonMatinVolatilise",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Oui mais pourquoi tout le monde ignorerait"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "le fait qu'on est encore l'après-midi!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "C'est à croire que c'est la même chose qui"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "s'est passé pour le Bon Matin..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteDefendTempleBonjour",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Et puis en plus, c'est pas mutuellement"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "exclusif: Si tu devais protéger à tout "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "jamais un Concept du monde en soit, il "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "faudrait quand même vivre."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorMmmPensif",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Mmmmh..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          8,
+          true
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteQuelquunVoleBonMatin",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "On n'a pas de meilleures hypothèses? Moi je"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "vous le dis, quelqu'un a volé le Bon Matin."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteNeSaisPasDOu",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Merde je ne sais même pas de où!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorDoitBienYAvoirTempleBonMatin",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Forcément il doit bien y avoir un Temple du"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Bon Matin, non?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_GabspartSelonLegende",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Selon la légende..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteDuWiki",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Du Repositoire des Textes Sacrés?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_GabspartSelonRepoGnagnagna",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "... du Repositoire des Textes Gagnagna."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Selon la légende, ce serait de l'autre côté"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "de la Montagne qui entoure cette vallée."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteLegendeDesespoir",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Non mais des légendes comme ça c'est des"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "plans pour finir en désespoir."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Bonjour Hint",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 8,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Dormir?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Dodo!",
+            "Non."
+          ],
+          -2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Dodo!"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          5,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "aaa_jump_forward(this, 1, 0)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 38,
+                "indent": 0
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Jump2",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 17,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 16,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "aaa_jump_forward(this, 1, 0)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Jump2",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "DamageUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "window.tmp = $gameScreen.tone().slice();"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 249,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "JingleSommeil",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 1,
+        "parameters": [
+          [
+            -92,
+            -80,
+            -64,
+            128
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 314,
+        "indent": 1,
+        "parameters": [
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameScreen.startTint(window.tmp, 0);"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Equip2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "ActorUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this.setDirection($gvars.TMP_A)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 22,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "aaa_jump_forward(this, 1, 0)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 38,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.setDirection($gvars.TMP_A)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 22,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "aaa_jump_forward(this, 1, 0)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Non."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 403,
+        "indent": 0,
+        "parameters": [
+          6,
+          null
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Dodo Lit Haut",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 9,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Dormir?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Dodo!",
+            "Non."
+          ],
+          -2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Dodo!"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          5,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "aaa_jump_forward(this, 1, 0)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  -1
+                ],
+                "indent": null
+              },
+              {
+                "code": 38,
+                "indent": 0
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Jump2",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 17,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 16,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "aaa_jump_forward(this, 1, 0)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              -1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Jump2",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "DamageUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "window.tmp = $gameScreen.tone().slice();"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 249,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "JingleSommeil",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 1,
+        "parameters": [
+          [
+            -92,
+            -80,
+            -64,
+            128
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 314,
+        "indent": 1,
+        "parameters": [
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameScreen.startTint(window.tmp, 0);"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Equip2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "ActorUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this.setDirection($gvars.TMP_A)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 22,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "aaa_jump_forward(this, 1, 0)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 38,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.setDirection($gvars.TMP_A)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 22,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "aaa_jump_forward(this, 1, 0)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Non."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 403,
+        "indent": 0,
+        "parameters": [
+          6,
+          null
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Dodo Lit Bas",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 10,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Dormir?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Dodo!",
+            "Non."
+          ],
+          -2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Dodo!"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          5,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": 0
+              },
+              {
+                "code": 38,
+                "indent": 0
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Jump2",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 17,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 16,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Jump2",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "DamageUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "window.tmp = $gameScreen.tone().slice();"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 249,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "JingleSommeil",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 1,
+        "parameters": [
+          [
+            -92,
+            -80,
+            -64,
+            128
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 314,
+        "indent": 1,
+        "parameters": [
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameScreen.startTint(window.tmp, 0);"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Equip2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "ActorUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this.setDirection($gvars.TMP_A)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.setDirection($gvars.TMP_A)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Non."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 403,
+        "indent": 0,
+        "parameters": [
+          6,
+          null
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Dodo Lit Sol Haut",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 11,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Dormir?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Dodo!",
+            "Non."
+          ],
+          -2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Dodo!"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          5,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 37,
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  -1
+                ],
+                "indent": null
+              },
+              {
+                "code": 38,
+                "indent": 0
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Jump2",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 17,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 16,
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  2
+                ],
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 37,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              -1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 38,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Jump2",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              2
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "DamageUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "window.tmp = $gameScreen.tone().slice();"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 249,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "JingleSommeil",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 1,
+        "parameters": [
+          [
+            -92,
+            -80,
+            -64,
+            128
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          10,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 1,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 314,
+        "indent": 1,
+        "parameters": [
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameScreen.startTint(window.tmp, 0);"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Equip2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "ActorUIUI",
+          1,
+          "UIUI",
+          1,
+          "ActorUIUI_2"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this.setDirection($gvars.TMP_A)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.setDirection($gvars.TMP_A)"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Non."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 403,
+        "indent": 0,
+        "parameters": [
+          6,
+          null
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Dodo Lit Sol Bas",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 12,
+    "list": [
+      {
+        "code": 249,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "JingleQueteAcquise",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Quete Acquise",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 13,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          10,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteKosseca",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Kosséça."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_WwwelchiorPensaisQueProtagonisteSaurait",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Je pensais que tu vivais dans cette forêt?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "aaa_anim($btl.party[\"Personne Véritable\"], \"jump\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteEstUnTiCul",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Non mais justement, le Gaboué me prédate!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Tu penses que ça date d'hier qu'il est sur"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "son pont à proférer des \"GABOUÉ\"?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_WwwelchiorLesLegendesCEstLong",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "C'est vrai que ça prend un moment à se "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "former les légendes..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteDemeureConfus",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Bon par contre ça clarifie rien à ce qu'on"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "a devant nous là."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "aaa_anim($btl.party.Gaboué, \"jump\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GaboueGaboue1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Monster",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Gaboué!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Gabspart.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GabspartDoncIlDit",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Donc il dit:"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameScreen.zoomOnBattler($btl.party.Gabspart, 3);"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GabspartTraduitGabouePingouin",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> Lorsque jadis j'errais,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> en quête de savoir."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> Apprenti vorace,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> du sage Pingouin."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GabspartTraduitGaboueScriptouilles",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> Je ne su m'expliquer,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> Jaillissent tabouéerre!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> Préceptes profèrent,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "> toutes les Scriptouilles!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameScreen.resetZoom();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Gabspart.setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteVeutPasLaSoupeDeMot",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "... le Sage Pingouin?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "... les Scriptouilles?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteVeutPasLaSoupeDeMotPt2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "À quel point Gaboué fait juste déblatérer"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "une soupe de mots en fait?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\}En plus ça rimait pas à la fin...\\{"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Gaboué.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Gaboué.pushMoves(["
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [PARABOLA, -48, 0, -48, 12],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [MOTION, \"swing\"]]);"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GaboueGaboue111",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Monster",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Gaboué!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Gaboué.setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_WwwelchiorCEtaitMechantCommentaire",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Effectivement, c'était juste méchant comme"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "commentaire."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_ProtagonisteLesScriptouillesCEstDangereux6",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Bon, je m'excuse."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Pis huh... ces \"Scriptouilles\" c'est "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "dangereux?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "_GabspartFautFaireAttentionAuxIncantations",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Les Scriptouilles elles-mêmes, non."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Mais les mots qu'elles incantent..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Je m'y méfierais."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "BARBE_AMORPHE",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 14,
+    "list": [
+      {
+        "code": 249,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "JingleQueteCompletee",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Quete complétée",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 15,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          17,
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteOffreMercantile",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "... Quoi? Tu veux nous faire une offre "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "mercantile?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_DetahHehe",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI2",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "He he..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorNeVeutPasTransaction",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Assurément tu ne veux rien échanger avec un"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Detah qui veut faire une transaction!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          17,
+          17,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          29,
+          29,
+          0,
+          3,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          30,
+          30,
+          0,
+          3,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort Transaction",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 16,
+    "list": [
+      {
+        "code": 333,
+        "indent": 0,
+        "parameters": [
+          -1,
+          1,
+          21
+        ]
+      },
+      {
+        "code": 333,
+        "indent": 0,
+        "parameters": [
+          -1,
+          1,
+          22
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          1,
+          29,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          1,
+          29
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 339,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          52,
+          -2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          1,
+          30,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          1,
+          30
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 339,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          53,
+          -2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Annuler Transaction",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 17,
+    "list": [
+      {
+        "code": 333,
+        "indent": 0,
+        "parameters": [
+          -1,
+          1,
+          21
+        ]
+      },
+      {
+        "code": 333,
+        "indent": 0,
+        "parameters": [
+          -1,
+          1,
+          22
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          1,
+          29,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          1,
+          29
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 339,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          54,
+          -2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          4,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          1,
+          30,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          1,
+          30
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 339,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          55,
+          -2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Appliquer Transaction",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 18,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          21,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim($btl.party[\"Personne Véritable\"], \"jump\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteProcedure",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "... Une procédure?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Y nous niaise. Quant à faire je peux bien "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "lui expliquer la procédure de comment on va "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "lui péter sa face!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim($btl.party[\"Wwwelchior\"], \"jump\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorBienDaccord",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "C'est bien dit ça! Et dire que tu voulais"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "t'asseoir pour une tasse de thé!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"walk\");"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          21,
+          21,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort Stored Proc Define",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 19,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          31,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let prot = $btl.party[\"Personne Véritable\"];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "prot.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "let sprite = SceneManager.battlerSprite(prot);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "sprite.pushMoves(new Array(4).fill().flatMap(() => ["
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  [PARABOLA, "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    (Math.random() - 0.5), "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    (Math.random() - 0.5), "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    -20, "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    12],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  [WAIT, "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    24]"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "]));"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let prot = $btl.party[\"Personne Véritable\"];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "let sprite = SceneManager.battlerSprite(prot);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "sprite.pushMove([PARABOLA, 0, 0, -20, 12]);"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteEnAMarreDesTables",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Ok mais ça fera là! Y'a combien de tables à"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "faire tomber lui-là!?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "aaa_anim($btl.party.Gabspart, \"jump\");"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorTableEspace",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Tant qu'il lui reste de l'espace, il peut"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "en faire autant qu'il veut!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonisteEnAMarreDesTables2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Bin non, si c'était le cas on verrait sa"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "pile de tables! "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Mais là ça sort du néant son affaire."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_WwwelchiorDetahDangereux",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Justement! Devines pourquoi le Detah est"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "dangereux!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let prot = $btl.party[\"Personne Véritable\"];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "prot.setActingState(\"walk\");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort Lancer de Table",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 20,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gvars.TMP_A >= $btl.storedProc.length"
+        ]
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let call = $btl.storedProc[$gvars.TMP_A];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "this.iterateBattler(0, 0, battler => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  battler.forceAction(call, -1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  BattleManager.forceAction(battler);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  this.setWaitMode('action');"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort Stored Proc Call",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 21,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          26,
+          26,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Cossin",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Liquid",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          20
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Gulp",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "AudioManager.playSe({ name: \"_ProtagonisteBoisProtolixir\" });"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Bon ça goûte le poulet, mais je ressens pas"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "trop grand chose autrement..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Peut-être que l'inventeur aura quelque "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "chose à dire là-dessus."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Protolixir de Chair",
+    "switchId": 1,
+    "trigger": 0
+  }
 ]
