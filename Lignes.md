@@ -237,6 +237,15 @@ Slash3
 Magic4
 > Magic4
 
+Stare
+> Stare
+
+Beep4
+> Beep4
+
+Cossin
+> Cossin
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1424,10 +1433,98 @@ _ProtagonisteMieuxPartir
 > On est peut-être mieux de partir...
 
 _ProtagonisteYaDiff
-> Y'a une différence?
+> Y'a une différence entre le libre arbitre\
+> et son illusion?
 
 _ProtagonisteNoui
 > ... Noui.
+
+_ProtagonisteCommeBonjourDisparu
+> C'est comme si... Depuis qu'on a visité le\
+> Temple du Bonjour, le Bonjour-même c'était\
+> volatilisé!
+
+_ProtagonisteBonMatinVolatilise
+> Oui mais pourquoi tout le monde ignorerait\
+> le fait qu'on est encore l'après-midi!\
+> C'est à croire que c'est la même chose qui\
+> s'est passé pour le Bon Matin...
+
+_ProtagonisteDefendTempleBonjour
+> Et puis en plus, c'est pas mutuellement\
+> exclusif: Si tu devais protéger à tout\
+> jamais un Concept du monde en soit, il\
+> faudrait quand même vivre.
+
+_ProtagonisteQuelquunVoleBonMatin
+> On n'a pas de meilleures hypothèses? Moi je\
+> vous le dis, quelqu'un a volé le Bon Matin.
+
+_ProtagonisteNeSaisPasDOu
+> Merde je ne sais même pas de où!
+
+_ProtagonisteDuWiki
+> Du Repositoire des Textes Sacrés?
+
+_ProtagonisteLegendeDesespoir
+> Non mais des légendes comme ça c'est des\
+> plans pour finir en désespoir.
+
+_ProtagonisteKosseca
+> Kosséça.
+
+_ProtagonisteEstUnTiCul
+> Non mais justement, le Gaboué me prédate!\
+> Tu penses que ça date d'hier qu'il est sur\
+> son pont à proférer des "GABOUÉ"?
+
+_ProtagonisteDemeureConfus
+> Bon par contre ça clarifie rien à ce qu'on\
+> a devant nous là.
+
+_ProtagonisteVeutPasLaSoupeDeMot
+> ... le Sage Pingouin?\
+> \
+> ... les Scriptouilles?
+
+_ProtagonisteVeutPasLaSoupeDeMotPt2
+> À quel point Gaboué fait juste déblatérer\
+> une soupe de mots en fait?\
+> \}En plus ça rimait pas à la fin...\{
+
+_ProtagonisteLesScriptouillesCEstDangereux6
+> Bon, je m'excuse.\
+> \
+> Pis huh... ces "Scriptouilles" c'est\
+> dangereux?
+
+_ProtagonisteOffreMercantile
+> ... Quoi? Tu veux nous faire une offre\
+> mercantile?
+
+_ProtagonisteProcedure
+> ... Une procédure?\
+> Y nous niaise. Quant à faire je peux bien\
+> lui expliquer la procédure de comment on va\
+> lui péter sa face!
+
+_ProtagonisteEnAMarreDesTables
+> Ok mais ça fera là! Y'a combien de tables à\
+> faire tomber lui-là!?
+
+_ProtagonisteEnAMarreDesTables2
+> Bin non, si c'était le cas on verrait sa\
+> pile de tables!\
+> Mais là ça sort du néant son affaire.
+
+_ProtagonisteBoisProtolixir
+> Bon ça goûte le poulet, mais je ressens pas\
+> trop grand chose autrement...\
+> Peut-être que l'inventeur aura quelque\
+> chose à dire là-dessus.
+
+_ProtagonisteEnPeutPlus
+> Ça suffit j'en peux plus!
 
 ### Rip
 
@@ -2819,6 +2916,44 @@ _WwwelchiorExpliquerCouleurBetterave
 > C'est bon on a réussi à lui expliquer la\
 > couleur du jus de betterave!
 
+_WwwelchiorTempleAttrapeTouriste
+> Ce serait un peu absurde non? Le temple\
+> n'était qu'une attrape-touriste!
+
+_WwwelchiorMmmPensif
+> Mmmmh...
+
+_WwwelchiorDoitBienYAvoirTempleBonMatin
+> Forcément il doit bien y avoir un Temple du\
+> Bon Matin, non?
+
+_WwwelchiorPensaisQueProtagonisteSaurait
+> Je pensais que tu vivais dans cette forêt?
+
+_WwwelchiorLesLegendesCEstLong
+> C'est vrai que ça prend un moment à se\
+> former les légendes...
+
+_WwwelchiorCEtaitMechantCommentaire
+> Effectivement, c'était juste méchant comme\
+> commentaire.
+
+_WwwelchiorNeVeutPasTransaction
+> Assurément tu ne veux rien échanger avec un\
+> Detah qui veut faire une transaction!
+
+_WwwelchiorBienDaccord
+> C'est bien dit ça! Et dire que tu voulais\
+> t'asseoir pour une tasse de thé!
+
+_WwwelchiorTableEspace
+> Tant qu'il lui reste de l'espace, il peut\
+> en faire autant qu'il veut!
+
+_WwwelchiorDetahDangereux
+> Justement! Devines pourquoi le Detah est\
+> dangereux!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -3321,6 +3456,32 @@ _GabspartTuVeuxPasLeSavoir
 _GabspartToujoursOption
 > C'est presque toujours une option, hein.
 
+_GabspartSelonLegende
+> Selon la légende...
+
+_GabspartSelonRepoGnagnagna
+> ... du Repositoire des Textes Gagnagna.\
+> \
+> Selon la légende, ce serait de l'autre côté\
+> de la Montagne qui entoure cette vallée.
+
+_GabspartTraduitGabouePingouin
+> > Lorsque jadis j'errais,\
+> > en quête de savoir.\
+> > Apprenti vorace,\
+> > du sage Pingouin.
+
+_GabspartTraduitGaboueScriptouilles
+> > Je ne su m'expliquer,\
+> > Jaillissent tabouéerre!\
+> > Préceptes profèrent,\
+> > toutes les Scriptouilles!
+
+_GabspartFautFaireAttentionAuxIncantations
+> Les Scriptouilles elles-mêmes, non.\
+> Mais les mots qu'elles incantent...\
+> Je m'y méfierais.
+
 ### Jacques
 
 _JacquesJeanTuVoisTuCa
@@ -3636,9 +3797,10 @@ _OraclePigeUneCarte
 > Ah, je pige une carte donc...
 
 _OracleFinfinaud
-> Vous vous pensez vraiment intelligent hein?\
-> \
-> Je suis oracle, pas voyante.
+> Si vous êtes pour faire le finfinaud, y'a\
+> la porte drette derrière vous.\
+> Moi je vous donne la chance de croire que\
+> vous avez le libre arbitre.
 
 _OracleSavoirIntro
 > Alors qu'est-ce que vous voudriez \Shakesavoir?
@@ -3665,6 +3827,18 @@ _OracleVoitVoit
 
 _OracleQuestionRepondue
 > Bon ça répond à votre question?
+
+_OracleDoubibi
+> Doubibi
+
+_OracleZwip
+> Zwip
+
+_OracleTwado
+> Twado
+
+_OracleLaPorte
+> Je vous avais averti.
 
 ### Detaaa
 
@@ -4145,3 +4319,6 @@ _DetahBoast
 
 _DetahVaVousBriser
 > Suffit! Je vais vous briser!
+
+_DetahHehe
+> He he...

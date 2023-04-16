@@ -1,3 +1,5 @@
+"use strict";
+
 const now = new Date();
 const fs = require("fs/promises");
 const os = require("os");
@@ -6,6 +8,10 @@ const { spawnSync } = require("child_process");
 Object.assign(Array.prototype, {
     toObject() {
         return Object.fromEntries(this);
+    },
+    remove(x) {
+        const idx = this.findIndex(y => x === y);
+        this.splice(idx, 1);
     }
 });
 
@@ -22,7 +28,7 @@ const CODES = {
 
 const SECTIONS_REGEX = /#+ +(\w+)[\r?\n]([^\#]*\r?\n?)+?/g;
 const LINES_REGEX = /(\w+)\r?\n((?:>.*\\\r?\n)*(?:>.*\r?\n?))/g;
-const MAP_REGEX = /Map\d{3}\.json/;
+const MAP_REGEX = /Map(\d{3})\.json/;
 const SCRIPT_SE = /(?:playSe\(|aaa_se\(.*, *)\{ *"?'?name'?"?: *["'](\w+)['"]/;
 
 const linesEqual = (a, b) =>
@@ -121,16 +127,17 @@ const sectionsByNameToLinesMD = sectionsByName =>
         });
     }
 
-    const itemLocations = {};
-    const mapTransfers = {};
+    const mapInfos = {};
+    const kinds = {
+        126: "items",
+        127: "weapons",
+        128: "armors"
+    };
 
     const dataFiles = await $dataFiles;
+    const walkthroughText = JSON.parse(dataFiles.find(([dataFile]) => dataFile === "Walkthrough.json")?.[1] ?? "null");
     for (const [dataFile, text] of dataFiles) {
         const json = JSON.parse(text);
-        // Skip templates
-        if (dataFile === "Map006.json") {
-            continue;
-        }
         const mapMatch = dataFile.match(MAP_REGEX);
 
         if (mapMatch) {
@@ -138,39 +145,45 @@ const sectionsByNameToLinesMD = sectionsByName =>
             .flatMap(event => event?.pages ?? [])
             .forEach(readPageForLines);
 
+            // GOGO GAAAAADGEEEET
+            const mapId = Number.parseInt(mapMatch[1]);
+            const forMap = mapInfos[mapId] || (mapInfos[mapId] = {
+                items: [],
+                weapons: [],
+                armors: [],
+                transfers: {},
+                dst: mapId === 5 ? 0 : Number.POSITIVE_INFINITY // 5 is overworld
+            });
             for (const event of json.events ?? []) {
                 for (const page of event?.pages ?? []) {
                     for (const entry of page?.list ?? []) {
                         switch (entry?.code) {
-                            case 126:
-                                if (entry.parameters?.[0] === 1) {
-                                    console.log("Chair on", dataFile, event.x, event.y);
-                                }
-                                if (entry.parameters?.[0] === 2) {
-                                    console.log("Magic on", dataFile, event.x, event.y);
+                            case 126: // Add item
+                            case 127: // Add weapon
+                            case 128: // Add armor
+                                // Is positive and a constant
+                                if (entry.parameters[1] === 0 && entry.parameters[2] === 0) {
+                                    forMap[kinds[entry.code]].push({
+                                        id: event.id,
+                                        x: event.x,
+                                        y: event.y,
+                                        item: entry.parameters[0]
+                                    });
                                 }
                                 break;
-                            case 201:
+                            case 201: // Transfer
+                                // Only handle constant transfers
                                 if (entry.parameters?.[0] === 0 &&
                                     entry.parameters.slice(0, 4).every(x => Number.isFinite(x))) {
-                                    const sourceMapId = Number.parseInt(mapMatch[1]);
                                     const targetMapId = entry.parameters[1];
-                                    const transfersForTarget = mapTransfers[targetMapId] = mapTransfers[targetMapId] || {};
-                                    transfersForTarget[]
-                                    if (mapTransfers[targetMapId]) {
-
-                                    } else {
-                                        mapTransfers[targetMapId] = {
-                                            map: Number.parseInt(mapMatch[1]),
-                                            x: event.x,
-                                            y: event.y,
-                                            count: 1
-                                        };
+                                    const forTarget = forMap.transfers[targetMapId] || (forMap.transfers[targetMapId] = { x: 0, y: 0, count: new Set() });
+                                    if (!forTarget.count.has(event.id)) {
+                                        forTarget.x = (event.x + forTarget.x * forTarget.count.size) / (forTarget.count.size + 1);
+                                        forTarget.y = (event.y + forTarget.y * forTarget.count.size) / (forTarget.count.size + 1);
+                                        forTarget.count.add(event.id);
                                     }
-                                    console.log(
-                                        "Travel from", dataFile, event.x, event.y,
-                                        "to", entry.parameters?.[1], entry.parameters?.[2], entry.parameters?.[3])
                                 }
+                                break;
                         }
                     }
                 }
@@ -179,6 +192,8 @@ const sectionsByNameToLinesMD = sectionsByName =>
             json
             .flatMap(troop => troop?.pages ?? [])
             .forEach(readPageForLines);
+        } else if (dataFile === "CommonEvents.json") {
+            json.forEach(readPageForLines)
         }
 
         const newText = JSON.stringify(json, null, 2);
@@ -186,6 +201,46 @@ const sectionsByNameToLinesMD = sectionsByName =>
             console.log("Formatting", dataFile);
             await fs.writeFile("data/" + dataFile, newText);
         }
+    }
+
+    // Establish connections
+    const toCheck = Object.keys(mapInfos).map(x => Number.parseInt(x));
+    while (toCheck.length) {
+        const mapId = toCheck.reduce((minId, id) =>
+            mapInfos[minId].dst < mapInfos[id].dst ? minId : id);
+        toCheck.remove(mapId);
+        const mapInfo = mapInfos[mapId];
+        for (const otherMapId in mapInfo.transfers) {
+            const transfer = mapInfo.transfers[otherMapId];
+            const otherMapInfo = mapInfos[otherMapId];
+            const dst = mapInfo.dst + 1;
+            if (otherMapInfo.dst > dst) {
+                otherMapInfo.dst = dst;
+                otherMapInfo.through = { mapId, ...transfer };
+            }
+        }
+    }
+
+    // Establish paths to weapons/armors/items
+    const walkthrough = Object.fromEntries(Object.values(kinds).map(kind => [kind, []]));
+    for (let mapId in mapInfos) {
+        mapId = Number.parseInt(mapId);
+        const mapInfo = mapInfos[mapId];
+        for (const command in kinds) {
+            const kind = kinds[command];
+            const forKind = walkthrough[kind];
+            for (const item of mapInfo[kind]) {
+                const path = [[mapId, item.x, item.y]];
+                for (let through = mapInfo.through; through; through = mapInfos[through.mapId].through) {
+                    path.unshift([through.mapId, through.x, through.y]);
+                }
+                forKind.push({ item: item.item, eventId: item.id, mapId, path });
+            }
+        }
+    }
+    const newWalkthroughText = JSON.stringify(walkthrough, null, 2);
+    if (walkthroughText !== newWalkthroughText) {
+        await fs.writeFile("data/Walkthrough.json", newWalkthroughText);
     }
 
     const missingAudioFiles = [];

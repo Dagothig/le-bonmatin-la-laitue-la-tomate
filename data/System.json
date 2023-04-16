@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 82,
+  "editMapId": 12,
   "elements": [
     "",
     "Physical",
@@ -336,9 +336,9 @@
       "volume": 90
     }
   ],
-  "startMapId": 82,
-  "startX": 8,
-  "startY": 7,
+  "startMapId": 12,
+  "startX": 7,
+  "startY": 5,
   "switches": [
     "",
     "BONJOUR",
@@ -385,7 +385,8 @@
     "BALTHATHIG_SAINTE_DOREE",
     "BALTHATHIG_PORTE_USAGE",
     "BALTHATHIG_INTRO_ITEMS",
-    "ORACLE_KI_ORACLE"
+    "ORACLE_KI_ORACLE",
+    "EN_POUVOIR_PLUS"
   ],
   "terms": {
     "basic": [
@@ -599,7 +600,7 @@
     "BALTHATHIG_OBJ_PRIS",
     "ORACLE_QUESTION"
   ],
-  "versionId": 87150002,
+  "versionId": 50943729,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

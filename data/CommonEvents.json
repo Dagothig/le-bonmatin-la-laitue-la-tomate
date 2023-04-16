@@ -7311,5 +7311,74 @@
     "name": "Protolixir de Chair",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 22,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "Input.isPressed(\"cancel\") || TouchInput.isCancelled()"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          46,
+          46,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteEnPeutPlus"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Ça suffit j'en peux plus!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "En peut plus",
+    "switchId": 46,
+    "trigger": 2
   }
 ]

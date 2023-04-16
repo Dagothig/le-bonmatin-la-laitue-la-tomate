@@ -563,10 +563,14 @@ _ProtagonisteOracleEau2
 > Sans parler des problèmes de moisissures...
 
 _ProtagonisteYaDiff
-> Y'a une différence?
+> Y'a une différence entre le libre arbitre\
+> et son illusion?
 
 _ProtagonisteNoui
 > ... Noui.
+
+_ProtagonisteEnPeutPlus
+> Ça suffit j'en peux plus!
 
 ### Vieux
 
@@ -784,9 +788,10 @@ _OraclePoserVosQuestions
 > questions je suppose.
 
 _OracleFinfinaud
-> Vous vous pensez vraiment intelligent hein?\
-> \
-> Je suis oracle, pas voyante.
+> Si vous êtes pour faire le finfinaud, y'a\
+> la porte drette derrière vous.\
+> Moi je vous donne la chance de croire que\
+> vous avez le libre arbitre.
 
 _OracleSavoirIntro
 > Alors qu'est-ce que vous voudriez \Shakesavoir?
@@ -813,6 +818,18 @@ _OracleVoitVoit
 
 _OracleQuestionRepondue
 > Bon ça répond à votre question?
+
+_OracleDoubibi
+> Doubibi
+
+_OracleZwip
+> Zwip
+
+_OracleTwado
+> Twado
+
+_OracleLaPorte
+> Je vous avais averti.
 
 ### Windo
 

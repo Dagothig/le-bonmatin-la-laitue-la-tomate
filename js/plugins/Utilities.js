@@ -304,6 +304,8 @@ function eval_fn_expr(expr, args) {
         }
     }
 
+    DataManager._databaseFiles.push({ name: "$dataWalkthrough", src: "Walkthrough.json" });
+
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
         original_onLoad.call(DataManager, object);
@@ -603,6 +605,18 @@ function eval_fn_expr(expr, args) {
                 const color = args[0] || defaultShadowColor;
                 for (let i = 0; i < color.length; i++)
                     window.$tileShadowColor[i] = color[i];
+            } else if (command === "fadein") {
+                const fadeSpeed = Number.parseFloat(args[0]) || this.fadeSpeed();
+                if (!$gameMessage.isBusy()) {
+                    $gameScreen.startFadeIn(fadeSpeed);
+                    this.wait(this.fadeSpeed());
+                }
+            } else if (command === "fadeout") {
+                const fadeSpeed = Number.parseFloat(args[0]) || this.fadeSpeed();
+                if (!$gameMessage.isBusy()) {
+                    $gameScreen.startFadeOut(fadeSpeed);
+                    this.wait(this.fadeSpeed());
+                }
             }
         },
         function jumpToLabel(_, labelName) {
@@ -3175,5 +3189,35 @@ Input.keyMapper[68] = "right"; // d
         },
         function close() {
             this.openness = 0;
+        });
+})();
+
+// Track visited zones
+(function () {
+    window.$visitedMaps = {};
+
+    const oracleMissableZones = [56, 68, 70, 80];
+
+    override(Game_Map.prototype,
+        function setup(setup, mapId) {
+            setup.call(this, mapId);
+            if (!$visitedMaps[mapId])
+                $visitedMaps[mapId] = true;
+            // If you are visiting the oracle, we assume you visited all previous zones for historic
+            // purposes.
+            // Zones 80, 81, and 82
+            if (mapId === 82)
+                for (let i = 0; i < 82; i++)
+                    if (!oracleMissableZones.includes(i))
+                        $visitedMaps[i] = true;
+        },
+        function makeSaveContents(makeSaveContents) {
+            const contents = makeSaveContents.call(this);
+            contents.visitedMaps = $visitedMaps;
+            return contents;
+        },
+        function extractSaveContents(extractSaveContents, contents) {
+            extractSaveContents.call(this, contents);
+            $visitedMaps = contents.visitedMaps || {};
         });
 })();
