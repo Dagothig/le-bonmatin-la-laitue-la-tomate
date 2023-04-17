@@ -1526,6 +1526,24 @@ _ProtagonisteBoisProtolixir
 _ProtagonisteEnPeutPlus
 > Ça suffit j'en peux plus!
 
+_ProtagonistePapaBonjourette
+> Oh. Ton père est au Temple du Bonjour?\
+> \
+> Hum, c'est à dire...
+
+_ProtagonisteMentirPleineFace
+> \}Comment peut-tu lui mentir comme ça en pleine face!?\{
+
+_ProtagonisteRouspetteWwwelchior
+> \}De quoi tu parles "quête ou mouvement"? Il suffise qu'elle décide de visiter\
+> son père! Ou même que n'importe qui visite le Temple en fait...\{
+
+_ProtagonisteBonjouretteToutVa
+> Ouiiiiii!\
+> Tout vas très bien.\
+> Tout le monde au Temple pète la santé.\
+> Demain ils sont ouvert pour le Bonjour!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -2954,6 +2972,21 @@ _WwwelchiorDetahDangereux
 > Justement! Devines pourquoi le Detah est\
 > dangereux!
 
+_WwwelchiorBonsoirBonjourette
+> Ah c'est vous la fameuse Bonjourette!\
+> \
+> Oui ton père nous a beaucoup parlé de toi\
+> et il se repose bien les yeux en ce moment!
+
+_WwwelchiorRefuseBonjourette
+> \}Écoutes comment voulais que je sache qu'elle existe pour vrai?\{\
+> \
+> \}Si y'a aucune quête ou mouvement rattachée à elle, lui mentir c'est la plus\
+> grande gentillesse qu'on puisse lui faire en ce moment!\{
+
+_WwwelchiorFaisMoiConfiance
+> \}Fais moi confiance! Y'a pas de problème.\{
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -4322,3 +4355,27 @@ _DetahVaVousBriser
 
 _DetahHehe
 > He he...
+
+### Bonjourette
+
+_BonjouretteBonsoir
+> Bonsoir!\
+> Oh que je m'ennuie de mon papa...\
+> Il fait partie du Temple du... aaaah...\
+> Vous savez le Temple près du Village?
+
+_BonjouretteAventurier
+> Vous ressemblez à un Aventurier!\
+> Si vous passez par là vous allez revenir me\
+> donner des nouvelles, oui?
+
+_BonjouretteMerciNouvelles
+> Oh? C'est drôlement spécifique a dire.\
+> Mais merci pour les nouvelles!
+
+_BonjouretteCaVa
+> Ça va messieurs?
+
+_BonjouretteHatePapa
+> Si vous le dites.\
+> J'ai tellement hâte de revoir mon papa!
