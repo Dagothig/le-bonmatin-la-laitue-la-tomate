@@ -169,6 +169,9 @@ _NarrateurOraclePartieForet
 > Si vous avez besoin du futur maintenant, je suis partie\
 > dans la forêt.
 
+_NarrateurCouverts
+> Des couverts.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1244,3 +1247,14 @@ _BonjouretteCaVa
 _BonjouretteHatePapa
 > Si vous le dites.\
 > J'ai tellement hâte de revoir mon papa!
+
+### Merebonjourette
+
+_MerebonjouretteBonsoir
+> Bonsoir. Ça aurait été bien de cogner avant\
+> de rentrer.\
+> Enfin, pauvre Bonjourette qui attend encore\
+> la prochaine visite de son père...
+
+_MerebonjouretteVousPensezFaireQuoi
+> Vous pensez faire quoi vous là?

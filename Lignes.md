@@ -2431,6 +2431,9 @@ _NarrateurAdrenalineStamina
 > attaquant ou en vous défendant.\
 > Mais se défendre est bien plus reposant.
 
+_NarrateurCouverts
+> Des couverts.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -4379,3 +4382,14 @@ _BonjouretteCaVa
 _BonjouretteHatePapa
 > Si vous le dites.\
 > J'ai tellement hâte de revoir mon papa!
+
+### Merebonjourette
+
+_MerebonjouretteBonsoir
+> Bonsoir. Ça aurait été bien de cogner avant\
+> de rentrer.\
+> Enfin, pauvre Bonjourette qui attend encore\
+> la prochaine visite de son père...
+
+_MerebonjouretteVousPensezFaireQuoi
+> Vous pensez faire quoi vous là?
