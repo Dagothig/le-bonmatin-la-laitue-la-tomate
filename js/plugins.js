@@ -9,7 +9,7 @@ var $plugins =
 {"name":"TitleCommandPosition","status":true,"description":"Changes the position of the title command window.","parameters":{"Offset X":"-165","Offset Y":"15","Width":"320","Background":"2"}},
 {"name":"Irina_PerformanceUpgrade","status":false,"description":"<PerformanceUpgrade> for RPG Maker MV version 1.6.2.","parameters":{"":"","AnimationHue":"true","BlurMenuBackground":"true","BlurIntensity":"0.5","CacheTextColors":"true","EnemyHue":"true","PixiContainerFlush":"true","SkipUnnecessarySnapshots":"true"}},
 {"name":"AudioStreaming","status":true,"description":"Load audio faster and use only ogg files.","parameters":{"mode":"10","deleteM4a":"false"}},
-{"name":"Utilities","status":true,"description":"","parameters":{}},
 {"name":"SRD_ShakingText","status":true,"description":"Allows you to add Shaking Text to your Show Text events!","parameters":{"Reset Shaking per Box":"true","Default Shaking Power":"$.randomNum(0.2, 0.5)","Default Shaking Max":"1","Default Wave Power":"0.5","Default Wave Max":"4","Default Slide Power":"0.5","Default Slide Max":"4","Copy Outline":"true"}},
-{"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}}
+{"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}},
+{"name":"Utilities","status":true,"description":"","parameters":{}}
 ];

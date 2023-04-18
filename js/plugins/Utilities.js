@@ -2239,13 +2239,13 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             this._animationCount = 0;
         },
         function maxPattern() {
-            return this._patternType.length;
+            return (this._patternType || BASE_PATTERN_TYPE).length;
         },
         function pattern() {
-            return this._patternType[this._pattern];
+            return (this._patternType || BASE_PATTERN_TYPE)[this._pattern || 0];
         },
         function resetPattern() {
-            return this._pattern = this._patternReset;
+            return this._pattern = this._patternReset || 0;
         },
         function setPatternType(_, patternType) {
             this._patternType = patternType;
@@ -2255,7 +2255,7 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             return realMoveSpeed.call(this) + 0.25;
         },
         function animationWait() {
-            return (9 - this.realMoveSpeed()) * this._animationWaitMultiplier;
+            return (9 - this.realMoveSpeed()) * (this._animationWaitMultiplier || 2);
         },
         function dstSE(_, se) {
             aaa_se(this.eventId(), se);
@@ -2483,7 +2483,9 @@ Input.keyMapper[68] = "right"; // d
             fadeOutForTransfer.call(this);
             lastFadeout = CROSSFADE;
             this._fadeDuration = -1;
-            this._fadeSprite.opacity = 0;
+            if (this._fadeSprite) {
+                this._fadeSprite.opacity = 0;
+            }
         });
 })();
 
