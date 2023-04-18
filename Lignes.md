@@ -246,6 +246,9 @@ Beep4
 Cossin
 > Cossin
 
+CoffeeBland
+> CoffeeBland
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1544,6 +1547,17 @@ _ProtagonisteBonjouretteToutVa
 > Tout le monde au Temple pète la santé.\
 > Demain ils sont ouvert pour le Bonjour!
 
+_ProtagonisteTheChaud
+> Ouch, le thé est un peu chaud.
+
+_ProtagonisteTrompeMaison
+> Nooooon! Jamais je ferais ça. Je m'étais\
+> seulement... trompé de maison.
+
+_ProtagonistePetitRideau
+> C'est une blague? C'est un petit rideau de\
+> rien du tout!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -1652,6 +1666,10 @@ _PecheurHuuuh
 
 _PecheurAhBenCaline
 > Ah ben caline!
+
+_PecheurPoissonFrais
+> Poisson frais!\
+> Nous le pêchons, et vous le mangez!
 
 ### Narrateur
 
@@ -2433,6 +2451,12 @@ _NarrateurAdrenalineStamina
 
 _NarrateurCouverts
 > Des couverts.
+
+_NarrateurAssortimentLegumes
+> Un assortiment varié de légumes.
+
+_NarrateurBoiteMoules
+> Des moules.
 
 ### Bucheron
 
@@ -4393,3 +4417,23 @@ _MerebonjouretteBonsoir
 
 _MerebonjouretteVousPensezFaireQuoi
 > Vous pensez faire quoi vous là?
+
+### Mrtheun
+
+_MrtheunHeille
+> Heille mon thé!
+
+_MrtheunBonsoir
+> Bonsoir. Vraiment une belle soirée pour\
+> profiter de l'air!
+
+### Mrthedeux
+
+_MrthedeuxBonsoir
+> Bonsoir.
+
+### Inconnu
+
+_InconnuSortez
+> Woh vous allez vraiment rentrer chez un\
+> inconnu comme ça!?

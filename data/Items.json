@@ -340,7 +340,7 @@
     "name": "Victuailles",
     "note": "",
     "occasion": 0,
-    "price": 0,
+    "price": 4,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -657,6 +657,39 @@
     "price": 200,
     "repeats": 1,
     "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 23,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "10",
+      "type": 3,
+      "variance": 0
+    },
+    "description": "Du bon poisson frais!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 260,
+    "itypeId": 1,
+    "name": "Moûles",
+    "note": "",
+    "occasion": 0,
+    "price": 5,
+    "repeats": 1,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

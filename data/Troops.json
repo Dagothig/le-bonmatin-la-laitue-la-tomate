@@ -5150,5 +5150,117 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 14,
+    "members": [
+      {
+        "enemyId": 17,
+        "x": 331,
+        "y": 444,
+        "hidden": false
+      },
+      {
+        "enemyId": 18,
+        "x": 394,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 19,
+        "x": 256,
+        "y": 412,
+        "hidden": false
+      }
+    ],
+    "name": "Bandits",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "members": [
+      {
+        "enemyId": 17,
+        "x": 383,
+        "y": 387,
+        "hidden": false
+      },
+      {
+        "enemyId": 18,
+        "x": 302,
+        "y": 343,
+        "hidden": false
+      },
+      {
+        "enemyId": 19,
+        "x": 244,
+        "y": 424,
+        "hidden": false
+      },
+      {
+        "enemyId": 20,
+        "x": 376,
+        "y": 444,
+        "hidden": false
+      },
+      {
+        "enemyId": 21,
+        "x": 163,
+        "y": 409,
+        "hidden": false
+      }
+    ],
+    "name": "Bandits de Grand Chemin",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

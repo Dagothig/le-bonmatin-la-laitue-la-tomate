@@ -2,6 +2,10 @@
 
 ### Pecheur
 
+_PecheurPoissonFrais
+> Poisson frais!\
+> Nous le pêchons, et vous le mangez!
+
 ### Narrateur
 
 _NarrateurProtolixir
@@ -171,6 +175,12 @@ _NarrateurOraclePartieForet
 
 _NarrateurCouverts
 > Des couverts.
+
+_NarrateurAssortimentLegumes
+> Un assortiment varié de légumes.
+
+_NarrateurBoiteMoules
+> Des moules.
 
 ### Protagoniste
 
@@ -592,6 +602,17 @@ _ProtagonisteBonjouretteToutVa
 > Tout vas très bien.\
 > Tout le monde au Temple pète la santé.\
 > Demain ils sont ouvert pour le Bonjour!
+
+_ProtagonisteTheChaud
+> Ouch, le thé est un peu chaud.
+
+_ProtagonisteTrompeMaison
+> Nooooon! Jamais je ferais ça. Je m'étais\
+> seulement... trompé de maison.
+
+_ProtagonistePetitRideau
+> C'est une blague? C'est un petit rideau de\
+> rien du tout!
 
 ### Vieux
 
@@ -1258,3 +1279,23 @@ _MerebonjouretteBonsoir
 
 _MerebonjouretteVousPensezFaireQuoi
 > Vous pensez faire quoi vous là?
+
+### Mrtheun
+
+_MrtheunHeille
+> Heille mon thé!
+
+_MrtheunBonsoir
+> Bonsoir. Vraiment une belle soirée pour\
+> profiter de l'air!
+
+### Mrthedeux
+
+_MrthedeuxBonsoir
+> Bonsoir.
+
+### Inconnu
+
+_InconnuSortez
+> Woh vous allez vraiment rentrer chez un\
+> inconnu comme ça!?

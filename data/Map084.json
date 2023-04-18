@@ -1387,8 +1387,8 @@
             "tileId": 0,
             "characterName": "!Door1",
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
+            "pattern": 1,
+            "characterIndex": 5
           },
           "list": [
             {
