@@ -18586,7 +18586,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Ouch, le thé est un peu chaud."
+                "Ouch, c'est du thé chaud!"
               ]
             },
             {
@@ -18615,7 +18615,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Heille mon thé!"
+                "Heille mon thé! Vous savez pas c'est quoi"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "la vapeur?"
               ]
             },
             {

@@ -5156,31 +5156,43 @@
     "members": [
       {
         "enemyId": 17,
-        "x": 331,
-        "y": 444,
-        "hidden": false
+        "x": 325,
+        "y": 411,
+        "hidden": true
       },
       {
         "enemyId": 18,
         "x": 394,
-        "y": 385,
-        "hidden": false
+        "y": 340,
+        "hidden": true
       },
       {
         "enemyId": 19,
-        "x": 256,
-        "y": 412,
+        "x": 247,
+        "y": 364,
+        "hidden": true
+      },
+      {
+        "enemyId": 14,
+        "x": 408,
+        "y": 436,
         "hidden": false
+      },
+      {
+        "enemyId": 22,
+        "x": 267,
+        "y": 310,
+        "hidden": true
       }
     ],
     "name": "Bandits",
     "pages": [
       {
         "conditions": {
-          "actorHp": 50,
+          "actorHp": 100,
           "actorId": 1,
           "actorValid": false,
-          "enemyHp": 50,
+          "enemyHp": 100,
           "enemyIndex": 0,
           "enemyValid": false,
           "switchId": 1,
@@ -5188,9 +5200,259 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 117,
+            "indent": 0,
+            "parameters": [
+              23
+            ]
+          },
+          {
+            "code": 117,
+            "indent": 0,
+            "parameters": [
+              23
+            ]
+          },
+          {
+            "code": 117,
+            "indent": 0,
+            "parameters": [
+              23
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _TournoyeurBandisGrandChemin"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Bonsoir!"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "On est des bandits de grand chemin, et "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "vous allez nous donner votre argent ou "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "votre vie!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonistePeutOffrir"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Erf, je peux vous offrir ça:"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Coin",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _TournoyeurEpingleCheveux"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Une épingle à cheveux? "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Vous avez même pas les cheveux longs!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteDejaVuBandits"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "J'ai comme un déjà vu..."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              ""
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Vous êtes drôle! C'est plus comme un petit"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "chemin champêtre ici. Grand chemin mon cul."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _TournoyeurVotreVie"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Regardez-moi ça le finfinaud! Je vois que"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "vous avez choisi votre vie, donc."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -5206,33 +5468,39 @@
     "members": [
       {
         "enemyId": 17,
-        "x": 383,
-        "y": 387,
-        "hidden": false
+        "x": 176,
+        "y": 408,
+        "hidden": true
       },
       {
         "enemyId": 18,
-        "x": 302,
-        "y": 343,
-        "hidden": false
+        "x": 419,
+        "y": 310,
+        "hidden": true
       },
       {
         "enemyId": 19,
-        "x": 244,
-        "y": 424,
-        "hidden": false
+        "x": 316,
+        "y": 339,
+        "hidden": true
       },
       {
         "enemyId": 20,
-        "x": 376,
-        "y": 444,
+        "x": 381,
+        "y": 423,
         "hidden": false
       },
       {
         "enemyId": 21,
-        "x": 163,
-        "y": 409,
+        "x": 228,
+        "y": 330,
         "hidden": false
+      },
+      {
+        "enemyId": 22,
+        "x": 87,
+        "y": 361,
+        "hidden": true
       }
     ],
     "name": "Bandits de Grand Chemin",
@@ -5250,9 +5518,417 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              3
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              4,
+              0,
+              3
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 3,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
           "turnValid": false
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              4,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              12,
+              0,
+              20,
+              1
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 2,
+            "parameters": [
+              "se _JeanNonJacquesPasEncore"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 2,
+            "parameters": [
+              "Actor1",
+              4,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 2,
+            "parameters": [
+              "Non Jacques! Pas encore!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 1,
+            "parameters": [
+              "se _JeanFinalementReve"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Actor1",
+              4,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "On avait finalement réalisé notre rêve de"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "devenir bandits de grand chemin! De devenir"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "les Méchants!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 1,
+            "parameters": [
+              "se _JacquesSeulRegret"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Evil",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Mon seul regret..."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              ""
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Est d'avoir été floué par ce "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Chevalier Noir!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 4,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              12,
+              0,
+              20,
+              1
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 2,
+            "parameters": [
+              "se _JacquesNonJeanMechants"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 2,
+            "parameters": [
+              "Evil",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 2,
+            "parameters": [
+              "Jean! Tu peux pas mourrir encore, on était"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 2,
+            "parameters": [
+              "sensé être devenus les Méchants!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 1,
+            "parameters": [
+              "se _JeanPeripetie"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Actor1",
+              4,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Je... je crois qu'on est seulement une"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "péripétie..."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 1,
+            "parameters": [
+              "se _JacquesAssurerChevalierNoir"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Evil",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Impossible! Pourtant on s'était fait "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "assurer par le Chevalier Noir que..."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              ""
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "Oh."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              4,
+              1,
+              3
+            ]
+          },
           {
             "code": 0,
             "indent": 0,

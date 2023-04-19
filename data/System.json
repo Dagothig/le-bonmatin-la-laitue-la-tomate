@@ -97,8 +97,8 @@
     "pitch": 100,
     "volume": 100
   },
-  "battleback1Name": "Sky",
-  "battleback2Name": "Sky",
+  "battleback1Name": "Meadow",
+  "battleback2Name": "Forest",
   "battlerHue": 0,
   "battlerName": "Actor3_1",
   "boat": {
@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 83,
+  "editMapId": 84,
   "elements": [
     "",
     "Physical",
@@ -337,7 +337,7 @@
     }
   ],
   "startMapId": 12,
-  "startX": 7,
+  "startX": 8,
   "startY": 5,
   "switches": [
     "",
@@ -386,7 +386,9 @@
     "BALTHATHIG_PORTE_USAGE",
     "BALTHATHIG_INTRO_ITEMS",
     "ORACLE_KI_ORACLE",
-    "EN_POUVOIR_PLUS"
+    "EN_POUVOIR_PLUS",
+    "SAIGNE_TOUCHE_PIPI",
+    "JACQUES_NO_MERRY_MEN"
   ],
   "terms": {
     "basic": [
@@ -470,7 +472,7 @@
       "enemyNoHit": "Raté! %1 n'a aucune douleur!",
       "enemyRecovery": "%1 a repris %3 de %2!",
       "escapeFailure": "La fuite a échouée!",
-      "escapeStart": "%1 a commencé à s'enfuir!",
+      "escapeStart": "%1 s'enfuient!",
       "evasion": "%1 a esquivé!",
       "expNext": "To Next %1",
       "expTotal": "Current %1",
@@ -499,7 +501,7 @@
     {
       "actorId": 1,
       "equips": [
-        3,
+        1,
         1,
         8,
         10,
@@ -522,7 +524,7 @@
       "actorId": 5,
       "equips": [
         2,
-        0,
+        1,
         0,
         0,
         6
@@ -533,7 +535,7 @@
       "actorId": 6,
       "equips": [
         6,
-        0,
+        1,
         0,
         0,
         0
@@ -541,7 +543,7 @@
       "level": 1
     }
   ],
-  "testTroopId": 11,
+  "testTroopId": 7,
   "title1Name": "BMLT",
   "title2Name": "",
   "titleBgm": {
@@ -599,9 +601,9 @@
     "BALTHATHIG_OBJ_DISPO",
     "BALTHATHIG_OBJ_PRIS",
     "ORACLE_QUESTION",
-    "ENCOUNTER_PREV_STEPS"
+    ""
   ],
-  "versionId": 36809492,
+  "versionId": 44770653,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

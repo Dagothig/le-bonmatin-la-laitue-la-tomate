@@ -245,11 +245,13 @@ function eval_fn_expr(expr, args) {
     var targettedRegexp = /\<<aaa_targetted ([\s\S]*?)\>>/;
     var applyRegexp = /\<<aaa_apply ([\s\S]*?)\>>/;
     var removedRegexp = /\<<aaa_removed ([\s\S]*?)\>>/;
+    var eotRegexp = /\<<aaa_eot ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var actionsRegexp = /\<<aaa_actions ([\s\S]*?)\>>/;
     var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
+    var escapeRegexp = /\<<aaa_escape ([\s\S]*?)\>>/;
     var restrictedRegexp = /\<<aaa_on_restrict ([\s\S]*?)\>>/;
     var tilingRegexp = /\<<aaa_tiling *(\d+)? *(\d+)? *(\[[\d+\,]*\d+\])? *(\d+|\[[\d+\,]*\d+\])?\>>/;
     var battlerIconRegexp = /\<<aaa_icon *(\d+)? *(\d+)? *(\d+)? *(\d+)? *([-_/\w]+)?\>>/;
@@ -354,6 +356,8 @@ function eval_fn_expr(expr, args) {
                     state._customApply = applyMatch && applyMatch[1] && eval_fn_expr(applyMatch[1], "action, target");
                     const removedMatch = note.match(removedRegexp);
                     state._customRemoved = removedMatch && removedMatch[1] && eval_fn_expr(removedMatch[1], "affected");
+                    const eotMatch = note.match(eotRegexp);
+                    state._customEOT = eotMatch && eotMatch[1] && eval_fn_expr(eotMatch[1]);
                     const overlayMatch = note.match(overlayRegexp);
                     overlayMatch && (state.overlay = parseInt(overlayMatch[1]) || 0);
                 }
@@ -413,6 +417,8 @@ function eval_fn_expr(expr, args) {
                     enemy._customSetup = setupMatch && setupMatch[1] && eval_fn_expr(setupMatch[1], "enemyId, x, y");
                     const deathMatch = note.match(deathRegexp);
                     enemy._customDeath = deathMatch && deathMatch[1] && eval_fn_expr(deathMatch[1]);
+                    const escapeMatch = note.match(escapeRegexp);
+                    enemy._customEscape = escapeMatch && escapeMatch[1] && eval_fn_expr(escapeMatch[1]);
                     const tilingMatch = note.match(tilingRegexp);
                     if (tilingMatch) {
                         enemy.tw = parseInt(tilingMatch[1]) || 0;
@@ -645,11 +651,25 @@ function eval_fn_expr(expr, args) {
             this._moves = [];
         },
         function dequeueMove() {
-            while (!this.isMoving() && this._moves.length) {
+            while (!(this._movementDuration > 0) &&
+                (this._moves.length || (this._repeatingMoves && this._repeatingMoves.length))) {
                 var nextMove = this._moves.shift();
+                if (!nextMove && this._repeatingMoves && this._repeatingMoves.length) {
+                    if (!Number.isFinite(this._repeatingMoveIdx)) {
+                        this._repeatingMoveIdx = 0;
+                    } else {
+                        this._repeatingMoveIdx = (this._repeatingMoveIdx + 1) % this._repeatingMoves.length;
+                    }
+                    nextMove = this._repeatingMoves[this._repeatingMoveIdx].slice();
+                } else {
+                    delete this._repeatingMoveIdx;
+                }
                 var type = nextMove.shift();
                 this[type].apply(this, nextMove);
             }
+        },
+        function isMoving(isMoving) {
+            return isMoving.call(this) && !Number.isFinite(this._repeatingMoveIdx);
         },
         function pushMove(_, args) {
             this._moves.push(args);
@@ -658,6 +678,10 @@ function eval_fn_expr(expr, args) {
         function pushMoves(_, moveses) {
             for (const move of moveses)
                 this._moves.push(move);
+            this.dequeueMove();
+        },
+        function setRepeatingMoves(_, moveses) {
+            this._repeatingMoves = moveses;
             this.dequeueMove();
         },
         function onMoveEnd(onMoveEnd) {
@@ -786,10 +810,11 @@ function eval_fn_expr(expr, args) {
             this._stateIconSprite.y /= this.scale.y;
         });
 
-    var original_sceneBattleStart = Scene_Battle.prototype.start;
-    Scene_Battle.prototype.start = function () {
-        original_sceneBattleStart.call(this);
-    };
+    override(Scene_Battle.prototype,
+        function terminate(terminate) {
+            terminate.call(this);
+            window.$btl = {};
+        });
 
     var animRegexp = /\<<aaa_anim (.*)\>>/;
 
@@ -829,6 +854,10 @@ function eval_fn_expr(expr, args) {
         function pushMoves(_, moveses) {
             const sprite = SceneManager.battlerSprite(this);
             sprite && sprite.pushMoves(moveses);
+        },
+        function setRepeatingMoves(_, moveses) {
+            const sprite = SceneManager.battlerSprite(this);
+            sprite && sprite.setRepeatingMoves(moveses);
         },
         function tpRate(tpRate) {
             return this.maxTp() > 0 ? tpRate.call(this) : 0;
@@ -893,6 +922,11 @@ function eval_fn_expr(expr, args) {
             var enemy = this.enemy();
             enemy._customDeath && enemy._customDeath.call(this);
         },
+        function escape(escape) {
+            escape.call(this);
+            var enemy = this.enemy();
+            enemy._customEscape && enemy._customEscape.call(this);
+        },
         function selectAction(selectAction, actionList, ratingZero) {
             var enemy = this.enemy();
             return (
@@ -909,6 +943,28 @@ function eval_fn_expr(expr, args) {
             } else {
                 return selectAllActions.call(this, actionList);
             }
+        },
+        function gogoGadgetActions(_, actionList) {
+            let tp = this.tp;
+            let mp = this.mp;
+            const actions = [];
+            for (let i = 0 ; i < this.numActions(); i++) {
+                actionList = actionList.filter(a =>
+                    this.meetsCondition(a) &&
+                    tp >= this.skillTpCost($dataSkills[a.skillId]) &&
+                    mp >= this.skillMpCost($dataSkills[a.skillId]));
+                const ratingMax = actionList.reduce((n, a) => Math.max(n, a.rating), 0);
+                const ratingZero = ratingMax - 3;
+                actionList = actionList.filter(a => a.rating > ratingZero);
+                const action = this.selectAction(actionList, ratingZero);
+                if (action) {
+                    const skill = $dataSkills[action.skillId];
+                    tp += Math.floor(skill.tpGain * this.tcr) - this.skillTpCost(skill);
+                    mp -= this.skillMpCost(skill);
+                    actions.push(action);
+                }
+            }
+            return actions;
         },
         function onRestrict(onRestrict) {
             onRestrict.call(this);
@@ -1225,7 +1281,14 @@ function eval_fn_expr(expr, args) {
     Game_Action.prototype.targetsForOpponents = function () {
         var item = this.item();
         var customTargets = item._customTargets && item._customTargets.call(this);
-        return customTargets || originalTargetsForOpponents.call(this);
+        return (customTargets && customTargets.slice()) || originalTargetsForOpponents.call(this);
+    }
+
+    var originalTargetsForFriends = Game_Action.prototype.targetsForFriends;
+    Game_Action.prototype.targetsForFriends = function () {
+        var item = this.item();
+        var customTargets = item._customTargets && item._customTargets.call(this);
+        return (customTargets && customTargets.slice()) || originalTargetsForFriends.call(this);
     }
 
     var original_actionApply = Game_Action.prototype.apply;
@@ -1414,7 +1477,7 @@ function eval_fn_expr(expr, args) {
                 this._overlayCount = 60;
             }
         });
-    override(Sprite_StateIcon.prototype,
+    /*override(Sprite_StateIcon.prototype,
         function update(update) {
             update.call(this);
             let hue = this._hue || 0;
@@ -1424,7 +1487,7 @@ function eval_fn_expr(expr, args) {
                 this.updateFrame();
                 this._hue = battlerHue;
             }
-        });
+        });*/
 
     override(BattleManager,
         function makeEscapeRatio() {
@@ -1457,15 +1520,21 @@ function eval_fn_expr(expr, args) {
     }
 
     const ding = { name: "Ding", volume: 90, pitch: 100 };
-    var original_displayDamage = Window_BattleLog.prototype.displayDamage;
-    Window_BattleLog.prototype.displayDamage = function (target) {
+    const crit = { name: "Bell3", volume: 90, pitch: 100 };
 
-        if (target.result().blocked) {
-            AudioManager.playSe(ding);
-        }
-
-        original_displayDamage.call(this, target);
-    };
+    override(Window_BattleLog.prototype,
+        function displayDamage(displayDamage, target) {
+            if (target.result().blocked) {
+                AudioManager.playSe(ding);
+            }
+            displayDamage.call(this, target);
+        },
+        function displayCritical(displayCritical, target) {
+            if (target.result().critical) {
+                AudioManager.playSe(crit);
+            }
+            displayCritical.call(this, target);
+        })
 })();
 
 // Display target in log
@@ -1482,7 +1551,7 @@ function eval_fn_expr(expr, args) {
     var original_battleLogDisplayAction = Window_BattleLog.prototype.displayAction;
     Window_BattleLog.prototype.displayAction = function (subject, item, targets) {
         if (DataManager.isSkill(item)) {
-            var target = targets.map(t => t.name()).join(", ");
+            var target = targets.map(t => t && t.name()).join(", ");
             if (item.message1) {
                 this.push('addText', subject.name() + item.message1.format(item.name, target));
             }
@@ -1721,10 +1790,12 @@ function eval_fn_expr(expr, args) {
                 chance *= this.subject().attackStatesRate(stateId);
                 chance *= this.lukEffectRate(target);
                 if (Math.random() < chance) {
-                    var state = $dataStates[effect.dataId];
-                    state._customApply && state._customApply(this, target);
-                    target.addState(stateId);
-                    this.makeSuccess(target);
+                    var state = $dataStates[stateId];
+                    const res = state._customApply ? state._customApply(this, target) : undefined;
+                    if (res || res === undefined) {
+                        target.addState(stateId);
+                        this.makeSuccess(target);
+                    }
                 }
             }.bind(this), target);
         },
@@ -1736,9 +1807,11 @@ function eval_fn_expr(expr, args) {
             }
             if (Math.random() < chance) {
                 var state = $dataStates[effect.dataId];
-                state._customApply && state._customApply(this, target);
-                target.addState(effect.dataId);
-                this.makeSuccess(target);
+                const res = state._customApply ? state._customApply(this, target) : undefined;
+                if (res || res === undefined) {
+                    target.addState(effect.dataId);
+                    this.makeSuccess(target);
+                }
             }
         });
 
@@ -1751,17 +1824,25 @@ function eval_fn_expr(expr, args) {
                 state._customRemoved && state._customRemoved(this);
             }
         },
-        function die(die) {
-            for (const state of this.states()) {
-                state._customRemoved && state._customRemoved(this);
+        function clearStates(clearStates) {
+            if (this._states) {
+                for (const state of this.states()) {
+                    state._customRemoved && state._customRemoved(this);
+                }
             }
-            die.call(this);
+            clearStates.call(this);
         },
         function performActionStart(performActionStart, action) {
             performActionStart.call(this, action);
             var item = action.item();
             if (item._customPerformActionStart) {
                 item._customPerformActionStart.call(action, this);
+            }
+        },
+        function onTurnEnd(regenerateAll) {
+            regenerateAll.call(this);
+            for (const state of this.states()) {
+                state._customEOT && state._customEOT.call(this);
             }
         },
         function chargeTpByDamage() { });
@@ -2761,7 +2842,8 @@ Input.keyMapper[68] = "right"; // d
         // Fuck silent tp
         function gainSilentTp(_, value) {
             this.gainTp(value);
-        })
+        },
+        function initTp() {});
 
     override(Game_Action.prototype,
         function apply(apply, target) {
@@ -3222,4 +3304,9 @@ Input.keyMapper[68] = "right"; // d
             extractSaveContents.call(this, contents);
             $visitedMaps = contents.visitedMaps || {};
         });
+})();
+
+// Smaller overworld sprites
+(function () {
+
 })();

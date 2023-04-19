@@ -1548,7 +1548,7 @@ _ProtagonisteBonjouretteToutVa
 > Demain ils sont ouvert pour le Bonjour!
 
 _ProtagonisteTheChaud
-> Ouch, le thé est un peu chaud.
+> Ouch, c'est du thé chaud!
 
 _ProtagonisteTrompeMaison
 > Nooooon! Jamais je ferais ça. Je m'étais\
@@ -1557,6 +1557,43 @@ _ProtagonisteTrompeMaison
 _ProtagonistePetitRideau
 > C'est une blague? C'est un petit rideau de\
 > rien du tout!
+
+_ProtagonisteTuSaigne
+> Ah mais tu saignes!
+
+_ProtagonistePeutOffrir
+> Erf, je peux vous offrir ça:
+
+_ProtagonisteDejaVuBandits
+> J'ai comme un déjà vu...\
+> \
+> Vous êtes drôle! C'est plus comme un petit\
+> chemin champêtre ici. Grand chemin mon cul.
+
+_ProtagonisteNoteParTerre
+> Ah il y a une note par terre!
+
+_ProtagonisteBanditsProvenance
+> Bon ok, ça nous dit d'où y viennent je\
+> suppose?\
+> Mais genre... quel boisé? Va falloir tout\
+> les vérifier c'est ça?
+
+_ProtagonisteJeanJacquesMorts1
+> Jean-Jacques? Y sont pas morts ces deux-là?
+
+_ProtagonisteJeanJacquesMorts2
+> Je sais pas... c'était pas le genre de\
+> types qu'y ont un philactère dans la poche\
+> tu sais?
+
+_ProtagonisteJeanJacquesMorts3
+> Toi t'as l'air d'avoir lu le Repositoire\
+> des Textes Sacrés...
+
+_ProtagonisteBanditsProvenance2
+> Parfait, j'adore ça quand vous avez tous\
+> ce beau regard vide.
 
 ### Rip
 
@@ -2458,6 +2495,24 @@ _NarrateurAssortimentLegumes
 _NarrateurBoiteMoules
 > Des moules.
 
+_Narrateur100g
+> 100 pièces d'or!
+
+_NarrateurNoteBandits1
+> La note lit:\
+> VOTRE VIE MANQUE DE PIQUANT?\
+> VOUS TROUVEZ QUE VOUS AVEZ TROP D'EMPATHIE POUR LE\
+> COMMUN DES MORTELS?
+
+_NarrateurAutreCote
+> Et il y a un autre côté:
+
+_NarrateurNoteBandits2
+> REJOIGNEZ JEAN-JACQUES ET\
+> LEUR BANDE DE JOYEUX COMPAGNONS!\
+> VOUS POUVEZ NOUS TROUVER DANS LE BOISÉ SUR\
+> LA PETITE ÎLE.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3014,6 +3069,10 @@ _WwwelchiorRefuseBonjourette
 _WwwelchiorFaisMoiConfiance
 > \}Fais moi confiance! Y'a pas de problème.\{
 
+_WwwelchiorJeanJacquesMorts
+> Ou un personnage sinistre les a ressuscité\
+> afin de remplir son sombe dessein!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -3542,6 +3601,13 @@ _GabspartFautFaireAttentionAuxIncantations
 > Mais les mots qu'elles incantent...\
 > Je m'y méfierais.
 
+_GabspartTouchePipiNeuf
+> Ça va aller, un p'tit Touche-Pipi et ce\
+> sera ok!
+
+_GabspartJeanJacquesMorts
+> Peut-être que c'est des vivants?
+
 ### Jacques
 
 _JacquesJeanTuVoisTuCa
@@ -3578,6 +3644,28 @@ _JacquesMamanJetaisMechant
 > \
 > Que j'étais méchaaant...
 
+_JacquesOhJoyeuxCompagnons
+> Oh joyeux compagnons!
+
+_JacquesRestePersonne
+> Hein? Quoi? Y reste personne!?
+
+_JacquesSeulRegret
+> Mon seul regret...\
+> \
+> Est d'avoir été floué par ce\
+> Chevalier Noir!
+
+_JacquesNonJeanMechants
+> Jean! Tu peux pas mourrir encore, on était\
+> sensé être devenus les Méchants!
+
+_JacquesAssurerChevalierNoir
+> Impossible! Pourtant on s'était fait\
+> assurer par le Chevalier Noir que...\
+> \
+> Oh.
+
 ### Jean
 
 _JeanAirCaracteristique
@@ -3597,6 +3685,22 @@ _JeanJaaaacques
 > Jaaaaaacques!\
 > On allait devenir des bandits de grands\
 > chemin!
+
+_JeanRestePersonne
+> J'te l'avais dit qu'y fallait pas ralentir\
+> sur l'embauche!
+
+_JeanNonJacquesPasEncore
+> Non Jacques! Pas encore!
+
+_JeanFinalementReve
+> On avait finalement réalisé notre rêve de\
+> devenir bandits de grand chemin! De devenir\
+> les Méchants!
+
+_JeanPeripetie
+> Je... je crois qu'on est seulement une\
+> péripétie...
 
 ### Forgeron
 
@@ -4421,7 +4525,8 @@ _MerebonjouretteVousPensezFaireQuoi
 ### Mrtheun
 
 _MrtheunHeille
-> Heille mon thé!
+> Heille mon thé! Vous savez pas c'est quoi\
+> la vapeur?
 
 _MrtheunBonsoir
 > Bonsoir. Vraiment une belle soirée pour\
@@ -4437,3 +4542,62 @@ _MrthedeuxBonsoir
 _InconnuSortez
 > Woh vous allez vraiment rentrer chez un\
 > inconnu comme ça!?
+
+### Tournoyeur
+
+_TournoyeurAppear
+> Tournoyer pour gagner!
+
+_TournoyeurBedingBedang
+> Beding bedang!
+
+_TournoyeurBandisGrandChemin
+> Bonsoir!\
+> On est des bandits de grand chemin, et\
+> vous allez nous donner votre argent ou\
+> votre vie!
+
+_TournoyeurEpingleCheveux
+> Une épingle à cheveux?\
+> Vous avez même pas les cheveux longs!
+
+_TournoyeurVotreVie
+> Regardez-moi ça le finfinaud! Je vois que\
+> vous avez choisi votre vie, donc.
+
+### Couteleur
+
+_CouteleurAppear
+> Hop dans les côtes ce sera pas long!
+
+_CouteleurFlick
+> Flick!
+
+### Lancenot
+
+_LancenotAppear
+> Comme prendre une sucette à un marchand!
+
+_LancenotSwish
+> Swish!
+
+### Pretresse
+
+_PretresseAppear
+> Vous êtes sûr que c'est des pécheurs?
+
+_PretresseTape
+> Repentez-vous!
+
+### Mmmtriste
+
+_MmmtristeBonsoir
+> Bonsoir.\
+> J'essaye de manger mon souper. Si vous\
+> vouliez me laisser tranquille ça\
+> m'arrangerais.
+
+### Mmetriste
+
+_MmetristePuces
+> Non mais vous avez pas besoin des puces...

@@ -196,7 +196,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
             json.forEach(readPageForLines)
         }
 
-        const newText = JSON.stringify(json, null, 2);
+        const newText = JSON.stringify(json, null, 2).replace(/\n/g, os.EOL);
         if (newText !== text) {
             console.log("Formatting", dataFile);
             await fs.writeFile("data/" + dataFile, newText);
@@ -238,7 +238,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
             }
         }
     }
-    const newWalkthroughText = JSON.stringify(walkthrough, null, 2);
+    const newWalkthroughText = JSON.stringify(walkthrough, null, 2).replace(/\n/g, os.EOL);
     if (walkthroughText !== newWalkthroughText) {
         await fs.writeFile("data/Walkthrough.json", newWalkthroughText);
     }
