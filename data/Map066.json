@@ -2465,7 +2465,7 @@
     0,
     102,
     0,
-    0,
+    14,
     36,
     0,
     36,
@@ -19108,6 +19108,13 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _MarinMouvementBosquet"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -19121,8 +19128,63 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                ""
+                "Mmmh, c'est drôle. C'est comme s'il y avait"
               ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "du mouvement dans le bosquet de l'autre"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "côté de la rivière."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _MarinBosquetteur"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Dans une autre vie j'étais bosquetteur,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "voyez-vous."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

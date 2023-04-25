@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 974,
-    "scrollY": 1286
+    "scrollX": 973.0909090909091,
+    "scrollY": 1286.1818181818182
   },
   {
     "id": 6,
@@ -591,8 +591,8 @@
     "name": "VILLE",
     "order": 79,
     "parentId": 0,
-    "scrollX": 819,
-    "scrollY": 458
+    "scrollX": 999.2727272727274,
+    "scrollY": 499.6363636363637
   },
   {
     "id": 67,
@@ -764,5 +764,23 @@
     "parentId": 66,
     "scrollX": 819,
     "scrollY": 466
+  },
+  {
+    "id": 86,
+    "expanded": false,
+    "name": "BOSQUET",
+    "order": 87,
+    "parentId": 0,
+    "scrollX": 884.7272727272727,
+    "scrollY": 739.6363636363636
+  },
+  {
+    "id": 87,
+    "expanded": false,
+    "name": "CHEZ_MAIRE",
+    "order": 86,
+    "parentId": 66,
+    "scrollX": 893.4545454545455,
+    "scrollY": 508.3636363636364
   }
 ]

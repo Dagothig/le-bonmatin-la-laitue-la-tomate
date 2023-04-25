@@ -1467,3 +1467,14 @@ _MmmtristeBonsoir
 
 _MmetristePuces
 > Non mais vous avez pas besoin des puces...
+
+### Marin
+
+_MarinMouvementBosquet
+> Mmmh, c'est drôle. C'est comme s'il y avait\
+> du mouvement dans le bosquet de l'autre\
+> côté de la rivière.
+
+_MarinBosquetteur
+> Dans une autre vie j'étais bosquetteur,\
+> voyez-vous.
