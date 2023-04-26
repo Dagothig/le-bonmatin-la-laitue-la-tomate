@@ -6473,56 +6473,42 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "for (let i = 0; i < 4; i++) {"
+          "sprite.pushMoves(["
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "  sprite.pushMoves(["
+          "  [PARABOLA, "
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    [PARABOLA, "
+          "    (Math.random() - 0.5), (Math.random() - 0.5), "
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "      (Math.random() - 0.5), (Math.random() - 0.5), "
+          "    -20, 12],"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "      -20, 12],"
+          "  [WAIT, 24]"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    [WAIT, 24]"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  ]);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}"
+          "]);"
         ]
       },
       {
