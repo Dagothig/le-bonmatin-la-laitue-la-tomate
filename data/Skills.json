@@ -1667,7 +1667,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Stored Proc Call",
-    "note": "<<aaa_action {\n  this.makeSuccess(target);\n}>>",
+    "note": "<<aaa_action {\n  $btl.storedProc && $btl.storedProc.length && this.makeSuccess(target);\n  for (const call of $btl.storedProc) {\n    this.subject().enqueueAction(call, -1);\n  }\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1694,6 +1694,12 @@
       {
         "code": 21,
         "dataId": 23,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 44,
+        "dataId": 19,
         "value1": 1,
         "value2": 0
       }
@@ -1856,21 +1862,14 @@
       "variance": 0
     },
     "description": "",
-    "effects": [
-      {
-        "code": 44,
-        "dataId": 16,
-        "value1": 1,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 0,
     "iconIndex": 72,
     "message1": " annule la transaction!",
     "message2": "",
     "mpCost": 0,
     "name": "Annuler Transaction",
-    "note": "<<aaa_action {\n  this.makeSuccess(target);\n}>>",
+    "note": "<<aaa_action {\n  this.subject().removeState(22);\n  const amthp = $gvars.DETAH_HP - this.subject().hp;\n  const amtmp = $gvars.DETAH_MP - this.subject().mp;\n  this.executeHpDamage(target, -amthp);\n  this.executeMpDamage(target, -amtmp);\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1888,26 +1887,19 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "0",
+      "formula": "Math.max(this.subject().hp - $gvars.DETAH_HP, 0)",
       "type": 0,
-      "variance": 20
+      "variance": 0
     },
     "description": "",
-    "effects": [
-      {
-        "code": 44,
-        "dataId": 17,
-        "value1": 1,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 0,
     "iconIndex": 64,
     "message1": " applique la transaction!",
     "message2": "",
     "mpCost": 0,
     "name": "Appliquer Transaction",
-    "note": "<<aaa_action {\n  this.makeSuccess(target);\n}>>",
+    "note": "<<aaa_action {  \n  this.subject().removeState(22);\n  const amthp = $gvars.DETAH_HP - this.subject().hp;\n  const amtmp = $gvars.DETAH_MP - this.subject().mp;\n  this.executeHpDamage(target, Math.min(amthp, target.hp - 1));\n  this.executeMpDamage(target, amtmp);\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2045,7 +2037,7 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "(a.atk + 15) * a.lukVar - b.def * b.lukVar",
+      "formula": "a.atk * a.lukVar - b.def * b.lukVar",
       "type": 1,
       "variance": 0
     },

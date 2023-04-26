@@ -827,24 +827,24 @@
     "id": 12,
     "actions": [
       {
-        "conditionParam1": 18,
+        "conditionParam1": 0,
         "conditionParam2": 0,
-        "conditionType": 6,
-        "rating": 4,
+        "conditionType": 0,
+        "rating": 5,
         "skillId": 44
       },
       {
         "conditionParam1": 19,
         "conditionParam2": 0,
         "conditionType": 6,
-        "rating": 5,
+        "rating": 7,
         "skillId": 45
       },
       {
-        "conditionParam1": 18,
+        "conditionParam1": 0,
         "conditionParam2": 0,
-        "conditionType": 6,
-        "rating": 5,
+        "conditionType": 0,
+        "rating": 6,
         "skillId": 43
       },
       {
@@ -920,11 +920,11 @@
     ],
     "gold": 0,
     "name": "Detah",
-    "note": "<<aaa_icon 200 25 64 64>>\n<<aaa_setup {\n  this._taper = \"_Detah\";\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.7;\n  sprite.scale.y = 0.7;\n  $gsw.DETAH_NO_SUCH_TRANSACTION = true;\n  $btl.specialPool = [0, 1, 2, 3, 4].map(i =>\n    this.enemy().actions[i]);\n}>>\n<<aaa_actions {\n  let n = this.numActions();\n  let actions = new Array(n);\n  let simpleActs = actionList.filter(act => \n    !$btl.specialPool.includes(act));\n  let ratings = simpleActs.map(a => a.rating);\n  let ratingMax = Math.max.apply(null, ratings);\n  let ratingZero = ratingMax - 3;\n  for (let i = 0; i < n - 1; i++) {\n    actions[i] = this.selectAction(simpleActs, ratingZero);\n  }\n  if (n > 1) {\n    ratings = actionList.map(a => a.rating);\n    ratingMax = Math.max.apply(null, ratings);\n    ratingZero = ratingMax - 3;\n    actions[n - 1] = this.selectAction(actionList, ratingZero);\n  }\n  return actions;\n}>>",
+    "note": "<<aaa_icon 200 25 64 64>>\n<<aaa_setup { \n  this._taper = \"_Detah\";\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.7;\n  sprite.scale.y = 0.7;\n  $btl.specialPool = [0, 1, 2, 3, 4].map(i =>\n    this.enemy().actions[i]);\n}>>\n<<aaa_actions {\n  let n = this.numActions();\n  let actions = new Array(n);\n  let simpleActs = actionList.filter(act => \n    !$btl.specialPool.includes(act));\n  let ratings = simpleActs.map(a => a.rating);\n  let ratingMax = Math.max.apply(null, ratings);\n  let ratingZero = ratingMax - 3;\n  for (let i = 0; i < n - 1; i++) {\n    actions[i] = this.selectAction(\n      simpleActs.filter(a => a.rating > ratingZero), \n      ratingZero);\n  }\n  if (n > 1) {\n    ratings = actionList.map(a => a.rating);\n    ratingMax = Math.max.apply(null, ratings);\n    ratingZero = ratingMax - 3;\n    actions[n - 1] = this.selectAction(\n      actionList.filter(a => a.rating > ratingZero), \n      ratingZero);\n  }\n  return actions;\n}>>",
     "params": [
-      750,
+      700,
       0,
-      30,
+      28,
       10,
       10,
       10,
@@ -991,7 +991,7 @@
     "params": [
       100,
       0,
-      30,
+      40,
       10,
       10,
       10,

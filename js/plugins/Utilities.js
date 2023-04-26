@@ -3306,6 +3306,23 @@ Input.keyMapper[68] = "right"; // d
         });
 })();
 
+// Enqueue action
+(function () {
+    override(Game_Battler.prototype,
+        function enqueueAction(_, skillId, targetIndex) {
+            const action = new Game_Action(this);
+            action.setSkill(skillId);
+            if (targetIndex === -2) {
+                action.setTarget(this._lastTargetIndex);
+            } else if (targetIndex === -1) {
+                action.decideRandomTarget();
+            } else {
+                action.setTarget(targetIndex);
+            }
+            this._actions.push(action);
+        });
+})();
+
 // Smaller overworld sprites
 (function () {
 

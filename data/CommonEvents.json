@@ -6213,162 +6213,12 @@
     "id": 16,
     "list": [
       {
-        "code": 333,
-        "indent": 0,
-        "parameters": [
-          -1,
-          1,
-          21
-        ]
-      },
-      {
-        "code": 333,
-        "indent": 0,
-        "parameters": [
-          -1,
-          1,
-          22
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          2,
-          2,
-          0,
-          3,
-          4,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          1,
-          1,
-          29,
-          4
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          0,
-          1,
-          29
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          2,
-          1,
-          2
-        ]
-      },
-      {
-        "code": 339,
-        "indent": 1,
-        "parameters": [
-          0,
-          0,
-          52,
-          -2
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          2,
-          2,
-          0,
-          3,
-          4,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          1,
-          1,
-          30,
-          4
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          0,
-          1,
-          30
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          2,
-          1,
-          2
-        ]
-      },
-      {
-        "code": 339,
-        "indent": 1,
-        "parameters": [
-          0,
-          0,
-          53,
-          -2
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "Annuler Transaction",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
@@ -6376,162 +6226,12 @@
     "id": 17,
     "list": [
       {
-        "code": 333,
-        "indent": 0,
-        "parameters": [
-          -1,
-          1,
-          21
-        ]
-      },
-      {
-        "code": 333,
-        "indent": 0,
-        "parameters": [
-          -1,
-          1,
-          22
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          2,
-          2,
-          0,
-          3,
-          4,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          1,
-          1,
-          29,
-          4
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          0,
-          1,
-          29
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          2,
-          1,
-          2
-        ]
-      },
-      {
-        "code": 339,
-        "indent": 1,
-        "parameters": [
-          0,
-          0,
-          54,
-          -2
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          2,
-          2,
-          0,
-          3,
-          4,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          1,
-          1,
-          30,
-          4
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          0,
-          1,
-          30
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          2,
-          1,
-          2
-        ]
-      },
-      {
-        "code": 339,
-        "indent": 1,
-        "parameters": [
-          0,
-          0,
-          55,
-          -2
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "Appliquer Transaction",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
@@ -6705,6 +6405,15 @@
         "parameters": []
       },
       {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          19,
+          19,
+          0
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -6764,84 +6473,56 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "sprite.pushMoves(new Array(4).fill().flatMap(() => ["
+          "for (let i = 0; i < 4; i++) {"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "  [PARABOLA, "
+          "  sprite.pushMoves(["
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    (Math.random() - 0.5), "
+          "    [PARABOLA, "
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    (Math.random() - 0.5), "
+          "      (Math.random() - 0.5), (Math.random() - 0.5), "
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    -20, "
+          "      -20, 12],"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    12],"
+          "    [WAIT, 24]"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "  [WAIT, "
+          "  ]);"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    24]"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "]));"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "let prot = $btl.party[\"Personne Véritable\"];"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "let sprite = SceneManager.battlerSprite(prot);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "sprite.pushMove([PARABOLA, 0, 0, -20, 12]);"
+          "}"
         ]
       },
       {
@@ -6889,7 +6570,7 @@
         "code": 355,
         "indent": 1,
         "parameters": [
-          "aaa_anim($btl.party.Gabspart, \"jump\");"
+          "aaa_anim($btl.party.Wwwelchior, \"jump\");"
         ]
       },
       {
@@ -7033,7 +6714,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "prot.setActingState(\"walk\");"
+          "prot.setActionState(\"walk\");"
         ]
       },
       {
@@ -7060,114 +6741,12 @@
     "id": 20,
     "list": [
       {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          1,
-          1,
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 112,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gvars.TMP_A >= $btl.storedProc.length"
-        ]
-      },
-      {
-        "code": 113,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "let call = $btl.storedProc[$gvars.TMP_A];"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "this.iterateBattler(0, 0, battler => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  battler.forceAction(call, -1);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  BattleManager.forceAction(battler);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  this.setWaitMode('action');"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          1,
-          1,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 413,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "Sort Stored Proc Call",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
