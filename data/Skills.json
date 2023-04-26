@@ -1667,7 +1667,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Stored Proc Call",
-    "note": "<<aaa_action {\n  $btl.storedProc && $btl.storedProc.length && this.makeSuccess(target);\n  for (const call of $btl.storedProc) {\n    this.subject().enqueueAction(call, -1);\n  }\n}>>",
+    "note": "<<aaa_action {\n  if ($btl.storedProc) {\n    $btl.storedProc.length && this.makeSuccess(target);\n    for (const call of $btl.storedProc) {\n      this.subject().enqueueAction(call, -1);\n    }\n  }\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
