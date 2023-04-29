@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 40,
-  "note": "<bgmFilter:farAway>",
+  "note": "<bgmFilter:farAway>\n<playerScale:0.75>",
   "parallaxLoopX": true,
   "parallaxLoopY": true,
   "parallaxName": "BlueSky",

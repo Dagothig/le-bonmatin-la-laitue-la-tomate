@@ -3325,5 +3325,26 @@ Input.keyMapper[68] = "right"; // d
 
 // Smaller overworld sprites
 (function () {
+    override(Spriteset_Map.prototype,
+        function createCharacters(createCharacters) {
+            createCharacters.call(this);
+            const playerScale = Number.parseFloat($dataMap.meta && $dataMap.meta.playerScale);
+            if (Number.isFinite(playerScale)) {
+                for (const character of [$gamePlayer].concat($gamePlayer.followers()._data)) {
+                    const sprite = this._characterSprites.find(s =>
+                        s._character === character);
+                    if (sprite) {
+                        sprite.scale.x = sprite.scale.y = playerScale;
+                    }
 
+                    const shadowSprite =
+                        this._bshadowSprites &&
+                        Object.values(this._bshadowSprites).find(s =>
+                            s._character === character);
+                    if (shadowSprite) {
+                        shadowSprite.scale.x = shadowSprite.scale.y =playerScale;
+                    }
+                }
+            }
+        });
 })();
