@@ -200,6 +200,38 @@ _NarrateurNoteBandits2
 > VOUS POUVEZ NOUS TROUVER DANS LE BOISÉ SUR\
 > LA PETITE ÎLE.
 
+_NarrateurStatueMaire1
+> Une statue au profile dignifié.\
+> Jusqu'à ce que vous remarquiez qu'elle a été défigurée\
+> crûdement au plâtre afin de changer les traits.
+
+_NarrateurStatueMaire2
+> Il y a une petite plaque qui a été clouée par dessus\
+> l'écriteau qui était directement inscrit sur la pierre:
+
+_NarrateurStatueMaire3
+> LE SEUL ET UNIQUE\
+> NOTRE MAIRE\
+> SA GRANDEUR DÉMOCRATIQUE RESPLENDIE ET\
+> PROTÈGE NOTRE ROYAUME
+
+_NarrateurTabouretMunicipal
+> Un tabouret à caractère municipal.
+
+_NarrateurBoisMalEmpile
+> Du bois, mais mal empilé.
+
+_NarrateurSceauEau
+> Un sceau d'eau.\
+> Au bout d'un moment à regarder dedans\
+> vous y apercevez une pâle copie de Narcisse.\
+> Il vous prend une étrange envie de tomber dedans.
+
+_NarrateurFoyerSuie
+> Il n'y a pas de feu mais, une bien de la suie dans le\
+> fond, si jamais vos mains se prenaient une crise\
+> existentielle de propreté.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -669,6 +701,58 @@ _ProtagonisteBanditsProvenance2
 > Parfait, j'adore ça quand vous avez tous\
 > ce beau regard vide.
 
+_ProtagonisteGueux
+> \}... Vraiment, vous allez nous appeler des gueux?\{\
+> \
+> \}Lui il se magasine vraiment un petit incident d'auto-défense.\{
+
+_ProtagonisteMairePont1
+> C'est beau ça, mais vous n'avez pas de plan\
+> pour qu'il soit réparé?
+
+_ProtagonisteMairePont2
+> Ok... mais huh, la chaise du conseil, c'est\
+> pas sur elle que vous êtes actuellement\
+> assis?
+
+_ProtagonisteMairePont3
+> \}Je vois donc que les ressources de la municipalité sont bien utilisées...\{\
+> Le charpentier aura du temps si je vais\
+> récupérer le throne pris par les bandits?
+
+_ProtagonisteMaireBandits1
+> J'ai pu les repousser lorsqu'ils ont tenté\
+> de me cambrioler, et j'ai trouvé leur note\
+> de recrutement. Ils semblent être terrés\
+> dans un boisé sur une île.
+
+_ProtagonisteMaireBandits2
+> \}... Je me demande pourquoi je suis venu vous voir avec cette\
+> information en fait...\{
+
+_ProtagonisteCharpARepousseBandits
+> Ne vous inquiétez pas! J'ai déjà repoussé\
+> ceux qui rôdaient dans les prés, et j'irai\
+> sous peu les pourchasser dans leur tanière!
+
+_ProtagonisteNousNousNous
+> Huuuh oui, c'est vrai. Nous nous nous.
+
+_ProtagonisteBanditsVousOntVole
+> Des bandits vous ont volé une chaise?
+
+_ProtagonisteOhCestTerrible
+> Oh c'est terrible!
+
+_ProtagonisteDoncHuhBonsoir
+> Donc huh... bonsoir.
+
+_ProtagonisteCtunTabouretCa
+> Question stupide comme ça.\
+> \
+> Ça devrait pas plus ressembler à un trône?\
+> C'est un tabouret, ça!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -893,6 +977,11 @@ _WwwelchiorFaisMoiConfiance
 _WwwelchiorJeanJacquesMorts
 > Ou un personnage sinistre les a ressuscité\
 > afin de remplir son sombe dessein!
+
+_WwwelchiorEhoLAppropriation
+> Pèses pas trop vite sur l'accélérateur de\
+> l'appropriation des accomplissements de\
+> toute l'équipe tout de même.
 
 ### Fantome
 
@@ -1354,7 +1443,8 @@ _MrtheunHeille
 
 _MrtheunBonsoir
 > Bonsoir. Vraiment une belle soirée pour\
-> profiter de l'air!
+> profiter de l'air! Y'a tellement de soleil,\
+> c'est comme si on était le dîner.
 
 ### Mrthedeux
 
@@ -1478,3 +1568,101 @@ _MarinMouvementBosquet
 _MarinBosquetteur
 > Dans une autre vie j'étais bosquetteur,\
 > voyez-vous.
+
+### Maire
+
+_MairePrenezPlace
+> Garçon! Si vous voulez rencontrer le roi -\
+> je veux dire le maire - vous devez prendre\
+> une place assise et attendre votre tour!
+
+_MaireDomainePrive
+> Woh woh! Garçon! Les domaines privés du\
+> maire ne vous sont pas accessibles!
+
+_MaireProchainGueux
+> Que le prochain gueux s'avance!
+
+_MaireMerciBonsoir
+> Merci bonsoir!\
+> Veuillez évacuez immédiatement les lieux\
+> de la demeure du maire!
+
+_MaireVisiteAventuriers
+> Ah! Que vaut cette visite d'aventuriers\
+> au conseil de ville?
+
+_MairePont1
+> Oui il est vrai, c'est dramatique.\
+> Le Garde a déjà été envoyé s'assurer que\
+> personne ne tente de traverser le pont sans\
+> le savoir.
+
+_MairePont2
+> Hélas! La charpentière, Mme. Dubois, est\
+> déjà occupée à travailler sur la chaise de\
+> remplacement pour le conseil de ville.
+
+_MairePont3
+> Elle avait déjà complété la chaise, mais\
+> hélas d'horribles malfrats la lui ont\
+> dérobée pendant qu'elle était en route pour\
+> la livrer!
+
+_MairePont4
+> Ah! Il s'agit d'un vulgaire tabouret!\
+> \
+> Regardez comme le vernis est usé, et les\
+> ornementations sont désuettes!
+
+_MairePont5
+> La chaise, garçon! La chaise!\
+> Enfin bon, la mairie consent à rediriger\
+> les efforts de la charpentière à ce\
+> moment-là.
+
+_MaireBandits1
+> Ils ont été vu la dernière fois dans les\
+> champs entre la Ville et le Lieu Champêtre.\
+> Vous pouvez fouiller par là.
+
+_MaireBandits2
+> Terrible, je sais! Et en plus ils ont\
+> dérobé la nouvelle chaise du conseil\
+> municipal!
+
+_MaireBandits3
+> Comment pouvez-vous venir ici avec de si\
+> terribles nouvelles!? Personne ici ne\
+> possède de bateau, nous sommes donc perdus.
+
+### Charpentiere
+
+_CharpentiereOccupee
+> Raaaa je suis très occupé en ce moment si\
+> vous vouliez arrêter de me déranger.\
+> Je dois tout refaire à cause de ces satanés\
+> bandits...
+
+_CharpentiereBanditsPartiels
+> Il était temps que j'aie des bonnes\
+> nouvelles! Vous n'avez pas idée du temps\
+> que ça ve me sauver si vous récupérer la\
+> chaise qu'il m'ont volé.
+
+_CharpentiereDotDotDot
+> . . .
+
+_CharpentiereDoitRefaireChaise
+> Hélas oui, c'est terrible! Le maire peut\
+> vous donner les détails, mais ils m'ont\
+> volé la nouvelle chaise du conseil\
+> municipal, alors je dois la refaire.
+
+_CharpentierePasFinitProcessus
+> Non mais il est pas finit! Vous devez faire\
+> confiance au processus.
+
+_CharpentiereNonPasFouiller
+> Vous n'êtes pas subtil. J'apprécierais que\
+> vous ne fouillez pas chez moi, merci.

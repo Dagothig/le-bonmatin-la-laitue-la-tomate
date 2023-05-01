@@ -14346,11 +14346,14 @@
               "parameters": []
             },
             {
-              "code": 123,
+              "code": 122,
               "indent": 1,
               "parameters": [
-                "A",
-                0
+                49,
+                49,
+                0,
+                0,
+                10
               ]
             },
             {
@@ -14406,14 +14409,14 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
+            "selfSwitchValid": false,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 49,
+            "variableValid": true,
+            "variableValue": 10
           },
           "directionFix": false,
           "image": {

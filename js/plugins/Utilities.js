@@ -3182,7 +3182,7 @@ Input.keyMapper[68] = "right"; // d
                 const gc = Game_Character;
                 const params = command.parameters;
                 return command.evalFn.call(this, command, gc, params);
-            } else {
+            } else {
                 return processMoveCommand.call(this, command);
             }
         })
@@ -3346,5 +3346,128 @@ Input.keyMapper[68] = "right"; // d
                     }
                 }
             }
+        });
+})();
+
+// Event contextual plugin commands
+(function () {
+    window.$charByName = {};
+
+    const eventRegexp = /event (.*)/;
+    const choiceRegexp = /choice (\d+) (.*)/;
+
+    override(DataManager,
+        function onLoad(onLoad, object) {
+            onLoad.call(this, object);
+            if (!object) return;
+            switch (object) {
+                case $dataActors:
+                    for (const actor of $dataActors) {
+                        if (!actor) continue;
+                        Object.defineProperty(window.$charByName, actor.name, {
+                            get() {
+                                const index = $gameParty.battleMembers().findIndex(bm =>
+                                    bm.name() === actor.name);
+                                switch (index) {
+                                    case -1:
+                                        return null;
+                                    case 0:
+                                        return $gamePlayer;
+                                    default:
+                                        return $gamePlayer.followers().follower(index - 1);
+                                }
+                            }
+                        });
+                    }
+                    Object.defineProperty(window.$charByName, "Protagoniste", {
+                        get() {
+                            return $gamePlayer;
+                        }
+                    });
+                    break;
+                case $dataMap:
+                    if (!$dataMap.events) break;
+                    for (const event of $dataMap.events) {
+                        if (!event) continue;
+                        for (const page of event.pages || []) {
+                            const entries = page.list;
+                            for (let i = 0; i < entries.length; i++) {
+                                const entry = entries[i];
+                                switch (entry.code) {
+                                    case 356: // Plugin command
+                                        const str = (entry.parameters && entry.parameters[0] || "").toString();
+                                        const eventMatch = str.match(eventRegexp);
+                                        if (eventMatch) {
+                                            const fn = eval_fn_expr(eventMatch[1]);
+                                            const nextEntry = entries[i + 1];
+                                            if (nextEntry) {
+                                                nextEntry.eventFn = fn;
+                                            }
+                                        }
+                                        const choiceMatch = str.match(choiceRegexp);
+                                        if (choiceMatch) {
+                                            const n = Number.parseInt(choiceMatch[1]) || 0;
+                                            const fn = eval_fn_expr(choiceMatch[2]);
+                                            // Look for the next choice.
+                                            // We can get plugin commands in between but nothing else.
+                                            for (let j = i + 1; j < entries.length; j++) {
+                                                const entry = entries[j];
+                                                if (!entry) {
+                                                    break;
+                                                } else if (entry.code === 102) {
+                                                    entry.choiceFns = entry.choiceFns || [];
+                                                    entry.choiceFns[n] = fn;
+                                                } else if (entry.code !== 356) {
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                    break;
+            }
+        });
+
+    override(Game_Interpreter.prototype,
+        function character(character, param) {
+            const cmd = this.currentCommand();
+            return cmd && cmd.eventFn ? cmd.eventFn.call(this) : character.call(this, param);
+        },
+        function setupChoices(setupChoices, params) {
+            const cmd = this.currentCommand();
+            if (cmd && cmd.choiceFns) {
+                const choices = params[0].slice();
+                const branchIdx = new Array(choices.length);
+                let cancelType = params[1];
+                let defaultType = params[2]
+                for (let i = choices.length - 1; i >= 0; i--) {
+                    branchIdx[i] = i;
+                    const choice = choices[i];
+                    if (!choice || (cmd.choiceFns[i] && !cmd.choiceFns[i].call(this))) {
+                        choices.splice(i, 1);
+                        branchIdx.splice(i, 1);
+                        cancelType >= i && cancelType--;
+                        defaultType >= i && defaultType--;
+                    }
+                }
+                params = [choices, cancelType, defaultType].concat(params.slice(3));
+                setupChoices.call(this, params);
+                $gameMessage.setChoiceCallback(n => {
+                    this._branch[this._indent] = branchIdx[n];
+                });
+            } else {
+                setupChoices.call(this, params);
+            }
+        });
+
+    override(Game_Follower.prototype,
+        function chaseCharacter(chaseCharacter, character) {
+            if (this.isMoveRouteForcing()) {
+                return;
+            }
+            return chaseCharacter.call(this, character);
         });
 })();
