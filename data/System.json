@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 85,
+  "editMapId": 5,
   "elements": [
     "",
     "Physical",
@@ -181,9 +181,9 @@
     },
     "characterIndex": 1,
     "characterName": "Vehicle",
-    "startMapId": 0,
-    "startX": 0,
-    "startY": 0
+    "startMapId": 5,
+    "startX": 16,
+    "startY": 13
   },
   "skillTypes": [
     "",
@@ -602,9 +602,10 @@
     "BALTHATHIG_OBJ_PRIS",
     "ORACLE_QUESTION",
     "MAIRE",
-    "BANDITS_GRAND_CHEMIN"
+    "BANDITS_GRAND_CHEMIN",
+    "GEOLOGUE"
   ],
-  "versionId": 43363750,
+  "versionId": 28638569,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

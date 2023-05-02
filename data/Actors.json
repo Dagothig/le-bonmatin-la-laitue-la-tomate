@@ -214,5 +214,28 @@
     "nickname": "Poulet",
     "note": "<<aaa_icon 19 21>>\n<<aaa_setup {\n  this._taper = \"Chicken\";\n  this._maxTp = 0;\n  this._gauges = [\n    [\"drawActorHp\", 108], \n    [\"drawActorAtk\", 96*2 + 15]];\n}>>\n<<aaa_death {}>>\n<<shadow Shadow1 -18>>",
     "profile": ""
+  },
+  {
+    "id": 8,
+    "battlerName": "Geologue",
+    "characterIndex": 1,
+    "characterName": "ActorUIUI3",
+    "classId": 6,
+    "equips": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "faceIndex": 7,
+    "faceName": "UIUI3",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "Géologue",
+    "nickname": "Géologue",
+    "note": "",
+    "profile": ""
   }
 ]

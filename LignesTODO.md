@@ -232,6 +232,14 @@ _NarrateurFoyerSuie
 > fond, si jamais vos mains se prenaient une crise\
 > existentielle de propreté.
 
+_NarrateurToileFameuse1
+> Une toile fameuse.
+
+_NarrateurToileFameuse2
+> Mmmmh...\
+> \
+> Non les notes ne disent pas laquelle.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -753,6 +761,51 @@ _ProtagonisteCtunTabouretCa
 > Ça devrait pas plus ressembler à un trône?\
 > C'est un tabouret, ça!
 
+_ProtagonistePasAntagoniste
+> Woh là, je suis Protagoniste!\
+> \
+> J'ai tant l'air d'un antagoniste que ça?
+
+_ProtagonisteRecruteurContrat1
+> Bon d'abord, je vous ai rien dis et vous\
+> assumez que je suis intéressé?\
+> Ensuite huh... pourquoi me tendez-vous un\
+> couteau?
+
+_ProtagonisteRecruteurContrat2
+> Écoutez, je n'apprécie pas votre\
+> proposition, et je m'en vais sur ce pas.
+
+_ProtagonistePersDesagrable
+> Mais quel drôle de personnage désagréable.\
+> C'est quoi, un genre de recrutement pour un\
+> mystérieux malfrat machiavélique?
+
+_ProtagonisteAMoinsRecruteurBandits
+> À moins que ce soit un recruteur pour les\
+> bandits?
+
+_ProtagonisteAMoinsRecruteurBandits2
+> Vous parliez de sombres desseins là,\
+> style aborder les gens sur la route pour\
+> voler leur possessions terrestres?
+
+_ProtagonisteAMoinsRecruteurBandits3
+> Planétaire ici ça veut pas dire\
+> grand chose...
+
+_ProtagonisteToileFameuse
+> Ah c'est intéressant. Quelle toile fameuse\
+> alors?
+
+_ProtagonisteRoger1
+> Dites, le monsieur à la table, il est pas\
+> un peu louche?
+
+_ProtagonisteRoger2
+> Je veux bien qu'il soit un bon client, mais\
+> vous avez vu son allure?
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -982,6 +1035,14 @@ _WwwelchiorEhoLAppropriation
 > Pèses pas trop vite sur l'accélérateur de\
 > l'appropriation des accomplissements de\
 > toute l'équipe tout de même.
+
+_WwwelchiorNuancePasSiGrande
+> La nuance est moins grande qu'on le\
+> penserait.
+
+_WwwelchiorPasLesTenebres
+> C'est pas pour les Ténèbres en tout cas,\
+> sinon j'en aurais entendu parler.
 
 ### Fantome
 
@@ -1666,3 +1727,69 @@ _CharpentierePasFinitProcessus
 _CharpentiereNonPasFouiller
 > Vous n'êtes pas subtil. J'apprécierais que\
 > vous ne fouillez pas chez moi, merci.
+
+_CharpentiereMaCorde
+> Oui, et c'est MA corde.
+
+### Recruteur
+
+_RecruteurBonsoirSombresDesseins
+> Bonsoir! Je vois que vous avez le type!\
+> Si vous voulez qu'on discute de votre\
+> engagement au près de sombres desseins,\
+> veuillez prendre place.
+
+_RecruteurContrat1
+> Bonsoir! Avez-vous déjà trouvé que votre\
+> quotidien manque atrocement de piquant? Que\
+> vous passez trop de temps à vous soucier\
+> d'autrui?
+
+_RecruteurContrat2
+> Il est temps qu'autrui se soucie de vous!\
+> Engagez-vous dès maintenant dans les\
+> services d'un sombre dessein pour un futur\
+> noir prochain!
+
+_RecruteurContrat3
+> C'est très simple, il suffit de signer là,\
+> là, là et là!
+
+_RecruteurContrat4
+> Allons allons, l'encre est entièrement\
+> insuffisante pour signer ce genre de\
+> contrat, il vous faut du sang!
+
+_RecruteurImpactPlanetaire
+> Oh non! Bien plus intéressant que ça!\
+> \
+> On parle d'un impact planétaire!
+
+_RecruteurNoInspectContrat
+> Non non, ne portez pas trop attention au\
+> contrat.\
+> Veuillez plutôt vous asseoir afin qu'on\
+> puisse discuter de votre recrutement!
+
+### Barman
+
+_BarmanBonsoir
+> Bonsoir, que puis-je faire pour vous?
+
+_BarmanRoger1
+> Roger? Voyons, c'est mon meilleur client!\
+> Il est là pratiquement tout les jours!
+
+_BarmanRoger2
+> Faites attention à ce que vous dites! Si\
+> vous continuez à parler en mal comme ça de\
+> Roger, je vais devoir vous demander de\
+> quitter mon établissement!
+
+### Rando
+
+_RandoLegumes
+> Bonsoir!\
+> Est-ce vous allez vous laisser tempter par\
+> mes légumes frais? J'ai des patates, des\
+> radis, des carottes! De tout, quoi!

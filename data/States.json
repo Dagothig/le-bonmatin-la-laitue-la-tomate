@@ -1142,5 +1142,40 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 41,
+    "autoRemovalTiming": 1,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.5
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": -0.25
+      }
+    ],
+    "iconIndex": 6,
+    "maxTurns": 10,
+    "message1": " est alcoolisé!",
+    "message2": " est alcoolisé!",
+    "message3": "",
+    "message4": " reprend ses sens!",
+    "minTurns": 8,
+    "motion": 0,
+    "name": "Alcoolisé",
+    "note": "",
+    "overlay": 5,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

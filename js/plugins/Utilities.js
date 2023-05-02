@@ -3471,3 +3471,31 @@ Input.keyMapper[68] = "right"; // d
             return chaseCharacter.call(this, character);
         });
 })();
+
+// Additional non-combat followers
+(function () {
+    override(Game_Party.prototype,
+        function nonBattleMembers() {
+            return this.allMembers().slice(this.maxBattleMembers());
+        });
+    override(Game_Followers.prototype,
+        function initialize(initialize) {
+            initialize.call(this);
+            this._data.push(new Game_Follower(this._data.length + 1));
+            this._data.push(new Game_Follower(this._data.length + 1));
+        },
+        function refresh(refresh) {
+            if (this._data.length < $gameParty.maxBattleMembers() + 2) {
+                this._data.push(new Game_Follower(this._data.length + 1));
+                this._data.push(new Game_Follower(this._data.length + 1));
+            }
+            refresh.call(this);
+        });
+    override(Game_Follower.prototype,
+        function actor(actor) {
+            const battleMembers = $gameParty.battleMembers();
+            return (
+                battleMembers[this._memberIndex] ||
+                $gameParty.nonBattleMembers()[this._memberIndex - battleMembers.length]);
+        })
+})();

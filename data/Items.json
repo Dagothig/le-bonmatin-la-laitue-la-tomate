@@ -672,7 +672,7 @@
       "type": 3,
       "variance": 0
     },
-    "description": "Du bon poisson frais!",
+    "description": "Du bon poisson frais!\nRedonne 10 points de vie en plus de nutritionner!",
     "effects": [
       {
         "code": 21,
@@ -693,5 +693,44 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 24,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Parfois oublier les choses quelques jours ça aide.\nNutritionne, alcoolise, redonne 50 points de stamina.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 41,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 275,
+    "itypeId": 1,
+    "name": "Breuvage fermenté",
+    "note": "",
+    "occasion": 0,
+    "price": 10,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 50
   }
 ]
