@@ -510,6 +510,23 @@ function eval_fn_expr(expr, args) {
         }
     };
 
+    const EO = {};
+    const EA = [];
+    override(DataManager,
+        function extractSaveContents(extractSaveContents, contents) {
+            if (contents && contents.map) {
+                extendoList(((contents.map._interpreter || EO)._list || EA));
+                for (const event of contents.map._events || EA) {
+                    extendoList(((event || EO)._interpreter || EO)._list || EA);
+                    extendoList(((event || EO)._moveRoute || EO).list || EA);
+                }
+                for (const event of contents.map._commonEvents || EA) {
+                    extendoList(((event || EO)._interpreter || EO)._list || EA);
+                }
+            }
+            extractSaveContents.call(this, contents);
+        })
+
     var original_applyGuard = Game_Action.prototype.applyGuard;
     Game_Action.prototype.applyGuard = function (damage, target) {
         return damage;

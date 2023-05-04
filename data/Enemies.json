@@ -1446,13 +1446,6 @@
         "conditionType": 4,
         "rating": 9,
         "skillId": 17
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 4,
-        "skillId": 67
       }
     ],
     "battlerHue": 0,
@@ -1490,11 +1483,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
       }
     ],
     "gold": 30,
     "name": "Jacques de Grand Chemin",
-    "note": "<<aaa_icon 110 10>>",
+    "note": "<<aaa_icon 110 10>>\n<<aaa_actions {\n  const ratingMax = actionList.reduce((n, a) => Math.max(n, a.rating), 0);\n  const ratingZero = ratingMax - 3;\n  actionList = actionList.filter(a => a.rating > ratingZero);\n  return [\n    { skillId: 67 },\n    this.selectAction(actionList, ratingZero)\n  ];\n}>>",
     "params": [
       120,
       0,
@@ -1502,7 +1500,7 @@
       13,
       10,
       5,
-      90,
+      85,
       100
     ]
   },
@@ -1529,6 +1527,13 @@
         "conditionType": 4,
         "rating": 9,
         "skillId": 18
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
+        "skillId": 4
       }
     ],
     "battlerHue": 0,
@@ -1570,7 +1575,7 @@
     ],
     "gold": 30,
     "name": "Jean de Grand Chemin",
-    "note": "<<aaa_icon 82 57>>",
+    "note": "<<aaa_icon 82 57>>\n<<aaa_actions {\n  const sleeping = this.friendsUnit().members().find(m => m.isStateAffected(10));\n  if (sleeping) {\n    return [{ skillId: 4 }];\n  }\n}>>",
     "params": [
       100,
       0,

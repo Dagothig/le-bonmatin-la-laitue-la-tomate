@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 5,
+  "editMapId": 12,
   "elements": [
     "",
     "Physical",
@@ -337,7 +337,7 @@
     }
   ],
   "startMapId": 12,
-  "startX": 8,
+  "startX": 10,
   "startY": 5,
   "switches": [
     "",
@@ -514,7 +514,7 @@
       "equips": [
         3,
         5,
-        0,
+        11,
         0,
         6
       ],
@@ -523,7 +523,7 @@
     {
       "actorId": 5,
       "equips": [
-        2,
+        7,
         1,
         0,
         0,
@@ -543,7 +543,7 @@
       "level": 1
     }
   ],
-  "testTroopId": 11,
+  "testTroopId": 15,
   "title1Name": "BMLT",
   "title2Name": "",
   "titleBgm": {
@@ -603,9 +603,10 @@
     "ORACLE_QUESTION",
     "MAIRE",
     "BANDITS_GRAND_CHEMIN",
-    "GEOLOGUE"
+    "GEOLOGUE",
+    ""
   ],
-  "versionId": 28638569,
+  "versionId": 73711355,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

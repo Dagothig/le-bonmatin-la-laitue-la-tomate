@@ -5540,6 +5540,81 @@
             ]
           },
           {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _JeanDesavantageNumerique"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Actor1",
+              4,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Huuuh "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Jacques on est en désavantage numérique!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _JacquesDesavantageNumerique"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "T'inquiètes je gère!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 339,
+            "indent": 0,
+            "parameters": [
+              0,
+              3,
+              67,
+              -2
+            ]
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []

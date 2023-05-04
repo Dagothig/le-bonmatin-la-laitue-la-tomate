@@ -113,33 +113,40 @@
   },
   {
     "id": 4,
-    "animationId": 0,
+    "animationId": 1,
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "0",
-      "type": 0,
-      "variance": 20
+      "formula": "1",
+      "type": 1,
+      "variance": 0
     },
-    "description": "",
-    "effects": [],
+    "description": "Donne une bine à un ami. Ça fait un peu mal quand même.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
-    "message1": "",
+    "iconIndex": 77,
+    "message1": " donne une bine!",
     "message2": "",
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Bine",
+    "note": "<<aaa_anim self lunge>>\n<<aaa_performActionStart {\n    AudioManager.playSe({\n        name: this.subject()._taper || \"Ahha\",\n        volume: 90,\n        pitch: 100\n    });\n}>>\n<<aaa_targets {\n  if (!this.subject().isEnemy()) {\n    return null;\n  }\n  const sleeping = this.subject().friendsUnit().members().filter(m => m.isStateAffected(10));  \n  return sleeping.length ? \n    [sleeping[(sleeping.length * Math.random())|0]] :\n    null;\n}>>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
+    "scope": 7,
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
-    "tpGain": 0
+    "tpGain": 10
   },
   {
     "id": 5,
@@ -1504,6 +1511,24 @@
       {
         "code": 22,
         "dataId": 19,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 39,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 40,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 41,
         "value1": 1,
         "value2": 0
       }

@@ -6,7 +6,7 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
+    "scrollX": 885,
     "scrollY": 756
   },
   {
@@ -43,7 +43,7 @@
     "order": 5,
     "parentId": 0,
     "scrollX": 974,
-    "scrollY": 1436
+    "scrollY": 1256
   },
   {
     "id": 6,
@@ -56,21 +56,21 @@
   },
   {
     "id": 7,
-    "expanded": true,
+    "expanded": false,
     "name": "FORET_NEIGE",
     "order": 27,
     "parentId": 0,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 8,
-    "expanded": false,
+    "expanded": true,
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 1286.1818181818182
+    "scrollX": 811,
+    "scrollY": 640
   },
   {
     "id": 9,
@@ -160,7 +160,7 @@
     "order": 20,
     "parentId": 9,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 466
   },
   {
     "id": 19,
@@ -492,8 +492,8 @@
     "name": "TEST_SCREEN",
     "order": 2,
     "parentId": 0,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 56,
@@ -573,17 +573,17 @@
     "name": "PONT",
     "order": 69,
     "parentId": 0,
-    "scrollX": 1404,
-    "scrollY": 798.8571428571428
+    "scrollX": 811,
+    "scrollY": 782
   },
   {
     "id": 65,
-    "expanded": false,
+    "expanded": true,
     "name": "FERME",
     "order": 70,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 782
+    "scrollY": 706
   },
   {
     "id": 66,
@@ -636,8 +636,8 @@
     "name": "CHEZ_FERMIER_ERE",
     "order": 71,
     "parentId": 65,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 72,
@@ -654,8 +654,8 @@
     "name": "CHEZ_CHARPENTIERE",
     "order": 77,
     "parentId": 65,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 74,
@@ -681,8 +681,8 @@
     "name": "CHEZ_MARCHAND",
     "order": 80,
     "parentId": 66,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 77,
@@ -767,7 +767,7 @@
   },
   {
     "id": 86,
-    "expanded": false,
+    "expanded": true,
     "name": "BOSQUET",
     "order": 88,
     "parentId": 0,
@@ -780,8 +780,8 @@
     "name": "CHEZ_MAIRE",
     "order": 86,
     "parentId": 66,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 466
   },
   {
     "id": 88,
@@ -789,6 +789,33 @@
     "name": "CHEZ_GEOLOGUE",
     "order": 87,
     "parentId": 66,
+    "scrollX": 819,
+    "scrollY": 466
+  },
+  {
+    "id": 89,
+    "expanded": true,
+    "name": "TENTE_A",
+    "order": 89,
+    "parentId": 86,
+    "scrollX": 819,
+    "scrollY": 466
+  },
+  {
+    "id": 90,
+    "expanded": true,
+    "name": "TENTE_B",
+    "order": 90,
+    "parentId": 86,
+    "scrollX": 819,
+    "scrollY": 466
+  },
+  {
+    "id": 91,
+    "expanded": false,
+    "name": "CABANE",
+    "order": 91,
+    "parentId": 86,
     "scrollX": 819,
     "scrollY": 466
   }

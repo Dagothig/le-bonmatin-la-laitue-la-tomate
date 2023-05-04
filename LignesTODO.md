@@ -240,6 +240,9 @@ _NarrateurToileFameuse2
 > \
 > Non les notes ne disent pas laquelle.
 
+_NarrateurCouvertes
+> Des couvertes. Bien pliées quand même.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -806,6 +809,23 @@ _ProtagonisteRoger2
 > Je veux bien qu'il soit un bon client, mais\
 > vous avez vu son allure?
 
+_ProtagonisteTuePassageMontagneux
+> Parlant de coeur, je vous avais pas déjà\
+> tué dans le petit passage montagneux?
+
+_ProtagonisteQuelChevalierNoir
+> Le Chevalier Noir? C'est qui lui?
+
+_ProtagonisteBrasPeterFaceOClock
+> Hah! Écoutez, je regarde mon bras, et tout\
+> ce que je vois c'est qu'il est\
+> péter-votre-face-o-clock!
+
+_ProtagonisteReellementBanditsGrandChemin
+> Fuillons avec nos vies!\
+> Ce sont réellement des bandits de grand\
+> chemin!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1043,6 +1063,10 @@ _WwwelchiorNuancePasSiGrande
 _WwwelchiorPasLesTenebres
 > C'est pas pour les Ténèbres en tout cas,\
 > sinon j'en aurais entendu parler.
+
+_WwwelchiorExcusePasForte
+> Niveau excuse c'est pas fort. Je pense\
+> qu'ils mentent.
 
 ### Fantome
 
@@ -1580,6 +1604,31 @@ _JacquesAssurerChevalierNoir
 > \
 > Oh.
 
+_JacquesVisite
+> Jean! Ouvres les yeux! On a de la visite!
+
+_JacquesPaiementDecide
+> D'habitude en tant que bandits de grand\
+> chemin, on vous proproserait votre or ou\
+> votre vie, mais là vous avez trouvé notre\
+> campement, alors le paiement est décidé!
+
+_JacquesGrandCheminCoeur
+> Pas encore! Je te dis, c'est pas une\
+> question de l'emplacement, mais de ce qu'il\
+> y a dans notre coeur!
+
+_JacquesChevalierNoirSombresDesseins
+> Voilà! Vu qu'on avait signé le contrat avec\
+> le Chevalier Noir, il s'est assuré qu'on\
+> puisse remplir de sombres desseins!
+
+_JacquesVousAllezPerir
+> Ça change rien! Vous allez périr!
+
+_JacquesDesavantageNumerique
+> T'inquiètes je gère!
+
 ### Jean
 
 _JeanRestePersonne
@@ -1598,6 +1647,26 @@ _JeanPeripetie
 > Je... je crois qu'on est seulement une\
 > péripétie...
 
+_JeanBosquetTantPasTropProche
+> \}Non mais le bosquet est un endroit public, je m'étais dis que tant qu'ils\
+> viennent pas trop proche...\{
+
+_JeanPlusBanditsBosquet
+> On est plus des bandits du bosquet,\
+> mais bon...
+
+_JeanVaMieux
+> On va mieux maintenant!
+
+_JeanMamanSauve
+> Non non! Jacques voulait dire qu'on n'était\
+> pas mort et que sa maman nous a retrouvé\
+> et nous a sauvé!
+
+_JeanDesavantageNumerique
+> Huuuh\
+> Jacques on est en désavantage numérique!
+
 ### Pretresse
 
 _PretresseAppear
@@ -1605,6 +1674,12 @@ _PretresseAppear
 
 _PretresseTape
 > Repentez-vous!
+
+_PretresseDevraitDemanderOr
+> Bonsoir.\
+> Jacques dit que je devrais vous demander\
+> tout votre or, mais vous avez l'air d'en\
+> avoir plus besoin que moi...
 
 ### Mmmtriste
 
