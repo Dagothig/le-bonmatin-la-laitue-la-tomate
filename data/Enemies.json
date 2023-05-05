@@ -1350,7 +1350,7 @@
       10,
       10,
       5,
-      110,
+      100,
       100
     ]
   },
@@ -1419,7 +1419,7 @@
       11,
       10,
       5,
-      100,
+      90,
       100
     ]
   },
@@ -1487,12 +1487,12 @@
       {
         "code": 61,
         "dataId": 0,
-        "value": 1
+        "value": 0.5
       }
     ],
     "gold": 30,
     "name": "Jacques de Grand Chemin",
-    "note": "<<aaa_icon 110 10>>\n<<aaa_actions {\n  const ratingMax = actionList.reduce((n, a) => Math.max(n, a.rating), 0);\n  const ratingZero = ratingMax - 3;\n  actionList = actionList.filter(a => a.rating > ratingZero);\n  return [\n    { skillId: 67 },\n    this.selectAction(actionList, ratingZero)\n  ];\n}>>",
+    "note": "<<aaa_icon 110 10>>\n<<aaa_actions {\n  if (this.numActions() === 1) {  \n    return;\n  }\n  const ratingMax = actionList.reduce((n, a) => Math.max(n, a.rating), 0);\n  const ratingZero = ratingMax - 3;\n  actionList = actionList.filter(a => a.rating > ratingZero);\n  return [\n    { skillId: 67 },\n    this.selectAction(actionList, ratingZero)\n  ];\n}>>",
     "params": [
       120,
       0,
@@ -1658,7 +1658,7 @@
     ],
     "gold": 10,
     "name": "Prêtresse",
-    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const actions = [\n    { skillId: 40, rating: 4 },\n    { skillId: 3, rating: 5 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  if (this.friendsUnit().members().find(m => m.isAlive() && m.hp + 40 <= m.mhp)) {\n    actions.push({ skillId: 29, rating: 7 });\n  }\n  return this.gogoGadgetActions(actions);\n}>>",
+    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const actions = [\n    { skillId: 40, rating: 4 },\n    { skillId: 3, rating: 5 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  if (this.friendsUnit().members().find(m => m.isAlive() && m.hp + 40 <= m.mhp)) {\n    actions.push({ skillId: 29, rating: 7 });\n  }\n  return this.gogoGadgetActions(actions);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
     "params": [
       100,
       100,

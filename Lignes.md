@@ -249,6 +249,12 @@ Cossin
 CoffeeBland
 > CoffeeBland
 
+Earth4
+> Earth4
+
+Earth1
+> Earth1
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1709,6 +1715,62 @@ _ProtagonisteReellementBanditsGrandChemin
 > Ce sont réellement des bandits de grand\
 > chemin!
 
+_ProtagonisteVictwereBandits
+> Ha! Plus jamais leur joyeuse compagnie ne\
+> pourra terroriser les pauvres charpentiers\
+> et maires de ce monde!
+
+_ProtagonisteVictwereBandits2
+> Par contre ça sonne comme un mauvais\
+> présage leur histoire de Chevalier Noir...
+
+_ProtagonisteCommentRamenerChaise
+> Oh! C'est la chaise municipale!\
+> \
+> ...\
+> Comment on va ramener ça au maire?
+
+_ProtagonisteRegardezTronePoche
+> Non c'est bon regardez ce que j'ai dans ma\
+> poche!\
+> La chaise municipale!
+
+_ProtagonisteNezDeDetective
+> Mon nez de détective me dit que quelqu'un a\
+> parti un feu ici récemment!
+
+_ProtagonisteDevinezPoche
+> Devinez ce que j'ai dans ma poche!
+
+_ProtagonisteAUneChaiseDansLaPoche
+> Voyons! Bien mieux que ça!\
+> \
+> Les bandits ont été vaincus, et nous avons\
+> récupéré la nouvelle chaise municipale!
+
+_ProtagonisteOufLourd
+> Ouf, c'est lourd!
+
+_ProtagonisteMettreAncienneOu
+> Mmmmh, l'ancienne je la mets où?
+
+_ProtagonistePasserParPorte
+> Ah merde, il faut la passer à travers la\
+> porte?
+
+_ProtagonistePivot
+> Ouch! Va falloir pivoter. Pivoter!
+
+_ProtagonisteOnMetLaNouvelleChaise
+> Bon... donc maintenant on met la nouvelle\
+> chaise...
+
+_ProtagonisteMairieEnvoyerCharpentierePont
+> Oui oui oui, si vous le dites.\
+> La vraie question, c'est là maintenant vous\
+> allez pouvoir envoyer la charpentière\
+> réparer le pont?
+
 ### Rip
 
 _RipFinsDePhrases
@@ -2670,6 +2732,24 @@ _NarrateurToileFameuse2
 _NarrateurCouvertes
 > Des couvertes. Bien pliées quand même.
 
+_NarrateurTrouveChaiseMunicipale
+> Vous avez trouvé la Chaise Municipale!
+
+_NarrateurNoShit
+> Wow. Phiou. Impossible.
+
+_NarrateurAncienneChaiseMunicipale
+> L'ancienne chaise municipale.\
+> \
+> Le velour est un peu sale, mais rien qui ne peut pas\
+> être nettoyé.
+
+_NarrateurNotePortePont
+> Il y a une note sur la porte:\
+> Partie réparer le pont. Pour toute commande, veuillez\
+> d'abord convaincre le maire de ne pas continuellement\
+> commander des chaises.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3247,6 +3327,12 @@ _WwwelchiorExcusePasForte
 > Niveau excuse c'est pas fort. Je pense\
 > qu'ils mentent.
 
+_WwwelchiorVictwereBandits
+> La Noirceur c'est rien comparé aux\
+> Ténèbres.\
+> \
+> Garanti que ce ne sera pas un problème.
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -3781,6 +3867,16 @@ _GabspartTouchePipiNeuf
 
 _GabspartJeanJacquesMorts
 > Peut-être que c'est des vivants?
+
+_GabspartFouillerCabane
+> Mettons qu'on oublie pas de fouiller leur\
+> cabane par contre?
+
+_GabspartEssayeMettreDansTaPoche
+> Est-ce que tu as essayé de la mettre dans\
+> ta poche?\
+> \
+> Des fois c'est surprenant!
 
 ### Jacques
 
@@ -4906,6 +5002,26 @@ _MaireBandits3
 > terribles nouvelles!? Personne ici ne\
 > possède de bateau, nous sommes donc perdus.
 
+_MaireBellePieceOr
+> Une belle pièce d'or avec le visage du\
+> maire dessus?
+
+_MaireQuAttendezVous
+> Oh!\
+> \
+> Qu'attendez-vous? Venez remplacer ce vieux\
+> divan pourri!
+
+_MaireAncienneCotePorte
+> Oh, l'ancienne? Vous pouvez la laisser à\
+> côté de la porte.
+
+_MaireDifferenceExtraordinaire
+> La différence est extraordinaire, non?\
+> \
+> La nouvelle chaise est en bien meilleur\
+> état!
+
 ### Charpentiere
 
 _CharpentiereOccupee
@@ -4939,6 +5055,10 @@ _CharpentiereNonPasFouiller
 
 _CharpentiereMaCorde
 > Oui, et c'est MA corde.
+
+_CharpentiereGrouillerMaire
+> Phiou! Grouillez vous de l'amener au maire,\
+> donc!
 
 ### Recruteur
 
@@ -5002,3 +5122,9 @@ _RandoLegumes
 > Est-ce vous allez vous laisser tempter par\
 > mes légumes frais? J'ai des patates, des\
 > radis, des carottes! De tout, quoi!
+
+### Mairie
+
+_MairieEnvoyerCharpentierePontConsent
+> La mairie consent qu'on puisse envoyer la\
+> charpentière réparer le pont, oui.

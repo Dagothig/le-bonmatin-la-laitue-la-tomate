@@ -126,7 +126,7 @@
   },
   {
     "id": 5,
-    "autoRemovalTiming": 1,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "iconIndex": 3,
     "maxTurns": 5,

@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 12,
+  "editMapId": 64,
   "elements": [
     "",
     "Physical",
@@ -534,7 +534,7 @@
     {
       "actorId": 6,
       "equips": [
-        6,
+        5,
         1,
         0,
         0,
@@ -604,9 +604,9 @@
     "MAIRE",
     "BANDITS_GRAND_CHEMIN",
     "GEOLOGUE",
-    ""
+    "PONT"
   ],
-  "versionId": 73711355,
+  "versionId": 94436475,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

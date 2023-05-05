@@ -732,5 +732,31 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 50
+  },
+  {
+    "id": 25,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Clairement un trône.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Chaise Municipale",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
