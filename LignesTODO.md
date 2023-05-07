@@ -261,6 +261,22 @@ _NarrateurNotePortePont
 > d'abord convaincre le maire de ne pas continuellement\
 > commander des chaises.
 
+_NarrateurPasGeologueBloqueEscaliers
+> Vous n'êtez pas géologue.\
+> Mais une grosse pile de roches ça bloque les escaliers.
+
+_NarrateurPasGeologueBloqueEchelle
+> Vous n'êtez pas géologue.\
+> Mais une grosse pile de roches ça bloque l'échelle.
+
+_NarrateurRocheDiorite
+> Vous n'êtes pas géologue.\
+> Mais c'est de la diorite, ça.
+
+_NarrateurPyrrite
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile de pyrite de fer, ça.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -900,6 +916,50 @@ _ProtagonisteMairieEnvoyerCharpentierePont
 > allez pouvoir envoyer la charpentière\
 > réparer le pont?
 
+_ProtagonisteRhetoriqueMonCul
+> Hey oh!\
+> Et si j'avais connu de l'information\
+> contextuelle utile?\
+> C'est assumer des choses, ça!
+
+_ProtagonistePeutAiderPont
+> Alors, comment est-ce que vous allez\
+> pouvoir faire les réparations? Y'a moyen\
+> qu'on vous aide?
+
+_ProtagonisteAutreFameuseLegende
+> Une autre fameuse légende c'est ça?
+
+_ProtagonistePtitDoigtConnaisseu
+> Ça a d'l'air que mon petit doigt y connait\
+> toutes sortes de choses!
+
+_ProtagonisteTempsPasseVite
+> C'est fou comme le temps passe vite des\
+> fois!
+
+_ProtagonisteErfBonsoir
+> ...\
+> \
+> Erf, bonsoir à vous aussi!
+
+_ProtagonisteUtiliteMairissime
+> D'une utilité à rivaliser avec le maire,\
+> lui.
+
+_ProtagonisteCestEvident
+> Ouin ça c'est évident.
+
+_ProtagonisteBonsoir6
+> Bonsoir?
+
+_ProtagonistePlusDinformation
+> Vous n'avez plus aucune information à\
+> donner, c'est ça?
+
+_ProtagonisteDuBeauSerieux
+> Wooh! Ça c'est du beau sérieux.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1051,6 +1111,16 @@ _GabspartEssayeMettreDansTaPoche
 > \
 > Des fois c'est surprenant!
 
+_GabspartQuestionRhetoriqueHermite
+> Oh j'espère que c'est rhétorique comme\
+> question, Personne Véritable est un peu\
+> hermite vous savez.
+
+_GabspartQuestionRhetoriqueHermite2
+> T'étais au courant que le pont est cassé\
+> avant d'embarquer dans ton aventure\
+> cosmique?
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -1157,6 +1227,9 @@ _WwwelchiorVictwereBandits
 > Ténèbres.\
 > \
 > Garanti que ce ne sera pas un problème.
+
+_WwwelchiorNeSavaisPasConnaissais
+> Je ne savais pas que tu les connaissais!
 
 ### Fantome
 
@@ -1920,6 +1993,32 @@ _CharpentiereGrouillerMaire
 > Phiou! Grouillez vous de l'amener au maire,\
 > donc!
 
+_CharpentiereNiasentPasPontCasse
+> Bon... Ils niaisaient pas quand ils\
+> disaient que le pont est cassé. Je vois pas\
+> trop comment il peut manquer tout un gros\
+> morceau comme ça?
+
+_CharpentiereAvecGaboueToutPossible
+> Avec Gaboué ça va être pas pire je pense.
+
+_CharpentiereOnATermine
+> Phiou, voilà on a terminé!
+
+_CharpentiereEncoreLeSoir
+> Pourtant il est encore le soir? Y peut pas\
+> s'être passé plus que quelques minutes!
+
+_CharpentiereDevinezEngage
+> Devinez qui l'a engagé? Indice: Le conseil\
+> municipal l'aime beaucoup!
+
+_CharpentiereRentreChezElle
+> \}Je suis crevée, moi je rentre chez nous!\{
+
+_CharpentiereOnSyMet
+> On s'y met, donc?
+
 ### Recruteur
 
 _RecruteurBonsoirSombresDesseins
@@ -1988,3 +2087,8 @@ _RandoLegumes
 _MairieEnvoyerCharpentierePontConsent
 > La mairie consent qu'on puisse envoyer la\
 > charpentière réparer le pont, oui.
+
+### Garde
+
+_GardeCirculez
+> Vous bloquez la voie publique, circulez!
