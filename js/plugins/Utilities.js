@@ -518,7 +518,10 @@ function eval_fn_expr(expr, args) {
                 extendoList(((contents.map._interpreter || EO)._list || EA));
                 for (const event of contents.map._events || EA) {
                     extendoList(((event || EO)._interpreter || EO)._list || EA);
-                    extendoList(((event || EO)._moveRoute || EO).list || EA);
+                    const moveRoute = ((event || EO)._moveRoute || EO).list || EA;
+                    for (const routeEntry of moveRoute)
+                        if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
+                                routeEntry.evalFn = eval_fn_expr("{\n" + routeEntry.parameters[0] + "\n}", "command, gc, params");
                 }
                 for (const event of contents.map._commonEvents || EA) {
                     extendoList(((event || EO)._interpreter || EO)._list || EA);
@@ -2973,11 +2976,16 @@ Input.keyMapper[68] = "right"; // d
                     DataManager.createGameObjects();
                     DataManager.extractSaveContents(JsonEx.parse(json));
                     SoundManager.playLoad();
+                    var time = 48 / 60;
+                    AudioManager.fadeOutBgm(time);
+                    AudioManager.fadeOutBgs(time);
+                    AudioManager.fadeOutMe(time);
                     if ($gameSystem.versionId() !== $dataSystem.versionId) {
                         $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
                         $gamePlayer.requestMapReload();
                     }
                     SceneManager.goto(Scene_Map);
+                    $gameSystem.onAfterLoad();
                 }
             };
             xhr.send();
@@ -3054,8 +3062,16 @@ Input.keyMapper[68] = "right"; // d
                 this.y = (Graphics.boxHeight - this.height) / 2;
             },
             function makeCommandList() {
-                for (const name of ["detah"]) {
-                    this.addCommand(name, name);
+                for (const name of ["jean-jacques", "temple-du-bonjour", "detah"]) {
+                    const capitalized = Array.from(name);
+                    capitalized[0] = capitalized[0].toUpperCase();
+                    for (let i = 0; i < capitalized.length; i++) {
+                        if (capitalized[i] === "-") {
+                            capitalized[i] = " ";
+                            capitalized[i + 1] = capitalized[i + 1].toUpperCase();
+                        }
+                    }
+                    this.addCommand(capitalized.join(""), name);
                 }
             },
             function processOk() {
