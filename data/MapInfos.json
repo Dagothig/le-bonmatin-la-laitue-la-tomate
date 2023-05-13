@@ -6,7 +6,7 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 885,
+    "scrollX": 1011,
     "scrollY": 756
   },
   {
@@ -187,7 +187,7 @@
     "order": 25,
     "parentId": 8,
     "scrollX": 819,
-    "scrollY": 466
+    "scrollY": 464
   },
   {
     "id": 22,
@@ -214,7 +214,7 @@
     "order": 22,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 494
+    "scrollY": 496
   },
   {
     "id": 25,
@@ -672,8 +672,8 @@
     "name": "CHEZ_FERMIER_ERE_BAS",
     "order": 74,
     "parentId": 71,
-    "scrollX": 893.4545454545455,
-    "scrollY": 508.3636363636364
+    "scrollX": 819,
+    "scrollY": 464
   },
   {
     "id": 76,
@@ -817,7 +817,7 @@
     "order": 92,
     "parentId": 86,
     "scrollX": 819,
-    "scrollY": 466
+    "scrollY": 464
   },
   {
     "id": 92,

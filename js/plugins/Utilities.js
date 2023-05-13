@@ -3062,7 +3062,7 @@ Input.keyMapper[68] = "right"; // d
                 this.y = (Graphics.boxHeight - this.height) / 2;
             },
             function makeCommandList() {
-                for (const name of ["jean-jacques", "temple-du-bonjour", "detah"]) {
+                for (const name of ["jean-jacques", "temple-du-bonjour", "premiere-du-bonjour", "detah", "jean-jacques-forrealthistimeprod2"]) {
                     const capitalized = Array.from(name);
                     capitalized[0] = capitalized[0].toUpperCase();
                     for (let i = 0; i < capitalized.length; i++) {

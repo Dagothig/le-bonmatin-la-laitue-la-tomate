@@ -140,7 +140,7 @@ _NarrateurLivreIntimeResident
 > Le journal intime d'un des résidents.
 
 _NarrateurEnFaitRecette
-> Vous vous apprêter à le lire, lorsque vous réaliser\
+> Vous vous apprêter à le lire, lorsque vous réalisez\
 > qu'en fait il s'agit d'un livre de recette.
 
 _NarrateurRecettePouletFour
@@ -762,7 +762,7 @@ _ProtagonisteMairePont2
 
 _ProtagonisteMairePont3
 > \}Je vois donc que les ressources de la municipalité sont bien utilisées...\{\
-> Le charpentier aura du temps si je vais\
+> La charpentière aura du temps si je vais\
 > récupérer le throne pris par les bandits?
 
 _ProtagonisteMaireBandits1
