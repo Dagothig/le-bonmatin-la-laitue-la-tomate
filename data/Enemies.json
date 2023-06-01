@@ -1571,11 +1571,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 0.5
       }
     ],
     "gold": 30,
     "name": "Jean de Grand Chemin",
-    "note": "<<aaa_icon 82 57>>\n<<aaa_actions {\n  const sleeping = this.friendsUnit().members().find(m => m.isStateAffected(10));\n  if (sleeping) {\n    return [{ skillId: 4 }];\n  }\n}>>",
+    "note": "<<aaa_icon 82 57>>\n<<aaa_actions {\n  let otherAct;\n  const sleeping = this.friendsUnit().members().find(m => m.isStateAffected(10));\n  if (sleeping) {\n    otherAct = { skillId: 4 };\n  } else {\n    const ratingMax = actionList.reduce((n, a) => Math.max(n, a.rating), 0);\n    const ratingZero = ratingMax - 3;\n    actionList = actionList.filter(a => a.rating > ratingZero);\n    otherAct = this.selectAction(actionList, ratingZero);\n  }\n  const acts = [otherAct];\n  if (this.numActions() > 1) {\n    acts.unshift({ skillId: 67 });\n  }\n  return acts;\n}>>",
     "params": [
       100,
       0,

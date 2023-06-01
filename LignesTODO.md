@@ -277,6 +277,10 @@ _NarrateurPyrrite
 > Vous n'êtes pas géologue.\
 > Mais c'est une pile de pyrite de fer, ça.
 
+_NarrateurPileJaunatre
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile jaunâtre, ça.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit

@@ -135,7 +135,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
     };
 
     const dataFiles = await $dataFiles;
-    const walkthroughText = JSON.parse(dataFiles.find(([dataFile]) => dataFile === "Walkthrough.json")?.[1] ?? "null");
+    const walkthroughText = dataFiles.find(([dataFile]) => dataFile === "Walkthrough.json")?.[1] ?? "null";
     for (const [dataFile, text] of dataFiles) {
         const json = JSON.parse(text);
         const mapMatch = dataFile.match(MAP_REGEX);
@@ -273,12 +273,16 @@ const sectionsByNameToLinesMD = sectionsByName =>
     }
 
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
-    if (knownLinesText !== newKnownLinesText)
+    if (knownLinesText !== newKnownLinesText) {
+        console.log("Writing lines");
         await fs.writeFile("Lignes.md", newKnownLinesText);
+    }
 
     const newTodosText = sectionsByNameToLinesMD(todosByName);
-    if (todosText !== newTodosText)
+    if (todosText !== newTodosText) {
+        console.log("Writing lines TODO");
         await fs.writeFile("LignesTODO.md", newTodosText);
+    }
 
     for (const [file, content] of missingAudioFiles) {
         console.log("Generated " + file);
