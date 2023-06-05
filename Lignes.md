@@ -1582,7 +1582,7 @@ _ProtagonisteNoteParTerre
 _ProtagonisteBanditsProvenance
 > Bon ok, ça nous dit d'où y viennent je\
 > suppose?\
-> Mais genre... quel boisé? Va falloir tout\
+> Mais genre... quel boisé? Va falloir tous\
 > les vérifier c'est ça?
 
 _ProtagonisteJeanJacquesMorts1
@@ -1814,6 +1814,19 @@ _ProtagonistePlusDinformation
 
 _ProtagonisteDuBeauSerieux
 > Wooh! Ça c'est du beau sérieux.
+
+_ProtagonisteAhOuiCestDotDotDot
+> Ah oui... c'est...
+
+_ProtagonisteTenteIdentificationRoche
+> Pourtant, en tant que non-géologue, il me\
+> semble que ce n'est pas seulement qu'une\
+> roche?
+
+_ProtagonisteOnDitIgne
+> Non mais on dit igné! Et regarde y'a toute\
+> une description! Y'en a plein des roches\
+> ignés.
 
 ### Rip
 
@@ -2283,10 +2296,10 @@ _NarrateurPuitsVieille
 > Vous entendez le son d'un ronflement?
 
 _NarrateurCorde
-> De la corde.\
-> \
-> Bien régulière.\
-> On peut corder avec ça.
+> Une Corde Auto-Portante!\
+> Elle permet de monter et de descendre à des endroits\
+> spécifiques et désormais identifiés!\
+> Non, ce n'est pas une corde à usage général.
 
 _NarrateurMurInvisible
 > Bien que vous tentiez de toute votre volonté d'avancer\
@@ -2760,8 +2773,8 @@ _NarrateurSceauEau
 > Il vous prend une étrange envie de tomber dedans.
 
 _NarrateurFoyerSuie
-> Il n'y a pas de feu mais, une bien de la suie dans le\
-> fond, si jamais vos mains se prenaient une crise\
+> Il n'y a pas de feu mais, il y a bien de la suie dans\
+> le fond, si jamais vos mains se prenaient une crise\
 > existentielle de propreté.
 
 _NarrateurToileFameuse1
@@ -2812,6 +2825,12 @@ _NarrateurPyrrite
 _NarrateurPileJaunatre
 > Vous n'êtes pas géologue.\
 > Mais c'est une pile jaunâtre, ça.
+
+_NarrateurCordeReguliere
+> De la corde.\
+> \
+> Bien régulière.\
+> On peut corder avec ça.
 
 ### Bucheron
 
@@ -3361,7 +3380,7 @@ _WwwelchiorBonsoirBonjourette
 > et il se repose bien les yeux en ce moment!
 
 _WwwelchiorRefuseBonjourette
-> \}Écoutes comment voulais que je sache qu'elle existe pour vrai?\{\
+> \}Écoutes comment voulais-tu que je sache qu'elle existe pour vrai?\{\
 > \
 > \}Si y'a aucune quête ou mouvement rattachée à elle, lui mentir c'est la plus\
 > grande gentillesse qu'on puisse lui faire en ce moment!\{
@@ -3371,7 +3390,7 @@ _WwwelchiorFaisMoiConfiance
 
 _WwwelchiorJeanJacquesMorts
 > Ou un personnage sinistre les a ressuscité\
-> afin de remplir son sombe dessein!
+> afin de remplir son sombre dessein!
 
 _WwwelchiorEhoLAppropriation
 > Pèses pas trop vite sur l'accélérateur de\
@@ -3398,6 +3417,18 @@ _WwwelchiorVictwereBandits
 
 _WwwelchiorNeSavaisPasConnaissais
 > Je ne savais pas que tu les connaissais!
+
+_WwwelchiorVoitRocheSurPage
+> Mmmh, moi je vois une roche sur la page.
+
+_WwwelchiorLegendeRoche
+> Tu es sûr? Regarde là, la petite légende:\
+> \
+> "Roche ignagna"
+
+_WwwelchiorTeaseDescriptionRoche
+> Oh, et on va prendre le temps de lire la\
+> description?
 
 ### Gabspart
 
@@ -3953,6 +3984,10 @@ _GabspartQuestionRhetoriqueHermite2
 > T'étais au courant que le pont est cassé\
 > avant d'embarquer dans ton aventure\
 > cosmique?
+
+_GabspartWhatIfLaDescriptionEtaitLatine
+> On sait jamais hein, si ça avait été du\
+> latin...
 
 ### Jacques
 
@@ -5221,9 +5256,9 @@ _BarmanRoger2
 
 _RandoLegumes
 > Bonsoir!\
-> Est-ce vous allez vous laisser tempter par\
-> mes légumes frais? J'ai des patates, des\
-> radis, des carottes! De tout, quoi!
+> Est-ce que vous allez vous laisser tempter\
+> par mes légumes frais? J'ai des patates,\
+> des radis, des carottes! De tout, quoi!
 
 ### Mairie
 

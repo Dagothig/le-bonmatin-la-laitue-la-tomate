@@ -931,7 +931,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Lévitation Légère",
-    "note": "",
+    "note": "<levitate>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

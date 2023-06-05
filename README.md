@@ -3,11 +3,11 @@
 ## TODO
 
 * Stat de la robe de Dureté
-* Effet visuel de la lévitation légère (+ fix state déséquiper)
 * Quête vieux + montagne + blonde de Cossin Lette
 * Dialogue intro géologue
 * Passage sous la montagne
 * Updater Oracle
+* Marchand
 
 ### Musique
 

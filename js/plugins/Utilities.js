@@ -643,6 +643,14 @@ function eval_fn_expr(expr, args) {
                     $gameScreen.startFadeOut(fadeSpeed);
                     this.wait(this.fadeSpeed());
                 }
+            } else if (command === "image") {
+                const name = args[0];
+                const idx = Number.parseInt(args[1]) || 0;
+                const pattern = Number.parseInt(args[2]) || 0;
+                const event = $gameMap.event(this.eventId());
+                event.setImage(name, idx);
+                event.setPattern(pattern);
+                event._originalPattern = pattern;
             }
         },
         function jumpToLabel(_, labelName) {
@@ -1988,7 +1996,7 @@ function eval_fn_expr(expr, args) {
             this.updateBgmParameters(this._currentBgm);
             var newVolume = this._bgmBuffer && this._bgmBuffer.volume;
             if (previousVolume !== newVolume) {
-                this._bgmBuffer.aaa_fade(previousVolume < newVolume ? 1 : 0.25, previousVolume, newVolume);
+                this._bgmBuffer.aaa_fade(1, previousVolume, newVolume);
             }
         }
     });
@@ -3272,21 +3280,27 @@ Input.keyMapper[68] = "right"; // d
         }
     });
 
-    override(Game_Battler.prototype,
-        function refresh(refresh) {
-            refresh.call(this);
-            for (const trait of this.traitObjects()) {
-                if (trait.aaa_states) {
+    override(Game_Actor.prototype,
+        function states(states) {
+            const base = states.call(this);
+            for (const trait of this.equips()) {
+                if (trait && trait.aaa_states) {
                     for (const stateId of trait.aaa_states) {
-                        this.addState(stateId);
+                        const state = $dataStates[stateId];
+                        if (!base.contains(state)) {
+                            base.push(state);
+                        }
                     }
                 }
             }
-        });
+            return base;
+        },
+        function paramPlus(paramPlus, paramId) {
+            const n = paramPlus.call(this, paramId);
+            for (const trait of this.traitObjects()) {
 
-    override(Sprite_Battler.prototype,
-        function updatePosition(updatePosition) {
-            updatePosition.call(this);
+            }
+            return n;
         });
 
     override(Game_Battler.prototype,
@@ -3295,6 +3309,26 @@ Input.keyMapper[68] = "right"; // d
                 Math.floor(this.mhp * this.hrg + this.hsrg),
                 -this.maxSlipDamage());
             value !== 0 && this.gainHp(value);
+        },
+        function refresh(refresh) {
+            refresh.call(this);
+            this.aaaLevitate = false;
+            for (const state of this.states()) {
+                if (state && state.meta && state.meta.levitate) {
+                    this.aaaLevitate = true;
+                }
+            }
+        });
+
+    override(Sprite_Actor.prototype,
+        function update(update) {
+            update.call(this);
+            if (this._battler && this._battler.aaaLevitate) {
+                this.aaaLevitate = ((this.aaaLevitate || ((Math.random()*30)|0)) + 1);
+                const offset = (Math.sin(this.aaaLevitate / 30) + 2) * 3;
+                this.y -= offset;
+                this._shadowSprite.y += offset;
+            }
         });
 })();
 
@@ -3327,15 +3361,18 @@ Input.keyMapper[68] = "right"; // d
                 for (let i = 0; i < 82; i++)
                     if (!oracleMissableZones.includes(i))
                         $visitedMaps[i] = true;
+            $visitedMaps[6] = false;
         },
         function makeSaveContents(makeSaveContents) {
             const contents = makeSaveContents.call(this);
+            $visitedMaps[6] = false;
             contents.visitedMaps = $visitedMaps;
             return contents;
         },
         function extractSaveContents(extractSaveContents, contents) {
             extractSaveContents.call(this, contents);
             $visitedMaps = contents.visitedMaps || {};
+            $visitedMaps[6] = false;
         });
 })();
 
@@ -3399,7 +3436,7 @@ Input.keyMapper[68] = "right"; // d
                         if (!actor) continue;
                         Object.defineProperty(window.$charByName, actor.name, {
                             get() {
-                                const index = $gameParty.battleMembers().findIndex(bm =>
+                                const index = $gameParty.allMembers().findIndex(bm =>
                                     bm.name() === actor.name);
                                 switch (index) {
                                     case -1:

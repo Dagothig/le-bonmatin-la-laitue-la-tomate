@@ -3121,7 +3121,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurCorde"
+                "se _NarrateurCordeReguliere"
               ]
             },
             {
@@ -3366,14 +3366,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Il n'y a pas de feu mais, une bien de la suie dans le"
+                "Il n'y a pas de feu mais, il y a bien de la suie dans "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "fond, si jamais vos mains se prenaient une crise "
+                "le fond, si jamais vos mains se prenaient une crise "
               ]
             },
             {
