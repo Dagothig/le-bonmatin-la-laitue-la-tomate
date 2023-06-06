@@ -983,6 +983,23 @@ _ProtagonisteOnDitIgne
 > une description! Y'en a plein des roches\
 > ignés.
 
+_ProtagonisteAllaitPlutotBienJusquaFaimCosmique
+> Uuuuh oui ça allait plutôt bien...\
+> \
+> Mais tout a pris un tournant pour le pire!\
+> Je suis tenaillé par une Faim Cosmique!
+
+_ProtagonisteNonGeologueVautRien
+> Très certainement! En tant que non-géologue\
+> mon avis vaut vraiment rien...\
+> Ton avis rocailleux serait inestimable!
+
+_ProtagonistePresentePersSec
+> Un peu forcé, mais oui.\
+> Celui avec la barbe c'est Wwwelchior, et\
+> l'autre avec "la barbe de l'âme" c'est\
+> Gabspart.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1148,6 +1165,14 @@ _GabspartWhatIfLaDescriptionEtaitLatine
 > On sait jamais hein, si ça avait été du\
 > latin...
 
+_GabspartCaFaitChangementConnaitQQun
+> \}Ça fait vraiment changement de nos autres rencontres,\
+> c'est vraiment inusité qu'il connait quelqu'un...\{
+
+_GabspartConnaitLeMotGeologue
+> Oui je confirme que c'est pas trop pire à\
+> se rappeler.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -1269,6 +1294,14 @@ _WwwelchiorLegendeRoche
 _WwwelchiorTeaseDescriptionRoche
 > Oh, et on va prendre le temps de lire la\
 > description?
+
+_WwwelchiorSoupconneMindFlayer
+> \}Donnes-y trois minutes, ça va être révélé que c'est un contrôle de l'esprit\
+> et elle a implanté des souvenirs pour lui dérober le Bonjour!\{
+
+_WwwelchiorBienvenueEntouragePrinceTenebres
+> Bienvenue dans l'entourage du Prince des\
+> Ténèbres!
 
 ### Fantome
 
@@ -2131,3 +2164,35 @@ _MairieEnvoyerCharpentierePontConsent
 
 _GardeCirculez
 > Vous bloquez la voie publique, circulez!
+
+### Geologue
+
+_GeologueCaFaitLongtemps
+> Personne Véritable, Gaboué!\
+> Ça fait longtemps!
+
+_GeologueCaFaitLongtemps2
+> Je ne dois pas vous avoir vu depuis la\
+> dernière fois que je suis passée par le\
+> Bois du Gaboué justement...
+
+_GeologueCommentAllezVous
+> Comment allez-vous?
+
+_GeologueCeciExpliqueCela
+> Ça explique pourquoi t'es sorti de chez\
+> vous...\
+> J'ai huh, pas trop de travail en ce moment,\
+> tu as des besoins géologiques?
+
+_GeologueBonAllonsY
+> Bon, allons-y.
+
+_GeologueMarmonneursPersSec
+> Et ces deux marmonneurs c'est des\
+> Personnages Secondaires, c'est ça?
+
+_GeologueSePresente
+> Enchantée.\
+> Vous pouvez m'appeler Géologue, ça fait\
+> plus simple.

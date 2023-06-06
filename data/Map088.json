@@ -1887,7 +1887,7 @@
     },
     {
       "id": 5,
-      "name": "EV005",
+      "name": "geologue",
       "note": "<shadow>",
       "pages": [
         {
@@ -1916,6 +1916,13 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueCaFaitLongtemps"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -1929,7 +1936,740 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Bonsoir."
+                "Personne Véritable, Gaboué! "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ça fait longtemps!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueCaFaitLongtemps2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Je ne dois pas vous avoir vu depuis la "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "dernière fois que je suis passée par le"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bois du Gaboué justement..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueCommentAllezVous"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Comment allez-vous?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gaboué"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "_GaboueGaboue1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Monster",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Gaboué!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteAllaitPlutotBienJusquaFaimCosmique"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Uuuuh oui ça allait plutôt bien..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Mais tout a pris un tournant pour le pire!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Je suis tenaillé par une Faim Cosmique!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueCeciExpliqueCela"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ça explique pourquoi t'es sorti de chez "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "vous... "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "J'ai huh, pas trop de travail en ce moment,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tu as des besoins géologiques?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNonGeologueVautRien"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Très certainement! En tant que non-géologue"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "mon avis vaut vraiment rien..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ton avis rocailleux serait inestimable!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueBonAllonsY"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bon, allons-y."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "turn $charByName.Gabspart $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "turn $charByName.Wwwelchior $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GabspartCaFaitChangementConnaitQQun"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\}Ça fait vraiment changement de nos autres rencontres, "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "c'est vraiment inusité qu'il connait quelqu'un...\\{"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _WwwelchiorSoupconneMindFlayer"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\}Donnes-y trois minutes, ça va être révélé que c'est un contrôle de l'esprit "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "et elle a implanté des souvenirs pour lui dérober le Bonjour!\\{"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                0,
+                8,
+                false
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueMarmonneursPersSec"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Et ces deux marmonneurs c'est des"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Personnages Secondaires, c'est ça?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "turn $charByName.Gabspart $charByName.geologue"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "turn $charByName.Wwwelchior $charByName.geologue"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonistePresentePersSec"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Un peu forcé, mais oui."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Celui avec la barbe c'est Wwwelchior, et"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "l'autre avec \"la barbe de l'âme\" c'est"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Gabspart."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GeologueSePresente"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Enchantée."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous pouvez m'appeler Géologue, ça fait"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "plus simple."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GabspartConnaitLeMotGeologue"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Oui je confirme que c'est pas trop pire à "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "se rappeler."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _WwwelchiorBienvenueEntouragePrinceTenebres"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bienvenue dans l'entourage du Prince des"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ténèbres!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 249,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "JingleQueteCompletee",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
