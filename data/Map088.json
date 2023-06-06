@@ -2279,14 +2279,88 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "turn $charByName.Gabspart $charByName.Wwwelchior"
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.turnTowardCharacter($charByName.Wwwelchior);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.turnTowardCharacter($charByName.Wwwelchior);"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "turn $charByName.Wwwelchior $charByName.Gabspart"
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.turnTowardCharacter($charByName.Gabspart);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.turnTowardCharacter($charByName.Gabspart);"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -2417,14 +2491,88 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "turn $charByName.Gabspart $charByName.geologue"
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.turnTowardCharacter($gameMap.event($gameMap.eventsByName.geologue));"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.turnTowardCharacter($gameMap.event($gameMap.eventsByName.geologue));"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "turn $charByName.Wwwelchior $charByName.geologue"
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.turnTowardCharacter($gameMap.event($gameMap.eventsByName.geologue));"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.turnTowardCharacter($gameMap.event($gameMap.eventsByName.geologue));"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
