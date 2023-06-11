@@ -1,16 +1,16 @@
 {
-  "autoplayBgm": false,
-  "autoplayBgs": false,
-  "battleback1Name": "",
-  "battleback2Name": "",
+  "autoplayBgm": true,
+  "autoplayBgs": true,
+  "battleback1Name": "RockCave",
+  "battleback2Name": "RockCave",
   "bgm": {
-    "name": "",
+    "name": "la_chanson_du_todo",
     "pan": 0,
     "pitch": 100,
     "volume": 90
   },
   "bgs": {
-    "name": "",
+    "name": "Darkness",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -28,7 +28,7 @@
   "parallaxSx": 0,
   "parallaxSy": 0,
   "scrollType": 0,
-  "specifyBattleback": false,
+  "specifyBattleback": true,
   "tilesetId": 1,
   "width": 17,
   "data": [

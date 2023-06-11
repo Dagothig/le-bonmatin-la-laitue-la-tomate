@@ -65,7 +65,7 @@
   },
   {
     "id": 8,
-    "expanded": true,
+    "expanded": false,
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
@@ -218,7 +218,7 @@
   },
   {
     "id": 25,
-    "expanded": true,
+    "expanded": false,
     "name": "FORET_NEIGE_3-1_crypte-pecheur",
     "order": 28,
     "parentId": 7,
@@ -340,7 +340,7 @@
     "order": 47,
     "parentId": 7,
     "scrollX": 819,
-    "scrollY": 469
+    "scrollY": 477
   },
   {
     "id": 39,
@@ -718,7 +718,7 @@
     "order": 68,
     "parentId": 67,
     "scrollX": 811,
-    "scrollY": 477
+    "scrollY": 1077
   },
   {
     "id": 81,

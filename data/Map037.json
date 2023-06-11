@@ -2396,8 +2396,17 @@
               ]
             },
             {
-              "code": 205,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                22,
+                0
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -2432,7 +2441,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -2445,7 +2454,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 13,
@@ -2455,7 +2464,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -2468,7 +2477,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "_ProtagonisteTouchePlusAuxTrenchcats",
@@ -2480,7 +2489,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "UIUI",
                 1,
@@ -2490,13 +2499,74 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Moi je touche plus à ça des trenchcats."
               ]
             },
             {
               "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "_ProtagonisteLapin",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Je connais pas bien les lapins, mais me "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "semble ça ne sonne pas comme ça..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
             },
@@ -2547,10 +2617,10 @@
           },
           "moveSpeed": 3,
           "moveType": 3,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
@@ -2828,10 +2898,10 @@
           },
           "moveSpeed": 3,
           "moveType": 3,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
