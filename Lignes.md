@@ -255,6 +255,15 @@ Earth4
 Earth1
 > Earth1
 
+Buzzer2
+> Buzzer2
+
+Door2
+> Door2
+
+Applause2
+> Applause2
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1835,15 +1844,36 @@ _ProtagonisteAllaitPlutotBienJusquaFaimCosmique
 > Je suis tenaillé par une Faim Cosmique!
 
 _ProtagonisteNonGeologueVautRien
-> Très certainement! En tant que non-géologue\
-> mon avis vaut vraiment rien...\
-> Ton avis rocailleux serait inestimable!
+> Très certainement! Je promulgue mon avis\
+> de non-géologue en continu, mais ça ne\
+> vaut vraiment rien... Une vraie géologue\
+> ça ferait toute la différence!
 
 _ProtagonistePresentePersSec
 > Un peu forcé, mais oui.\
 > Celui avec la barbe c'est Wwwelchior, et\
 > l'autre avec "la barbe de l'âme" c'est\
 > Gabspart.
+
+_ProtagonisteNonGeologueHorribleBesoinSave
+> En tant que non-géologue, vous êtes soudain pris de\
+> l'horrible impression que vous devriez vraiment visiter\
+> la statue avant de vous approcher des trous.
+
+_ProtagonisteNouvelleDemeure
+> Bon... je crois qu'on a trouvé notre\
+> nouvelle demeure.
+
+_ProtagonisteUnPeuEtroit
+> C'est un peu à l'étroit tout de même...
+
+_ProtagonisteAUnMauvaisPressentiment
+> Ohlala, j'ai vraiment un mauvais\
+> pressentiment... C'est vraiment glissant\
+> par ici!
+
+_ProtagonisteEtMaintenantQuoi
+> C'est beau, et maintenant on fait quoi?
 
 ### Rip
 
@@ -2849,6 +2879,27 @@ _NarrateurCordeReguliere
 > Bien régulière.\
 > On peut corder avec ça.
 
+_NarrateurNonGeologueRocheAdjacentNonRoche
+> En tant que non-géologue, c'est minimum roche-adjacent,\
+> ou même une non-roche.
+
+_NarrateurCaillouMouvant1
+> Ah.\
+> Donc à quel point on est perdus?\
+> Genre si on est rendu dans le royaume des\
+> caillous-mouvants ça va mal finir.
+
+_NarrateurCaillouMouvant2
+> Non mais là ça s'empire!
+
+_NarrateurCaillouMouvant3
+> En fait c'est vexant... On est si méchants\
+> que ça?
+
+_NarrateurCaillouMouvant4
+> Pas nécessaire, je pense que tu viens de me\
+> donner la réponse diplomatique...
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3455,6 +3506,11 @@ _WwwelchiorBienvenueEntouragePrinceTenebres
 > Bienvenue dans l'entourage du Prince des\
 > Ténèbres!
 
+_WwwelchiorCaillouMouvant
+> Pourtant moi je trouve ça charmand.\
+> On devrait continuer voir ce qu'il y a plus\
+> loin!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -4021,6 +4077,10 @@ _GabspartCaFaitChangementConnaitQQun
 _GabspartConnaitLeMotGeologue
 > Oui je confirme que c'est pas trop pire à\
 > se rappeler.
+
+_GabspartCaillouMouvant
+> Tu veux la vraie réponse ou la réponse\
+> diplomatique?
 
 ### Jacques
 
@@ -5311,9 +5371,9 @@ _GeologueCaFaitLongtemps
 > Ça fait longtemps!
 
 _GeologueCaFaitLongtemps2
-> Je ne dois pas vous avoir vu depuis la\
-> dernière fois que je suis passée par le\
-> Bois du Gaboué justement...
+> Pas depuis que je suis passée par le Bois\
+> du Gaboué... et la cassure du pont ça date\
+> de Matusalem.
 
 _GeologueCommentAllezVous
 > Comment allez-vous?
@@ -5335,3 +5395,48 @@ _GeologueSePresente
 > Enchantée.\
 > Vous pouvez m'appeler Géologue, ça fait\
 > plus simple.
+
+_GeologueVaTraduireRoches
+> Vous entendez? Tendez-bien l'oreille, on\
+> peut entendre le doux chuchotement des\
+> roches.\
+> Ah je vais même vous le traduire...
+
+_GeologueVaSeTenirLoin
+> Mais huh, malgré ma folle confiance en vous\
+> je vais me tenir un peu éloignée, c'est\
+> bon?
+
+_GeologueOnPeutYAller
+> Bon, on va pouvoir y aller, donc.
+
+### Roche
+
+_RocheNonPasIciAilleurs
+> Non!\
+> Pas ici!\
+> Ailleurs!
+
+_RocheOui
+> Oui!
+
+_RocheNon
+> Non!
+
+_RocheOui2
+> Super!
+
+_RocheOui3
+> Affirmatif!
+
+_RocheOui4
+> Par ici!
+
+_RocheNon2
+> Pas ici!
+
+_RocheNon3
+> Ailleurs!
+
+_RocheNon4
+> Négatif!

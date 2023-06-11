@@ -121,7 +121,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 87,
+  "editMapId": 80,
   "elements": [
     "",
     "Physical",
@@ -388,7 +388,10 @@
     "ORACLE_KI_ORACLE",
     "EN_POUVOIR_PLUS",
     "SAIGNE_TOUCHE_PIPI",
-    "JACQUES_NO_MERRY_MEN"
+    "JACQUES_NO_MERRY_MEN",
+    "PASSAGE_MONTAGNE_TROU",
+    "PASSAGE_TUILE_TRISTESSE",
+    "PASSAGE_TUILE_CONTENTITUDE"
   ],
   "terms": {
     "basic": [
@@ -604,9 +607,12 @@
     "MAIRE",
     "BANDITS_GRAND_CHEMIN",
     "GEOLOGUE",
-    "PONT"
+    "PONT",
+    "PASSAGE_MONTAGNE",
+    "CUE_ROCHE",
+    "CUE_ROCHE_DELAI"
   ],
-  "versionId": 35349901,
+  "versionId": 27982343,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

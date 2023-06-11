@@ -1972,21 +1972,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Je ne dois pas vous avoir vu depuis la "
+                "Pas depuis que je suis passée par le Bois "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "dernière fois que je suis passée par le"
+                "du Gaboué... et la cassure du pont ça date"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Bois du Gaboué justement..."
+                "de Matusalem."
               ]
             },
             {
@@ -2224,21 +2224,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Très certainement! En tant que non-géologue"
+                "Très certainement! Je promulgue mon avis"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mon avis vaut vraiment rien..."
+                "de non-géologue en continu, mais ça ne "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Ton avis rocailleux serait inestimable!"
+                "vaut vraiment rien... Une vraie géologue "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "ça ferait toute la différence!"
               ]
             },
             {
@@ -4237,6 +4244,140 @@
       ],
       "x": 6,
       "y": 8
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                11
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 7
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                10
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 6
     }
   ]
 }

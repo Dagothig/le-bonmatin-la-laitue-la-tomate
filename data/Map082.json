@@ -3495,6 +3495,15 @@
               "code": 111,
               "indent": 1,
               "parameters": [
+                4,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
                 9,
                 1,
                 true
@@ -3502,45 +3511,100 @@
             },
             {
               "code": 108,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "Passage sous la montagne"
               ]
             },
             {
               "code": 355,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "window.oracleSeq = ["
               ]
             },
             {
               "code": 655,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "  [5, 20, 22],"
               ]
             },
             {
               "code": 655,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "  [56, 2, 2],"
               ]
             },
             {
               "code": 655,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "  [80, 6, 30, \"UPPERRIGHT\"]"
               ]
             },
             {
               "code": 655,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "];"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 3,
+              "parameters": [
+                "Trouver pioche"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "window.oracleSeq = ["
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 3,
+              "parameters": [
+                "  [5, 23, 27],"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 3,
+              "parameters": [
+                "  [9, 11, 11],"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 3,
+              "parameters": [
+                "  [17, 19, 7]];"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 0,
@@ -3556,7 +3620,7 @@
               "code": 108,
               "indent": 2,
               "parameters": [
-                "Trouver pioche"
+                "Visiter Géologue"
               ]
             },
             {
@@ -3570,21 +3634,21 @@
               "code": 655,
               "indent": 2,
               "parameters": [
-                "  [5, 23, 27],"
+                "  [5, 13, 28],"
               ]
             },
             {
               "code": 655,
               "indent": 2,
               "parameters": [
-                "  [9, 11, 11],"
+                "  [66, 5, 6],"
               ]
             },
             {
               "code": 655,
               "indent": 2,
               "parameters": [
-                "  [17, 19, 7]];"
+                "  [88, 8, 6]];"
               ]
             },
             {

@@ -4,10 +4,10 @@
 
 * Stat de la robe de Dureté
 * Quête vieux + montagne + blonde de Cossin Lette
-* Dialogue intro géologue
 * Passage sous la montagne
 * Updater Oracle
 * Marchand
+* Hot reload
 
 ### Musique
 

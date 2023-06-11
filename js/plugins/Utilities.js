@@ -3248,7 +3248,7 @@ Input.keyMapper[68] = "right"; // d
         },
         function command122(command122) {
             // Script
-            if (this._params[0] === 4) {
+            if (this._params[3] === 4) {
                 const value = this._evalFn.call(this);
                 for (var i = this._params[0]; i <= this._params[1]; i++) {
                     this.operateVariable(i, this._params[2], value);
@@ -3426,6 +3426,43 @@ Input.keyMapper[68] = "right"; // d
     const eventRegexp = /event (.*)/;
     const choiceRegexp = /choice (\d+) (.*)/;
 
+    function defineFns(entries) {
+        for (let i = 0; i < entries.length; i++) {
+            const entry = entries[i];
+            switch (entry.code) {
+                case 356: // Plugin command
+                    const str = (entry.parameters && entry.parameters[0] || "").toString();
+                    const eventMatch = str.match(eventRegexp);
+                    if (eventMatch) {
+                        const fn = eval_fn_expr(eventMatch[1]);
+                        const nextEntry = entries[i + 1];
+                        if (nextEntry) {
+                            nextEntry.eventFn = fn;
+                        }
+                    }
+                    const choiceMatch = str.match(choiceRegexp);
+                    if (choiceMatch) {
+                        const n = Number.parseInt(choiceMatch[1]) || 0;
+                        const fn = eval_fn_expr(choiceMatch[2]);
+                        // Look for the next choice.
+                        // We can get plugin commands in between but nothing else.
+                        for (let j = i + 1; j < entries.length; j++) {
+                            const entry = entries[j];
+                            if (!entry) {
+                                break;
+                            } else if (entry.code === 102) {
+                                entry.choiceFns = entry.choiceFns || [];
+                                entry.choiceFns[n] = fn;
+                            } else if (entry.code !== 356) {
+                                break;
+                            }
+                        }
+                    }
+                    break;
+            }
+        }
+    }
+
     override(DataManager,
         function onLoad(onLoad, object) {
             onLoad.call(this, object);
@@ -3460,42 +3497,15 @@ Input.keyMapper[68] = "right"; // d
                     for (const event of $dataMap.events) {
                         if (!event) continue;
                         for (const page of event.pages || []) {
-                            const entries = page.list;
-                            for (let i = 0; i < entries.length; i++) {
-                                const entry = entries[i];
-                                switch (entry.code) {
-                                    case 356: // Plugin command
-                                        const str = (entry.parameters && entry.parameters[0] || "").toString();
-                                        const eventMatch = str.match(eventRegexp);
-                                        if (eventMatch) {
-                                            const fn = eval_fn_expr(eventMatch[1]);
-                                            const nextEntry = entries[i + 1];
-                                            if (nextEntry) {
-                                                nextEntry.eventFn = fn;
-                                            }
-                                        }
-                                        const choiceMatch = str.match(choiceRegexp);
-                                        if (choiceMatch) {
-                                            const n = Number.parseInt(choiceMatch[1]) || 0;
-                                            const fn = eval_fn_expr(choiceMatch[2]);
-                                            // Look for the next choice.
-                                            // We can get plugin commands in between but nothing else.
-                                            for (let j = i + 1; j < entries.length; j++) {
-                                                const entry = entries[j];
-                                                if (!entry) {
-                                                    break;
-                                                } else if (entry.code === 102) {
-                                                    entry.choiceFns = entry.choiceFns || [];
-                                                    entry.choiceFns[n] = fn;
-                                                } else if (entry.code !== 356) {
-                                                    break;
-                                                }
-                                            }
-                                        }
-                                        break;
-                                }
-                            }
+                            defineFns(page.list);
                         }
+                    }
+                    break;
+                case $dataCommonEvents:
+                    if (!$dataCommonEvents) break;
+                    for (const event of $dataCommonEvents) {
+                        if (!event) continue;
+                        defineFns(event.list);
                     }
                     break;
             }
@@ -3567,5 +3577,24 @@ Input.keyMapper[68] = "right"; // d
             return (
                 battleMembers[this._memberIndex] ||
                 $gameParty.nonBattleMembers()[this._memberIndex - battleMembers.length]);
+        })
+})();
+
+// Additional input names
+(function () {
+    const directions = {
+        6: "right",
+        4: "left",
+        2: "down",
+        8: "up"
+    };
+    override(Input,
+        function isPressed(isPressed, keyName) {
+            switch (keyName) {
+                case "forward":
+                    return isPressed.call(this, directions[$gamePlayer.direction()]);
+                default:
+                    return isPressed.call(this, keyName);
+            }
         })
 })();
