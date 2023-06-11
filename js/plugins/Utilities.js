@@ -3598,3 +3598,21 @@ Input.keyMapper[68] = "right"; // d
             }
         })
 })();
+
+// Map name display adjustments
+(function () {
+    let lastDisplayedMapName = null;
+    override(Scene_Title.prototype,
+        function start(start) {
+            start.call(this);
+            lastDisplayedMapName = null;
+        });
+
+    override(Window_MapName.prototype,
+        function open(open) {
+            if (lastDisplayedMapName !== $gameMap.displayName()) {
+                open.call(this);
+            }
+            lastDisplayedMapName = $gameMap.displayName();
+        });
+})();

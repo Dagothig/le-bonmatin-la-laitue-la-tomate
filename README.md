@@ -16,6 +16,7 @@
 * Musique Ville (même que Lieu Champêtre?)
 * Musique Pont (même que Lieu Champêtre)
 * Musique Oracle
+* Musique Tension (puzzle louche du passage souterrain)
 
 ## Rouler sans RPG Maker MV
 

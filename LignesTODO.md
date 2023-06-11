@@ -288,8 +288,10 @@ _NarrateurCordeReguliere
 > On peut corder avec ça.
 
 _NarrateurNonGeologueRocheAdjacentNonRoche
-> En tant que non-géologue, c'est minimum roche-adjacent,\
-> ou même une non-roche.
+> En tant que non-géologue, vous observez que c'est\
+> plutôt inhabituel pour une roche.\
+> D'habitude ça implique que c'est roche-adjacent.\
+> Voir même que c'est une non-roche.
 
 _NarrateurCaillouMouvant1
 > Ah.\
@@ -307,6 +309,17 @@ _NarrateurCaillouMouvant3
 _NarrateurCaillouMouvant4
 > Pas nécessaire, je pense que tu viens de me\
 > donner la réponse diplomatique...
+
+_NarrateurDormirQ
+> Dormir?
+
+_NarrateurRocheEcrouleeActivement
+> Oui on peut voir ici que la roche a été partiellement\
+> écroulée.
+
+_NarrateurFormationPasNaturelle
+> Vous n'êtes pas géologue, mais à tout les coups ce\
+> n'est pas une formation naturelle ça.
 
 ### Protagoniste
 
@@ -1032,15 +1045,41 @@ _ProtagonisteUnPeuEtroit
 > C'est un peu à l'étroit tout de même...
 
 _ProtagonisteAUnMauvaisPressentiment
-> Ohlala, j'ai vraiment un mauvais\
-> pressentiment... C'est vraiment glissant\
-> par ici!
+> J'ai un mauvais pressentiment...\
+> C'est vraiment glissant par ici!
 
 _ProtagonisteEtMaintenantQuoi
 > C'est beau, et maintenant on fait quoi?
 
 _ProtagonisteOhNonDotDotDot
 > Oh non...
+
+_ProtagonisteSiSeulementGeologue
+> Si seulement on avait ma bonne amie la\
+> Géologue avec nous...\
+> Elle serait de bon conseil!
+
+_ProtagonisteSiSiALaVilleMeme
+> Si si, même qu'elle habite à la Ville!\
+> Bon, on s'est rencontré que lorsqu'elle\
+> était en visite au Bois du Gaboué...\
+> Mais pareil!
+
+_ProtagonisteBivouaquer
+> Oh pratique! Un lit pour bivouaquer.
+
+_ProtagonisteDortCommeBebe
+> Aaaah, on dort vraiment bien quand nos\
+> alentours sont calmes.
+
+_ProtagonisteEcroulerActivementWatt
+> Merci pour la remarque louche, me semble\
+> que "Écrouler" c'est pas quelque chose qui\
+> se fait activement?\
+> À moins que...
+
+_ProtagonisteCaSeCorseIci
+> Oh! Ouhlala! Ça se corse ici!
 
 ### Vieux
 
@@ -1353,6 +1392,10 @@ _WwwelchiorCaillouMouvant
 > Pourtant moi je trouve ça charmand.\
 > On devrait continuer voir ce qu'il y a plus\
 > loin!
+
+_WwwelchiorWooPersVerConnaitKkun
+> Wooo regardez-moi ça Personne Véritable qui\
+> connait "quelqu'un"!
 
 ### Fantome
 

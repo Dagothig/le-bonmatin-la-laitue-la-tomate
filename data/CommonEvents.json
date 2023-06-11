@@ -1837,6 +1837,13 @@
     "id": 8,
     "list": [
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurDormirQ"
+        ]
+      },
+      {
         "code": 101,
         "indent": 0,
         "parameters": [
@@ -1851,6 +1858,22 @@
         "indent": 0,
         "parameters": [
           "Dormir?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          0
         ]
       },
       {
@@ -2220,6 +2243,15 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          0
+        ]
+      },
+      {
         "code": 222,
         "indent": 1,
         "parameters": []
@@ -2276,6 +2308,15 @@
         "code": 221,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          1
+        ]
       },
       {
         "code": 230,
@@ -2439,6 +2480,17 @@
             "code": 38,
             "indent": null
           }
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          1
         ]
       },
       {
@@ -2491,6 +2543,13 @@
     "id": 9,
     "list": [
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurDormirQ"
+        ]
+      },
+      {
         "code": 101,
         "indent": 0,
         "parameters": [
@@ -2505,6 +2564,22 @@
         "indent": 0,
         "parameters": [
           "Dormir?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          0
         ]
       },
       {
@@ -2896,6 +2971,15 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          0
+        ]
+      },
+      {
         "code": 222,
         "indent": 1,
         "parameters": []
@@ -2952,6 +3036,15 @@
         "code": 221,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          1
+        ]
       },
       {
         "code": 230,
@@ -3140,6 +3233,17 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          1
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -3189,6 +3293,13 @@
     "id": 10,
     "list": [
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurDormirQ"
+        ]
+      },
+      {
         "code": 101,
         "indent": 0,
         "parameters": [
@@ -3203,6 +3314,22 @@
         "indent": 0,
         "parameters": [
           "Dormir?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          0
         ]
       },
       {
@@ -3505,6 +3632,15 @@
         "parameters": []
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          0
+        ]
+      },
+      {
         "code": 216,
         "indent": 1,
         "parameters": [
@@ -3610,6 +3746,15 @@
         "parameters": []
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          1
+        ]
+      },
+      {
         "code": 230,
         "indent": 1,
         "parameters": [
@@ -3712,6 +3857,17 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          1
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -3761,6 +3917,13 @@
     "id": 11,
     "list": [
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurDormirQ"
+        ]
+      },
+      {
         "code": 101,
         "indent": 0,
         "parameters": [
@@ -3775,6 +3938,22 @@
         "indent": 0,
         "parameters": [
           "Dormir?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          0
         ]
       },
       {
@@ -4146,6 +4325,15 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          0
+        ]
+      },
+      {
         "code": 222,
         "indent": 1,
         "parameters": []
@@ -4202,6 +4390,15 @@
         "code": 221,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          52,
+          52,
+          1
+        ]
       },
       {
         "code": 230,
@@ -4325,6 +4522,17 @@
             ],
             "indent": null
           }
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          1
         ]
       },
       {
@@ -7104,21 +7312,143 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "Ohlala, j'ai vraiment un mauvais "
+          "J'ai un mauvais pressentiment... "
         ]
       },
       {
         "code": 401,
         "indent": 2,
         "parameters": [
-          "pressentiment... C'est vraiment glissant"
+          "C'est vraiment glissant par ici!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _ProtagonisteSiSeulementGeologue"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
         ]
       },
       {
         "code": 401,
         "indent": 2,
         "parameters": [
-          "par ici!"
+          "Si seulement on avait ma bonne amie la "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Géologue avec nous... "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Elle serait de bon conseil!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _WwwelchiorWooPersVerConnaitKkun"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Wooo regardez-moi ça Personne Véritable qui"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "connait \"quelqu'un\"!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _ProtagonisteSiSiALaVilleMeme"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Si si, même qu'elle habite à la Ville!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Bon, on s'est rencontré que lorsqu'elle "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "était en visite au Bois du Gaboué..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Mais pareil!"
         ]
       },
       {
@@ -9559,6 +9889,19 @@
       }
     ],
     "name": "Saigne",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 26,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "",
     "switchId": 1,
     "trigger": 0
   }
