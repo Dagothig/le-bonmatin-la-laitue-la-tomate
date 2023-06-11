@@ -8,6 +8,7 @@
 * Updater Oracle
 * Marchand
 * Hot reload
+* Gabspart traduit défense gabouéenne pour la fermière
 
 ### Musique
 

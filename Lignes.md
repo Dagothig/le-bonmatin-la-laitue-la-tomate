@@ -1081,7 +1081,7 @@ _ProtagonisteConnaitPasPont
 > Huh? On marche sur un pont vous savez...
 
 _ProtagonisteOhNon
-> Oh non...
+> OhNon
 
 _ProtagonisteTombe
 > Tombe
@@ -1874,6 +1874,9 @@ _ProtagonisteAUnMauvaisPressentiment
 
 _ProtagonisteEtMaintenantQuoi
 > C'est beau, et maintenant on fait quoi?
+
+_ProtagonisteOhNonDotDotDot
+> Oh non...
 
 ### Rip
 

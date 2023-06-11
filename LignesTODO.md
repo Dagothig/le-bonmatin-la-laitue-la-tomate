@@ -1039,6 +1039,9 @@ _ProtagonisteAUnMauvaisPressentiment
 _ProtagonisteEtMaintenantQuoi
 > C'est beau, et maintenant on fait quoi?
 
+_ProtagonisteOhNonDotDotDot
+> Oh non...
+
 ### Vieux
 
 _VieuxJamaisOubli
