@@ -321,6 +321,12 @@ _NarrateurFormationPasNaturelle
 > Vous n'êtes pas géologue, mais à tout les coups ce\
 > n'est pas une formation naturelle ça.
 
+_NarrateurTellDontShowLeVieuuuux
+> Et ainsi ils traversèrent le Village.\
+> Gambadèrent entre les arbres du Bois du Gaboué.\
+> Dansèrent sur le Pont-qui-n'est-plus-cassé.\
+> Finalement, ils arrivèrent au Fameux Lieu Champêtre...
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1081,6 +1087,19 @@ _ProtagonisteEcroulerActivementWatt
 _ProtagonisteCaSeCorseIci
 > Oh! Ouhlala! Ça se corse ici!
 
+_ProtagonisteAllonsPontRepareMesEfforts
+> Allons allons, il a été réparé le pont!\
+> Gracieuseté de mes efforts personnels en\
+> plus!
+
+_ProtagonisteVousSuivezOnVaVisiterCossin
+> Alors vous allez nous suivre? Question\
+> qu'on aille visiter le Cossin?
+
+_ProtagonisteChangeRienLieuChampetre
+> Ça change rien, tout est prêt!\
+> Le Cossin est au Lieu Champêtre!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1111,6 +1130,15 @@ _VieuxPontCasseConnu
 
 _VieuxIlYaDes
 > Il y a des -
+
+_VieuxExcelsior
+> Excelsior!\
+> \
+> Moi qui croyait ne jamais voir le jour...
+
+_VieuxSenVient
+> Oui oui, j'ai juste besoin de préparer mes\
+> affaires, donnez-moi un instant...
 
 ### Premiere
 
@@ -1396,6 +1424,10 @@ _WwwelchiorCaillouMouvant
 _WwwelchiorWooPersVerConnaitKkun
 > Wooo regardez-moi ça Personne Véritable qui\
 > connait "quelqu'un"!
+
+_WwwelchiorBeurresPasTropOnEst4
+> Beurres-en pas trop, on est quatre tout de\
+> même.
 
 ### Fantome
 
@@ -2163,7 +2195,7 @@ _CharpentiereNiasentPasPontCasse
 > Bon... Ils niaisaient pas quand ils\
 > disaient que le pont est cassé. Je vois pas\
 > trop comment il peut manquer tout un gros\
-> morceau comme ça?
+> morceau comme ça? Vous le savez?
 
 _CharpentiereAvecGaboueToutPossible
 > Avec Gaboué ça va être pas pire je pense.

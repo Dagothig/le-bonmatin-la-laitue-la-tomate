@@ -3452,6 +3452,70 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                1,
+                51,
+                0,
+                30,
+                1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 3,
+              "parameters": [
+                "se _ProtagonisteChangeRienLieuChampetre"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Ça change rien, tout est prêt!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Le Cossin est au Lieu Champêtre!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 117,
+              "indent": 3,
+              "parameters": [
+                20
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 2,
               "parameters": []
@@ -3913,82 +3977,19 @@
               "code": 111,
               "indent": 2,
               "parameters": [
-                0,
-                32,
-                0
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 3,
-              "parameters": [
-                "AudioManager.playSe({ name: \"_ProtagonisteVraiPontCase\" }); "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "UIUI",
                 1,
+                51,
                 0,
-                2
+                30,
+                1
               ]
             },
             {
-              "code": 401,
+              "code": 117,
               "indent": 3,
               "parameters": [
-                "C'est vrai qu'avec le Pont cassé..."
+                20
               ]
-            },
-            {
-              "code": 251,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 3,
-              "parameters": [
-                "AudioManager.playSe({ name: \"_VieuxPontCasseLongtemps\" }); "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "People1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Ça fait longtemps que le Pont est cassé en"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "plus!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Mais le Maire de la Ville n'y fait rien..."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 3,
-              "parameters": []
             },
             {
               "code": 0,
@@ -4001,15 +4002,24 @@
               "parameters": []
             },
             {
-              "code": 355,
+              "code": 111,
               "indent": 3,
               "parameters": [
-                "AudioManager.playSe({ name: \"_ProtagonisteConnaitPasPont\" }); "
+                0,
+                32,
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 4,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_ProtagonisteVraiPontCase\" }); "
               ]
             },
             {
               "code": 101,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 "UIUI",
                 1,
@@ -4019,26 +4029,26 @@
             },
             {
               "code": 401,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
-                "Huh? On marche sur un pont vous savez..."
+                "C'est vrai qu'avec le Pont cassé..."
               ]
             },
             {
               "code": 251,
-              "indent": 3,
+              "indent": 4,
               "parameters": []
             },
             {
               "code": 355,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
-                "AudioManager.playSe({ name: \"_VieuxPontCasseConnu\" }); "
+                "AudioManager.playSe({ name: \"_VieuxPontCasseLongtemps\" }); "
               ]
             },
             {
               "code": 101,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 "People1",
                 6,
@@ -4048,26 +4058,108 @@
             },
             {
               "code": 401,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
-                "C'est bien connu que le Pont est cassé!"
+                "Ça fait longtemps que le Pont est cassé en"
               ]
             },
             {
               "code": 401,
-              "indent": 3,
+              "indent": 4,
+              "parameters": [
+                "plus!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
               "parameters": [
                 "Mais le Maire de la Ville n'y fait rien..."
               ]
             },
             {
               "code": 251,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 411,
               "indent": 3,
               "parameters": []
             },
             {
+              "code": 355,
+              "indent": 4,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_ProtagonisteConnaitPasPont\" }); "
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Huh? On marche sur un pont vous savez..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 4,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_VieuxPontCasseConnu\" }); "
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "People1",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "C'est bien connu que le Pont est cassé!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Mais le Maire de la Ville n'y fait rien..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 4,
+              "parameters": []
+            },
+            {
               "code": 205,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 -1,
                 {
@@ -4092,7 +4184,7 @@
             },
             {
               "code": 505,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 {
                   "code": 14,
@@ -4106,7 +4198,7 @@
             },
             {
               "code": 213,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 -1,
                 9,
@@ -4115,7 +4207,7 @@
             },
             {
               "code": 205,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 -1,
                 {
@@ -4136,7 +4228,7 @@
             },
             {
               "code": 505,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 {
                   "code": 22,
@@ -4146,7 +4238,7 @@
             },
             {
               "code": 213,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 -1,
                 7,
@@ -4155,7 +4247,7 @@
             },
             {
               "code": 205,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 -1,
                 {
@@ -4176,12 +4268,132 @@
             },
             {
               "code": 505,
-              "indent": 3,
+              "indent": 4,
               "parameters": [
                 {
                   "code": 22,
                   "indent": null
                 }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_ProtagonisteAnnonceCossinTrouve4\" }); "
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Heille mais comment savez vous que j'allais"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "vous proposer de venir sur mon radeau!?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_VieuxIlYaDes\" }); "
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People1",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Il y a des -"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "AudioManager.playSe({ name: \"_ProtagonisteAnnonceCossinTrouve5\" }); "
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Non laissez faire, j'ai une petite idée de"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "comment ça se fait."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 3,
+              "parameters": [
+                33,
+                33,
+                0
               ]
             },
             {
@@ -4193,116 +4405,6 @@
               "code": 412,
               "indent": 2,
               "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 2,
-              "parameters": [
-                "AudioManager.playSe({ name: \"_ProtagonisteAnnonceCossinTrouve4\" }); "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Heille mais comment savez vous que j'allais"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "vous proposer de venir sur mon radeau!?"
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 2,
-              "parameters": [
-                "AudioManager.playSe({ name: \"_VieuxIlYaDes\" }); "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Il y a des -"
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 2,
-              "parameters": [
-                "AudioManager.playSe({ name: \"_ProtagonisteAnnonceCossinTrouve5\" }); "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Non laissez faire, j'ai une petite idée de"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "comment ça se fait."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 121,
-              "indent": 2,
-              "parameters": [
-                33,
-                33,
-                0
-              ]
             },
             {
               "code": 0,
