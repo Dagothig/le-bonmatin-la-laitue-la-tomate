@@ -267,6 +267,12 @@ Applause2
 Heartbeat
 > Heartbeat
 
+Switch2
+> Switch2
+
+Siren
+> Siren
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -1946,6 +1952,67 @@ _ProtagonisteOuiCertainementIncertain
 _ProtagonisteAPlusTard
 > Bon alors... à plus tard.
 
+_ProtagonisteStatueEnArrivant
+> Oh. Une statue drette en arrivant, huh?
+
+_ProtagonistePratiqueStatues
+> Pratique tout de même ces statues...
+
+_ProtagonistePromenadeOminous
+> C'est plutôt calme en fait, on fait une\
+> belle promenade.
+
+_ProtagonisteHautMontagne
+> Ah je vois le haut de la montagne juste en\
+> haut des marches, mais on a vu personne à\
+> date...
+
+_ProtagonisteBonOnATrouveQqun
+> Bon on a trouvé quelqu'un!
+
+_ProtagonistePeuLinge
+> C'est pas beaucoup de linge pour un coin\
+> enneigé...
+
+_ProtagonisteOuiMaisNinja
+> Oui, mais y'avait pas une histoire de\
+> ninja?
+
+_ProtagonisteEsperaitMieuxCommeKalite
+> C'est un peu facile comme guet-apens, non?\
+> Ils pourraient faire mieux...\
+> À moins qu'elle était simplement coincée à\
+> cause de la roche?
+
+_ProtagonisteNononPasNecessaire
+> Non non, c'est pas nécessaire.
+
+_ProtagonisteCossinVousCherche
+> Hum, bonsoir, on peut vous aider? Cossin\
+> vous cherche!
+
+_ProtagonisteVousAllerVousMerevancher
+> Hein?\
+> Mais on n'est même pas Cossin Lette!\
+> Vous allez vous revancher sur la mauvaise\
+> personne!
+
+_ProtagonisteCoucouHelloParIci
+> Coucou! Hello! On est par ici!
+
+_ProtagonisteVousRegardezDansLeMauvaisSens
+> Non mais c'est juste... c'est drôle vous\
+> regardez tous dans la mauvaise direction.
+
+_ProtagonisteOnDevraitSInquieter
+> Est-ce que... est-ce qu'on devrait\
+> s'inquiéter?
+
+_ProtagonisteSiTuLeDisOhLeShiny
+> Si tu le dis.\
+> \
+> Oh regardez!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3010,6 +3077,20 @@ _NarrateurTellDontShowCossiiiiin
 _NarrateurTemplateItem
 > TEMPLATE D'ITEM
 
+_NarrateurRocheCouleurLouche
+> Vous n'êtes pas géologue, mais la couleur de cette\
+> roche est très curieuse...
+
+_NarrateurRocheCouleurLouche2
+> Vous n'êtes pas géologue, mais les roches qui changent\
+> de couleur quand on les active c'est plutôt anormal.
+
+_NarrateurBandanaNinja
+> Vous remarquez parmis les cendres des ninjas, qu'il\
+> reste un bandana!\
+> Un bandana vraiment très edgy. Grâce à tout ce\
+> tranchant vous pouvez porter deux armes!
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3704,6 +3785,22 @@ _WwwelchiorOffusqueTenebresCossin
 > Tu penses que les Ténèbres perdent leur\
 > temps avec Cossin!?
 
+_WwwelchiorPetitDoigtArme
+> Mon petit doigt me dit de le mettre sur mon\
+> arme et d'inviter ses compagnons.
+
+_WwwelchiorImaginesLaPlatitude
+> T'imagines la platitude du reste du Monde\
+> si c'est la Montagne?
+
+_WwwelchiorWohMisterNaifCestAmbuscade
+> Tu fais exprès d'incarner la naïveté en ce\
+> moment? C'est clairement une ambuscade!
+
+_WwwelchiorTheorieProposesParis
+> Avec une théorie pareille je te proposes\
+> qu'on prenne un paris!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -4284,6 +4381,16 @@ _GabspartNonProtagonismeFaitRien
 _GabspartTrouveDemandeMotivationTardive
 > C'est *maintenant* que tu demandes à avoir\
 > des motivations?
+
+_GabspartSassMontagne
+> D'ailleurs on n'est pas monté très haut...\
+> Faudrait qu'on se reparle de la définition\
+> de montagne après qu'on ait terminé.
+
+_GabspartPasBesoinRepoPourTeDireBlonde
+> J'ai même pas besoin de consulter le\
+> repositoire pour te dire que ça ressemble à\
+> la Blonde de Cossin Lette..
 
 ### Jacques
 
@@ -5643,3 +5750,50 @@ _RocheNon3
 
 _RocheNon4
 > Négatif!
+
+### Blonde
+
+_BlondeOhMonCossin
+> Oh mon petit Cossin...
+
+### Ninja
+
+_NinjaGniahTombePiege
+> Gniah!\
+> Vous êtes tombé dans notre piège!\
+> Après seulement 10 ans d'attente, il est\
+> l'heure de notre revanche!
+
+_NinjaCaFaitRienPersonneNousSurvit
+> Ça fait rien, personne ne survit à une\
+> rencontre avec les Ninjas!
+
+_NinjaEssayezPasAmadouer
+> Essayez pas de nous amadouer! Vous allez\
+> périr!
+
+_NinjaGnieh
+> Gnieh!
+
+_NinjaEpeeTape
+> Gnieh coupant!
+
+_NinjaShurikenTape
+> Gnieh tournoyant!
+
+_NinjaNunchakuTape
+> Gnieh tapant!
+
+_NinjaViteAlarme
+> Aaaah! Impossible!\
+> \
+> Vite!\
+> Il faut sonner l'alarme!
+
+### Alarme
+
+_AlarmeCodeRougeBrun
+> ATTENTION À TOUS LES NINJAS\
+> JE RÉPÈTE\
+> ATTENTION À TOUS LES NINJAS\
+> CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG

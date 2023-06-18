@@ -6309,5 +6309,199 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 16,
+    "members": [
+      {
+        "enemyId": 23,
+        "x": 310,
+        "y": 391,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 394,
+        "y": 331,
+        "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 315,
+        "y": 307,
+        "hidden": false
+      }
+    ],
+    "name": "Ninja A",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteCoucouHelloParIci"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Coucou! Hello! On est par ici!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _NinjaEssayezPasAmadouer"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI2",
+              5,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Essayez pas de nous amadouer! Vous allez"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "périr!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteVousRegardezDansLeMauvaisSens"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Non mais c'est juste... c'est drôle vous"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "regardez tous dans la mauvaise direction."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _NinjaGnieh"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI2",
+              5,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Gnieh!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$btl.party[\"Personne Véritable\"].setActionState(\"done\");"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

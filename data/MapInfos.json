@@ -501,8 +501,8 @@
     "name": "MONTAGNE_BAS",
     "order": 67,
     "parentId": 67,
-    "scrollX": 832,
-    "scrollY": 640
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 57,
@@ -573,7 +573,7 @@
     "name": "PONT",
     "order": 71,
     "parentId": 0,
-    "scrollX": 832,
+    "scrollX": 811,
     "scrollY": 640
   },
   {
@@ -825,7 +825,7 @@
     "name": "PONT_REPARE",
     "order": 72,
     "parentId": 64,
-    "scrollX": 811,
+    "scrollX": 832,
     "scrollY": 640
   },
   {

@@ -5680,7 +5680,7 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
                 }
               ]
             },
@@ -5908,7 +5908,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 4,
+          "trigger": 3,
           "walkAnime": true
         },
         {
