@@ -8726,6 +8726,22 @@
         ]
       },
       {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          20
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 0,
+        "parameters": [
+          9,
+          0,
+          false
+        ]
+      },
+      {
         "code": 356,
         "indent": 0,
         "parameters": [
@@ -8733,55 +8749,10 @@
         ]
       },
       {
-        "code": 101,
+        "code": 230,
         "indent": 0,
         "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "Et ainsi ils traversèrent le Village."
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "Gambadèrent entre les arbres du Bois du Gaboué."
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "Dansèrent sur le Pont-qui-n'est-plus-cassé."
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "Finalement, ils arrivèrent au Fameux Lieu Champêtre..."
-        ]
-      },
-      {
-        "code": 251,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 121,
-        "indent": 0,
-        "parameters": [
-          55,
-          55,
-          0
+          5
         ]
       },
       {
@@ -8789,12 +8760,918 @@
         "indent": 0,
         "parameters": [
           0,
-          64,
+          1,
+          17,
+          9,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 29,
+                "parameters": [
+                  6
+                ],
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              6
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 3,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 4,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          0,
+          40,
+          13,
+          8,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 29,
+                "parameters": [
+                  6
+                ],
+                "indent": 0
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              6
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 2,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          0,
+          92,
+          9,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 29,
+                "parameters": [
+                  6
+                ],
+                "indent": 0
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              6
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 1,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 129,
+        "indent": 0,
+        "parameters": [
+          9,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          55,
+          55,
           0,
           0,
+          10
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          0,
+          65,
+          16,
+          5,
           0,
           0
         ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,
@@ -9788,6 +10665,106 @@
         "indent": 0,
         "parameters": [
           "Négatif!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurTellDontShowLeVieuuuux"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "         Et ainsi ils traversèrent le Village.         "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "    Gambadèrent entre les arbres du Bois du Gaboué."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "       Dansèrent sur le Pont-qui-n'est-plus-cassé."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          " Finalement, ils arrivèrent au Fameux Lieu Champêtre..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurTellDontShowCossiiiiin"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "  Et ainsi ils froliquèrent depuis le Lieu Champêtre."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "     Dansèrent sur le Pont-de-la-cassure-passée."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "       Maraudèrent à travers le Bois Du Gaboué."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "  Finalement, ils arrivèrent au pied de la Montagne."
         ]
       },
       {

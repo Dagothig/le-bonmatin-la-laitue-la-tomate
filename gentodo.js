@@ -119,11 +119,11 @@ const sectionsByNameToLinesMD = sectionsByName =>
                         break;
                 }
             }
-            const contentLines = contentItems?.length ?
-                contentItems.map(item => item?.parameters?.[0]?.trim() ?? "") :
-                [description];
-
-            (linesByName[name] || (linesByName[name] = {}))[file] = contentLines;
+            const linesForName = (linesByName[name] || (linesByName[name] = {}));
+            if (contentItems?.length)
+                linesForName[file] = contentItems.map(item => item?.parameters?.[0]?.trim() ?? "");
+            else if (!linesForName[file])
+                linesForName[file] = [description];
         });
     }
 

@@ -1831,6 +1831,18 @@
           },
           "list": [
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "_NarrateurSocleBonMatin",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -1869,6 +1881,23 @@
               ]
             },
             {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "_NarrateurVieuxRadisOreilles",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -1891,6 +1920,11 @@
               "parameters": [
                 "oreilles."
               ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

@@ -237,5 +237,51 @@
     "nickname": "Géologue",
     "note": "",
     "profile": ""
+  },
+  {
+    "id": 9,
+    "battlerName": "",
+    "characterIndex": 6,
+    "characterName": "People1",
+    "classId": 6,
+    "equips": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "faceIndex": 6,
+    "faceName": "People1",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "Vieux",
+    "nickname": "Vieux",
+    "note": "",
+    "profile": ""
+  },
+  {
+    "id": 10,
+    "battlerName": "",
+    "characterIndex": 0,
+    "characterName": "Cossin",
+    "classId": 6,
+    "equips": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "faceIndex": 3,
+    "faceName": "UIUI2",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "Cossin Lette",
+    "nickname": "Cossin Lette",
+    "note": "",
+    "profile": ""
   }
 ]

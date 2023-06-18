@@ -327,6 +327,26 @@ _NarrateurTellDontShowLeVieuuuux
 > Dansèrent sur le Pont-qui-n'est-plus-cassé.\
 > Finalement, ils arrivèrent au Fameux Lieu Champêtre...
 
+_NarrateurVieuxGlisseRadisCossin1
+> Le Vieux glisse un radis dans la poche de Cossin.\
+> \
+> Mais Cossin n'a pas de poche, alors il le glisse dans
+
+_NarrateurVieuxGlisseRadisCossin2
+> Puis un autre.
+
+_NarrateurVieuxGlisseRadisCossin3
+> Et un dernier pour bien faire.
+
+_NarrateurTellDontShowCossiiiiin
+> Et ainsi ils froliquèrent depuis le Lieu Champêtre.\
+> Dansèrent sur le Pont-de-la-cassure-passée.\
+> Maraudèrent à travers le Bois Du Gaboué.\
+> Finalement, ils arrivèrent au pied de la Montagne.
+
+_NarrateurTemplateItem
+> TEMPLATE D'ITEM
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1100,6 +1120,32 @@ _ProtagonisteChangeRienLieuChampetre
 > Ça change rien, tout est prêt!\
 > Le Cossin est au Lieu Champêtre!
 
+_ProtagonisteVeutParticiperConvoCossin
+> Ah c'est précisément ce qu'il m'avait dit!\
+> \
+> ...\
+> Mais je n'y comprends rien.
+
+_ProtagonisteVeutMotivation
+> Des... ninjas? Et ils en ont contre Cossin\
+> parce que...?
+
+_ProtagonisteVeutJusteComprendreSituation
+> C'est plus que j'essaye de comprendre\
+> comment Cossin Lette s'est retrouvé avec un\
+> clan ténébreux sur le dos!
+
+_ProtagonistePitchDeVenteEquipe
+> Ça tombe bien, on est spécialisé en bras et\
+> en réglage de problèmes qui nécessitent du\
+> pétage de face.
+
+_ProtagonisteOuiCertainementIncertain
+> Huh... Oui, certainement!
+
+_ProtagonisteAPlusTard
+> Bon alors... à plus tard.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1139,6 +1185,66 @@ _VieuxExcelsior
 _VieuxSenVient
 > Oui oui, j'ai juste besoin de préparer mes\
 > affaires, donnez-moi un instant...
+
+_VieuxCossinVraimentToi
+> Cossin Lette! C'est vraiment toi!
+
+_VieuxCossinTellementLongtempsToutLeDanger
+> Après tout ce temps, je peine à m'imaginer\
+> tout les dangers que tu as eu à faire face!\
+> \
+> Tiens, j'ai apporté de quoi t'aider!
+
+_VieuxTraduitCossinAttendBlondePiqueNique
+> Oh quel malheur!\
+> \
+> Tu attends ta Blonde pour un pique-nique et\
+> elle ne s'est jamais présentée!?
+
+_VieuxExpliqueACossinDePasAttendre10Ans
+> Mais Cossin! Ne trouves-tu pas que c'est\
+> anormal d'attendre autant? Quelque chose de\
+> terrible doit s'être passé!
+
+_VieuxPasEncore
+> Non!? Pas encore! Tu ne t'étais pas déjà\
+> occupé d'eux?
+
+_VieuxExpliqueNinjas
+> Les Ninjas! Un clan sans scrupule qui avait\
+> tenté d'empêcher le pique-nique de Cossin\
+> il y a 10 ans de ça!
+
+_VieuxEnAMarreDuProtagoniste
+> Bien dit Cossin!\
+> Donc vous avez terminé votre montée de\
+> lait? On peut passer aux Vraies Affaires?
+
+_VieuxCossinExpliqueEmplacement
+> Ce que Cossin voulait expliquer, c'est\
+> qu'il sait où les Ninjas se terrent!\
+> Au sommet de la montagne - Il lui faut\
+> seulement un champion pour sa cause.
+
+_VieuxExpliquePasDeBraisme
+> Parce que voyez-vous...\
+> \
+> Cossin Lette n'a pas de bras, et ne peut\
+> même pas se servir de son épée.
+
+_VieuxCossinJamaisVisite
+> Mais Cossin, pourquoi n'es-tu jamais venu\
+> me visiter?
+
+_VieuxParfaitCossinVaMontrerChemin
+> Parfait donc! Cossin va nous montrer le\
+> chemin.
+
+_VieuxPrenezPasTropTempsFaitFrette
+> Prenez pas trop votre temps, y fait frette!
+
+_VieuxOuchArthrite
+> Ouch! Owie! Mon arthrite...
 
 ### Premiere
 
@@ -1286,6 +1392,16 @@ _GabspartCaillouMouvant
 > Tu veux la vraie réponse ou la réponse\
 > diplomatique?
 
+_GabspartNonProtagonismeFaitRien
+> C'est un classique en fait. Ici Cossin\
+> n'est pas Protagoniste, alors il ne\
+> faudrait pas qu'il s'occupe de ses\
+> problèmes lui-même.
+
+_GabspartTrouveDemandeMotivationTardive
+> C'est *maintenant* que tu demandes à avoir\
+> des motivations?
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -1428,6 +1544,12 @@ _WwwelchiorWooPersVerConnaitKkun
 _WwwelchiorBeurresPasTropOnEst4
 > Beurres-en pas trop, on est quatre tout de\
 > même.
+
+_WwwelchiorOffusqueTenebresCossin
+> Voyons! On lance pas des accusations comme\
+> ça!\
+> Tu penses que les Ténèbres perdent leur\
+> temps avec Cossin!?
 
 ### Fantome
 

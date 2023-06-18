@@ -319,6 +319,7 @@ function eval_fn_expr(expr, args) {
                         continue;
                     $gms[map.name] = map;
                     Object.defineProperty(map, "$sw", {
+                        configurable: true,
                         get() { return $gameMapSwitches[map.id] || ($gameMapSwitches[map.id] = {}); }
                     });
                 }
@@ -463,6 +464,7 @@ function eval_fn_expr(expr, args) {
                     if (key) {
                         const variableId = i;
                         Object.defineProperty($gvars, key, {
+                            configurable: true,
                             get() {
                                 return $gameVariables.value(variableId);
                             },
@@ -479,6 +481,7 @@ function eval_fn_expr(expr, args) {
                     if (key) {
                         const switchId = i;
                         Object.defineProperty($gsw, key, {
+                            configurable: true,
                             get() {
                                 return $gameSwitches.value(switchId);
                             },
@@ -538,16 +541,19 @@ function eval_fn_expr(expr, args) {
     var originalDef = Object.getOwnPropertyDescriptor(Game_BattlerBase.prototype, 'def');
     Object.defineProperties(Game_BattlerBase.prototype, {
         lukVar: {
+            configurable: true,
             get: function () {
                 return 1 + Math.random() * (this.luk - 95) / 100;
             }
         },
         grd: {
+            configurable: true,
             get: function () {
                 return this.traitsSum(Game_BattlerBase.TRAIT_SPARAM, 1) * 100;
             }
         },
         def: {
+            configurable: true,
             get: function () {
                 return originalDef.get.call(this) * (this.isGuard() ? 2 : 1) + (this.isGuard() ? this.grd : 0);
             }
@@ -1949,6 +1955,7 @@ function eval_fn_expr(expr, args) {
         });
 
     Object.defineProperty(AudioManager, "speechVolume", {
+        configurable: true,
         get() {
             return this._speechVolume;
         },
@@ -1958,6 +1965,7 @@ function eval_fn_expr(expr, args) {
     });
 
     Object.defineProperty(ConfigManager, "masterVolume", {
+        configurable: true,
         get() {
             return AudioManager.masterVolume * 100;
         },
@@ -1967,6 +1975,7 @@ function eval_fn_expr(expr, args) {
     });
 
     Object.defineProperty(ConfigManager, "speechVolume", {
+        configurable: true,
         get() {
             return AudioManager.speechVolume;
         },
@@ -1987,6 +1996,7 @@ function eval_fn_expr(expr, args) {
 
     AudioManager._ongoingSpeech = 0;
     Object.defineProperty(AudioManager, "ongoingSpeech", {
+        configurable: true,
         get: function() {
             return this._ongoingSpeech;
         },
@@ -2136,6 +2146,7 @@ function eval_fn_expr(expr, args) {
         });
 
     Object.defineProperty(WebAudio.prototype, "filters", {
+        configurable: true,
         get() {
             return this._filters;
         },
@@ -3272,6 +3283,7 @@ Input.keyMapper[68] = "right"; // d
     Object.defineProperties(Game_BattlerBase.prototype, {
         // Health static regeneration
         hsrg: {
+            configurable: true,
             get() {
                 return this.traitObjects().reduce((n, trait) => {
                     return n + (trait.aaa_stats && trait.aaa_stats.hsrg || 0);
@@ -3472,6 +3484,7 @@ Input.keyMapper[68] = "right"; // d
                     for (const actor of $dataActors) {
                         if (!actor) continue;
                         Object.defineProperty(window.$charByName, actor.name, {
+                            configurable: true,
                             get() {
                                 const index = $gameParty.allMembers().findIndex(bm =>
                                     bm.name() === actor.name);
@@ -3487,6 +3500,7 @@ Input.keyMapper[68] = "right"; // d
                         });
                     }
                     Object.defineProperty(window.$charByName, "Protagoniste", {
+                        configurable: true,
                         get() {
                             return $gamePlayer;
                         }
@@ -3614,5 +3628,78 @@ Input.keyMapper[68] = "right"; // d
                 open.call(this);
             }
             lastDisplayedMapName = $gameMap.displayName();
+        });
+})();
+
+// Hot-loading utilities
+(function () {
+
+    window.reloadMap = function reloadMap() {
+        $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
+        $gamePlayer.requestMapReload();
+        if ($gameMap._interpreter.eventId() > 0) {
+            $gameMap.unlockEvent($gameMap._interpreter.eventId());
+            $gameMap._interpreter.clear();
+        }
+    };
+
+    window.reloadBattle = function reloadBattle() {
+        if (!$gameParty.inBattle()) {
+            return;
+        }
+        BattleManager.initMembers();
+        $gameTroop.setup($gameTroop._troopId);
+        $gameScreen.onBattleStart();
+        BattleManager.makeEscapeRatio();
+    };
+
+    window.reloadData = function reloadData(file) {
+        const entry = DataManager._databaseFiles.find(entry =>
+            entry.name.includes(file) || entry.src.includes(file));
+        if (entry) {
+            const xhr = new XMLHttpRequest();
+            const url = 'data/' + entry.src;
+            xhr.open('GET', url);
+            xhr.overrideMimeType('application/json');
+            xhr.onload = function() {
+                if (xhr.status < 400) {
+                    window[entry.name] = JSON.parse(xhr.responseText);
+                    DataManager.onLoad(window[entry.name]);
+                }
+            };
+            xhr.onerror = this._mapLoader || function() {
+                DataManager._errorUrl = DataManager._errorUrl || url;
+            };
+            xhr.send();
+        }
+    };
+
+    window.saveTemp = function saveTemp() {
+        DataManager.saveGame("__temp__");
+    };
+
+    window.clearTemp = function clearTemp() {
+        StorageManager.remove("__temp__");
+    };
+
+    override(Scene_Boot.prototype,
+        function start(start) {
+            if (StorageManager.exists("__temp__")) {
+                Scene_Base.prototype.start.call(this);
+                SoundManager.preloadImportantSounds();
+                const json = StorageManager.load("__temp__");
+                DataManager.createGameObjects();
+                DataManager.extractSaveContents(JsonEx.parse(json));
+                SoundManager.playLoad();
+                this.fadeOutAll();
+                if ($gameSystem.versionId() !== $dataSystem.versionId) {
+                    $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
+                    $gamePlayer.requestMapReload();
+                }
+                SceneManager.goto(Scene_Map);
+                $gameSystem.onAfterLoad();
+            } else {
+                start.call(this);
+            }
         });
 })();
