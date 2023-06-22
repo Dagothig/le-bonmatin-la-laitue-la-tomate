@@ -4,7 +4,7 @@
   "battleback1Name": "",
   "battleback2Name": "",
   "bgm": {
-    "name": "la_chanson_du_todo",
+    "name": "village_percu",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -5003,7 +5003,7 @@
             "variableValid": true,
             "variableValue": 17
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "Vehicle",
@@ -5012,6 +5012,35 @@
             "characterIndex": 5
           },
           "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurDommageCarioleVide"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Dommage. Le marchand a complètement vidé sa cariole."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
             {
               "code": 0,
               "indent": 0,

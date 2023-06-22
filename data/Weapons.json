@@ -63,7 +63,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 25,
     "wtypeId": 1
   },
   {
@@ -96,7 +96,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 50,
     "wtypeId": 2
   },
   {
@@ -129,7 +129,7 @@
       -5,
       0
     ],
-    "price": 0,
+    "price": 30,
     "wtypeId": 13
   },
   {
@@ -266,7 +266,7 @@
       -4,
       0
     ],
-    "price": 0,
+    "price": 40,
     "wtypeId": 13
   },
   {
@@ -371,6 +371,87 @@
       0
     ],
     "price": 0,
+    "wtypeId": 12
+  },
+  {
+    "id": 12,
+    "animationId": 6,
+    "description": "Mettons qu'il vous faut compenser pour quelque chose. \nPrends deux mains, mais +5 def en posture défensive.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 97,
+    "name": "Grosse Épée",
+    "note": "",
+    "params": [
+      0,
+      0,
+      18,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    "price": 60,
+    "wtypeId": 2
+  },
+  {
+    "id": 13,
+    "animationId": 11,
+    "description": "Réellement juste un long baton pointu. Prends deux \nmains, mais c'est pratique pour empaler de loin.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      }
+    ],
+    "iconIndex": 107,
+    "name": "Lance",
+    "note": "",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      25,
+      0
+    ],
+    "price": 40,
     "wtypeId": 12
   }
 ]

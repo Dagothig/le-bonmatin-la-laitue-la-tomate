@@ -361,6 +361,9 @@ _NarrateurBandanaNinja
 > Un bandana vraiment très edgy. Grâce à tout ce\
 > tranchant vous pouvez porter deux armes!
 
+_NarrateurDommageCarioleVide
+> Dommage. Le marchand a complètement vidé sa cariole.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1221,6 +1224,19 @@ _ProtagonisteSiTuLeDisOhLeShiny
 > \
 > Oh regardez!
 
+_ProtagonisteNinjasNonLumieres
+> Ouf. C'est pas des lumières ces ninjas.
+
+_ProtagonisteMettonsPasLaMeilleureStrat
+> Oui, mais disons si leur objectif c'était\
+> de nous arrêter... Ils pourraient être plus\
+> directs.
+
+_ProtagonisteBelleVarieteDeStock
+> Ah vous avez une belle variété de stock je\
+> vois! Vous rafraichissez souvent votre\
+> inventaire?
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1652,6 +1668,10 @@ _WwwelchiorTheorieProposesParis
 > Avec une théorie pareille je te proposes\
 > qu'on prenne un paris!
 
+_WwwelchiorFlashMobDeDanse
+> C'est pas trop pire, c'est comme un flash\
+> mob de danse!
+
 ### Fantome
 
 ### Vieille
@@ -1755,6 +1775,16 @@ _MarchandDiantre
 
 _MarchandYaha
 > Ya-ha!
+
+_MarchandBonsoirBonsoirAider
+> Bonsoir bonsoir! Comment puis-je vous\
+> aider?
+
+_MarchandSeulementPourFaireBeau
+> Mmmh? Non, c'est seulement pour faire beau.
+
+_MarchandVousAllezAcheter
+> Donc vous allez acheter quelque chose?
 
 ### Inventeur
 
@@ -2629,6 +2659,10 @@ _NinjaViteAlarme
 > \
 > Vite!\
 > Il faut sonner l'alarme!
+
+_NinjaViteAvantBrunFonce
+> Aaaaah vite avant que ça devienne\
+> brun-foncé!
 
 ### Alarme
 

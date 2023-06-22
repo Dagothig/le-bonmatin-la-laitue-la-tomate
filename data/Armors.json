@@ -12,7 +12,7 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 128,
+    "iconIndex": 129,
     "name": "Couvercle",
     "note": "",
     "params": [
@@ -102,7 +102,7 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 81,
+    "iconIndex": 128,
     "name": "Pavois de bois",
     "note": "",
     "params": [
@@ -195,7 +195,7 @@
       -1,
       0
     ],
-    "price": 0
+    "price": 50
   },
   {
     "id": 9,
@@ -270,7 +270,7 @@
     "id": 12,
     "atypeId": 3,
     "description": "Une petite broche en bois. Le vernis est noirci et usé.",
-    "etypeId": 3,
+    "etypeId": 2,
     "traits": [],
     "iconIndex": 147,
     "name": "Broche",
@@ -285,12 +285,12 @@
       0,
       0
     ],
-    "price": 0
+    "price": 50
   },
   {
     "id": 13,
     "atypeId": 1,
-    "description": "Un bandana vraiment très edgy. Grâce à tout ce \ntranchant vous pouvez porter deux armes.",
+    "description": "Un bandana vraiment très edgy. Tellement tranchant que\nvous agissez deux fois, mais sans vous défendre.",
     "etypeId": 3,
     "traits": [
       {
@@ -299,8 +299,8 @@
         "value": 0
       },
       {
-        "code": 55,
-        "dataId": 1,
+        "code": 61,
+        "dataId": 0,
         "value": 1
       },
       {
@@ -343,7 +343,7 @@
       0,
       0
     ],
-    "price": 0
+    "price": 50
   },
   {
     "id": 15,
@@ -641,5 +641,74 @@
       0
     ],
     "price": 240
+  },
+  {
+    "id": 28,
+    "atypeId": 1,
+    "description": "Un incontournable pour tout aventurier!",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 136,
+    "name": "Cuirasse de Cuir",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 60
+  },
+  {
+    "id": 29,
+    "atypeId": 2,
+    "description": "C'est lourd et il faut la garder huilée, mais ça \nbloque les coups d'épées. Apparement.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 135,
+    "name": "Cotte de mailles",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      -10,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 30,
+    "atypeId": 1,
+    "description": "Comme un couvercle de bois, mais en mieux.\n+15 def en posture défensive.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 0.15
+      }
+    ],
+    "iconIndex": 128,
+    "name": "Écu",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
   }
 ]

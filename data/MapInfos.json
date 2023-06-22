@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 964,
-    "scrollY": 1152
+    "scrollX": 956,
+    "scrollY": 1323
   },
   {
     "id": 6,
@@ -592,7 +592,7 @@
     "order": 82,
     "parentId": 0,
     "scrollX": 1002,
-    "scrollY": 624
+    "scrollY": 469
   },
   {
     "id": 67,
@@ -610,7 +610,7 @@
     "order": 66,
     "parentId": 67,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 464
   },
   {
     "id": 69,
@@ -772,7 +772,7 @@
     "order": 91,
     "parentId": 0,
     "scrollX": 821,
-    "scrollY": 779
+    "scrollY": 771
   },
   {
     "id": 87,

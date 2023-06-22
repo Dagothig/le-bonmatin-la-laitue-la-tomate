@@ -3584,6 +3584,11 @@ Input.keyMapper[68] = "right"; // d
                 this._data.push(new Game_Follower(this._data.length + 1));
             }
             refresh.call(this);
+        },
+        function isSomeoneCollided(_, x, y) {
+            return this.visibleFollowers().some(function(follower) {
+                return !follower.isThrough() && follower.pos(x, y);
+            }, this);
         });
     override(Game_Follower.prototype,
         function actor(actor) {

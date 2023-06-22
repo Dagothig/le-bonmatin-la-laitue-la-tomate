@@ -2013,6 +2013,19 @@ _ProtagonisteSiTuLeDisOhLeShiny
 > \
 > Oh regardez!
 
+_ProtagonisteNinjasNonLumieres
+> Ouf. C'est pas des lumières ces ninjas.
+
+_ProtagonisteMettonsPasLaMeilleureStrat
+> Oui, mais disons si leur objectif c'était\
+> de nous arrêter... Ils pourraient être plus\
+> directs.
+
+_ProtagonisteBelleVarieteDeStock
+> Ah vous avez une belle variété de stock je\
+> vois! Vous rafraichissez souvent votre\
+> inventaire?
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3091,6 +3104,9 @@ _NarrateurBandanaNinja
 > Un bandana vraiment très edgy. Grâce à tout ce\
 > tranchant vous pouvez porter deux armes!
 
+_NarrateurDommageCarioleVide
+> Dommage. Le marchand a complètement vidé sa cariole.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3800,6 +3816,10 @@ _WwwelchiorWohMisterNaifCestAmbuscade
 _WwwelchiorTheorieProposesParis
 > Avec une théorie pareille je te proposes\
 > qu'on prenne un paris!
+
+_WwwelchiorFlashMobDeDanse
+> C'est pas trop pire, c'est comme un flash\
+> mob de danse!
 
 ### Gabspart
 
@@ -4990,6 +5010,16 @@ _MarchandMerciDonation
 _MarchandDiantre
 > Diantre! Que vais-je faire!?
 
+_MarchandBonsoirBonsoirAider
+> Bonsoir bonsoir! Comment puis-je vous\
+> aider?
+
+_MarchandSeulementPourFaireBeau
+> Mmmh? Non, c'est seulement pour faire beau.
+
+_MarchandVousAllezAcheter
+> Donc vous allez acheter quelque chose?
+
 ### Fermiere
 
 _FermiereRespireBien2
@@ -5789,6 +5819,10 @@ _NinjaViteAlarme
 > \
 > Vite!\
 > Il faut sonner l'alarme!
+
+_NinjaViteAvantBrunFonce
+> Aaaaah vite avant que ça devienne\
+> brun-foncé!
 
 ### Alarme
 
