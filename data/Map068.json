@@ -3619,13 +3619,6 @@
               "parameters": []
             },
             {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gamePlayer.followers().forEach(follower => follower.setThrough(true))"
-              ]
-            },
-            {
               "code": 214,
               "indent": 0,
               "parameters": []
