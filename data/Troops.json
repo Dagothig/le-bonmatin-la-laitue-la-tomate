@@ -6503,5 +6503,525 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 17,
+    "members": [
+      {
+        "enemyId": 23,
+        "x": 383,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 344,
+        "y": 373,
+        "hidden": false
+      }
+    ],
+    "name": "Ninja B",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "members": [
+      {
+        "enemyId": 24,
+        "x": 388,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 313,
+        "y": 334,
+        "hidden": false
+      }
+    ],
+    "name": "Ninja C",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "members": [
+      {
+        "enemyId": 23,
+        "x": 394,
+        "y": 376,
+        "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 323,
+        "y": 340,
+        "hidden": false
+      }
+    ],
+    "name": "Ninja D",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "members": [
+      {
+        "enemyId": 26,
+        "x": 420,
+        "y": 367,
+        "hidden": false
+      }
+    ],
+    "name": "Gros Ninja",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 122,
+            "indent": 0,
+            "parameters": [
+              1,
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              58,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              69,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 411,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              70,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 119,
+            "indent": 1,
+            "parameters": [
+              "end"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              58,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              68,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 411,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              70,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 119,
+            "indent": 1,
+            "parameters": [
+              "end"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              58,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              68,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 411,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 122,
+            "indent": 2,
+            "parameters": [
+              58,
+              58,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 2,
+            "parameters": [
+              0,
+              0,
+              69,
+              -2
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 119,
+            "indent": 1,
+            "parameters": [
+              "end"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 118,
+            "indent": 0,
+            "parameters": [
+              "end"
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "const enemy = $gameTroop.members()[0];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "const enemyData = enemy && enemy.enemy();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "const setup = enemyData && enemyData._customSetup;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "enemy && setup && setup.call(enemy);"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 1
+      }
+    ]
   }
 ]

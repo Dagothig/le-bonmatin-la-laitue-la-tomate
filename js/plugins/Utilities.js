@@ -1,7 +1,28 @@
+function override(obj) {
+    for (let i = 1; i < arguments.length; i++) {
+        let fn = arguments[i];
+        let original = obj[fn.name];
+        obj[fn.name] = function (a, b, c, d, e, f) {
+            return fn.call(this, original, a, b, c, d, e, f);
+        }
+    }
+}
+
 const GROUND = 0;
 const FLYING = 1;
 const EMPTY_OBJ = {};
 const EMPTY_ARR = [];
+
+const reverseParams = {
+    mhp: 0,
+    mmp: 1,
+    atk: 2,
+    def: 3,
+    mat: 4,
+    mdf: 5,
+    agi: 6,
+    luk: 7
+}
 
 function aaa_fireplace(eventId, strength = 100) {
     var vmin = 0, vmax = 90, pmin = 0, pmax = 100;
@@ -31,11 +52,13 @@ function aaa_se(eventId, se) {
 
 function aaa_jump(e, x, y, h) {
     e.jump(x, y);
-    e._jumpPeak += h;
-    e._jumpCount = e._jumpPeak * 2;
-    for (const follower of (e._followers || EMPTY_OBJ)._data || EMPTY_ARR) {
-        follower._jumpPeak += h;
-        follower._jumpCount = e._jumpPeak * 2;
+    if (isFinite(h)) {
+        e._jumpPeak += h;
+        e._jumpCount = e._jumpPeak * 2;
+        for (const follower of (e._followers || EMPTY_OBJ)._data || EMPTY_ARR) {
+            follower._jumpPeak += h;
+            follower._jumpCount = e._jumpPeak * 2;
+        }
     }
 }
 
@@ -43,8 +66,10 @@ function aaa_jump_forward(e, d, h) {
     var x = $gameMap.xWithDirection(0, e.direction()) * d;
     var y = $gameMap.yWithDirection(0, e.direction()) * d;
     aaa_jump(e, x, y, h);
-    e._jumpPeak += h;
-    e._jumpCount = e._jumpPeak * 2;
+    if (isFinite(h)) {
+        e._jumpPeak += h;
+        e._jumpCount = e._jumpPeak * 2;
+    }
 }
 
 // Extend vars
@@ -56,8 +81,14 @@ function aaa_map_switch(name, value) {
     }
     switches[name] = value;
     $gameMap.requestRefresh();
-
 }
+
+override(DataManager,
+    function createGameObjects(createGameObjects) {
+        createGameObjects.call(this);
+        $gameMapSwitches = {};
+    });
+
 var MOVE = "startMove",
     WIGGLE = "startWiggle",
     PARABOLA = "startParabola",
@@ -128,16 +159,6 @@ function aaa_anim(target, anim, delay) {
             sprite.pushMove([PARABOLA, sprite._aaaX + sideSign * 3, 3, -6, 12]);
             sprite.pushMove([PARABOLA, sprite._aaaX, 0, -20, 12]);
             break;
-    }
-}
-
-function override(obj) {
-    for (let i = 1; i < arguments.length; i++) {
-        let fn = arguments[i];
-        let original = obj[fn.name];
-        obj[fn.name] = function (a, b, c, d, e, f) {
-            return fn.call(this, original, a, b, c, d, e, f);
-        }
     }
 }
 
@@ -501,7 +522,12 @@ function eval_fn_expr(expr, args) {
                         for (key in item && item.meta) {
                             const value = item.meta[key];
                             if (key.startsWith("stat-")) {
-                                item.aaa_stats[key.substring(5)] = Number.parseFloat(value);
+                                const name = key.substring(5);
+                                item.aaa_stats[name] = Number.parseFloat(value);
+                                const param = reverseParams[name];
+                                if (isFinite(param)) {
+                                    item.params[param] = item.aaa_stats[name];
+                                }
                             }
                             if (key === "state") {
                                 item.aaa_states.push(Number.parseInt(value));
@@ -1923,6 +1949,7 @@ function eval_fn_expr(expr, args) {
             return bgm;
         },
         function playSe(playSe, se) {
+            if (se.length) se = { name: se };
             if (!Number.isFinite(se.pitch)) se.pitch = 100;
             if (!Number.isFinite(se.volume)) se.volume = 90;
             playSe.call(this, se);
@@ -2299,8 +2326,28 @@ function eval_fn_expr(expr, args) {
                 duration);
         },
 
+        function track(_, eventId, scale, duration = 15) {
+            this._zoomEventId = eventId;
+            this.zoomOn(eventId, scale, duration);
+        },
+
+        function updateZoom(updateZoom) {
+            const event = this._zoomEventId && $gameMap.event(this._zoomEventId);
+            if (event) {
+                this._zoomX = event.screenX() || 0;
+                this._zoomY = (event.screenY() - 24) || 0;
+            }
+            updateZoom.call(this);
+        },
+
         function resetZoom(_, duration = 15) {
             this.startZoom(this._zoomX, this._zoomY, 1, duration);
+            delete this._zoomEventId;
+        },
+
+        function clearZoom(clearZoom) {
+            clearZoom.call(this);
+            delete this._zoomEventId;
         },
 
         function larpTint(_, toneA, toneB, value) {
@@ -3292,6 +3339,17 @@ Input.keyMapper[68] = "right"; // d
         }
     });
 
+    override(Game_BattlerBase.prototype,
+        function paramMax(paramMax, paramId) {
+            if (paramId === 0) {
+                return 999999;  // MHP
+            } else if (paramId === 1) {
+                return 9999;    // MMP
+            } else {
+                return 99999;
+            }
+        })
+
     override(Game_Actor.prototype,
         function states(states) {
             const base = states.call(this);
@@ -3341,6 +3399,65 @@ Input.keyMapper[68] = "right"; // d
                 this.y -= offset;
                 this._shadowSprite.y += offset;
             }
+        });
+
+    override(Window_Base.prototype,
+        function drawText(drawText, text, x, y, maxWidth, align) {
+            if (isFinite(text) && parseFloat(text) > 999) {
+                return drawText.call(this, "oui", x, y, maxWidth, align);
+            } else {
+                return drawText.call(this, text, x, y, maxWidth, align);
+            }
+        },
+        function textWidth(textWidth, text) {
+            if (isFinite(text) && parseFloat(text) > 999) {
+                return textWidth.call(this, "oui");
+            } else {
+                return textWidth.call(this, text);
+            }
+        });
+
+    override(Sprite_Damage.prototype,
+        function digitWidth() {
+            return this._damageBitmap ? 24 : 0;
+        },
+        function digitHeight() {
+            return this._damageBitmap ? 32 : 0;
+        },
+        function createDigits(createDigits, baseRow, value) {
+            if (value > 999) {
+                const string = "oui";
+                const row = baseRow + (value < 0 ? 1 : 0);
+                const w = this.digitWidth();
+                const h = this.digitHeight();
+                for (let i = 0; i < string.length; i++) {
+                    const sprite = this.createChildSprite();
+                    const n = 10 + i;
+                    sprite.setFrame(n * w, row * h, w, h);
+                    sprite.x = (i - (string.length - 1) / 2) * w;
+                    sprite.dy = -i;
+                }
+            } else {
+                return createDigits.call(this, baseRow, value);
+            }
+        });
+
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/%([0-9]+)/g, function (s, n) {
+            const arg = args[Number(n) - 1];
+            return arg > 999 ? "oui" : arg;
+        });
+    };
+
+    override(Window_ActorCommand.prototype,
+        function addAttackCommand(addAttackCommand) {
+            const skillId = this._actor.attackSkillId();
+            const skill = $dataSkills[skillId];
+            if (!skill) {
+                return addAttackCommand.call(this);
+            }
+            this.addCommand(skill.name, "attack", this._actor.canAttack());
         });
 })();
 
@@ -3424,9 +3541,18 @@ Input.keyMapper[68] = "right"; // d
                         Object.values(this._bshadowSprites).find(s =>
                             s._character === character);
                     if (shadowSprite) {
-                        shadowSprite.scale.x = shadowSprite.scale.y =playerScale;
+                        shadowSprite.scale.x = shadowSprite.scale.y = playerScale;
                     }
                 }
+            }
+        });
+
+    override(Sprite_Character.prototype,
+        function setCharacter(setCharacter, character) {
+            setCharacter.call(this, character);
+            const event = character.event && character.event();
+            if (event && event.meta && event.meta.scale) {
+                this.scale.x = this.scale.y = parseFloat(event.meta.scale);
             }
         });
 })();

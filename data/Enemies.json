@@ -1890,5 +1890,221 @@
       110,
       100
     ]
+  },
+  {
+    "id": 26,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 17
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "ninjaepee",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
+    "gold": 100,
+    "name": "Gros Ninja avec une épée",
+    "note": "<<aaa_icon 216 16 96 96>>\n<<shadow Shadow2 18>>\n<<aaa_setup { \n  this._taper = { \n    name: \"_NinjaEpeeTape\", \n    pitch: 75\n  };\n}>>",
+    "params": [
+      300,
+      0,
+      30,
+      10,
+      10,
+      10,
+      100,
+      100
+    ]
+  },
+  {
+    "id": 27,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 40
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "ninjanunshaku",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 15,
+        "value": 1
+      }
+    ],
+    "gold": 100,
+    "name": "Gros Ninja avec un nunchaku",
+    "note": "<<aaa_icon 25 22 96 96>>\n<<shadow Shadow2 10>>\n<<aaa_setup { \n  this._taper = { \n    name: \"_NinjaNunchakuTape\",\n    pitch: 75\n  };\n}>>",
+    "params": [
+      300,
+      0,
+      30,
+      10,
+      10,
+      10,
+      100,
+      100
+    ]
+  },
+  {
+    "id": 28,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 17
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "ninjashuriken",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 100,
+    "name": "Gros Ninja avec un shuriken",
+    "note": "<<aaa_icon 75 16 96 96>>\n<<shadow Shadow2 16>>\n<<aaa_setup { \n  this._taper = {\n    name: \"_NinjaShurikenTape\",\n    pitch: 75\n  };\n}>>",
+    "params": [
+      300,
+      0,
+      30,
+      10,
+      10,
+      10,
+      100,
+      100
+    ]
   }
 ]

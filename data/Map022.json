@@ -2404,6 +2404,18 @@
               ]
             },
             {
+              "code": 249,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "JinglePuzzle",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []

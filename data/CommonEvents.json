@@ -11244,12 +11244,62 @@
     "id": 26,
     "list": [
       {
+        "code": 336,
+        "indent": 0,
+        "parameters": [
+          0,
+          26
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Sort une grosse épée",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 27,
+    "list": [
+      {
+        "code": 336,
+        "indent": 0,
+        "parameters": [
+          0,
+          27
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort un gros nunchaku",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 28,
+    "list": [
+      {
+        "code": 336,
+        "indent": 0,
+        "parameters": [
+          0,
+          28
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sort un gros shuriken",
     "switchId": 1,
     "trigger": 0
   }

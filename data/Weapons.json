@@ -453,5 +453,38 @@
     ],
     "price": 40,
     "wtypeId": 12
+  },
+  {
+    "id": 14,
+    "animationId": 109,
+    "description": "Cette épée magique confère une force inouie.\nAttention ça fait perdre beaucoup de gameplay.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 126,
+    "name": "Excalibarre",
+    "note": "<skill_id:5>\n<stat-atk:9999>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 17
   }
 ]

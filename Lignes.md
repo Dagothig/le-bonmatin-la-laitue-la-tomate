@@ -273,6 +273,12 @@ Switch2
 Siren
 > Siren
 
+Train
+> Train
+
+Wow
+> Wow
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2026,6 +2032,140 @@ _ProtagonisteBelleVarieteDeStock
 > vois! Vous rafraichissez souvent votre\
 > inventaire?
 
+_ProtagonisteNouiVousAvezVuNinjas
+> ... Noui.\
+> \
+> Vous avez vu passer des ninjas pendant que\
+> vous nous attendiez?
+
+_ProtagonisteExpliqueAmbuscadeBlondeDisparue
+> Bon... en fait c'était un guet-apens - Ils\
+> s'étaient déguisés en Blonde, visiblement\
+> en attente de Cossin...\
+> Mais là on a aucune idée où ils l'ont mise.
+
+_ProtagonisteUneLettre
+> Une lettre!
+
+_ProtagonisteLettreGribouillisGnieh
+> Mmmh, ça va être dur à lire, c'est du gros\
+> gribouillis. Y'a juste plein de "Gnieh!"\
+> à grandeur...
+
+_ProtagonistePasDePresse10Ans
+> Vous dites ça, mais ça fait 10 ans, alors\
+> je penses pas que ça presse tant que ça.
+
+_ProtagonisteOuiOuiOnVaEtreDesBonsHerosRip
+> Oui oui, on va se dépêcher et se rendre\
+> dans la prochaine ambuscade sur ce pas!\
+> Ça va être remplis de plaisir et de\
+> découvertes!
+
+_ProtagonisteOnVousTrouveOu
+> Et on vous retrouve où par la suite?
+
+_ProtagonisteOnVousTrouveChezVous
+> Chez vous. On vous retrouve chez vous.
+
+_ProtagonisteBeauCoffre
+> Oh wow c'est un beau coffre ça!\
+> \
+> Mais hum, yer verouillé et sans clé...
+
+_ProtagonisteDuStyleTorche
+> Ça a du style comme endroit pareil!\
+> Regardez-moi ça le beau tapis.\
+> \
+> Peut-être pas très pratique par contre...
+
+_ProtagonisteDeLAirLesTorchesAAA
+> Ouf, c'est un peu répétitif finalement.\
+> Et l'air est vicié, c'est qui le débile qui\
+> a eu l'idée d'ouvrir *autant* de torches à\
+> l'intérieur?
+
+_ProtagonisteLaFinCoucouAllo
+> Ah il y a bien une fin donc...\
+> \
+> Allo! Coucou! Vous m'entendez?
+
+_ProtagonisteAhOuiLesLits
+> Whoo.\
+> Ça c'est du lit en ti pépère!\
+> Les ronflements la nuit ça doit être\
+> quelque chose tout de même...
+
+_ProtagonisteMettonsJmessayeAnyway
+> Mettons je m'essaye tout de même?
+
+_ProtagonisteOuchCoupurePapierTropEdgy
+> Ouch! Je me suis coupé le doigt sur le\
+> papier... C'est donc vrai!\
+> \
+> Pas le choix, je dois remettre le livre.
+
+_ProtagonisteDoitBubyer
+> Nononon! C'était une belle discussion, mais\
+> on va devoir se reparler plus tard!\
+> \
+> Bubye!
+
+_ProtagonisteShinySword
+> Ouuuh! Il y a une épée sur la statue!
+
+_ProtagonisteHeinDeQuoiTuParles
+> Hein? De quoi tu parles?
+
+_ProtagonisteCaChangeQqchose
+> Si tu le dis? Ça change quelque chose?
+
+_ProtagonisteOuiOhVousEtesGrand
+> Oui... oh.\
+> \
+> Vous avez quand même pas mal d'ampleur en\
+> fait.
+
+_ProtagonisteVousEtesSeul
+> Vous êtes seul? On peut vous aider?
+
+_ProtagonisteFaitSonPedantSurEntree
+> C'est pas plutôt un passage secret\
+> l'entrée? C'est pousser fort d'appeler ça\
+> une porte.
+
+_ProtagonisteSeulementIciPourWohJvousPete
+> Non... je suis seulement ici pour... ça\
+> vire bin vite votre affaire!\
+> La seule vie qui doit être payée c'est\
+> celle de votre face!
+
+_ProtagonisteAlloConfus
+> Oui ... Allo?
+
+_ProtagonisteCossinRegardeJaiTrouve
+> Cossin Lette! Regardez ce que nous avons\
+> trouvé!
+
+_ProtagonisteAObjetARemettre
+> Je ne sais pas pourquoi, mais j'ai quelque\
+> chose à vous remettre.
+
+_ProtagonisteACoffreBlonde
+> Je suis quasi certain que ce coffre\
+> contient votre Blonde perdue de longue\
+> date! Seulement... je n'arrive pas à ouvrir\
+> le coffre.
+
+_ProtagonisteCaPrendDesGrossLevresPourOuvrirCoffre
+> Ah. C'est la touche des grosses lèvres\
+> bleues je suppose...
+
+_ProtagonisteAimeraitUnCadeau
+> ... Je voudrais pas m'imposer, mais ça n'a\
+> pas été facile tout ça.\
+> Vous avez quelque chose pour moi?
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3107,6 +3247,62 @@ _NarrateurBandanaNinja
 _NarrateurDommageCarioleVide
 > Dommage. Le marchand a complètement vidé sa cariole.
 
+_NarrateurMaisSiVousRevirezPapier
+> Mais si vous revirez le papier...
+
+_NarrateurUnCoffre
+> Un coffre!\
+> \
+> Mais honnêtement il est très quétaine. Un peu lette\
+> dirait-on.
+
+_NarrateurCollectionBoites
+> Une belle collection de boîtes.
+
+_NarrateurCollectionLivresTropEdgy
+> La collection de livres est entièrement composée de\
+> sujets trop edgy pour que vous puissiez les lire.
+
+_NarrateurChoixBouteillesDecevant
+> Le choix des bouteilles est plutôt décevant.\
+> En fouillant de manière très assidue, vous finissez\
+> par trouver une bouteille dont le cépage est\
+> acceptable.
+
+_NarrateurBreuvageFermente
+> Un breuvage fermenté!
+
+_NarrateurBouteillesImbuvables
+> Une collection de bouteilles complètement imbuvable.
+
+_NarrateurRegardezAutreMoitieBouteilles
+> Cette partie-ci de la collection de bouteilles est\
+> vraiment imbuvable, mais si vous essayez avec l'autre\
+> moitié...
+
+_NarrateurExcalibarreNote1
+> Note:\
+> \
+> Certaines des propriétés d'Excalibarre peuvent avoir\
+> été exagérées.
+
+_NarrateurExcalibarreNote2
+> Toute perte de gameplay engendrée par Excalibarre n'est\
+> pas la responsabilité du Monde, et aucun remboursement\
+> ne sera donné.
+
+_NarrateurExcalibarreNote3
+> Pour toute plainte concernant l'impact d'Excalibarre\
+> sur l'équilibre cosmique, veuillez vous référer au\
+> Bureau des Plaintes, situé en un endroit profond de\
+> votre être.
+
+_NarrateurStatueVedge
+> Une statue sans rien de remarquable ou d'excitant.
+
+_NarrateurCossinSortChaussure
+> Cossin Lette sort de sa chaussure une petite fiole!
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -3334,6 +3530,27 @@ _VieuxPrenezPasTropTempsFaitFrette
 
 _VieuxOuchArthrite
 > Ouch! Owie! Mon arthrite...
+
+_VieuxAlorsTrouveBlonde
+> Alors, vous avez trouvé la Blonde de\
+> Cossin Lette?
+
+_VieuxOnAEntenduAlarme
+> Non? On a entendu une alarme rouge-bientôt-\
+> brun-foncé, mais avec un Protagoniste c'est\
+> plutôt commun.
+
+_VieuxViteALaBase
+> Il n'y a pas un instant à perdre! Vous\
+> devez vite vous y rendre avant qu'il ne\
+> soit trop tard!
+
+_VieuxTeaseEndroitDeShit
+> Un endroit mystérieux et familier.
+
+_VieuxOhNoOuEstLePlaisir
+> Oh vous n'avez aucun plaisir! Elle est\
+> partie où la belle attitude de tantôt?
 
 ### Radis
 
@@ -3820,6 +4037,10 @@ _WwwelchiorTheorieProposesParis
 _WwwelchiorFlashMobDeDanse
 > C'est pas trop pire, c'est comme un flash\
 > mob de danse!
+
+_WwwelchiorUneBelleAttitude
+> Ah! Ça c'est une belle amélioration\
+> d'attitude!
 
 ### Gabspart
 
@@ -4411,6 +4632,29 @@ _GabspartPasBesoinRepoPourTeDireBlonde
 > J'ai même pas besoin de consulter le\
 > repositoire pour te dire que ça ressemble à\
 > la Blonde de Cossin Lette..
+
+_GabspartPedantContinuite1
+> J'veux pas trop faire mon pédant...\
+> \
+> Mais c'est pas un peu un bris de\
+> continuité?
+
+_GabspartPedantContinuite2
+> Admettons que je connais de source sûre\
+> qu'Excalibarre devrait plutôt être dans\
+> la possession d'une sphère bleue pas trop\
+> belle?
+
+_GabspartPedantContinuite3
+> Non non, ça m'est juste passé par la tête\
+> comme ça.\
+> Pas que je te recommande de rapporter\
+> Excalibarre à ladite sphère bleue.
+
+_GabspartPedantContinuite4
+> Parce que bon, elle peut même pas s'en\
+> servir... C'est difficile utiliser une épée\
+> quand on n'a pas de bras.
 
 ### Jacques
 
@@ -5091,6 +5335,9 @@ _FermiereGerardNon
 _FilletteCossin
 > Chut! Faut pas trop faire de bruit, sinon\
 > le cossin bleu va me voir!
+
+_FilletteEnnui
+> Je m'ennuie!
 
 ### Fermier
 
@@ -5786,6 +6033,16 @@ _RocheNon4
 _BlondeOhMonCossin
 > Oh mon petit Cossin...
 
+_BlondeALAide
+> À l'aide! Ce coffre est vraiment très beau et doré,\
+> mais après 10 ans c'est un peu à l'étroit!
+
+_BlondeMerci
+> Merci infiniment pour votre aide!
+
+_BlondeCossinMaTrouve
+> Oh Cossin, tu m'as retrouvé!
+
 ### Ninja
 
 _NinjaGniahTombePiege
@@ -5824,6 +6081,12 @@ _NinjaViteAvantBrunFonce
 > Aaaaah vite avant que ça devienne\
 > brun-foncé!
 
+_NinjaNePasOublierCheminBase
+> Ne pas oublier: Le chemin vers la base\
+> secrète passe derrière le Temple louche\
+> avec les monsieurs qui disent qu'ils sont\
+> ouvert demain!
+
 ### Alarme
 
 _AlarmeCodeRougeBrun
@@ -5831,3 +6094,56 @@ _AlarmeCodeRougeBrun
 > JE RÉPÈTE\
 > ATTENTION À TOUS LES NINJAS\
 > CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG
+
+### Protagonsite
+
+_ProtagonsiteVaMettreCoffreDansPoche
+> Oh. Voyons voir... Disons que je mets le\
+> coffre dans ma poche, et on va finir par\
+> trouver quelqu'un qui peut vous aider,\
+> c'est bon?
+
+### Gros
+
+_GrosNarrateurExcalibarre1
+> \
+> Vous avez trouvé la légendaire épée Excalibarre!
+
+_GrosNarrateurExcalibarre2
+> Cette épée,\
+> connue pour ses propriétés magiques,\
+> confère une force inouie\
+> à celui qui la tient dans ses mains!
+
+_GrosNarrateurExcalibarre3
+> Cette épée est si puissante\
+> que le simple fait de la tenir dans ses mains\
+> élimine tous ses enemis dans un rayon de
+
+_GrosNarrateurExcalibarre4
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777
+
+_GrosNarrateurExcalibarre5
+> \
+> kilomètres!
+
+_GrosNinjaWohJeSuisLaPourQuoi
+> Woh! Vous pensez je suis là pour quoi?
+
+_GrosNinjaJaiEteLaisseDerriere
+> Les autres ninjas sont tous partis préparer\
+> l'ambuscade de Cossin et m'ont laissé\
+> derrière...
+
+_GrosNinjaPassePasParLaPorte
+> J'aurais voulu les suivre mais je ne passe\
+> pas par la porte.
+
+_GrosNinjaVousDevezPayer
+> D'ailleurs vous n'êtes pas sensé être ici!\
+> Vous êtes venus nous dérober nos secrets,\
+> c'est ça???\
+> Vous allez devoir payer de votre vie!

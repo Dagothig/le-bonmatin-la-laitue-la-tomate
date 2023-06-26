@@ -758,5 +758,31 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 26,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un coffre pas très beau. Il doit bien y avoir un \nCossin qui serait intéressé.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 210,
+    "itypeId": 2,
+    "name": "Coffre Lette",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
