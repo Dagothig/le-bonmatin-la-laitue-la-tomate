@@ -3402,12 +3402,29 @@ Input.keyMapper[68] = "right"; // d
             }
         });
 
+    override(Sprite_Character.prototype,
+        function setCharacter(setCharacter, character) {
+            setCharacter.call(this, character);
+            const actor =
+                character.actor && character.actor() ||
+                (character === $gamePlayer && $gameParty.members()[0]);
+            this._actor = actor;
+        },
+        function updatePosition(updatePosition) {
+            updatePosition.call(this);
+            if (this._actor && this._actor.aaaLevitate) {
+                this.aaaLevitate = ((this.aaaLevitate || ((Math.random()*30)|0)) + 1);
+                const offset = (Math.sin(this.aaaLevitate / 30) + 4) * 3;
+                this.y -= offset;
+            }
+        });
+
     override(Sprite_Actor.prototype,
         function update(update) {
             update.call(this);
             if (this._battler && this._battler.aaaLevitate) {
                 this.aaaLevitate = ((this.aaaLevitate || ((Math.random()*30)|0)) + 1);
-                const offset = (Math.sin(this.aaaLevitate / 30) + 2) * 3;
+                const offset = (Math.sin(this.aaaLevitate / 30) + 4) * 3;
                 this.y -= offset;
                 this._shadowSprite.y += offset;
             }
