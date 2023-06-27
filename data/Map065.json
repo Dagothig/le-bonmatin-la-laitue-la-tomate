@@ -4,7 +4,7 @@
   "battleback1Name": "Dirt2",
   "battleback2Name": "Town3",
   "bgm": {
-    "name": "la_chanson_du_todo",
+    "name": "champetre",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -22880,7 +22880,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "la_chanson_du_todo",
+                  "name": "champetre",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0

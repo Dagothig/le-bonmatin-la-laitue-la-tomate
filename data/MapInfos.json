@@ -6,8 +6,8 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 1012,
-    "scrollY": 504
+    "scrollX": 996,
+    "scrollY": 488
   },
   {
     "id": 2,
@@ -43,7 +43,7 @@
     "order": 5,
     "parentId": 0,
     "scrollX": 956,
-    "scrollY": 723
+    "scrollY": 843
   },
   {
     "id": 6,
@@ -574,7 +574,7 @@
     "order": 72,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 640
+    "scrollY": 771
   },
   {
     "id": 65,
@@ -583,7 +583,7 @@
     "order": 74,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 624
+    "scrollY": 621
   },
   {
     "id": 66,
@@ -645,8 +645,8 @@
     "name": "CHEZ_POULET",
     "order": 78,
     "parentId": 65,
-    "scrollX": 832,
-    "scrollY": 640
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 73,
@@ -825,7 +825,7 @@
     "name": "PONT_REPARE",
     "order": 73,
     "parentId": 64,
-    "scrollX": 832,
+    "scrollX": 811,
     "scrollY": 640
   },
   {
