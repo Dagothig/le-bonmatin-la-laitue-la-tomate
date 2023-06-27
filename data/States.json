@@ -985,7 +985,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Robe de Dureté",
-    "note": "<stat-def:10>",
+    "note": "<stat-def:10>\n<<aaa_removed {\n  affected.startAnimation(180, false, 0);\n}>>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,

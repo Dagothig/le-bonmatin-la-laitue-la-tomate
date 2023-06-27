@@ -382,6 +382,18 @@ function eval_fn_expr(expr, args) {
                     state._customEOT = eotMatch && eotMatch[1] && eval_fn_expr(eotMatch[1]);
                     const overlayMatch = note.match(overlayRegexp);
                     overlayMatch && (state.overlay = parseInt(overlayMatch[1]) || 0);
+                    state.params = [0,0,0,0,0,0,0,0];
+                    for (key in state && state.meta) {
+                        const value = state.meta[key];
+                        if (key.startsWith("stat-")) {
+                            const name = key.substring(5);
+                            const num = Number.parseFloat(value);
+                            const param = reverseParams[name];
+                            if (isFinite(param)) {
+                                state.params[param] = num;
+                            }
+                        }
+                    }
                 }
                 break;
             case $dataSkills:
@@ -3348,7 +3360,14 @@ Input.keyMapper[68] = "right"; // d
             } else {
                 return 99999;
             }
-        })
+        },
+        function paramPlus(paramPlus, paramId) {
+            let n = paramPlus.call(this, paramId);
+            for (const state of this.states()) {
+                n += state.params[paramId];
+            }
+            return n;
+        });
 
     override(Game_Actor.prototype,
         function states(states) {
@@ -3364,13 +3383,6 @@ Input.keyMapper[68] = "right"; // d
                 }
             }
             return base;
-        },
-        function paramPlus(paramPlus, paramId) {
-            const n = paramPlus.call(this, paramId);
-            for (const trait of this.traitObjects()) {
-
-            }
-            return n;
         });
 
     override(Game_Battler.prototype,

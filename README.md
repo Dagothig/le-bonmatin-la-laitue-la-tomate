@@ -2,21 +2,16 @@
 
 ## TODO
 
-* Stat de la robe de Dureté
-* Quête vieux + montagne + blonde de Cossin Lette
 * Passage sous la montagne
 * Updater Oracle
-* Marchand
 * Hot reload
 * Gabspart traduit défense gabouéenne pour la fermière
 
 ### Musique
 
-* Musique Lieu Champêtre
-* Musique Ville (même que Lieu Champêtre?)
-* Musique Pont (même que Lieu Champêtre)
 * Musique Oracle
 * Musique Tension (puzzle louche du passage souterrain)
+* Musique Ninja (pe?) ou Montagne (pe?)
 
 ## Rouler sans RPG Maker MV
 
