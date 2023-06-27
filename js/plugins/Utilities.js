@@ -3383,6 +3383,29 @@ Input.keyMapper[68] = "right"; // d
                 }
             }
             return base;
+        },
+        function changeEquip(changeEquip, slotId, item) {
+            const lostStates = this.states();
+            changeEquip.call(this, slotId, item);
+            const newStates = this.states();
+
+            for (let i = lostStates.length; i >= 0; i--) {
+                if (newStates.contains(lostStates[i])) {
+                    lostStates.splice(i, 1);
+                }
+            }
+            for (const state of lostStates) {
+                state._customRemoved && state._customRemoved(this);
+            }
+
+            for (let i = newStates.length; i >= 0; i--) {
+                if (lostStates.contains(newStates[i])) {
+                    newStates.splice(i, 1);
+                }
+            }
+            for (const state of newStates) {
+                state._customApply && state._customApply(null, this);
+            }
         });
 
     override(Game_Battler.prototype,
@@ -3413,8 +3436,8 @@ Input.keyMapper[68] = "right"; // d
         function updatePosition(updatePosition) {
             updatePosition.call(this);
             if (this._actor && this._actor.aaaLevitate) {
-                this.aaaLevitate = ((this.aaaLevitate || ((Math.random()*30)|0)) + 1);
-                const offset = (Math.sin(this.aaaLevitate / 30) + 4) * 3;
+                this.aaaLevitate = (this.aaaLevitate || 0) + 1;
+                const offset = (Math.sin(this.aaaLevitate / 30) + 6) * 3;
                 this.y -= offset;
             }
         });
@@ -3423,8 +3446,8 @@ Input.keyMapper[68] = "right"; // d
         function update(update) {
             update.call(this);
             if (this._battler && this._battler.aaaLevitate) {
-                this.aaaLevitate = ((this.aaaLevitate || ((Math.random()*30)|0)) + 1);
-                const offset = (Math.sin(this.aaaLevitate / 30) + 4) * 3;
+                this.aaaLevitate = (this.aaaLevitate || 0) + 1;
+                const offset = (Math.sin(this.aaaLevitate / 30) + 6) * 3;
                 this.y -= offset;
                 this._shadowSprite.y += offset;
             }

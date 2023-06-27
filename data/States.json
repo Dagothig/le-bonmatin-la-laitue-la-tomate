@@ -931,7 +931,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Lévitation Légère",
-    "note": "<levitate>",
+    "note": "<levitate>\n<<aaa_apply {\n  AudioManager.playSe(\"BrunAlterationHit\");\n}>>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
