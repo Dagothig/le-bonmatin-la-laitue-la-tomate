@@ -83,7 +83,7 @@ function aaa_map_switch(name, value) {
     $gameMap.requestRefresh();
 }
 
-override(DataManager,
+override(DetahManager,
     function createGameObjects(createGameObjects) {
         createGameObjects.call(this);
         $gameMapSwitches = {};
@@ -176,7 +176,7 @@ override(Array.prototype,
     });
 
 (function () {
-    override(DataManager,
+    override(DetahManager,
         function makeSaveContents(makeSaveContents) {
             var contents = makeSaveContents.call(this);
             contents.mapSwitches = $gameMapSwitches;
@@ -327,11 +327,11 @@ function eval_fn_expr(expr, args) {
         }
     }
 
-    DataManager._databaseFiles.push({ name: "$dataWalkthrough", src: "Walkthrough.json" });
+    DetahManager._databaseFiles.push({ name: "$dataWalkthrough", src: "Walkthrough.json" });
 
-    var original_onLoad = DataManager.onLoad;
-    DataManager.onLoad = function (object) {
-        original_onLoad.call(DataManager, object);
+    var original_onLoad = DetahManager.onLoad;
+    DetahManager.onLoad = function (object) {
+        original_onLoad.call(DetahManager, object);
         switch (object) {
             case $dataMapInfos:
                 var $gms = window.$gms = {};
@@ -541,7 +541,7 @@ function eval_fn_expr(expr, args) {
 
     const EO = {};
     const EA = [];
-    override(DataManager,
+    override(DetahManager,
         function extractSaveContents(extractSaveContents, contents) {
             if (contents && contents.map) {
                 extendoList(((contents.map._interpreter || EO)._list || EA));
@@ -1610,7 +1610,7 @@ function eval_fn_expr(expr, args) {
 
     var original_battleLogDisplayAction = Window_BattleLog.prototype.displayAction;
     Window_BattleLog.prototype.displayAction = function (subject, item, targets) {
-        if (DataManager.isSkill(item)) {
+        if (DetahManager.isSkill(item)) {
             var target = targets.map(t => t && t.name()).join(", ");
             if (item.message1) {
                 this.push('addText', subject.name() + item.message1.format(item.name, target));
@@ -3030,7 +3030,7 @@ Input.keyMapper[68] = "right"; // d
 
 // Checkpoints
 (function () {
-    override(DataManager,
+    override(DetahManager,
         function loadCheckpoint(_, name) {
             var xhr = new XMLHttpRequest();
             var url = 'save/' + name + ".rpgsave";
@@ -3039,8 +3039,8 @@ Input.keyMapper[68] = "right"; // d
             xhr.onload = function() {
                 if (xhr.status < 400) {
                     const json = LZString.decompressFromBase64(xhr.responseText);
-                    DataManager.createGameObjects();
-                    DataManager.extractSaveContents(JsonEx.parse(json));
+                    DetahManager.createGameObjects();
+                    DetahManager.extractSaveContents(JsonEx.parse(json));
                     SoundManager.playLoad();
                     var time = 48 / 60;
                     AudioManager.fadeOutBgm(time);
@@ -3141,7 +3141,7 @@ Input.keyMapper[68] = "right"; // d
                 }
             },
             function processOk() {
-                DataManager.loadCheckpoint(this.commandSymbol(this.index()));
+                DetahManager.loadCheckpoint(this.commandSymbol(this.index()));
             });
 })();
 
@@ -3160,7 +3160,7 @@ Input.keyMapper[68] = "right"; // d
 
 // Savefilelist
 (function () {
-    override(DataManager,
+    override(DetahManager,
         function makeSavefileInfo(makeSavefileInfo) {
             const info = makeSavefileInfo.call(this);
             info.title = $dataMap.displayName || info.title;
@@ -3220,8 +3220,8 @@ Input.keyMapper[68] = "right"; // d
         },
         function drawItem(_, index) {
             const id = index + 1;
-            const valid = DataManager.isThisGameFile(id);
-            const info = DataManager.loadSavefileInfo(id);
+            const valid = DetahManager.isThisGameFile(id);
+            const info = DetahManager.loadSavefileInfo(id);
             this.resetTextColor();
             this.changePaintOpacity(valid || this._mode !== "load");
 
@@ -3601,7 +3601,7 @@ Input.keyMapper[68] = "right"; // d
         }
     }
 
-    override(DataManager,
+    override(DetahManager,
         function onLoad(onLoad, object) {
             onLoad.call(this, object);
             if (!object) return;
@@ -3785,7 +3785,7 @@ Input.keyMapper[68] = "right"; // d
     };
 
     window.reloadData = function reloadData(file) {
-        const entry = DataManager._databaseFiles.find(entry =>
+        const entry = DetahManager._databaseFiles.find(entry =>
             entry.name.includes(file) || entry.src.includes(file));
         if (entry) {
             const xhr = new XMLHttpRequest();
@@ -3795,18 +3795,18 @@ Input.keyMapper[68] = "right"; // d
             xhr.onload = function() {
                 if (xhr.status < 400) {
                     window[entry.name] = JSON.parse(xhr.responseText);
-                    DataManager.onLoad(window[entry.name]);
+                    DetahManager.onLoad(window[entry.name]);
                 }
             };
             xhr.onerror = this._mapLoader || function() {
-                DataManager._errorUrl = DataManager._errorUrl || url;
+                DetahManager._errorUrl = DetahManager._errorUrl || url;
             };
             xhr.send();
         }
     };
 
     window.saveTemp = function saveTemp() {
-        DataManager.saveGame("__temp__");
+        DetahManager.saveGame("__temp__");
     };
 
     window.clearTemp = function clearTemp() {
@@ -3819,8 +3819,8 @@ Input.keyMapper[68] = "right"; // d
                 Scene_Base.prototype.start.call(this);
                 SoundManager.preloadImportantSounds();
                 const json = StorageManager.load("__temp__");
-                DataManager.createGameObjects();
-                DataManager.extractSaveContents(JsonEx.parse(json));
+                DetahManager.createGameObjects();
+                DetahManager.extractSaveContents(JsonEx.parse(json));
                 SoundManager.playLoad();
                 this.fadeOutAll();
                 if ($gameSystem.versionId() !== $dataSystem.versionId) {
