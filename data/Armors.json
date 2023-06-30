@@ -270,7 +270,7 @@
     "id": 12,
     "atypeId": 3,
     "description": "Une petite broche en bois. Le vernis est noirci et usé.",
-    "etypeId": 2,
+    "etypeId": 3,
     "traits": [],
     "iconIndex": 147,
     "name": "Broche",

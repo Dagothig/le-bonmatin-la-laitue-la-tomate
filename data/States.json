@@ -17,7 +17,7 @@
     "overlay": 0,
     "priority": 100,
     "releaseByDamage": false,
-    "removeAtBattleEnd": false,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,
@@ -921,7 +921,13 @@
     "id": 33,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.25
+      }
+    ],
     "iconIndex": 69,
     "maxTurns": 1,
     "message1": " lévite très légèrement!",

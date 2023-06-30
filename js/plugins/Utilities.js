@@ -94,7 +94,7 @@ var MOVE = "startMove",
     PARABOLA = "startParabola",
     WAIT = "startWait",
     PATTERN = "setPattern",
-    MOTION = "startMotion",
+    MOTION = "gogoGadgetMotion",
     SE = "playSe",
     SHAKE = "gogoGadgetShake",
     OPACITY = "setOpacity",
@@ -810,6 +810,15 @@ function eval_fn_expr(expr, args) {
         },
         function gogoGadgetShake(_, shake) {
             $gameScreen.startShake(shake.power, shake.speed, shake.duration);
+        },
+        function gogoGadgetMotion(_, motion) {
+            if (this._actor && (motion === "thrust" || motion === "swing" || motion === "missile")) {
+                const weapons = this._actor.weapons();
+                const wtypeId = weapons[0] ? weapons[0].wtypeId : 0;
+                const attackMotion = $dataSystem.attackMotions[wtypeId];
+                attackMotion && this._weaponSprite && this._weaponSprite.setup(attackMotion.weaponImageId);
+            }
+            this.startMotion(motion);
         },
         function setOpacity(_, opacity){
           this.opacity = opacity;

@@ -279,6 +279,9 @@ Train
 Wow
 > Wow
 
+Wee
+> Weeeeeeeee
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -3241,8 +3244,8 @@ _NarrateurRocheCouleurLouche2
 _NarrateurBandanaNinja
 > Vous remarquez parmis les cendres des ninjas, qu'il\
 > reste un bandana!\
-> Un bandana vraiment très edgy. Grâce à tout ce\
-> tranchant vous pouvez porter deux armes!
+> Un bandana vraiment très edgy. Tellement tranchant que\
+> vous agissez deux fois, mais sans vous défendre.
 
 _NarrateurDommageCarioleVide
 > Dommage. Le marchand a complètement vidé sa cariole.
@@ -3302,6 +3305,11 @@ _NarrateurStatueVedge
 
 _NarrateurCossinSortChaussure
 > Cossin Lette sort de sa chaussure une petite fiole!
+
+_NarrateurTactiqueGagnante
+> Un livre avec une tactique gagnante dedans!\
+> Tournoyer pour gagner!\
+> En tournoyant vous tapez tous les enemis!
 
 ### Bucheron
 

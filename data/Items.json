@@ -784,5 +784,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 27,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre à tournoyer pour gagner!\nEn tournoyant vous tapez tous les enemis!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 71,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Tactique Gagnante",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

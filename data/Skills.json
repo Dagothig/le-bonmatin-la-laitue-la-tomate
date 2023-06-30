@@ -785,7 +785,7 @@
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 11,
+    "scope": 0,
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
@@ -2287,7 +2287,7 @@
     "id": 62,
     "animationId": 128,
     "damage": {
-      "critical": false,
+      "critical": true,
       "elementId": 1,
       "formula": "a.atk * 2 * a.lukVar - b.def * b.lukVar",
       "type": 1,
@@ -2619,6 +2619,43 @@
     "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 71,
+    "animationId": 182,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * a.lukVar - b.def * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "Une tactique gagnante!\nEn tournoyant vous tapez tous les enemis!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 69,
+    "message1": " tournoie pour gagner",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Tournoyer pour gagner",
+    "note": "<<aaa_performActionStart {\n  AudioManager.playSe(\"Wee\");\n  this.subject().pushMoves([\n    [SE, { name: \"Wind7\" }],\n    [MOTION, \"swing\"],\n    [PARABOLA, -60, 8, -12, 18],\n    [MOTION, \"item\"],\n    [WAIT, 1],\n    [SE, { name: \"Wind7\" }],\n    [FLIP],\n    [MOTION, \"swing\"],\n    [PARABOLA, -120, -8, -12, 18],\n    [MOTION, \"item\"],\n    [WAIT, 1],\n    [SE, { name: \"Wind7\" }],\n    [FLIP],\n    [MOTION, \"swing\"],\n    [PARABOLA, -180, 16, -12, 18],\n    [MOTION, \"item\"],\n    [WAIT, 1],\n    [SE, { name: \"Wind7\" }],\n    [FLIP],\n    [MOTION, \"swing\"],\n    [PARABOLA, -240, -16, -12, 18],\n    [MOTION, \"item\"],\n    [WAIT, 1],\n    [SE, { name: \"Wind7\" }],\n    [FLIP],\n    [MOTION, \"swing\"],\n    [PARABOLA, -300, 24, -12, 18],\n  ]);\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 40,
     "tpGain": 0
   }
 ]
