@@ -548,6 +548,13 @@ function eval_fn_expr(expr, args) {
                     }
                 }
                 break;
+            case $dataItems:
+                for (const item of object) {
+                    if (item && item.damage) {
+                        item.damage.formulaFn = eval_fn_expr(item.damage.formula, "target, item, a, b, v, sign");
+                    }
+                }
+                break;
         }
     };
 
