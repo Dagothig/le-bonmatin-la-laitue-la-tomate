@@ -78,7 +78,7 @@
     "name": "PASSAGE_MONTAGNE",
     "order": 17,
     "parentId": 8,
-    "scrollX": 811,
+    "scrollX": 1990,
     "scrollY": 491
   },
   {
@@ -583,7 +583,7 @@
     "order": 75,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 621
+    "scrollY": 477
   },
   {
     "id": 66,
@@ -592,7 +592,7 @@
     "order": 84,
     "parentId": 0,
     "scrollX": 1002,
-    "scrollY": 469
+    "scrollY": 456
   },
   {
     "id": 67,
@@ -718,7 +718,7 @@
     "order": 69,
     "parentId": 67,
     "scrollX": 816,
-    "scrollY": 640
+    "scrollY": 1395
   },
   {
     "id": 81,
@@ -772,7 +772,7 @@
     "order": 93,
     "parentId": 0,
     "scrollX": 821,
-    "scrollY": 651
+    "scrollY": 469
   },
   {
     "id": 87,
@@ -843,8 +843,8 @@
     "name": "DONJON",
     "order": 72,
     "parentId": 67,
-    "scrollX": 821,
-    "scrollY": 1054
+    "scrollX": 811,
+    "scrollY": 1403
   },
   {
     "id": 95,
@@ -853,7 +853,7 @@
     "order": 27,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 795
+    "scrollY": 615
   },
   {
     "id": 96,

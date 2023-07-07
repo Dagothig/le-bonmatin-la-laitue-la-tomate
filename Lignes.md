@@ -1693,7 +1693,7 @@ _ProtagonisteRecruteurContrat1
 
 _ProtagonisteRecruteurContrat2
 > Écoutez, je n'apprécie pas votre\
-> proposition, et je m'en vais sur ce pas.
+> proposition, et je m'en vais de ce pas.
 
 _ProtagonistePersDesagrable
 > Mais quel drôle de personnage désagréable.\
@@ -2061,7 +2061,7 @@ _ProtagonistePasDePresse10Ans
 
 _ProtagonisteOuiOuiOnVaEtreDesBonsHerosRip
 > Oui oui, on va se dépêcher et se rendre\
-> dans la prochaine ambuscade sur ce pas!\
+> dans la prochaine ambuscade de ce pas!\
 > Ça va être remplis de plaisir et de\
 > découvertes!
 
@@ -2168,6 +2168,12 @@ _ProtagonisteAimeraitUnCadeau
 > ... Je voudrais pas m'imposer, mais ça n'a\
 > pas été facile tout ça.\
 > Vous avez quelque chose pour moi?
+
+_ProtagonisteVaMettreCoffreDansPoche
+> Oh. Voyons voir... Disons que je mets le\
+> coffre dans ma poche, et on va finir par\
+> trouver quelqu'un qui peut vous aider,\
+> c'est bon?
 
 ### Rip
 
@@ -4663,6 +4669,18 @@ _GabspartPedantContinuite4
 > Parce que bon, elle peut même pas s'en\
 > servir... C'est difficile utiliser une épée\
 > quand on n'a pas de bras.
+
+_GabspartTraduitGaboueDefenseProtagoniste1
+> Quel immonde acte, cet excès de rage...\
+> Votre pauvre mari, injustement tué...\
+> Mais la violence de ses décisions,\
+> ont précipité sa malheureuse fin!
+
+_GabspartTraduitGaboueDefenseProtagoniste2
+> Observez la Centralité de cet homme:\
+> Bien évidemment c'est un Protagoniste!\
+> Par sa nature même, ces comportements\
+> l'oblige à répondre violence par violence!
 
 ### Jacques
 

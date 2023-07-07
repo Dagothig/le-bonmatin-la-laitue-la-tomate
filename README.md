@@ -5,7 +5,6 @@
 * Passage sous la montagne
 * Updater Oracle
 * Hot reload
-* Gabspart traduit défense gabouéenne pour la fermière
 
 ### Musique
 

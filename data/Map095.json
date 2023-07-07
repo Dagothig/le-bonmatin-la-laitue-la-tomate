@@ -9290,7 +9290,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _ProtagonsiteVaMettreCoffreDansPoche"
+                "se _ProtagonisteVaMettreCoffreDansPoche"
               ]
             },
             {
@@ -16854,6 +16854,83 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.moveTowardsTile(8, 9);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.moveTowardsTile(8, 9);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.moveTowardsTile(8, 9);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.moveTowardsTile(8, 9);"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.moveTowardsTile(8, 9);"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.moveTowardsTile(8, 9);"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
               "code": 122,
               "indent": 1,
               "parameters": [
@@ -18106,6 +18183,7 @@
       ],
       "x": 8,
       "y": 5
-    }
+    },
+    null
   ]
 }

@@ -21952,20 +21952,10 @@
               ]
             },
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "UIUI2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "WEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+                "se _GabspartTraduitGaboueDefenseProtagoniste1"
               ]
             },
             {
@@ -21982,8 +21972,84 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "WEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+                "Quel immonde acte, cet excès de rage..."
               ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Votre pauvre mari, injustement tué..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Mais la violence de ses décisions,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "ont précipité sa malheureuse fin!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GabspartTraduitGaboueDefenseProtagoniste2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Observez la Centralité de cet homme:"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bien évidemment c'est un Protagoniste!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Par sa nature même, ces comportements"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "l'oblige à répondre violence par violence!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 355,

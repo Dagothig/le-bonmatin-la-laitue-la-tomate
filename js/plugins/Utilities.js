@@ -1005,6 +1005,14 @@ function eval_fn_expr(expr, args) {
             var enemy = this.enemy();
             enemy._customSetup && enemy._customSetup.call(this);
         },
+        function transform(transform, enemyId) {
+            const oldEnemyId = this._enemyId;
+            transform.call(this, enemyId);
+            if (oldEnemyId !== enemyId) {
+                const enemy = this.enemy();
+                enemy._customSetup && enemy._customSetup.call(this);
+            }
+        },
         function performCollapse(performCollapse) {
             performCollapse.call(this);
             var enemy = this.enemy();
@@ -2061,7 +2069,7 @@ function eval_fn_expr(expr, args) {
             this.updateBgmParameters(this._currentBgm);
             var newVolume = this._bgmBuffer && this._bgmBuffer.volume;
             if (previousVolume !== newVolume) {
-                this._bgmBuffer.aaa_fade(1, previousVolume, newVolume);
+                this._bgmBuffer.aaa_fade(previousVolume < newVolume ? 0.25 : 1, undefined, newVolume);
             }
         }
     });
@@ -2127,7 +2135,7 @@ function eval_fn_expr(expr, args) {
                     var gain = this._gainNode.gain;
                     var currentTime = WebAudio._context.currentTime;
                     gain.cancelScheduledValues(currentTime);
-                    gain.setValueAtTime(from, currentTime);
+                    gain.setValueAtTime(isFinite(from) ? from : gain.value, currentTime);
                     gain.linearRampToValueAtTime(to, currentTime + duration);
                 }
             } else if (this._autoPlay) {
