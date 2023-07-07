@@ -11055,6 +11055,324 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _BumCrissFaitFrette"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Criss qui fait frette!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _DarkGeorginaGniaha"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Monster",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Gniaha!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _GabspartTaper"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Ahha!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorTaper"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Ahha!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _MarchandYaha"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People3",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Ya-ha!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurFinsDePhrases"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "L'aboutissement"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "la résolution tant recherchée"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "des discours"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "sommairement achevés"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _ProtagonisteOhNonNonNon"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Oh non."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Nonononon."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WindoEmbrace"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "EMBRACE"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WindoExtend"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "EXTEND"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WindoExtinguish"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "EXTINGUISH"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []

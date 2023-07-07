@@ -2175,6 +2175,10 @@ _ProtagonisteVaMettreCoffreDansPoche
 > trouver quelqu'un qui peut vous aider,\
 > c'est bon?
 
+_ProtagonisteOhNonNonNon
+> Oh non.\
+> Nonononon.
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3317,6 +3321,12 @@ _NarrateurTactiqueGagnante
 > Tournoyer pour gagner!\
 > En tournoyant vous tapez tous les enemis!
 
+_NarrateurFinsDePhrases
+> L'aboutissement\
+> la résolution tant recherchée\
+> des discours\
+> sommairement achevés
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -4056,6 +4066,9 @@ _WwwelchiorUneBelleAttitude
 > Ah! Ça c'est une belle amélioration\
 > d'attitude!
 
+_WwwelchiorTaper
+> Ahha!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -4682,6 +4695,9 @@ _GabspartTraduitGaboueDefenseProtagoniste2
 > Par sa nature même, ces comportements\
 > l'oblige à répondre violence par violence!
 
+_GabspartTaper
+> Ahha!
+
 ### Jacques
 
 _JacquesJeanTuVoisTuCa
@@ -5243,6 +5259,9 @@ _DarkGeorginaJeSuisEternel
 _DarkGeorginaHaha
 > GeorginaHaha
 
+_DarkGeorginaGniaha
+> Gniaha!
+
 ### Informateur
 
 _InformateurPontCasse2
@@ -5289,6 +5308,9 @@ _MarchandSeulementPourFaireBeau
 
 _MarchandVousAllezAcheter
 > Donc vous allez acheter quelque chose?
+
+_MarchandYaha
+> Ya-ha!
 
 ### Fermiere
 
@@ -6121,14 +6143,6 @@ _AlarmeCodeRougeBrun
 > ATTENTION À TOUS LES NINJAS\
 > CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG
 
-### Protagonsite
-
-_ProtagonsiteVaMettreCoffreDansPoche
-> Oh. Voyons voir... Disons que je mets le\
-> coffre dans ma poche, et on va finir par\
-> trouver quelqu'un qui peut vous aider,\
-> c'est bon?
-
 ### Gros
 
 _GrosNarrateurExcalibarre1
@@ -6173,3 +6187,19 @@ _GrosNinjaVousDevezPayer
 > Vous êtes venus nous dérober nos secrets,\
 > c'est ça???\
 > Vous allez devoir payer de votre vie!
+
+### Bum
+
+_BumCrissFaitFrette
+> Criss qui fait frette!
+
+### Windo
+
+_WindoEmbrace
+> EMBRACE
+
+_WindoExtend
+> EXTEND
+
+_WindoExtinguish
+> EXTINGUISH

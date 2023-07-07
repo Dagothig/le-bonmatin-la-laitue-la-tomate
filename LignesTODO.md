@@ -1582,7 +1582,7 @@ _GabspartCaVaBienAller
 > Je suis sûr que tu vas bien aller!
 
 _GabspartTaper
-> ahha
+> Ahha!
 
 _GabspartResponsabilite
 > Ah non mais tu prends les décisions hein,\
@@ -1781,7 +1781,7 @@ _WwwelchiorPasConvaicuQuete
 > avec une histoire de voisinage...
 
 _WwwelchiorTaper
-> ahha
+> Ahha!
 
 _WwwelchiorMurderHoboFaible
 > Je ne suis pas sûr que tu es très\
