@@ -633,135 +633,46 @@
         ]
       },
       {
-        "code": 111,
+        "code": 355,
         "indent": 0,
         "parameters": [
-          6,
-          -1,
-          2
+          "const dir = $gamePlayer.direction();"
         ]
       },
       {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          3,
-          3,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 411,
+        "code": 655,
         "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
         "parameters": [
-          6,
-          -1,
-          8
+          "const landOk = $gameMap.isPassable($gvars.TMP_B, $gvars.TMP_C, dir);"
         ]
       },
       {
-        "code": 122,
-        "indent": 2,
-        "parameters": [
-          3,
-          3,
-          2,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 2,
-        "parameters": [
-          6,
-          -1,
-          4
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 3,
-        "parameters": [
-          2,
-          2,
-          2,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 122,
-        "indent": 3,
-        "parameters": [
-          2,
-          2,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
+        "code": 655,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          "$gvars.TMP_B = $gameMap.roundXWithDirection($gvars.TMP_B, dir);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gvars.TMP_C = $gameMap.roundYWithDirection($gvars.TMP_C, dir)"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const waterOk = $gameMap.isBoatPassable($gvars.TMP_B, $gvars.TMP_C);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gvars.TMP_D = landOk && waterOk ? 1 : 0;"
+        ]
       },
       {
         "code": 202,
@@ -778,8 +689,11 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          12,
-          "$gameMap.isBoatPassable($gvars.TMP_B, $gvars.TMP_C)"
+          1,
+          4,
+          0,
+          1,
+          0
         ]
       },
       {

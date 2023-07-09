@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 965,
-    "scrollY": 1141
+    "scrollX": 966,
+    "scrollY": 782
   },
   {
     "id": 6,
@@ -60,8 +60,8 @@
     "name": "FORET_NEIGE",
     "order": 28,
     "parentId": 0,
-    "scrollX": 819,
-    "scrollY": 477
+    "scrollX": 832,
+    "scrollY": 640
   },
   {
     "id": 8,
@@ -151,7 +151,7 @@
     "order": 19,
     "parentId": 9,
     "scrollX": 832,
-    "scrollY": 491
+    "scrollY": 624
   },
   {
     "id": 18,
@@ -213,8 +213,8 @@
     "name": "PASSAGE_MONTAGNE_2",
     "order": 22,
     "parentId": 8,
-    "scrollX": 811,
-    "scrollY": 483
+    "scrollX": 832,
+    "scrollY": 640
   },
   {
     "id": 25,
@@ -501,8 +501,8 @@
     "name": "MONTAGNE_BAS",
     "order": 68,
     "parentId": 67,
-    "scrollX": 819,
-    "scrollY": 477
+    "scrollX": 832,
+    "scrollY": 640
   },
   {
     "id": 57,
@@ -609,8 +609,8 @@
     "name": "MONTAGNE_MID",
     "order": 67,
     "parentId": 67,
-    "scrollX": 819,
-    "scrollY": 477
+    "scrollX": 832,
+    "scrollY": 640
   },
   {
     "id": 69,
@@ -717,8 +717,8 @@
     "name": "PASSAGE",
     "order": 69,
     "parentId": 67,
-    "scrollX": 816,
-    "scrollY": 1395
+    "scrollX": 811,
+    "scrollY": 597
   },
   {
     "id": 81,

@@ -702,6 +702,11 @@ function eval_fn_expr(expr, args) {
                 event.setImage(name, idx);
                 event.setPattern(pattern);
                 event._originalPattern = pattern;
+            } else if (command === "weather") {
+                const type = args[0];
+                const power = Number.parseInt(args[1]);
+                const duration = Number.parseInt(args[2]);
+                $gameScreen.changeWeather(type, power, duration);
             }
         },
         function jumpToLabel(_, labelName) {
@@ -2103,7 +2108,7 @@ function eval_fn_expr(expr, args) {
                 },
                 farAway: {
                     _lowpass: { wet: 0.5 },
-                    _reverb: { wet: 1, dry: 0.5 }
+                    _reverb: { wet: 1, dry: 0 }
                 },
                 default: {
                     _lowpass: { wet: 0 },
@@ -3907,6 +3912,83 @@ Input.keyMapper[68] = "right"; // d
                 $gameSystem.onAfterLoad();
             } else {
                 start.call(this);
+            }
+        });
+})();
+
+// Additional weather
+(function () {
+    override(Weather.prototype,
+        function _createBitmaps(_createBitmaps) {
+            _createBitmaps.call(this);
+            this._sandstormBitmap = ImageManager.loadPicture("Sandstorm");
+        },
+        function _addSprite(_addSprite) {
+            switch (this.type) {
+                case "sandstorm":
+                    const sprite = new TilingSprite(this._sandstormBitmap);
+                    sprite.opacity = 0;
+                    sprite.move(0, 0, Graphics.width, Graphics.height);
+                    sprite.blendMode = PIXI.BLEND_MODES.MULTIPLY;
+                    this._sprites.push(sprite);
+                    this.addChild(sprite);
+                    break;
+                default:
+                    _addSprite.call(this);
+            }
+        },
+        function _updateAllSprites(_updateAllSprites) {
+            let maxSprites;
+            switch (this.type) {
+                case "sandstorm":
+                    maxSprites = 1;
+                    break;
+                default:
+                    maxSprites = Math.floor(this.power * 10);
+                    break;
+            }
+            while (this._sprites.length < maxSprites) {
+                this._addSprite();
+            }
+            while (this._sprites.length > maxSprites) {
+                this._removeSprite();
+            }
+            switch (this.type) {
+                case "sandstorm":
+                    for (const sprite of this._sprites) {
+                        this._updateSprite(sprite);
+                    }
+                    break;
+                default:
+                    for (const sprite of this._sprites) {
+                        this._updateSprite(sprite);
+                        sprite.x = sprite.ax - this.origin.x;
+                        sprite.y = sprite.ay - this.origin.y;
+                    }
+                    break;
+            }
+        },
+        function _updateSprite(_updateSprite, sprite) {
+            switch (this.type) {
+                case "sandstorm":
+                    this._updateSandstormSprite(sprite);
+                    break;
+            }
+            _updateSprite.call(this, sprite);
+        },
+        function _updateSandstormSprite(_, sprite) {
+            sprite.origin.x += this.power;
+            sprite.origin.y += this.power / 6;
+            sprite.opacity = (this.power / 9) * 255;
+        },
+        function _rebornSprite(_rebornSprite, sprite) {
+            switch (this.type) {
+                case "sandstorm":
+                    sprite.opacity = 0;
+                    break;
+                default:
+                    _rebornSprite.call(this, sprite);
+                    break;
             }
         });
 })();
