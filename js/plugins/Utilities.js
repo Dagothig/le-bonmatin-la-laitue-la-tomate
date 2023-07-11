@@ -8,6 +8,69 @@ function override(obj) {
     }
 }
 
+function rgbToHsl(arr, i) {
+    const r = arr[i + 0];
+    const g = arr[i + 1];
+    const b = arr[i + 2];
+    var cmin = Math.min(r, g, b);
+    var cmax = Math.max(r, g, b);
+    var h = 0;
+    var s = 0;
+    var l = (cmin + cmax) / 2;
+    var delta = cmax - cmin;
+
+    if (delta > 0) {
+        if (r === cmax) {
+            h = 60 * (((g - b) / delta + 6) % 6);
+        } else if (g === cmax) {
+            h = 60 * ((b - r) / delta + 2);
+        } else {
+            h = 60 * ((r - g) / delta + 4);
+        }
+        s = delta / (255 - Math.abs(2 * l - 255));
+    }
+    arr[i + 0] = h;
+    arr[i + 1] = s;
+    arr[i + 2] = l;
+}
+
+function hslToRgb(arr, i) {
+    const h = arr[i + 0];
+    const s = arr[i + 1];
+    const l = arr[i + 2];
+    var c = (255 - Math.abs(2 * l - 255)) * s;
+    var x = c * (1 - Math.abs((h / 60) % 2 - 1));
+    var m = l - c / 2;
+    var cm = c + m;
+    var xm = x + m;
+
+    if (h < 60) {
+        arr[i + 0] = cm;
+        arr[i + 1] = xm;
+        arr[i + 2] = m;
+    } else if (h < 120) {
+        arr[i + 0] = xm;
+        arr[i + 1] = cm;
+        arr[i + 2] = m;
+    } else if (h < 180) {
+        arr[i + 0] = m;
+        arr[i + 1] = cm;
+        arr[i + 2] = xm;
+    } else if (h < 240) {
+        arr[i + 0] = m;
+        arr[i + 1] = xm;
+        arr[i + 2] = cm;
+    } else if (h < 300) {
+        arr[i + 0] = xm;
+        arr[i + 1] = m;
+        arr[i + 2] = cm;
+    } else {
+        arr[i + 0] = cm;
+        arr[i + 1] = m;
+        arr[i + 2] = xm;
+    }
+}
+
 const GROUND = 0;
 const FLYING = 1;
 const EMPTY_OBJ = {};
@@ -3997,6 +4060,32 @@ Input.keyMapper[68] = "right"; // d
 
 // Huds
 (function () {
+    const COLOR_GRAYSCALE = window.COLOR_GRAYSCALE = 0;
+    override(Bitmap.prototype,
+        function rotateHue(rotateHue, offset) {
+            if (!(this.width > 0 && this.height > 0)) {
+                return;
+            }
+            if (Array.isArray(offset)) {
+                var context = this._context;
+                var imageData = context.getImageData(0, 0, this.width, this.height);
+                var pixels = imageData.data;
+                switch (offset[0]) {
+                    case COLOR_GRAYSCALE:
+                        for (var i = 0; i < pixels.length; i += 4) {
+                            rgbToHsl(pixels, i);
+                            pixels[i + 1] *= (1 - offset[1]);
+                            hslToRgb(pixels, i);
+                        }
+                        break;
+                }
+                context.putImageData(imageData, 0, 0);
+                this._setDirty();
+            } else {
+                rotateHue.call(this, offset);
+            }
+        });
+
     override(Input,
         function press(buttonName) {
             this._currentState[buttonName] = true;
@@ -4025,23 +4114,23 @@ Input.keyMapper[68] = "right"; // d
         move:
             [HORIZONTAL,
                 [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 0],
+                    [CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
                     [TEXT, "w,down"]],
                 [SPACE, 32],
                 [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 1],
+                    [CHARACTER, "ActorUIUI", 1, 1, [COLOR_GRAYSCALE, 1]],
                     [TEXT, "l,left"]],
                 [SPACE, 32],
                 [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 2],
+                    [CHARACTER, "ActorUIUI", 1, 2, [COLOR_GRAYSCALE, 1]],
                     [TEXT, "w,right"]],
                 [SPACE, 32],
                 [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 3],
+                    [CHARACTER, "ActorUIUI", 1, 3, [COLOR_GRAYSCALE, 1]],
                     [TEXT, "w,up"]],
                 [SPACE, 128],
                 [VERTICAL,
-                    [ANIM_CHARACTER, "ActorUIUI", 1, 0],
+                    [ANIM_CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
                     [TEXT, "enter,space,z"]]]
     }
 
@@ -4135,8 +4224,8 @@ Input.keyMapper[68] = "right"; // d
                     const characterName = arg[1];
                     const characterIndex = arg[2];
                     const directionIndex = arg[3];
-                    const bitmap = ImageManager.loadCharacter(characterName);
-                    const big = ImageManager.isBigCharacter(characterName);
+                    const bitmap = ImageManager.loadCharacter(characterName, arg[4]);
+                    const big = ImageManager.isBigCharacter(characterName, arg[4]);
                     const pw = bitmap.width / (big ? 3 : 12);
                     const ph = bitmap.height / (big ? 4 : 8);
                     const n = characterIndex;
