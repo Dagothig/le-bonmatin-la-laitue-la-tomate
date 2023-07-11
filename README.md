@@ -5,6 +5,7 @@
 * Passage sous la montagne
 * Updater Oracle
 * Hot reload
+* Barre hp enemis par dessus UI
 
 ### Musique
 

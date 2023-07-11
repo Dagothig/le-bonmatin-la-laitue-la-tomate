@@ -707,6 +707,8 @@ function eval_fn_expr(expr, args) {
                 const power = Number.parseInt(args[1]);
                 const duration = Number.parseInt(args[2]);
                 $gameScreen.changeWeather(type, power, duration);
+            } else if (command === "hud") {
+                $gameMap.hud = args[0];
             }
         },
         function jumpToLabel(_, labelName) {
@@ -3990,5 +3992,170 @@ Input.keyMapper[68] = "right"; // d
                     _rebornSprite.call(this, sprite);
                     break;
             }
+        });
+})();
+
+// Huds
+(function () {
+    override(Input,
+        function press(buttonName) {
+            this._currentState[buttonName] = true;
+        },
+        function release(buttonName) {
+            this._currentState[buttonName] = false;
+        });
+    function Window_HUD() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_HUD.prototype = Object.create(Window_Base.prototype);
+    Window_HUD.prototype.constructor = Window_HUD;
+
+    const
+        VERTICAL = 0,
+        SPACE = 1,
+        HORIZONTAL = 2,
+        CHARACTER = 3,
+        TEXT = 4,
+        ANIM_CHARACTER = 5;
+
+    const ANIM_STEPS = [1, 0, 1, 2];
+
+    const huds = {
+        move:
+            [HORIZONTAL,
+                [VERTICAL,
+                    [CHARACTER, "ActorUIUI", 1, 0],
+                    [TEXT, "w,down"]],
+                [SPACE, 32],
+                [VERTICAL,
+                    [CHARACTER, "ActorUIUI", 1, 1],
+                    [TEXT, "l,left"]],
+                [SPACE, 32],
+                [VERTICAL,
+                    [CHARACTER, "ActorUIUI", 1, 2],
+                    [TEXT, "w,right"]],
+                [SPACE, 32],
+                [VERTICAL,
+                    [CHARACTER, "ActorUIUI", 1, 3],
+                    [TEXT, "w,up"]],
+                [SPACE, 128],
+                [VERTICAL,
+                    [ANIM_CHARACTER, "ActorUIUI", 1, 0],
+                    [TEXT, "enter,space,z"]]]
+    }
+
+    override(Window_HUD.prototype,
+        function initialize(initialize) {
+            initialize.call(this, 0, Graphics.height - 160, Graphics.width, 160);
+            this.opacity = 0;
+            this.contentsOpacity = 0;
+            this.step = 0;
+            this.animIdx = 0;
+            this._type = null;
+        },
+        function update(update) {
+            update.call(this);
+            if ($gameMap.hud !== this._type) {
+                this._type = $gameMap.hud;
+            }
+            this.targetOpacity = this._type && !$gameMessage.hasText() ? 255 : 0;
+            this.contentsOpacity = this.contentsOpacity * 0.75 + this.targetOpacity * 0.25;
+            if (!(this.step = (this.step + 1) % 10)) {
+                this.animIdx++;
+                this.refresh();
+            }
+        },
+        function refresh() {
+            const hud = huds[this._type];
+            if (hud) {
+                this.contents.clear();
+                Window_MapName.prototype.drawBackground.call(this,
+                    this.padding,
+                    this.margin,
+                    this.width - this.padding * 2,
+                    this.height - this.margin * 2);
+                this.render(hud, this.width / 2, this.height / 2);
+            }
+        },
+        function size(_, arg, dir) {
+            switch(arg && arg[0]) {
+                case VERTICAL:
+                case HORIZONTAL:
+                    let size = 0;
+                    for (let i = 1; i < arg.length; i++) {
+                        const childSize = this.size(arg[i], dir);
+                        if (dir === (arg[0] === VERTICAL ? "x" : "y")) {
+                            size = Math.max(size, childSize);
+                        } else {
+                            size += childSize;
+                        }
+                    }
+                    return size;
+                case SPACE:
+                    return arg[1];
+                case ANIM_CHARACTER:
+                case CHARACTER:
+                    const characterName = arg[1];
+                    const bitmap = ImageManager.loadCharacter(characterName);
+                    const big = ImageManager.isBigCharacter(characterName);
+                    const pw = bitmap.width / (big ? 3 : 12);
+                    const ph = bitmap.height / (big ? 4 : 8);
+                    return dir === "x" ? pw : ph;
+                case TEXT:
+                    return dir === "x" ? 0 : this.lineHeight() * 0.75;
+                default:
+                    return 0;
+            }
+        },
+        function render(_, arg, x, y) {
+            const w = this.size(arg, "x");
+            const h = this.size(arg, "y");
+            switch(arg && arg[0]) {
+                case VERTICAL: {
+                    y -= h / 2;
+                    for (let i = 1; i < arg.length; i++) {
+                        const ih = this.size(arg[i], "y");
+                        this.render(arg[i], x, y);
+                        y += ih;
+                    }
+                    break;
+                }
+                case HORIZONTAL: {
+                    x -= w / 2;
+                    for (let i = 1; i < arg.length; i++) {
+                        const iw = this.size(arg[i], "x");
+                        this.render(arg[i], x, y);
+                        x += iw;
+                    }
+                    break;
+                }
+                case ANIM_CHARACTER:
+                case CHARACTER:
+                    const characterName = arg[1];
+                    const characterIndex = arg[2];
+                    const directionIndex = arg[3];
+                    const bitmap = ImageManager.loadCharacter(characterName);
+                    const big = ImageManager.isBigCharacter(characterName);
+                    const pw = bitmap.width / (big ? 3 : 12);
+                    const ph = bitmap.height / (big ? 4 : 8);
+                    const n = characterIndex;
+                    const step = arg[0] === ANIM_CHARACTER ? ANIM_STEPS[(this.animIdx) % 4] : 1;
+                    const sx = (n % 4 * 3 + step) * pw;
+                    const sy = (directionIndex + Math.floor(n / 4) * 4) * ph;
+                    this.contents.blt(bitmap, sx, sy, pw, ph, x - w / 2, y - h / 2);
+                    break;
+                case TEXT:
+                    this.contents.fontSize = this.standardFontSize() - 12;
+                    this.drawText(arg[1], x - 200, y - h / 2, 400, "center");
+                    break;
+            }
+        });
+
+    override(Scene_Map.prototype,
+        function createAllWindows(createAllWindows) {
+            this._hudWindow = new Window_HUD();
+            this.addWindow(this._hudWindow);
+            createAllWindows.call(this);
         });
 })();

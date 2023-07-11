@@ -11635,6 +11635,20 @@
               ]
             },
             {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "hud move"
+              ]
+            },
+            {
               "code": 123,
               "indent": 1,
               "parameters": [
@@ -11730,19 +11744,12 @@
                       "indent": null
                     },
                     {
-                      "code": 15,
-                      "parameters": [
-                        15
-                      ],
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -11752,19 +11759,6 @@
               "parameters": [
                 {
                   "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    15
-                  ],
                   "indent": null
                 }
               ]
@@ -11799,19 +11793,12 @@
                       "indent": null
                     },
                     {
-                      "code": 15,
-                      "parameters": [
-                        15
-                      ],
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -11821,19 +11808,6 @@
               "parameters": [
                 {
                   "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    15
-                  ],
                   "indent": null
                 }
               ]
@@ -11868,19 +11842,12 @@
                       "indent": null
                     },
                     {
-                      "code": 15,
-                      "parameters": [
-                        15
-                      ],
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -11890,19 +11857,6 @@
               "parameters": [
                 {
                   "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    15
-                  ],
                   "indent": null
                 }
               ]
@@ -11937,19 +11891,12 @@
                       "indent": null
                     },
                     {
-                      "code": 15,
-                      "parameters": [
-                        15
-                      ],
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -11959,19 +11906,6 @@
               "parameters": [
                 {
                   "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    15
-                  ],
                   "indent": null
                 }
               ]
@@ -12018,6 +11952,13 @@
               "parameters": [
                 12,
                 "$gvars.TMP_A === 31 && $gvars.TMP_B === 15"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "hud"
               ]
             },
             {
@@ -12119,8 +12060,8 @@
               "parameters": [
                 0,
                 94,
-                8,
                 6,
+                33,
                 0,
                 0
               ]
@@ -12153,7 +12094,7 @@
               "code": 285,
               "indent": 0,
               "parameters": [
-                3,
+                61,
                 6,
                 1,
                 1,
@@ -12165,7 +12106,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                3,
+                61,
                 0,
                 0,
                 0
@@ -12178,6 +12119,13 @@
                 53,
                 53,
                 1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "hud"
               ]
             },
             {
@@ -12364,8 +12312,8 @@
               "code": 111,
               "indent": 1,
               "parameters": [
-                12,
-                "Input.isPressed(\"forward\")"
+                11,
+                "ok"
               ]
             },
             {
@@ -12439,8 +12387,8 @@
               "code": 111,
               "indent": 1,
               "parameters": [
-                12,
-                "Input.isPressed(\"forward\")"
+                11,
+                "ok"
               ]
             },
             {
@@ -12521,8 +12469,8 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                12,
-                "Input.isPressed(\"forward\")"
+                11,
+                "ok"
               ]
             },
             {
@@ -12542,6 +12490,13 @@
               "indent": 1,
               "parameters": [
                 15
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "hud"
               ]
             },
             {
@@ -12613,7 +12568,7 @@
                     {
                       "code": 45,
                       "parameters": [
-                        "$gamePlayer.moveStraight(passageSlipDirs[$gvars.TMP_C])"
+                        "$gamePlayer.moveStraight(passageSlipDirs[$gvars.SLIP_DIR_ORIG])"
                       ],
                       "indent": null
                     },
@@ -12634,7 +12589,7 @@
                 {
                   "code": 45,
                   "parameters": [
-                    "$gamePlayer.moveStraight(passageSlipDirs[$gvars.TMP_C])"
+                    "$gamePlayer.moveStraight(passageSlipDirs[$gvars.SLIP_DIR_ORIG])"
                   ],
                   "indent": null
                 }
@@ -12713,6 +12668,14 @@
               "indent": 1,
               "parameters": [
                 17
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                1
               ]
             },
             {
