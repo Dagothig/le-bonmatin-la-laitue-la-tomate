@@ -4087,10 +4087,10 @@ Input.keyMapper[68] = "right"; // d
         });
 
     override(Input,
-        function press(buttonName) {
+        function press(_, buttonName) {
             this._currentState[buttonName] = true;
         },
-        function release(buttonName) {
+        function release(_, buttonName) {
             this._currentState[buttonName] = false;
         });
     function Window_HUD() {
@@ -4106,32 +4106,60 @@ Input.keyMapper[68] = "right"; // d
         HORIZONTAL = 2,
         CHARACTER = 3,
         TEXT = 4,
-        ANIM_CHARACTER = 5;
+        ANIM_CHARACTER = 5,
+        CLICK = 6;
 
     const ANIM_STEPS = [1, 0, 1, 2];
+    const COLORS = [
+        "rgba(255, 0, 0, 0.2)",
+        "rgba(0, 255, 0, 0.2)",
+        "rgba(0, 0, 255, 0.2)",
+        "rgba(255, 255, 0, 0.2)",
+        "rgba(255, 0, 255, 0.2)",
+        "rgba(0, 255, 255, 0.2)"
+    ];
 
     const huds = {
         move:
             [HORIZONTAL,
-                [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
-                    [TEXT, "w,down"]],
+                [CLICK,
+                    [VERTICAL,
+                        [CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
+                        [TEXT, "s,down"]],
+                    () => Input.press("down"),
+                    () => Input.release("down")
+                ],
                 [SPACE, 32],
-                [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 1, [COLOR_GRAYSCALE, 1]],
-                    [TEXT, "l,left"]],
+                [CLICK,
+                    [VERTICAL,
+                        [CHARACTER, "ActorUIUI", 1, 1, [COLOR_GRAYSCALE, 1]],
+                        [TEXT, "a,left"]],
+                    () => Input.press("left"),
+                    () => Input.release("left")],
                 [SPACE, 32],
-                [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 2, [COLOR_GRAYSCALE, 1]],
-                    [TEXT, "w,right"]],
+                [CLICK,
+                    [VERTICAL,
+                        [CHARACTER, "ActorUIUI", 1, 2, [COLOR_GRAYSCALE, 1]],
+                        [TEXT, "d,right"]],
+                    () => Input.press("right"),
+                    () => Input.release("right")],
                 [SPACE, 32],
-                [VERTICAL,
-                    [CHARACTER, "ActorUIUI", 1, 3, [COLOR_GRAYSCALE, 1]],
-                    [TEXT, "w,up"]],
-                [SPACE, 128],
-                [VERTICAL,
-                    [ANIM_CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
-                    [TEXT, "enter,space,z"]]]
+                [CLICK,
+                    [VERTICAL,
+                        [CHARACTER, "ActorUIUI", 1, 3, [COLOR_GRAYSCALE, 1]],
+                        [TEXT, "w,up"]],
+                    () => Input.press("up"),
+                    () => Input.release("up")],
+                [SPACE, 32],
+                [SPACE, 32],
+                [SPACE, 32],
+                [SPACE, 32],
+                [CLICK,
+                    [VERTICAL,
+                        [ANIM_CHARACTER, "ActorUIUI", 1, 0, [COLOR_GRAYSCALE, 1]],
+                        [TEXT, "enter,space,z"]],
+                    () => Input.press("ok"),
+                    () => Input.release("ok")]]
     }
 
     override(Window_HUD.prototype,
@@ -4142,6 +4170,8 @@ Input.keyMapper[68] = "right"; // d
             this.step = 0;
             this.animIdx = 0;
             this._type = null;
+            this._touchZones = [];
+            this._touchedZone = null;
         },
         function update(update) {
             update.call(this);
@@ -4154,10 +4184,44 @@ Input.keyMapper[68] = "right"; // d
                 this.animIdx++;
                 this.refresh();
             }
+            let touchedZoneIdx = -1;
+            if (this.contentsOpacity > 200 && TouchInput.isPressed()) {
+                const x = this.canvasToLocalX(TouchInput.x) - this.padding;
+                const y = this.canvasToLocalY(TouchInput.y) - this.padding;
+                for (let i = 0; i < this._touchZones.length; i += 5) {
+                    const zx = this._touchZones[i + 0];
+                    const zy = this._touchZones[i + 1];
+                    const zw = this._touchZones[i + 2];
+                    const zh = this._touchZones[i + 3];
+                    const zarg = this._touchZones[i + 4];
+                    if (x >= zx && x <= zx + zw && y >= zy && y <= zy + zh) {
+                        touchedZoneIdx = i;
+                        break;
+                    }
+                }
+            }
+            if (this._touchedZone && this._touchedZone !== this._touchZones[touchedZoneIdx + 4]) {
+                this._touchedZone[3]();
+                this._touchedZone = null;
+                this.setCursorRect(0, 0, 0, 0);
+            }
+
+            if (touchedZoneIdx >= 0 && !this._touchedZone) {
+                const zx = this._touchZones[touchedZoneIdx + 0];
+                const zy = this._touchZones[touchedZoneIdx + 1];
+                const zw = this._touchZones[touchedZoneIdx + 2];
+                const zh = this._touchZones[touchedZoneIdx + 3];
+                const zarg = this._touchZones[touchedZoneIdx + 4];
+                this._touchedZone = zarg;
+                SoundManager.playCursor();
+                this.setCursorRect(zx, zy, zw, zh);
+                zarg[2]();
+            }
         },
         function refresh() {
             const hud = huds[this._type];
             if (hud) {
+                this._touchZones.length = 0;
                 this.contents.clear();
                 Window_MapName.prototype.drawBackground.call(this,
                     this.padding,
@@ -4168,21 +4232,27 @@ Input.keyMapper[68] = "right"; // d
             }
         },
         function size(_, arg, dir) {
+            if (dir in arg) {
+                return arg[dir];
+            }
+            let size = 0;
             switch(arg && arg[0]) {
                 case VERTICAL:
                 case HORIZONTAL:
-                    let size = 0;
                     for (let i = 1; i < arg.length; i++) {
                         const childSize = this.size(arg[i], dir);
-                        if (dir === (arg[0] === VERTICAL ? "x" : "y")) {
-                            size = Math.max(size, childSize);
+                        if (dir === (arg[0] === VERTICAL ? "w" : "h")) {
+                            if (arg[i][0] !== SPACE) {
+                                size = Math.max(size, childSize);
+                            }
                         } else {
                             size += childSize;
                         }
                     }
-                    return size;
+                    break;
                 case SPACE:
-                    return arg[1];
+                    size = arg[1];
+                    break;
                 case ANIM_CHARACTER:
                 case CHARACTER:
                     const characterName = arg[1];
@@ -4190,35 +4260,42 @@ Input.keyMapper[68] = "right"; // d
                     const big = ImageManager.isBigCharacter(characterName);
                     const pw = bitmap.width / (big ? 3 : 12);
                     const ph = bitmap.height / (big ? 4 : 8);
-                    return dir === "x" ? pw : ph;
+                    size = dir === "w" ? pw : ph;
+                    break;
                 case TEXT:
-                    return dir === "x" ? 0 : this.lineHeight() * 0.75;
-                default:
-                    return 0;
+                    size = dir === "w" ? 48 : this.lineHeight() * 0.75;
+                    break;
+                case CLICK:
+                    size = this.size(arg[1], dir);
+                    break;
             }
+            arg[dir] = size;
+            return size;
         },
         function render(_, arg, x, y) {
-            const w = this.size(arg, "x");
-            const h = this.size(arg, "y");
+            const w = this.size(arg, "w");
+            const h = this.size(arg, "h");
+            // For testing
+            // this.contents.fillRect(x - w/2, y - h/2, w, h, COLORS[arg[0]]);
             switch(arg && arg[0]) {
-                case VERTICAL: {
+                case VERTICAL:
                     y -= h / 2;
                     for (let i = 1; i < arg.length; i++) {
-                        const ih = this.size(arg[i], "y");
+                        const ih = this.size(arg[i], "h");
+                        y += ih / 2;
                         this.render(arg[i], x, y);
-                        y += ih;
+                        y += ih / 2;
                     }
                     break;
-                }
-                case HORIZONTAL: {
+                case HORIZONTAL:
                     x -= w / 2;
                     for (let i = 1; i < arg.length; i++) {
-                        const iw = this.size(arg[i], "x");
+                        const iw = this.size(arg[i], "w");
+                        x += iw / 2;
                         this.render(arg[i], x, y);
-                        x += iw;
+                        x += iw / 2;
                     }
                     break;
-                }
                 case ANIM_CHARACTER:
                 case CHARACTER:
                     const characterName = arg[1];
@@ -4237,6 +4314,15 @@ Input.keyMapper[68] = "right"; // d
                 case TEXT:
                     this.contents.fontSize = this.standardFontSize() - 12;
                     this.drawText(arg[1], x - 200, y - h / 2, 400, "center");
+                    break;
+                case CLICK:
+                    this._touchZones.push(
+                        x - w / 2 - this._margin,
+                        y - h / 2 - this._margin,
+                        w + this._margin * 2,
+                        h + this._margin * 2,
+                        arg);
+                    this.render(arg[1], x, y);
                     break;
             }
         });
