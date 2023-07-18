@@ -282,6 +282,9 @@ Wow
 Wee
 > Weeeeeeeee
 
+Applause1
+> Applause1
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2179,6 +2182,9 @@ _ProtagonisteOhNonNonNon
 > Oh non.\
 > Nonononon.
 
+_ProtagonisteAVosSouhaits
+> À vos souhaits.
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3326,6 +3332,21 @@ _NarrateurFinsDePhrases
 > la résolution tant recherchée\
 > des discours\
 > sommairement achevés
+
+_NarrateurPepitePyrite
+> Vous prenez une petite pépite.
+
+_NarrateurPasGeologuePileDeTerre
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile de terre, ça.
+
+_NarrateurFioleCraquesParoi
+> Cachée dans les craques de la paroi, vous trouvez une\
+> petite fiole que vous n'auriez jamais trouvée sans une\
+> bonne main d'applaudissement.
+
+_NarrateurFioleCraquesParoiDejaTrouvee
+> Cependant. Vous avez déjà trouvé la fiole en question.
 
 ### Bucheron
 
@@ -6045,6 +6066,13 @@ _GeologueVaSeTenirLoin
 _GeologueOnPeutYAller
 > Bon, on va pouvoir y aller, donc.
 
+_GeologueTraduitChuchottements
+> Ah en fait je peux vous traduire les\
+> chuchottements.
+
+_GeologueEnFaitPapierMache
+> ... En fait non, c'est du papier mâché ça.
+
 ### Roche
 
 _RocheNonPasIciAilleurs
@@ -6203,3 +6231,270 @@ _WindoExtend
 
 _WindoExtinguish
 > EXTINGUISH
+
+### Grossepilecaillouxgris
+
+_GrossepilecaillouxgrisOhMaGloire
+> Contemplez! Oh ma Gloire! Ma Grandeur!\
+> \
+> Ignorez toute médisance que certains amas\
+> moins brillants s'obstinent à répandre!
+
+### Petitepilecaillouxgris
+
+_PetitepilecaillouxgrisCeQuiCompteCestMaPepite
+> Ouarf. Mon voisin ne s'arrête jamais de\
+> parler comme quoi il est le plus grand et\
+> bla bla bla. Regardez ma petite pépite.\
+> C'est ça qui compte.
+
+_PetitepilecaillouxgrisVousPete
+> J'vous pète! Attendez un instant que je\
+> sois forgée en objet contondant ou\
+> tranchant! Vous ne rirez plus lorsque je\
+> serais constituée!
+
+_PetitepilecaillouxgrisOnMaOublie
+> Les autres qui sont passé par ici restaient\
+> jamais longtemps, mais là ça commence à\
+> faire un moment que quelqu'un a passé par\
+> ici pour nous ramasser...
+
+_PetitepilecaillouxgrisCharbonTousseu2
+> Aller à l'école pendant des millions\
+> d'années pour finir en bOnJoUr...
+
+_PetitepilecaillouxgrisCharbonTousseu1
+> Ach ach! Dans mon temps, les insectes y\
+> faisaient des mètres! Des mètres!
+
+### Grossepilecaillouxjaunes
+
+_GrossepilecaillouxjaunesPlusGrandPiece
+> Griseux pense qu'elle est la pile suprême,\
+> mais c'est faux.\
+> Je suis le plus grand amas de cette pièce!
+
+_GrossepilecaillouxjaunesPresenteSaFille
+> Oh j'ai l'heureux plaisir de vous présenter\
+> ma fille, petite-pile-de-terrette!\
+> \
+> Dis allo mon amas-tini!
+
+_GrossepilecaillouxjaunesSiPresLumiere
+> Aaaah je suis si près de la lumière!\
+> Si seulement j'avais un peu de soleil et\
+> d'eau, au moins j'aurais de la compagnie...
+
+_GrossepilecaillouxjaunesCestBienLaCompagnie
+> C'est bien avoir de la compagnie, mais\
+> l'autre là, si y pouvait se terre 15\
+> secondes sur ses jeux de mots...
+
+_GrossepilecaillouxjaunesSiSeulementOnPouvaitSerieux
+> Mon voisin devrait vraiment s'arrêter de se\
+> morfondre afin qu'on puisse se tailler un\
+> avis sur les sujets durs comme le roc de\
+> notre époque mœderne.
+
+_GrossepilecaillouxjaunesEpouseCouloir
+> Regardez comme j'épouse parfaitement ce\
+> couloir!\
+> C'est comme si mon déménagement avait été\
+> prévu!
+
+_GrossepilecaillouxjaunesCache
+> Ah merde vous avez trouvé ma cachette.
+
+### Petiterochegrise
+
+_PetiterochegriseCaCraque
+> Ah merde. Je pense que mon temps ici est\
+> compté. Ça craque sous moi.\
+> Si je disparait, dites à l'autre à côté que\
+> ce qui est mieux c'est la dureté.
+
+_PetiterochegriseJeSuisUneRocheBeepBoop
+> Beep boop.\
+> \
+> Je suis une roche. Vous pouvez procéder.
+
+_PetiterochegriseJalouTuseul
+> Ici c'est le pire coin de la pièce...\
+> Je suis toute seule loin des autres.\
+> Au moins j'ai la compagnie des livres.\
+> Coucou les livres!
+
+_PetiterochegrisePasDeReponse
+> Il n'y a jamais de réponse...
+
+_PetiterochegriseAchoo
+> ...\
+> ...\
+> ...\
+> Achoo!
+
+_PetiterochegriseMerci
+> Merci!
+
+_PetiterochegriseLeBumEstLouche
+> Le bum est un peu louche, non?\
+> En plus y'a genre des manches courtes alors\
+> qu'y neige!
+
+_PetiterochegriseVousEtesRevenus
+> Oh vous êtes revenus!\
+> Je suis tellement contente, que je pourrais\
+> me déplacer de quelques centimètres sur une\
+> échelle de quelques jours!
+
+_PetiterochegriseEstSiSeul
+> Oh de la visite!\
+> Ça fait longtemps que quelqu'un s'est\
+> arrêté pour dire allo...
+
+_PetiterochegriseUnptitCoupDePiocheEtHop
+> Y'a une légende!\
+> Un ptit coup de pioche dans le mur à côté\
+> et hop, vous allez trouver le secret du\
+> repos involontaire!
+
+_PetiterochegriseUnpeuenretardnouvelle
+> Bon je suis un peu en retard sur la\
+> nouvelle.
+
+_PetiterochegriseCestGrandDeMonPointDeVue
+> Tout le monde parle du petit passage\
+> montagneux, mais ça fait au moins 50 ans\
+> que j'ai entamé mon voyage pour le\
+> traverser! Petit passage mon cul...
+
+_PetiterochegriseVertige
+> Ohlalala ce trou... Un jour j'entends des\
+> coups provenant des tréfonds! Puis pouf, le\
+> sol qui s'effondre et cet effroyable trou\
+> est apparu! Mon vertige est horrible...
+
+_PetiterochegriseHighground
+> Ah! Vous ne pouvez rien contre moi!\
+> Regardez-moi ça mon élévation!
+
+_PetiterochegriseRevemineraidefer
+> Quand je grandissais, mon rêve c'était de\
+> devenir un minerai de fer.
+
+_PetiterochegriseRevemineraidefer2
+> Mais helas quand j'ai eu fini de refroidir,\
+> mon magmapapa m'a dit que je ne serai\
+> jamais rien d'autre qu'un vulgaire bout de\
+> diorite.
+
+_PetiterochegriseBesoinDeSeDegourdir
+> J'ai la base toute engourdie. Il est\
+> vraiment temps que j'aille me dégourdir la\
+> croûte.
+
+### Petitepilecaillouxjaunes
+
+_PetitepilecaillouxjaunesHeyHeyOr
+> Hey hey, approches. Viens voir.\
+> \
+> Tu veux un peu d'or? J'ai plein d'or!
+
+_PetitepilecaillouxjaunesAaaahMonMoi
+> Aaaaah non n'approchez pas!\
+> \
+> Mon moi!
+
+_PetitepilecaillouxjaunesAaahJeTombe
+> Aaaaaah je tooooombe!\
+> \
+> Pardon je suis un peu lente à comprendre.
+
+_PetitepilecaillouxjaunesDecuNouvelleDemeure
+> Sur le coup j'étais contente hein, nouvelle\
+> demeure, nouveaux amis.\
+> Mais en fait non, l'autre à côté c'est\
+> juste un arbre mort.
+
+### Paroigrisebrisee
+
+_ParoigrisebriseeAhMerdeJeSuisAnemique
+> Aaaaah merde, moi qui était si fière de mon\
+> taux de fer...\
+> Voila que je suis anémique.
+
+_ParoigrisebriseeLaDouleurNePartJamais
+> Vous savez, on perd un être cher, et même\
+> si la douleur initiale fini par s'estomper,\
+> jamais elle ne disparaît complètement.
+
+_ParoigrisebriseeOuchOwiieOwowow
+> Ouch. Owie. Ow ow ow.\
+> \
+> Mon bas-de-paroi!
+
+_ParoigrisebriseeMonSecret
+> Vous savez c'est quoi mon secret pour ne\
+> pas être complètement oxidé?\
+> Facile! Il suffit d'envoyer promener\
+> l'oxygène!
+
+_ParoigrisebriseeAhmerde
+> Ah merde...
+
+_ParoigrisebriseeFichusNouveaux
+> Ah ces fichus nouveaux voisins qui pensent\
+> qu'ils peuvent prendre toute la place!\
+> \
+> M'a leur montrer, vous allez voir...
+
+_ParoigrisebriseeLumiereNaturelle
+> Ça fait du bien un peu de lumière naturelle\
+> quand même.\
+> Pas trop par contre, les rayons UV c'est\
+> pas bon pour mon teint.
+
+_ParoigrisebriseeJeSuisLibre
+> Je suis liiiiiibre!
+
+_ParoigrisebriseeNonReviens
+> Non reviens mon cher! Je te jure que je\
+> peux changer!
+
+_ParoigrisebriseeSalutBubye
+> Salut. Ça va bien? Bubye.
+
+_ParoigrisebriseeCestCommeCaLesGensFont
+> C'est pas comme ça que ça fonctionne quand\
+> on rencontre quelqu'un?
+
+_ParoigrisebriseeBandeTouristes
+> Bande de touristes. Vous êtes ici pour\
+> "voir le Monde" c'est ça?\
+> Bah y'a rien ici! Vous pouvez partir!
+
+_ParoigrisebriseeVousEtesGagnant
+> Bravo! Vous êtes exactement notre troisième\
+> visiteur, et vous avez donc emporté un\
+> prix!
+
+_ParoigrisebriseeVousEtesGagnant2
+> Voici votre récompense, cette fiole qui\
+> goûte peut-être le poulet!
+
+### Petitestalagmitejaune
+
+_PetitestalagmitejauneOnSemmerde
+> Ce qu'on s'emmerde ici... J'ai vraiment\
+> l'impression que je vais m'endormir\
+> bientôt.
+
+### Grossestalagmitejaune
+
+_GrossestalagmitejauneRegardesMaman
+> Regardes maman! Je vais toucher le plafond!
+
+_GrossestalagmitejauneMerdeCache
+> Ah merde, pourtant je pensais m'être bien\
+> caché...

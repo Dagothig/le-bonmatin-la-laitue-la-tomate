@@ -11729,5 +11729,82 @@
     "name": "Sort un gros shuriken",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 29,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          57,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _GeologueTraduitChuchottements"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI3",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Ah en fait je peux vous traduire les "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "chuchottements."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          57,
+          57,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Geologue peut traduire",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

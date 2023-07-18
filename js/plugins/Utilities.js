@@ -417,6 +417,7 @@ function eval_fn_expr(expr, args) {
                             if (routeEntry.code === Game_Character.ROUTE_SCRIPT)
                                 routeEntry.evalFn = eval_fn_expr("{\n" + routeEntry.parameters[0] + "\n}", "command, gc, params");
                     }
+                $dataMap.playerScale = Number.parseFloat($dataMap.meta.playerScale) || 1;
                 break;
             case $dataCommonEvents:
                 for (const event of $dataCommonEvents)
@@ -772,6 +773,8 @@ function eval_fn_expr(expr, args) {
                 $gameScreen.changeWeather(type, power, duration);
             } else if (command === "hud") {
                 $gameMap.hud = args[0];
+            } else if (command === "dash") {
+                $gamePlayer._forceDashing = args[0] === "force";
             }
         },
         function jumpToLabel(_, labelName) {
@@ -2298,6 +2301,17 @@ function eval_fn_expr(expr, args) {
 // Vehicles
 (function () {
     override(Game_Vehicle.prototype,
+        function initMoveSpeed(initMoveSpeed) {
+            if (this.isBoat()) {
+                this.setMoveSpeed(4.5);
+            } else {
+                initMoveSpeed.call(this);
+            }
+        },
+        function refresh(refresh) {
+            refresh.call(this);
+            this.initMoveSpeed();
+        },
         function hasBgm() {
             return this._bgm || (this.vehicle().bgm && this.vehicle().bgm.name);
         },
@@ -2684,6 +2698,14 @@ Input.keyMapper[68] = "right"; // d
         function snapForBackground() {
             this._backgroundBitmap = this.snap();
         },
+        function changeScene(changeScene) {
+            if (this.isSceneChanging()) {
+                if (this._scene instanceof Scene_Map && this._nextScene instanceof Scene_Map) {
+                    this._shouldStabilise = true;
+                }
+            }
+            changeScene.call(this);
+        },
         function updateScene(_) {
             const now = new Date();
             if (this._time) {
@@ -2695,19 +2717,20 @@ Input.keyMapper[68] = "right"; // d
                 if (!this._sceneStarted && this._scene.isReady()) {
                     this._scene.start();
                     this._sceneStarted = true;
-                    this._waitForStable = true;
-                    this._stableFrames = Math.min(this._stableFrames || 0, MIN_STABLE_FRAMES - 1);
-                    this._maxTransitionFrames = MAX_TRANSITION_FRAMES;
+                    if (this._shouldStabilise) {
+                        this._stableFrames = Math.min(this._stableFrames || 0, MIN_STABLE_FRAMES - 1);
+                        this._maxTransitionFrames = MAX_TRANSITION_FRAMES;
+                    }
                     this.onSceneStart();
                 }
                 if (this.isCurrentSceneStarted()) upd: {
-                    if (this._waitForStable) {
+                    if (this._shouldStabilise) {
                         this._maxTransitionFrames--;
                         if (this._stableFrames < MIN_STABLE_FRAMES &&
                             this._maxTransitionFrames > 0) {
                             break upd;
                         } else {
-                            this._waitForStable = false;
+                            this._shouldStabilise = false;
                         }
                     }
                     this._scene.update();
@@ -3262,6 +3285,10 @@ Input.keyMapper[68] = "right"; // d
         function addCommand(addCommand, name, symbol, enabled, ext) {
             symbol !== "alwaysDash" && addCommand.call(this, name, symbol, enabled, ext);
         });
+    override (Game_Player.prototype,
+        function isDashing(isDashing) {
+            return isDashing.call(this) || this._forceDashing;
+        });
 })();
 
 // Savefilelist
@@ -3670,36 +3697,45 @@ Input.keyMapper[68] = "right"; // d
 
 // Smaller overworld sprites
 (function () {
-    override(Spriteset_Map.prototype,
-        function createCharacters(createCharacters) {
-            createCharacters.call(this);
-            const playerScale = Number.parseFloat($dataMap.meta && $dataMap.meta.playerScale);
-            if (Number.isFinite(playerScale)) {
-                for (const character of [$gamePlayer].concat($gamePlayer.followers()._data)) {
-                    const sprite = this._characterSprites.find(s =>
-                        s._character === character);
-                    if (sprite) {
-                        sprite.scale.x = sprite.scale.y = playerScale;
-                    }
+    override(Game_CharacterBase.prototype,
+        function sizeFactor() {
+            return 1;
+        },
+        function realMoveSpeed(realMoveSpeed) {
+            return realMoveSpeed.call(this) * ((this.sizeFactor() || 1) + 1) / 2;
+        });
 
-                    const shadowSprite =
-                        this._bshadowSprites &&
-                        Object.values(this._bshadowSprites).find(s =>
-                            s._character === character);
-                    if (shadowSprite) {
-                        shadowSprite.scale.x = shadowSprite.scale.y = playerScale;
-                    }
-                }
-            }
+    override(Game_Player.prototype,
+        function sizeFactor() {
+            return $dataMap.playerScale;
+        });
+
+    override(Game_Follower.prototype,
+        function sizeFactor() {
+            return $dataMap.playerScale;
+        });
+
+    override(Game_Vehicle.prototype,
+        function sizeFactor() {
+            return $dataMap.playerScale;
         });
 
     override(Sprite_Character.prototype,
         function setCharacter(setCharacter, character) {
             setCharacter.call(this, character);
             const event = character.event && character.event();
-            if (event && event.meta && event.meta.scale) {
-                this.scale.x = this.scale.y = parseFloat(event.meta.scale);
-            }
+            this.scale.x = this.scale.y =
+                parseFloat(event && event.meta && event.meta.scale) ||
+                character.sizeFactor();
+        });
+
+    override(Sprite_BasicShadow.prototype,
+        function setCharacter(setCharacter, character) {
+            setCharacter.call(this, character);
+            const event = character.event && character.event();
+            this.scale.x = this.scale.y =
+                parseFloat(event && event.meta && event.meta.scale) ||
+                character.sizeFactor();
         });
 })();
 
@@ -4193,7 +4229,6 @@ Input.keyMapper[68] = "right"; // d
                     const zy = this._touchZones[i + 1];
                     const zw = this._touchZones[i + 2];
                     const zh = this._touchZones[i + 3];
-                    const zarg = this._touchZones[i + 4];
                     if (x >= zx && x <= zx + zw && y >= zy && y <= zy + zh) {
                         touchedZoneIdx = i;
                         break;
