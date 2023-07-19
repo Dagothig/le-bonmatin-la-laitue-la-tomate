@@ -2977,51 +2977,6 @@ _AlarmeCodeRougeBrun
 > ATTENTION À TOUS LES NINJAS\
 > CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG
 
-### Gros
-
-_GrosNarrateurExcalibarre1
-> \
-> Vous avez trouvé la légendaire épée Excalibarre!
-
-_GrosNarrateurExcalibarre2
-> Cette épée,\
-> connue pour ses propriétés magiques,\
-> confère une force inouie\
-> à celui qui la tient dans ses mains!
-
-_GrosNarrateurExcalibarre3
-> Cette épée est si puissante\
-> que le simple fait de la tenir dans ses mains\
-> élimine tous ses enemis dans un rayon de
-
-_GrosNarrateurExcalibarre4
-> 7777777777777777777777777777777777777777777777777777777\
-> 7777777777777777777777777777777777777777777777777777777\
-> 7777777777777777777777777777777777777777777777777777777\
-> 7777777777777777777777777777777777777777777777777777777
-
-_GrosNarrateurExcalibarre5
-> \
-> kilomètres!
-
-_GrosNinjaWohJeSuisLaPourQuoi
-> Woh! Vous pensez je suis là pour quoi?
-
-_GrosNinjaJaiEteLaisseDerriere
-> Les autres ninjas sont tous partis préparer\
-> l'ambuscade de Cossin et m'ont laissé\
-> derrière...
-
-_GrosNinjaPassePasParLaPorte
-> J'aurais voulu les suivre mais je ne passe\
-> pas par la porte.
-
-_GrosNinjaVousDevezPayer
-> D'ailleurs vous n'êtes pas sensé être ici!\
-> Vous êtes venus nous dérober nos secrets,\
-> c'est ça???\
-> Vous allez devoir payer de votre vie!
-
 ### SFX
 
 Wee
@@ -3293,3 +3248,50 @@ _GrossestalagmitejauneRegardesMaman
 _GrossestalagmitejauneMerdeCache
 > Ah merde, pourtant je pensais m'être bien\
 > caché...
+
+### Grosninja
+
+_GrosninjaWohJeSuisLaPourQuoi
+> Woh! Vous pensez je suis là pour quoi?
+
+_GrosninjaJaiEteLaisseDerriere
+> Les autres ninjas sont tous partis préparer\
+> l'ambuscade de Cossin et m'ont laissé\
+> derrière...
+
+_GrosninjaPassePasParLaPorte
+> J'aurais voulu les suivre mais je ne passe\
+> pas par la porte.
+
+_GrosninjaVousDevezPayer
+> D'ailleurs vous n'êtes pas sensé être ici!\
+> Vous êtes venus nous dérober nos secrets,\
+> c'est ça???\
+> Vous allez devoir payer de votre vie!
+
+### Grosnarrateur
+
+_GrosnarrateurExcalibarre1
+> \
+> Vous avez trouvé la légendaire épée Excalibarre!
+
+_GrosnarrateurExcalibarre2
+> Cette épée,\
+> connue pour ses propriétés magiques,\
+> confère une force inouie\
+> à celui qui la tient dans ses mains!
+
+_GrosnarrateurExcalibarre3
+> Cette épée est si puissante\
+> que le simple fait de la tenir dans ses mains\
+> élimine tous ses enemis dans un rayon de
+
+_GrosnarrateurExcalibarre4
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777\
+> 7777777777777777777777777777777777777777777777777777777
+
+_GrosnarrateurExcalibarre5
+> \
+> kilomètres!
