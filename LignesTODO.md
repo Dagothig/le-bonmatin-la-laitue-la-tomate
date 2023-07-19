@@ -440,6 +440,33 @@ _NarrateurFioleCraquesParoi
 _NarrateurFioleCraquesParoiDejaTrouvee
 > Cependant. Vous avez déjà trouvé la fiole en question.
 
+_NarrateurStalagmitePasDeBras
+> Rien ne se passe. Les stalagmites n'ont pas de bras, et\
+> encore moins de radis.
+
+_NarrateurPancartePont1
+> C'est bien, avoir une pancarte pour y mettre de l'info,\
+> mais comme elle fait face à la rivière, et qu'un arbre\
+> est dans le chemin de l'autre côté...
+
+_NarrateurPancartePont2
+> Faudrait faire un peu d'effort pour s'enligner avec la\
+> pancarte, tout de même.
+
+_NarrateurPancartePont3
+> La pancarte lit:\
+> \
+> LE PONT
+
+_NarrateurPancartePont4
+> Qui l'eu cru.
+
+_NarrateurTombeJeanJacques
+> Ci gisait et giseront:\
+> \
+> Jean et Jacques\
+> Tristes victimes de leur antagonisme.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1456,6 +1483,17 @@ _ProtagonisteVaMettreCoffreDansPoche
 _ProtagonisteAVosSouhaits
 > À vos souhaits.
 
+_ProtagonisteGeologueBruyant
+> Bon, être géologue c'est un peu bruyant\
+> quand même...
+
+_ProtagonisteGeologiePasGeographie
+> C'est pas plutôt la géographie l'étude des\
+> noms des endroits et ce genre de chose?
+
+_ProtagonisteDroleEndroitTombe
+> Drôle d'endroit pour une tombe.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1950,6 +1988,11 @@ _WwwelchiorFlashMobDeDanse
 _WwwelchiorUneBelleAttitude
 > Ah! Ça c'est une belle amélioration\
 > d'attitude!
+
+_WwwelchiorTeaseRochePleinDeShit
+> Des fois les légendes c'est vraiment juste\
+> ça par contre.\
+> Des légendes.
 
 ### Fantome
 
@@ -2879,12 +2922,12 @@ _GeologueTraduitChuchottements
 _GeologueEnFaitPapierMache
 > ... En fait non, c'est du papier mâché ça.
 
-### Roche
+_GeologueVoyonsLeRRRR
+> Voyons! Le Royaume Rétabli des Roches\
+> Récalcitrantes.\
+> Vous n'avez pas eu de cours de géologie?
 
-_RocheNonPasIciAilleurs
-> Non!\
-> Pas ici!\
-> Ailleurs!
+### Roche
 
 _RocheOui
 > Oui!
@@ -3144,6 +3187,113 @@ _PetiterochegriseBesoinDeSeDegourdir
 > vraiment temps que j'aille me dégourdir la\
 > croûte.
 
+_PetiterochegriseEspionneOracle
+> Y'a une drôle de madame qui passe dans le\
+> coin tous les soirs...\
+> Elle se cache entre les arbres puis quand\
+> du danger se présente elle se baigne.
+
+_PetiterochegriseBloqueSymboliquement
+> Ha! Vous avez vu comme je bloquais bien\
+> symboliquement le chemin?
+
+_PetiterochegriseSupporteLaCause
+> Pfff, cette espèce de roche vendue n'a\
+> aucune morale!\
+> Bloquer symboliquement le chemin d'un\
+> Protagoniste pour si peu...
+
+_PetiterochegriseCestBienLaMusique
+> C'est bien la musique...\
+> Mais bon, ça fait quelques milliers\
+> d'années que j'entends la même boucle.
+
+_PetiterochegriseLatineBien
+> Veni, vidi, steti causa sum, saxum sum.
+
+_PetiterochegriseLatinePas
+> Erf, ça parle vraiment à travers son\
+> chapeau dans le coin.
+
+_PetiterochegriseBienvenue
+> Bien la bienvenue!\
+> On a des chapins! Des papillons dans la\
+> mauvaise saison! Des blobs!\
+> De tout!
+
+_PetiterochegrisePapillonHivernal
+> C'est drôle quand même tout ces papillons.
+
+_PetiterochegriseCornue
+> Je corne bien, non?
+
+_PetiterochegriseCestFouLaPatience
+> Ils sont impressionants ces ninjas tout de\
+> même.\
+> C'est pas facile préparer une ambuscade\
+> pendant 10 ans.
+
+_PetiterochegriseDurDetre
+> Être dure ou ne pas être dure.\
+> C'est tout un poid de question.
+
+_PetiterochegriseZipZipZip
+> Les ninjas ça court vite, mais ils n'ont\
+> rien de comparable à ma masse volumique!
+
+_PetiterochegriseOffertParRRRR
+> Ce chemin vous est offert gracieuseté du\
+> Royaume Rétabli des Roches Récalcitrantes.\
+> Pour tout vos besoins de façonnage, faites\
+> appel au RRRR.
+
+_PetiterochegriseBonnePromenda
+> Salut. J'espère que vous passez une bonne\
+> promenade.
+
+_PetiterochegriseCacheeDuVent
+> Phiou. Ça m'a tout pris, mais je pense que\
+> finalement je suis à l'abri du vent...
+
+_PetiterochegriseLesFameusesMontagnes
+> Aaah si seulement je pouvais traverser\
+> cette rivière... regardez-moi ça les belles\
+> grosses montagnes bien juteuses de l'autre\
+> côté!
+
+_PetiterochegrisePierreDesChants
+> Vous voulez que je vous chante une petite\
+> chanson?\
+> \
+> Je suis une pierre des chants!
+
+_PetiterochegriseVousVoulezJouerACacheCache
+> Vous voulez jouer à cache-cache? Parce que\
+> moi non et cette fillette commence\
+> sérieusement à me taper sur les nerfs.\
+> Regardez toutes ces traces de doigts!
+
+_PetiterochegriseLoyer
+> Vous n'avez pas idée du loyer que je dois\
+> payer pour habiter ici...
+
+_PetiterochegriseBosquetteuse
+> Les bosquets c'est vraiment pas pareil sans\
+> des petites roches savament positionnées.
+
+_PetiterochegriseYaUnGarsQuiMeFixe
+> Mmmmh. Y'a l'air d'avoir un type de l'autre\
+> côté de l'eau avec un chapeau de marin qui\
+> me fixe. J'aimerais bien un peu de vie\
+> privée, moi.
+
+_PetiterochegriseAhMerdeSable
+> Ah merde il y a du sable dans ma base.
+
+_PetiterochegriseLaLegendeVeutQue
+> La Légende veut qu'il y a un trésor caché\
+> dans ce bosquet.
+
 ### Petitepilecaillouxjaunes
 
 _PetitepilecaillouxjaunesHeyHeyOr
@@ -3166,6 +3316,12 @@ _PetitepilecaillouxjaunesDecuNouvelleDemeure
 > demeure, nouveaux amis.\
 > Mais en fait non, l'autre à côté c'est\
 > juste un arbre mort.
+
+_PetitepilecaillouxjaunesSemiGardeCorps
+> Il est pas pire mon déguisement, hein?\
+> Je vous laisse deviner c'est quoi!\
+> ... ... ...\
+> Me semble c'est clair: Un garde-corps!
 
 ### Paroigrisebrisee
 
@@ -3233,6 +3389,11 @@ _ParoigrisebriseeVousEtesGagnant2
 > Voici votre récompense, cette fiole qui\
 > goûte peut-être le poulet!
 
+_ParoigrisebriseeDormirCestBien
+> Vous avez l'air un peu fatigué. Vous êtes\
+> sur que vous voulez pas aller faire une\
+> sieste?
+
 ### Petitestalagmitejaune
 
 _PetitestalagmitejauneOnSemmerde
@@ -3248,6 +3409,38 @@ _GrossestalagmitejauneRegardesMaman
 _GrossestalagmitejauneMerdeCache
 > Ah merde, pourtant je pensais m'être bien\
 > caché...
+
+_GrossestalagmitejauneUnJourJeRejoindraiMaman
+> Plus que quelques milliers d'années et je\
+> pourrai finalement rejoindre maman au\
+> plafond!
+
+_GrossestalagmitejauneSuplice
+> Je suis complètement tannée de ce suplice\
+> éternel de la goutte!\
+> Pour une fois j'aimerais qu'on me coule\
+> dessus pour vrai vous savez?
+
+_GrossestalagmitejauneAutreVie
+> Le saviez-vous?\
+> Dans une autre vie j'étais une stalactite!\
+> Mais il a eu un gros ressèrement économique\
+> et j'ai dû changer me réorienter.
+
+_GrossestalagmitejauneVousPouvezMeFrotter
+> Vous pouvez me frotter, moi.
+
+_GrossestalagmitejauneLatineBien
+> Oleum meum est vere rancidum.
+
+_GrossestalagmitejauneNonPasIciAilleurs
+> Non!\
+> Pas ici!\
+> Ailleurs!
+
+_GrossestalagmitejauneLeRRRRAllo
+> Le RRRR a le plus grand plaisir de vous\
+> accueillir!
 
 ### Grosninja
 
@@ -3295,3 +3488,81 @@ _GrosnarrateurExcalibarre4
 _GrosnarrateurExcalibarre5
 > \
 > kilomètres!
+
+### Paroibrunebrisee
+
+_ParoibrunebriseeIgnobleDouleur
+> Quelle ignoble douleur que j'ai souffert!\
+> Un suplice qui n'en finissait plus!\
+> AAAAAAA-
+
+_ParoibrunebriseeAVuLeDernierVoleur
+> Petite suggestion d'un estropié à un autre:\
+> Si vous ne voulez pas finir comme l'autre\
+> blancheau là par terre, n'essayez pas de\
+> voler la vieille.
+
+_ParoibrunebriseeAVuLeDernierVoleur2
+> Il n'a pas fait cinq mètres avant de perdre\
+> soudainement toute envie de rester en un\
+> seul morceau!
+
+_ParoibrunebriseePasFacilePosture
+> Pas facile d'avoir une bonne posture...
+
+_ParoibrunebriseeVousVoulezPoussiere
+> Vous voulez pas un peu de poussière? Comme\
+> ça vous aurez toujours quelque chose pour\
+> vous rappeler de moi!
+
+_ParoibrunebriseeHeyMerciCompagnie
+> Hey merci de m'avoir apporté de la\
+> compagnie!
+
+_ParoibrunebriseeSiSeulementBouger
+> Je suis un peu jalouse quand même, moi je\
+> fais pas ça bouger.
+
+_ParoibrunebriseeAccesUniversel
+> Vraiment, je pense que je vais devoir\
+> demander à la prochaine réunion syndicale\
+> qu'on ajoute une politique pour faciliter\
+> l'accès universel.
+
+_ParoibrunebriseeAccesUniversel2
+> Vous avez pas idée de combien de temps ça\
+> me prend chaque jour pour venir me poster\
+> ici pour mon travail.
+
+### Rocherondejaune
+
+_RocherondejauneRinserYeux
+> Woh là. Arrêtez de vous rinser les yeux sur\
+> mes belles rondeurs.
+
+### Paroibrunebrise
+
+_Paroibrunebrisee
+> Le RRRR a le plus grand plaisir de vous\
+> accueillir!
+
+### Grossestalagmitegrise
+
+_GrossestalagmitegrisePstDerriereLaChute
+> Psssst.\
+> Jetez un coup d'oeil derrière la chute.
+
+_GrossestalagmitegriseOhSiSeule
+> Ooooh! Allo! Wow! C'est si rare qu'on vient\
+> me dire coucou.\
+> \
+> Vous voulez un radis?
+
+_GrossestalagmitegriseDommage
+> Tant pis! C'est dommage...
+
+### Petitestalagmitegrise
+
+_PetitestalagmitegriseVoyeurs
+> Je veux pas trop vous faire peur, mais vous\
+> êtes observés.
