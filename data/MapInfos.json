@@ -6,8 +6,8 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 1109,
-    "scrollY": 1309
+    "scrollX": 1035.2727272727273,
+    "scrollY": 1309.0909090909092
   },
   {
     "id": 2,
@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 1035.2727272727273,
-    "scrollY": 1179.2727272727273
+    "scrollX": 884.7272727272727,
+    "scrollY": 753.8181818181819
   },
   {
     "id": 6,
@@ -492,8 +492,8 @@
     "name": "TEST_SCREEN",
     "order": 2,
     "parentId": 0,
-    "scrollX": 819,
-    "scrollY": 477
+    "scrollX": 893.4545454545455,
+    "scrollY": 520.3636363636364
   },
   {
     "id": 56,
@@ -564,8 +564,8 @@
     "name": "DETAH_F1",
     "order": 38,
     "parentId": 30,
-    "scrollX": 832,
-    "scrollY": 640
+    "scrollX": 893.4545454545455,
+    "scrollY": 520.3636363636364
   },
   {
     "id": 64,
@@ -591,7 +591,7 @@
     "name": "VILLE",
     "order": 85,
     "parentId": 0,
-    "scrollX": 1026.5454545454545,
+    "scrollX": 893.4545454545455,
     "scrollY": 511.6363636363637
   },
   {
@@ -826,7 +826,7 @@
     "order": 75,
     "parentId": 64,
     "scrollX": 884.7272727272727,
-    "scrollY": 640.3636363636364
+    "scrollY": 727.6363636363636
   },
   {
     "id": 93,
@@ -897,7 +897,7 @@
     "name": "PASSAGE_VERS_BONJOUR",
     "order": 45,
     "parentId": 34,
-    "scrollX": 2052,
-    "scrollY": 618.5454545454546
+    "scrollX": 2043.2727272727273,
+    "scrollY": 609.8181818181819
   }
 ]

@@ -742,6 +742,11 @@ function eval_fn_expr(expr, args) {
                 }
             } else if (command === "se") {
                 AudioManager.playSe({ name: args[0] });
+            } else if (command === "bgm") {
+                AudioManager.playBgm({
+                    name: args[0],
+                    filters: [args[args.length - 1]]
+                });
             } else if (command === "tileShadow") {
                 const color = args[0] || defaultShadowColor;
                 for (let i = 0; i < color.length; i++)
@@ -2062,6 +2067,12 @@ function eval_fn_expr(expr, args) {
             if (!Number.isFinite(se.pitch)) se.pitch = 100;
             if (!Number.isFinite(se.volume)) se.volume = 90;
             playSe.call(this, se);
+        },
+        function playBgm(playBgm, bgm, pos) {
+            if (bgm.length) bgm = { name: bgm };
+            if (!Number.isFinite(bgm.pitch)) bgm.pitch = 100;
+            if (!Number.isFinite(bgm.volume)) bgm.volume = 90;
+            playBgm.call(this, bgm, pos);
         });
 
     override(WebAudio,
@@ -2176,7 +2187,7 @@ function eval_fn_expr(expr, args) {
                 },
                 farAway: {
                     _lowpass: { wet: 0.5 },
-                    _reverb: { wet: 1, dry: 0 }
+                    _reverb: { wet: 1, dry: 0.25 }
                 },
                 default: {
                     _lowpass: { wet: 0 },
@@ -3510,16 +3521,13 @@ Input.keyMapper[68] = "right"; // d
             changeEquip.call(this, slotId, item);
             const newStates = this.states();
 
-            for (let i = lostStates.length; i >= 0; i--) {
-                if (newStates.contains(lostStates[i])) {
-                    lostStates.splice(i, 1);
+            for (let i = lostStates.length - 1; i >= 0; i--) {
+                if (!newStates.contains(lostStates[i])) {
+                    lostStates[i]._customRemoved && lostStates[i]._customRemoved(this);
                 }
             }
-            for (const state of lostStates) {
-                state._customRemoved && state._customRemoved(this);
-            }
 
-            for (let i = newStates.length; i >= 0; i--) {
+            for (let i = newStates.length - 1; i >= 0; i--) {
                 if (lostStates.contains(newStates[i])) {
                     newStates.splice(i, 1);
                 }

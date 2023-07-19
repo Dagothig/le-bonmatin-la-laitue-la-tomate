@@ -6,7 +6,6 @@
 * Updater Oracle
 * Hot reload
 * Barre hp enemis par dessus UI
-* La base des ninjas doit être loooooongue
 
 ### Musique
 

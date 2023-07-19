@@ -12,8 +12,8 @@
   "bgs": {
     "name": "Sea",
     "pan": 0,
-    "pitch": 100,
-    "volume": 25
+    "pitch": 80,
+    "volume": 15
   },
   "disableDashing": false,
   "displayName": "Lieu Champêtre",
