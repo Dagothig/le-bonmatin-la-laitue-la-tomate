@@ -2731,6 +2731,10 @@ _MaireDifferenceExtraordinaire
 > La nouvelle chaise est en bien meilleur\
 > état!
 
+_MaireEnvoyerCharpentierePontConsent
+> La mairie consent qu'on puisse envoyer la\
+> charpentière réparer le pont, oui.
+
 ### Charpentiere
 
 _CharpentiereOccupee
@@ -2857,12 +2861,6 @@ _RandoLegumes
 > Est-ce que vous allez vous laisser tempter\
 > par mes légumes frais? J'ai des patates,\
 > des radis, des carottes! De tout, quoi!
-
-### Mairie
-
-_MairieEnvoyerCharpentierePontConsent
-> La mairie consent qu'on puisse envoyer la\
-> charpentière réparer le pont, oui.
 
 ### Garde
 
