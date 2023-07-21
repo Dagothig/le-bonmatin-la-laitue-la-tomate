@@ -780,6 +780,9 @@ function eval_fn_expr(expr, args) {
                 $gameMap.hud = args[0];
             } else if (command === "dash") {
                 $gamePlayer._forceDashing = args[0] === "force";
+            } else if (command === "wait_route") {
+                this._character = $gameMap.event($gameMap.eventsByName[args[0]]);
+                this.setWaitMode("route");
             }
         },
         function jumpToLabel(_, labelName) {

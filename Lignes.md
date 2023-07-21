@@ -2199,6 +2199,28 @@ _ProtagonisteGeologiePasGeographie
 _ProtagonisteDroleEndroitTombe
 > Drôle d'endroit pour une tombe.
 
+_ProtagonisteSiSeulementGeologue2
+> Aaaaaah merde... C'eût été trop facile que\
+> la géologue soit avec nous, c'est ça?
+
+_ProtagonisteMauvaiseLangue
+> ... Non, mauvaise langue.
+
+_ProtagonisteEstCeQuOnEstEnDanger
+> Gabspart, vite de même tu veux nous dire si\
+> on est en danger?
+
+_ProtagonistePartyRentrageDansBulle
+> Donc on se fait un petit party de rentrage\
+> dans ma bulle c'est ça?
+
+_ProtagonisteBonsoirVousAussi
+> Bonsoir à vous aussi, on peut vous aider?
+
+_ProtagonisteNononCaVaBienSe
+> Non non, je suis sûr que ça va bien se\
+> pas-\^
+
 ### Rip
 
 _RipFinsDePhrases
@@ -4136,6 +4158,9 @@ _WwwelchiorTeaseRochePleinDeShit
 > ça par contre.\
 > Des légendes.
 
+_WwwelchiorGaboue
+> Gaboué!
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -4764,6 +4789,10 @@ _GabspartTraduitGaboueDefenseProtagoniste2
 
 _GabspartTaper
 > Ahha!
+
+_GabspartNonNonTuVasAvoirPeur
+> Non? Allons allons, il serait où le plaisir\
+> si tu le savais?
 
 ### Jacques
 
@@ -6772,3 +6801,11 @@ _GrossestalagmitegriseDommage
 _PetitestalagmitegriseVoyeurs
 > Je veux pas trop vous faire peur, mais vous\
 > êtes observés.
+
+### Wwelchior
+
+_WwelchiorPlanteGrosseDents
+> J'pense que Personne Véritable est un poil\
+> brisé là. Déjà c'est une plante, et ensuite\
+> elle a de grosses dents.\
+> Ça regarde mal.
