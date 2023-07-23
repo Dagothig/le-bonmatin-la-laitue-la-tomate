@@ -1516,6 +1516,11 @@ _ProtagonisteNononCaVaBienSe
 > Non non, je suis sûr que ça va bien se\
 > pas-\^
 
+_ProtagonistePlanteBaveCoucou
+> Aaaah, l'espèce de bave c'est parce que la\
+> plante est toute contente de nous dire\
+> coucou!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2022,6 +2027,15 @@ _WwwelchiorTeaseRochePleinDeShit
 
 _WwwelchiorGaboue
 > Gaboué!
+
+_WwwelchiorPlanteGrosseDents
+> J'pense que Personne Véritable est un poil\
+> brisé là. Déjà c'est une plante, et ensuite\
+> elle a de grosses dents.\
+> Ça regarde mal.
+
+_WwwelchiorGere
+> Nan c'est correct, je gère!
 
 ### Fantome
 
@@ -3593,11 +3607,3 @@ _GrossestalagmitegriseDommage
 _PetitestalagmitegriseVoyeurs
 > Je veux pas trop vous faire peur, mais vous\
 > êtes observés.
-
-### Wwelchior
-
-_WwelchiorPlanteGrosseDents
-> J'pense que Personne Véritable est un poil\
-> brisé là. Déjà c'est une plante, et ensuite\
-> elle a de grosses dents.\
-> Ça regarde mal.
