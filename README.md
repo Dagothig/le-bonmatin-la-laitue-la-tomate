@@ -6,12 +6,11 @@
 * Updater Oracle
 * Hot reload
 * Barre hp enemis par dessus UI
+* CHEEEECKPOINTS
 
 ### Musique
 
-* Musique Oracle
 * Musique Tension (puzzle louche du passage souterrain)
-* Musique Ninja (pe?) ou Montagne (pe?)
 
 ## Rouler sans RPG Maker MV
 
