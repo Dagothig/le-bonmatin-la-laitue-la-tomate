@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 941.4545454545455
+    "scrollX": 885,
+    "scrollY": 941
   },
   {
     "id": 6,
@@ -69,8 +69,8 @@
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 810.5454545454546
+    "scrollX": 811,
+    "scrollY": 483
   },
   {
     "id": 9,
@@ -78,8 +78,8 @@
     "name": "PASSAGE_MONTAGNE",
     "order": 17,
     "parentId": 8,
-    "scrollX": 893.4545454545455,
-    "scrollY": 511.6363636363637
+    "scrollX": 893,
+    "scrollY": 491
   },
   {
     "id": 10,
@@ -141,8 +141,8 @@
     "name": "MINE_HAUT",
     "order": 18,
     "parentId": 9,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 17,
@@ -213,8 +213,8 @@
     "name": "PASSAGE_MONTAGNE_2",
     "order": 22,
     "parentId": 8,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 811,
+    "scrollY": 483
   },
   {
     "id": 25,
@@ -501,8 +501,8 @@
     "name": "MONTAGNE_BAS",
     "order": 69,
     "parentId": 67,
-    "scrollX": 1638,
-    "scrollY": 954
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 57,
@@ -600,8 +600,8 @@
     "name": "MONTAGNE",
     "order": 66,
     "parentId": 0,
-    "scrollX": 1638,
-    "scrollY": 954
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 68,
@@ -609,8 +609,8 @@
     "name": "MONTAGNE_MID",
     "order": 68,
     "parentId": 67,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 69,
@@ -627,8 +627,8 @@
     "name": "MONTAGNE_HAUT",
     "order": 67,
     "parentId": 67,
-    "scrollX": 1638,
-    "scrollY": 954
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 71,
@@ -717,7 +717,7 @@
     "name": "PASSAGE",
     "order": 70,
     "parentId": 67,
-    "scrollX": 1638,
+    "scrollX": 821,
     "scrollY": 954
   },
   {
@@ -844,7 +844,7 @@
     "order": 73,
     "parentId": 67,
     "scrollX": 811,
-    "scrollY": 1374
+    "scrollY": 1395
   },
   {
     "id": 95,
@@ -852,8 +852,8 @@
     "name": "BASE_NINJAS",
     "order": 27,
     "parentId": 8,
-    "scrollX": 884.7272727272727,
-    "scrollY": 666.5454545454546
+    "scrollX": 811,
+    "scrollY": 667
   },
   {
     "id": 96,
@@ -888,8 +888,8 @@
     "name": "SHRINE_DU_BON_MATIN",
     "order": 99,
     "parentId": 97,
-    "scrollX": 728,
-    "scrollY": 424
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 100,

@@ -783,6 +783,9 @@ function eval_fn_expr(expr, args) {
             } else if (command === "wait_route") {
                 this._character = $gameMap.event($gameMap.eventsByName[args[0]]);
                 this.setWaitMode("route");
+            } else if (command === "swap_bgm") {
+                const pos = AudioManager._bgmBuffer ? AudioManager._bgmBuffer.seek() : 0;
+                AudioManager.playBgm(args[0], pos);
             }
         },
         function jumpToLabel(_, labelName) {
@@ -4378,5 +4381,32 @@ Input.keyMapper[68] = "right"; // d
             this._hudWindow = new Window_HUD();
             this.addWindow(this._hudWindow);
             createAllWindows.call(this);
+        });
+})();
+
+// Preserve bgs in battle
+(function () {
+    override(Scene_Map.prototype,
+        function stopAudioOnBattleStart() {
+            if (!AudioManager.isCurrentBgm($gameSystem.battleBgm())) {
+                AudioManager.stopBgm();
+            }
+            AudioManager.stopMe();
+            AudioManager.stopSe();
+        });
+
+    override(BattleManager,
+        function saveBgmAndBgs() {
+            this._mapBgm = AudioManager.saveBgm();
+        },
+        function playBattleBgm() {
+            AudioManager.playBgm($gameSystem.battleBgm());
+        },
+        function replayBgmAndBgs() {
+            if (this._mapBgm) {
+                AudioManager.replayBgm(this._mapBgm);
+            } else {
+                AudioManager.stopBgm();
+            }
         });
 })();

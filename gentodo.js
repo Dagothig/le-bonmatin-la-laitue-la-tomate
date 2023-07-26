@@ -272,8 +272,6 @@ const sectionsByNameToLinesMD = sectionsByName =>
         }
     }
 
-    console.log(Object.keys(knownLinesByName).map(name => [name, Object.values(knownLinesByName[name]).length]));
-
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
     if (knownLinesText !== newKnownLinesText) {
         console.log("Writing lines");

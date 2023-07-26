@@ -1,5 +1,5 @@
 {
-  "autoplayBgm": true,
+  "autoplayBgm": false,
   "autoplayBgs": true,
   "battleback1Name": "Grassland",
   "battleback2Name": "Clouds",
@@ -2185,6 +2185,39 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                56,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "ninja_pas_alerte",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 214,
               "indent": 0,
               "parameters": []
@@ -3373,6 +3406,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_pas_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -3380,6 +3425,18 @@
                 16,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -3743,6 +3800,13 @@
                 ],
                 5,
                 true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "swap_bgm ninja_alerte"
               ]
             },
             {

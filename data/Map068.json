@@ -1,5 +1,5 @@
 {
-  "autoplayBgm": true,
+  "autoplayBgm": false,
   "autoplayBgs": true,
   "battleback1Name": "Snowfield",
   "battleback2Name": "RockCave",
@@ -4497,6 +4497,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -4504,6 +4516,18 @@
                 17,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -4811,6 +4835,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -4818,6 +4854,18 @@
                 19,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -5173,6 +5221,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -5180,6 +5240,18 @@
                 18,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -5536,6 +5608,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -5543,6 +5627,18 @@
                 17,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -5939,6 +6035,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -5946,6 +6054,18 @@
                 18,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -6318,6 +6438,18 @@
               ]
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -6325,6 +6457,18 @@
                 19,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {

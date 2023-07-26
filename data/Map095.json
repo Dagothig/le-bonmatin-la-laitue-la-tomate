@@ -4,7 +4,7 @@
   "battleback1Name": "Castle2",
   "battleback2Name": "Mine",
   "bgm": {
-    "name": "mine_sous-sol",
+    "name": "ninja_pas_alerte",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -18638,6 +18638,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "swap_bgm ninja_alerte"
+              ]
+            },
+            {
               "code": 225,
               "indent": 0,
               "parameters": [
@@ -18757,6 +18764,18 @@
               "parameters": []
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -18770,6 +18789,18 @@
               "code": 601,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 132,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
               "code": 212,
@@ -18818,6 +18849,18 @@
               "code": 602,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 132,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
               "code": 205,

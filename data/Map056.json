@@ -4,7 +4,7 @@
   "battleback1Name": "",
   "battleback2Name": "",
   "bgm": {
-    "name": "la_chanson_du_todo",
+    "name": "le_bois_du_gaboue",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -4012,6 +4012,87 @@
                 0,
                 0
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                56,
+                0,
+                30,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                56,
+                0,
+                20,
+                1
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "ninja_alerte",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 242,
+              "indent": 2,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 205,
