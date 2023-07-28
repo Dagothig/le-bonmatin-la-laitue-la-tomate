@@ -142,7 +142,7 @@
     "order": 18,
     "parentId": 9,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 464
   },
   {
     "id": 17,
@@ -186,8 +186,8 @@
     "name": "SHRINE_1",
     "order": 25,
     "parentId": 8,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 22,
@@ -222,8 +222,8 @@
     "name": "FORET_NEIGE_3-1_crypte-pecheur",
     "order": 29,
     "parentId": 7,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 26,
@@ -465,8 +465,8 @@
     "name": "CHEZ_GABOUE",
     "order": 43,
     "parentId": 34,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 53,
@@ -483,8 +483,8 @@
     "name": "CRYPTE_PECHEUR",
     "order": 30,
     "parentId": 25,
-    "scrollX": 884.7272727272727,
-    "scrollY": 583.6363636363636
+    "scrollX": 811,
+    "scrollY": 627
   },
   {
     "id": 55,
@@ -546,8 +546,8 @@
     "name": "LATIN",
     "order": 58,
     "parentId": 44,
-    "scrollX": 884.7272727272727,
-    "scrollY": 651.2727272727273
+    "scrollX": 811,
+    "scrollY": 651
   },
   {
     "id": 62,
@@ -573,8 +573,8 @@
     "name": "PONT",
     "order": 74,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 727.6363636363636
+    "scrollX": 811,
+    "scrollY": 728
   },
   {
     "id": 65,
@@ -582,8 +582,8 @@
     "name": "FERME",
     "order": 76,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 531.2727272727273
+    "scrollX": 811,
+    "scrollY": 531
   },
   {
     "id": 66,
@@ -789,8 +789,8 @@
     "name": "CHEZ_GEOLOGUE",
     "order": 93,
     "parentId": 66,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 89,
@@ -853,7 +853,7 @@
     "order": 27,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 667
+    "scrollY": 2019
   },
   {
     "id": 96,

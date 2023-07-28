@@ -3274,7 +3274,27 @@ Input.keyMapper[68] = "right"; // d
                 this.y = (Graphics.boxHeight - this.height) / 2;
             },
             function makeCommandList() {
-                for (const name of ["jean-jacques", "temple-du-bonjour", "premiere-du-bonjour", "detah", "jean-jacques-forrealthistimeprod2"]) {
+                for (const name of [
+                    "jean-jacques",
+                    "temple-du-bonjour",
+                    "premiere-du-bonjour",
+                    "gaboue",
+                    "poulet",
+                    "pecheur",
+                    "windo",
+                    "detah",
+                    "oracle",
+                    "lieu-champetre",
+                    "ville",
+                    "bandits",
+                    "jean-jacques-forrealthistimeprod2",
+                    "pont",
+                    "cossin-1",
+                    "cossin-2",
+                    "cossin-3",
+                    "cossin-4",
+                    "passage-1",
+                    "passage-2"]) {
                     const capitalized = Array.from(name);
                     capitalized[0] = capitalized[0].toUpperCase();
                     for (let i = 0; i < capitalized.length; i++) {

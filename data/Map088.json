@@ -1972,21 +1972,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Pas depuis que je suis passée par le Bois "
+                "On ne s'est pas vu depuis la dernière fois "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "du Gaboué... et la cassure du pont ça date"
+                "que je suis passée par le Bois du Gaboué... "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "de Matusalem."
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "et la cassure du pont ça date de Matusalem."
               ]
             },
             {
@@ -2174,7 +2181,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Ça explique pourquoi t'es sorti de chez "
+                "Ça explique pourquoi tu es sorti de chez "
               ]
             },
             {

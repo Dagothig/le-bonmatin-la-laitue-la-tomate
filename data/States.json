@@ -1180,8 +1180,8 @@
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 20
   }
 ]

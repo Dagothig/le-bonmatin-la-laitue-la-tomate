@@ -6,7 +6,7 @@
 * Updater Oracle
 * Hot reload
 * Barre hp enemis par dessus UI
-* CHEEEECKPOINTS
+* Breuvage fermenté hors-combat + afficher tp hors-combat
 
 ### Musique
 

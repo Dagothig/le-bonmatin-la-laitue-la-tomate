@@ -330,7 +330,8 @@ _NarrateurTellDontShowLeVieuuuux
 _NarrateurVieuxGlisseRadisCossin1
 > Le Vieux glisse un radis dans la poche de Cossin.\
 > \
-> Mais Cossin n'a pas de poche, alors il le glisse dans
+> Mais Cossin n'a pas de poche, alors il le glisse dans\
+> sa bouche.
 
 _NarrateurVieuxGlisseRadisCossin2
 > Puis un autre.
@@ -2917,15 +2918,16 @@ _GeologueCaFaitLongtemps
 > Ça fait longtemps!
 
 _GeologueCaFaitLongtemps2
-> Pas depuis que je suis passée par le Bois\
-> du Gaboué... et la cassure du pont ça date\
-> de Matusalem.
+> On ne s'est pas vu depuis la dernière fois\
+> que je suis passée par le Bois du Gaboué...\
+> \
+> et la cassure du pont ça date de Matusalem.
 
 _GeologueCommentAllezVous
 > Comment allez-vous?
 
 _GeologueCeciExpliqueCela
-> Ça explique pourquoi t'es sorti de chez\
+> Ça explique pourquoi tu es sorti de chez\
 > vous...\
 > J'ai huh, pas trop de travail en ce moment,\
 > tu as des besoins géologiques?
