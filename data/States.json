@@ -317,7 +317,7 @@
     "minTurns": 2,
     "motion": 0,
     "name": "Adrénalisé",
-    "note": "",
+    "note": "<wiggle>",
     "overlay": 0,
     "priority": 40,
     "removeAtBattleEnd": true,

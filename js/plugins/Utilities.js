@@ -3573,9 +3573,15 @@ Input.keyMapper[68] = "right"; // d
         function refresh(refresh) {
             refresh.call(this);
             this.aaaLevitate = false;
+            this.aaaWiggle = false;
             for (const state of this.states()) {
-                if (state && state.meta && state.meta.levitate) {
-                    this.aaaLevitate = true;
+                if (state && state.meta) {
+                    if (state.meta.levitate) {
+                        this.aaaLevitate = true;
+                    }
+                    if (state.meta.wiggle) {
+                        this.aaaWiggle = true;
+                    }
                 }
             }
         });
@@ -3595,6 +3601,11 @@ Input.keyMapper[68] = "right"; // d
                 const offset = (Math.sin(this.aaaLevitate / 30) + 6) * 3;
                 this.y -= offset;
             }
+
+            if (this._actor && this._actor.aaaWiggle) {
+                this.x += Math.random() * 6 - 3;
+                this.y += Math.random() * 2 - 1;
+            }
         });
 
     override(Sprite_Actor.prototype,
@@ -3605,6 +3616,13 @@ Input.keyMapper[68] = "right"; // d
                 const offset = (Math.sin(this.aaaLevitate / 30) + 6) * 3;
                 this.y -= offset;
                 this._shadowSprite.y += offset;
+            }
+
+            if (this._battler && this._battler.aaaWiggle) {
+                this.x += Math.random() * 6 - 3;
+                const offset = Math.random() * 2 - 1;
+                this.y += offset;
+                this._shadowSprite.y -= offset;
             }
         });
 
