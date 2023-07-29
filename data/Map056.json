@@ -2010,15 +2010,10 @@
           },
           "list": [
             {
-              "code": 250,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "_NarrateurPasGeologueRoche",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "se _NarrateurPasGeologuePasBougerRoche"
               ]
             },
             {

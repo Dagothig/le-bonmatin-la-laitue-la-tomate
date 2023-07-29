@@ -3406,11 +3406,18 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "swap_bgm ninja_alerte"
+              ]
+            },
+            {
               "code": 132,
               "indent": 0,
               "parameters": [
                 {
-                  "name": "ninja_pas_alerte",
+                  "name": "ninja_alerte",
                   "volume": 100,
                   "pitch": 100,
                   "pan": 0
@@ -3437,6 +3444,13 @@
                   "pitch": 100,
                   "pan": 0
                 }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "swap_bgm ninja_pas_alerte"
               ]
             },
             {

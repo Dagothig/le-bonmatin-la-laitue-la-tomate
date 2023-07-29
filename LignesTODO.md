@@ -468,6 +468,15 @@ _NarrateurTombeJeanJacques
 > Jean et Jacques\
 > Tristes victimes de leur antagonisme.
 
+_NarrateurPasGeologuePasBougerRoche
+> Vous n'êtez pas géologue.\
+> \
+> Mais, il vous est impossible de bouger cette roche.
+
+_NarrateurPasGeologueRoche
+> Vous n'êtes pas géologue.\
+> Mais c'est une roche, ça.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit

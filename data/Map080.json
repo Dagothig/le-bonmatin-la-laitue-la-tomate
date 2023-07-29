@@ -17707,8 +17707,19 @@
           },
           "list": [
             {
-              "code": 223,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                1337,
+                0
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 1,
               "parameters": [
                 [
                   -100,
@@ -17719,6 +17730,16 @@
                 120,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 242,
@@ -17732,7 +17753,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "la_chanson_du_todo",
+                  "name": "souterrain_minigame",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -17800,8 +17821,19 @@
           },
           "list": [
             {
-              "code": 223,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                1337,
+                0
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 1,
               "parameters": [
                 [
                   -16,
@@ -17812,6 +17844,16 @@
                 15,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 241,
@@ -17886,8 +17928,19 @@
           },
           "list": [
             {
-              "code": 224,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                1337,
+                0
+              ]
+            },
+            {
+              "code": 224,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -17901,7 +17954,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Heartbeat",
@@ -17913,14 +17966,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 80
               ]
             },
             {
               "code": 224,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -17934,7 +17987,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Heartbeat",
@@ -17946,10 +17999,20 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 80
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

@@ -3420,6 +3420,11 @@ _NarrateurTombeJeanJacques
 > Jean et Jacques\
 > Tristes victimes de leur antagonisme.
 
+_NarrateurPasGeologuePasBougerRoche
+> Vous n'êtez pas géologue.\
+> \
+> Mais, il vous est impossible de bouger cette roche.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour

@@ -718,6 +718,12 @@
         "dataId": 41,
         "value1": 1,
         "value2": 0
+      },
+      {
+        "code": 13,
+        "dataId": 0,
+        "value1": 50,
+        "value2": 0
       }
     ],
     "hitType": 0,
@@ -731,7 +737,7 @@
     "scope": 7,
     "speed": 0,
     "successRate": 100,
-    "tpGain": 50
+    "tpGain": 0
   },
   {
     "id": 25,
