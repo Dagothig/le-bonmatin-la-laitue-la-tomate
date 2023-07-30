@@ -408,11 +408,11 @@
       "Level",
       "Lv",
       "Vitalité",
-      "VT",
-      "Mana",
-      "MP",
+      "Vit",
+      "Magie",
+      "Mag",
       "Stamina",
-      "Stam",
+      "Stm",
       "EXP",
       "EXP"
     ],
@@ -445,8 +445,8 @@
       "Vendre"
     ],
     "params": [
-      "VT Max",
-      "MP Max",
+      "PV Max",
+      "PM Max",
       "Dégâts",
       "Défense",
       "Dégâts M.",
@@ -628,9 +628,10 @@
     "GROS_NINJA",
     "COSSIN_BLONDE_SCENE",
     "SLIP_DIR_ORIG",
-    "VISITE_ROCHE_PAS"
+    "VISITE_ROCHE_PAS",
+    "DONJON_SCENE"
   ],
-  "versionId": 91842152,
+  "versionId": 53070710,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

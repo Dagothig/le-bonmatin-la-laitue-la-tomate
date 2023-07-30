@@ -1800,19 +1800,23 @@ function eval_fn_expr(expr, args) {
     };
 
     Window_Base.prototype.drawActorSimpleStatus = function (actor, x, y, width) {
-        var lineHeight = this.lineHeight();
-        var availWidth = width - this.textPadding();
-        var colWidth = (availWidth - this.standardPadding()) / 2;
-        var x2 = x + this.standardPadding() + colWidth;
+        const lineHeight = this.lineHeight();
+        const availWidth = width - this.textPadding();
+        const colWidth = (availWidth - this.standardPadding()) / 2;
+        const thirdWidth = (availWidth - this.standardPadding() * 2) / 3;
         this.drawActorName(actor, x, y, availWidth);
         this.drawActorClass(actor, x, y + lineHeight * 1, availWidth);
         this.drawActorIcons(actor, x, y + lineHeight * 2, colWidth);
-        this.drawActorHp(actor, x, y + lineHeight * 3, colWidth);
-        this.drawActorMp(actor, x2, y + lineHeight * 3, colWidth);
+        this.drawActorHp(actor, x + 0 * (this.standardPadding() + thirdWidth), y + lineHeight * 3, thirdWidth);
+        this.drawActorMp(actor, x + 1 * (this.standardPadding() + thirdWidth), y + lineHeight * 3, thirdWidth);
+        this.drawActorTp(actor, x + 2 * (this.standardPadding() + thirdWidth), y + lineHeight * 3, thirdWidth);
     };
     Window_Status.prototype.maxEquipmentLines = function () {
         return 5;
     };
+    Window_MenuStatus.prototype.maxItems = function () {
+        return Math.min($gameParty.size(), 4);
+    }
 
     var description = [
         "Calcul des dégâts: ",

@@ -7,6 +7,7 @@
 * Hot reload
 * Barre hp enemis par dessus UI
 * Breuvage fermenté hors-combat + afficher tp hors-combat
+* Vérifier UIUI of Feu sur les plantes
 
 ### Musique
 

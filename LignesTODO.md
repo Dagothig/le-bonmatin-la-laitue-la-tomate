@@ -477,6 +477,19 @@ _NarrateurPasGeologueRoche
 > Vous n'êtes pas géologue.\
 > Mais c'est une roche, ça.
 
+_NarrateurPersVerDecideFouillerPile
+> Personne Véritable décide soudainement de fouiller dans\
+> la pile.\
+> \
+> Et il parlait de bulle personnelle...
+
+_NarrateurUnTODO
+> Un [TODO]!
+
+_NarrateurRochePrendPause
+> Vous n'êtes pas géologue, mais la roche ici prend une\
+> petite pause.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1534,6 +1547,43 @@ _ProtagonistePlanteBaveCoucou
 _ProtagonisteCaVaVert
 > ... Ça va? Tu es tout vert!
 
+_ProtagonisteDurRaterReaction
+> En tout cas c'est dur de ne pas remarquer\
+> la réaction!
+
+_ProtagonisteOufMesOreilles
+> Ouf, je commençais à me demander si on\
+> n'avait pas fait une erreur en n'apportant\
+> aucun bouchon d'oreille.
+
+_ProtagonisteWoh
+> Woooooh!
+
+_ProtagonisteCoucouCoquet
+> Huh... coucou.\
+> C'est coquet ici. Vous passez une bonne\
+> journée?
+
+_ProtagonisteMhMhMhMh
+> Mh-mh, mh-mh.
+
+_ProtagonisteOhPourMoi
+> Oh. Pour moi?
+
+_ProtagonisteBonneRocailleALaProchaine
+> Une bonne rocaille et à la prochaine, c'est\
+> ça?
+
+_ProtagonisteSExpliqueDeLaGestionDeLaConfusion
+> Écoutes je comprends rien et ils ont l'air\
+> contents qu'on ait géré la plante.\
+> La diplomatie ça marche à tous les coups.\
+> À. TOUS. LES. COUPS.
+
+_ProtagonisteOnChercheSortie
+> Alors on cherche la sortie? On doit bien\
+> s'approcher de l'autre côté de la Montagne.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1864,6 +1914,16 @@ _GabspartSouffreManquePatience
 > Il souffre juste un peu de manque de\
 > patience.
 
+_GabspartVaAvoirMalALaTeteRoches1
+> Au plus vite. Pas certain que mon ma tête\
+> va survivre si on reste une minute de plus\
+> avec les roches finalement...
+
+_GabspartVaAvoirMalALaTeteRoches2
+> Ça sonnait drôle à l'écrit dans les\
+> Textes Sacrés, mais une fois que tu le\
+> vis, c'est pas pareil.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -2053,6 +2113,10 @@ _WwwelchiorPlanteGrosseDents
 
 _WwwelchiorGere
 > Nan c'est correct, je gère!
+
+_WwwelchiorPasMalALAisePourUnConfus
+> T'es rendu pas mal à l'aise pour quelqu'un\
+> qui capotait y'a deux minutes.
 
 ### Fantome
 
@@ -3092,6 +3156,10 @@ _GrossepilecaillouxgrisOhMaGloire
 > Ignorez toute médisance que certains amas\
 > moins brillants s'obstinent à répandre!
 
+_GrossepilecaillouxgrisProvisions
+> Vous avez besoin de provisions pour votre\
+> voyage?
+
 ### Petitepilecaillouxgris
 
 _PetitepilecaillouxgrisCeQuiCompteCestMaPepite
@@ -3353,6 +3421,12 @@ _PetiterochegriseLaLegendeVeutQue
 > La Légende veut qu'il y a un trésor caché\
 > dans ce bosquet.
 
+_PetiterochegriseWowVraimentFort
+> Wow vous êtes vraiment fort! Vous avez\
+> découpé cette plante comme on écrase un\
+> insecte lorsqu'on tombe de côté après un\
+> vent un peu trop fort!
+
 ### Petitepilecaillouxjaunes
 
 _PetitepilecaillouxjaunesHeyHeyOr
@@ -3453,12 +3527,21 @@ _ParoigrisebriseeDormirCestBien
 > sur que vous voulez pas aller faire une\
 > sieste?
 
+_ParoigrisebriseeAaaahPasLesPlantes
+> Aaaaah! Pas les plantes! Noooon!
+
 ### Petitestalagmitejaune
 
 _PetitestalagmitejauneOnSemmerde
 > Ce qu'on s'emmerde ici... J'ai vraiment\
 > l'impression que je vais m'endormir\
 > bientôt.
+
+_PetitestalagmitejauneLeRRRREstRenduPetit
+> Jadis le RRR était énorme et couvrait tout\
+> le Monde! Mais l'arrivée des plantes a tout\
+> gâché...\
+> Maintenant c'est le RRRR.
 
 ### Grossestalagmitejaune
 
@@ -3500,6 +3583,11 @@ _GrossestalagmitejauneNonPasIciAilleurs
 _GrossestalagmitejauneLeRRRRAllo
 > Le RRRR a le plus grand plaisir de vous\
 > accueillir!
+
+_GrossestalagmitejauneImmigrante
+> Ça parait pas vu que ça fait longtemps,\
+> mais en fait j'ai immigré ici. Je viens pas\
+> du coin, je viens du nord.
 
 ### Grosninja
 
@@ -3620,8 +3708,21 @@ _GrossestalagmitegriseOhSiSeule
 _GrossestalagmitegriseDommage
 > Tant pis! C'est dommage...
 
+_GrossestalagmitegriseJeGarde
+> Je garde.
+
+_GrossestalagmitegriseDitesVousVoulezJouerCartes
+> Dites vous voulez jouer aux cartes?\
+> \
+> Donnez-moi un instant je dois juste\
+> développer un bras et une main.
+
 ### Petitestalagmitegrise
 
 _PetitestalagmitegriseVoyeurs
 > Je veux pas trop vous faire peur, mais vous\
 > êtes observés.
+
+_PetitestalagmitegriseGrotaVaNousProteger
+> Sous l'oeil sage de Grota, c'est certain\
+> que nous allons être en sécurité!
