@@ -458,6 +458,9 @@ function eval_fn_expr(expr, args) {
                             }
                         }
                     }
+                    if (state.meta.counterSkillId) {
+                        state.counterSkillId = parseInt(state.meta.counterSkillId);
+                    }
                 }
                 break;
             case $dataSkills:
@@ -2576,6 +2579,9 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
             } else {
                 this.setMovementSuccess(false);
             }
+        },
+        function jumpToTile(_, x, y, h) {
+            aaa_jump(this, x - this.x, y - this.y, h);
         });
 
     override(Game_Follower.prototype,
@@ -4446,5 +4452,43 @@ Input.keyMapper[68] = "right"; // d
             } else {
                 AudioManager.stopBgm();
             }
+        });
+})();
+
+// Counter attacks should not prevent damage
+(function () {
+    override(Game_BattlerBase.prototype,
+        function counterSkillId() {
+            for (const stateId of this._states) {
+                const state = $dataStates[stateId];
+                if (state && state.counterSkillId) {
+                    return state.counterSkillId;
+                }
+            }
+            // TODOOOO
+            return this.attackSkillId();
+        });
+
+    override(BattleManager,
+        function invokeAction(invokeAction, subject, target) {
+            this._logWindow.push('pushBaseLine');
+            if (Math.random() < this._action.itemCnt(target)) {
+                this.invokeCounterAttack(subject, target);
+            }
+            if (Math.random() < this._action.itemMrf(target)) {
+                this.invokeMagicReflection(subject, target);
+            } else {
+                this.invokeNormalAction(subject, target);
+            }
+            subject.setLastTarget(target);
+            this._logWindow.push('popBaseLine');
+            this.refreshStatus();
+        },
+        function invokeCounterAttack(_, subject, target) {
+            const action = new Game_Action(target);
+            action.setSkill(target.counterSkillId());
+            action.apply(subject);
+            this._logWindow.displayCounter(target);
+            this._logWindow.displayActionResults(target, subject);
         });
 })();

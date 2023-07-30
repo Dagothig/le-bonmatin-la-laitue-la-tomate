@@ -107,7 +107,7 @@
     "motion": 1,
     "overlay": 1,
     "name": "Empoisonné",
-    "note": "",
+    "note": "<<aaa_apply {\n  target.startAnimation(183, false, 0);\n}>>\n<<aaa_eot {\n  this.gainHp(-Math.ceil(this.mhp * 0.1));\n  this.startAnimation(184, false, 0);\n}>>",
     "priority": 50,
     "releaseByDamage": false,
     "removeAtBattleEnd": true,
@@ -116,13 +116,7 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 7,
-        "value": -0.1
-      }
-    ]
+    "traits": []
   },
   {
     "id": 5,
@@ -1183,5 +1177,80 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 20
+  },
+  {
+    "id": 42,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.4
+      }
+    ],
+    "iconIndex": 184,
+    "maxTurns": 3,
+    "message1": " est en fleurs!",
+    "message2": " est en fleurs!",
+    "message3": "",
+    "message4": " est fané!",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Fleuri",
+    "note": "<counterSkillId:73>",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 43,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 50,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.2
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.7
+      }
+    ],
+    "iconIndex": 264,
+    "maxTurns": 3,
+    "message1": " est plein de fruits!",
+    "message2": " est plein de fruits!",
+    "message3": "",
+    "message4": " a perdu ses fruits!",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Fruité",
+    "note": "",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

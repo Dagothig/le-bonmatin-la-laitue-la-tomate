@@ -7096,22 +7096,13 @@
             "parameters": []
           },
           {
-            "code": 250,
+            "code": 339,
             "indent": 0,
             "parameters": [
-              {
-                "name": "Monster3",
-                "volume": 90,
-                "pitch": 100,
-                "pan": 0
-              }
-            ]
-          },
-          {
-            "code": 355,
-            "indent": 0,
-            "parameters": [
-              "aaa_anim($gameTroop.members()[0], \"wiggle\")"
+              0,
+              0,
+              72,
+              -2
             ]
           },
           {
@@ -7131,6 +7122,13 @@
                 "pitch": 100,
                 "pan": 0
               }
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "aaa_anim($btl.party.Wwwelchior, \"jump\");"
             ]
           },
           {
@@ -7178,6 +7176,71 @@
               1,
               -1
             ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteCaVaVert"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "... Ça va? Tu es tout vert!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _GabspartSouffreManquePatience"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI2",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Il souffre juste un peu de manque de "
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "patience."
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 0,

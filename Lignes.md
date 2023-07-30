@@ -288,9 +288,6 @@ Applause1
 Fall
 > Fall
 
-Monster3
-> Monster3
-
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2228,6 +2225,9 @@ _ProtagonistePlanteBaveCoucou
 > Aaaah, l'espèce de bave c'est parce que la\
 > plante est toute contente de nous dire\
 > coucou!
+
+_ProtagonisteCaVaVert
+> ... Ça va? Tu es tout vert!
 
 ### Rip
 
@@ -4816,6 +4816,10 @@ _GabspartTaper
 _GabspartNonNonTuVasAvoirPeur
 > Non? Allons allons, il serait où le plaisir\
 > si tu le savais?
+
+_GabspartSouffreManquePatience
+> Il souffre juste un peu de manque de\
+> patience.
 
 ### Jacques
 

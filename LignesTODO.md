@@ -1531,6 +1531,9 @@ _ProtagonistePlanteBaveCoucou
 > plante est toute contente de nous dire\
 > coucou!
 
+_ProtagonisteCaVaVert
+> ... Ça va? Tu es tout vert!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1856,6 +1859,10 @@ _GabspartTraduitGaboueDefenseProtagoniste2
 _GabspartNonNonTuVasAvoirPeur
 > Non? Allons allons, il serait où le plaisir\
 > si tu le savais?
+
+_GabspartSouffreManquePatience
+> Il souffre juste un peu de manque de\
+> patience.
 
 ### Wwwelchior
 

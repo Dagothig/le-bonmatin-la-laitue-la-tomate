@@ -4991,7 +4991,7 @@ Window_BattleLog.prototype.animationBaseDelay = function () {
 };
 
 Window_BattleLog.prototype.animationNextDelay = function () {
-    return 0;//12;
+    return 12;
 };
 
 Window_BattleLog.prototype.refresh = function () {

@@ -2424,8 +2424,43 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
+        "rating": 1,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 2,
+        "skillId": 72
+      },
+      {
+        "conditionParam1": 42,
+        "conditionParam2": 0,
+        "conditionType": 4,
         "rating": 5,
-        "skillId": 1
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 42,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 6,
+        "skillId": 74
+      },
+      {
+        "conditionParam1": 43,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 8,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 43,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 9,
+        "skillId": 75
       }
     ],
     "battlerHue": 0,
@@ -2463,20 +2498,25 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
       }
     ],
     "gold": 0,
     "name": "Msieur Végétal",
-    "note": "",
+    "note": "<<aaa_icon 67 31>>",
     "params": [
-      100,
+      110,
       0,
+      30,
+      18,
       10,
       10,
-      10,
-      10,
-      10,
-      10
+      90,
+      100
     ]
   }
 ]
