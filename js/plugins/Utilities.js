@@ -2708,6 +2708,42 @@ const BASE_PATTERN_TYPE = [0, 1, 2, 1];
         },
         function moveTowardsTile(_, x, y) {
             this.moveStraight(this.findDirectionTo(x, y));
+        },
+        function patrol(_,
+            x = this.event().x,
+            y = this.event().y,
+            wanderDst2 = 4,
+            wanderSpeed = 2.5,
+            sightDst2 = 9,
+            chaseDst2 = 25,
+            chaseSpeed = 3.75,
+            screech = "Monster3"
+        ) {
+            const dx = this.x - x;
+            const dy = this.y - y;
+            const dst2 = dx * dx + dy * dy;
+            if (dst2 >= chaseDst2) {
+                return this.moveTowardsTile(x, y);
+            }
+
+            const pdx = $gamePlayer.x - this.x;
+            const pdy = $gamePlayer.y - this.y;
+            const pdst2 = pdx * pdx + pdy * pdy;
+            if (pdst2 <= sightDst2) {
+                if (this.moveSpeed() !== chaseSpeed) {
+                    this.setMoveSpeed(chaseSpeed);
+                    AudioManager.playSe(screech);
+                    this.requestBalloon(5);
+                }
+                return this.moveTowardPlayer();
+            }
+
+            if (dst2 >= wanderDst2) {
+                return this.moveTowardsTile(x, y);
+            }
+
+            this.moveSpeed() !== wanderSpeed && this.setMoveSpeed(wanderSpeed);
+            return this.moveRandom();
         });
 })();
 

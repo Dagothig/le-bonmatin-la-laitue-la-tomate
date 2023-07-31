@@ -291,6 +291,9 @@ Fall
 Monster3
 > 
 
+Wawawawa
+> Wawawawa
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2269,6 +2272,11 @@ _ProtagonisteOnChercheSortie
 > Alors on cherche la sortie? On doit bien\
 > s'approcher de l'autre côté de la Montagne.
 
+_ProtagonisteVerdureEtAirFrais
+> Ah ça change un peu dans le coin. Y'a un\
+> peu de verdure et je pense que je sens\
+> de l'air frais...
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3477,6 +3485,14 @@ _NarrateurUnTODO
 _NarrateurRochePrendPause
 > Vous n'êtes pas géologue, mais la roche ici prend une\
 > petite pause.
+
+_NarrateurLireSurEcriteau
+> On peut lire sur l'écriteau...
+
+_NarrateurBienvenueAuRRRR
+> \
+> BIENVENUE AU\
+> ROYAUME RÉTABLI des ROCHES RÉCALCITRANTES
 
 ### Bucheron
 
@@ -6736,6 +6752,15 @@ _ParoigrisebriseeDormirCestBien
 
 _ParoigrisebriseeAaaahPasLesPlantes
 > Aaaaah! Pas les plantes! Noooon!
+
+_ParoigrisebriseeEntendsLesRacines
+> Non! Ne me laissez pas seule! Elles s'en\
+> viennent. J'entends leurs racines.
+
+_ParoigrisebriseeMalDeTete
+> Ah mais j'ai un des ces mal de tête...\
+> Vous avez où j'ai mis mon front? Je ne le\
+> trouve plus...
 
 ### Petitestalagmitejaune
 

@@ -7254,8 +7254,27 @@
   },
   {
     "id": 22,
-    "members": [],
-    "name": "",
+    "members": [
+      {
+        "enemyId": 34,
+        "x": 303,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 34,
+        "x": 357,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 34,
+        "x": 450,
+        "y": 361,
+        "hidden": false
+      }
+    ],
+    "name": "Plante A",
     "pages": [
       {
         "conditions": {

@@ -150,8 +150,8 @@
     "name": "MINE_BAS",
     "order": 19,
     "parentId": 9,
-    "scrollX": 893.4545454545455,
-    "scrollY": 511.6363636363637
+    "scrollX": 811,
+    "scrollY": 491
   },
   {
     "id": 18,
@@ -574,7 +574,7 @@
     "order": 74,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 728
+    "scrollY": 483
   },
   {
     "id": 65,
@@ -844,7 +844,7 @@
     "order": 73,
     "parentId": 67,
     "scrollX": 811,
-    "scrollY": 1395
+    "scrollY": 555
   },
   {
     "id": 95,
@@ -861,8 +861,8 @@
     "name": "PASSAGE_LIVRE",
     "order": 72,
     "parentId": 67,
-    "scrollX": 982.8,
-    "scrollY": 572.4
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 97,
