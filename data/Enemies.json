@@ -2305,7 +2305,7 @@
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Jellyfish",
+    "battlerName": "",
     "dropItems": [
       {
         "dataId": 1,
@@ -2342,7 +2342,7 @@
       }
     ],
     "gold": 0,
-    "name": "Msieur Tentaculaire",
+    "name": "",
     "note": "",
     "params": [
       100,

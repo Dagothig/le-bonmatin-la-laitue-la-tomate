@@ -131392,7 +131392,12 @@
           255,
           0
         ]
-      ]
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
     ],
     "name": "Mort",
     "position": 1,
@@ -131445,7 +131450,7 @@
           255,
           255
         ],
-        "flashDuration": 8,
+        "flashDuration": 15,
         "flashScope": 3,
         "frame": 6,
         "se": null

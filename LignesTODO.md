@@ -1597,6 +1597,32 @@ _ProtagonisteVerdureEtAirFrais
 > peu de verdure et je pense que je sens\
 > de l'air frais...
 
+_ProtagonisteCetaitEndroit
+> Phiou! On en est sorti. C'était... c'était\
+> un endroit.
+
+_ProtagonisteNeVeutPasRetournerAuRRRR
+> Dites-moi qu'on a jamais à retourner au\
+> RRRR?
+
+_ProtagonisteNeVeutPasAmbiguiteReponse
+> À la réponse ou au passage?
+
+_ProtagonisteOnEstAutreCoteMontagne
+> Sinon, on est finalement de l'autre côté de\
+> la montagne!\
+> On va pouvoir trouver le fameux\
+> Temple du Bon Matin!
+
+_ProtagonisteVaFaireDuDeni1
+> Si mettons je déclare que tout ceci est\
+> parfaitement normal, on peut tout ignorer\
+> et juste partir?
+
+_ProtagonisteVaFaireDuDeni2
+> Parfait, donc il n'y a rien à voir.\
+> On peut procéder.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -1936,6 +1962,15 @@ _GabspartVaAvoirMalALaTeteRoches2
 > Ça sonnait drôle à l'écrit dans les\
 > Textes Sacrés, mais une fois que tu le\
 > vis, c'est pas pareil.
+
+_GabspartVaYRevenir
+> Je te donnerais une réponse, mais je pense\
+> plutôt que je vais y revenir.
+
+_GabspartVoitProtagonisteFaireDuDeni
+> Ma réponse va changer quelque chose? Si je\
+> dis non il faut agir tu vas me faire du\
+> gros déni?
 
 ### Wwwelchior
 
@@ -3751,3 +3786,19 @@ _PetitestalagmitegriseVoyeurs
 _PetitestalagmitegriseGrotaVaNousProteger
 > Sous l'oeil sage de Grota, c'est certain\
 > que nous allons être en sécurité!
+
+### Petitestalagmiteverte
+
+_PetitestalagmiteverteBraaains
+> Braaaaaiiiiiins
+
+_PetitestalagmiteverteRegardesRacines
+> Regardes maman mes belles racines!
+
+### Grossestalagmiteverte
+
+_GrossestalagmiteverteMesAmisLesPlantes
+> Mes amis les plantes sont vraiment les plus\
+> gentils. J'adore mes amis les plantes.\
+> J'ai toujours adoré mes amis les plantes.\
+> Vous voulez rejoindre mes amis les plantes?
