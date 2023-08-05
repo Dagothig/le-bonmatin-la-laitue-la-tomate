@@ -2432,6 +2432,18 @@ function eval_fn_expr(expr, args) {
                     $dataMap.bgm && $dataMap.bgm.filters || null;
             }
         });
+
+    const hurtSe = ["Ouch", "Owie", "JAiMal", "Bouhouhou"];
+    override(Game_Actor.prototype,
+        function performMapDamage(performMapDamage) {
+            const steps = $gameParty.steps();
+            if (steps !== window._lastHurtSteps) {
+                AudioManager.playSe({ name: "Damage3", volume: 50, pitch: 90 + Math.random() * 20 });
+                setTimeout(() => AudioManager.playSe(hurtSe[(Math.random() * hurtSe.length)|0]), 50);
+                window._lastHurtSteps = steps;
+            }
+            performMapDamage.call(this);
+        });
 })();
 
 // Zoomies

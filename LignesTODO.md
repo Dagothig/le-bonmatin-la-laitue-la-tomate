@@ -1969,7 +1969,7 @@ _GabspartVaYRevenir
 
 _GabspartVoitProtagonisteFaireDuDeni
 > Ma réponse va changer quelque chose? Si je\
-> dis non il faut agir tu vas me faire du\
+> dis "non il faut agir" tu vas me faire du\
 > gros déni?
 
 ### Wwwelchior
@@ -3198,6 +3198,18 @@ Wee
 
 Wawawawa
 > Wawawawa
+
+Ouch
+> Ouch
+
+Owie
+> Owie
+
+JAiMal
+> J'ai mal!
+
+Bouhouhou
+> Bouhouhou
 
 ### Grossepilecaillouxgris
 

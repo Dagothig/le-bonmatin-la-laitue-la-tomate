@@ -1,10 +1,10 @@
 {
-  "autoplayBgm": false,
+  "autoplayBgm": true,
   "autoplayBgs": true,
   "battleback1Name": "",
   "battleback2Name": "",
   "bgm": {
-    "name": "",
+    "name": "le_bois_du_gaboue",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -13671,7 +13671,7 @@
     0,
     0,
     0,
-    132,
+    133,
     0,
     0,
     0,
@@ -13739,7 +13739,7 @@
     0,
     0,
     0,
-    140,
+    0,
     153,
     0,
     0,
@@ -18091,7 +18091,7 @@
     0,
     0,
     0,
-    5,
+    0,
     0,
     0,
     0,
@@ -28034,16 +28034,45 @@
               ]
             },
             {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move5",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                150
+              ]
+            },
+            {
               "code": 201,
               "indent": 0,
               "parameters": [
                 0,
-                5,
-                23,
-                22,
+                101,
+                13,
+                11,
                 0,
                 0
               ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 205,
@@ -28057,7 +28086,7 @@
                       "indent": null
                     },
                     {
-                      "code": 3,
+                      "code": 4,
                       "indent": null
                     },
                     {
@@ -28089,7 +28118,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 3,
+                  "code": 4,
                   "indent": null
                 }
               ]
@@ -28164,6 +28193,22 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Lens",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                2
+              ]
+            },
             {
               "code": 223,
               "indent": 0,
