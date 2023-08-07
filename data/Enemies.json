@@ -2119,7 +2119,7 @@
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Sahuagin",
+    "battlerName": "",
     "dropItems": [
       {
         "dataId": 1,
@@ -2156,7 +2156,7 @@
       }
     ],
     "gold": 0,
-    "name": "Msieur Poisson",
+    "name": "",
     "note": "",
     "params": [
       100,
@@ -2177,7 +2177,7 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 76
       }
     ],
     "battlerHue": 0,
@@ -2219,16 +2219,16 @@
     ],
     "gold": 0,
     "name": "Chauve-Souris",
-    "note": "",
+    "note": "<<aaa_icon 60 63>>",
     "params": [
-      100,
+      80,
       0,
+      25,
+      5,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      5,
+      110,
+      100
     ]
   },
   {
@@ -2239,7 +2239,14 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 77
       }
     ],
     "battlerHue": 0,
@@ -2281,16 +2288,16 @@
     ],
     "gold": 0,
     "name": "Araignée",
-    "note": "",
+    "note": "<<aaa_icon 60 43>>",
     "params": [
-      100,
+      80,
       0,
+      25,
+      5,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      5,
+      100,
+      100
     ]
   },
   {
@@ -2367,7 +2374,7 @@
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Matango",
+    "battlerName": "",
     "dropItems": [
       {
         "dataId": 1,
@@ -2404,7 +2411,7 @@
       }
     ],
     "gold": 0,
-    "name": "Msieur Fongique",
+    "name": "",
     "note": "",
     "params": [
       100,

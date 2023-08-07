@@ -8,6 +8,7 @@
 * Barre hp enemis par dessus UI
 * Breuvage fermenté hors-combat + afficher tp hors-combat
 * Vérifier UIUI of Feu sur les plantes
+* Supporter d'afficher plusieurs types de dégâts en même temps
 
 ### Musique
 

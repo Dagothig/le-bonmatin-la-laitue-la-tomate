@@ -8165,6 +8165,67 @@
               ]
             },
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "Triste meteo"
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  20,
+                  20,
+                  10,
+                  20
+                ],
+                1,
+                false
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "weather sandstorm 2 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "bgm la_chanson_du_todo farAway"
+              ]
+            },
+            {
+              "code": 245,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Wind",
+                  "volume": 40,
+                  "pitch": 80,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "Sortir"
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -8193,6 +8254,13 @@
                   "code": 1,
                   "indent": null
                 }
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "Protagoniste sad"
               ]
             },
             {
@@ -16271,10 +16339,22 @@
               ]
             },
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Item1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurUnTODO"
+                "se _NarrateurDeuxPoilsDeBarbeEtDeuxBieres"
               ]
             },
             {
@@ -16291,13 +16371,33 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Un [TODO]!"
+                "Deux poils de barbes et deux bières!"
               ]
             },
             {
               "code": 251,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                24,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                13,
+                0,
+                0,
+                2
+              ]
             },
             {
               "code": 213,
@@ -17070,14 +17170,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Au plus vite. Pas certain que mon ma tête"
+                "Au plus vite. Pas certain que ma tête va "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "va survivre si on reste une minute de plus"
+                "survivre si on reste une minute de plus "
               ]
             },
             {
@@ -17085,6 +17185,13 @@
               "indent": 0,
               "parameters": [
                 "avec les roches finalement..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ça vient vite les mals de têtes."
               ]
             },
             {
@@ -18902,21 +19009,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Ah ça change un peu dans le coin. Y'a un "
+                "Ah ça change un peu dans le coin. Je sens"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "peu de verdure et je pense que je sens"
+                "un peu d'air frais, et regardez y'a de la"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "de l'air frais..."
+                "verdure!"
               ]
             },
             {
@@ -18928,7 +19035,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _ProtagonisteOh"
+                "se _ProtagonisteOhVerdureDentee"
               ]
             },
             {
@@ -18945,7 +19052,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Oh."
+                "Oh. C'est de la verdure dentée."
               ]
             },
             {
@@ -20287,16 +20394,40 @@
               ]
             },
             {
-              "code": 250,
+              "code": 356,
               "indent": 1,
               "parameters": [
-                {
-                  "name": "TODO",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "se _GrossestalagmitevertePousseChlorophylle"
               ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI6",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Vous voulez-pas un peu de chlorophylle?"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "9/10 docteurs le recommandent!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -22023,26 +22154,162 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Tool",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
-              "code": 250,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "TODO",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "se _NarrateurRochePrendPause"
               ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous n'êtes pas géologue, mais la roche ici prend une"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "petite pause."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ParoibrunebriseeVeutPasDeChlorophylle1"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI5",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Non j'en veux pas de vos foutus suppléments"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "en clorophylle! Je suis très bien capable"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "de m'écrouler toute seule."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ParoibrunebriseeVeutPasDeChlorophylle2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI5",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Oh vous n'êtes pas une plante. "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Depuis qu'elles ont emménagé tout fout le "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "camp ici..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -22095,26 +22362,126 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Tool",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
-              "code": 250,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "TODO",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "se _NarrateurRochePrendPause"
               ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous n'êtes pas géologue, mais la roche ici prend une"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "petite pause."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ParoibrunebriseeVousAvezPasPression"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI5",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Vous avez pas un petit peu de pression à me"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "refiler? Ça me prendrait quelque chose pour"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "refusionner tout ces bouts que je perds..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Ou sinon un peu de lave? Juste un peu!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

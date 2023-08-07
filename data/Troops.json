@@ -7304,7 +7304,32 @@
   },
   {
     "id": 23,
-    "members": [],
+    "members": [
+      {
+        "enemyId": 34,
+        "x": 342,
+        "y": 364,
+        "hidden": false
+      },
+      {
+        "enemyId": 34,
+        "x": 447,
+        "y": 412,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 300,
+        "y": 427,
+        "hidden": false
+      },
+      {
+        "enemyId": 30,
+        "x": 426,
+        "y": 364,
+        "hidden": false
+      }
+    ],
     "name": "Plante B",
     "pages": [
       {
@@ -7335,7 +7360,38 @@
   },
   {
     "id": 24,
-    "members": [],
+    "members": [
+      {
+        "enemyId": 31,
+        "x": 247,
+        "y": 394,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 444,
+        "y": 406,
+        "hidden": false
+      },
+      {
+        "enemyId": 30,
+        "x": 396,
+        "y": 370,
+        "hidden": false
+      },
+      {
+        "enemyId": 30,
+        "x": 315,
+        "y": 418,
+        "hidden": false
+      },
+      {
+        "enemyId": 30,
+        "x": 183,
+        "y": 349,
+        "hidden": false
+      }
+    ],
     "name": "Faune A",
     "pages": [
       {
@@ -7366,7 +7422,44 @@
   },
   {
     "id": 25,
-    "members": [],
+    "members": [
+      {
+        "enemyId": 30,
+        "x": 443,
+        "y": 418,
+        "hidden": false
+      },
+      {
+        "enemyId": 30,
+        "x": 291,
+        "y": 361,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 219,
+        "y": 433,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 351,
+        "y": 409,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 198,
+        "y": 358,
+        "hidden": false
+      },
+      {
+        "enemyId": 31,
+        "x": 393,
+        "y": 343,
+        "hidden": false
+      }
+    ],
     "name": "Faune B",
     "pages": [
       {

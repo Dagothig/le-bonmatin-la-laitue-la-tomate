@@ -101,7 +101,7 @@
     "maxTurns": 5,
     "message1": " est empoisonné!",
     "message2": " est empoisonné!",
-    "message3": " est malade!",
+    "message3": "",
     "message4": " n'est plus empoisonné!",
     "minTurns": 5,
     "motion": 1,
@@ -1122,6 +1122,11 @@
         "code": 21,
         "dataId": 3,
         "value": 0.5
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 2
       }
     ],
     "iconIndex": 51,
@@ -1240,6 +1245,36 @@
     "name": "Fruité",
     "note": "",
     "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 44,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 12,
+        "dataId": 6,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 71,
+    "maxTurns": 4,
+    "message1": " est tout collant!",
+    "message2": " est tout collant!",
+    "message3": "",
+    "message4": " se défait de la toile!",
+    "minTurns": 4,
+    "motion": 1,
+    "name": "Tout Collant",
+    "note": "<TRAIT_ACTION_PLUS:-0.5>\n<<aaa_apply AudioManager.playSe(\"ToutCollant\")>>\n<<aaa_apply AudioManager.playSe(\"PhiouJePeuxBouger\")>>",
+    "overlay": 10,
     "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,

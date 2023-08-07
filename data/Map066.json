@@ -7742,7 +7742,7 @@
     },
     {
       "id": 20,
-      "name": "EV020",
+      "name": "Porte",
       "note": "",
       "pages": [
         {
@@ -7761,7 +7761,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
             "tileId": 0,
             "characterName": "!Door1",
@@ -7771,16 +7771,159 @@
           },
           "list": [
             {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
-                  "name": "TODO",
+                  "name": "Knock",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
                 }
               ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Knock",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Knock",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "_PorteBarree",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "La porte est barrée."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "_ProtagonistePasContent",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                -1,
+                5,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonistePetitRideau"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "C'est une blague? C'est un petit rideau de"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "rien du tout!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -7800,13 +7943,13 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 4,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 2,

@@ -483,9 +483,6 @@ _NarrateurPersVerDecideFouillerPile
 > \
 > Et il parlait de bulle personnelle...
 
-_NarrateurUnTODO
-> Un [TODO]!
-
 _NarrateurRochePrendPause
 > Vous n'êtes pas géologue, mais la roche ici prend une\
 > petite pause.
@@ -497,6 +494,15 @@ _NarrateurBienvenueAuRRRR
 > \
 > BIENVENUE AU\
 > ROYAUME RÉTABLI des ROCHES RÉCALCITRANTES
+
+_NarrateurBarrilBreuvageFermente
+> Ah et dans le baril il y a du vin! Il est encore bon,\
+> probablement.\
+> \
+> Du breuvage fermenté!
+
+_NarrateurDeuxPoilsDeBarbeEtDeuxBieres
+> Deux poils de barbes et deux bières!
 
 ### Protagoniste
 
@@ -1593,9 +1599,9 @@ _ProtagonisteOnChercheSortie
 > s'approcher de l'autre côté de la Montagne.
 
 _ProtagonisteVerdureEtAirFrais
-> Ah ça change un peu dans le coin. Y'a un\
-> peu de verdure et je pense que je sens\
-> de l'air frais...
+> Ah ça change un peu dans le coin. Je sens\
+> un peu d'air frais, et regardez y'a de la\
+> verdure!
 
 _ProtagonisteCetaitEndroit
 > Phiou! On en est sorti. C'était... c'était\
@@ -1622,6 +1628,9 @@ _ProtagonisteVaFaireDuDeni1
 _ProtagonisteVaFaireDuDeni2
 > Parfait, donc il n'y a rien à voir.\
 > On peut procéder.
+
+_ProtagonisteOhVerdureDentee
+> Oh. C'est de la verdure dentée.
 
 ### Vieux
 
@@ -1954,9 +1963,10 @@ _GabspartSouffreManquePatience
 > patience.
 
 _GabspartVaAvoirMalALaTeteRoches1
-> Au plus vite. Pas certain que mon ma tête\
-> va survivre si on reste une minute de plus\
-> avec les roches finalement...
+> Au plus vite. Pas certain que ma tête va\
+> survivre si on reste une minute de plus\
+> avec les roches finalement...\
+> Ça vient vite les mals de têtes.
 
 _GabspartVaAvoirMalALaTeteRoches2
 > Ça sonnait drôle à l'écrit dans les\
@@ -3211,6 +3221,15 @@ JAiMal
 Bouhouhou
 > Bouhouhou
 
+Charpenterie
+> Charpenterie
+
+ToutCollant
+> Ah merde je suis tout collant!
+
+PhiouJePeuxBouger
+> Phiou, là je peux bouger correct!
+
 ### Grossepilecaillouxgris
 
 _GrossepilecaillouxgrisOhMaGloire
@@ -3753,6 +3772,22 @@ _ParoibrunebriseeAccesUniversel2
 > me prend chaque jour pour venir me poster\
 > ici pour mon travail.
 
+_ParoibrunebriseeVeutPasDeChlorophylle1
+> Non j'en veux pas de vos foutus suppléments\
+> en clorophylle! Je suis très bien capable\
+> de m'écrouler toute seule.
+
+_ParoibrunebriseeVeutPasDeChlorophylle2
+> Oh vous n'êtes pas une plante.\
+> Depuis qu'elles ont emménagé tout fout le\
+> camp ici...
+
+_ParoibrunebriseeVousAvezPasPression
+> Vous avez pas un petit peu de pression à me\
+> refiler? Ça me prendrait quelque chose pour\
+> refusionner tout ces bouts que je perds...\
+> Ou sinon un peu de lave? Juste un peu!
+
 ### Rocherondejaune
 
 _RocherondejauneRinserYeux
@@ -3814,3 +3849,7 @@ _GrossestalagmiteverteMesAmisLesPlantes
 > gentils. J'adore mes amis les plantes.\
 > J'ai toujours adoré mes amis les plantes.\
 > Vous voulez rejoindre mes amis les plantes?
+
+_GrossestalagmitevertePousseChlorophylle
+> Vous voulez-pas un peu de chlorophylle?\
+> 9/10 docteurs le recommandent!

@@ -457,6 +457,13 @@ function eval_fn_expr(expr, args) {
                                 state.params[param] = num;
                             }
                         }
+                        if (key.startsWith("TRAIT_")) {
+                            const num = Number.parseFloat(value);
+                            const code = Game_BattlerBase[key];
+                            if (isFinite(code)) {
+                                state.traits.push({ code: code, value: num });
+                            }
+                        }
                     }
                     if (state.meta.counterSkillId) {
                         state.counterSkillId = parseInt(state.meta.counterSkillId);
@@ -1646,12 +1653,13 @@ function eval_fn_expr(expr, args) {
             this._overlayCount--;
             if (!this._overlayCount) {
                 findOverlay: if (this._battler) {
-                    for (let i = 1, n = this._battler.statesCount(); i <= n; i++) {
-                        let overlayIndex = ((this._overlayIndex || 0) + i) % n;
-                        let stateId = this._battler._states[overlayIndex];
+                    for (let i = 0, n = this._battler.statesCount(); i < n; i++) {
+                        let stateIndex = ((this._overlayStateIndex || 0) + i + 1) % n;
+                        let stateId = this._battler._states[stateIndex];
                         let state = $dataStates[stateId];
                         if (state.overlay) {
                             this._overlayIndex = state.overlay;
+                            this._overlayStateIndex = stateIndex;
                             break findOverlay;
                         }
                     }
@@ -3642,6 +3650,14 @@ Input.keyMapper[68] = "right"; // d
                     }
                 }
             }
+        },
+        function makeActionTimes() {
+            return this.actionPlusSet().reduce(function(r, p) {
+                return Math.random() < Math.abs(p) ? r + Math.sign(p) : r;
+            }, 1);
+        },
+        function canInput(canInput) {
+            return canInput.call(this) && this.numActions() > 0;
         });
 
     override(Sprite_Character.prototype,
