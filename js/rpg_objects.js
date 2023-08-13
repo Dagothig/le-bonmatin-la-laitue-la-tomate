@@ -5552,11 +5552,28 @@ Game_Map.prototype.setupEvents = function() {
             this._events[i] = new Game_Event(this._mapId, i);
         }
     }
-    if (!(this._commonEvents && this._commonEvents.length)) {
-        this._commonEvents = this.parallelCommonEvents().map(function(commonEvent) {
+
+    const parallelCommonEvents = this.parallelCommonEvents();
+    let same = this._commonEvents && parallelCommonEvents.length === this._commonEvents.length;
+    if (same) {
+        for (const commonEvent of parallelCommonEvents) {
+            findEvent: {
+                for (const event of this._commonEvents) {
+                    if (commonEvent && event && commonEvent.id === event._commonEventId) {
+                        break findEvent;
+                    }
+                }
+                same = false;
+                break;
+            }
+        }
+    }
+    if (!same) {
+        this._commonEvents = parallelCommonEvents.map(function(commonEvent) {
             return new Game_CommonEvent(commonEvent.id);
         });
     }
+
     this.refreshTileEvents();
 };
 

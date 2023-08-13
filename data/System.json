@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 104,
+  "editMapId": 99,
   "elements": [
     "",
     "Physical",
@@ -401,7 +401,8 @@
     "MOMENT_CORSE_INITED",
     "MAP_GEOLOGUE",
     "LIVRE_IMMOLATION",
-    "GEOLOGUE_PEUT_TRADUIRE_GEN"
+    "GEOLOGUE_PEUT_TRADUIRE_GEN",
+    "EMPOISONNE_CHAMPI"
   ],
   "terms": {
     "basic": [
@@ -631,9 +632,10 @@
     "VISITE_ROCHE_PAS",
     "DONJON_SCENE",
     "ROCHE_KIDNAP_SCENE",
-    "AUTOWALK"
+    "AUTOWALK",
+    "EMPOISONNE_CHAMPII"
   ],
-  "versionId": 17329985,
+  "versionId": 20751981,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

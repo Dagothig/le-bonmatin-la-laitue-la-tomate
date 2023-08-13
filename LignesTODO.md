@@ -504,10 +504,106 @@ _NarrateurBarrilBreuvageFermente
 _NarrateurDeuxPoilsDeBarbeEtDeuxBieres
 > Deux poils de barbes et deux bières!
 
+_NarrateurTombeIncomplete
+> Il semblerait que l'enterrement de ce 'dividu n'a pas\
+> pu être terminé.
+
+_NarrateurTombeIncomplete2
+> D'ailleurs vous remarquez à côté du squelette...
+
+_NarrateurPelleMortuaire
+> Une Pelle Mortuaire!\
+> Contrairement à une pelle tout usage, cette pelle\
+> ne fonctionne que pour les lieux de repos éternels.
+
+_NarrateurCiGitMonseigneurBonMatin
+> ci-git\
+> Monseigneur Du-Bon-Soleil-Mais-Seulement-L'Avant-Midi\
+> 1969 AD - 2022 AD\
+> La perte d'un proche était trop dévastatrice.
+
 _NarrateurPetiteClePoussiereuse
 > Une petite clé de sous-sol!\
-> Elle est un peu poussiérieuse mais c'est comme ça\
-> que vous savez qu'elle est pour un sous-sol.
+> Elle est un peu poussiérieuse mais c'est comme ça que\
+> vous savez qu'elle est pour un sous-sol.
+
+_NarrateurCiGitEsperanceDubemelte
+> ci-git\
+> Espérance Dubemelte\
+> 1981 AD - 2015 AD\
+> Hélas, nous a quittée juste avant l'Invention
+
+_NarrateurCiGitJeanDesmatins
+> ci-git\
+> Jean Desmatins\
+> 1999 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurCiGitMarieLeveeSoleil
+> ci-git\
+> Marie-Levée Soleil\
+> 1964 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurCiGitBobinoTournedreau
+> ci-git\
+> Bobino Tournedeau-Cest-Du-Bacon-Oui\
+> 1987 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurCiGitQuestionMark
+> ci-git\
+> ???
+
+_NarrateurTombeNonIdentifiee
+> La tombe n'est pas identifiée.
+
+_NarrateurNePasMangerCesChampignonsYaDingus
+> Une petite voix dans votre tête vous dit que manger ces\
+> champignons ne terminera pas bien.\
+> \
+> Ma voix.
+
+_NarrateurNePasMangerCesChampignonsYaDingus2
+> Vous êtes certain de ça? Même les petits doigts pensent\
+> que manger des champignons au pif c'est une mauvaise\
+> idée.
+
+_NarrateurBatisseEcroulee
+> Ah c'est une bâtisse écroulée ça.
+
+_NarrateurMurEcroule
+> Ah c'est un mur écroulé ça.
+
+_NarrateurDommagePotsCasses
+> Que c'est dommage les pots cassés... Vous ne pourrez\
+> même pas les briser vous même afin d'y trouver le doux\
+> nectar-de-pot-cassé.
+
+_NarrateurBibliothequeTombeeTrou
+> On peut voir ici que la bibliothèque tenait entièrement\
+> grâce à la présence d'un non-trou dans le bas du mur\
+> derrière.\
+> Hélas l'apparation du trou l'a fait tomber.
+
+_NarrateurTableQualiteStandardAuberge
+> Une table de qualité standard pour une auberge.
+
+_NarrateurNiPlatreurNiCharpentierMaisTrou
+> Vous n'êtes pas plâtreur. Ou charpentier.\
+> \
+> Mais c'est un trou ça.
+
+_NarrateurNiPlatreurNiCharpentierMaisCraque
+> Vous n'êtes pas plâtreur. Ou charpentier.\
+> \
+> Mais c'est une craque ça.
+
+_NarrateurTristeVisionDesCendres
+> La triste vision des cendres complètement refroidies du\
+> foyer.\
+> \
+> C'est pas facile partir un nouveau feu.
 
 ### Protagoniste
 
@@ -1641,6 +1737,12 @@ _ProtagonisteRefuseDescendreEnBas
 > Non mais moi je descends pas en bas.\
 > C'est juste pas une option.
 
+_ProtagonisteVaFarpaitementBien
+> Non mais je vais farpaitement bien!
+
+_ProtagonisteFarpaitement
+> Farpaitement!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2184,6 +2286,12 @@ _WwwelchiorGere
 _WwwelchiorPasMalALAisePourUnConfus
 > T'es rendu pas mal à l'aise pour quelqu'un\
 > qui capotait y'a deux minutes.
+
+_WwwelchiorANePasConfondreAvecTenebres
+> À ne pas confondre avec les Ténèbres!
+
+_WwwelchiorParfaitementPtInterro
+> ...Parfaitement?
 
 ### Fantome
 
@@ -3238,6 +3346,15 @@ ToutCollant
 
 PhiouJePeuxBouger
 > Phiou, là je peux bouger correct!
+
+Creuser
+> Creuser
+
+Phiou
+> Phiou
+
+Burp
+> Burp
 
 ### Grossepilecaillouxgris
 

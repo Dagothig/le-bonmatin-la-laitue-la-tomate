@@ -11519,6 +11519,93 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se Creuser"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Creuser"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se Phiou"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Phiou"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se Burp"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Burp"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -12038,5 +12125,689 @@
     "name": "Geologue peut traduire",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 30,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          9,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 1,
+        "parameters": [
+          [
+            "Profaner la tombe",
+            "Avoir un peu de respect"
+          ],
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          0,
+          "Profaner la tombe"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Creuser",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          180
+        ]
+      },
+      {
+        "code": 123,
+        "indent": 2,
+        "parameters": [
+          "A",
+          0
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Phiou",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          1,
+          "Avoir un peu de respect"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Creuser",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 31,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          10,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          120
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          66,
+          66,
+          0,
+          0,
+          20
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Burp",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          120
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          66,
+          66,
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          30,
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Heartbeat",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          40,
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          50,
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          60,
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          70,
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          66,
+          66,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          66,
+          0,
+          80,
+          1
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "AAA",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  5
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  5
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  5
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  5
+                ],
+                "indent": null
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Damage3",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 41,
+                "parameters": [
+                  "DamageUIUI",
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  30
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "AAA",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              5
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              5
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              5
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              5
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Damage3",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 41,
+            "parameters": [
+              "DamageUIUI",
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              30
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 353,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Empoisonne Champi",
+    "switchId": 58,
+    "trigger": 2
   }
 ]
