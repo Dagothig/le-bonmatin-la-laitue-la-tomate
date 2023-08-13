@@ -16,7 +16,7 @@
     "volume": 90
   },
   "disableDashing": false,
-  "displayName": "Temple",
+  "displayName": "Lieu Occulte",
   "encounterList": [],
   "encounterStep": 30,
   "height": 27,
@@ -6223,15 +6223,27 @@
           },
           "list": [
             {
-              "code": 250,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "TODO",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Installer un cadran solaire à l'intérieur c'est une "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "drôle d'idée."
               ]
             },
             {

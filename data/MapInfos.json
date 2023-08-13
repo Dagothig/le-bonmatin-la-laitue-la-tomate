@@ -879,8 +879,8 @@
     "name": "PORT_ISOLE",
     "order": 106,
     "parentId": 0,
-    "scrollX": 982.8,
-    "scrollY": 572.4
+    "scrollX": 893.4545454545455,
+    "scrollY": 520.3636363636364
   },
   {
     "id": 99,
@@ -925,7 +925,7 @@
     "order": 102,
     "parentId": 97,
     "scrollX": 884.7272727272727,
-    "scrollY": 702.5454545454546
+    "scrollY": 775.6363636363636
   },
   {
     "id": 104,
@@ -951,7 +951,7 @@
     "name": "SHRINE_F1",
     "order": 105,
     "parentId": 97,
-    "scrollX": 819,
-    "scrollY": 477
+    "scrollX": 893.4545454545455,
+    "scrollY": 520.3636363636364
   }
 ]
