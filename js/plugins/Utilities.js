@@ -4149,73 +4149,28 @@ Input.keyMapper[68] = "right"; // d
         function _createBitmaps(_createBitmaps) {
             _createBitmaps.call(this);
             this._sandstormBitmap = ImageManager.loadPicture("Sandstorm");
-        },
-        function _addSprite(_addSprite) {
-            switch (this.type) {
-                case "sandstorm":
-                    const sprite = new TilingSprite(this._sandstormBitmap);
-                    sprite.opacity = 0;
-                    sprite.move(0, 0, Graphics.width, Graphics.height);
-                    sprite.blendMode = PIXI.BLEND_MODES.MULTIPLY;
-                    this._sprites.push(sprite);
-                    this.addChild(sprite);
-                    break;
-                default:
-                    _addSprite.call(this);
-            }
+            this._sandstormSprite = new TilingSprite(this._sandstormBitmap);
+            this._sandstormSprite.blendMode = PIXI.BLEND_MODES.MULTIPLY;
         },
         function _updateAllSprites(_updateAllSprites) {
-            let maxSprites;
-            switch (this.type) {
-                case "sandstorm":
-                    maxSprites = 1;
-                    break;
-                default:
-                    maxSprites = Math.floor(this.power * 10);
-                    break;
-            }
-            while (this._sprites.length < maxSprites) {
-                this._addSprite();
-            }
-            while (this._sprites.length > maxSprites) {
-                this._removeSprite();
-            }
-            switch (this.type) {
-                case "sandstorm":
-                    for (const sprite of this._sprites) {
-                        this._updateSprite(sprite);
-                    }
-                    break;
-                default:
-                    for (const sprite of this._sprites) {
-                        this._updateSprite(sprite);
-                        sprite.x = sprite.ax - this.origin.x;
-                        sprite.y = sprite.ay - this.origin.y;
-                    }
-                    break;
-            }
-        },
-        function _updateSprite(_updateSprite, sprite) {
-            switch (this.type) {
-                case "sandstorm":
-                    this._updateSandstormSprite(sprite);
-                    break;
-            }
-            _updateSprite.call(this, sprite);
-        },
-        function _updateSandstormSprite(_, sprite) {
-            sprite.origin.x += this.power;
-            sprite.origin.y += this.power / 6;
-            sprite.opacity = (this.power / 9) * 255;
-        },
-        function _rebornSprite(_rebornSprite, sprite) {
-            switch (this.type) {
-                case "sandstorm":
-                    sprite.opacity = 0;
-                    break;
-                default:
-                    _rebornSprite.call(this, sprite);
-                    break;
+            if (this.type === "sandstorm") {
+                while (this._sprites.length) {
+                    this._removeSprite();
+                }
+                this._sandstormSprite.origin.x += this.power;
+                this._sandstormSprite.origin.y += this.power / 6;
+                this._sandstormSprite.move(0, 0, Graphics.width, Graphics.height);
+                this._sandstormSprite.opacity = (this.power / 9) * 255;
+                if (!this._sandstormSprite.added) {
+                    this._sandstormSprite.added = true;
+                    this.addChild(this._sandstormSprite);
+                }
+            } else {
+                if (this._sandstormSprite.added) {
+                    this._sandstormSprite.added = false;
+                    this.removeChild(this._sandstormSprite);
+                }
+                _updateAllSprites.call(this);
             }
         });
 })();

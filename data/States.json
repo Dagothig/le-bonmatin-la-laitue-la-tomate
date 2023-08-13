@@ -1276,7 +1276,7 @@
     "note": "<TRAIT_ACTION_PLUS:-0.5>\n<<aaa_apply AudioManager.playSe(\"ToutCollant\")>>\n<<aaa_apply AudioManager.playSe(\"PhiouJePeuxBouger\")>>",
     "overlay": 10,
     "priority": 50,
-    "removeAtBattleEnd": false,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,

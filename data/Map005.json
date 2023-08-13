@@ -8855,7 +8855,7 @@
     0,
     0,
     0,
-    3,
+    25,
     24,
     24,
     24,
@@ -12254,15 +12254,6 @@
           },
           "list": [
             {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                34,
-                34,
-                1
-              ]
-            },
-            {
               "code": 122,
               "indent": 0,
               "parameters": [
@@ -12285,6 +12276,15 @@
                 3,
                 5,
                 -1,
+                1
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                34,
+                34,
                 1
               ]
             },
@@ -12338,7 +12338,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 4,
+          "trigger": 3,
           "walkAnime": true
         }
       ],
@@ -12989,6 +12989,61 @@
           },
           "list": [
             {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                10
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                2,
+                2,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 285,
+              "indent": 0,
+              "parameters": [
+                42,
+                6,
+                1,
+                1,
+                2
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                43,
+                43,
+                0,
+                1,
+                42
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -13011,7 +13066,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         },
         {
@@ -13669,8 +13724,16 @@
               ]
             },
             {
-              "code": 231,
+              "code": 111,
               "indent": 2,
+              "parameters": [
+                12,
+                "$gameScreen.picture(1).name() !== \"Lens\""
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 3,
               "parameters": [
                 1,
                 "Lens",
@@ -13683,6 +13746,16 @@
                 0,
                 2
               ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 232,

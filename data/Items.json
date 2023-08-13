@@ -823,5 +823,31 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 28,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "La clé est un peu poussiérieuse mais c'est comme ça\nque vous savez qu'elle est pour un sous-sol.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 195,
+    "itypeId": 2,
+    "name": "Clé du sous-sol",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

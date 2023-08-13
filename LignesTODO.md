@@ -504,6 +504,11 @@ _NarrateurBarrilBreuvageFermente
 _NarrateurDeuxPoilsDeBarbeEtDeuxBieres
 > Deux poils de barbes et deux bières!
 
+_NarrateurPetiteClePoussiereuse
+> Une petite clé de sous-sol!\
+> Elle est un peu poussiérieuse mais c'est comme ça\
+> que vous savez qu'elle est pour un sous-sol.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -1631,6 +1636,10 @@ _ProtagonisteVaFaireDuDeni2
 
 _ProtagonisteOhVerdureDentee
 > Oh. C'est de la verdure dentée.
+
+_ProtagonisteRefuseDescendreEnBas
+> Non mais moi je descends pas en bas.\
+> C'est juste pas une option.
 
 ### Vieux
 
@@ -3634,6 +3643,11 @@ _PetitestalagmitejauneLeRRRREstRenduPetit
 > gâché...\
 > Maintenant c'est le RRRR.
 
+_PetitestalagmitejauneGrosDeni
+> LALALALALA\
+> Tout va très bien.\
+> Regardez comme mon ami est calme!
+
 ### Grossestalagmitejaune
 
 _GrossestalagmitejauneRegardesMaman
@@ -3679,6 +3693,12 @@ _GrossestalagmitejauneImmigrante
 > Ça parait pas vu que ça fait longtemps,\
 > mais en fait j'ai immigré ici. Je viens pas\
 > du coin, je viens du nord.
+
+_GrossestalagmitejauneStupeurDePeur
+> . . .\
+> . . .\
+> . . .\
+> AAAAAAAAAAAAAAAAA
 
 ### Grosninja
 
@@ -3842,6 +3862,9 @@ _PetitestalagmiteverteBraaains
 _PetitestalagmiteverteRegardesRacines
 > Regardes maman mes belles racines!
 
+_PetitestalagmitevertePerdue
+> Je suis perdue!
+
 ### Grossestalagmiteverte
 
 _GrossestalagmiteverteMesAmisLesPlantes
@@ -3853,3 +3876,8 @@ _GrossestalagmiteverteMesAmisLesPlantes
 _GrossestalagmitevertePousseChlorophylle
 > Vous voulez-pas un peu de chlorophylle?\
 > 9/10 docteurs le recommandent!
+
+_GrossestalagmiteverteBonneQualite
+> Cette "Chlorophylle" de "Plante" est\
+> vraiment de bonne qualité!\
+> Cette cave est d'une propreté exemplaire!
