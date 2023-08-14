@@ -11606,6 +11606,35 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se Facepalm"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Facepalm"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -12130,6 +12159,17 @@
     "id": 30,
     "list": [
       {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
         "code": 111,
         "indent": 0,
         "parameters": [
@@ -12181,7 +12221,7 @@
         "code": 230,
         "indent": 2,
         "parameters": [
-          180
+          150
         ]
       },
       {
@@ -12213,7 +12253,7 @@
         "code": 230,
         "indent": 2,
         "parameters": [
-          30
+          40
         ]
       },
       {
@@ -12809,5 +12849,209 @@
     "name": "Empoisonne Champi",
     "switchId": 58,
     "trigger": 2
+  },
+  {
+    "id": 32,
+    "list": [
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Damage3",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 41,
+                "parameters": [
+                  "DamageUIUI",
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  10
+                ],
+                "indent": null
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Ouch",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  10
+                ],
+                "indent": null
+              },
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Equip2",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 41,
+                "parameters": [
+                  "ActorUIUI",
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Damage3",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 41,
+            "parameters": [
+              "DamageUIUI",
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              10
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Ouch",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              10
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Equip2",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 41,
+            "parameters": [
+              "ActorUIUI",
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "S'Enfarger",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

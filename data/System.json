@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 103,
+  "editMapId": 1,
   "elements": [
     "",
     "Physical",
@@ -402,7 +402,8 @@
     "MAP_GEOLOGUE",
     "LIVRE_IMMOLATION",
     "GEOLOGUE_PEUT_TRADUIRE_GEN",
-    "EMPOISONNE_CHAMPI"
+    "EMPOISONNE_CHAMPI",
+    "DARK_GEORGINA_TROU_TOMBE"
   ],
   "terms": {
     "basic": [
@@ -635,7 +636,7 @@
     "AUTOWALK",
     "EMPOISONNE_CHAMPII"
   ],
-  "versionId": 57878061,
+  "versionId": 61017966,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

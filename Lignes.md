@@ -330,6 +330,12 @@ Ahha
 Burp
 > Burp
 
+Facepalm
+> Facepalm
+
+Laser1
+> Laser1
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2352,6 +2358,19 @@ _ProtagonisteVaFarpaitementBien
 _ProtagonisteFarpaitement
 > Farpaitement!
 
+_ProtagonisteCluelessDuPoteauBonMatin1
+> Ah c'est inhabituel un autel coupé en deux\
+> avec une colonne au milieu...
+
+_ProtagonisteCluelessDuPoteauBonMatin2
+> Oui Gabspart?
+
+_ProtagonisteCoucouQuestion
+> Coucou?
+
+_ProtagonisteTombeVide
+> Mmmmh, la tombe est vide...
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3675,6 +3694,26 @@ _NarrateurTristeVisionDesCendres
 > foyer.\
 > \
 > C'est pas facile partir un nouveau feu.
+
+_NarrateurCadranSolaireBonMatin
+> Installer un cadran solaire à l'intérieur c'est une\
+> drôle d'idée.
+
+_NarrateurCadranSolaireBonMatin2
+> Ah. Dans ce cas-ci, toutes les heures sont identiques?\
+> Il y a simplement "A.M." partout, et au centre du\
+> cadran au peut lire:
+
+_NarrateurToujoursMatinQqPart
+> \
+> IL EST BIEN TOUJOURS\
+> LE MATIN QUELQUE PART
+
+_NarrateurHorlogeBonMatin
+> L'horloge ne semble plus fonctionner...\
+> \
+> En fait, il n'y a même pas d'aiguilles sur l'horloge.\
+> Au centre du cadran, on peut simplement lire:
 
 ### Bucheron
 
@@ -7211,3 +7250,9 @@ _GrossestalagmiteverteBonneQualite
 > Cette "Chlorophylle" de "Plante" est\
 > vraiment de bonne qualité!\
 > Cette cave est d'une propreté exemplaire!
+
+### Gasbpart
+
+_GasbpartWtfProtaCluelessDuPoteauBonMatin
+> Non mais si tu as pas deviné je veux même\
+> pas mettre l'effort de t'expliquer...

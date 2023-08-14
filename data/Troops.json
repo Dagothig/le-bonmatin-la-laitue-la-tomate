@@ -3519,7 +3519,7 @@
           "switchValid": false,
           "turnA": 2,
           "turnB": 0,
-          "turnEnding": false,
+          "turnEnding": true,
           "turnValid": true
         },
         "list": [
