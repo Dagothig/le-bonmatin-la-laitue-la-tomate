@@ -6,8 +6,8 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 816,
-    "scrollY": 469
+    "scrollX": 327,
+    "scrollY": 464
   },
   {
     "id": 2,
@@ -879,8 +879,8 @@
     "name": "PORT_ISOLE",
     "order": 106,
     "parentId": 0,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 477
   },
   {
     "id": 99,
@@ -943,7 +943,7 @@
     "order": 104,
     "parentId": 97,
     "scrollX": 884.7272727272727,
-    "scrollY": 673.0909090909091
+    "scrollY": 520.3636363636364
   },
   {
     "id": 106,
