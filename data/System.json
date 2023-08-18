@@ -635,9 +635,10 @@
     "ROCHE_KIDNAP_SCENE",
     "AUTOWALK",
     "EMPOISONNE_CHAMPII",
-    "AUTOWALK_DIR"
+    "AUTOWALK_DIR",
+    "BONMATIN_SW_ROUGE"
   ],
-  "versionId": 9482100,
+  "versionId": 23079842,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

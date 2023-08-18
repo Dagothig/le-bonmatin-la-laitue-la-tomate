@@ -1693,13 +1693,18 @@ function eval_fn_expr(expr, args) {
         });
 })();
 
-// Tinting
+// Sprite props
 (function() {
     override(Sprite_Character.prototype,
         function updateOther(updateOther) {
             updateOther.call(this);
             if (this._character.tint !== undefined) {
                 this.tint = this._character.tint;
+            }
+            if (this._character.visuals) {
+                for (const prop in this._character.visuals) {
+                    this[prop] = this._character.visuals[prop];
+                }
             }
         });
 })();
@@ -4537,7 +4542,7 @@ Input.keyMapper[68] = "right"; // d
                 if (cmd.code === 356) {
                     const triggerType = triggerTypes.indexOf(cmd.parameters[0]);
                     if (triggerType !== -1) {
-                        this._triggers.push(triggerType); 
+                        this._triggers.push(triggerType);
                         this._triggersIdx.push(parseInt(i));
                     }
                 }
@@ -4549,7 +4554,7 @@ Input.keyMapper[68] = "right"; // d
                 this._startingIdx = 0;
                 for (let idx in this._triggers) {
                     const trigger = this._triggers[idx];
-                    if (trigOrTrigs === trigger || 
+                    if (trigOrTrigs === trigger ||
                         (trigOrTrigs.length && trigOrTrigs.includes(trigger))) {
                         this._startingIdx = this._triggersIdx[idx];
                     }
@@ -4578,7 +4583,7 @@ Input.keyMapper[68] = "right"; // d
             return false;
         });
 
-    override(Game_Player.prototype, 
+    override(Game_Player.prototype,
         function startMapEvent(_, x, y, triggers, normal) {
             if (!$gameMap.isEventRunning()) {
                 $gameMap.eventsXy(x, y).forEach(function(event) {
