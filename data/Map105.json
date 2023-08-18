@@ -320,42 +320,8 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    2848,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    2850,
+    2852,
     0,
     0,
     0,
@@ -387,10 +353,10 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
+    2851,
+    2845,
+    2846,
+    2853,
     0,
     0,
     0,
@@ -421,10 +387,44 @@
     0,
     0,
     0,
+    2848,
+    4002,
+    4004,
+    2848,
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2848,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2851,
+    2849,
+    2843,
+    4008,
+    3993,
+    2860,
     0,
     0,
     0,
@@ -453,13 +453,13 @@
     2849,
     2849,
     2838,
-    2836,
-    2837,
-    2849,
-    2849,
-    2849,
-    2838,
-    2836,
+    2842,
+    6702,
+    2857,
+    2861,
+    3987,
+    4013,
+    2850,
     2836,
     2852,
     0,
@@ -487,13 +487,13 @@
     0,
     0,
     2834,
-    2844,
     2854,
+    7055,
     4002,
     3989,
-    4013,
-    2832,
-    2816,
+    4007,
+    2850,
+    2817,
     2816,
     2840,
     0,
@@ -4669,6 +4669,7 @@
     0,
     0,
     0,
+    57,
     0,
     0,
     0,
@@ -5792,8 +5793,7 @@
     0,
     0,
     0,
-    0,
-    0,
+    5,
     0,
     0,
     0,
@@ -8025,37 +8025,18 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                2,
-                2,
+                1,
+                1,
                 0,
-                3,
-                5,
-                -1,
-                0
+                0,
+                -1
               ]
             },
             {
-              "code": 122,
+              "code": 117,
               "indent": 0,
               "parameters": [
-                3,
-                3,
-                0,
-                3,
-                5,
-                -1,
-                1
-              ]
-            },
-            {
-              "code": 285,
-              "indent": 0,
-              "parameters": [
-                1,
-                0,
-                1,
-                2,
-                3
+                33
               ]
             },
             {
@@ -8070,10 +8051,56 @@
               ]
             },
             {
-              "code": 205,
+              "code": 111,
               "indent": 1,
               "parameters": [
-                -1,
+                1,
+                2,
+                0,
+                5,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "!$gamePlayer.isMoving()"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Ho",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                0,
                 {
                   "list": [
                     {
@@ -8096,7 +8123,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 32,
@@ -8106,34 +8133,11 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 35,
                   "indent": null
-                }
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                5,
-                0
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Ho",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
                 }
               ]
             },
@@ -8179,27 +8183,6 @@
               "parameters": []
             },
             {
-              "code": 212,
-              "indent": 2,
-              "parameters": [
-                -1,
-                186,
-                false
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Wind4",
-                  "volume": 90,
-                  "pitch": 50,
-                  "pan": 0
-                }
-              ]
-            },
-            {
               "code": 205,
               "indent": 2,
               "parameters": [
@@ -8207,10 +8190,11 @@
                 {
                   "list": [
                     {
-                      "code": 29,
-                      "parameters": [
-                        5
-                      ],
+                      "code": 32,
+                      "indent": null
+                    },
+                    {
+                      "code": 35,
                       "indent": null
                     },
                     {
@@ -8228,218 +8212,54 @@
               "indent": 2,
               "parameters": [
                 {
-                  "code": 29,
+                  "code": 32,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 35,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        1
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": true,
+                  "skippable": true,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 15,
                   "parameters": [
-                    5
+                    1
                   ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                3,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                4,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 3,
                   "indent": null
                 }
               ]
@@ -8461,8 +8281,16 @@
                 65,
                 65,
                 0,
-                1,
-                1
+                0,
+                0
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "B",
+                0
               ]
             },
             {
@@ -8507,14 +8335,14 @@
             "actorValid": false,
             "itemId": 1,
             "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 65,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": false,
@@ -8530,53 +8358,23 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                2,
-                2,
+                1,
+                1,
                 0,
-                3,
-                5,
-                -1,
-                0
+                0,
+                -1
               ]
             },
             {
-              "code": 122,
+              "code": 117,
               "indent": 0,
               "parameters": [
-                3,
-                3,
-                0,
-                3,
-                5,
-                -1,
-                1
-              ]
-            },
-            {
-              "code": 285,
-              "indent": 0,
-              "parameters": [
-                1,
-                0,
-                1,
-                2,
-                3
+                33
               ]
             },
             {
               "code": 111,
               "indent": 0,
-              "parameters": [
-                1,
-                1,
-                1,
-                65,
-                5
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
               "parameters": [
                 1,
                 1,
@@ -8587,7 +8385,7 @@
             },
             {
               "code": 205,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -8619,7 +8417,7 @@
             },
             {
               "code": 505,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 31,
@@ -8629,7 +8427,7 @@
             },
             {
               "code": 505,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 36,
@@ -8639,7 +8437,7 @@
             },
             {
               "code": 505,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -8652,7 +8450,7 @@
             },
             {
               "code": 111,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 2,
                 "A",
@@ -8661,7 +8459,7 @@
             },
             {
               "code": 250,
-              "indent": 3,
+              "indent": 2,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -8673,7 +8471,7 @@
             },
             {
               "code": 322,
-              "indent": 3,
+              "indent": 2,
               "parameters": [
                 1,
                 "ActorUIUI",
@@ -8685,7 +8483,7 @@
             },
             {
               "code": 123,
-              "indent": 3,
+              "indent": 2,
               "parameters": [
                 "A",
                 1
@@ -8693,32 +8491,6 @@
             },
             {
               "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                65,
-                65,
-                0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
               "indent": 2,
               "parameters": []
             },
@@ -8726,16 +8498,82 @@
               "code": 412,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "B",
+                1
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                2,
+                1,
+                65,
+                5
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                65,
+                65,
+                0,
+                1,
+                2
+              ]
             },
             {
               "code": 111,
               "indent": 1,
               "parameters": [
                 1,
-                1,
+                2,
                 0,
                 5,
                 5
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                67,
+                67,
+                0,
+                1,
+                1
               ]
             },
             {
@@ -8797,226 +8635,8 @@
               ]
             },
             {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
               "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 205,
               "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                3,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                1,
-                0,
-                4,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 1,
               "parameters": [
                 2,
                 "A",
@@ -9025,7 +8645,7 @@
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 {
                   "name": "Damage3",
@@ -9037,7 +8657,7 @@
             },
             {
               "code": 322,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 1,
                 "DamageUIUI",
@@ -9049,10 +8669,57 @@
             },
             {
               "code": 123,
-              "indent": 2,
+              "indent": 3,
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.moveStraight($gvars.AUTOWALK_DIR)"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": true,
+                  "skippable": true,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.moveStraight($gvars.AUTOWALK_DIR)"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -9064,17 +8731,6 @@
               "code": 412,
               "indent": 1,
               "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                65,
-                65,
-                0,
-                1,
-                1
-              ]
             },
             {
               "code": 0,
@@ -9115,6 +8771,323 @@
       ],
       "x": 1,
       "y": 1
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other1",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                4,
+                "this.eventId()"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                33
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gvars.TMP_A === this.character()._autowalkDir"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "this.character()._autowalkDir = $gvars.TMP_A"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                2,
+                0,
+                5,
+                5
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 29,
+                      "parameters": [
+                        5
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 29,
+                  "parameters": [
+                    5
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.moveStraight(this._autowalkDir)"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": true,
+                  "skippable": true,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.moveStraight(this._autowalkDir)"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 115,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "trigger action"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Push",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 29,
+                      "parameters": [
+                        3
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 11,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Push",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 29,
+                  "parameters": [
+                    3
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 11,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        }
+      ],
+      "x": 16,
+      "y": 20
     }
   ]
 }

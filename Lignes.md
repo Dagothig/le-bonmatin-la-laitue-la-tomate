@@ -3702,7 +3702,7 @@ _NarrateurCadranSolaireBonMatin
 _NarrateurCadranSolaireBonMatin2
 > Ah. Dans ce cas-ci, toutes les heures sont identiques?\
 > Il y a simplement "A.M." partout, et au centre du\
-> cadran au peut lire:
+> cadran on peut lire:
 
 _NarrateurToujoursMatinQqPart
 > \

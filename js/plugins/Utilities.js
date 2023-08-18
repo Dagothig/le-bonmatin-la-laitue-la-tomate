@@ -808,6 +808,13 @@ function eval_fn_expr(expr, args) {
                 }
             }
             return true;
+        },
+        function selfSwitch(_, id, value) {
+            const key = [this._mapId, this._eventId, id];
+            if (value !== undefined)
+                $gameSelfSwitches.setValue(key, !!value);
+            else
+                return $gameSelfSwitches.value(key);
         });
 
     override(ShaderTilemap.prototype,
@@ -4513,5 +4520,82 @@ Input.keyMapper[68] = "right"; // d
             action.apply(subject);
             this._logWindow.displayCounter(target);
             this._logWindow.displayActionResults(target, subject);
+        });
+})();
+
+// Allow multiple triggers
+(function () {
+    const triggerTypes = ["trigger action", "trigger player touch", "trigger event touch"];
+    override(Game_Event.prototype,
+        function setupPageSettings(setupPageSettings) {
+            setupPageSettings.call(this);
+            this._triggers = [this._trigger];
+            this._triggersIdx = [0];
+            const list = this.list();
+            for (const i in list) {
+                const cmd = list[i];
+                if (cmd.code === 356) {
+                    const triggerType = triggerTypes.indexOf(cmd.parameters[0]);
+                    if (triggerType !== -1) {
+                        this._triggers.push(triggerType); 
+                        this._triggersIdx.push(parseInt(i));
+                    }
+                }
+            }
+        },
+        function start(start, trigOrTrigs) {
+            start.call(this);
+            if (this._starting) {
+                this._startingIdx = 0;
+                for (let idx in this._triggers) {
+                    const trigger = this._triggers[idx];
+                    if (trigOrTrigs === trigger || 
+                        (trigOrTrigs.length && trigOrTrigs.includes(trigger))) {
+                        this._startingIdx = this._triggersIdx[idx];
+                    }
+                }
+            }
+        },
+        function checkEventTriggerTouch(_, x, y) {
+            if (!$gameMap.isEventRunning()) {
+                if (this.isTrigger(2) && $gamePlayer.pos(x, y)) {
+                    if (!this.isJumping() && this.isNormalPriority()) {
+                        this.start(2);
+                    }
+                }
+            }
+        },
+        function checkEventTriggerAuto() {
+            this.isTrigger(3) && this.start(3);
+        },
+        function isTrigger(_, trigger) {
+            return this._triggers.includes(trigger);
+        },
+        function isTriggerIn(_, triggers) {
+            for (const trigger of triggers)
+                if (this.isTrigger(trigger))
+                    return true;
+            return false;
+        });
+
+    override(Game_Player.prototype, 
+        function startMapEvent(_, x, y, triggers, normal) {
+            if (!$gameMap.isEventRunning()) {
+                $gameMap.eventsXy(x, y).forEach(function(event) {
+                    if (event.isTriggerIn(triggers) && event.isNormalPriority() === normal) {
+                        event.start(triggers);
+                    }
+                });
+            }
+        });
+
+    override(Game_Interpreter.prototype,
+        function setup(setup, list, eventId) {
+            setup.call(this, list, eventId);
+            if (eventId) {
+                const ev = $gameMap.event(eventId);
+                this._index = ev && ev._startingIdx || 0;
+                delete ev._startingIdx;
+            }
         });
 })();

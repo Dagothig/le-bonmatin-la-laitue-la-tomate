@@ -13053,5 +13053,67 @@
     "name": "S'Enfarger",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 33,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "const ev = this.character($gvars.TMP_A);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (!ev) return;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const x = ev.x, y = ev.y;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gvars.TMP_B = $gameMap.terrainTag(x, y);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const dirs = [0, 2, 8, 4, 6, ev.direction()];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const dir = dirs[$gvars.TMP_B] || 0;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gvars.TMP_A = dir > 0 && ev.canPass(x, y, dir) ? dir : 0;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Movement Tile Dir",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

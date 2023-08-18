@@ -13728,7 +13728,7 @@
               "indent": 2,
               "parameters": [
                 12,
-                "$gameScreen.picture(1).name() !== \"Lens\""
+                "($gameScreen.picture(1) && $gameScreen.picture(1).name()) !== \"Lens\""
               ]
             },
             {

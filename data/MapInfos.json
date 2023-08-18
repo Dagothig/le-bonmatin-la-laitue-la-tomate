@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 1035.2727272727273,
-    "scrollY": 966.5454545454546
+    "scrollX": 803,
+    "scrollY": 941
   },
   {
     "id": 6,
@@ -375,8 +375,8 @@
     "name": "FORET_NEIGE_2-5_entree_save",
     "order": 55,
     "parentId": 7,
-    "scrollX": 832,
-    "scrollY": 640
+    "scrollX": 499,
+    "scrollY": 322
   },
   {
     "id": 43,
@@ -573,8 +573,8 @@
     "name": "PONT",
     "order": 75,
     "parentId": 0,
-    "scrollX": 884.7272727272727,
-    "scrollY": 727.6363636363636
+    "scrollX": 491,
+    "scrollY": 728
   },
   {
     "id": 65,
@@ -618,8 +618,8 @@
     "name": "CAVITE",
     "order": 85,
     "parentId": 65,
-    "scrollX": 893.4545454545455,
-    "scrollY": 506.1818181818182
+    "scrollX": 499,
+    "scrollY": 322
   },
   {
     "id": 70,
@@ -708,8 +708,8 @@
     "name": "VOID",
     "order": 4,
     "parentId": 0,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 499,
+    "scrollY": 322
   },
   {
     "id": 80,
@@ -870,7 +870,7 @@
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
-    "scrollX": 811,
+    "scrollX": 517,
     "scrollY": 771
   },
   {
@@ -888,8 +888,8 @@
     "name": "INN",
     "order": 100,
     "parentId": 97,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 491,
+    "scrollY": 350
   },
   {
     "id": 100,
@@ -906,8 +906,8 @@
     "name": "PUITS",
     "order": 101,
     "parentId": 97,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 491,
+    "scrollY": 350
   },
   {
     "id": 102,
@@ -925,7 +925,7 @@
     "order": 102,
     "parentId": 97,
     "scrollX": 821,
-    "scrollY": 649
+    "scrollY": 838
   },
   {
     "id": 104,
@@ -933,8 +933,8 @@
     "name": "SHRINE_BACK",
     "order": 103,
     "parentId": 97,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 499,
+    "scrollY": 322
   },
   {
     "id": 105,
@@ -942,8 +942,8 @@
     "name": "SHRINE_B1",
     "order": 104,
     "parentId": 97,
-    "scrollX": 884.7272727272727,
-    "scrollY": 520.3636363636364
+    "scrollX": 491,
+    "scrollY": 402
   },
   {
     "id": 106,
@@ -951,7 +951,7 @@
     "name": "SHRINE_F1",
     "order": 105,
     "parentId": 97,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 499,
+    "scrollY": 322
   }
 ]

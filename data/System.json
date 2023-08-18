@@ -634,9 +634,10 @@
     "DONJON_SCENE",
     "ROCHE_KIDNAP_SCENE",
     "AUTOWALK",
-    "EMPOISONNE_CHAMPII"
+    "EMPOISONNE_CHAMPII",
+    "AUTOWALK_DIR"
   ],
-  "versionId": 55153865,
+  "versionId": 9482100,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,
