@@ -2371,6 +2371,19 @@ _ProtagonisteCoucouQuestion
 _ProtagonisteTombeVide
 > Mmmmh, la tombe est vide...
 
+_ProtagonistePuzzleBonmatinPasDown1
+> Mmmh?
+
+_ProtagonistePuzzleBonmatinPasDown2
+> Les flèches? Je vois pas le rapport?
+
+_ProtagonistePuzzleBonmatinPasDown3
+> Non mais vous continuez à ne rien clarifier!
+
+_ProtagonistePuzzleBonmatinPasDown4
+> ... Ok? Mais Gabspart ça lui a rien fait\
+> pourtant?
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3715,6 +3728,20 @@ _NarrateurHorlogeBonMatin
 > En fait, il n'y a même pas d'aiguilles sur l'horloge.\
 > Au centre du cadran, on peut simplement lire:
 
+_NarrateurFournaiseAutreFuel
+> C'est une fournaise, mais il n'y a nul part pour y\
+> mettre du bois ou du charbon, elle doit être alimentée\
+> d'une autre manière.
+
+_NarrateurValveOuverte
+> La valve est ouverte.
+
+_NarrateurPorteSansPoignee
+> La porte est fermée, et la poignée est en fait peinte\
+> sur la porte.\
+> \
+> La porte ne peut être ouverte manuellement.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -4484,6 +4511,18 @@ _WwwelchiorANePasConfondreAvecTenebres
 _WwwelchiorParfaitementPtInterro
 > ...Parfaitement?
 
+_WwwelchiorPuzzleBonmatinPasDown1
+> Ah je reconnais le genre... Après c'est\
+> plus authentique ainsi!
+
+_WwwelchiorPuzzleBonmatinPasDown2
+> Marche un peu sur les tuiles et tu vas\
+> comprendre.
+
+_WwwelchiorPuzzleBonmatinPasDown3
+> Non mais pour lui c'est pas pareil...\
+> Le Protagonisme et tout ça, vois-tu.
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -5140,6 +5179,24 @@ _GabspartVoitProtagonisteFaireDuDeni
 > Ma réponse va changer quelque chose? Si je\
 > dis "non il faut agir" tu vas me faire du\
 > gros déni?
+
+_GabspartPuzzleBonmatinPasDown1
+> Merde.
+
+_GabspartPuzzleBonmatinPasDown2
+> Regardes par terre!\
+> \
+> C'est pire que le Temple du Bonjour...
+
+_GabspartPuzzleBonmatinPasDown3
+> Écoutes, je veux pas trop ruiner ton...\
+> expérience, mais si je vais me retirer de\
+> la situation, c'est bon? T'as pas besoin de\
+> mon aide pour ce qui suit de toute façon.
+
+_GabspartPuzzleBonmatinPasDown4
+> Et SI tu as besoin de mon aide, vient me\
+> voir, je vais te régler ça.
 
 ### Jacques
 

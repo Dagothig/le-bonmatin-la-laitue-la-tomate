@@ -2451,6 +2451,19 @@ function eval_fn_expr(expr, args) {
                 AudioManager._bgmBuffer.filters =
                     $dataMap.bgm && $dataMap.bgm.filters || null;
             }
+        },
+
+        function terrainTag(terrainTag, x, y) {
+            const tag = terrainTag.call(this, x, y);
+            if (tag) {
+                return tag;
+            }
+            for (const event of this._events) {
+                if (event && event.posNt(x, y) && event.eventTerrainTag) {
+                    return event.eventTerrainTag;
+                }
+            }
+            return 0;
         });
 
     const hurtSe = ["Ouch", "Owie", "JAiMal", "Bouhouhou"];
@@ -2565,6 +2578,19 @@ function eval_fn_expr(expr, args) {
 })();
 
 const BASE_PATTERN_TYPE = [0, 1, 2, 1];
+// Gives the tag/direction/pattern type from the switch value
+const BONMATIN_TILES = [
+    [1, 6, [0]],
+    [3, 8, [0]],
+    [2, 6, [1]],
+    [4, 8, [1]]];
+// Gives the var/tint from the meta value
+const BONMATIN_SWS = {
+    rouge: ["BONMATIN_SW_ROUGE", 0x00ff8888],
+    vert: ["BONMATIN_SW_VERT", 0x0088ff88],
+    bleu: ["BONMATIN_SW_BLEU", 0x008888ff],
+    jaune: ["BONMATIN_SW_JAUNE", 0x00ffff88]
+};
 
 // Characters
 (function() {
@@ -4574,7 +4600,7 @@ Input.keyMapper[68] = "right"; // d
             this.isTrigger(3) && this.start(3);
         },
         function isTrigger(_, trigger) {
-            return this._triggers.includes(trigger);
+            return this._triggers && this._triggers.includes(trigger);
         },
         function isTriggerIn(_, triggers) {
             for (const trigger of triggers)

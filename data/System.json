@@ -636,9 +636,13 @@
     "AUTOWALK",
     "EMPOISONNE_CHAMPII",
     "AUTOWALK_DIR",
-    "BONMATIN_SW_ROUGE"
+    "BONMATIN_SW_ROUGE",
+    "BONMATIN_SW_VERT",
+    "BONMATIN_SW_JAUNE",
+    "BONMATIN_SW_BLEU",
+    "BONMATIN_FOURNAISE"
   ],
-  "versionId": 23079842,
+  "versionId": 50028992,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

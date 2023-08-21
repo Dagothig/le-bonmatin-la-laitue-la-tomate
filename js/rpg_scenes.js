@@ -807,7 +807,7 @@ Scene_Map.prototype.updateCallDebug = function() {
 };
 
 Scene_Map.prototype.isDebugCalled = function() {
-    return Input.isTriggered('debug') && $gameTemp.isPlaytest();
+    return Input.isTriggered('debug')/* && $gameTemp.isPlaytest()*/;
 };
 
 Scene_Map.prototype.fadeInForTransfer = function() {
