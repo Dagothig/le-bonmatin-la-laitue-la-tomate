@@ -870,8 +870,8 @@
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
-    "scrollX": 535.6363636363636,
-    "scrollY": 412.3636363636364
+    "scrollX": 589.1999999999999,
+    "scrollY": 463.2
   },
   {
     "id": 98,
@@ -915,8 +915,8 @@
     "name": "DONJON_2",
     "order": 74,
     "parentId": 67,
-    "scrollX": 884.7272727272727,
-    "scrollY": 585.8181818181819
+    "scrollX": 884.4,
+    "scrollY": 585.6
   },
   {
     "id": 103,
@@ -924,8 +924,8 @@
     "name": "SHRINE_RDC",
     "order": 102,
     "parentId": 97,
-    "scrollX": 654.6666666666666,
-    "scrollY": 408
+    "scrollX": 816,
+    "scrollY": 368.4
   },
   {
     "id": 104,
@@ -933,8 +933,8 @@
     "name": "SHRINE_BACK",
     "order": 103,
     "parentId": 97,
-    "scrollX": 832,
-    "scrollY": 640
+    "scrollX": 598.8,
+    "scrollY": 376.8
   },
   {
     "id": 105,
@@ -942,8 +942,8 @@
     "name": "SHRINE_B1",
     "order": 105,
     "parentId": 97,
-    "scrollX": 1096.3636363636365,
-    "scrollY": 1153.0909090909092
+    "scrollX": 589.1999999999999,
+    "scrollY": 511.2
   },
   {
     "id": 106,
@@ -951,7 +951,7 @@
     "name": "SHRINE_F1",
     "order": 104,
     "parentId": 97,
-    "scrollX": 544.3636363636364,
-    "scrollY": 342.54545454545456
+    "scrollX": 598.8,
+    "scrollY": 376.8
   }
 ]
