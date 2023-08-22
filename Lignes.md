@@ -336,6 +336,9 @@ Facepalm
 Laser1
 > Laser1
 
+Fire1
+> Fire1
+
 ### Protagoniste
 
 _ProtagonisteQuitterVillageSansDague
@@ -2384,6 +2387,37 @@ _ProtagonistePuzzleBonmatinPasDown4
 > ... Ok? Mais Gabspart ça lui a rien fait\
 > pourtant?
 
+_ProtagonisteMerde
+> Merde.
+
+_ProtagonistePasPretPourPlancher
+> C'est surtout que je n'avais pas à réalisé\
+> que ça aurait autant d'ampleur.
+
+_ProtagonistePasPretPourPlancher2
+> Par contre je ne comprends vraiment pas\
+> pourquoi y'a ce genre de plancher maudit\
+> dans le sous-sol d'un Temple?
+
+_ProtagonisteMystereElucide
+> Ça élucide le mystère.
+
+_ProtagonistePresentePartitionMatinale
+> Allons, regardes ce qu'on a déniché en haut!
+
+_ProtagonisteHumOk
+> Hum, ok?
+
+_ProtagonisteIndiceBonMatin1
+> Bon! On est bien dans le fameux Temple du\
+> Bon Matin.
+
+_ProtagonisteIndiceBonMatin2
+> La place a déjà vécu de meilleurs jours par\
+> contre...\
+> Voyons si on peut trouver le Bon Matin,\
+> mais ça augure mal.
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3627,7 +3661,7 @@ _NarrateurCiGitMonseigneurBonMatin
 
 _NarrateurPetiteClePoussiereuse
 > Une petite clé de sous-sol!\
-> Elle est un peu poussiérieuse mais c'est comme ça que\
+> Elle est un peu poussiéreuse mais c'est comme ça que\
 > vous savez qu'elle est pour un sous-sol.
 
 _NarrateurCiGitEsperanceDubemelte
@@ -3741,6 +3775,95 @@ _NarrateurPorteSansPoignee
 > sur la porte.\
 > \
 > La porte ne peut être ouverte manuellement.
+
+_NarrateurPartitionMatinale
+> Une partition matinale!
+
+_NarrateurPetiteBoiteCartesPostales
+> Une petite boîte pleine de cartes postales.
+
+_NarrateurCartePostaleBonMatin
+> Un produit dérivé du Temple du Bon Matin!\
+> Il y a un BON MATIN mal écrit dessus.
+
+_NarrateurBonMatins
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN
+
+_NarrateurPasConfondreMatinBon
+> À ne pas confondre avec MATIN BON.
+
+_NarrateurParcheminBonMatin
+> Un parchemin du Bon Matin!\
+> Un bel exercice calligraphique.
+
+_NarrateurLettreInachevee
+> Une lettre inachevée.\
+> \
+> Le contenu ne fait pas partie de cette histoire.
+
+_NarrateurCabinetEncres
+> Un cabinet rempli d'encres et de matériel pour écrire\
+> sur des parchemins et des cartes postales.
+
+_NarrateurBoitePapier
+> Oh. C'est beaucoup de parchmins et de papier blanc, ça.
+
+_NarrateurCouverturesMoelleuses
+> Des couvertures bien moelleuses pour se protéger des\
+> nuits désertiques.\
+> \
+> Vous n'avez pas besoin du confort.
+
+_NarrateurTitresLivresMatin
+> Vous survolez rapidement les titres:\
+> "Le secret d'une bonne journée"\
+> "Le Matin et vous"\
+> "À quelle heure se coucher pour optimiser"
+
+_NarrateurBoiteLivresMatin
+> Une boîte de livre. Rien de bien différent que ce qu'il\
+> y a dans les bibliothèques.
+
+_NarrateurVictuaillesRancies
+> Vous seriez vraiment tenté de prendre des victuailles,\
+> si seulement elles n'étaient pas rancies.
+
+_NarrateurFoyerFroid
+> Ça fait un bout quand même que le feu n'a pas été\
+> allumé. Le foyer est complêtement froid.
+
+_NarrateurJarreHuileOliveRance
+> Une jarre d'huile d'olive, avec un profil rance bien\
+> présent.
+
+_NarrateurObjetsContondants
+> Des objets contondants.
+
+_NarrateurMmhCetait
+> Mmmh...\
+> \
+> C'était.
+
+_NarrateurPileDeBoitesNonInvestiguee
+> Normalement vous investigueriez la pile de boîtes,\
+> mais pas cette fois-ci.
+
+_NarrateurBoiteChandelles
+> Une boîte de chandelles. Pratique pour les moments\
+> glauques.
+
+_NarrateurPileTerreConfus
+> Une belle pile de terre. C'est pour... huh...\
+> Ok?
+
+_NarrateurBoiteTuilesFlechees
+> Une boîte contenant des tuiles flêchées.
+
+_NarrateurGrosCylindreMetal
+> C't'un gros cylindre de métal, ça.
 
 ### Bucheron
 
@@ -4523,6 +4646,9 @@ _WwwelchiorPuzzleBonmatinPasDown3
 > Non mais pour lui c'est pas pareil...\
 > Le Protagonisme et tout ça, vois-tu.
 
+_WwwelchiorTuRalliesAGabspart
+> Ah tu te rallies à Gabspart?
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -5197,6 +5323,26 @@ _GabspartPuzzleBonmatinPasDown3
 _GabspartPuzzleBonmatinPasDown4
 > Et SI tu as besoin de mon aide, vient me\
 > voir, je vais te régler ça.
+
+_GabspartRentrePasLa
+> Une seconde! Moi je rentre pas là.
+
+_GabspartLePlaisirAEte
+> C'est fini? Tout le plaisir a été et là on\
+> peut repartir?
+
+_GabspartPresentePartitionMatinale
+> Ah une partition! Exactement ce qui nous\
+> manquait c'est sûr!
+
+_GabspartOffrePartitionMatinale
+> Bon! Maintenant que tu vois la vérité, je\
+> peux t'offrir ceci:
+
+_GabspartOffrePartitionMatinale2
+> Va niaisoter ça sur l'orgue en haut, tu vas\
+> voir.\
+> Mais, ça reste entre nous, hein?
 
 ### Jacques
 

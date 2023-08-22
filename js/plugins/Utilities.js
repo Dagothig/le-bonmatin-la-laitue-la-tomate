@@ -4574,6 +4574,12 @@ Input.keyMapper[68] = "right"; // d
                 }
             }
         },
+        function clearPageSettings(clearPageSettings) {
+            clearPageSettings.call(this);
+            if (this._triggers) {
+                this._triggers.length = this._triggersIdx.length = 0;
+            }
+        },
         function start(start, trigOrTrigs) {
             start.call(this);
             if (this._starting) {

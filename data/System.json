@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 106,
+  "editMapId": 105,
   "elements": [
     "",
     "Physical",
@@ -403,7 +403,8 @@
     "LIVRE_IMMOLATION",
     "GEOLOGUE_PEUT_TRADUIRE_GEN",
     "EMPOISONNE_CHAMPI",
-    "DARK_GEORGINA_TROU_TOMBE"
+    "DARK_GEORGINA_TROU_TOMBE",
+    "INDICE_BONMATIN"
   ],
   "terms": {
     "basic": [
@@ -642,7 +643,7 @@
     "BONMATIN_SW_BLEU",
     "BONMATIN_FOURNAISE"
   ],
-  "versionId": 60454115,
+  "versionId": 99688711,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

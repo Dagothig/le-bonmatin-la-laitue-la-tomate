@@ -157148,25 +157148,7 @@
     ],
     "name": "Puff Orange",
     "position": 1,
-    "timings": [
-      {
-        "flashColor": [
-          255,
-          255,
-          255,
-          255
-        ],
-        "flashDuration": 5,
-        "flashScope": 0,
-        "frame": 0,
-        "se": {
-          "name": "Fire2",
-          "pan": 0,
-          "pitch": 100,
-          "volume": 90
-        }
-      }
-    ]
+    "timings": []
   },
   {
     "id": 189,

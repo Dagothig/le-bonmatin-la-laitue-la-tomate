@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 802.6666666666666,
-    "scrollY": 941.3333333333334
+    "scrollX": 803,
+    "scrollY": 941
   },
   {
     "id": 6,
@@ -69,8 +69,8 @@
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
-    "scrollX": 785.3333333333334,
-    "scrollY": 408
+    "scrollX": 949,
+    "scrollY": 687
   },
   {
     "id": 9,
@@ -78,8 +78,8 @@
     "name": "PASSAGE_MONTAGNE",
     "order": 17,
     "parentId": 8,
-    "scrollX": 982.6666666666666,
-    "scrollY": 546.6666666666666
+    "scrollX": 983,
+    "scrollY": 547
   },
   {
     "id": 10,
@@ -177,8 +177,8 @@
     "name": "SHRINE_RDC",
     "order": 24,
     "parentId": 8,
-    "scrollX": 654.6666666666666,
-    "scrollY": 418.6666666666667
+    "scrollX": 709,
+    "scrollY": 687
   },
   {
     "id": 21,
@@ -843,8 +843,8 @@
     "name": "DONJON",
     "order": 73,
     "parentId": 67,
-    "scrollX": 884.7272727272727,
-    "scrollY": 566.1818181818182
+    "scrollX": 885,
+    "scrollY": 566
   },
   {
     "id": 95,
@@ -861,8 +861,8 @@
     "name": "PASSAGE_LIVRE",
     "order": 72,
     "parentId": 67,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 499,
+    "scrollY": 314
   },
   {
     "id": 97,
@@ -870,8 +870,8 @@
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
-    "scrollX": 589.1999999999999,
-    "scrollY": 463.2
+    "scrollX": 517,
+    "scrollY": 898
   },
   {
     "id": 98,
@@ -906,8 +906,8 @@
     "name": "PUITS",
     "order": 101,
     "parentId": 97,
-    "scrollX": 544.3636363636364,
-    "scrollY": 342.54545454545456
+    "scrollX": 491,
+    "scrollY": 358
   },
   {
     "id": 102,
@@ -924,8 +924,8 @@
     "name": "SHRINE_RDC",
     "order": 102,
     "parentId": 97,
-    "scrollX": 816,
-    "scrollY": 368.4
+    "scrollX": 831,
+    "scrollY": 870
   },
   {
     "id": 104,
@@ -933,8 +933,8 @@
     "name": "SHRINE_BACK",
     "order": 103,
     "parentId": 97,
-    "scrollX": 598.8,
-    "scrollY": 376.8
+    "scrollX": 499,
+    "scrollY": 314
   },
   {
     "id": 105,
@@ -942,8 +942,8 @@
     "name": "SHRINE_B1",
     "order": 105,
     "parentId": 97,
-    "scrollX": 589.1999999999999,
-    "scrollY": 511.2
+    "scrollX": 661,
+    "scrollY": 488
   },
   {
     "id": 106,
@@ -951,7 +951,7 @@
     "name": "SHRINE_F1",
     "order": 104,
     "parentId": 97,
-    "scrollX": 598.8,
-    "scrollY": 376.8
+    "scrollX": 499,
+    "scrollY": 314
   }
 ]

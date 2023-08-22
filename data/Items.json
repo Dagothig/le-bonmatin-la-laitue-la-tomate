@@ -835,7 +835,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "La clé est un peu poussiérieuse mais c'est comme ça\nque vous savez qu'elle est pour un sous-sol.",
+    "description": "La clé est un peu poussiéreuse mais c'est comme ça\nque vous savez qu'elle est pour un sous-sol.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 195,
@@ -843,6 +843,105 @@
     "name": "Clé du sous-sol",
     "note": "",
     "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 29,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 35,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 193,
+    "itypeId": 2,
+    "name": "Partition Matinale",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 30,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un produit dérivé du Temple du Bon Matin.\nIl y a un BON MATIN mal écrit dessus.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 36,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 192,
+    "itypeId": 1,
+    "name": "Carte postale du Bon Matin",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 31,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un bel exercice calligraphique.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 37,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 191,
+    "itypeId": 1,
+    "name": "Parchemin du Bon Matin",
+    "note": "",
+    "occasion": 0,
     "price": 0,
     "repeats": 1,
     "scope": 0,

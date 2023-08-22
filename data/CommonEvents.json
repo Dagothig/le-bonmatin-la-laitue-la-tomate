@@ -8,6 +8,25 @@
         "indent": 0,
         "parameters": [
           {
+            "name": "Book2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
             "name": "_NarrateurBonjours",
             "volume": 90,
             "pitch": 100,
@@ -13259,6 +13278,475 @@
       }
     ],
     "name": "Movement Tile",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 35,
+    "list": [
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "TODO",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Partition Matinale",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 36,
+    "list": [
+      {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          1,
+          "CartePostaleBonjour",
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          255,
+          0,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Stare",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Carte postale du BON MATIN",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 37,
+    "list": [
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Book2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurBonMatins"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurPasConfondreMatinBon"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "À ne pas confondre avec MATIN BON."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          38
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Parchemin du BON MATIN",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 38,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          60,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteIndiceBonMatin1"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Bon! On est bien dans le fameux Temple du "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Bon Matin."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          6,
+          false
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  30
+                ],
+                "indent": null
+              },
+              {
+                "code": 22,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  30
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              30
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 22,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              30
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 20,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteIndiceBonMatin2"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "La place a déjà vécu de meilleurs jours par"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "contre..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Voyons si on peut trouver le Bon Matin, "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "mais ça augure mal."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          60,
+          60,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Découverte indice matin",
     "switchId": 1,
     "trigger": 0
   }
