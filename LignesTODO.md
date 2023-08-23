@@ -1923,6 +1923,33 @@ _ProtagonisteIndiceBonMatin2
 > Voyons si on peut trouver le Bon Matin,\
 > mais ça augure mal.
 
+_ProtagonisteAutel
+> L'autel!
+
+_ProtagonisteBonMatinManquant
+> C'est exactement ce qu'on pensait.\
+> \
+> Le Bon Matin n'y est plus.
+
+_ProtagonisteBonMatinManquant2
+> Faut bien investiguer si on veut avoir une\
+> idée où il pourrait bien être...
+
+_ProtagonisteAlloOnPeutVousAider
+> Allo? On peut vous aider?
+
+_ProtagonisteVeutEchangeBonjour
+> Un instant vous deux! Donc vous avez le\
+> Bon Matin? Moi j'ai seulement besoin du\
+> Bon Matin. On a ramassé le Bonjour, mais\
+> c'est par principe.
+
+_ProtagonisteVeutEchangeBonjour2
+> Je suis prêt à échanger le Bonjour contre\
+> le Bon Matin, et comme ça on peut repartir\
+> chacun de son côté, et personne n'a besoin\
+> de se faire péter la face.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2311,6 +2338,11 @@ _GabspartOffrePartitionMatinale2
 > voir.\
 > Mais, ça reste entre nous, hein?
 
+_GabspartExpliqueQuEchangerCestUnPlanDeMarde
+> Déjà. Et aussi ça ne marchera pas. T'as pas\
+> entendu? Il veut toutes les salutations.\
+> Ça inclut Bon Matin.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -2525,6 +2557,18 @@ _WwwelchiorPuzzleBonmatinPasDown3
 
 _WwwelchiorTuRalliesAGabspart
 > Ah tu te rallies à Gabspart?
+
+_WwwelchiorBonMatinManquantEvident
+> D'ailleurs, pourquoi on a prit le temps\
+> d'aller jusqu'à valider le poteau? Me\
+> semble que c'était clair dès qu'on est\
+> arrivé.
+
+_WwwelchiorMenaceChevalierNoir
+> La Noirceur? Ha!\
+> Approches-toi un peu que je, Wwwelchior,\
+> Prince des Ténèbres, te fasses tâter de mon\
+> épée!
 
 ### Fantome
 
@@ -4240,3 +4284,52 @@ _GrossestalagmiteverteBonneQualite
 _GasbpartWtfProtaCluelessDuPoteauBonMatin
 > Non mais si tu as pas deviné je veux même\
 > pas mettre l'effort de t'expliquer...
+
+### Chevaliernoir
+
+_ChevaliernoirHahahaPiege
+> Hahahaha!\
+> \
+> Vous êtes tombés dans mon piège!
+
+_ChevaliernoirMonologueBonMatin1
+> Je n'aurais pas cru avoir de la\
+> compétition dans ma Quête. Vous m'avez\
+> peut-être battu pour l'obtention du\
+> Bonjour...
+
+_ChevaliernoirMonologueBonMatin2
+> Mais vous avez commis une grave erreure en\
+> laissant le prêtre vivre! Dès qu'il m'a\
+> décrit la bande qui a profané le Temple,\
+> j'ai su que vous finiriez par passer ici!
+
+_ChevaliernoirMonologueBonMatin3
+> Un Protagoniste... Ça fait longtemps.
+
+_ChevaliernoirMonologueBonMatin4
+> Ne faites pas l'idiot! Je sais que vous\
+> êtes ici afin de tenter de m'arrêter!\
+> MAIS. JE. TRIOMPHERAI.
+
+_ChevaliernoirMonologueBonMatin5
+> Lorsque j'aurai toutes les salutations,\
+> alors le Temps sera à moi.
+
+_ChevaliernoirMonologueBonMatin6
+> Et la Noirceur dominera le Monde!
+
+_ChevaliernoirMonologueBonMatin7
+> Amusant. Est-ce que vous pensez que votre\
+> Plot Armor sera suffisant?\
+> Ou serez-vous une perte tragique?
+
+_ChevaliernoirMonologueBonMatin8
+> Gaboué a raison!\
+> Vous êtes mou pour un Protagoniste... Je\
+> vous parle de domination et vous me\
+> proposez immédiatement un échange?
+
+_ChevaliernoirMonologueBonMatin9
+> Le Bonjour ET le Bon Matin seront à moi!\
+> Protagoniste de pacotille! En garde!

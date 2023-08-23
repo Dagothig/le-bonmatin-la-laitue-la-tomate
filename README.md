@@ -12,7 +12,10 @@
 
 ### Musique
 
-* Musique Tension (puzzle louche du passage souterrain)
+* Ruines (ça peut être une version allégée du Temple du Bon Matin pe?)
+* Temple du Bon Matin
+* Thème du Chevalier Noir (ça peut être une version allégée du thème de combat)
+* Thème combat du Chevalier Noir
 
 ## Rouler sans RPG Maker MV
 

@@ -2115,11 +2115,11 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 78
       }
     ],
     "battlerHue": 0,
-    "battlerName": "",
+    "battlerName": "General_m",
     "dropItems": [
       {
         "dataId": 1,
@@ -2153,20 +2153,30 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
       }
     ],
     "gold": 0,
-    "name": "",
-    "note": "",
+    "name": "Chevalier Noir",
+    "note": "<<aaa_icon 110 16>>",
     "params": [
-      100,
+      1000,
       0,
+      40,
+      25,
       10,
       10,
-      10,
-      10,
-      10,
-      10
+      90,
+      100
     ]
   },
   {
