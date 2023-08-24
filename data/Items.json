@@ -948,5 +948,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 32,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Terrible. Il est aux raisins.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 266,
+    "itypeId": 1,
+    "name": "Biscuit",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

@@ -2448,6 +2448,23 @@ _ProtagonisteVeutEchangeBonjour2
 > chacun de son côté, et personne n'a besoin\
 > de se faire péter la face.
 
+_ProtagonistePasGrandSucces
+> Bon... C'est pas notre plus grand succès.\
+> \
+> Vous avez une idée pourquoi il pense que\
+> perdre le Bonjour ça va nous arrêter?
+
+_ProtagonisteSpeechHero1
+> En tout les cas ce fourbe va regretter de\
+> nous avoir laissé en vie!\
+> Maintenant je comprend ma faim cosmique!\
+> C'est un appel! Pour héroïser la situation!
+
+_ProtagonisteSpeechHero2
+> Allons camarades! Nous devons trouver les\
+> autres salutations avant qu'il ne soit trop\
+> tard!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3895,6 +3912,16 @@ _NarrateurBoiteTuilesFlechees
 _NarrateurGrosCylindreMetal
 > C't'un gros cylindre de métal, ça.
 
+_NarrateurBiscuit
+> Un biscuit!\
+> Terrible. Il est aux raisins.
+
+_NarrateurChevalierNoirPrendBonjour
+> Le Chevalier Noir prend le Bonjour!
+
+_NarrateurBonMatinSocleVide
+> Le socle vide du Bon Matin. Une vision d'horreur.
+
 ### Bucheron
 
 _BucheronOuaisNonTempleBonjour
@@ -4691,6 +4718,11 @@ _WwwelchiorMenaceChevalierNoir
 > Prince des Ténèbres, te fasses tâter de mon\
 > épée!
 
+_WwwelchiorOnEstRenduCamarade
+> Ah c'est pas pire, on est rendu des\
+> camarades... C'est une promotion ou une\
+> démotion depuis Personnage Secondaire?
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -5390,6 +5422,15 @@ _GabspartExpliqueQuEchangerCestUnPlanDeMarde
 > Déjà. Et aussi ça ne marchera pas. T'as pas\
 > entendu? Il veut toutes les salutations.\
 > Ça inclut Bon Matin.
+
+_GabspartPlusQueVocabulaireDansBonjour
+> Il a parlé du Temps, alors je m'imagine\
+> qu'il y a plus que du vocabulaire de scellé\
+> dans les Salutations...
+
+_GabspartCeciEstUneEmotion
+> Dans ce cas-ci ce serait plus une émotion\
+> je pense.
 
 ### Jacques
 
@@ -7555,3 +7596,28 @@ _ChevaliernoirMonologueBonMatin8
 _ChevaliernoirMonologueBonMatin9
 > Le Bonjour ET le Bon Matin seront à moi!\
 > Protagoniste de pacotille! En garde!
+
+_ChevaliernoirMonologueBonMatinWin
+> Gah!\
+> \
+> Impressionant...\
+> Ça mérite un biscuit je suppose.
+
+_ChevaliernoirMonologueBonMatinFuite
+> Vous pensez pouvoir m'échapper!?
+
+_ChevaliernoirMonologueBonMatinPerte
+> Hahaha! Misérables!
+
+_ChevaliernoirRire
+> HA HA HA HA!
+
+_ChevaliernoirCeciEstAMoi
+> Alors je vais prendre ce qui est à moi de\
+> droit.
+
+_ChevaliernoirCeciEstAMoi2
+> Et j'espère que vous avez compris de ne\
+> plus vous mettre sur mon chemin?\
+> \
+> Sans le Bonjour vous n'êtes plus rien!

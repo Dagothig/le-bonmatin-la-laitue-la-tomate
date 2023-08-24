@@ -7193,19 +7193,7 @@
                 {
                   "list": [
                     {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
                       "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
                       "indent": null
                     },
                     {
@@ -7223,37 +7211,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
                   "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
                   "indent": null
                 }
               ]
@@ -7303,7 +7261,7 @@
                   ],
                   "repeat": false,
                   "skippable": true,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -7401,7 +7359,7 @@
                   ],
                   "repeat": false,
                   "skippable": true,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -7499,7 +7457,7 @@
                   ],
                   "repeat": false,
                   "skippable": true,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -7651,6 +7609,13 @@
               "code": 251,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "wait_route ChevalierNoir"
+              ]
             },
             {
               "code": 205,
@@ -8820,13 +8785,294 @@
               "parameters": [
                 0,
                 26,
-                false,
+                true,
                 true
               ]
             },
             {
               "code": 601,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Damage2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 35,
+                      "indent": null
+                    },
+                    {
+                      "code": 13,
+                      "indent": null
+                    },
+                    {
+                      "code": 36,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Damage2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 35,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 13,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 36,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ChevaliernoirMonologueBonMatinWin"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Gah!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Impressionant..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Ça mérite un biscuit je suppose."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Item1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 1,
+              "parameters": [
+                32,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _NarrateurBiscuit"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Un biscuit!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Terrible. Il est aux raisins."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ChevaliernoirMonologueBonMatinFuite"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Vous pensez pouvoir m'échapper!?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
               "parameters": []
             },
             {
@@ -8840,12 +9086,1978 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ChevaliernoirMonologueBonMatinPerte"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Hahaha! Misérables!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
             },
             {
               "code": 604,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Slash1",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Slash1",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                -1,
+                173,
+                true
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Mort",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Damage3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "DamageUIUI",
+                        1
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Mort",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Damage3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "DamageUIUI",
+                    1
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Slash2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Slash2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                -1,
+                173,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Mort",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Damage3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "DamageUIUI",
+                        3
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Mort",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Damage3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "DamageUIUI",
+                    3
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Slash3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Slash3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                -1,
+                173,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Mort",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Damage3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "DamageUIUI",
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Mort",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Damage3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "DamageUIUI",
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Slash4",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Slash4",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gaboué"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                -1,
+                173,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gaboué"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Mort",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Damage3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "Damage3",
+                        1
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Mort",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Damage3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "Damage3",
+                    1
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ChevaliernoirRire"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "HA HA HA HA!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ChevaliernoirCeciEstAMoi"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Alors je vais prendre ce qui est à moi de"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "droit."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Buzzer2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurChevalierNoirPrendBonjour"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Le Chevalier Noir prend le Bonjour!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ChevaliernoirCeciEstAMoi2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Evil",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Et j'espère que vous avez compris de ne "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "plus vous mettre sur mon chemin?"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Sans le Bonjour vous n'êtes plus rien!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "temple_du_bonjour",
+                  "volume": 90,
+                  "pitch": 50,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                73,
+                73,
+                0,
+                0,
+                30
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "ActorUIUI",
+                        1
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "ActorUIUI",
+                    1
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Wwwelchior"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "ActorUIUI",
+                        7
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "ActorUIUI",
+                    7
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gabspart"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "ActorUIUI2",
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "ActorUIUI2",
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "event $charByName.Gaboué"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "Monster",
+                        2
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "Monster",
+                    2
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonistePasGrandSucces"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bon... C'est pas notre plus grand succès."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous avez une idée pourquoi il pense que"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "perdre le Bonjour ça va nous arrêter?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GabspartPlusQueVocabulaireDansBonjour"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Il a parlé du Temps, alors je m'imagine"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "qu'il y a plus que du vocabulaire de scellé"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "dans les Salutations..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteSpeechHero1"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "En tout les cas ce fourbe va regretter de"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "nous avoir laissé en vie!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Maintenant je comprend ma faim cosmique!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "C'est un appel! Pour héroïser la situation!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteSpeechHero2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Allons camarades! Nous devons trouver les"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "autres salutations avant qu'il ne soit trop"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "tard!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _WwwelchiorOnEstRenduCamarade"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ah c'est pas pire, on est rendu des "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "camarades... C'est une promotion ou une"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "démotion depuis Personnage Secondaire?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _GabspartCeciEstUneEmotion"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Dans ce cas-ci ce serait plus une émotion"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "je pense."
+              ]
+            },
+            {
+              "code": 251,
               "indent": 0,
               "parameters": []
             },
@@ -8873,6 +11085,86 @@
           "stepAnime": false,
           "through": false,
           "trigger": 3,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 73,
+            "variableValid": true,
+            "variableValue": 30
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Orb",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurBonMatinSocleVide"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Le socle vide du Bon Matin. Une vision d'horreur."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
           "walkAnime": false
         }
       ],
@@ -8930,8 +11222,19 @@
               ]
             },
             {
-              "code": 122,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                1,
+                73,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
               "parameters": [
                 73,
                 73,
@@ -8939,6 +11242,16 @@
                 0,
                 10
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -12242,7 +14555,7 @@
     },
     {
       "id": 26,
-      "name": "Chevalier Noir",
+      "name": "ChevalierNoir",
       "note": "<shadow>",
       "pages": [
         {
@@ -12291,6 +14604,57 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 73,
+            "variableValid": true,
+            "variableValue": 30
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,

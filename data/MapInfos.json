@@ -870,8 +870,8 @@
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
-    "scrollX": 517,
-    "scrollY": 1038
+    "scrollX": 491,
+    "scrollY": 306
   },
   {
     "id": 98,
@@ -924,8 +924,8 @@
     "name": "SHRINE_RDC",
     "order": 102,
     "parentId": 97,
-    "scrollX": 509,
-    "scrollY": 542
+    "scrollX": 501,
+    "scrollY": 594
   },
   {
     "id": 104,
