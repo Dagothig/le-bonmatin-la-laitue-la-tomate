@@ -4399,3 +4399,6 @@ _ChevaliernoirCeciEstAMoi2
 > plus vous mettre sur mon chemin?\
 > \
 > Sans le Bonjour vous n'êtes plus rien!
+
+_ChevaliernoirTaper
+> Ahha!

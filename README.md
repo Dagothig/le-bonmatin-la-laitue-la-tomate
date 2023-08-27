@@ -9,6 +9,8 @@
 * Barre hp enemis par dessus UI
 * Vérifier UIUI of Feu sur les plantes
 * Supporter d'afficher plusieurs types de dégâts en même temps
+* "Puzzle" de l'orgue dans le Temple du Bon Matin
+* Combat contre le Chevalier Noir (y crisse rien)
 
 ### Musique
 

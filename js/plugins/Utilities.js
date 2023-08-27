@@ -333,6 +333,7 @@ function eval_fn_expr(expr, args) {
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var actionsRegexp = /\<<aaa_actions ([\s\S]*?)\>>/;
     var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
+    var startRegexp = /\<<aaa_start ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
     var deathRegexp = /\<<aaa_death ([\s\S]*?)\>>/;
     var escapeRegexp = /\<<aaa_escape ([\s\S]*?)\>>/;
@@ -482,6 +483,8 @@ function eval_fn_expr(expr, args) {
                     skill._customAction = actionMatch && actionMatch[1] && eval_fn_expr(actionMatch[1], "target");
                     const performActionStartMatch = note.match(performActionStartRegexp);
                     skill._customPerformActionStart = performActionStartMatch && performActionStartMatch[1] && eval_fn_expr(performActionStartMatch[1], "battler");
+                    const startMatch = note.match(startRegexp);
+                    skill._customStart = startMatch && startMatch[1] && eval_fn_expr(startMatch[1]);
                 }
                 break;
             case $dataActors:
@@ -926,7 +929,9 @@ function eval_fn_expr(expr, args) {
                 const attackMotion = $dataSystem.attackMotions[wtypeId];
                 attackMotion && this._weaponSprite && this._weaponSprite.setup(attackMotion.weaponImageId);
             }
-            this.startMotion(motion);
+            if (this._actor) {
+                this.startMotion(motion);
+            }
         },
         function setOpacity(_, opacity){
           this.opacity = opacity;
@@ -2053,6 +2058,18 @@ function eval_fn_expr(expr, args) {
             }
         },
         function chargeTpByDamage() { });
+
+
+    override(BattleManager,
+        function startAction(startAction) {
+            const action = this._subject.currentAction();
+            let item, cur;
+            while (item !== (cur = action.item()) && cur._customStart) {
+                item = cur;
+                item._customStart.call(action);
+            }
+            startAction.call(this);
+        });
 })();
 
 // Audio ameliorations
@@ -4635,4 +4652,104 @@ Input.keyMapper[68] = "right"; // d
                 delete ev._startingIdx;
             }
         });
+})();
+
+// Smarty pants action
+(function () {
+    const EMPTY = [],
+        cc = [], buff = [], debuff = [], heal = [], fancy = [], attack = [];
+
+    override(Game_Action.prototype,
+        function kind() {
+            const item = this.item();
+            return item && item.meta && item.meta.kind;
+        })
+
+    override(Game_BattlerBase.prototype,
+        function smartyPantsAction(_, action) {
+            const enemies = this.opponentsUnit().aliveMembers();
+
+            cc.length = buff.length = debuff.length = attack.length = heal.length = fancy.length = 0;
+            action: for (const act of this._actionPatterns) {
+                for (const cond of act.conditions || EMPTY) {
+                    if (cond.stateId && !this.isStateAffected(cond.stateId))
+                        continue action;
+                    if (cond.actions) {
+                        const curIdx = this._actions.indexOf(action);
+                        const remaining = this._actions.length - curIdx - 1;
+                        if (remaining < cond.actions)
+                            continue action;
+                    }
+                }
+
+                const skill = $dataSkills[act.skillId];
+                if (!this.canUse(skill))
+                    continue;
+                switch (skill.meta && skill.meta.kind) {
+                    case "cc": cc.push(act); break;
+                    case "buff":
+                        const stateEffect = skill.effects.find(e =>
+                            e.code === Game_Action.EFFECT_ADD_STATE);
+                        if (!stateEffect || this.isStateAffected(stateEffect.dataId))
+                            break;
+                        buff.push(act);
+                        break;
+                    case "debuff": debuff.push(act); break;
+                    case "heal": heal.push(act); break;
+                    default: attack.push(act); break;
+                }
+                if (skill.tpCost)
+                    fancy.push(act);
+            }
+
+            let prioIdx;
+
+            (prioIdx = enemies.findIndex(e =>
+                e.canMove() &&
+                e._actions.find(a =>
+                    a.kind() === "cc"))) >= 0 ||
+            (prioIdx = enemies.findIndex(e =>
+                e.canMove() &&
+                e._actions.find(a =>
+                    a.kind() === "debuff"))) >= 0 ||
+            (prioIdx = enemies.findIndex(e =>
+                e.canMove() &&
+                e._actions.find(a =>
+                    a.kind() === "buff"))) >= 0;
+
+            let act;
+            prio: if (prioIdx >= 0) {
+                act = cc.random();
+                if (act)
+                    break prio;
+
+                act = debuff.random();
+                const stateEffect = act && $dataSkills[act.skillId].effects.find(e =>
+                    e.code === Game_Action.EFFECT_ADD_STATE);
+                const stateId = stateEffect && stateEffect.dataId;
+                if (stateId && !enemies[prioIdx].isStateAffected(stateId))
+                    break prio;
+
+                act = fancy.random() || attack.random();
+                if (act)
+                    break prio;
+            }
+            if (act && prioIdx >= 0) {
+                action.setSkill(act.skillId);
+                action.setTarget(prioIdx);
+                return;
+            }
+
+            if (act =
+                (Math.random() > (this.hp / this.mhp) &&
+                    heal.random()) ||
+                (Math.random() < 0.5 && buff.random()) ||
+                (Math.random() < 0.5 && fancy.random()) ||
+                attack.random()
+            ) {
+                action.setSkill(act.skillId);
+                action.decideRandomTarget();
+                return;
+            }
+        })
 })();
