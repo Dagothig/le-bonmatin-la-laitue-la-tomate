@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 106,
+  "editMapId": 98,
   "elements": [
     "",
     "Physical",
@@ -185,9 +185,9 @@
     },
     "characterIndex": 1,
     "characterName": "Vehicle",
-    "startMapId": 5,
-    "startX": 16,
-    "startY": 13
+    "startMapId": 98,
+    "startX": 3,
+    "startY": 5
   },
   "skillTypes": [
     "",
@@ -642,9 +642,10 @@
     "BONMATIN_SW_JAUNE",
     "BONMATIN_SW_BLEU",
     "BONMATIN_FOURNAISE",
-    "BONMATIN_CUTSCENE"
+    "BONMATIN_CUTSCENE",
+    "JESUS_CUTSCENE"
   ],
-  "versionId": 491348,
+  "versionId": 58732871,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

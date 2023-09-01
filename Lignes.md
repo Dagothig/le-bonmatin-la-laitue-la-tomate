@@ -2465,6 +2465,9 @@ _ProtagonisteSpeechHero2
 > autres salutations avant qu'il ne soit trop\
 > tard!
 
+_ProtagonisteCactus
+> Ouch! C'est piquant!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3921,6 +3924,41 @@ _NarrateurChevalierNoirPrendBonjour
 
 _NarrateurBonMatinSocleVide
 > Le socle vide du Bon Matin. Une vision d'horreur.
+
+_NarrateurAtreFoyer
+> Ah c't'un âtre de foyer, ça.
+
+_NarrateurBoiteChoses
+> Une boîte de choses. Quelles choses? Ces choses-là\
+> qu'on met dans des boîtes.
+
+_NarrateurPileBoisSecCharpenterieMenuiserie
+> Du bois coupé. Bien sec. Pratique pour faire de la\
+> menuiserie. Ou de la charpenterie.
+
+_NarrateurProjetMysterieux
+> Un projet difficile à comprendre. Ou une mauvaise idée.\
+> \
+> Certains diraient un ramassi de bois.
+
+_NarrateurCoffreRivetClous
+> Des clous et des rivets. Rien que vous devriez prendre\
+> avec vous.
+
+_NarrateurMurJesusCouteau
+> Sur le mur il y a des couteaux à bois - Leur apparence\
+> est trompeuse.\
+> Et par dessus des marteaux et des maillets.
+
+_NarrateurMurJesusCouteau2
+> Mais l'angle fait que ça vous ferait trop chier d'aller\
+> les voler, alors ce n'est pas une option.
+
+_NarrateurGogosses
+> Des gogosses.
+
+_NarrateurSalamiNutritionne
+> Du salami. À tous les coups ça nutritionne.
 
 ### Bucheron
 
@@ -7624,3 +7662,8 @@ _ChevaliernoirCeciEstAMoi2
 
 _ChevaliernoirTaper
 > Ahha!
+
+### Petiterochebrune
+
+_PetiterochebruneTODO
+> TODO
