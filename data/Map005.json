@@ -22947,11 +22947,29 @@
           "image": {
             "tileId": 0,
             "characterName": "Vehicle",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 1
           },
           "list": [
+            {
+              "code": 202,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                98,
+                3,
+                5
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                999
+              ]
+            },
             {
               "code": 0,
               "indent": 0,
@@ -22970,12 +22988,12 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 1,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         },
         {

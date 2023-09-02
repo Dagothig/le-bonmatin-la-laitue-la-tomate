@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 981,
-    "scrollY": 538
+    "scrollX": 1068,
+    "scrollY": 731
   },
   {
     "id": 6,
@@ -573,8 +573,8 @@
     "name": "PONT",
     "order": 75,
     "parentId": 0,
-    "scrollX": 654.6666666666666,
-    "scrollY": 728
+    "scrollX": 491,
+    "scrollY": 731
   },
   {
     "id": 65,
@@ -583,7 +583,7 @@
     "order": 77,
     "parentId": 0,
     "scrollX": 491,
-    "scrollY": 382
+    "scrollY": 538
   },
   {
     "id": 66,
@@ -879,8 +879,8 @@
     "name": "PORT_ISOLE",
     "order": 106,
     "parentId": 0,
-    "scrollX": 1278,
-    "scrollY": 309
+    "scrollX": 499,
+    "scrollY": 318
   },
   {
     "id": 99,
@@ -960,7 +960,7 @@
     "name": "CHEZ_JESUS",
     "order": 107,
     "parentId": 98,
-    "scrollX": 499,
+    "scrollX": 491,
     "scrollY": 314
   }
 ]

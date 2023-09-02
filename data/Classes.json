@@ -17,17 +17,17 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.98
+        "value": 0.95
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.02
+        "value": 0.05
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.05
       },
       {
         "code": 41,
@@ -979,7 +979,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.04
+        "value": 0.05
       },
       {
         "code": 41,
@@ -1921,7 +1921,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.04
+        "value": 0.05
       },
       {
         "code": 41,
@@ -2863,7 +2863,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.04
+        "value": 0.05
       },
       {
         "code": 41,
@@ -3740,7 +3740,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.04
+        "value": 0.05
       },
       {
         "code": 41,

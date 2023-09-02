@@ -79,7 +79,7 @@ Rat
 > Rat
 
 Cat
-> Cat
+> 
 
 Non
 > Non.
@@ -2467,6 +2467,9 @@ _ProtagonisteSpeechHero2
 
 _ProtagonisteCactus
 > Ouch! C'est piquant!
+
+_ProtagonisteCestSuspicieux
+> ... C'est suspicieux quand même.
 
 ### Rip
 
@@ -7662,6 +7665,18 @@ _ChevaliernoirCeciEstAMoi2
 
 _ChevaliernoirTaper
 > Ahha!
+
+_ChevaliernoirProtaKill
+> Ha! Protagoniste mon cul!
+
+_ChevaliernoirWwwelchiorKill
+> Ha! Tâtage d'épée mon cul!
+
+_ChevaliernoirGabspartKill
+> Ha! Mon cul vous pète!
+
+_ChevaliernoirGaboueKill
+> Pardonnes-moi Gaboué...
 
 ### Petiterochebrune
 
