@@ -1,6 +1,6 @@
 "use strict";
 
-const now = new Date();
+const timestamps = [["Init", new Date()]];
 const fs = require("fs/promises");
 const os = require("os");
 const { spawnSync } = require("child_process");
@@ -135,6 +135,8 @@ const sectionsByNameToLinesMD = sectionsByName =>
     };
 
     const dataFiles = await $dataFiles;
+    timestamps.push(["Lire les json", new Date()]);
+
     const walkthroughText = dataFiles.find(([dataFile]) => dataFile === "Walkthrough.json")?.[1] ?? "null";
     for (const [dataFile, text] of dataFiles) {
         const json = JSON.parse(text);
@@ -203,6 +205,8 @@ const sectionsByNameToLinesMD = sectionsByName =>
         }
     }
 
+    timestamps.push(["Traiter les json", new Date()]);
+
     // Establish connections
     const toCheck = Object.keys(mapInfos).map(x => Number.parseInt(x));
     while (toCheck.length) {
@@ -240,8 +244,11 @@ const sectionsByNameToLinesMD = sectionsByName =>
     }
     const newWalkthroughText = JSON.stringify(walkthrough, null, 2).replace(/\n/g, os.EOL);
     if (walkthroughText !== newWalkthroughText) {
+        console.log("Updating walkthrough");
         await fs.writeFile("data/Walkthrough.json", newWalkthroughText);
     }
+
+    timestamps.push(["Calculer le walkthrough", new Date()]);
 
     const missingAudioFiles = [];
     const obsoleteAudioFiles = [];
@@ -272,6 +279,8 @@ const sectionsByNameToLinesMD = sectionsByName =>
         }
     }
 
+    timestamps.push(["Compter et catégoriser les lignes", new Date()]);
+
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
     if (knownLinesText !== newKnownLinesText) {
         console.log("Writing lines");
@@ -288,8 +297,16 @@ const sectionsByNameToLinesMD = sectionsByName =>
         console.log("Generated " + file);
         console.log("  > " + content);
         const fp = "./audio/se/" + file + ".ogg";
-        const espeak = spawnSync("espeak", ["-v", "fr-fr", "-w", "tmp.wav", content.join(" ")]);
-        const ffmpeg = spawnSync("ffmpeg", ["-i", "tmp.wav", "-y", fp]);
+        const espeak = spawnSync(
+            "espeak",
+            ["-v", "fr-fr", "-w", "tmp.wav", content.join(" ")],
+            { stdio: "inherit" });
+        await new Promise(res => setTimeout(res, 10));
+        const ffmpeg = spawnSync(
+            "ffmpeg",
+            ["-i", "tmp.wav", "-y", fp, "-v", "error"],
+            { stdio: "inherit" });
+        await new Promise(res => setTimeout(res, 10));
     }
 
     for (const [file] of obsoleteAudioFiles) {
@@ -297,8 +314,12 @@ const sectionsByNameToLinesMD = sectionsByName =>
         await fs.unlink("audio/se/" + file + ".ogg");
     }
 
+    timestamps.push(["Écrire les fichiers TODO et audio", new Date()]);
+
+    console.log("Stats:");
+
     console.log(
-        "Grosso merdo",
+        "  Grosso merdo",
         Object
         .values(knownLinesByName)
         .flatMap(byLine =>
@@ -307,5 +328,14 @@ const sectionsByNameToLinesMD = sectionsByName =>
         .split(/[,\.' ]+/)
         .filter(s => s.match(/.*[A-Za-z].*/))
         .length,
-        "mots en " + (new Date() - now) + "ms");
+        "mots");
+
+    console.log(
+        timestamps
+        .map(([text, time], i) =>
+            i > 0 && `  ${text} en ${time - timestamps[i - 1][1]}ms`)
+        .filter(s => s)
+        .join("\n"));
+
+    console.log();
 })();

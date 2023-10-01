@@ -6,11 +6,11 @@
   * Roches & dialogues manquants
 * Updater Oracle
 * Hot reload
-* Barre hp enemis par dessus UI
+* Barre hp enemis par dessus UI (?)
 * Vérifier UIUI of Feu sur les plantes
 * Supporter d'afficher plusieurs types de dégâts en même temps
 * "Puzzle" de l'orgue dans le Temple du Bon Matin
-* Combat contre le Chevalier Noir (y crisse rien)
+* Combat contre le Chevalier Noir (iiish)
 
 ### Musique
 

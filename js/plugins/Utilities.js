@@ -3923,6 +3923,12 @@ Input.keyMapper[68] = "right"; // d
 // Event contextual plugin commands
 (function () {
     window.$charByName = {};
+    window.$charSw = {
+        Gaboué: "MAP_GABOUE",
+        Wwwelchior: "MAP_WWWELCHIOR",
+        Gabspart: "MAP_GABSPART",
+        Géologue: "MAP_GEOLOGUE",
+    };
 
     const eventRegexp = /event (.*)/;
     const choiceRegexp = /choice (\d+) (.*)/;

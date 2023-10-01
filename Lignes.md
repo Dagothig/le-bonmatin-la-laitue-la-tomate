@@ -2471,6 +2471,42 @@ _ProtagonisteCactus
 _ProtagonisteCestSuspicieux
 > ... C'est suspicieux quand même.
 
+_ProtagonisteJesusHermite1
+> ... Bonjour!? Vous avez dit bonjour!\
+> \
+> Bon matin?
+
+_ProtagonisteJesusHermite2
+> Non mais vous comprenez pas! Bon c'est sur\
+> vous êtes un hermite... Même à ça!
+
+_ProtagonisteJesusHermite3
+> Vous êtes la première personne autre que\
+> nous quatre qui ne semble pas affecté par\
+> le fait qu'on a retiré le Bonjour du Temple.
+
+_ProtagonisteJesusHermite4
+> Ah c'est bien une réponse d'hermite...\
+> Genre j'ai une seule question pis c'est\
+> tout - C'est quoi l'histoire des\
+> salutations?
+
+_ProtagonisteJesusHermite5
+> Ok...
+
+_ProtagonisteJesusHermite6
+> À plus tard?
+
+_ProtagonisteIntroShackJesus1
+> Eh beh. Y'a quelqu'un qui vit dans le coin?
+
+_ProtagonisteIntroShackJesus2
+> Vraiment? C'est pas mal sinistre quand tu\
+> fais ça.
+
+_ProtagonisteIntroShackJesus3
+> C'est pire!
+
 ### Rip
 
 _RipFinsDePhrases
@@ -4764,6 +4800,13 @@ _WwwelchiorOnEstRenduCamarade
 > camarades... C'est une promotion ou une\
 > démotion depuis Personnage Secondaire?
 
+_WwwelchiorIlAPasDitTenebres
+> Vous noterez qu'il n'a pas dit les\
+> Ténèbres!
+
+_WwwelchiorIntroShackJesus1
+> Bah oui, c'est la maison de notre a-\.\.\^
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -5472,6 +5515,15 @@ _GabspartPlusQueVocabulaireDansBonjour
 _GabspartCeciEstUneEmotion
 > Dans ce cas-ci ce serait plus une émotion\
 > je pense.
+
+_GabspartIntroShackJesus1
+> Tuht-tuht!\
+> \
+> Faut pas spoiler Personne Véritable.
+
+_GabspartIntroShackJesus2
+> Dans ce cas-ci pas tant. Enfin, pas\
+> directement.
 
 ### Jacques
 
@@ -7682,3 +7734,28 @@ _ChevaliernoirGaboueKill
 
 _PetiterochebruneTODO
 > TODO
+
+### Jesus
+
+_JesusHermite1
+> Bonjour. Ou est-ce le matin? J'ai de la\
+> misère à dire des fois...
+
+_JesusHermite2
+> ... Bon matin.\
+> C'est un peu drôle d'insister comme ça.
+
+_JesusHermite3
+> Oh. Vous avez fait ça?
+
+_JesusHermite4
+> Rendez-vous à l'est d'ici et investiguez le\
+> Temple là-bas. Vous y trouverez vos\
+> réponses.
+
+_JesusHermite5
+> \
+> Une noirceur s'abat sur le Monde.
+
+_JesusHermite6
+> ...
