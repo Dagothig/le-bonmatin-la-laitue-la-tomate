@@ -3376,6 +3376,8 @@ Input.keyMapper[68] = "right"; // d
             this.initialize.apply(this, arguments);
         }
 
+        window.Window_Checkpoints = Window_Checkpoints;
+
         Window_Checkpoints.prototype = Object.create(Window_Command.prototype);
         Window_Checkpoints.prototype.constructor = Window_Checkpoints;
 
@@ -4759,3 +4761,223 @@ Input.keyMapper[68] = "right"; // d
             }
         })
 })();
+
+// Organ minigame
+{
+    function Scene_Organ() {
+        this.initialize.apply(this, arguments);
+    }
+
+    window.Scene_Organ = Scene_Organ;
+
+    Scene_Organ.prototype = Object.create(Scene_MenuBase.prototype);
+    Scene_Organ.prototype.constructor = Scene_Organ;
+
+    override(Scene_Organ.prototype,
+        function create(create) {
+            create.call(this);
+
+            this._organWindow = new Window_Organ(0, 0, result => {
+                $gsw.ORGAN_SUCCESS = !!result;
+                this.popScene();
+            });
+            this.addWindow(this._organWindow);
+        });
+
+    function Window_Organ() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_Organ.prototype = Object.create(Window_Base.prototype);
+    Window_Organ.prototype.constructor = Window_Organ;
+
+    const WHITE = 0, BLACK = 2, PRESSED_MOD = 1;
+
+    const PICTURE_NAMES = [
+        "NoteBlanche",
+        "NoteBlanchePressee",
+        "NoteNoire",
+        "NoteNoirePressee"
+    ];
+
+    const OCTAVE_NOTES = [
+        WHITE, BLACK, WHITE, BLACK, WHITE,
+        WHITE, BLACK, WHITE, BLACK, WHITE, BLACK, WHITE];
+
+    const NOTE_WIDTH = 36;
+    const PITCH_MULT = Math.pow(2, 1/12);
+
+    const NOTES = [];
+    let x = 0;
+    let prev_pitch = Math.pow(1/2, 1.5);
+    for (let i = 0; i < 36; i++) {
+        const color = OCTAVE_NOTES[(i + 5) % OCTAVE_NOTES.length];
+        if (color === WHITE) {
+            NOTES[i] = [color, x, 30, i, prev_pitch];
+            x += NOTE_WIDTH;
+        } else {
+            NOTES[i] = [color, x - NOTE_WIDTH / 2, 0, i, prev_pitch];
+        }
+        prev_pitch *= PITCH_MULT;
+    }
+
+    const NOTES_WIDTH = x;
+
+    NOTES.sort((a, b) => a[0] - b[0]);
+
+    const code = [2, 4, 6, 7, 4, 0, 2];
+
+    override(TouchInput,
+        function _onMouseMove(_onMouseMove, event) {
+            var x = Graphics.pageToCanvasX(event.pageX);
+            var y = Graphics.pageToCanvasY(event.pageY);
+            this._onMove(x, y);
+        });
+
+    override(Window_Organ.prototype,
+        function initialize(initialize, x, y, onFinished) {
+            initialize.call(this,
+                x || 0,  y || 0,
+                Graphics.boxWidth,
+                Graphics.boxHeight);
+            this.opacity = 0;
+
+            this.images = PICTURE_NAMES.map(name =>
+                ImageManager.loadPicture(name));
+            this.fingerUp = ImageManager.loadPicture("DoigtLeve");
+            this.fingerDown = ImageManager.loadPicture("DoigtBaisse");
+            this.audioBuffer = AudioManager.createBuffer("se", "TO");
+            this.audioNote = null;
+
+            this.fingerPosition = Math.floor(NOTES.length / 2);
+            this.pressed = false;
+            this.codeIndex = 0;
+
+            this.notesOffsetX = this.width / 2 - NOTES_WIDTH / 2 + NOTE_WIDTH / 2;
+            this.notesOffsetY = this.height - 170;
+            this.fingerOffsetX = 0;
+            this.fingerOffsetY = 16;
+            this.globalOffsetY = 300;
+            this.globalOffsetYTarget = 0;
+            this.onFinished = onFinished;
+        },
+        function standardPadding() {
+            return 0;
+        },
+        function update(update) {
+            update.call(this);
+
+            if (this.globalOffsetY > this.globalOffsetYTarget) {
+                this.globalOffsetY -= 30;
+            } else if (this.globalOffsetY < this.globalOffsetYTarget) {
+                this.globalOffsetY += 30;
+            }
+
+            if (this.globalOffsetYTarget && this.globalOffsetY === this.globalOffsetYTarget) {
+                this.audioBuffer.stop();
+                this.onFinished(this.success);
+                return;
+            }
+
+            if (Input.isRepeated("right")) {
+                this.fingerPosition = Math.min(this.fingerPosition + 1, NOTES.length - 1);
+            }
+            if (Input.isRepeated("left")) {
+                this.fingerPosition = Math.max(this.fingerPosition - 1, 0);
+            }
+            if (Input.isRepeated("cancel") || TouchInput.isCancelled()) {
+                this.globalOffsetYTarget = 300;
+                return;
+            }
+            this.pressed = Input.isPressed("ok");
+
+            let touchPressAttempt = TouchInput.isPressed();
+            const touchX = this.canvasToLocalX(TouchInput.x) - this.padding;
+            const touchY = this.canvasToLocalY(TouchInput.y) - this.padding;
+            for (let i = NOTES.length - 1; i >= 0; i--) {
+                const note = NOTES[i];
+                const imgIdx = note[0], x = note[1], y = note[2], pos = note[3];
+                let img = this.images[imgIdx];
+                const drawX = x + this.notesOffsetX - img.width / 2;
+                const drawY = y + this.notesOffsetY + this.globalOffsetY - img.height / 2;
+                if (drawX <= touchX && touchX <= drawX + img.width &&
+                    drawY <= touchY && touchY <= drawY + img.height) {
+                    this.fingerPosition = pos;
+                    this.pressed = this.pressed || touchPressAttempt;
+                    break;
+                }
+            }
+
+            this.contents.clear();
+
+            let fingerNote = null;
+            for (let i = 0; i < NOTES.length; i++) {
+                const note = NOTES[i];
+                const imgIdx = note[0], x = note[1], y = note[2], pos = note[3];
+                let img = this.images[imgIdx];
+                const drawX = x + this.notesOffsetX - img.width / 2;
+                const drawY = y + this.notesOffsetY + this.globalOffsetY - img.height / 2;
+
+                const modifier = pos === this.fingerPosition && this.pressed ? PRESSED_MOD : 0;
+                if (pos === this.fingerPosition) {
+                    fingerNote = note;
+                }
+                img = this.images[imgIdx + modifier];
+                this.contents.blt(
+                    img,
+                    0, 0,
+                    img.width, img.height,
+                    drawX,
+                    drawY);
+            }
+
+            if (fingerNote) {
+                const fingerImg = this.pressed ? this.fingerDown : this.fingerUp;
+                let fingerX = fingerNote[1];
+                let fingerY = fingerNote[2];
+                this.contents.blt(
+                    fingerImg,
+                    0, 0,
+                    fingerImg.width, fingerImg.height,
+                    fingerX + this.notesOffsetX + this.fingerOffsetX - fingerImg.width / 2,
+                    fingerY + this.notesOffsetY + this.fingerOffsetY + this.globalOffsetY - fingerImg.height / 2);
+            }
+
+            if (this.pressed && fingerNote && this.audioNote !== fingerNote) {
+                if (this.audioNote !== null) {
+                    AudioManager.playSe({
+                        name: "DO",
+                        volume: 90,
+                        pitch: this.audioNote[4] * 100
+                    });
+                }
+                this.audioNote = fingerNote;
+                AudioManager.updateSeParameters(this.audioBuffer, {
+                    name: "TO",
+                    volume: 90,
+                    pitch: this.audioNote[4] * 100
+                });
+                this.audioBuffer.play(true);
+                if (this.audioNote[3] % 12 === code[this.codeIndex]) {
+                    this.codeIndex++;
+                    if (this.codeIndex === code.length) {
+                        this.success = true;
+                        this.globalOffsetYTarget = 300;
+                    }
+                } else {
+                    this.codeIndex = 0;
+                }
+            }
+            if (!this.pressed && this.audioNote !== null) {
+                AudioManager.playSe({
+                    name: "DO",
+                    volume: 90,
+                    pitch: this.audioNote[4] * 100
+                });
+                this.audioBuffer.stop();
+                this.audioNote = null;
+            }
+        },
+        function refresh() {
+        });
+}

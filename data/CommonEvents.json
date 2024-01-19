@@ -13314,15 +13314,81 @@
     "id": 35,
     "list": [
       {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          1,
+          "PartitionMatinale",
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          255,
+          0,
+          15,
+          true
+        ]
+      },
+      {
         "code": 250,
         "indent": 0,
         "parameters": [
           {
-            "name": "TODO",
+            "name": "Stare",
             "volume": 90,
             "pitch": 100,
             "pan": 0
           }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 0,
+        "parameters": [
+          1,
+          0,
+          1,
+          0,
+          408,
+          312,
+          100,
+          100,
+          0,
+          0,
+          15,
+          true
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          1
         ]
       },
       {

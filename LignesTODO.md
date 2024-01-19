@@ -773,6 +773,10 @@ _NarrateurGogosses
 _NarrateurSalamiNutritionne
 > Du salami. À tous les coups ça nutritionne.
 
+_NarrateurCureAvaitLaCle
+> Une petite voix dans votre tête vous dit que ça serait\
+> probablement le curé qui avait la clé.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2054,6 +2058,9 @@ _ProtagonisteIntroShackJesus2
 _ProtagonisteIntroShackJesus3
 > C'est pire!
 
+_ProtagonisteQuelHorribleSon
+> Quel horrible son...
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2464,6 +2471,9 @@ _GabspartIntroShackJesus1
 _GabspartIntroShackJesus2
 > Dans ce cas-ci pas tant. Enfin, pas\
 > directement.
+
+_GabspartNonMaisAttendsUnPeu
+> Non mais attend un peu...
 
 ### Wwwelchior
 
