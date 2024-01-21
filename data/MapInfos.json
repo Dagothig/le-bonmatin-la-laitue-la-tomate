@@ -6,8 +6,8 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 923,
-    "scrollY": 1277
+    "scrollX": 924,
+    "scrollY": 1280
   },
   {
     "id": 2,
@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 1036,
-    "scrollY": 971
+    "scrollX": 846,
+    "scrollY": 911
   },
   {
     "id": 6,
@@ -56,12 +56,12 @@
   },
   {
     "id": 7,
-    "expanded": true,
+    "expanded": false,
     "name": "FORET_NEIGE",
     "order": 28,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 477
   },
   {
     "id": 8,
@@ -574,7 +574,7 @@
     "order": 75,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 784
+    "scrollY": 771
   },
   {
     "id": 65,
@@ -583,7 +583,7 @@
     "order": 77,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 464
+    "scrollY": 477
   },
   {
     "id": 66,
@@ -592,7 +592,7 @@
     "order": 86,
     "parentId": 0,
     "scrollX": 1101,
-    "scrollY": 456
+    "scrollY": 469
   },
   {
     "id": 67,
@@ -866,12 +866,12 @@
   },
   {
     "id": 97,
-    "expanded": true,
+    "expanded": false,
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 866.5
+    "scrollY": 867
   },
   {
     "id": 98,
@@ -925,7 +925,7 @@
     "order": 102,
     "parentId": 97,
     "scrollX": 811,
-    "scrollY": 461
+    "scrollY": 469
   },
   {
     "id": 104,
@@ -942,8 +942,8 @@
     "name": "SHRINE_B1",
     "order": 105,
     "parentId": 97,
-    "scrollX": 498,
-    "scrollY": 306
+    "scrollX": 811,
+    "scrollY": 469
   },
   {
     "id": 106,
@@ -960,7 +960,34 @@
     "name": "CHEZ_JESUS",
     "order": 107,
     "parentId": 98,
-    "scrollX": 499,
-    "scrollY": 314
+    "scrollX": 819,
+    "scrollY": 477
+  },
+  {
+    "id": 108,
+    "expanded": false,
+    "name": "GROTTE",
+    "order": 108,
+    "parentId": 0,
+    "scrollX": 819,
+    "scrollY": 477
+  },
+  {
+    "id": 109,
+    "expanded": false,
+    "name": "TEMPLE_DU_BONSOIR",
+    "order": 109,
+    "parentId": 0,
+    "scrollX": 819,
+    "scrollY": 477
+  },
+  {
+    "id": 110,
+    "expanded": false,
+    "name": "TEMPLE_DU_BONNUIT",
+    "order": 110,
+    "parentId": 0,
+    "scrollX": 819,
+    "scrollY": 477
   }
 ]

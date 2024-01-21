@@ -4981,3 +4981,27 @@ Input.keyMapper[68] = "right"; // d
         function refresh() {
         });
 }
+
+// Ships are stepping
+{
+    override(Game_Vehicle.prototype,
+        function initMoveSpeed(initMoveSpeed) {
+            initMoveSpeed.call(this);
+            if (this.isBoat() || this.isShip()) {
+                this.setStepAnime(true);
+            }
+        },
+        function getOff(getOff) {
+            getOff.call(this);
+            if (this.isBoat() || this.isShip()) {
+                this.setStepAnime(true);
+            }
+        },
+        function updateAnimationCount(updateAnimationCount) {
+            if (!this.isMoving() && (this.isBoat() || this.isShip())) {
+                this._animationCount += 0.25;
+            } else {
+                updateAnimationCount.call(this);
+            }
+        });
+}

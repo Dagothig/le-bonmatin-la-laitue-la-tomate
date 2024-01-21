@@ -2204,7 +2204,7 @@ _ProtagonisteSeulementIciPourWohJvousPete
 > celle de votre face!
 
 _ProtagonisteAlloConfus
-> Oui ... Allo?
+> ... Allo?
 
 _ProtagonisteCossinRegardeJaiTrouve
 > Cossin Lette! Regardez ce que nous avons\
@@ -2509,6 +2509,39 @@ _ProtagonisteIntroShackJesus3
 
 _ProtagonisteQuelHorribleSon
 > Quel horrible son...
+
+_ProtagonisteAuraitVouluEtreAverti
+> Parlant de danger, ça aurait été apprécié\
+> que vous nous avertissiez qu'on serait\
+> attaqué par le Chevalier Noir!
+
+_ProtagonisteDecuDesBruns
+> Donc vous êtes Brun vous aussi...\
+> Et quatres vétérans du ... Brun(?) n'ont\
+> pas pu l'arrêter?
+
+_ProtagonisteTskTskTsk
+> Tsk tsk tsk.
+
+_ProtagonisteVousAuraiezPuMexpliquerJesus
+> Et vous ne m'avez rien dit? Même quand on\
+> est arrivé ici vous avez attendu pour\
+> m'indiquer qu'on arrivait chez votre ami?
+
+_ProtagonistePisLaVousGlandez
+> Donc c'est quoi, vous avez fui puis vous\
+> attendez patiemment la fin du Temps?\
+> Maintenant qu'on est là vous allez venir\
+> nous aider?
+
+_ProtagonisteLeRRRR
+> Le RRRR?
+
+_ProtagonisteVaNecessiterGeologue
+> Oh... Va falloir aller récupérer la\
+> Géologue alors.\
+> À tous les coups elle est restée dans\
+> l'entrée du passage.
 
 ### Rip
 
@@ -4814,6 +4847,18 @@ _WwwelchiorIlAPasDitTenebres
 _WwwelchiorIntroShackJesus1
 > Bah oui, c'est la maison de notre a-\.\.\^
 
+_WwwelchiorExpliqueQuePartiSidequester
+> Moi et Gabspart on n'a jamais été très bon\
+> à patienter dans un coin, alors on était\
+> parti au nord du temple.\
+> Il y a une grotte digne d'investigation.
+
+_WwwelchiorExpliqueLeRRRR
+> Le Royaume Rétabli des Roches\
+> Récalcitrantes.\
+> \
+> On est passé par là sur le chemin.
+
 ### Gabspart
 
 _GabspartTrouveCommentPasserPorte
@@ -5534,6 +5579,12 @@ _GabspartIntroShackJesus2
 
 _GabspartNonMaisAttendsUnPeu
 > Non mais attend un peu...
+
+_GabspartMaisLeDrama
+> Que veux-tu, ça fait plus dramatique qu'on\
+> ait rien dit.\
+> Et puis en plus ça aurait rien changé.\
+> Les Textes Sacrés ça niaise pas.
 
 ### Jacques
 
@@ -7769,3 +7820,94 @@ _JesusHermite5
 
 _JesusHermite6
 > ...
+
+_JesusVoisDeuil
+> Je vois dans vos yeux le deuil.\
+> \
+> Donc vous connaissez à présent le grand\
+> danger auquel le Monde fait face.
+
+_JesusEtaitLaaaa
+> Voyez-vous.\
+> \
+> J'étais là quand le Bon Matin fut dérobé.
+
+_JesusCestPireQuilPensait
+> Oh. C'est pire que je pensais...
+
+_JesusChevalierNoirConnaitProtagonisme
+> Ça veut dire qu'il connait votre\
+> protagonisme.\
+> Vous n'avez pas beaucoup de temps et de\
+> latitude, donc.
+
+_JesusNeVeutPasSeFaireArreter
+> Alors ne m'arretez pas trop. Je dois vous\
+> compter ce qui s'est passé.
+
+_JesusEtaitProtagonisteBrun
+> Vous devez comprendre, qu'avant qu'on se\
+> retrouve pris dans ce Monde, j'étais le\
+> Protagoniste du Brun.
+
+_JesusAChercheIssue
+> Lorsque nous nous sommes retrouvés ici,\
+> moi, Balthathig, Gabspart et Wwwelchior\
+> avons parcouru les quatres coins du Monde\
+> en quête d'une issue...
+
+_JesusAllaitSandwicherBonMatin
+> Mais ultimement nous n'avons rien trouvé.\
+> J'ai finis par m'installer ici et je\
+> visitais souvent le temple du Bon Matin.\
+> Les sandwiches y étaient excellentes.
+
+_JesusCarnageDuTemple
+> Lorsque le Chevalier Noir vint au temple,\
+> le carnage fut immense.\
+> Une Noirceur si grande que même les eaux\
+> devinrent âpres et malodorantes.
+
+_JesusBalthathigALEnchanteur
+> Et Balthathig était en visite chez\
+> l'enchanteur.\
+> \
+> Incorrigible...
+
+_JesusEstFigurant
+> Enfin, j'ai bien tenté de re-protagoniser\
+> la situation, mais il semblerait que dans\
+> ce Monde je ne suis qu'un figurant...
+
+_JesusEstFigurant2
+> Je n'ai même pas la force de vous\
+> accompagner.\
+> Je peux vous offrir ce bateau... mais c'est\
+> tout.
+
+_JesusEtaitCharpentier
+> Avant de devenir Protagoniste, j'étais\
+> charpentier.\
+> Gabspart m'a averti quand j'ai emménagé\
+> que ça prenait un bateau.
+
+_JesusEtaitCharpentier2
+> Il avait refusé de me dire pourquoi... mais\
+> la raison est claire.
+
+_JesusAllezFouillerBonsoir
+> Plus loin de l'autre côté de l'Océan, il y\
+> le temple du Bonsoir. Vous devriez\
+> l'investiguer.
+
+_JesusAllezFouillerBonnuit
+> Pour ce qui est du Temple du Bonne Nuit...\
+> La légende veut qu'il se trouve sous terre.\
+> Peut-être que le RRRR saurait quelque\
+> chose.
+
+_JesusBonneChance
+> Gaboué, Gabspart, Wwwelchior...\
+> Personne Véritable.\
+> \
+> Bonne chance.
