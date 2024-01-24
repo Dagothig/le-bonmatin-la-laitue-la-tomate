@@ -19944,7 +19944,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 4,
           "moveRoute": {
             "list": [
               {
@@ -19956,7 +19956,7 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 2,
           "moveType": 1,
           "priorityType": 1,
           "stepAnime": false,

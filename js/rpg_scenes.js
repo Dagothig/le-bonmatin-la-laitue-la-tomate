@@ -2681,7 +2681,7 @@ Scene_Gameover.prototype.createBackground = function() {
 };
 
 Scene_Gameover.prototype.isTriggered = function() {
-    return Input.isTriggered('ok') || TouchInput.isTriggered();
+    return Input.isTriggered('ok') || TouchInput.isTriggered() || !AudioManager._meBuffer;
 };
 
 Scene_Gameover.prototype.gotoTitle = function() {

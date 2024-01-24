@@ -14456,20 +14456,41 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Une boîte de livre. Rien de bien différent que ce qu'il"
+                "Une boîte de livres."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "y a dans les bibliothèques."
+                "Il y a surtout des autobiographies du Grand Prophète "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Le-Matin-C'est-Bien-Mais-Deux-Minutes-Jme-Fais-Un-Café."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Ses amis l'appelaient LMCBMDMJFUC."
               ]
             },
             {
               "code": 251,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                38
+              ]
             },
             {
               "code": 0,
@@ -14652,7 +14673,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurTitresLivresMatin"
+                "se _NarrateurBibliothequeTuilesMagicoportantes"
               ]
             },
             {
@@ -14676,34 +14697,27 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le secret d'une bonne journée\""
+                "\"Installation simple de tuiles magico-portantes\""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le Matin et vous\""
+                "\"Comment convaincre un moine que les tuiles magico-"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"À quelle heure se coucher pour optimiser\""
+                "portantes du temple sont nécessaires\""
               ]
             },
             {
               "code": 251,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                38
-              ]
             },
             {
               "code": 0,
@@ -14769,7 +14783,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurTitresLivresMatin"
+                "se _NarrateurPamphletsMatinaux1"
               ]
             },
             {
@@ -14786,28 +14800,112 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Vous survolez rapidement les titres:"
+                "La bibliothèque semble complètement remplie de "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le secret d'une bonne journée\""
+                "pamphlets de messes matinales."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Paper",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurPamphletsMatinaux2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le Matin et vous\""
+                "Ah. C'est des recettes pour cuisiner le Bon Matin."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteVeutPasRecetteBMAlt"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"À quelle heure se coucher pour optimiser\""
+                "Bof, ça n'a pas vraiment d'intérêt..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Il y a le Bon Matin Laitue Tomate, et le "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "reste c'est juste une perte d'un Bon Matin."
               ]
             },
             {

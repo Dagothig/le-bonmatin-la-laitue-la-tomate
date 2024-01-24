@@ -5005,3 +5005,11 @@ Input.keyMapper[68] = "right"; // d
             }
         });
 }
+
+// Gameover
+{
+    override(Scene_Gameover.prototype,
+        function isTriggered(isTriggered) {
+            return isTriggered.call(this) || !AudioManager._meBuffer;
+        })
+}

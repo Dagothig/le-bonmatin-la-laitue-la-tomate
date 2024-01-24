@@ -148,7 +148,7 @@
   ],
   "gameTitle": "le BON MATIN, la LAITUE, et la TOMATE",
   "gameoverMe": {
-    "name": "",
+    "name": "plezir",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -648,7 +648,7 @@
     "BONMATIN_CUTSCENE",
     "JESUS_CUTSCENE"
   ],
-  "versionId": 9512320,
+  "versionId": 31894029,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

@@ -3170,7 +3170,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurTitresLivresMatin"
+                "se _NarrateurLivresNonMatinaux"
               ]
             },
             {
@@ -3187,28 +3187,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Vous survolez rapidement les titres:"
+                "De la lecture non-matinale complètement dénuée "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le secret d'une bonne journée\""
+                "d'intérêt."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le Matin et vous\""
+                "Le mieux que vous trouviez c'est un livre titré"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"À quelle heure se coucher pour optimiser\""
+                "\"Le Brunch: Comment décréter que c'est encore le matin\""
               ]
             },
             {

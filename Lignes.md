@@ -2543,6 +2543,12 @@ _ProtagonisteVaNecessiterGeologue
 > À tous les coups elle est restée dans\
 > l'entrée du passage.
 
+_ProtagonisteVeutPasRecetteBMAlt
+> Bof, ça n'a pas vraiment d'intérêt...\
+> \
+> Il y a le Bon Matin Laitue Tomate, et le\
+> reste c'est juste une perte d'un Bon Matin.
+
 ### Rip
 
 _RipFinsDePhrases
@@ -3949,8 +3955,10 @@ _NarrateurTitresLivresMatin
 > "À quelle heure se coucher pour optimiser"
 
 _NarrateurBoiteLivresMatin
-> Une boîte de livre. Rien de bien différent que ce qu'il\
-> y a dans les bibliothèques.
+> Une boîte de livres.\
+> Il y a surtout des autobiographies du Grand Prophète\
+> Le-Matin-C'est-Bien-Mais-Deux-Minutes-Jme-Fais-Un-Café.\
+> Ses amis l'appelaient LMCBMDMJFUC.
 
 _NarrateurVictuaillesRancies
 > Vous seriez vraiment tenté de prendre des victuailles,\
@@ -4038,6 +4046,55 @@ _NarrateurSalamiNutritionne
 _NarrateurCureAvaitLaCle
 > Une petite voix dans votre tête vous dit que ça serait\
 > probablement le curé qui avait la clé.
+
+_NarrateurBibliothequeTuilesMagicoportantes
+> Vous survolez rapidement les titres:\
+> "Installation simple de tuiles magico-portantes"\
+> "Comment convaincre un moine que les tuiles magico-\
+> portantes du temple sont nécessaires"
+
+_NarrateurPamphletsMatinaux1
+> La bibliothèque semble complètement remplie de\
+> pamphlets de messes matinales.
+
+_NarrateurPamphletsMatinaux2
+> Ah. C'est des recettes pour cuisiner le Bon Matin.
+
+_NarrateurLivresNonMatinaux
+> De la lecture non-matinale complètement dénuée\
+> d'intérêt.\
+> Le mieux que vous trouviez c'est un livre titré\
+> "Le Brunch: Comment décréter que c'est encore le matin"
+
+_NarrateurTitresLivresMonseigneur1
+> Les lectures personnelles du Monseigneur:
+
+_NarrateurTitresLivresMonseigneur2
+> Comment financer votre achat impulsif de tuiles\
+> magico-portantes:\
+> Aviez-vous considéré que les achats pour un lieu de\
+> culte sont déductibles d'impôts?
+
+_NarrateurTitresLivresMonseigneur3
+> L'orgue Tout-doux:\
+> Manuel d'instruction et de maintenance.
+
+_NarrateurPileDeBoitesNonInvestiguee2
+> Bon, un petit coup d'oeil ça ne ferait pas de mal...\
+> Oh.\
+> Des plus petites boîtes.\
+> Vous n'avez pas ce genre de patience.
+
+_NarrateurTabouretsPliables
+> Des tabourets pliables.\
+> \
+> Au cas où il y aurait une foule subitte qui nécessite\
+> un Matin.
+
+_NarrateurBoitesDeRechanges
+> La pile des boîtes de rechanges.\
+> \
+> Au cas où il y manquerait des boîtes quelques part.
 
 ### Bucheron
 

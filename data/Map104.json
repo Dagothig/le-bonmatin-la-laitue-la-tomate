@@ -105,10 +105,10 @@
     3666,
     3652,
     3652,
-    3652,
-    3652,
-    3652,
-    3668,
+    3653,
+    3665,
+    3665,
+    3677,
     7600,
     0,
     7600,
@@ -122,10 +122,10 @@
     3648,
     3632,
     3632,
-    3632,
-    3632,
-    3632,
     3656,
+    3387,
+    3377,
+    3389,
     7600,
     0,
     7600,
@@ -139,10 +139,10 @@
     3672,
     3660,
     3644,
-    3660,
-    3660,
-    3660,
-    3670,
+    3662,
+    3665,
+    3665,
+    3677,
     7600,
     0,
     7600,
@@ -2644,7 +2644,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurTitresLivresMatin"
+                "se _NarrateurTitresLivresMonseigneur1"
               ]
             },
             {
@@ -2661,28 +2661,93 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Vous survolez rapidement les titres:"
+                "Les lectures personnelles du Monseigneur:"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurTitresLivresMonseigneur2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le secret d'une bonne journée\""
+                "Comment financer votre achat impulsif de tuiles "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"Le Matin et vous\""
+                "magico-portantes:"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"À quelle heure se coucher pour optimiser\""
+                "Aviez-vous considéré que les achats pour un lieu de "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "culte sont déductibles d'impôts?"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurTitresLivresMonseigneur3"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "L'orgue Tout-doux:"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Manuel d'instruction et de maintenance."
               ]
             },
             {
@@ -3010,7 +3075,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurMmhCetait"
+                "se _NarrateurTabouretsPliables"
               ]
             },
             {
@@ -3027,7 +3092,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Mmmh..."
+                "Des tabourets pliables."
               ]
             },
             {
@@ -3041,13 +3106,27 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "C'était."
+                "Au cas où il y aurait une foule subitte qui nécessite"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "un Matin."
               ]
             },
             {
               "code": 251,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                38
+              ]
             },
             {
               "code": 0,
@@ -3433,6 +3512,65 @@
               "parameters": []
             },
             {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                -1,
+                8,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurPileDeBoitesNonInvestiguee2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bon, un petit coup d'oeil ça ne ferait pas de mal..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Oh."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Des plus petites boîtes."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous n'avez pas ce genre de patience."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -3521,6 +3659,65 @@
               "indent": 0,
               "parameters": [
                 "mais pas cette fois-ci."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                -1,
+                8,
+                true
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _NarrateurPileDeBoitesNonInvestiguee2"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Bon, un petit coup d'oeil ça ne ferait pas de mal..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Oh."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Des plus petites boîtes."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Vous n'avez pas ce genre de patience."
               ]
             },
             {
@@ -3677,18 +3874,18 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 0,
+            "characterIndex": 0,
             "characterName": "",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurPileDeBoitesNonInvestiguee"
+                "se _NarrateurBoitesDeRechanges"
               ]
             },
             {
@@ -3705,14 +3902,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Normalement vous investigueriez la pile de boîtes,"
+                "La pile des boîtes de rechanges."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mais pas cette fois-ci."
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Au cas où il y manquerait des boîtes quelques part."
               ]
             },
             {
@@ -3773,18 +3977,18 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 0,
+            "characterIndex": 0,
             "characterName": "",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "se _NarrateurPileDeBoitesNonInvestiguee"
+                "se _NarrateurBoitesDeRechanges"
               ]
             },
             {
@@ -3801,14 +4005,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Normalement vous investigueriez la pile de boîtes,"
+                "La pile des boîtes de rechanges."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mais pas cette fois-ci."
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Au cas où il y manquerait des boîtes quelques part."
               ]
             },
             {
