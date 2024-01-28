@@ -29069,14 +29069,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Mais il a eu un gros ressèrement économique"
+                "Mais il y a eu un gros ressèrement économique"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "et j'ai dû changer me réorienter."
+                "et j'ai dû me réorienter."
               ]
             },
             {
@@ -29207,11 +29207,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Tool",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
@@ -29219,12 +29219,117 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "TODO",
+                  "name": "_NarrateurStalagmite",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
                 }
               ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Une stalagmite. Comme une stalactite mais sur le "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "plancher."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                29
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _PetitestalagmitejauneAttentionRiviere"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Non! N'allez pas sur la petite rivière!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Ceux qui descendent le long de la rivière"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ne reviennent jamais."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Tout mes amis les caillous..."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

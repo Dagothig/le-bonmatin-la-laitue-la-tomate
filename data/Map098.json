@@ -397,7 +397,7 @@
     2528,
     2528,
     2552,
-    7919,
+    7915,
     7560,
     7548,
     7548,
@@ -19415,11 +19415,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 0,
+            "tileId": 103,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 0
           },
           "list": [
             {
@@ -19478,7 +19478,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "se _PetiterochebruneTODO"
+                "se _PetiterochebruneCactus"
               ]
             },
             {
@@ -19495,7 +19495,98 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "TODO"
+                "Ces fichus cactus pense qu'ils peuvent "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "m'intimider avec leurs piquants."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Ha!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Regardez comme je suis solide!"
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Earth5",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _PetiterochebruneOh"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Oh."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Merde."
               ]
             },
             {
@@ -19534,6 +19625,57 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 107,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -19780,7 +19922,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "se _PetiterochebruneTODO"
+                "se _PetiterochebruneVacancePlage"
               ]
             },
             {
@@ -19797,7 +19939,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "TODO"
+                "Aaaah! Ne faites pas trop de bruit!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "J'ai travaillé dur dur dur pendant des "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "années afin de me payer ces vacances sur"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "la plage!"
               ]
             },
             {
@@ -20133,6 +20296,38 @@
                 -1,
                 0
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                74,
+                0,
+                10,
+                4
+              ]
+            },
+            {
+              "code": 202,
+              "indent": 1,
+              "parameters": [
+                1,
+                0,
+                98,
+                3,
+                5
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 111,

@@ -183,9 +183,6 @@ Slash5
 Horse
 > Horse
 
-TODO
-> TODO
-
 BrunConjCast
 > BrunConjCast
 
@@ -341,6 +338,12 @@ Fire1
 
 Sword2
 > Sword2
+
+Earth5
+> Earth5
+
+TODO
+> TODO
 
 ### Protagoniste
 
@@ -7519,6 +7522,12 @@ _PetitestalagmitejauneGrosDeni
 > Tout va très bien.\
 > Regardez comme mon ami est calme!
 
+_PetitestalagmitejauneAttentionRiviere
+> Non! N'allez pas sur la petite rivière!\
+> Ceux qui descendent le long de la rivière\
+> ne reviennent jamais.\
+> Tout mes amis les caillous...
+
 ### Grossestalagmitejaune
 
 _GrossestalagmitejauneRegardesMaman
@@ -7542,8 +7551,8 @@ _GrossestalagmitejauneSuplice
 _GrossestalagmitejauneAutreVie
 > Le saviez-vous?\
 > Dans une autre vie j'étais une stalactite!\
-> Mais il a eu un gros ressèrement économique\
-> et j'ai dû changer me réorienter.
+> Mais il y a eu un gros ressèrement économique\
+> et j'ai dû me réorienter.
 
 _GrossestalagmitejauneVousPouvezMeFrotter
 > Vous pouvez me frotter, moi.
@@ -7679,6 +7688,10 @@ _ParoibrunebriseeVousAvezPasPression
 > refusionner tout ces bouts que je perds...\
 > Ou sinon un peu de lave? Juste un peu!
 
+_ParoibrunebriseeLaPetiteRondeTerrible
+> Ma seule suggestion c'est d'éviter à tout\
+> prix la petit ronde verte là-bas.
+
 ### Rocherondejaune
 
 _RocherondejauneRinserYeux
@@ -7736,6 +7749,12 @@ _PetitestalagmiteverteRegardesRacines
 _PetitestalagmitevertePerdue
 > Je suis perdue!
 
+_PetitestalagmiteverteMauvaiseBlague
+> Vous savez ce que la roche verte dit à la\
+> roche brune?\
+> Pierre qui roule n'amasse pas mousse!\
+> Ohho! Ahha! Ouhhou!
+
 ### Grossestalagmiteverte
 
 _GrossestalagmiteverteMesAmisLesPlantes
@@ -7752,6 +7771,11 @@ _GrossestalagmiteverteBonneQualite
 > Cette "Chlorophylle" de "Plante" est\
 > vraiment de bonne qualité!\
 > Cette cave est d'une propreté exemplaire!
+
+_GrossestalagmiteverteDrip
+> Drip drip drip.\
+> Les gouttes tombent.\
+> PLIC PLIC PLIC.
 
 ### Gasbpart
 
@@ -7852,6 +7876,23 @@ _ChevaliernoirGaboueKill
 
 _PetiterochebruneTODO
 > TODO
+
+_PetiterochebruneVacancePlage
+> Aaaah! Ne faites pas trop de bruit!\
+> J'ai travaillé dur dur dur pendant des\
+> années afin de me payer ces vacances sur\
+> la plage!
+
+_PetiterochebruneCactus
+> Ces fichus cactus pense qu'ils peuvent\
+> m'intimider avec leurs piquants.\
+> Ha!\
+> Regardez comme je suis solide!
+
+_PetiterochebruneOh
+> Oh.\
+> \
+> Merde.
 
 ### Jesus
 

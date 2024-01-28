@@ -3417,7 +3417,16 @@ Input.keyMapper[68] = "right"; // d
                     "cossin-3",
                     "cossin-4",
                     "passage-1",
-                    "passage-2"]) {
+                    "passage-2",
+                    "rrrr",
+                    "desert",
+                    "temple-du-bon-matin",
+                    "puzzle-tuiles-1",
+                    "puzzle-tuiles-2",
+                    "chevalier-noir-reveal",
+                    "jesus",
+                    "grotte"
+                ]) {
                     const capitalized = Array.from(name);
                     capitalized[0] = capitalized[0].toUpperCase();
                     for (let i = 0; i < capitalized.length; i++) {
