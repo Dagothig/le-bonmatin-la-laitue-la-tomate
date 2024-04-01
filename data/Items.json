@@ -981,5 +981,162 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 33,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un livre avec le Secret du Vert dedans!\nPour une santé éternelle!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 82,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Secret du Vert",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 34,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un livre avec le Sortilège Dangereux dedans!\nC'est chaud! C'est dangereux!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 83,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Sort Dangereux",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 35,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une bouteille vide.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 227,
+    "itypeId": 1,
+    "name": "Bouteille",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 36,
+    "animationId": 158,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une bouteille remplie d'eau.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 44,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 47,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 228,
+    "itypeId": 1,
+    "name": "Bouteille d'eau",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 8,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 37,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une petite gemme suspicieuse.\nComme un genre d'oeil de verre.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 302,
+    "itypeId": 2,
+    "name": "Gemme suspicieuse",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

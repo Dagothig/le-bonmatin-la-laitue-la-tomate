@@ -400,14 +400,16 @@
     "MOMENT_CORSE",
     "MOMENT_CORSE_INITED",
     "MAP_GEOLOGUE",
-    "LIVRE_IMMOLATION",
+    "LIVRE_TACTIQUE_GAGNANTE",
     "GEOLOGUE_PEUT_TRADUIRE_GEN",
     "EMPOISONNE_CHAMPI",
     "DARK_GEORGINA_TROU_TOMBE",
     "INDICE_BONMATIN",
     "PARTY_SCENE",
     "ORGAN_SUCCESS",
-    ""
+    "MUR_VERT",
+    "LIVRE_IMMOLATION",
+    "STATUE_GEMMES_SUS"
   ],
   "terms": {
     "basic": [
@@ -646,9 +648,10 @@
     "BONMATIN_SW_BLEU",
     "BONMATIN_FOURNAISE",
     "BONMATIN_CUTSCENE",
-    "JESUS_CUTSCENE"
+    "JESUS_CUTSCENE",
+    "TMP_DU_TBNK"
   ],
-  "versionId": 74672688,
+  "versionId": 39606921,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

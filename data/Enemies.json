@@ -364,6 +364,11 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 0,
@@ -595,6 +600,11 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 0,
@@ -915,6 +925,11 @@
       {
         "code": 61,
         "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
         "value": 1
       }
     ],
@@ -1488,6 +1503,11 @@
         "code": 61,
         "dataId": 0,
         "value": 0.5
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 30,
@@ -1576,6 +1596,11 @@
         "code": 61,
         "dataId": 0,
         "value": 0.5
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 30,
@@ -2168,6 +2193,11 @@
         "code": 61,
         "dataId": 0,
         "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 0,
@@ -2323,11 +2353,18 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 26
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 79
       }
     ],
     "battlerHue": 0,
-    "battlerName": "",
+    "battlerName": "Vigne1",
     "dropItems": [
       {
         "dataId": 1,
@@ -2361,20 +2398,25 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 4
       }
     ],
     "gold": 0,
-    "name": "",
-    "note": "",
+    "name": "Vert",
+    "note": "<<aaa_icon 0 48 48 48>>\n<<aaa_death {\n   this.transform(35);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
     "params": [
       100,
       0,
       10,
       10,
       10,
-      10,
-      10,
-      10
+      5,
+      80,
+      100
     ]
   },
   {
@@ -2385,11 +2427,18 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 26
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 81
       }
     ],
     "battlerHue": 0,
-    "battlerName": "",
+    "battlerName": "Vigne2",
     "dropItems": [
       {
         "dataId": 1,
@@ -2423,20 +2472,25 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 4
       }
     ],
     "gold": 0,
-    "name": "",
-    "note": "",
+    "name": "Vert",
+    "note": "<<aaa_icon 0 0 48 48>>\n<<aaa_death {\n   this.transform(32);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
     "params": [
       100,
       0,
       10,
       10,
       10,
-      10,
-      10,
-      10
+      5,
+      80,
+      100
     ]
   },
   {
@@ -2446,42 +2500,42 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 1,
+        "rating": 2,
         "skillId": 12
       },
       {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 2,
+        "rating": 1,
         "skillId": 72
       },
       {
         "conditionParam1": 42,
         "conditionParam2": 0,
         "conditionType": 4,
-        "rating": 5,
+        "rating": 6,
         "skillId": 12
       },
       {
         "conditionParam1": 42,
         "conditionParam2": 0,
         "conditionType": 4,
-        "rating": 6,
+        "rating": 5,
         "skillId": 74
       },
       {
         "conditionParam1": 43,
         "conditionParam2": 0,
         "conditionType": 4,
-        "rating": 8,
+        "rating": 9,
         "skillId": 12
       },
       {
         "conditionParam1": 43,
         "conditionParam2": 0,
         "conditionType": 4,
-        "rating": 9,
+        "rating": 8,
         "skillId": 75
       }
     ],
@@ -2543,6 +2597,80 @@
       10,
       10,
       90,
+      100
+    ]
+  },
+  {
+    "id": 35,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 26
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 80
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Vigne3",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 4
+      }
+    ],
+    "gold": 0,
+    "name": "Vert",
+    "note": "<<aaa_icon 0 48 48 48>>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      5,
+      80,
       100
     ]
   }

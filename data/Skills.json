@@ -1685,14 +1685,7 @@
       "variance": 20
     },
     "description": "",
-    "effects": [
-      {
-        "code": 44,
-        "dataId": 20,
-        "value1": 1,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 0,
     "iconIndex": 71,
     "message1": " appelle une procédure stockée!",
@@ -2918,6 +2911,177 @@
     "scope": 0,
     "speed": 0,
     "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 79,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 236,
+    "message1": " pousse et devient un Pignon Vert!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Pousser en pignon vert",
+    "note": "<<aaa_anim self wiggle>>\n<<aaa_performActionStart {\n  AudioManager.playSe(\"Blblbl\");\n}>>\n<<aaa_action {\n  target.transform(33);\n  target.setHp(target.mhp);\n  $gameTroop.makeUniqueNames();\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 80,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 236,
+    "message1": " pousse et devient un Mognon Vert!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Pousser en mognon vert",
+    "note": "<<aaa_anim self wiggle>>\n<<aaa_performActionStart {\n  AudioManager.playSe(\"Blblbl\");\n}>>\n<<aaa_action {\n  target.transform(32);\n  target.setHp(target.mhp);\n  $gameTroop.makeUniqueNames();\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 81,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 236,
+    "message1": " fait pousser un Mini Vert!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Pousser en mini vert",
+    "note": "<<aaa_anim self wiggle>>\n<<aaa_performActionStart {\n  AudioManager.playSe(\"Blblbl\");\n}>>\n<<aaa_action {\n  target.setHp(target.mhp);\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 9,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 82,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Invoque le Secret du Vert???",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 45,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 236,
+    "message1": "",
+    "message2": "",
+    "mpCost": 25,
+    "name": "Secret du Vert",
+    "note": "",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 8,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 83,
+    "animationId": 68,
+    "damage": {
+      "critical": false,
+      "elementId": 2,
+      "formula": "10 + a.mat - b.mdf * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "Le feu c'est chaud, c'est dangereux. Immole les enemis \npour 10pt de dégâts sur plusieurs tours.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 46,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 64,
+    "message1": " invoque le feu!",
+    "message2": "C'est chaud! C'est dangereux!",
+    "mpCost": 40,
+    "name": "Sortilège Dangereux",
+    "note": "",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

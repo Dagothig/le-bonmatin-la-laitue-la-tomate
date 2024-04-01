@@ -828,6 +828,57 @@ _NarrateurBoitesDeRechanges
 > \
 > Au cas où il y manquerait des boîtes quelques part.
 
+_NarrateurSecretVert
+> Un livre avec le Secret du Vert dedans!\
+> Pour une santé éternelle!
+
+_NarrateurSortilegeDangereux
+> Un livre avec un Sortilège Dangereux dedans!\
+> C'est chaud! C'est dangereux!
+
+_NarrateurToutLeMondeMouille
+> Tout le monde est mouillé!\
+> \
+> Comme c'est bien connu, être mouillé rend complêtement\
+> immune à la chaleur.
+
+_NarrateurBouteilleEau
+> Une bouteille d'eau!\
+> Vous pouvez vous la verser sur la tête et pouf tout le\
+> monde est mouillé. Comme c'est bien connu, être mouillé\
+> rend immune à la chaleur.
+
+_NarrateurRemplirBouteilleEau
+> Remplir une bouteille d'eau?
+
+_NarrateurBouteilleVide
+> Une bouteille vide!
+
+_NarrateurGemmeSuspicieuse
+> Une petite gemme suspicieuse.\
+> Comme un genre d'oeil de verre.
+
+_NarrateurYeuxSuspicieux
+> Vous pouvez voir deux gemmes suspicieuses dans les yeux\
+> du petit bonhomme sur le dragon.\
+> Le dragon a deux trous là où vous vous imagineriez ses\
+> yeux.
+
+_NarrateurInsererGemme1
+> Insérer une gemme suspicieuse dans le trou?
+
+_NarrateurInsererGemme2
+> Insérer une gemme suspicieuse dans l'autre trou?
+
+_NarrateurStatueSuspicieuse
+> Une statue très suspicieuse.
+
+_NarrateurArmurerieSecreteRRR
+> Bienvenue dans l'armurerie secrète du RRR.
+
+_NarrateurEauJaillissanteScintille
+> De l'eau jaillissante qui scintille.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2151,6 +2202,54 @@ _ProtagonisteVeutPasRecetteBMAlt
 > Il y a le Bon Matin Laitue Tomate, et le\
 > reste c'est juste une perte d'un Bon Matin.
 
+_ProtagonistePeutPasPasserVignes
+> Ah merde je vois un livre derrière les\
+> vignes... mais il n'y en a trop je n'arrive\
+> pas à passer!
+
+_ProtagonistePlantesPasTuables
+> C'est pas tuable ces plantes...
+
+_ProtagonisteDansLeDouteBruler
+> Oui bon... dans le doute brûler les choses.
+
+_ProtagonisteEauFraiche1
+> Oh wow, ça c'est de l'eau fraîche!\
+> D'une fraîchitude redoutable.\
+> Mettons qu'on en boit un peu...
+
+_ProtagonisteEauFraiche2
+> C'est comme si on venait de passer une\
+> bonne sieste empilés à 4 sur un lit!
+
+_ProtagonisteAAA
+> \{AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\^
+
+_ProtagonistePasConvaincuBouteille
+> Il me semble... on aurait pu en trouver une\
+> un peu n'importe où? Mais *ici* c'est\
+> notable parce que...?
+
+_ProtagonisteStatueBorgne
+> Il est un peu borgne maintenant.
+
+_ProtagonisteEtVoila
+> Et voila! On pourait presque appeler ça une\
+> énigme.\
+> \
+> Faut juste plisser fort des yeux.
+
+_ProtagonisteOhho
+> Ohho!\^
+
+_ProtagonisteRRR1
+> RRR? C'est pas le ROYAUME RÉTABLI des\
+> ROCHES RÉCALCITRANTES? C'est un typo?
+
+_ProtagonisteRRR2
+> Dans le genre que ça a été abandonné?\
+> Pourtant je vois des roches partout!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2571,6 +2670,27 @@ _GabspartMaisLeDrama
 > Et puis en plus ça aurait rien changé.\
 > Les Textes Sacrés ça niaise pas.
 
+_GabspartTraduitGaboueImmolation
+> Tâchant de terrasser,\
+> turbide tourbière...\
+> T'imposes d'administrer:\
+> Combustion statutaire!
+
+_GabspartDefendBouteille
+> ...Mmmh? Non mais elle est spéciale la\
+> bouteille! Regardes-là avec son...\
+> couvercle et ses parois en verre!
+
+_GabspartRRR1
+> Hélas non. Ça date plus l'emplacement en\
+> fait. C'est un relicat de l'époque où\
+> c'était le ROYAUME des ROCHES\
+> RÉCALCITRANTES.
+
+_GabspartRRR2
+> C'est pas moi qui va t'éclairer sur ces\
+> nuances-là.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -2821,6 +2941,19 @@ _WwwelchiorExpliqueLeRRRR
 > Récalcitrantes.\
 > \
 > On est passé par là sur le chemin.
+
+_WwwelchiorAttentionEllesBougent
+> Attention elles bougent!
+
+_WwwelchiorFouillerDansLeCoinChaudDangereux
+> Je suis sûr que si on fouille dans le coin\
+> on peut trouver quelque chose.\
+> De chaud.\
+> Et de dangereux.
+
+_WwwelchiorTeasePuzzle
+> Et en plus l'eau à l'entrée elle scintille!\
+> C'est tout spécial ça.
 
 ### Fantome
 
@@ -4142,7 +4275,9 @@ _PetiterochegriseVousVoulezJouerACacheCache
 
 _PetiterochegriseLoyer
 > Vous n'avez pas idée du loyer que je dois\
-> payer pour habiter ici...
+> payer pour habiter ici...\
+> \
+> J'aurais dû rester dans le RRRR.
 
 _PetiterochegriseBosquetteuse
 > Les bosquets c'est vraiment pas pareil sans\

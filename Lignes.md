@@ -1,5 +1,74 @@
 ### SFX
 
+Book2
+> Book2
+
+Stare
+> Stare
+
+Beep4
+> Beep4
+
+Equip2
+> Equip2
+
+Battle1
+> Battle1
+
+Cossin
+> Cossin
+
+Liquid
+> Liquid
+
+Gulp
+> Gulp
+
+Wee
+> Weeeeeeeee
+
+Wawawawa
+> Wawawawa
+
+Ouch
+> Ouch
+
+Owie
+> Owie
+
+JAiMal
+> J'ai mal!
+
+Bouhouhou
+> Bouhouhou
+
+Charpenterie
+> Charpenterie
+
+ToutCollant
+> Ah merde je suis tout collant!
+
+PhiouJePeuxBouger
+> Phiou, là je peux bouger correct!
+
+Creuser
+> Creuser
+
+Phiou
+> Phiou
+
+Burp
+> Burp
+
+Facepalm
+> Facepalm
+
+Chicken
+> Cluck! [Je saigne!]
+
+Heartbeat
+> Heartbeat
+
 Open1
 > Open1
 
@@ -15,14 +84,20 @@ Paper
 Wind4
 > Wind4
 
-Equip2
-> Equip2
-
 Open5
 > Open5
 
 Goat
 > Goat
+
+Bell3
+> Bell3
+
+Flash2
+> Flash2
+
+Item1
+> Item1
 
 Ladder
 > Ladder
@@ -36,11 +111,8 @@ Water1
 Heal3
 > Heal3
 
-Item1
-> Item1
-
-Bell3
-> Bell3
+Fall
+> Fall
 
 Damage3
 > Damage3
@@ -50,6 +122,15 @@ Coin
 
 FirewoodFalling
 > FirewoodFalling
+
+Switch2
+> Switch2
+
+Door2
+> Door2
+
+Earth4
+> 
 
 Parry
 > Parry
@@ -84,14 +165,17 @@ Cat
 Non
 > Non.
 
+Applause1
+> Applause1
+
+Snore
+> Snore
+
 Open2
 > Open2
 
 Mechanism
 > Mechanism
-
-Book2
-> Book2
 
 Flash1
 > Flash1
@@ -120,9 +204,6 @@ Card
 LaViolence
 > LaViolence
 
-Chicken
-> Cluck! [Je saigne!]
-
 BrunOuch
 > BrunOuch
 
@@ -150,9 +231,6 @@ Sniffing
 FingerOnCeramic
 > FingerOnCeramic
 
-Gulp
-> Gulp
-
 Move5
 > Move5
 
@@ -162,14 +240,14 @@ Wind7
 Earth2
 > 
 
-Flash2
-> Flash2
-
 Ding
 > Ding
 
 Fire2
 > Fire2
+
+Laser1
+> Laser1
 
 Blow2
 > Blow2
@@ -198,8 +276,11 @@ BrunMystHit
 Magic1
 > Magic1
 
-Snore
-> Snore
+CoffeeBland
+> CoffeeBland
+
+Siren
+> Siren
 
 Door1
 > Door1
@@ -213,62 +294,26 @@ Cork
 Hammer
 > Hammer
 
-Liquid
-> Liquid
-
 Break
 > Break
-
-Battle1
-> Battle1
-
-Sword5
-> Sword5
-
-Slash2
-> Slash2
-
-Slash3
-> Slash3
-
-Magic4
-> Magic4
-
-Stare
-> Stare
-
-Beep4
-> Beep4
-
-Cossin
-> Cossin
-
-CoffeeBland
-> CoffeeBland
-
-Earth4
-> 
-
-Earth1
-> 
-
-Buzzer2
-> Buzzer2
-
-Door2
-> Door2
 
 Applause2
 > Applause2
 
-Heartbeat
-> Heartbeat
+Buzzer2
+> Buzzer2
 
-Switch2
-> Switch2
+Magic4
+> Magic4
 
-Siren
-> Siren
+Sword5
+> Sword5
+
+Earth1
+> 
+
+Monster3
+> 
 
 Train
 > Train
@@ -276,76 +321,1665 @@ Train
 Wow
 > Wow
 
-Wee
-> Weeeeeeeee
-
-Applause1
-> Applause1
-
-Fall
-> Fall
-
-Monster3
-> 
-
-Wawawawa
-> Wawawawa
-
-Ouch
-> Ouch
-
-Owie
-> Owie
-
-JAiMal
-> J'ai mal!
-
-Bouhouhou
-> Bouhouhou
-
-Ho
-> Ho
-
-Charpenterie
-> Charpenterie
-
-ToutCollant
-> Ah merde je suis tout collant!
-
-PhiouJePeuxBouger
-> Phiou, là je peux bouger correct!
-
-Creuser
-> Creuser
-
-Phiou
-> Phiou
-
 Ahha
 > Ahha
-
-Burp
-> Burp
-
-Facepalm
-> Facepalm
-
-Laser1
-> Laser1
-
-Fire1
-> Fire1
-
-Sword2
-> Sword2
 
 Earth5
 > Earth5
 
+Sword2
+> Sword2
+
+Ho
+> Ho
+
+Fire1
+> Fire1
+
 TODO
 > TODO
 
+Slash2
+> Slash2
+
+Slash3
+> Slash3
+
+Recovery
+> Recovery
+
+### Narrateur
+
+_NarrateurBonjours
+> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
+> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
+> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
+> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR
+
+_NarrateurDuBeauPapier
+> C'est hum, c'est du beau papier ça.
+
+_NarrateurDormirQ
+> Dormir?
+
+_NarrateurTellDontShowLeVieuuuux
+> Et ainsi ils traversèrent le Village.\
+> Gambadèrent entre les arbres du Bois du Gaboué.\
+> Dansèrent sur le Pont-qui-n'est-plus-cassé.\
+> Finalement, ils arrivèrent au Fameux Lieu Champêtre...
+
+_NarrateurTellDontShowCossiiiiin
+> Et ainsi ils froliquèrent depuis le Lieu Champêtre.\
+> Dansèrent sur le Pont-de-la-cassure-passée.\
+> Maraudèrent à travers le Bois Du Gaboué.\
+> Finalement, ils arrivèrent au pied de la Montagne.
+
+_NarrateurFinsDePhrases
+> L'aboutissement\
+> la résolution tant recherchée\
+> des discours\
+> sommairement achevés
+
+_NarrateurBonMatins
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
+> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN
+
+_NarrateurPasConfondreMatinBon
+> À ne pas confondre avec MATIN BON.
+
+_NarrateurPecheurINFORMATIONSPROTAGONISTES
+> Le pêcheur sort un petit bout de papier griffoné de sa\
+> poche. Vous pouvez à peine distinguer qu'il est écrit\
+> sur le haut "Informations pour Protagonistes".
+
+_NarrateurPecheurRevirePapier
+> Le pêcheur revire le papier.
+
+_NarrateurQuelquesNotesParTerre
+> Il y a quelques notes par terre là où le pêcheur se\
+> tenait.
+
+_NarrateurInfoPourProta
+> "INFORMATIONS POUR PROTA-\
+> \
+> Non ça c'est pas intéressant.
+
+_NarrateurUneDesNotes
+> Ah mais vous voyez une des notes:
+
+_NarrateurBoitePoissons
+> La boîte est à demie-remplie des Fameux Poissons du\
+> Monde. Leur grande caractéristique c'est qu'ils ont\
+> évolutivement appris à ne pas se sacrer en bas du\
+> Précipice.
+
+_NarrateurExcellentsEnGrillade
+> Excellents en grillade.
+
+_NarrateurPuitMoche
+> L'odeur de l'eau est vaguement nauséabonde.\
+> \
+> Il semblerait donc que puiser l'eau à deux mètres du\
+> cimetière n'est pas une très bonne idée.
+
+_NarrateurCadranSolaireXVIII
+> Curieusement, le cadran solaire va de XVIII à XXIV.
+
+_NarrateurCadranSolaire
+> Curieusement, le cadran solaire va de XII à XXIV.
+
+_NarrateurEpouvantailStupide
+> Un épouvantail.\
+> Y'a l'air un peu stupide.
+
+_NarrateurBonhommeDeRadis
+> Traditionnellement on utilise des carottes pour le nez\
+> du bonhomme de neige.\
+> Ici les yeux et le nez ont été savament remplacés par\
+> des radis.
+
+_NarrateurPancarteVillageResteDuMonde
+> La pancarte lit...\
+> BIENVENUE À CE VILLAGE\
+> Et il y a une direction vers le haut...\
+> LE RESTE DU MONDE
+
+_NarrateurPancarteVillageTempleBonjour
+> La pancarte lit...\
+> BIENVENUE À CE VILLAGE\
+> Et il y a une direction vers le droite...\
+> LE TEMPLE DU BONJOUR
+
+_NarrateurBoisCoupe
+> Bien que vous passez une temps fou à regarder de près\
+> ce bois coupé, vous ne trouvez toujours rien de\
+> pertinent.
+
+_NarrateurBoisCoupe2
+> Non, même après un autre passage ça reste du bois\
+> coupé.
+
+_NarrateurCossinSortChaussure
+> Cossin Lette sort de sa chaussure une petite fiole!
+
+_NarrateurElixirChair
+> Un élixir de chair!\
+> L'inventeur clame que ça goûte 5pt de poulet.\
+> Va falloir l'essayer pour comprendre ce que ça\
+> implique.
+
+_NarrateurPasGeologueRoche
+> Vous n'êtes pas géologue.\
+> Mais c'est une roche, ça.
+
+_NarrateurDejaUnRadis
+> C'est à ce moment-ci que vous réalisez qu'en fait, vous\
+> avez déjà un radis de plus dans la poche.
+
+_NarrateurNoteBandits1
+> La note lit:\
+> VOTRE VIE MANQUE DE PIQUANT?\
+> VOUS TROUVEZ QUE VOUS AVEZ TROP D'EMPATHIE POUR LE\
+> COMMUN DES MORTELS?
+
+_NarrateurAutreCote
+> Et il y a un autre côté:
+
+_NarrateurNoteBandits2
+> REJOIGNEZ JEAN-JACQUES ET\
+> LEUR BANDE DE JOYEUX COMPAGNONS!\
+> VOUS POUVEZ NOUS TROUVER DANS LE BOISÉ SUR\
+> LA PETITE ÎLE.
+
+_NarrateurTemplateItem
+> TEMPLATE D'ITEM
+
+_NarrateurGabspartPapierPoche
+> Gabspart sort de sa poche un petit papier griffoné.
+
+_NarrateurBarilCouvercle
+> Le couvercle du baril a une poignée et est exactement\
+> de la bonne taille pour en faire un bouclier.\
+> \
+> Prendre le couvercle?
+
+_NarrateurBarilCasque
+> Ah dans le Barril il y a...\
+> Un casque?\
+> C'est hum, c'est pratique, mais c'est pas clair\
+> pourquoi c'est dans ce baril.
+
+_NarrateurBarilVide
+> Le baril est vide.
+
+_NarrateurDesRadisEtDesPatates
+> Des radis et des patates.\
+> La tradition régionale, quoi.
+
+_NarrateurStatuePremiereBonjour
+> PREMIERE DU BONJOUR\
+> \
+> La douce lueur de son visage est comme quand le regard\
+> se fixe sur le Soleil à midi
+
+_NarrateurElixirMagie
+> Un élixir de magie!\
+> Lorsque bu, l'Univers se prend soudainement l'envie\
+> d'ajouter 5pt de magie à la personne!
+
+_NarrateurRocheCouleurLouche
+> Vous n'êtes pas géologue, mais la couleur de cette\
+> roche est très curieuse...
+
+_NarrateurRocheCouleurLouche2
+> Vous n'êtes pas géologue, mais les roches qui changent\
+> de couleur quand on les active c'est plutôt anormal.
+
+_NarrateurSocleBonMatin
+> Le socle est plutôt endommagé et poussiéreux, et il ne\
+> reste que quelques débris de ce qui se trouvait par\
+> dessus autrefois. La plaque est à peine lisible:\
+> BON MATIN
+
+_NarrateurVieuxRadisOreilles
+> Il semblerait que le Vieux a des radis plein les\
+> oreilles.
+
+_NarrateurFiolePoussiere
+> En fouillant un peu plus vous voyez une petit fiole\
+> qui brille sous la poussière!
+
+_NarrateurForgeronDague
+> La forgeronne vous tend une dague.\
+> L'arme Canonique des Protagonistes débutants.
+
+_NarrateurEnclume
+> Ça paraît pas tant, mais c'est une enclume.\
+> Je vous le jure.
+
+_NarrateurUnMarteau
+> Un marteau!\
+> \
+> C'est comme une massue, mais en plus raffiné.
+
+_NarrateurUnSeulMarteau
+> Bien que vous êtes certains avoir volé deux marteaux\
+> à la forgeronne, vous observez qu'il n'y en a qu'un\
+> seul dans vos mains, et aucun sur le mur.
+
+_NarrateurBouteillesColorees
+> Une petite collection de bouteilles colorées.\
+> \
+> \
+> Voila.
+
+_NarrateurEntraillesRat
+> En fouillant dans les entrailles du trenchcat,\
+> vous remarquez quelque chose qui brille.\
+> \
+> Typique.
+
+_NarrateurDague
+> Une dague!\
+> L'arme Canonique des Protagonistes débutants.
+
+_NarrateurCiGitLesPatates
+> Ci-git\
+> \
+> Les patates.
+
+_NarrateurSacFarine
+> Un sac de farine. Vous vous attendiez à quoi?
+
+_NarrateurPileDeSacs
+> Ah c't'une pile de sacs ça.
+
+_NarrateurDuThe
+> Du thé.\
+> Ou de la tisane?\
+> \
+> Pas clair...
+
+_NarrateurPasReponse
+> Y'a des questions comme ça que vous n'avez pas besoin\
+> de la réponse.
+
+_NarrateurMauvaisOutils
+> Bien que vous soyez tout excité à l'idée de pouvoir\
+> acquérir sans frais de l'équipement, une investigation\
+> en détail des outils vous révèle qu'ils sont tous de\
+> mauvaise qualité, et ne vous seraient d'aucune utilité.
+
+_NarrateurChariotMine
+> Un chariot de mine.\
+> Malgré la folle envie de vous embarquer dans une\
+> séquence à obstacles que vous ressentez, vous décidez\
+> de laisser le chariot tranquille.
+
+_NarrateurDuFerCa
+> Vous n'êtez pas géologue.\
+> Mais à tout les coups c'est du fer ça.
+
+_NarrateurDesEpicesDuLard
+> Des épices, un peu de lard, des conserves.\
+> Quelques livres inintéressants.\
+> \
+> Mais vous remarquez...
+
+_NarrateurLeMystereEntre24Et18
+> LE MYSTÈRE DE CE QU'IL Y A ENTRE LES NOMBRES\
+> XXIV et XVIII\
+> Bizarre, typiquement on met le plus petit nombre en\
+> premier.
+
+_NarrateurLeMystereEntre24Et12
+> LE MYSTÈRE DE CE QU'IL Y A ENTRE LES NOMBRES\
+> XXIV et XII\
+> Bizarre, typiquement on met le plus petit nombre en\
+> premier.
+
+_NarrateurCaisseRavagee
+> Bien que la caisse ravagée par le temps et l'humidité,\
+> il se rend à votre nez une belle odeur de rouille.
+
+_NarrateurPasGeologuePileDeTerre
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile de terre, ça.
+
+_NarrateurPioche
+> Une pioche!\
+> Pointue et solide. Les roches tremblent.
+
+_NarrateurMineRoulePlus
+> Clairement, les choses ne roulent plus dans cette mine.\
+> L'état des lieux dégringole.\
+> Pas besoin de creuser la question.\
+> Mea concidit.
+
+_NarrateurPierreTravailleeImplementPointu
+> La pierre ici a été travaillée à coup d'implément\
+> pointu.\
+> Vous n'êtes toujours pas géologue, mais il semble qu'il\
+> y avait un minerai de fer ici.
+
+_NarrateurFioleCraquesParoiDejaTrouvee
+> Cependant. Vous avez déjà trouvé la fiole en question.
+
+_NarrateurFioleCraquesParoi
+> Cachée dans les craques de la paroi, vous trouvez une\
+> petite fiole que vous n'auriez jamais trouvée sans une\
+> bonne main d'applaudissement.
+
+_NarrateurUnLivreAvecUneChansonnette
+> Un livre avec une Chansonnette dedans!
+
+_NarrateurPetitTasRoches
+> Vous n'êtes pas géologue, mais à tout les coups c'est\
+> un petit tas de roches ça.
+
+_NarrateurStalagmite
+> Une stalagmite. Comme une stalactite mais sur le\
+> plancher.
+
+_NarrateurCaisseDuTemple
+> La caisse du Temple. C'est beaucoup d'or pour un lieu\
+> religieux.\
+> \
+> En fait, pas tant.
+
+_NarrateurPlaqueBonjour
+> BONJOUR ET BIENVENUE AU TEMPLE DU BONJOUR\
+> \
+> POUR TOUT VOS BESOINS DE BONJOURITUDE, VEUILLEZ VOUS\
+> RÉFÉRER AU COMPTOIR
+
+_NarrateurLecturesPremiere
+> Ah les lectures de la Première -
+
+_NarrateurBONJOURETVOUS
+> LE BONJOUR ET VOUS\
+> Le début d'une grande aventure du milieu de la journée
+
+_Narrateur10ETAPESFACILES
+> 10 ÉTAPES FACILES POUR DEVENIR RICHE\
+> Vous ne croirez pas la troisième!
+
+_NarrateurResteNonDignifie
+> Le reste n'est pas plus dignifié.
+
+_NarrateurPileParchemins
+> Une belle pile de parchemins.
+
+_NarrateurCartesPostalesBonjour
+> Des cartes postales.\
+> L'image c'est un gros BONJOUR mal écrit à la main.\
+> Il y a une petite étiquette de prix, mais c'est plus\
+> cher qu'une épingle à cheveux.
+
+_NarrateurHorlogeBonjour
+> En investiguant l'horloge vous réalisez qu'il n'y a pas\
+> d'aiguilles en fait.\
+> Il y a juste deux traits peints qui pointent vers midi.
+
+_NarrateurLivresCopies
+> Les livres sont tous des copies -
+
+_NarrateurChandailBonjour
+> Un chandail écrit BONJOUR dessus...\
+> \
+> Ça fait un peu désespéré.
+
+_NarrateurBoiteChandailsBonjours
+> La boîte est remplie de chandails avec BONJOUR d'écrit\
+> dessus. Bien que c'est pareil à celui qui se trouve\
+> dans le coffre juste à côté, vous décidez de laisser la\
+> boîte tranquille.
+
+_NarrateurObtenuBonjour
+> Vous avez obtenu le Bonjour!
+
+_NarrateurBraises
+> Mmmh. Des braises caractéristiques d'une poêle en fonte\
+> sur laquelle on aurait cuit des oeufs brouillés.
+
+_NarrateurLampeHuileEteinte
+> Une lampe a huile, mais éteinte.\
+> Pas de génie inclus.
+
+_NarrateurFeuilleterPhotosCachees
+> Ah non en fait si vous feuilletez un peu, vous\
+> remarquez qu'il ya des photos cachées entre les pages.
+
+_NarrateurCoquinBonjoursSuggestifs
+> Oh c'est coquin.\
+> Il s'agit d'images suggestives de Bonjours.\
+> \
+> Ce n'est pas clair comment ça fonctionne.
+
+_NarrateurLettreTable
+> Ah il y a une lettre sur la table:
+
+_NarrateurLettrePretre
+> Bonjour Bonjourette,\
+> Malheureusement avec l'hiver je ne peux pas quitter le\
+> Temple mais j'ai très hâte de pouvoir te revoir ma\
+> petite.
+
+_NarrateurLettreSigneePretre
+> C'est signé "Le Prêtre"
+
+_NarrateurSacsFarine
+> Des sacs de farine.
+
+_NarrateurInvestigationSacsSucre
+> Ah non, après avoir fait une investigation détaillée,\
+> vous réalisez que c'est des sacs de sucre.\
+> \
+> Woo.
+
+_NarrateurVieuxMaterielUsage
+> Il n'y a que du vieux matériel usagé.
+
+_NarrateurVictuailles
+> Des victuailles!\
+> C'est comestible!
+
+_NarrateurPasAbuserVictuailles
+> Non non, faudrait pas abuser des victuailles.
+
+_NarrateurMitainesFour
+> Des... Mitaines de Four?
+
+_NarrateurDuCharbonCa
+> Vous n'êtes pas géologue.\
+> Mais à tout les coups c'est du charbon ça.
+
+_NarrateurBoiteSansInteret
+> Une boîte sans intérêt.\
+> \
+> \
+> Pour l'instant.
+
+_NarrateurTombePecheurSenior
+> ci-git\
+> Le Pêcheur Senior\
+> Sauvagement arraché à la vie par la Grande Innondation\
+> de la-petite-rivière-de-la-forêt
+
+_NarrateurEauCoule
+> Vous ne voyez pas grand chose en bas du puits, mais en\
+> tendant l'oreille vous entendez comme le son de l'eau\
+> qui coule.
+
+_NarrateurRienVu
+> Bien que votre vue sur les environs est nettement\
+> meilleure depuis ici, vous avez la drôle d'impression\
+> de ne rien pouvoir voir de nouveau.
+
+_NarrateurRadeau
+> Une palette de bois?\
+> Ah, il y a radeau d'écrit dessus.\
+> \
+> Un radeau!
+
+_NarrateurBaseDeDetah
+> La pancarte lit:\
+> \
+> \Shake\{BASE DE DETAH\}
+
+_NarrateurPattePoulet
+> Une patte de poulet!\
+> \
+> Un peu comme celles de lapin, mais en pas pareil.
+
+_NarrateurPuisFine
+> Au fond du puits vous entrevoyez un peu d'eau.\
+> Pas d'odeur nauséabonde.
+
+_NarrateurUnLivreAvecLesFinsDePhrases
+> Un livre avec les Fins de Phrases dedans!
+
+_NarrateurPuitsVieille
+> Vous voyez un peu d'eau dans le fond, mais surtout,\
+> en tendant l'oreille...\
+> Vous entendez le son d'un ronflement?
+
+_NarrateurPecheurSortPapier
+> Le pêcheur sort un petit bout de papier de sa poche.
+
+_NarrateurCorde
+> Une Corde Auto-Portante!\
+> Elle permet de monter et de descendre à des endroits\
+> spécifiques et désormais identifiés!\
+> Non, ce n'est pas une corde à usage général.
+
+_NarrateurMurInvisible
+> Bien que vous tentiez de toute votre volonté d'avancer\
+> dans cette direction, une Force Mystérieuse vous\
+> retient.\
+> Il y a un mot qui trotte dans votre tête: Bonjour.
+
+_NarrateurPotChambre
+> Ah... ça sent vaguement l'ammoniac.
+
+_NarrateurPlatEchoue
+> C'est... dur à dire c'était quoi l'intention, ici on\
+> voit un plat bien échoué.
+
+_NarrateurFameuseRecette
+> La fameuse recette:\
+> Bon Matin\
+> Laitue\
+> Tomate
+
+_NarrateurRecetteBacon
+> Les autres papiers semblent désigner plutôt comment\
+> abattre et dépecer un porc, en particulier la coupe du\
+> ventre pour ensuite le faire fûmer.
+
+_NarrateurGardeMangerPain
+> Le garde-manger est rempli de pain.
+
+_NarrateurAlphabits
+> En fouillant plus en détail, vous trouvez aussi une\
+> boîte contenant de petites céréales en formes de\
+> lettres.\
+> Il ne reste plus de B, O, N, M, A, T, I.
+
+_NarrateurBonneIdeeNettoyer
+> D'habitude c'est une bonne idée de nettoyer son espace\
+> après avoir cuisiné.
+
+_NarrateurPorcFumeAil
+> Du ventre de porc fûmé et de l'ail.
+
+_NarrateurMoutarde
+> Des graines de moutarde.
+
+_NarrateurHuileOlive
+> Une jarre d'huile d'olive.
+
+_NarrateurLaitueTomate
+> Des têtes de laitue et des tomates.
+
+_NarrateurInvestigationProtagoniste
+> Suite à l'investigation détaillée de l'endroit, il vous\
+> devient rapidement impossible d'ignorer le fait que\
+> clairement Personne Véritable n'a pas un problème de\
+> provisions, et que cette quête est superflue.
+
+_NarrateurPlusSimpleLeBLT
+> Ce serait pas mal plus simple s'il se contentait du\
+> BLT.
+
+_NarrateurNonBranche
+> Contrairement à ce que vous penseriez, il ne s'agit\
+> pas de branches.
+
+_NarrateurBoiteGaboue
+> Une boîte supicieusement vide.\
+> \
+> Vous pouvez voir de la poussière dans le fond laissant\
+> une trace en forme de branche.
+
+_NarrateurFoyerAbandonne
+> Avec une pile de poussière aussi impressionnante, le\
+> foyer n'a probablement pas été utilisé depuis très\
+> longtemps.
+
+_NarrateurPotPoissons
+> Un pot écrit "POISSONS" dessus.
+
+_NarrateurComprendsPasPoissons
+> Je sais pas pourquoi on fait des histoires\
+> sur ces "POISSONS" alors.
+
+_NarrateurPotPoissonsVide
+> ...\
+> Malheureusement le pot est vide, et il ne reste qu'une\
+> couche de graisse poussiéreuse dans le fond.\
+> Si vous me laissiez finir, vous l'auriez su.
+
+_NarrateurCanneAPeche
+> Une canne à pêche!
+
+_NarrateurPasGeologuePasBougerRoche
+> Vous n'êtez pas géologue.\
+> \
+> Mais, il vous est impossible de bouger cette roche.
+
+_NarrateurGabouePasSiFort
+> Non, même Gaboué n'a pas ce genre de force.
+
+_NarrateurImplementPointuInsuffisant
+> Vous n'êtez toujours pas géologue.\
+> \
+> Mais sinon vous auriez aussi su que les impléments\
+> pointus ne sont pas suffisants.
+
+_NarrateurMaisSiVousRevirezPapier
+> Mais si vous revirez le papier...
+
+_NarrateurCuirrasseRouillee
+> Une Cuirasse Rouillée!\
+> Oubliée, mais pas encore tout à fait inutilisable.
+
+_NarrateurSquelette
+> Un squelette. Une vision macabre du futur.
+
+_NarrateurMousseVerte
+> Mmmmh. De la mousse verte - Le goût vous rappelle\
+> vaguement celui de la Laitue.
+
+_NarrateurParoiCuillere
+> Vous n'êtes pas géologue, mais à tout les coups la\
+> paroi ici a été travaillée à coup de petit implément\
+> rond.
+
+_NarrateurBlblbl
+> Blblblblblblblbl.
+
+_NarrateurLampeAHuile
+> C'est une lampe à huile.
+
+_NarrateurJarreHuileLanterne
+> Une jarre d'huile à lanterne.
+
+_NarrateurLivresMoisis
+> C'était des livres. Maintenant c'est plus du carton\
+> moisi qu'autre chose. Quelque chose, quelque chose,\
+> stocker des livres dans une cave.
+
+_NarrateurBiscuitsSecs1
+> Des biscuits secs. Pas vraiment de quoi éviter des\
+> carences alimentaires.
+
+_NarrateurBiscuitsSecs2
+> Non, vous n'avez pas besoin des biscuits secs.
+
+_NarrateurTasDeCendres
+> Un petit tas de cendres.
+
+_NarrateurOdeurPetrole
+> Et une légère odeur d'huile à lampe.
+
+_NarrateurCestUnePlanteCa
+> C'est une plante ça.
+
+_NarrateurSqueletteNonIndentifiable
+> Le squelette n'est plus identifiable.\
+> Pas de dents, rien.
+
+_NarrateurEtaitChien
+> C'était\.\. le meilleur ami de l'Homme.
+
+_NarrateurDroleEndroitStatue
+> Drôle d'endroit pour une statue.
+
+_NarrateurEcriteauDarkGeorgina
+> Il y a un petit écriteau:\
+> \
+> "L'ÉTERNEL DARK GEORGINA"
+
+_NarrateurPasTresHumble
+> Pas très humble.
+
+_NarrateurLectureDangereuse
+> Vous êtes soudain pris de l'horrible réalisation que ce\
+> n'est pas forcément une bonne idée de laisser Gabspart\
+> lire les passages.
+
+_NarrateurVinPlombe
+> Une jarre de vin.\
+> Mais vous ne voulez pas en boire, le vin a un drôle de\
+> goût. Un certain aplomb sucré.
+
+_Narrateur100g
+> 100 pièces d'or!
+
+_NarrateurPancartePont1
+> C'est bien, avoir une pancarte pour y mettre de l'info,\
+> mais comme elle fait face à la rivière, et qu'un arbre\
+> est dans le chemin de l'autre côté...
+
+_NarrateurPancartePont2
+> Faudrait faire un peu d'effort pour s'enligner avec la\
+> pancarte, tout de même.
+
+_NarrateurPancartePont3
+> La pancarte lit:\
+> \
+> LE PONT
+
+_NarrateurPancartePont4
+> Qui l'eu cru.
+
+_NarrateurNotePortePont
+> Il y a une note sur la porte:\
+> Partie réparer le pont. Pour toute commande, veuillez\
+> d'abord convaincre le maire de ne pas continuellement\
+> commander des chaises.
+
+_NarrateurBroche
+> Une petite broche en bois. Le vernis est noirci et usé.
+
+_NarrateurFermePancarte
+> La pancarte lit...\
+> BIENVENUE DANS LE LIEU CHAMPÊTRE\
+> Et il y a une direction vers le haut...\
+> LA VILLE
+
+_NarrateurSpotFeuCamp
+> Un bon endroit pour faire un feu de camp.\
+> \
+> Si vous aviez de quoi partir un feu.
+
+_NarrateurChouLaitue
+> Du chou? De la laitue?\
+> \
+> Pas clair...
+
+_NarrateurDorure
+> La belle dorure du blé. Oh. De l'orge?\
+> \
+> La belle dorure des céréales.
+
+_NarrateurDesCarottes
+> Des carottes!
+
+_NarrateurVigne1
+> Une vigne bien remplie.
+
+_NarrateurVigne2
+> ... Bien observé.
+
+_NarrateurEpouvantailNavet
+> Un épouvantail bien habillé. La tête en navet est une\
+> belle touche.
+
+_NarrateurPetiteCle
+> Une petite clé!
+
+_NarrateurVieuxGlisseRadisCossin1
+> Le Vieux glisse un radis dans la poche de Cossin.\
+> \
+> Mais Cossin n'a pas de poche, alors il le glisse dans\
+> sa bouche.
+
+_NarrateurVieuxGlisseRadisCossin2
+> Puis un autre.
+
+_NarrateurVieuxGlisseRadisCossin3
+> Et un dernier pour bien faire.
+
+_NarrateurDommageCarioleVide
+> Dommage. Le marchand a complètement vidé sa cariole.
+
+_NarrateurOraclePartieForet
+> Il y a une note sur la porte:\
+> Si vous avez besoin du futur maintenant, je suis partie\
+> dans la forêt.
+
+_NarrateurProtaFichePers
+> Le Protagoniste sort sa fiche de personnage.
+
+_NarrateurBouclierVert
+> Vous avez trouvé un Bouclier de Vert!
+
+_NarrateurStatueMaire1
+> Une statue au profile dignifié.\
+> Jusqu'à ce que vous remarquiez qu'elle a été défigurée\
+> crûdement au plâtre afin de changer les traits.
+
+_NarrateurStatueMaire2
+> Il y a une petite plaque qui a été clouée par dessus\
+> l'écriteau qui était directement inscrit sur la pierre:
+
+_NarrateurStatueMaire3
+> LE SEUL ET UNIQUE\
+> NOTRE MAIRE\
+> SA GRANDEUR DÉMOCRATIQUE RESPLENDIE ET\
+> PROTÈGE NOTRE ROYAUME
+
+_NarrateurPancarteVille
+> La pancarte lit...\
+> BIENVENUE DANS LA VILLE\
+> Et il y a une direction vers le bas...\
+> LE LIEU CHAMPÊTRE
+
+_NarrateurAssortimentLegumes
+> Un assortiment varié de légumes.
+
+_NarrateurBoiteMoules
+> Des moules.
+
+_NarrateurAncienneChaiseMunicipale
+> L'ancienne chaise municipale.\
+> \
+> Le velour est un peu sale, mais rien qui ne peut pas\
+> être nettoyé.
+
+_NarrateurBandanaNinja
+> Vous remarquez parmis les cendres des ninjas, qu'il\
+> reste un bandana!\
+> Un bandana vraiment très edgy. Tellement tranchant que\
+> vous agissez deux fois, mais sans vous défendre.
+
+_NarrateurBiereUtilise
+> Une bière en cours d'utilisation.
+
+_NarrateurDuPain
+> Du pain! C'est équivalent à des victuailles.
+
+_NarrateurCouverts
+> Des couverts.
+
+_NarrateurPoeleCuillereCouteau
+> Une poêle, deux cuillères et un couteau!\
+> \
+> Y'a moyen d'argumenter qu'un couteau et une dague c'est\
+> la même chose.
+
+_NarrateurSacGrain
+> Un sac de grain.\
+> \
+> Quel type de grain?\
+> L'Histoire ne le dit pas.
+
+_NarrateurEauTrouble
+> De l'eau trouble. Vous êtes tenté d'y goûter...
+
+_NarrateurBonneDecision
+> Mais vous décidez de prendre une bonne décision.
+
+_NarrateurTabouretMunicipal
+> Un tabouret à caractère municipal.
+
+_NarrateurBoisMalEmpile
+> Du bois, mais mal empilé.
+
+_NarrateurSceauEau
+> Un sceau d'eau.\
+> Au bout d'un moment à regarder dedans\
+> vous y apercevez une pâle copie de Narcisse.\
+> Il vous prend une étrange envie de tomber dedans.
+
+_NarrateurCordeReguliere
+> De la corde.\
+> \
+> Bien régulière.\
+> On peut corder avec ça.
+
+_NarrateurFoyerSuie
+> Il n'y a pas de feu mais, il y a bien de la suie dans\
+> le fond, si jamais vos mains se prenaient une crise\
+> existentielle de propreté.
+
+_NarrateurPotChambreFermier
+> Le fond du sceau est un peu jaunâtre.
+
+_NarrateurRobeFleurie
+> Une belle robe fleurie!
+
+_NarrateurLivreIntimeResident
+> Le journal intime d'un des résidents.
+
+_NarrateurEnFaitRecette
+> Vous vous apprêter à le lire, lorsque vous réalisez\
+> qu'en fait il s'agit d'un livre de recette.
+
+_NarrateurRecettePouletFour
+> POULET AU FOUR\
+> Ingrédient: Un poulet\
+> Outils: Un four\
+> Étapes: Mettre le poulet au four. Retirer lorsque cuît.
+
+_NarrateurUnSeulMarteau2
+> Bien que vous êtes certains avoir volé deux marteaux\
+> aux fermiers, vous observez qu'il n'y en a qu'un seul\
+> dans vos mains, et aucun sur le mur.
+
+_NarrateurBabioles
+> Des babioles sans valeur.
+
+_NarrateurCailloux1
+> ... Vous fouillez dans le sac, mais vous n'y trouvez\
+> que des petits cailloux inutiles.
+
+_NarrateurCailloux2
+> Des cailloux! C'est... huh.. vous pouvez les lancer.\
+> Des fois ça assomme.
+
+_NarrateurUneBoite
+> Une boîte.
+
+_NarrateurCarottesOrange
+> Des carottes, l'Essence même du Orange.
+
+_NarrateurProtolixir
+> Un Protolixir de Chair!\
+> Ça goûte le proto-poulet!\
+> \
+> Il y a un effet, probablement.
+
+_NarrateurMaterielLouche
+> Du matériel louche.\
+> Ça sent plutôt le poulet.
+
+_NarrateurGrandChaudronPoulet
+> Un grand, grand, grand chaudron.\
+> Ça sent plutôt le poulet.
+
+_NarrateurFiolesPoulet
+> Une panoplie de fioles vides.\
+> Ça sent plutôt le poulet.
+
+_NarrateurBoisPoulet
+> Du bois coupé.\
+> Ça sent plutôt le poulet.
+
+_NarrateurNonGeologueRocheAdjacentNonRoche
+> En tant que non-géologue, vous observez que c'est\
+> plutôt inhabituel pour une roche.\
+> D'habitude ça implique que c'est roche-adjacent.\
+> Voir même que c'est une non-roche.
+
+_NarrateurCaillouMouvant1
+> Ah.\
+> Donc à quel point on est perdus?\
+> Genre si on est rendu dans le royaume des\
+> caillous-mouvants ça va mal finir.
+
+_NarrateurCaillouMouvant2
+> Non mais là ça s'empire!
+
+_NarrateurCaillouMouvant3
+> En fait c'est vexant... On est si méchants\
+> que ça?
+
+_NarrateurCaillouMouvant4
+> Pas nécessaire, je pense que tu viens de me\
+> donner la réponse diplomatique...
+
+_NarrateurStalagmitePasDeBras
+> Rien ne se passe. Les stalagmites n'ont pas de bras, et\
+> encore moins de radis.
+
+_NarrateurRocheEcrouleeActivement
+> Oui on peut voir ici que la roche a été partiellement\
+> écroulée.
+
+_NarrateurFormationPasNaturelle
+> Vous n'êtes pas géologue, mais à tout les coups ce\
+> n'est pas une formation naturelle ça.
+
+_NarrateurCollierBreloque
+> Un collier sans intérêt. Une breloque.
+
+_NarrateurVolParchemins
+> Vous pourriez tenter de voler ces parchemins, mais vous\
+> n'allez pas le faire.
+
+_NarrateurToileFameuse1
+> Une toile fameuse.
+
+_NarrateurToileFameuse2
+> Mmmmh...\
+> \
+> Non les notes ne disent pas laquelle.
+
+_NarrateurNoShit
+> Wow. Phiou. Impossible.
+
+_NarrateurTombeJeanJacques
+> Ci gisait et giseront:\
+> \
+> Jean et Jacques\
+> Tristes victimes de leur antagonisme.
+
+_NarrateurPasGeologueBloqueEscaliers
+> Vous n'êtez pas géologue.\
+> Mais une grosse pile de roches ça bloque les escaliers.
+
+_NarrateurPasGeologueBloqueEchelle
+> Vous n'êtez pas géologue.\
+> Mais une grosse pile de roches ça bloque l'échelle.
+
+_NarrateurRocheDiorite
+> Vous n'êtes pas géologue.\
+> Mais c'est de la diorite, ça.
+
+_NarrateurPyrrite
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile de pyrite de fer, ça.
+
+_NarrateurPepitePyrite
+> Vous prenez une petite pépite.
+
+_NarrateurPileJaunatre
+> Vous n'êtes pas géologue.\
+> Mais c'est une pile jaunâtre, ça.
+
+_NarrateurCouvertes
+> Des couvertes. Bien pliées quand même.
+
+_NarrateurTrouveChaiseMunicipale
+> Vous avez trouvé la Chaise Municipale!
+
+_NarrateurPersVerDecideFouillerPile
+> Personne Véritable décide soudainement de fouiller dans\
+> la pile.\
+> \
+> Et il parlait de bulle personnelle...
+
+_NarrateurDeuxPoilsDeBarbeEtDeuxBieres
+> Deux poils de barbes et deux bières!
+
+_NarrateurRochePrendPause
+> Vous n'êtes pas géologue, mais la roche ici prend une\
+> petite pause.
+
+_NarrateurLireSurEcriteau
+> On peut lire sur l'écriteau...
+
+_NarrateurBienvenueAuRRRR
+> \
+> BIENVENUE AU\
+> ROYAUME RÉTABLI des ROCHES RÉCALCITRANTES
+
+_NarrateurUnCoffre
+> Un coffre!\
+> \
+> Mais honnêtement il est très quétaine. Un peu lette\
+> dirait-on.
+
+_NarrateurCollectionBoites
+> Une belle collection de boîtes.
+
+_NarrateurCollectionLivresTropEdgy
+> La collection de livres est entièrement composée de\
+> sujets trop edgy pour que vous puissiez les lire.
+
+_NarrateurChoixBouteillesDecevant
+> Le choix des bouteilles est plutôt décevant.\
+> En fouillant de manière très assidue, vous finissez\
+> par trouver une bouteille dont le cépage est\
+> acceptable.
+
+_NarrateurBreuvageFermente
+> Un breuvage fermenté!
+
+_NarrateurBouteillesImbuvables
+> Une collection de bouteilles complètement imbuvable.
+
+_NarrateurRegardezAutreMoitieBouteilles
+> Cette partie-ci de la collection de bouteilles est\
+> vraiment imbuvable, mais si vous essayez avec l'autre\
+> moitié...
+
+_NarrateurExcalibarreNote1
+> Note:\
+> \
+> Certaines des propriétés d'Excalibarre peuvent avoir\
+> été exagérées.
+
+_NarrateurExcalibarreNote2
+> Toute perte de gameplay engendrée par Excalibarre n'est\
+> pas la responsabilité du Monde, et aucun remboursement\
+> ne sera donné.
+
+_NarrateurExcalibarreNote3
+> Pour toute plainte concernant l'impact d'Excalibarre\
+> sur l'équilibre cosmique, veuillez vous référer au\
+> Bureau des Plaintes, situé en un endroit profond de\
+> votre être.
+
+_NarrateurStatueVedge
+> Une statue sans rien de remarquable ou d'excitant.
+
+_NarrateurTactiqueGagnante
+> Un livre avec une tactique gagnante dedans!\
+> Tournoyer pour gagner!\
+> En tournoyant vous tapez tous les enemis!
+
+_NarrateurCiGitEsperanceDubemelte
+> ci-git\
+> Espérance Dubemelte\
+> 1981 AD - 2015 AD\
+> Hélas, nous a quittée juste avant l'Invention
+
+_NarrateurCiGitMonseigneurBonMatin
+> ci-git\
+> Monseigneur Du-Bon-Soleil-Mais-Seulement-L'Avant-Midi\
+> 1969 AD - 2022 AD\
+> La perte d'un proche était trop dévastatrice.
+
+_NarrateurPetiteClePoussiereuse
+> Une petite clé de sous-sol!\
+> Elle est un peu poussiéreuse mais c'est comme ça que\
+> vous savez qu'elle est pour un sous-sol.
+
+_NarrateurTombeIncomplete
+> Il semblerait que l'enterrement de ce 'dividu n'a pas\
+> pu être terminé.
+
+_NarrateurTombeIncomplete2
+> D'ailleurs vous remarquez à côté du squelette...
+
+_NarrateurPelleMortuaire
+> Une Pelle Mortuaire!\
+> Contrairement à une pelle tout usage, cette pelle\
+> ne fonctionne que pour les lieux de repos éternels.
+
+_NarrateurCiGitBobinoTournedreau
+> ci-git\
+> Bobino Tournedeau-Cest-Du-Bacon-Oui\
+> 1987 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurCiGitQuestionMark
+> ci-git\
+> ???
+
+_NarrateurTombeNonIdentifiee
+> La tombe n'est pas identifiée.
+
+_NarrateurCiGitMarieLeveeSoleil
+> ci-git\
+> Marie-Levée Soleil\
+> 1964 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurCiGitJeanDesmatins
+> ci-git\
+> Jean Desmatins\
+> 1999 AD - 2022 AD\
+> Une autre Victime de la Noirceur
+
+_NarrateurNePasMangerCesChampignonsYaDingus
+> Une petite voix dans votre tête vous dit que manger ces\
+> champignons ne terminera pas bien.\
+> \
+> Ma voix.
+
+_NarrateurNePasMangerCesChampignonsYaDingus2
+> Vous êtes certain de ça? Même les petits doigts pensent\
+> que manger des champignons au pif c'est une mauvaise\
+> idée.
+
+_NarrateurBatisseEcroulee
+> Ah c'est une bâtisse écroulée ça.
+
+_NarrateurMurEcroule
+> Ah c'est un mur écroulé ça.
+
+_NarrateurDommagePotsCasses
+> Que c'est dommage les pots cassés... Vous ne pourrez\
+> même pas les briser vous même afin d'y trouver le doux\
+> nectar-de-pot-cassé.
+
+_NarrateurTristeVisionDesCendres
+> La triste vision des cendres complètement refroidies du\
+> foyer.\
+> \
+> C'est pas facile partir un nouveau feu.
+
+_NarrateurNiPlatreurNiCharpentierMaisTrou
+> Vous n'êtes pas plâtreur. Ou charpentier.\
+> \
+> Mais c'est un trou ça.
+
+_NarrateurNiPlatreurNiCharpentierMaisCraque
+> Vous n'êtes pas plâtreur. Ou charpentier.\
+> \
+> Mais c'est une craque ça.
+
+_NarrateurBibliothequeTombeeTrou
+> On peut voir ici que la bibliothèque tenait entièrement\
+> grâce à la présence d'un non-trou dans le bas du mur\
+> derrière.\
+> Hélas l'apparation du trou l'a fait tomber.
+
+_NarrateurTableQualiteStandardAuberge
+> Une table de qualité standard pour une auberge.
+
+_NarrateurBarrilBreuvageFermente
+> Ah et dans le baril il y a du vin! Il est encore bon,\
+> probablement.\
+> \
+> Du breuvage fermenté!
+
+_NarrateurBiscuit
+> Un biscuit!\
+> Terrible. Il est aux raisins.
+
+_NarrateurChevalierNoirPrendBonjour
+> Le Chevalier Noir prend le Bonjour!
+
+_NarrateurBonMatinSocleVide
+> Le socle vide du Bon Matin. Une vision d'horreur.
+
+_NarrateurCadranSolaireBonMatin
+> Installer un cadran solaire à l'intérieur c'est une\
+> drôle d'idée.
+
+_NarrateurCadranSolaireBonMatin2
+> Ah. Dans ce cas-ci, toutes les heures sont identiques?\
+> Il y a simplement "A.M." partout, et au centre du\
+> cadran on peut lire:
+
+_NarrateurToujoursMatinQqPart
+> \
+> IL EST BIEN TOUJOURS\
+> LE MATIN QUELQUE PART
+
+_NarrateurCureAvaitLaCle
+> Une petite voix dans votre tête vous dit que ça serait\
+> probablement le curé qui avait la clé.
+
+_NarrateurHorlogeBonMatin
+> L'horloge ne semble plus fonctionner...\
+> \
+> En fait, il n'y a même pas d'aiguilles sur l'horloge.\
+> Au centre du cadran, on peut simplement lire:
+
+_NarrateurBoiteLivresMatin
+> Une boîte de livres.\
+> Il y a surtout des autobiographies du Grand Prophète\
+> Le-Matin-C'est-Bien-Mais-Deux-Minutes-Jme-Fais-Un-Café.\
+> Ses amis l'appelaient LMCBMDMJFUC.
+
+_NarrateurTitresLivresMatin
+> Vous survolez rapidement les titres:\
+> "Le secret d'une bonne journée"\
+> "Le Matin et vous"\
+> "À quelle heure se coucher pour optimiser"
+
+_NarrateurBibliothequeTuilesMagicoportantes
+> Vous survolez rapidement les titres:\
+> "Installation simple de tuiles magico-portantes"\
+> "Comment convaincre un moine que les tuiles magico-\
+> portantes du temple sont nécessaires"
+
+_NarrateurPamphletsMatinaux1
+> La bibliothèque semble complètement remplie de\
+> pamphlets de messes matinales.
+
+_NarrateurPamphletsMatinaux2
+> Ah. C'est des recettes pour cuisiner le Bon Matin.
+
+_NarrateurLettreInachevee
+> Une lettre inachevée.\
+> \
+> Le contenu ne fait pas partie de cette histoire.
+
+_NarrateurPetiteBoiteCartesPostales
+> Une petite boîte pleine de cartes postales.
+
+_NarrateurCartePostaleBonMatin
+> Un produit dérivé du Temple du Bon Matin!\
+> Il y a un BON MATIN mal écrit dessus.
+
+_NarrateurBoitePapier
+> Oh. C'est beaucoup de parchmins et de papier blanc, ça.
+
+_NarrateurCouverturesMoelleuses
+> Des couvertures bien moelleuses pour se protéger des\
+> nuits désertiques.\
+> \
+> Vous n'avez pas besoin du confort.
+
+_NarrateurCabinetEncres
+> Un cabinet rempli d'encres et de matériel pour écrire\
+> sur des parchemins et des cartes postales.
+
+_NarrateurFoyerFroid
+> Ça fait un bout quand même que le feu n'a pas été\
+> allumé. Le foyer est complêtement froid.
+
+_NarrateurVictuaillesRancies
+> Vous seriez vraiment tenté de prendre des victuailles,\
+> si seulement elles n'étaient pas rancies.
+
+_NarrateurTitresLivresMonseigneur1
+> Les lectures personnelles du Monseigneur:
+
+_NarrateurTitresLivresMonseigneur2
+> Comment financer votre achat impulsif de tuiles\
+> magico-portantes:\
+> Aviez-vous considéré que les achats pour un lieu de\
+> culte sont déductibles d'impôts?
+
+_NarrateurTitresLivresMonseigneur3
+> L'orgue Tout-doux:\
+> Manuel d'instruction et de maintenance.
+
+_NarrateurMmhCetait
+> Mmmh...\
+> \
+> C'était.
+
+_NarrateurObjetsContondants
+> Des objets contondants.
+
+_NarrateurTabouretsPliables
+> Des tabourets pliables.\
+> \
+> Au cas où il y aurait une foule subitte qui nécessite\
+> un Matin.
+
+_NarrateurJarreHuileOliveRance
+> Une jarre d'huile d'olive, avec un profil rance bien\
+> présent.
+
+_NarrateurPileDeBoitesNonInvestiguee
+> Normalement vous investigueriez la pile de boîtes,\
+> mais pas cette fois-ci.
+
+_NarrateurPileDeBoitesNonInvestiguee2
+> Bon, un petit coup d'oeil ça ne ferait pas de mal...\
+> Oh.\
+> Des plus petites boîtes.\
+> Vous n'avez pas ce genre de patience.
+
+_NarrateurBoiteChandelles
+> Une boîte de chandelles. Pratique pour les moments\
+> glauques.
+
+_NarrateurBoitesDeRechanges
+> La pile des boîtes de rechanges.\
+> \
+> Au cas où il y manquerait des boîtes quelques part.
+
+_NarrateurFournaiseAutreFuel
+> C'est une fournaise, mais il n'y a nul part pour y\
+> mettre du bois ou du charbon, elle doit être alimentée\
+> d'une autre manière.
+
+_NarrateurValveOuverte
+> La valve est ouverte.
+
+_NarrateurGrosCylindreMetal
+> C't'un gros cylindre de métal, ça.
+
+_NarrateurPorteSansPoignee
+> La porte est fermée, et la poignée est en fait peinte\
+> sur la porte.\
+> \
+> La porte ne peut être ouverte manuellement.
+
+_NarrateurPartitionMatinale
+> Une partition matinale!
+
+_NarrateurPileTerreConfus
+> Une belle pile de terre. C'est pour... huh...\
+> Ok?
+
+_NarrateurBoiteTuilesFlechees
+> Une boîte contenant des tuiles flêchées.
+
+_NarrateurLivresNonMatinaux
+> De la lecture non-matinale complètement dénuée\
+> d'intérêt.\
+> Le mieux que vous trouviez c'est un livre titré\
+> "Le Brunch: Comment décréter que c'est encore le matin"
+
+_NarrateurParcheminBonMatin
+> Un parchemin du Bon Matin!\
+> Un bel exercice calligraphique.
+
+_NarrateurAtreFoyer
+> Ah c't'un âtre de foyer, ça.
+
+_NarrateurBoiteChoses
+> Une boîte de choses. Quelles choses? Ces choses-là\
+> qu'on met dans des boîtes.
+
+_NarrateurPileBoisSecCharpenterieMenuiserie
+> Du bois coupé. Bien sec. Pratique pour faire de la\
+> menuiserie. Ou de la charpenterie.
+
+_NarrateurProjetMysterieux
+> Un projet difficile à comprendre. Ou une mauvaise idée.\
+> \
+> Certains diraient un ramassi de bois.
+
+_NarrateurCoffreRivetClous
+> Des clous et des rivets. Rien que vous devriez prendre\
+> avec vous.
+
+_NarrateurMurJesusCouteau
+> Sur le mur il y a des couteaux à bois - Leur apparence\
+> est trompeuse.\
+> Et par dessus des marteaux et des maillets.
+
+_NarrateurMurJesusCouteau2
+> Mais l'angle fait que ça vous ferait trop chier d'aller\
+> les voler, alors ce n'est pas une option.
+
+_NarrateurGogosses
+> Des gogosses.
+
+_NarrateurSalamiNutritionne
+> Du salami. À tous les coups ça nutritionne.
+
+_NarrateurSecretVert
+> Un livre avec le Secret du Vert dedans!\
+> Pour une santé éternelle!
+
+_NarrateurSortilegeDangereux
+> Un livre avec un Sortilège Dangereux dedans!\
+> C'est chaud! C'est dangereux!
+
+_NarrateurNervositeNouvelle
+> Personne Véritable ressent soudainement une nervosité\
+> nouvelle.
+
+_NarrateurBonjour
+> Bonjour, je suis Guillaume Noël-Martel
+
+_NarrateurApprisAdrenaline
+> Vous avez appris l'Adrénaline!\
+> Permet de prendre trois actions le prochain tour!
+
+_NarrateurAdrenalineStamina
+> L'Adrénaline utilise du stamina -\
+> Vous pouvez en reprendre durant les combats en\
+> attaquant ou en vous défendant.\
+> Mais se défendre est bien plus reposant.
+
+_NarrateurToutLeMondeMouille
+> Tout le monde est mouillé!\
+> \
+> Comme c'est bien connu, être mouillé rend complêtement\
+> immune à la chaleur.
+
+_NarrateurBouteilleEau
+> Une bouteille d'eau!\
+> Vous pouvez vous la verser sur la tête et pouf tout le\
+> monde est mouillé. Comme c'est bien connu, être mouillé\
+> rend immune à la chaleur.
+
+_NarrateurRemplirBouteilleEau
+> Remplir une bouteille d'eau?
+
+_NarrateurBouteilleVide
+> Une bouteille vide!
+
+_NarrateurGemmeSuspicieuse
+> Une petite gemme suspicieuse.\
+> Comme un genre d'oeil de verre.
+
+_NarrateurYeuxSuspicieux
+> Vous pouvez voir deux gemmes suspicieuses dans les yeux\
+> du petit bonhomme sur le dragon.\
+> Le dragon a deux trous là où vous vous imagineriez ses\
+> yeux.
+
+_NarrateurInsererGemme1
+> Insérer une gemme suspicieuse dans le trou?
+
+_NarrateurInsererGemme2
+> Insérer une gemme suspicieuse dans l'autre trou?
+
+_NarrateurStatueSuspicieuse
+> Une statue très suspicieuse.
+
+_NarrateurArmurerieSecreteRRR
+> Bienvenue dans l'armurerie secrète du RRR.
+
+_NarrateurEauJaillissanteScintille
+> De l'eau jaillissante qui scintille.
+
 ### Protagoniste
+
+_ProtagonisteCommeBonjourDisparu
+> C'est comme si... Depuis qu'on a visité le\
+> Temple du Bonjour, le Bonjour-même c'était\
+> volatilisé!
+
+_ProtagonisteBonMatinVolatilise
+> Oui mais pourquoi tout le monde ignorerait\
+> le fait qu'on est encore l'après-midi!\
+> C'est à croire que c'est la même chose qui\
+> s'est passé pour le Bon Matin...
+
+_ProtagonisteDefendTempleBonjour
+> Et puis en plus, c'est pas mutuellement\
+> exclusif: Si tu devais protéger à tout\
+> jamais un Concept du monde en soit, il\
+> faudrait quand même vivre.
+
+_ProtagonisteQuelquunVoleBonMatin
+> On n'a pas de meilleures hypothèses? Moi je\
+> vous le dis, quelqu'un a volé le Bon Matin.
+
+_ProtagonisteNeSaisPasDOu
+> Merde je ne sais même pas de où!
+
+_ProtagonisteDuWiki
+> Du Repositoire des Textes Sacrés?
+
+_ProtagonisteLegendeDesespoir
+> Non mais des légendes comme ça c'est des\
+> plans pour finir en désespoir.
+
+_ProtagonisteKosseca
+> Kosséça.
+
+_ProtagonisteEstUnTiCul
+> Non mais justement, le Gaboué me prédate!\
+> Tu penses que ça date d'hier qu'il est sur\
+> son pont à proférer des "GABOUÉ"?
+
+_ProtagonisteDemeureConfus
+> Bon par contre ça clarifie rien à ce qu'on\
+> a devant nous là.
+
+_ProtagonisteVeutPasLaSoupeDeMot
+> ... le Sage Pingouin?\
+> \
+> ... les Scriptouilles?
+
+_ProtagonisteVeutPasLaSoupeDeMotPt2
+> À quel point Gaboué fait juste déblatérer\
+> une soupe de mots en fait?\
+> \}En plus ça rimait pas à la fin...\{
+
+_ProtagonisteLesScriptouillesCEstDangereux6
+> Bon, je m'excuse.\
+> \
+> Pis huh... ces "Scriptouilles" c'est\
+> dangereux?
+
+_ProtagonisteOffreMercantile
+> ... Quoi? Tu veux nous faire une offre\
+> mercantile?
+
+_ProtagonisteAUnMauvaisPressentiment
+> J'ai un mauvais pressentiment...\
+> C'est vraiment glissant par ici!
+
+_ProtagonisteSiSeulementGeologue
+> Si seulement on avait ma bonne amie la\
+> Géologue avec nous...\
+> Elle serait de bon conseil!
+
+_ProtagonisteSiSiALaVilleMeme
+> Si si, même qu'elle habite à la Ville!\
+> Bon, on s'est rencontré que lorsqu'elle\
+> était en visite au Bois du Gaboué...\
+> Mais pareil!
+
+_ProtagonisteOhNon
+> OhNon
+
+_ProtagonisteTombe
+> Tombe
+
+_Protagoniste10Douleurs
+> Ah saperstifice!\
+> Je dois bien m'être fait... 10 douleurs!
+
+_ProtagonisteProcedure
+> ... Une procédure?\
+> Y nous niaise. Quant à faire je peux bien\
+> lui expliquer la procédure de comment on va\
+> lui péter sa face!
+
+_ProtagonisteEnAMarreDesTables
+> Ok mais ça fera là! Y'a combien de tables à\
+> faire tomber lui-là!?
+
+_ProtagonisteEnAMarreDesTables2
+> Bin non, si c'était le cas on verrait sa\
+> pile de tables!\
+> Mais là ça sort du néant son affaire.
+
+_ProtagonisteAllonsPontRepareMesEfforts
+> Allons allons, il a été réparé le pont!\
+> Gracieuseté de mes efforts personnels en\
+> plus!
+
+_ProtagonisteVousSuivezOnVaVisiterCossin
+> Alors vous allez nous suivre? Question\
+> qu'on aille visiter le Cossin?
+
+_ProtagonisteBoisProtolixir
+> Bon ça goûte le poulet, mais je ressens pas\
+> trop grand chose autrement...\
+> Peut-être que l'inventeur aura quelque\
+> chose à dire là-dessus.
+
+_ProtagonisteEnPeutPlus
+> Ça suffit j'en peux plus!
+
+_ProtagonisteOhNonNonNon
+> Oh non.\
+> Nonononon.
+
+_ProtagonisteSaigne
+> Ah je saigne!
+
+_ProtagonisteTuSaigne
+> Ah mais tu saignes!
+
+_ProtagonisteIndiceBonMatin1
+> Bon! On est bien dans le fameux Temple du\
+> Bon Matin.
+
+_ProtagonisteIndiceBonMatin2
+> La place a déjà vécu de meilleurs jours par\
+> contre...\
+> Voyons si on peut trouver le Bon Matin,\
+> mais ça augure mal.
+
+_ProtagonistePeutPasPasserVignes
+> Ah merde je vois un livre derrière les\
+> vignes... mais il n'y en a trop je n'arrive\
+> pas à passer!
 
 _ProtagonisteQuitterVillageSansDague
 > Mmmh... Je regarde ma main, et j'ai comme\
@@ -361,6 +1995,18 @@ _ProtagonisteMainNue
 > En ce moment ma main est plutôt toute\
 > nue...
 
+_ProtagonisteTombeVide
+> Mmmmh, la tombe est vide...
+
+_ProtagonisteCoucouQuestion
+> Coucou?
+
+_ProtagonistePasContent
+> ...
+
+_ProtagonisteBonjourPasBonMatin
+> Mais un Bonjour c'est pas un Bon Matin!
+
 _ProtagonisteQuetePasChoix
 > Bon, si vous me donnez une quête...\
 > Pas le choix.
@@ -373,6 +2019,41 @@ _ProtagonisteSePoseTropDeQuestions
 > Je dis ça, pis en même temps si je regarde\
 > sa boîte de "poissons"...\
 > Je me pose peut-être trop de questions.
+
+_ProtagonisteMoules
+> Heille mais ça ressemble plus à des moules!
+
+_ProtagonisteHuuuh
+> Huuuuh
+
+_ProtagonisteAlloConfus
+> ... Allo?
+
+_ProtagonisteCossinRegardeJaiTrouve
+> Cossin Lette! Regardez ce que nous avons\
+> trouvé!
+
+_ProtagonisteAObjetARemettre
+> Je ne sais pas pourquoi, mais j'ai quelque\
+> chose à vous remettre.
+
+_ProtagonisteACoffreBlonde
+> Je suis quasi certain que ce coffre\
+> contient votre Blonde perdue de longue\
+> date! Seulement... je n'arrive pas à ouvrir\
+> le coffre.
+
+_ProtagonisteCaPrendDesGrossLevresPourOuvrirCoffre
+> Ah. C'est la touche des grosses lèvres\
+> bleues je suppose...
+
+_ProtagonisteAimeraitUnCadeau
+> ... Je voudrais pas m'imposer, mais ça n'a\
+> pas été facile tout ça.\
+> Vous avez quelque chose pour moi?
+
+_ProtagonisteAVosSouhaits
+> À vos souhaits.
 
 _ProtagonisteAVuAutel
 > J'ai vu que vous aviez un autel au Bon\
@@ -401,6 +2082,10 @@ _ProtagonistePeurVieuxOubli
 > Hey ho mais vous avez oublié?\
 > Le Lieu Champêtre! Le Pont cassé!
 
+_ProtagonisteChangeRienLieuChampetre
+> Ça change rien, tout est prêt!\
+> Le Cossin est au Lieu Champêtre!
+
 _ProtagonisteAnnonceCossinTrouve1
 > Ah mais au fait, votre fameux Cossin, on\
 > l'a trouvé!
@@ -414,6 +2099,12 @@ _ProtagonisteAnnonceCossinTrouve3
 > Lieu Champêtre de l'autre côté de la Forêt,\
 > de l'autre côté du Pont.
 
+_ProtagonisteVraiPontCase
+> C'est vrai qu'avec le Pont cassé...
+
+_ProtagonisteConnaitPasPont
+> Huh? On marche sur un pont vous savez...
+
 _ProtagonisteAnnonceCossinTrouve4
 > Heille mais comment savez vous que j'allais\
 > vous proposer de venir sur mon radeau!?
@@ -426,9 +2117,30 @@ _ProtagonisteVeutPointu
 > Ah c'est lousse ici.\
 > Si seulement j'avais un implément pointu...
 
-_Protagoniste10Douleurs
-> Ah saperstifice!\
-> Je dois bien m'être fait... 10 douleurs!
+_ProtagonisteNoteParTerre
+> Ah il y a une note par terre!
+
+_ProtagonisteJeanJacquesMorts1
+> Jean-Jacques? Y sont pas morts ces deux-là?
+
+_ProtagonisteJeanJacquesMorts2
+> Je sais pas... c'était pas le genre de\
+> types qu'y ont un philactère dans la poche\
+> tu sais?
+
+_ProtagonisteJeanJacquesMorts3
+> Toi t'as l'air d'avoir lu le Repositoire\
+> des Textes Sacrés...
+
+_ProtagonisteBanditsProvenance
+> Bon ok, ça nous dit d'où y viennent je\
+> suppose?\
+> Mais genre... quel boisé? Va falloir tous\
+> les vérifier c'est ça?
+
+_ProtagonisteBanditsProvenance2
+> Parfait, j'adore ça quand vous avez tous\
+> ce beau regard vide.
 
 _ProtagonisteCouperHommeEnDeux
 > Mais attendez un instant - Vous venez de\
@@ -440,9 +2152,30 @@ _ProtagonisteHistoiresProphetie
 > Pourtant vous n'avez pas l'air d'avoir pris\
 > un coup à la tête -
 
+_ProtagonisteKwe
+> Kwe
+
+_ProtagonisteAucunSens
+> Vous ne faites aucun sens...
+
+_ProtagonisteCheminOuvert
+> Ici? Le chemin est tout ouvert juste là.
+
+_ProtagonisteRepositoireTextesSacres
+> Le Repositoire des Textes Sacrés?
+
 _ProtagonistePecheurQuelleQuete
 > Le... pêcheur? Quelle quête?\
 > Moi je cherche que le Bon Matin.
+
+_ProtagonisteSansEquivoque
+> Ah c'est sans équivoque.
+
+_ProtagonisteEtSiJeNeVeuxPasAide
+> Et si je ne veux pas de votre aide?
+
+_ProtagonisteLogiqueImpeccable
+> Ah comme logique c'est impeccable.
 
 _ProtagonisteNeSemblePasAvoirDeChoix
 > Huh, il semble que je n'ai pas vraiment le\
@@ -474,11 +2207,29 @@ _ProtagonisteOuchPasFeu
 > C'est chaud.\
 > C'est dangereux.
 
+_ProtagonisteOhohohQuete
+> Oh oh oh, une quête!
+
+_ProtagonisteDeuxMarteaux
+> Heille mais y'avait deux marteaux!
+
+_ProtagonisteTellementFaim
+> J'ai tellement faim.
+
+_ProtagonisteFaimFondamentale
+> Une faim fondamentale.
+
+_ProtagonisteBesoinBMLT
+> J'ai besoin d'un BMLT.
+
 _ProtagonisteTitle
 > Il me faut\
 > Le BON MATIN\
 > La LAITUE\
 > Et La TOMATE
+
+_ProtagonisteBeauChat
+> Oh le beau chat...
 
 _ProtagonisteUnRatDansUnTrenchcat
 > Hey mais c'est pas un chat,\
@@ -495,9 +2246,21 @@ _ProtagonisteBonsoirMaisSoleil
 > encore soleil dehors, il doit bien rester\
 > plusieurs heures à la journée!
 
+_ProtagonisteMaPioche
+> Nonon, c'est MA pioche maintenant.
+
 _ProtagonisteTerribleMine
 > Terrible, ce qui s'est passé dans la\
 > mine...
+
+_ProtagonisteMaPiocheBis
+> MaPiocheBis
+
+_ProtagonisteBonjourConfus
+> Oui ... Bonsoir?
+
+_ProtagonisteHelloQuestion
+> Hello?
 
 _ProtagonisteCaCestDuSommeil
 > Ah oui, ça c'est du sommeil tellement\
@@ -523,6 +2286,9 @@ _ProtagonisteAVuLesLivres
 > vous ne gardez le Bonjour que pour votre\
 > avarice!
 
+_ProtagonisteHeilleNotrePhrase
+> Heille c'est notre phrase ça!
+
 _ProtagonisteCetaitDeLAutodefense
 > Non mais c'était que de l'autodéfense!\
 > Le fait qu'on a tué tout le monde dans la\
@@ -544,10 +2310,16 @@ _ProtagonisteBonMessieursBonjour
 > On est un peu perdus, je suis en quête pour\
 > le Bonjour!
 
+_ProtagonisteVousMeNiaisez
+> Vous me niaisez là...
+
 _ProtagonisteSaitQueCEstPasOuvert
 > Je sais que c'est pas ouvert aujourd'hui,\
 > mais l'équilibre cosmique ne peut pas\
 > attendre.
+
+_ProtagonisteNonMaisMais
+> Non mais... mais...
 
 _ProtagonistePasFachuPlusDeBonjours
 > Bon, je ne suis pas fâché qu'ils ne nous\
@@ -570,6 +2342,9 @@ _ProtagonisteAComprisLeSentiment
 > Non non, c'est bon, je pense qu'on a\
 > compris le sentiment.
 
+_ProtagonisteTouchePlusAuxTrenchcats
+> Moi je touche plus à ça des trenchcats.
+
 _ProtagonisteLapin
 > Je connais pas bien les lapins, mais me\
 > semble ça ne sonne pas comme ça...
@@ -577,6 +2352,15 @@ _ProtagonisteLapin
 _ProtagonisteToutVoir
 > La vue est pas pire d'ici quand même, je\
 > peux presque tout voir dans les alentours!
+
+_ProtagonisteNon6
+> Non?
+
+_ProtagonisteInspirezPasConfiance
+> Vous inspirez pas fort la confiance...
+
+_ProtagonisteDe
+> De?
 
 _ProtagonisteDiseuseBonneAventure
 > Ah c'est... Vous êtes... une diseuse de\
@@ -609,13 +2393,34 @@ _ProtagonistePasTraducteur
 > Huh... Oui? Non?\
 > On a perdu le traducteur...
 
+_ProtagonistePasToiAussi
+> Non! Pas toi aussi!?
+
 _ProtagonisteVousAllezPayer
 > Vous allez payer pour ce que vous avez fait\
 > à mes camarades!
 
+_ProtagonisteWwwelchiorCharme
+> Raaaaa et Wwwelchior est sous son charme!
+
+_ProtagonisteNeTientQueSurPete
+> Ça ne tient que sur moi donc, je vous pète!
+
+_ProtagonisteRienQuiSePasse
+> Huh, y'a rien qui se passe?
+
+_ProtagonisteParleDuMiens
+> Tu veux qu'on parle du miens?
+
+_ProtagonisteBeauTexteRetentissant
+> Du beau texte retentissant, ça.
+
 _ProtagonistePrefereDiplo
 > Même pas une petite discussion? Une petite\
 > tasse de thé, je sais pas?
+
+_ProtagonisteVictoireDetah
+> Victoire! On a pété le Detah!!!
 
 _ProtagonistePrejugeBleus
 > Mais non! C'est pas pareil quand tu tues\
@@ -630,6 +2435,27 @@ _ProtagonisteFacileEmporter
 _ProtagonisteGrandePersBleue
 > Une grande personne bleue, ça reste une\
 > personne.
+
+_ProtagonistePretPourGaboue
+> Ah oui je l'attendais bien lui.
+
+_ProtagonisteAhOui
+> Ah. Oui.
+
+_ProtagonisteSiVousVoulez
+> ... Si vous voulez vraiment.
+
+_ProtagonisteFuillons
+> Fuillons!
+
+_ProtagonisteCtunPouletCa
+> Ah c'est un poulet ça.
+
+_ProtagonisteOuchMonDoigt
+> Ouch mon doigt!
+
+_ProtagonisteQuoi16
+> Quoi!?
 
 _ProtagonisteVeutUnSouvenir
 > Bon.\
@@ -662,6 +2488,15 @@ _ProtagonisteVoudraitPrendreRiviere
 > Justement, on pourrait prendre la rivière!\
 > L'eau doit être super bonne!
 
+_ProtagonisteVeutPasLaTraduction
+> Non mais j'ai pas tant envie de -
+
+_ProtagonisteHein
+> Hein?
+
+_ProtagonisteQuiParlePourRien
+> QuiParlePourRien
+
 _ProtagonisteVeutLeMeriteDuWindo
 > Ha! J'ai toujours su qu'on aller triompher\
 > sur... huh...\
@@ -671,6 +2506,9 @@ _ProtagonisteVeutLeMeriteDuWindo
 _ProtagonisteEssayeDeSExpliquerSurRiviere
 > Hey ho. Je suis sûr que la rivière aurait\
 > été une bonne alternative en plus.
+
+_ProtagonisteFuyonsCamarades
+> Fuyons camarades!
 
 _ProtagonisteNotreSurvie
 > Si tu continues comme ça, ce sera \{notre\}\
@@ -718,6 +2556,9 @@ _ProtagonisteRefuseDeSexpliquer
 > deviez de savoir? Je suis pas mal sûr que\
 > s'en est une autre.
 
+_ProtagonisteConfusParCorde
+> Hum, merci je suppose?
+
 _ProtagonisteImpressionneParManuelCannePeche
 > Ah oui vous quand vous vous devez de savoir\
 > des choses ça niaise pas.
@@ -727,6 +2568,9 @@ _ProtagonisteMurInvisible
 > invisibles? J'ai l'impression d'halluciner\
 > des débilités d'un autre temps.
 
+_ProtagonisteGaboue6
+> Gaboué?
+
 _ProtagonisteComprendsRien
 > Non mais... Je comprends toujours\
 > rien à ce qu'il raconte.
@@ -735,6 +2579,9 @@ _ProtagonistePasConvaincuFenetre
 > Je veux bien qu'il soit pris de peur devant\
 > une fenêtre, mais ça nous dit pas grand\
 > chose.
+
+_ProtagonisteOuiEtDonc
+> Oui bon, et donc?
 
 _ProtagonisteVousAvezPasPlusDeBarbe
 > Non mais vous avez pas plus de barbe que\
@@ -749,6 +2596,9 @@ _ProtagonisteAccepteQuete
 > Une autre quête qui n'est pas obtenir le\
 > Bon Matin?\
 > Jamais je n'aurais pu le voir venir!
+
+_ProtagonisteACompris
+> Oui oui, j'ai compris.
 
 _ProtagonisteGaboueAPasDejaUneBranche
 > Mais je regarde là, c'est pas une branche\
@@ -801,6 +2651,12 @@ _ProtagonisteLicheSesArmoiresWtf
 > armoires de cuisines, quand on les liche\
 > après les avoir oublié trop longtemps.
 
+_ProtagonisteOnVaVraimentFaireCa
+> Bon, on va vraiment faire ça?
+
+_ProtagonisteCEstPasTresHeroique
+> Je veux bien mais c'est pas très héroïque.
+
 _ProtagonisteNonNonLaDiplomatie
 > Non non attends! La diplomatie!\
 > Cette fois-ci j'ai un bon sentiment.
@@ -831,15 +2687,79 @@ _ProtagonisteEconomieDesFantomes
 > monstre, et on s'en sortirait jamais...\
 > Ouin bon je vois le genre.
 
+_ProtagonisteRefuseAAA
+> Je refuse, aaaaaaaaaa!
+
 _ProtagonisteCestGlauqueIci
 > Je sais pas pourquoi je suis surpris, mais\
 > caline c'est glauque ici.
+
+_ProtagonisteTouristiques
+> ...Touristiques?
+
+_ProtagonisteOuiCertainementIncertain
+> Huh... Oui, certainement!
+
+_ProtagonisteAPlusTard
+> Bon alors... à plus tard.
+
+_ProtagonisteNouiVousAvezVuNinjas
+> ... Noui.\
+> \
+> Vous avez vu passer des ninjas pendant que\
+> vous nous attendiez?
+
+_ProtagonisteExpliqueAmbuscadeBlondeDisparue
+> Bon... en fait c'était un guet-apens - Ils\
+> s'étaient déguisés en Blonde, visiblement\
+> en attente de Cossin...\
+> Mais là on a aucune idée où ils l'ont mise.
+
+_ProtagonisteUneLettre
+> Une lettre!
+
+_ProtagonisteLettreGribouillisGnieh
+> Mmmh, ça va être dur à lire, c'est du gros\
+> gribouillis. Y'a juste plein de "Gnieh!"\
+> à grandeur...
+
+_ProtagonisteAh
+> Ah.
+
+_ProtagonistePasDePresse10Ans
+> Vous dites ça, mais ça fait 10 ans, alors\
+> je penses pas que ça presse tant que ça.
+
+_ProtagonisteOuiOuiOnVaEtreDesBonsHerosRip
+> Oui oui, on va se dépêcher et se rendre\
+> dans la prochaine ambuscade de ce pas!\
+> Ça va être remplis de plaisir et de\
+> découvertes!
+
+_ProtagonisteOnVousTrouveOu
+> Et on vous retrouve où par la suite?
+
+_ProtagonisteOnVousTrouveChezVous
+> Chez vous. On vous retrouve chez vous.
 
 _ProtagonisteAttendCommentaireSquelette
 > On va pas commenter sur le squelette?\
 > \
 > ...\
 > Bon je vais le faire moi-même alors.
+
+_ProtagonisteSquelette
+> Un squelette. Une vision macabre du futur.
+
+_ProtagonisteCuillere1
+> ... une cuillère?
+
+_ProtagonisteCuillere2
+> Une cuillère.
+
+_ProtagonisteGeologueBruyant
+> Bon, être géologue c'est un peu bruyant\
+> quand même...
 
 _ProtagonisteBonsoirArthrite
 > Merci... bonsoir à vous aussi.\
@@ -854,6 +2774,18 @@ _ProtagonisteSouhaiteBonneCavite
 _ProtagonisteVousAvezPasRapport
 > C'est ben soudain votre affaire!\
 > Vous avez juste pas rapport.
+
+_ProtagonisteTantMieuxJeSuppose
+> Ehbeh, tant mieux je suppose.
+
+_ProtagonisteJePrendsLaLampe
+> Je prends la lampe?
+
+_ProtagonistePlusDeGenie
+> Il n'y a _plus_ de génie?
+
+_ProtagonisteOh
+> Oh.
 
 _ProtagonisteVaLaisserLaLampe
 > C'est drette la violence, huh?\
@@ -904,10 +2836,31 @@ _ProtagonisteFameusesVictuailles
 > Ah les fameuses victuailles, moi j'adore\
 > ça!
 
+_ProtagonisteRhetoriqueMonCul
+> Hey oh!\
+> Et si j'avais connu de l'information\
+> contextuelle utile?\
+> C'est assumer des choses, ça!
+
+_ProtagonistePeutAiderPont
+> Alors, comment est-ce que vous allez\
+> pouvoir faire les réparations? Y'a moyen\
+> qu'on vous aide?
+
+_ProtagonisteAutreFameuseLegende
+> Une autre fameuse légende c'est ça?
+
+_ProtagonistePtitDoigtConnaisseu
+> Ça a d'l'air que mon petit doigt y connait\
+> toutes sortes de choses!
+
 _ProtagonisteChercheDoncIlDit
 > Oh. Hum...\
 > Gabspart tu as un petit "donc il dit" pour\
 > nous?
+
+_ProtagonisteBin
+> Bin...
 
 _ProtagonisteInsinuationsMises
 > Oh mais là c'est toi qui me mets des\
@@ -929,6 +2882,12 @@ _ProtagonisteTrouveCossin2
 > Je suppose qu'on peut aller dire au Vieux\
 > que vous êtes ici maintenant?
 
+_ProtagonisteTropTard
+> Je suis désolé, mais il est trop tard.
+
+_ProtagonisteSoirSoleil
+> Beaucoup de soleil pour un soir...
+
 _ProtagonisteQuetePasPrioritaire
 > Bientôt, bientôt!\
 > C'est ma priorité principale!\
@@ -948,9 +2907,18 @@ _ProtagonisteDefendQuete
 > de Protagoniste d'accepter toutes les\
 > petites quêtes qui me viennent!
 
+_ProtagonisteVeutPasLeFaire
+> \}et puis, ça veut pas dire qu'on va réellement le faire...\{
+
 _ProtagonisteAutedefenseFaible
 > Non! Ce n'était pas intentionnel! Ce\
 > n'était que de l'autodéfense!
+
+_ProtagonisteOuilleTete
+> Oh, ouille ma tête...
+
+_ProtagonisteBosse
+> ...Ça va laisser une bosse...
 
 _ProtagonisteAttache
 > Merde je suis attaché... Vous allez pas\
@@ -960,9 +2928,27 @@ _ProtagonisteAutedefenseFaible2
 > L'autodéfense! Il a frappé en premier! Vous\
 > allez pas me laisser tout seul!?
 
+_ProtagonisteOhNonDotDotDot
+> Oh non...
+
+_ProtagonisteNononon
+> Nonononon.
+
+_ProtagonisteAppealToGaboue
+> Gaboué! Tu le sais que j'ai raison!
+
+_ProtagonistePeurMerciWwwelchior
+> Oh j'ai eu peur... Merci Wwwlechior!
+
 _ProtagonisteDarkProta
 > Je... Je ne sais pas... Ça doit être que je\
 > suis un anti-héro, c'est sûr.
+
+_ProtagonisteDuVert
+> Du vert!
+
+_ProtagonisteMauve
+> Mauve!
 
 _ProtagonisteEpouvantailGueule
 > Il a un peu plus de gueule que ceux du\
@@ -971,6 +2957,49 @@ _ProtagonisteEpouvantailGueule
 _ProtagonisteFillettePasConvaincu
 > Je sais pas, il n'a pas trop l'air concerné\
 > à te chercher?
+
+_ProtagonisteParlePasPoulet
+> Si ça vous aide, on parlera pas de poulet!
+
+_ProtagonisteVousPleurez1
+> Est-ce que vous... pleurez?
+
+_ProtagonisteVousPleurez2
+> Je crois qu'on est mieux de partir en fait.
+
+_ProtagonisteOuiAppris
+> Huuuh... Oui, c'est ça, on a appris.
+
+_ProtagonisteVeutParticiperConvoCossin
+> Ah c'est précisément ce qu'il m'avait dit!\
+> \
+> ...\
+> Mais je n'y comprends rien.
+
+_ProtagonisteVeutMotivation
+> Des... ninjas? Et ils en ont contre Cossin\
+> parce que...?
+
+_ProtagonisteVeutJusteComprendreSituation
+> C'est plus que j'essaye de comprendre\
+> comment Cossin Lette s'est retrouvé avec un\
+> clan ténébreux sur le dos!
+
+_ProtagonistePitchDeVenteEquipe
+> Ça tombe bien, on est spécialisé en bras et\
+> en réglage de problèmes qui nécessitent du\
+> pétage de face.
+
+_ProtagonistePetitRideau
+> C'est une blague? C'est un petit rideau de\
+> rien du tout!
+
+_ProtagonisteTrompeMaison
+> Nooooon! Jamais je ferais ça. Je m'étais\
+> seulement... trompé de maison.
+
+_ProtagonisteCestMoi
+> C'est moi?
 
 _ProtagonisteMaitreHistoire
 > Hein? Mais je suis maître de ma propre\
@@ -981,6 +3010,9 @@ _ProtagonisteBalthaqui
 > Balthaqui?\
 > La tronche Brune? T'es sûr de la manière\
 > que tu viens de déclarer ça?
+
+_ProtagonistePourquoiBabioles
+> Et pourquoi on voudrait des babioles!
 
 _ProtagonisteBalthathigPrendsTemps
 > Ok... bon prenez votre temps, de toute\
@@ -1035,10 +3067,16 @@ _ProtagonisteUIUIOfFeu
 > \
 > C'est quoi la pogne?
 
+_ProtagonisteUIUIOfFeu2
+> Oh. J'espère qu'il est gros votre feu...
+
 _ProtagonisteRobeDurete
 > Le poid de mon inventaire? Pas mal certain\
 > que je n'ai jamais ressenti le poid des\
 > objets dans mon sac.
+
+_ProtagonisteDiademeLumiere
+> Si vous le dites.
 
 _ProtagonisteLanceLancement
 > C'est assez rare que j'ai de problèmes avec\
@@ -1048,6 +3086,12 @@ _ProtagonisteLanceLancement2
 > Aussi je vois pas trop la différence entre\
 > la Lance de Lancement et juste un baton\
 > pointu?
+
+_ProtagonisteLanceLancement3
+> Je suppose...
+
+_ProtagonisteBronchezPas
+> Vous bronchez pas vous, huh.
 
 _ProtagonisteExplicationsBrunesDeMarde
 > Erf, ça s'améliore vraiment pas les\
@@ -1063,6 +3107,89 @@ _ProtagonistePasConvaincuVert
 > de dégâts que moi en général, et moi je\
 > porte juste mon linge, rien de spécial.
 
+_ProtagonistePapaBonjourette
+> Oh. Ton père est au Temple du Bonjour?\
+> \
+> Hum, c'est à dire...
+
+_ProtagonisteMentirPleineFace
+> \}Comment peut-tu lui mentir comme ça en pleine face!?\{
+
+_ProtagonisteRouspetteWwwelchior
+> \}De quoi tu parles "quête ou mouvement"? Il suffise qu'elle décide de visiter\
+> son père! Ou même que n'importe qui visite le Temple en fait...\{
+
+_ProtagonisteBonjouretteToutVa
+> Ouiiiiii!\
+> Tout vas très bien.\
+> Tout le monde au Temple pète la santé.\
+> Demain ils sont ouvert pour le Bonjour!
+
+_ProtagonisteTheChaud
+> Ouch, c'est du thé chaud!
+
+_ProtagonisteStatueEnArrivant
+> Oh. Une statue drette en arrivant, huh?
+
+_ProtagonistePratiqueStatues
+> Pratique tout de même ces statues...
+
+_ProtagonisteNinjasNonLumieres
+> Ouf. C'est pas des lumières ces ninjas.
+
+_ProtagonisteMettonsPasLaMeilleureStrat
+> Oui, mais disons si leur objectif c'était\
+> de nous arrêter... Ils pourraient être plus\
+> directs.
+
+_ProtagonistePromenadeOminous
+> C'est plutôt calme en fait, on fait une\
+> belle promenade.
+
+_ProtagonisteHautMontagne
+> Ah je vois le haut de la montagne juste en\
+> haut des marches, mais on a vu personne à\
+> date...
+
+_ProtagonisteCossinVousCherche
+> Hum, bonsoir, on peut vous aider? Cossin\
+> vous cherche!
+
+_ProtagonisteVousAllerVousMerevancher
+> Hein?\
+> Mais on n'est même pas Cossin Lette!\
+> Vous allez vous revancher sur la mauvaise\
+> personne!
+
+_ProtagonisteOnDevraitSInquieter
+> Est-ce que... est-ce qu'on devrait\
+> s'inquiéter?
+
+_ProtagonisteSiTuLeDisOhLeShiny
+> Si tu le dis.\
+> \
+> Oh regardez!
+
+_ProtagonisteBonOnATrouveQqun
+> Bon on a trouvé quelqu'un!
+
+_ProtagonistePeuLinge
+> C'est pas beaucoup de linge pour un coin\
+> enneigé...
+
+_ProtagonisteOuiMaisNinja
+> Oui, mais y'avait pas une histoire de\
+> ninja?
+
+_ProtagonisteEsperaitMieuxCommeKalite
+> C'est un peu facile comme guet-apens, non?\
+> Ils pourraient faire mieux...\
+> À moins qu'elle était simplement coincée à\
+> cause de la roche?
+
+_ProtagonisteNononPasNecessaire
+> Non non, c'est pas nécessaire.
+
 _ProtagonisteUtilisePasRadis
 > Mmmh, une procédure arcane.\
 > \
@@ -1071,6 +3198,50 @@ _ProtagonisteUtilisePasRadis
 _ProtagonisteSentPasBien
 > Oh... huh... Je me sens différement tout\
 > d'un coup.
+
+_ProtagonisteParlePlus
+> Donc on n'en parle plus, c'est bon?
+
+_ProtagonisteBonneEau
+> Mmmmh ça c'est de la bonne eau!
+
+_ProtagonisteRegardezTronePoche
+> Non c'est bon regardez ce que j'ai dans ma\
+> poche!\
+> La chaise municipale!
+
+_ProtagonisteCharpARepousseBandits
+> Ne vous inquiétez pas! J'ai déjà repoussé\
+> ceux qui rôdaient dans les prés, et j'irai\
+> sous peu les pourchasser dans leur tanière!
+
+_ProtagonisteNousNousNous
+> Huuuh oui, c'est vrai. Nous nous nous.
+
+_ProtagonisteBanditsVousOntVole
+> Des bandits vous ont volé une chaise?
+
+_ProtagonisteOhCestTerrible
+> Oh c'est terrible!
+
+_ProtagonisteDoncHuhBonsoir
+> Donc huh... bonsoir.
+
+_ProtagonisteCtunTabouretCa
+> Question stupide comme ça.\
+> \
+> Ça devrait pas plus ressembler à un trône?\
+> C'est un tabouret, ça!
+
+_ProtagonisteRobeFleurie
+> Erf... Bon y'a l'air d'avoir une robe pas\
+> trop pire au moins.
+
+_ProtagonisteRienInteressant
+> Erf, y'a rien d'intéressant...
+
+_ProtagonisteDecu
+> C'est plutôt décevant tout de même...
 
 _ProtagonistePetitSac
 > Vous dites ça mais regardez là, y'a un\
@@ -1085,10 +3256,24 @@ _ProtagonisteQuoiDansBoite
 > Heille niaisez-moi pas. C'est quoi qu'il y\
 > a dans la boîte?
 
+_ProtagonisteOranges1
+> C'est pas les oranges ça?
+
 _ProtagonisteOranges2
 > Ha! J'vous ai pogné.\
 > \
 > Bon par contre j'ai pas besoin de carottes.
+
+_ProtagonisteEssayeUneAutre
+> ... mais si j'en essaye une autre.
+
+_ProtagonisteBouteilleBouchonnee
+> Oh. La bouteille est pas mal bouchonnée.
+
+_ProtagonisteBelleVarieteDeStock
+> Ah vous avez une belle variété de stock je\
+> vois! Vous rafraichissez souvent votre\
+> inventaire?
 
 _ProtagonisteDoitDormir
 > Je dois... dormir...\
@@ -1127,9 +3312,43 @@ _ProtagonistePasDerangerPoulets
 > \
 > Bonsoir.
 
+_ProtagonisteGeologiePasGeographie
+> C'est pas plutôt la géographie l'étude des\
+> noms des endroits et ce genre de chose?
+
+_ProtagonisteNonGeologueHorribleBesoinSave
+> En tant que non-géologue, vous êtes soudain pris de\
+> l'horrible impression que vous devriez vraiment visiter\
+> la statue avant de vous approcher des trous.
+
+_ProtagonisteCaSeCorseIci
+> Oh! Ouhlala! Ça se corse ici!
+
+_ProtagonisteEtMaintenantQuoi
+> C'est beau, et maintenant on fait quoi?
+
+_ProtagonisteBivouaquer
+> Oh pratique! Un lit pour bivouaquer.
+
+_ProtagonisteDortCommeBebe
+> Aaaah, on dort vraiment bien quand nos\
+> alentours sont calmes.
+
+_ProtagonisteEcroulerActivementWatt
+> Merci pour la remarque louche, me semble\
+> que "Écrouler" c'est pas quelque chose qui\
+> se fait activement?\
+> À moins que...
+
+_ProtagonisteQueDesPatentes
+> À quel point y'a que des patentes ici?
+
 _ProtagonisteEnchant
 > Ah c'est une chose faire ses propres\
 > enchantements?
+
+_ProtagonisteCompletementInutile
+> Donc c'est complètement inutile. Parfait.
 
 _ProtagonisteOracleEau1
 > Oh. Bonsoir Oracle. Bien évidemment qu'on\
@@ -1143,300 +3362,571 @@ _ProtagonisteOracleEau2
 > Genre pas de lit, pas de foyer.\
 > Sans parler des problèmes de moisissures...
 
-_ProtagonistePasContent
-> ...
-
-_ProtagonisteBonjourPasBonMatin
-> Mais un Bonjour c'est pas un Bon Matin!
-
-_ProtagonisteMoules
-> Heille mais ça ressemble plus à des moules!
-
-_ProtagonisteHuuuh
-> Huuuuh
-
-_ProtagonisteVraiPontCase
-> C'est vrai qu'avec le Pont cassé...
-
-_ProtagonisteConnaitPasPont
-> Huh? On marche sur un pont vous savez...
-
-_ProtagonisteOhNon
-> OhNon
-
-_ProtagonisteTombe
-> Tombe
-
-_ProtagonisteKwe
-> Kwe
-
-_ProtagonisteAucunSens
-> Vous ne faites aucun sens...
-
-_ProtagonisteCheminOuvert
-> Ici? Le chemin est tout ouvert juste là.
-
-_ProtagonisteRepositoireTextesSacres
-> Le Repositoire des Textes Sacrés?
-
-_ProtagonisteSansEquivoque
-> Ah c'est sans équivoque.
-
-_ProtagonisteEtSiJeNeVeuxPasAide
-> Et si je ne veux pas de votre aide?
-
-_ProtagonisteLogiqueImpeccable
-> Ah comme logique c'est impeccable.
-
-_ProtagonisteOhohohQuete
-> Oh oh oh, une quête!
-
-_ProtagonisteDeuxMarteaux
-> Heille mais y'avait deux marteaux!
-
-_ProtagonisteTellementFaim
-> J'ai tellement faim.
-
-_ProtagonisteFaimFondamentale
-> Une faim fondamentale.
-
-_ProtagonisteBesoinBMLT
-> J'ai besoin d'un BMLT.
-
-_ProtagonisteBeauChat
-> Oh le beau chat...
-
-_ProtagonisteSaigne
-> Ah je saigne!
-
-_ProtagonisteMaPioche
-> Nonon, c'est MA pioche maintenant.
-
-_ProtagonisteMaPiocheBis
-> MaPiocheBis
-
-_ProtagonisteHelloQuestion
-> Hello?
-
-_ProtagonisteHeilleNotrePhrase
-> Heille c'est notre phrase ça!
-
-_ProtagonisteVousMeNiaisez
-> Vous me niaisez là...
-
-_ProtagonisteNonMaisMais
-> Non mais... mais...
-
-_ProtagonisteTouchePlusAuxTrenchcats
-> Moi je touche plus à ça des trenchcats.
-
-_ProtagonisteNon6
-> Non?
-
-_ProtagonisteInspirezPasConfiance
-> Vous inspirez pas fort la confiance...
-
-_ProtagonisteDe
-> De?
-
-_ProtagonistePasToiAussi
-> Non! Pas toi aussi!?
-
-_ProtagonisteWwwelchiorCharme
-> Raaaaa et Wwwelchior est sous son charme!
-
-_ProtagonisteNeTientQueSurPete
-> Ça ne tient que sur moi donc, je vous pète!
-
-_ProtagonisteRienQuiSePasse
-> Huh, y'a rien qui se passe?
-
-_ProtagonisteParleDuMiens
-> Tu veux qu'on parle du miens?
-
-_ProtagonisteBeauTexteRetentissant
-> Du beau texte retentissant, ça.
-
-_ProtagonisteVictoireDetah
-> Victoire! On a pété le Detah!!!
-
-_ProtagonistePretPourGaboue
-> Ah oui je l'attendais bien lui.
-
-_ProtagonisteAhOui
-> Ah. Oui.
-
-_ProtagonisteSiVousVoulez
-> ... Si vous voulez vraiment.
-
-_ProtagonisteFuillons
-> Fuillons!
-
-_ProtagonisteCtunPouletCa
-> Ah c'est un poulet ça.
-
-_ProtagonisteOuchMonDoigt
-> Ouch mon doigt!
-
-_ProtagonisteQuoi16
-> Quoi!?
-
-_ProtagonisteVeutPasLaTraduction
-> Non mais j'ai pas tant envie de -
-
-_ProtagonisteHein
-> Hein?
-
-_ProtagonisteQuiParlePourRien
-> QuiParlePourRien
-
-_ProtagonisteFuyonsCamarades
-> Fuyons camarades!
-
-_ProtagonisteConfusParCorde
-> Hum, merci je suppose?
-
-_ProtagonisteGaboue6
-> Gaboué?
-
-_ProtagonisteOuiEtDonc
-> Oui bon, et donc?
-
-_ProtagonisteACompris
-> Oui oui, j'ai compris.
-
-_ProtagonisteOnVaVraimentFaireCa
-> Bon, on va vraiment faire ça?
-
-_ProtagonisteCEstPasTresHeroique
-> Je veux bien mais c'est pas très héroïque.
-
-_ProtagonisteRefuseAAA
-> Je refuse, aaaaaaaaaa!
-
-_ProtagonisteTouristiques
-> ...Touristiques?
-
-_ProtagonisteSquelette
-> Un squelette. Une vision macabre du futur.
-
-_ProtagonisteCuillere1
-> ... une cuillère?
-
-_ProtagonisteCuillere2
-> Une cuillère.
-
-_ProtagonisteTantMieuxJeSuppose
-> Ehbeh, tant mieux je suppose.
-
-_ProtagonisteJePrendsLaLampe
-> Je prends la lampe?
-
-_ProtagonistePlusDeGenie
-> Il n'y a _plus_ de génie?
-
-_ProtagonisteOh
-> Oh.
-
-_ProtagonisteBin
-> Bin...
-
-_ProtagonisteBonjourConfus
-> Oui ... Bonsoir?
-
-_ProtagonisteTropTard
-> Je suis désolé, mais il est trop tard.
-
-_ProtagonisteAh
-> Ah.
-
-_ProtagonisteSoirSoleil
-> Beaucoup de soleil pour un soir...
-
-_ProtagonisteVeutPasLeFaire
-> \}et puis, ça veut pas dire qu'on va réellement le faire...\{
-
-_ProtagonisteOuilleTete
-> Oh, ouille ma tête...
-
-_ProtagonisteBosse
-> ...Ça va laisser une bosse...
-
-_ProtagonisteNononon
-> Nonononon.
-
-_ProtagonisteAppealToGaboue
-> Gaboué! Tu le sais que j'ai raison!
-
-_ProtagonistePeurMerciWwwelchior
-> Oh j'ai eu peur... Merci Wwwlechior!
-
-_ProtagonisteDuVert
-> Du vert!
-
-_ProtagonisteMauve
-> Mauve!
-
-_ProtagonisteParlePasPoulet
-> Si ça vous aide, on parlera pas de poulet!
-
-_ProtagonisteVousPleurez1
-> Est-ce que vous... pleurez?
-
-_ProtagonisteVousPleurez2
-> Je crois qu'on est mieux de partir en fait.
-
-_ProtagonisteOuiAppris
-> Huuuh... Oui, c'est ça, on a appris.
-
-_ProtagonisteCestMoi
-> C'est moi?
-
-_ProtagonistePourquoiBabioles
-> Et pourquoi on voudrait des babioles!
-
-_ProtagonisteUIUIOfFeu2
-> Oh. J'espère qu'il est gros votre feu...
-
-_ProtagonisteDiademeLumiere
-> Si vous le dites.
-
-_ProtagonisteLanceLancement3
-> Je suppose...
-
-_ProtagonisteBronchezPas
-> Vous bronchez pas vous, huh.
-
-_ProtagonisteParlePlus
-> Donc on n'en parle plus, c'est bon?
-
-_ProtagonisteBonneEau
-> Mmmmh ça c'est de la bonne eau!
-
-_ProtagonisteRobeFleurie
-> Erf... Bon y'a l'air d'avoir une robe pas\
-> trop pire au moins.
-
-_ProtagonisteRienInteressant
-> Erf, y'a rien d'intéressant...
-
-_ProtagonisteDecu
-> C'est plutôt décevant tout de même...
-
-_ProtagonisteOranges1
-> C'est pas les oranges ça?
-
-_ProtagonisteEssayeUneAutre
-> ... mais si j'en essaye une autre.
-
-_ProtagonisteBouteilleBouchonnee
-> Oh. La bouteille est pas mal bouchonnée.
-
-_ProtagonisteQueDesPatentes
-> À quel point y'a que des patentes ici?
-
-_ProtagonisteCompletementInutile
-> Donc c'est complètement inutile. Parfait.
+_ProtagonisteYaDiff
+> Y'a une différence entre le libre arbitre\
+> et son illusion?
+
+_ProtagonisteNoui
+> ... Noui.
+
+_ProtagonistePasAntagoniste
+> Woh là, je suis Protagoniste!\
+> \
+> J'ai tant l'air d'un antagoniste que ça?
+
+_ProtagonisteRoger1
+> Dites, le monsieur à la table, il est pas\
+> un peu louche?
+
+_ProtagonisteRoger2
+> Je veux bien qu'il soit un bon client, mais\
+> vous avez vu son allure?
+
+_ProtagonisteRecruteurContrat1
+> Bon d'abord, je vous ai rien dis et vous\
+> assumez que je suis intéressé?\
+> Ensuite huh... pourquoi me tendez-vous un\
+> couteau?
+
+_ProtagonisteRecruteurContrat2
+> Écoutez, je n'apprécie pas votre\
+> proposition, et je m'en vais de ce pas.
+
+_ProtagonistePersDesagrable
+> Mais quel drôle de personnage désagréable.\
+> C'est quoi, un genre de recrutement pour un\
+> mystérieux malfrat machiavélique?
+
+_ProtagonisteAMoinsRecruteurBandits
+> À moins que ce soit un recruteur pour les\
+> bandits?
+
+_ProtagonisteAMoinsRecruteurBandits2
+> Vous parliez de sombres desseins là,\
+> style aborder les gens sur la route pour\
+> voler leur possessions terrestres?
+
+_ProtagonisteAMoinsRecruteurBandits3
+> Planétaire ici ça veut pas dire\
+> grand chose...
+
+_ProtagonisteToileFameuse
+> Ah c'est intéressant. Quelle toile fameuse\
+> alors?
+
+_ProtagonisteNezDeDetective
+> Mon nez de détective me dit que quelqu'un a\
+> parti un feu ici récemment!
+
+_ProtagonisteTuePassageMontagneux
+> Parlant de coeur, je vous avais pas déjà\
+> tué dans le petit passage montagneux?
+
+_ProtagonisteQuelChevalierNoir
+> Le Chevalier Noir? C'est qui lui?
+
+_ProtagonisteBrasPeterFaceOClock
+> Hah! Écoutez, je regarde mon bras, et tout\
+> ce que je vois c'est qu'il est\
+> péter-votre-face-o-clock!
+
+_ProtagonisteVictwereBandits
+> Ha! Plus jamais leur joyeuse compagnie ne\
+> pourra terroriser les pauvres charpentiers\
+> et maires de ce monde!
+
+_ProtagonisteVictwereBandits2
+> Par contre ça sonne comme un mauvais\
+> présage leur histoire de Chevalier Noir...
+
+_ProtagonisteReellementBanditsGrandChemin
+> Fuillons avec nos vies!\
+> Ce sont réellement des bandits de grand\
+> chemin!
+
+_ProtagonisteDroleEndroitTombe
+> Drôle d'endroit pour une tombe.
+
+_ProtagonisteGueux
+> \}... Vraiment, vous allez nous appeler des gueux?\{\
+> \
+> \}Lui il se magasine vraiment un petit incident d'auto-défense.\{
+
+_ProtagonisteDevinezPoche
+> Devinez ce que j'ai dans ma poche!
+
+_ProtagonisteAUneChaiseDansLaPoche
+> Voyons! Bien mieux que ça!\
+> \
+> Les bandits ont été vaincus, et nous avons\
+> récupéré la nouvelle chaise municipale!
+
+_ProtagonisteOufLourd
+> Ouf, c'est lourd!
+
+_ProtagonisteMettreAncienneOu
+> Mmmmh, l'ancienne je la mets où?
+
+_ProtagonistePasserParPorte
+> Ah merde, il faut la passer à travers la\
+> porte?
+
+_ProtagonistePivot
+> Ouch! Va falloir pivoter. Pivoter!
+
+_ProtagonisteOnMetLaNouvelleChaise
+> Bon... donc maintenant on met la nouvelle\
+> chaise...
+
+_ProtagonisteMairieEnvoyerCharpentierePont
+> Oui oui oui, si vous le dites.\
+> La vraie question, c'est là maintenant vous\
+> allez pouvoir envoyer la charpentière\
+> réparer le pont?
+
+_ProtagonisteMairePont1
+> C'est beau ça, mais vous n'avez pas de plan\
+> pour qu'il soit réparé?
+
+_ProtagonisteMairePont2
+> Ok... mais huh, la chaise du conseil, c'est\
+> pas sur elle que vous êtes actuellement\
+> assis?
+
+_ProtagonisteMairePont3
+> \}Je vois donc que les ressources de la municipalité sont bien utilisées...\{\
+> La charpentière aura du temps si je vais\
+> récupérer le throne pris par les bandits?
+
+_ProtagonisteMaireBandits1
+> J'ai pu les repousser lorsqu'ils ont tenté\
+> de me cambrioler, et j'ai trouvé leur note\
+> de recrutement. Ils semblent être terrés\
+> dans un boisé sur une île.
+
+_ProtagonisteMaireBandits2
+> \}... Je me demande pourquoi je suis venu vous voir avec cette\
+> information en fait...\{
+
+_ProtagonistePlusDinformation
+> Vous n'avez plus aucune information à\
+> donner, c'est ça?
+
+_ProtagonisteDuBeauSerieux
+> Wooh! Ça c'est du beau sérieux.
+
+_ProtagonisteAllaitPlutotBienJusquaFaimCosmique
+> Uuuuh oui ça allait plutôt bien...\
+> \
+> Mais tout a pris un tournant pour le pire!\
+> Je suis tenaillé par une Faim Cosmique!
+
+_ProtagonisteNonGeologueVautRien
+> Très certainement! Je promulgue mon avis\
+> de non-géologue en continu, mais ça ne\
+> vaut vraiment rien... Une vraie géologue\
+> ça ferait toute la différence!
+
+_ProtagonistePresentePersSec
+> Un peu forcé, mais oui.\
+> Celui avec la barbe c'est Wwwelchior, et\
+> l'autre avec "la barbe de l'âme" c'est\
+> Gabspart.
+
+_ProtagonisteAhOuiCestDotDotDot
+> Ah oui... c'est...
+
+_ProtagonisteTenteIdentificationRoche
+> Pourtant, en tant que non-géologue, il me\
+> semble que ce n'est pas seulement qu'une\
+> roche?
+
+_ProtagonisteOnDitIgne
+> Non mais on dit igné! Et regarde y'a toute\
+> une description! Y'en a plein des roches\
+> ignés.
+
+_ProtagonisteCommentRamenerChaise
+> Oh! C'est la chaise municipale!\
+> \
+> ...\
+> Comment on va ramener ça au maire?
+
+_ProtagonisteTempsPasseVite
+> C'est fou comme le temps passe vite des\
+> fois!
+
+_ProtagonisteErfBonsoir
+> ...\
+> \
+> Erf, bonsoir à vous aussi!
+
+_ProtagonisteUtiliteMairissime
+> D'une utilité à rivaliser avec le maire,\
+> lui.
+
+_ProtagonisteCestEvident
+> Ouin ça c'est évident.
+
+_ProtagonisteBonsoir6
+> Bonsoir?
+
+_ProtagonisteNouvelleDemeure
+> Bon... je crois qu'on a trouvé notre\
+> nouvelle demeure.
+
+_ProtagonisteUnPeuEtroit
+> C'est un peu à l'étroit tout de même...
+
+_ProtagonisteCetaitEndroit
+> Phiou! On en est sorti. C'était... c'était\
+> un endroit.
+
+_ProtagonisteNeVeutPasRetournerAuRRRR
+> Dites-moi qu'on a jamais à retourner au\
+> RRRR?
+
+_ProtagonisteNeVeutPasAmbiguiteReponse
+> À la réponse ou au passage?
+
+_ProtagonisteOnEstAutreCoteMontagne
+> Sinon, on est finalement de l'autre côté de\
+> la montagne!\
+> On va pouvoir trouver le fameux\
+> Temple du Bon Matin!
+
+_ProtagonisteMhMhMhMh
+> Mh-mh, mh-mh.
+
+_ProtagonisteSiSeulementGeologue2
+> Aaaaaah merde... C'eût été trop facile que\
+> la géologue soit avec nous, c'est ça?
+
+_ProtagonisteMauvaiseLangue
+> ... Non, mauvaise langue.
+
+_ProtagonisteEstCeQuOnEstEnDanger
+> Gabspart, vite de même tu veux nous dire si\
+> on est en danger?
+
+_ProtagonistePartyRentrageDansBulle
+> Donc on se fait un petit party de rentrage\
+> dans ma bulle c'est ça?
+
+_ProtagonisteBonsoirVousAussi
+> Bonsoir à vous aussi, on peut vous aider?
+
+_ProtagonisteNononCaVaBienSe
+> Non non, je suis sûr que ça va bien se\
+> pas-\^
+
+_ProtagonisteDurRaterReaction
+> En tout cas c'est dur de ne pas remarquer\
+> la réaction!
+
+_ProtagonisteOufMesOreilles
+> Ouf, je commençais à me demander si on\
+> n'avait pas fait une erreur en n'apportant\
+> aucun bouchon d'oreille.
+
+_ProtagonisteWoh
+> Woooooh!
+
+_ProtagonisteCoucouCoquet
+> Huh... coucou.\
+> C'est coquet ici. Vous passez une bonne\
+> journée?
+
+_ProtagonisteOhPourMoi
+> Oh. Pour moi?
+
+_ProtagonisteBonneRocailleALaProchaine
+> Une bonne rocaille et à la prochaine, c'est\
+> ça?
+
+_ProtagonisteSExpliqueDeLaGestionDeLaConfusion
+> Écoutes je comprends rien et ils ont l'air\
+> contents qu'on ait géré la plante.\
+> La diplomatie ça marche à tous les coups.\
+> À. TOUS. LES. COUPS.
+
+_ProtagonisteOnChercheSortie
+> Alors on cherche la sortie? On doit bien\
+> s'approcher de l'autre côté de la Montagne.
+
+_ProtagonisteVerdureEtAirFrais
+> Ah ça change un peu dans le coin. Je sens\
+> un peu d'air frais, et regardez y'a de la\
+> verdure!
+
+_ProtagonisteOhVerdureDentee
+> Oh. C'est de la verdure dentée.
+
+_ProtagonisteBeauCoffre
+> Oh wow c'est un beau coffre ça!\
+> \
+> Mais hum, yer verouillé et sans clé...
+
+_ProtagonisteVaMettreCoffreDansPoche
+> Oh. Voyons voir... Disons que je mets le\
+> coffre dans ma poche, et on va finir par\
+> trouver quelqu'un qui peut vous aider,\
+> c'est bon?
+
+_ProtagonisteDuStyleTorche
+> Ça a du style comme endroit pareil!\
+> Regardez-moi ça le beau tapis.\
+> \
+> Peut-être pas très pratique par contre...
+
+_ProtagonisteDeLAirLesTorchesAAA
+> Ouf, c'est un peu répétitif finalement.\
+> Et l'air est vicié, c'est qui le débile qui\
+> a eu l'idée d'ouvrir *autant* de torches à\
+> l'intérieur?
+
+_ProtagonisteLaFinCoucouAllo
+> Ah il y a bien une fin donc...\
+> \
+> Allo! Coucou! Vous m'entendez?
+
+_ProtagonisteAhOuiLesLits
+> Whoo.\
+> Ça c'est du lit en ti pépère!\
+> Les ronflements la nuit ça doit être\
+> quelque chose tout de même...
+
+_ProtagonisteMettonsJmessayeAnyway
+> Mettons je m'essaye tout de même?
+
+_ProtagonisteOuchCoupurePapierTropEdgy
+> Ouch! Je me suis coupé le doigt sur le\
+> papier... C'est donc vrai!\
+> \
+> Pas le choix, je dois remettre le livre.
+
+_ProtagonisteOuiOhVousEtesGrand
+> Oui... oh.\
+> \
+> Vous avez quand même pas mal d'ampleur en\
+> fait.
+
+_ProtagonisteVousEtesSeul
+> Vous êtes seul? On peut vous aider?
+
+_ProtagonisteFaitSonPedantSurEntree
+> C'est pas plutôt un passage secret\
+> l'entrée? C'est pousser fort d'appeler ça\
+> une porte.
+
+_ProtagonisteSeulementIciPourWohJvousPete
+> Non... je suis seulement ici pour... ça\
+> vire bin vite votre affaire!\
+> La seule vie qui doit être payée c'est\
+> celle de votre face!
+
+_ProtagonisteDoitBubyer
+> Nononon! C'était une belle discussion, mais\
+> on va devoir se reparler plus tard!\
+> \
+> Bubye!
+
+_ProtagonisteShinySword
+> Ouuuh! Il y a une épée sur la statue!
+
+_ProtagonisteHeinDeQuoiTuParles
+> Hein? De quoi tu parles?
+
+_ProtagonisteCaChangeQqchose
+> Si tu le dis? Ça change quelque chose?
+
+_ProtagonisteVaFarpaitementBien
+> Non mais je vais farpaitement bien!
+
+_ProtagonisteFarpaitement
+> Farpaitement!
+
+_ProtagonisteJesusHermite1
+> ... Bonjour!? Vous avez dit bonjour!\
+> \
+> Bon matin?
+
+_ProtagonisteJesusHermite2
+> Non mais vous comprenez pas! Bon c'est sur\
+> vous êtes un hermite... Même à ça!
+
+_ProtagonisteJesusHermite3
+> Vous êtes la première personne autre que\
+> nous quatre qui ne semble pas affecté par\
+> le fait qu'on a retiré le Bonjour du Temple.
+
+_ProtagonisteJesusHermite4
+> Ah c'est bien une réponse d'hermite...\
+> Genre j'ai une seule question pis c'est\
+> tout - C'est quoi l'histoire des\
+> salutations?
+
+_ProtagonisteJesusHermite5
+> Ok...
+
+_ProtagonisteJesusHermite6
+> À plus tard?
+
+_ProtagonisteAuraitVouluEtreAverti
+> Parlant de danger, ça aurait été apprécié\
+> que vous nous avertissiez qu'on serait\
+> attaqué par le Chevalier Noir!
+
+_ProtagonisteDecuDesBruns
+> Donc vous êtes Brun vous aussi...\
+> Et quatres vétérans du ... Brun(?) n'ont\
+> pas pu l'arrêter?
+
+_ProtagonisteTskTskTsk
+> Tsk tsk tsk.
+
+_ProtagonisteVousAuraiezPuMexpliquerJesus
+> Et vous ne m'avez rien dit? Même quand on\
+> est arrivé ici vous avez attendu pour\
+> m'indiquer qu'on arrivait chez votre ami?
+
+_ProtagonistePisLaVousGlandez
+> Donc c'est quoi, vous avez fui puis vous\
+> attendez patiemment la fin du Temps?\
+> Maintenant qu'on est là vous allez venir\
+> nous aider?
+
+_ProtagonisteLeRRRR
+> Le RRRR?
+
+_ProtagonisteVaNecessiterGeologue
+> Oh... Va falloir aller récupérer la\
+> Géologue alors.\
+> À tous les coups elle est restée dans\
+> l'entrée du passage.
+
+_ProtagonisteCactus
+> Ouch! C'est piquant!
+
+_ProtagonisteCestSuspicieux
+> ... C'est suspicieux quand même.
+
+_ProtagonisteIntroShackJesus1
+> Eh beh. Y'a quelqu'un qui vit dans le coin?
+
+_ProtagonisteIntroShackJesus2
+> Vraiment? C'est pas mal sinistre quand tu\
+> fais ça.
+
+_ProtagonisteIntroShackJesus3
+> C'est pire!
+
+_ProtagonisteVaFaireDuDeni1
+> Si mettons je déclare que tout ceci est\
+> parfaitement normal, on peut tout ignorer\
+> et juste partir?
+
+_ProtagonisteVaFaireDuDeni2
+> Parfait, donc il n'y a rien à voir.\
+> On peut procéder.
+
+_ProtagonisteRefuseDescendreEnBas
+> Non mais moi je descends pas en bas.\
+> C'est juste pas une option.
+
+_ProtagonisteCluelessDuPoteauBonMatin1
+> Ah c'est inhabituel un autel coupé en deux\
+> avec une colonne au milieu...
+
+_ProtagonisteCluelessDuPoteauBonMatin2
+> Oui Gabspart?
+
+_ProtagonisteAutel
+> L'autel!
+
+_ProtagonisteBonMatinManquant
+> C'est exactement ce qu'on pensait.\
+> \
+> Le Bon Matin n'y est plus.
+
+_ProtagonisteBonMatinManquant2
+> Faut bien investiguer si on veut avoir une\
+> idée où il pourrait bien être...
+
+_ProtagonisteAlloOnPeutVousAider
+> Allo? On peut vous aider?
+
+_ProtagonisteVeutEchangeBonjour
+> Un instant vous deux! Donc vous avez le\
+> Bon Matin? Moi j'ai seulement besoin du\
+> Bon Matin. On a ramassé le Bonjour, mais\
+> c'est par principe.
+
+_ProtagonisteVeutEchangeBonjour2
+> Je suis prêt à échanger le Bonjour contre\
+> le Bon Matin, et comme ça on peut repartir\
+> chacun de son côté, et personne n'a besoin\
+> de se faire péter la face.
+
+_ProtagonistePasGrandSucces
+> Bon... C'est pas notre plus grand succès.\
+> \
+> Vous avez une idée pourquoi il pense que\
+> perdre le Bonjour ça va nous arrêter?
+
+_ProtagonisteSpeechHero1
+> En tout les cas ce fourbe va regretter de\
+> nous avoir laissé en vie!\
+> Maintenant je comprend ma faim cosmique!\
+> C'est un appel! Pour héroïser la situation!
+
+_ProtagonisteSpeechHero2
+> Allons camarades! Nous devons trouver les\
+> autres salutations avant qu'il ne soit trop\
+> tard!
+
+_ProtagonisteQuelHorribleSon
+> Quel horrible son...
+
+_ProtagonisteVeutPasRecetteBMAlt
+> Bof, ça n'a pas vraiment d'intérêt...\
+> \
+> Il y a le Bon Matin Laitue Tomate, et le\
+> reste c'est juste une perte d'un Bon Matin.
+
+_ProtagonistePuzzleBonmatinPasDown1
+> Mmmh?
+
+_ProtagonistePuzzleBonmatinPasDown2
+> Les flèches? Je vois pas le rapport?
+
+_ProtagonistePuzzleBonmatinPasDown3
+> Non mais vous continuez à ne rien clarifier!
+
+_ProtagonistePuzzleBonmatinPasDown4
+> ... Ok? Mais Gabspart ça lui a rien fait\
+> pourtant?
+
+_ProtagonistePresentePartitionMatinale
+> Allons, regardes ce qu'on a déniché en haut!
+
+_ProtagonisteHumOk
+> Hum, ok?
+
+_ProtagonisteMerde
+> Merde.
+
+_ProtagonistePasPretPourPlancher
+> C'est surtout que je n'avais pas à réalisé\
+> que ça aurait autant d'ampleur.
+
+_ProtagonistePasPretPourPlancher2
+> Par contre je ne comprends vraiment pas\
+> pourquoi y'a ce genre de plancher maudit\
+> dans le sous-sol d'un Temple?
+
+_ProtagonisteMystereElucide
+> Ça élucide le mystère.
 
 _ProtagonisteOuilleLesRats
 > Ouille! C'est que ça fait mal les rats!\
@@ -1531,132 +4021,6 @@ _Protagoniste4Contre1
 _ProtagonisteMieuxPartir
 > On est peut-être mieux de partir...
 
-_ProtagonisteYaDiff
-> Y'a une différence entre le libre arbitre\
-> et son illusion?
-
-_ProtagonisteNoui
-> ... Noui.
-
-_ProtagonisteCommeBonjourDisparu
-> C'est comme si... Depuis qu'on a visité le\
-> Temple du Bonjour, le Bonjour-même c'était\
-> volatilisé!
-
-_ProtagonisteBonMatinVolatilise
-> Oui mais pourquoi tout le monde ignorerait\
-> le fait qu'on est encore l'après-midi!\
-> C'est à croire que c'est la même chose qui\
-> s'est passé pour le Bon Matin...
-
-_ProtagonisteDefendTempleBonjour
-> Et puis en plus, c'est pas mutuellement\
-> exclusif: Si tu devais protéger à tout\
-> jamais un Concept du monde en soit, il\
-> faudrait quand même vivre.
-
-_ProtagonisteQuelquunVoleBonMatin
-> On n'a pas de meilleures hypothèses? Moi je\
-> vous le dis, quelqu'un a volé le Bon Matin.
-
-_ProtagonisteNeSaisPasDOu
-> Merde je ne sais même pas de où!
-
-_ProtagonisteDuWiki
-> Du Repositoire des Textes Sacrés?
-
-_ProtagonisteLegendeDesespoir
-> Non mais des légendes comme ça c'est des\
-> plans pour finir en désespoir.
-
-_ProtagonisteKosseca
-> Kosséça.
-
-_ProtagonisteEstUnTiCul
-> Non mais justement, le Gaboué me prédate!\
-> Tu penses que ça date d'hier qu'il est sur\
-> son pont à proférer des "GABOUÉ"?
-
-_ProtagonisteDemeureConfus
-> Bon par contre ça clarifie rien à ce qu'on\
-> a devant nous là.
-
-_ProtagonisteVeutPasLaSoupeDeMot
-> ... le Sage Pingouin?\
-> \
-> ... les Scriptouilles?
-
-_ProtagonisteVeutPasLaSoupeDeMotPt2
-> À quel point Gaboué fait juste déblatérer\
-> une soupe de mots en fait?\
-> \}En plus ça rimait pas à la fin...\{
-
-_ProtagonisteLesScriptouillesCEstDangereux6
-> Bon, je m'excuse.\
-> \
-> Pis huh... ces "Scriptouilles" c'est\
-> dangereux?
-
-_ProtagonisteOffreMercantile
-> ... Quoi? Tu veux nous faire une offre\
-> mercantile?
-
-_ProtagonisteProcedure
-> ... Une procédure?\
-> Y nous niaise. Quant à faire je peux bien\
-> lui expliquer la procédure de comment on va\
-> lui péter sa face!
-
-_ProtagonisteEnAMarreDesTables
-> Ok mais ça fera là! Y'a combien de tables à\
-> faire tomber lui-là!?
-
-_ProtagonisteEnAMarreDesTables2
-> Bin non, si c'était le cas on verrait sa\
-> pile de tables!\
-> Mais là ça sort du néant son affaire.
-
-_ProtagonisteBoisProtolixir
-> Bon ça goûte le poulet, mais je ressens pas\
-> trop grand chose autrement...\
-> Peut-être que l'inventeur aura quelque\
-> chose à dire là-dessus.
-
-_ProtagonisteEnPeutPlus
-> Ça suffit j'en peux plus!
-
-_ProtagonistePapaBonjourette
-> Oh. Ton père est au Temple du Bonjour?\
-> \
-> Hum, c'est à dire...
-
-_ProtagonisteMentirPleineFace
-> \}Comment peut-tu lui mentir comme ça en pleine face!?\{
-
-_ProtagonisteRouspetteWwwelchior
-> \}De quoi tu parles "quête ou mouvement"? Il suffise qu'elle décide de visiter\
-> son père! Ou même que n'importe qui visite le Temple en fait...\{
-
-_ProtagonisteBonjouretteToutVa
-> Ouiiiiii!\
-> Tout vas très bien.\
-> Tout le monde au Temple pète la santé.\
-> Demain ils sont ouvert pour le Bonjour!
-
-_ProtagonisteTheChaud
-> Ouch, c'est du thé chaud!
-
-_ProtagonisteTrompeMaison
-> Nooooon! Jamais je ferais ça. Je m'étais\
-> seulement... trompé de maison.
-
-_ProtagonistePetitRideau
-> C'est une blague? C'est un petit rideau de\
-> rien du tout!
-
-_ProtagonisteTuSaigne
-> Ah mais tu saignes!
-
 _ProtagonistePeutOffrir
 > Erf, je peux vous offrir ça:
 
@@ -1666,617 +4030,12 @@ _ProtagonisteDejaVuBandits
 > Vous êtes drôle! C'est plus comme un petit\
 > chemin champêtre ici. Grand chemin mon cul.
 
-_ProtagonisteNoteParTerre
-> Ah il y a une note par terre!
-
-_ProtagonisteBanditsProvenance
-> Bon ok, ça nous dit d'où y viennent je\
-> suppose?\
-> Mais genre... quel boisé? Va falloir tous\
-> les vérifier c'est ça?
-
-_ProtagonisteJeanJacquesMorts1
-> Jean-Jacques? Y sont pas morts ces deux-là?
-
-_ProtagonisteJeanJacquesMorts2
-> Je sais pas... c'était pas le genre de\
-> types qu'y ont un philactère dans la poche\
-> tu sais?
-
-_ProtagonisteJeanJacquesMorts3
-> Toi t'as l'air d'avoir lu le Repositoire\
-> des Textes Sacrés...
-
-_ProtagonisteBanditsProvenance2
-> Parfait, j'adore ça quand vous avez tous\
-> ce beau regard vide.
-
-_ProtagonisteGueux
-> \}... Vraiment, vous allez nous appeler des gueux?\{\
-> \
-> \}Lui il se magasine vraiment un petit incident d'auto-défense.\{
-
-_ProtagonisteMairePont1
-> C'est beau ça, mais vous n'avez pas de plan\
-> pour qu'il soit réparé?
-
-_ProtagonisteMairePont2
-> Ok... mais huh, la chaise du conseil, c'est\
-> pas sur elle que vous êtes actuellement\
-> assis?
-
-_ProtagonisteMairePont3
-> \}Je vois donc que les ressources de la municipalité sont bien utilisées...\{\
-> La charpentière aura du temps si je vais\
-> récupérer le throne pris par les bandits?
-
-_ProtagonisteMaireBandits1
-> J'ai pu les repousser lorsqu'ils ont tenté\
-> de me cambrioler, et j'ai trouvé leur note\
-> de recrutement. Ils semblent être terrés\
-> dans un boisé sur une île.
-
-_ProtagonisteMaireBandits2
-> \}... Je me demande pourquoi je suis venu vous voir avec cette\
-> information en fait...\{
-
-_ProtagonisteCharpARepousseBandits
-> Ne vous inquiétez pas! J'ai déjà repoussé\
-> ceux qui rôdaient dans les prés, et j'irai\
-> sous peu les pourchasser dans leur tanière!
-
-_ProtagonisteNousNousNous
-> Huuuh oui, c'est vrai. Nous nous nous.
-
-_ProtagonisteBanditsVousOntVole
-> Des bandits vous ont volé une chaise?
-
-_ProtagonisteOhCestTerrible
-> Oh c'est terrible!
-
-_ProtagonisteDoncHuhBonsoir
-> Donc huh... bonsoir.
-
-_ProtagonisteCtunTabouretCa
-> Question stupide comme ça.\
-> \
-> Ça devrait pas plus ressembler à un trône?\
-> C'est un tabouret, ça!
-
-_ProtagonistePasAntagoniste
-> Woh là, je suis Protagoniste!\
-> \
-> J'ai tant l'air d'un antagoniste que ça?
-
-_ProtagonisteRecruteurContrat1
-> Bon d'abord, je vous ai rien dis et vous\
-> assumez que je suis intéressé?\
-> Ensuite huh... pourquoi me tendez-vous un\
-> couteau?
-
-_ProtagonisteRecruteurContrat2
-> Écoutez, je n'apprécie pas votre\
-> proposition, et je m'en vais de ce pas.
-
-_ProtagonistePersDesagrable
-> Mais quel drôle de personnage désagréable.\
-> C'est quoi, un genre de recrutement pour un\
-> mystérieux malfrat machiavélique?
-
-_ProtagonisteAMoinsRecruteurBandits
-> À moins que ce soit un recruteur pour les\
-> bandits?
-
-_ProtagonisteAMoinsRecruteurBandits2
-> Vous parliez de sombres desseins là,\
-> style aborder les gens sur la route pour\
-> voler leur possessions terrestres?
-
-_ProtagonisteAMoinsRecruteurBandits3
-> Planétaire ici ça veut pas dire\
-> grand chose...
-
-_ProtagonisteToileFameuse
-> Ah c'est intéressant. Quelle toile fameuse\
-> alors?
-
-_ProtagonisteRoger1
-> Dites, le monsieur à la table, il est pas\
-> un peu louche?
-
-_ProtagonisteRoger2
-> Je veux bien qu'il soit un bon client, mais\
-> vous avez vu son allure?
-
-_ProtagonisteTuePassageMontagneux
-> Parlant de coeur, je vous avais pas déjà\
-> tué dans le petit passage montagneux?
-
-_ProtagonisteQuelChevalierNoir
-> Le Chevalier Noir? C'est qui lui?
-
-_ProtagonisteBrasPeterFaceOClock
-> Hah! Écoutez, je regarde mon bras, et tout\
-> ce que je vois c'est qu'il est\
-> péter-votre-face-o-clock!
-
-_ProtagonisteReellementBanditsGrandChemin
-> Fuillons avec nos vies!\
-> Ce sont réellement des bandits de grand\
-> chemin!
-
-_ProtagonisteVictwereBandits
-> Ha! Plus jamais leur joyeuse compagnie ne\
-> pourra terroriser les pauvres charpentiers\
-> et maires de ce monde!
-
-_ProtagonisteVictwereBandits2
-> Par contre ça sonne comme un mauvais\
-> présage leur histoire de Chevalier Noir...
-
-_ProtagonisteCommentRamenerChaise
-> Oh! C'est la chaise municipale!\
-> \
-> ...\
-> Comment on va ramener ça au maire?
-
-_ProtagonisteRegardezTronePoche
-> Non c'est bon regardez ce que j'ai dans ma\
-> poche!\
-> La chaise municipale!
-
-_ProtagonisteNezDeDetective
-> Mon nez de détective me dit que quelqu'un a\
-> parti un feu ici récemment!
-
-_ProtagonisteDevinezPoche
-> Devinez ce que j'ai dans ma poche!
-
-_ProtagonisteAUneChaiseDansLaPoche
-> Voyons! Bien mieux que ça!\
-> \
-> Les bandits ont été vaincus, et nous avons\
-> récupéré la nouvelle chaise municipale!
-
-_ProtagonisteOufLourd
-> Ouf, c'est lourd!
-
-_ProtagonisteMettreAncienneOu
-> Mmmmh, l'ancienne je la mets où?
-
-_ProtagonistePasserParPorte
-> Ah merde, il faut la passer à travers la\
-> porte?
-
-_ProtagonistePivot
-> Ouch! Va falloir pivoter. Pivoter!
-
-_ProtagonisteOnMetLaNouvelleChaise
-> Bon... donc maintenant on met la nouvelle\
-> chaise...
-
-_ProtagonisteMairieEnvoyerCharpentierePont
-> Oui oui oui, si vous le dites.\
-> La vraie question, c'est là maintenant vous\
-> allez pouvoir envoyer la charpentière\
-> réparer le pont?
-
-_ProtagonisteRhetoriqueMonCul
-> Hey oh!\
-> Et si j'avais connu de l'information\
-> contextuelle utile?\
-> C'est assumer des choses, ça!
-
-_ProtagonistePeutAiderPont
-> Alors, comment est-ce que vous allez\
-> pouvoir faire les réparations? Y'a moyen\
-> qu'on vous aide?
-
-_ProtagonisteAutreFameuseLegende
-> Une autre fameuse légende c'est ça?
-
-_ProtagonistePtitDoigtConnaisseu
-> Ça a d'l'air que mon petit doigt y connait\
-> toutes sortes de choses!
-
-_ProtagonisteTempsPasseVite
-> C'est fou comme le temps passe vite des\
-> fois!
-
-_ProtagonisteErfBonsoir
-> ...\
-> \
-> Erf, bonsoir à vous aussi!
-
-_ProtagonisteUtiliteMairissime
-> D'une utilité à rivaliser avec le maire,\
-> lui.
-
-_ProtagonisteCestEvident
-> Ouin ça c'est évident.
-
-_ProtagonisteBonsoir6
-> Bonsoir?
-
-_ProtagonistePlusDinformation
-> Vous n'avez plus aucune information à\
-> donner, c'est ça?
-
-_ProtagonisteDuBeauSerieux
-> Wooh! Ça c'est du beau sérieux.
-
-_ProtagonisteAhOuiCestDotDotDot
-> Ah oui... c'est...
-
-_ProtagonisteTenteIdentificationRoche
-> Pourtant, en tant que non-géologue, il me\
-> semble que ce n'est pas seulement qu'une\
-> roche?
-
-_ProtagonisteOnDitIgne
-> Non mais on dit igné! Et regarde y'a toute\
-> une description! Y'en a plein des roches\
-> ignés.
-
-_ProtagonisteAllaitPlutotBienJusquaFaimCosmique
-> Uuuuh oui ça allait plutôt bien...\
-> \
-> Mais tout a pris un tournant pour le pire!\
-> Je suis tenaillé par une Faim Cosmique!
-
-_ProtagonisteNonGeologueVautRien
-> Très certainement! Je promulgue mon avis\
-> de non-géologue en continu, mais ça ne\
-> vaut vraiment rien... Une vraie géologue\
-> ça ferait toute la différence!
-
-_ProtagonistePresentePersSec
-> Un peu forcé, mais oui.\
-> Celui avec la barbe c'est Wwwelchior, et\
-> l'autre avec "la barbe de l'âme" c'est\
-> Gabspart.
-
-_ProtagonisteNonGeologueHorribleBesoinSave
-> En tant que non-géologue, vous êtes soudain pris de\
-> l'horrible impression que vous devriez vraiment visiter\
-> la statue avant de vous approcher des trous.
-
-_ProtagonisteNouvelleDemeure
-> Bon... je crois qu'on a trouvé notre\
-> nouvelle demeure.
-
-_ProtagonisteUnPeuEtroit
-> C'est un peu à l'étroit tout de même...
-
-_ProtagonisteAUnMauvaisPressentiment
-> J'ai un mauvais pressentiment...\
-> C'est vraiment glissant par ici!
-
-_ProtagonisteEtMaintenantQuoi
-> C'est beau, et maintenant on fait quoi?
-
-_ProtagonisteOhNonDotDotDot
-> Oh non...
-
-_ProtagonisteSiSeulementGeologue
-> Si seulement on avait ma bonne amie la\
-> Géologue avec nous...\
-> Elle serait de bon conseil!
-
-_ProtagonisteSiSiALaVilleMeme
-> Si si, même qu'elle habite à la Ville!\
-> Bon, on s'est rencontré que lorsqu'elle\
-> était en visite au Bois du Gaboué...\
-> Mais pareil!
-
-_ProtagonisteBivouaquer
-> Oh pratique! Un lit pour bivouaquer.
-
-_ProtagonisteDortCommeBebe
-> Aaaah, on dort vraiment bien quand nos\
-> alentours sont calmes.
-
-_ProtagonisteEcroulerActivementWatt
-> Merci pour la remarque louche, me semble\
-> que "Écrouler" c'est pas quelque chose qui\
-> se fait activement?\
-> À moins que...
-
-_ProtagonisteCaSeCorseIci
-> Oh! Ouhlala! Ça se corse ici!
-
-_ProtagonisteAllonsPontRepareMesEfforts
-> Allons allons, il a été réparé le pont!\
-> Gracieuseté de mes efforts personnels en\
-> plus!
-
-_ProtagonisteVousSuivezOnVaVisiterCossin
-> Alors vous allez nous suivre? Question\
-> qu'on aille visiter le Cossin?
-
-_ProtagonisteChangeRienLieuChampetre
-> Ça change rien, tout est prêt!\
-> Le Cossin est au Lieu Champêtre!
-
-_ProtagonisteVeutParticiperConvoCossin
-> Ah c'est précisément ce qu'il m'avait dit!\
-> \
-> ...\
-> Mais je n'y comprends rien.
-
-_ProtagonisteVeutMotivation
-> Des... ninjas? Et ils en ont contre Cossin\
-> parce que...?
-
-_ProtagonisteVeutJusteComprendreSituation
-> C'est plus que j'essaye de comprendre\
-> comment Cossin Lette s'est retrouvé avec un\
-> clan ténébreux sur le dos!
-
-_ProtagonistePitchDeVenteEquipe
-> Ça tombe bien, on est spécialisé en bras et\
-> en réglage de problèmes qui nécessitent du\
-> pétage de face.
-
-_ProtagonisteOuiCertainementIncertain
-> Huh... Oui, certainement!
-
-_ProtagonisteAPlusTard
-> Bon alors... à plus tard.
-
-_ProtagonisteStatueEnArrivant
-> Oh. Une statue drette en arrivant, huh?
-
-_ProtagonistePratiqueStatues
-> Pratique tout de même ces statues...
-
-_ProtagonistePromenadeOminous
-> C'est plutôt calme en fait, on fait une\
-> belle promenade.
-
-_ProtagonisteHautMontagne
-> Ah je vois le haut de la montagne juste en\
-> haut des marches, mais on a vu personne à\
-> date...
-
-_ProtagonisteBonOnATrouveQqun
-> Bon on a trouvé quelqu'un!
-
-_ProtagonistePeuLinge
-> C'est pas beaucoup de linge pour un coin\
-> enneigé...
-
-_ProtagonisteOuiMaisNinja
-> Oui, mais y'avait pas une histoire de\
-> ninja?
-
-_ProtagonisteEsperaitMieuxCommeKalite
-> C'est un peu facile comme guet-apens, non?\
-> Ils pourraient faire mieux...\
-> À moins qu'elle était simplement coincée à\
-> cause de la roche?
-
-_ProtagonisteNononPasNecessaire
-> Non non, c'est pas nécessaire.
-
-_ProtagonisteCossinVousCherche
-> Hum, bonsoir, on peut vous aider? Cossin\
-> vous cherche!
-
-_ProtagonisteVousAllerVousMerevancher
-> Hein?\
-> Mais on n'est même pas Cossin Lette!\
-> Vous allez vous revancher sur la mauvaise\
-> personne!
-
 _ProtagonisteCoucouHelloParIci
 > Coucou! Hello! On est par ici!
 
 _ProtagonisteVousRegardezDansLeMauvaisSens
 > Non mais c'est juste... c'est drôle vous\
 > regardez tous dans la mauvaise direction.
-
-_ProtagonisteOnDevraitSInquieter
-> Est-ce que... est-ce qu'on devrait\
-> s'inquiéter?
-
-_ProtagonisteSiTuLeDisOhLeShiny
-> Si tu le dis.\
-> \
-> Oh regardez!
-
-_ProtagonisteNinjasNonLumieres
-> Ouf. C'est pas des lumières ces ninjas.
-
-_ProtagonisteMettonsPasLaMeilleureStrat
-> Oui, mais disons si leur objectif c'était\
-> de nous arrêter... Ils pourraient être plus\
-> directs.
-
-_ProtagonisteBelleVarieteDeStock
-> Ah vous avez une belle variété de stock je\
-> vois! Vous rafraichissez souvent votre\
-> inventaire?
-
-_ProtagonisteNouiVousAvezVuNinjas
-> ... Noui.\
-> \
-> Vous avez vu passer des ninjas pendant que\
-> vous nous attendiez?
-
-_ProtagonisteExpliqueAmbuscadeBlondeDisparue
-> Bon... en fait c'était un guet-apens - Ils\
-> s'étaient déguisés en Blonde, visiblement\
-> en attente de Cossin...\
-> Mais là on a aucune idée où ils l'ont mise.
-
-_ProtagonisteUneLettre
-> Une lettre!
-
-_ProtagonisteLettreGribouillisGnieh
-> Mmmh, ça va être dur à lire, c'est du gros\
-> gribouillis. Y'a juste plein de "Gnieh!"\
-> à grandeur...
-
-_ProtagonistePasDePresse10Ans
-> Vous dites ça, mais ça fait 10 ans, alors\
-> je penses pas que ça presse tant que ça.
-
-_ProtagonisteOuiOuiOnVaEtreDesBonsHerosRip
-> Oui oui, on va se dépêcher et se rendre\
-> dans la prochaine ambuscade de ce pas!\
-> Ça va être remplis de plaisir et de\
-> découvertes!
-
-_ProtagonisteOnVousTrouveOu
-> Et on vous retrouve où par la suite?
-
-_ProtagonisteOnVousTrouveChezVous
-> Chez vous. On vous retrouve chez vous.
-
-_ProtagonisteBeauCoffre
-> Oh wow c'est un beau coffre ça!\
-> \
-> Mais hum, yer verouillé et sans clé...
-
-_ProtagonisteDuStyleTorche
-> Ça a du style comme endroit pareil!\
-> Regardez-moi ça le beau tapis.\
-> \
-> Peut-être pas très pratique par contre...
-
-_ProtagonisteDeLAirLesTorchesAAA
-> Ouf, c'est un peu répétitif finalement.\
-> Et l'air est vicié, c'est qui le débile qui\
-> a eu l'idée d'ouvrir *autant* de torches à\
-> l'intérieur?
-
-_ProtagonisteLaFinCoucouAllo
-> Ah il y a bien une fin donc...\
-> \
-> Allo! Coucou! Vous m'entendez?
-
-_ProtagonisteAhOuiLesLits
-> Whoo.\
-> Ça c'est du lit en ti pépère!\
-> Les ronflements la nuit ça doit être\
-> quelque chose tout de même...
-
-_ProtagonisteMettonsJmessayeAnyway
-> Mettons je m'essaye tout de même?
-
-_ProtagonisteOuchCoupurePapierTropEdgy
-> Ouch! Je me suis coupé le doigt sur le\
-> papier... C'est donc vrai!\
-> \
-> Pas le choix, je dois remettre le livre.
-
-_ProtagonisteDoitBubyer
-> Nononon! C'était une belle discussion, mais\
-> on va devoir se reparler plus tard!\
-> \
-> Bubye!
-
-_ProtagonisteShinySword
-> Ouuuh! Il y a une épée sur la statue!
-
-_ProtagonisteHeinDeQuoiTuParles
-> Hein? De quoi tu parles?
-
-_ProtagonisteCaChangeQqchose
-> Si tu le dis? Ça change quelque chose?
-
-_ProtagonisteOuiOhVousEtesGrand
-> Oui... oh.\
-> \
-> Vous avez quand même pas mal d'ampleur en\
-> fait.
-
-_ProtagonisteVousEtesSeul
-> Vous êtes seul? On peut vous aider?
-
-_ProtagonisteFaitSonPedantSurEntree
-> C'est pas plutôt un passage secret\
-> l'entrée? C'est pousser fort d'appeler ça\
-> une porte.
-
-_ProtagonisteSeulementIciPourWohJvousPete
-> Non... je suis seulement ici pour... ça\
-> vire bin vite votre affaire!\
-> La seule vie qui doit être payée c'est\
-> celle de votre face!
-
-_ProtagonisteAlloConfus
-> ... Allo?
-
-_ProtagonisteCossinRegardeJaiTrouve
-> Cossin Lette! Regardez ce que nous avons\
-> trouvé!
-
-_ProtagonisteAObjetARemettre
-> Je ne sais pas pourquoi, mais j'ai quelque\
-> chose à vous remettre.
-
-_ProtagonisteACoffreBlonde
-> Je suis quasi certain que ce coffre\
-> contient votre Blonde perdue de longue\
-> date! Seulement... je n'arrive pas à ouvrir\
-> le coffre.
-
-_ProtagonisteCaPrendDesGrossLevresPourOuvrirCoffre
-> Ah. C'est la touche des grosses lèvres\
-> bleues je suppose...
-
-_ProtagonisteAimeraitUnCadeau
-> ... Je voudrais pas m'imposer, mais ça n'a\
-> pas été facile tout ça.\
-> Vous avez quelque chose pour moi?
-
-_ProtagonisteVaMettreCoffreDansPoche
-> Oh. Voyons voir... Disons que je mets le\
-> coffre dans ma poche, et on va finir par\
-> trouver quelqu'un qui peut vous aider,\
-> c'est bon?
-
-_ProtagonisteOhNonNonNon
-> Oh non.\
-> Nonononon.
-
-_ProtagonisteAVosSouhaits
-> À vos souhaits.
-
-_ProtagonisteGeologueBruyant
-> Bon, être géologue c'est un peu bruyant\
-> quand même...
-
-_ProtagonisteGeologiePasGeographie
-> C'est pas plutôt la géographie l'étude des\
-> noms des endroits et ce genre de chose?
-
-_ProtagonisteDroleEndroitTombe
-> Drôle d'endroit pour une tombe.
-
-_ProtagonisteSiSeulementGeologue2
-> Aaaaaah merde... C'eût été trop facile que\
-> la géologue soit avec nous, c'est ça?
-
-_ProtagonisteMauvaiseLangue
-> ... Non, mauvaise langue.
-
-_ProtagonisteEstCeQuOnEstEnDanger
-> Gabspart, vite de même tu veux nous dire si\
-> on est en danger?
-
-_ProtagonistePartyRentrageDansBulle
-> Donc on se fait un petit party de rentrage\
-> dans ma bulle c'est ça?
-
-_ProtagonisteBonsoirVousAussi
-> Bonsoir à vous aussi, on peut vous aider?
-
-_ProtagonisteNononCaVaBienSe
-> Non non, je suis sûr que ça va bien se\
-> pas-\^
 
 _ProtagonistePlanteBaveCoucou
 > Aaaah, l'espèce de bave c'est parce que la\
@@ -2286,1861 +4045,1484 @@ _ProtagonistePlanteBaveCoucou
 _ProtagonisteCaVaVert
 > ... Ça va? Tu es tout vert!
 
-_ProtagonisteDurRaterReaction
-> En tout cas c'est dur de ne pas remarquer\
-> la réaction!
+_ProtagonistePlantesPasTuables
+> C'est pas tuable ces plantes...
 
-_ProtagonisteOufMesOreilles
-> Ouf, je commençais à me demander si on\
-> n'avait pas fait une erreur en n'apportant\
-> aucun bouchon d'oreille.
+_ProtagonisteDansLeDouteBruler
+> Oui bon... dans le doute brûler les choses.
 
-_ProtagonisteWoh
-> Woooooh!
+_ProtagonisteEauFraiche1
+> Oh wow, ça c'est de l'eau fraîche!\
+> D'une fraîchitude redoutable.\
+> Mettons qu'on en boit un peu...
 
-_ProtagonisteCoucouCoquet
-> Huh... coucou.\
-> C'est coquet ici. Vous passez une bonne\
-> journée?
+_ProtagonisteEauFraiche2
+> C'est comme si on venait de passer une\
+> bonne sieste empilés à 4 sur un lit!
 
-_ProtagonisteMhMhMhMh
-> Mh-mh, mh-mh.
+_ProtagonisteAAA
+> \{AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\^
 
-_ProtagonisteOhPourMoi
-> Oh. Pour moi?
+_ProtagonistePasConvaincuBouteille
+> Il me semble... on aurait pu en trouver une\
+> un peu n'importe où? Mais *ici* c'est\
+> notable parce que...?
 
-_ProtagonisteBonneRocailleALaProchaine
-> Une bonne rocaille et à la prochaine, c'est\
-> ça?
+_ProtagonisteStatueBorgne
+> Il est un peu borgne maintenant.
 
-_ProtagonisteSExpliqueDeLaGestionDeLaConfusion
-> Écoutes je comprends rien et ils ont l'air\
-> contents qu'on ait géré la plante.\
-> La diplomatie ça marche à tous les coups.\
-> À. TOUS. LES. COUPS.
+_ProtagonisteEtVoila
+> Et voila! On pourait presque appeler ça une\
+> énigme.\
+> \
+> Faut juste plisser fort des yeux.
 
-_ProtagonisteOnChercheSortie
-> Alors on cherche la sortie? On doit bien\
-> s'approcher de l'autre côté de la Montagne.
+_ProtagonisteOhho
+> Ohho!\^
 
-_ProtagonisteVerdureEtAirFrais
-> Ah ça change un peu dans le coin. Je sens\
-> un peu d'air frais, et regardez y'a de la\
-> verdure!
+_ProtagonisteRRR1
+> RRR? C'est pas le ROYAUME RÉTABLI des\
+> ROCHES RÉCALCITRANTES? C'est un typo?
 
-_ProtagonisteCetaitEndroit
-> Phiou! On en est sorti. C'était... c'était\
-> un endroit.
+_ProtagonisteRRR2
+> Dans le genre que ça a été abandonné?\
+> Pourtant je vois des roches partout!
 
-_ProtagonisteNeVeutPasRetournerAuRRRR
-> Dites-moi qu'on a jamais à retourner au\
-> RRRR?
+### Wwwelchior
 
-_ProtagonisteNeVeutPasAmbiguiteReponse
-> À la réponse ou au passage?
+_WwwelchiorTempleAttrapeTouriste
+> Ce serait un peu absurde non? Le temple\
+> n'était qu'une attrape-touriste!
 
-_ProtagonisteOnEstAutreCoteMontagne
-> Sinon, on est finalement de l'autre côté de\
-> la montagne!\
-> On va pouvoir trouver le fameux\
-> Temple du Bon Matin!
+_WwwelchiorMmmPensif
+> Mmmmh...
 
-_ProtagonisteVaFaireDuDeni1
-> Si mettons je déclare que tout ceci est\
-> parfaitement normal, on peut tout ignorer\
-> et juste partir?
+_WwwelchiorDoitBienYAvoirTempleBonMatin
+> Forcément il doit bien y avoir un Temple du\
+> Bon Matin, non?
 
-_ProtagonisteVaFaireDuDeni2
-> Parfait, donc il n'y a rien à voir.\
-> On peut procéder.
+_WwwelchiorPensaisQueProtagonisteSaurait
+> Je pensais que tu vivais dans cette forêt?
 
-_ProtagonisteOhVerdureDentee
-> Oh. C'est de la verdure dentée.
+_WwwelchiorLesLegendesCEstLong
+> C'est vrai que ça prend un moment à se\
+> former les légendes...
 
-_ProtagonisteRefuseDescendreEnBas
-> Non mais moi je descends pas en bas.\
-> C'est juste pas une option.
+_WwwelchiorCEtaitMechantCommentaire
+> Effectivement, c'était juste méchant comme\
+> commentaire.
 
-_ProtagonisteVaFarpaitementBien
-> Non mais je vais farpaitement bien!
+_WwwelchiorNeVeutPasTransaction
+> Assurément tu ne veux rien échanger avec un\
+> Detah qui veut faire une transaction!
 
-_ProtagonisteFarpaitement
-> Farpaitement!
+_WwwelchiorWooPersVerConnaitKkun
+> Wooo regardez-moi ça Personne Véritable qui\
+> connait "quelqu'un"!
 
-_ProtagonisteCluelessDuPoteauBonMatin1
-> Ah c'est inhabituel un autel coupé en deux\
-> avec une colonne au milieu...
+_WwwelchiorBienDaccord
+> C'est bien dit ça! Et dire que tu voulais\
+> t'asseoir pour une tasse de thé!
 
-_ProtagonisteCluelessDuPoteauBonMatin2
-> Oui Gabspart?
+_WwwelchiorTableEspace
+> Tant qu'il lui reste de l'espace, il peut\
+> en faire autant qu'il veut!
 
-_ProtagonisteCoucouQuestion
-> Coucou?
+_WwwelchiorDetahDangereux
+> Justement! Devines pourquoi le Detah est\
+> dangereux!
 
-_ProtagonisteTombeVide
-> Mmmmh, la tombe est vide...
+_WwwelchiorBeurresPasTropOnEst4
+> Beurres-en pas trop, on est quatre tout de\
+> même.
 
-_ProtagonistePuzzleBonmatinPasDown1
-> Mmmh?
+_WwwelchiorTaper
+> Ahha!
 
-_ProtagonistePuzzleBonmatinPasDown2
-> Les flèches? Je vois pas le rapport?
+_WwwelchiorAttentionEllesBougent
+> Attention elles bougent!
 
-_ProtagonistePuzzleBonmatinPasDown3
-> Non mais vous continuez à ne rien clarifier!
+_WwwelchiorJeanJacquesMorts
+> Ou un personnage sinistre les a ressuscité\
+> afin de remplir son sombre dessein!
 
-_ProtagonistePuzzleBonmatinPasDown4
-> ... Ok? Mais Gabspart ça lui a rien fait\
-> pourtant?
+_WwwelchiorEtesSurPasFaireRentrer
+> Vous êtes sûr que vous pouvez pas me faire\
+> rentrer *maintenant*?
 
-_ProtagonisteMerde
+_WwwelchiorDotDotDot
+> . . .
+
+_WwwelchiorOhAllo
+> Oh allo!\
+> \
+> ...\
+> Votre face me dit quelque chose.
+
+_WwwelchiorVousAvezTraitsProtagoniste
+> En fait vous avez les traits d'un\
+> Protagoniste!\
+> Ça doit être vous que le Repositoire des\
+> Textes Sacrés mentionnait!
+
+_WwwelchiorNEstPasLeMurderHobo
+> Aaaah.\
+> Non vous devez comprendre, je ne suis pas\
+> le vrai Murder Hobo.
+
+_WwwelchiorProhpetiePasChamboulee
+> De toute façon il n'y a eu aucune mention\
+> de prophécie chamboulée alors ça veut dire\
+> que le prêtre n'était pas important.
+
+_WwwelchiorATrouveLaCle
+> Non c'est correct Gabspart! Regardes j'ai\
+> trouvé la clé sur lui.
+
+_WwwelchiorRefuseLeMurderHoboisme
+> Peut-être qu'elle n'aura rien de\
+> nouveau à dire sur le sujet! Même qu'on l'a\
+> jamais rencontrée alors c'est pas\
+> impossible qu'elle n'existe même pas -
+
+_WwwelchiorAToutFait
+> Oui!\
+> J'ai tout fait!\
+> J'ai trouvé la solution à la porte ET le\
+> Protagoniste!
+
+_WwwelchiorOnEstVosPersSec
+> Vous êtes Protagoniste? Bien voila, on est\
+> vos Personnages Secondaires.
+
+_WwwelchiorAucuneIdeeOuEstBalthathig
+> Aucune idée. Il m'a dit que c'était\
+> "Vraiment important" que je trouve la\
+> solution tout seul, et ensuite il est juste\
+> parti.
+
+_WwwelchiorQqchoseAProposCados
+> Quelque chose à propos d'aller chercher des\
+> "cadeaux".
+
+_WwwelchiorOnYVa
+> On y va?
+
+_WwwelchiorAccueil
+> Oui, on a reçu tout un accueil!
+
+_WwwelchiorPrinceDesTenebres
+> PrinceDesTenebres
+
+_WwwelchiorFilleBonjourette
+> Non mais clairement sa fille peut pas\
+> l'aimer s'il lui a donné un nom comme\
+> "Bonjourette".
+
+_WwwelchiorVeutSouleverPasMurderHobo
+> J'aimerais juste soulever que cette fois-ci\
+> j'ai rien incité, hein.
+
+_WwwelchiorAhCestUnProtagonisteCa
+> Ah c'est bien un Protagoniste ça.
+
+_WwwelchiorAhJeSaisQuoiFaire
+> Ah je sais c'est quoi qui faut faire!
+
+_WwwelchiorAhJeSaisQuoiFaireBis
+> C'est correct Protagoniste, je sais quoi\
+> faire!
+
+_WwwelchiorFinDePhrasesNonRequises
+> Fin de phrases non requises!
+
+_WwwelchiorCartesPasStandard
+> Au moins c'est pas les cartes standards...
+
+_WwwelchiorVousPataugez
+> Ah mais vous pataugez là!
+
+_WwwelchiorPasBesoinDeMagie
+> Pas besoin de beaucoup de magie pour\
+> reproduire cette situation...
+
+_WwwelchiorPogneTour1
+> Enfin bon, c'est faux, il était pas affamé\
+> le Protagoniste!
+
+_WwwelchiorPogneTour2
+> Il était perdu!
+
+_WwwelchiorPogneTour3
+> Attends! C'est même pas ton tour!\
+> Parce que vois-tu, le Protagoniste perdu,\
+> il devint tellement perdu, qu'il se pris\
+> une soif de violence!
+
+_WwwelchiorPogneTour4
+> Ah c'est dommage, je pense que j'avais une\
+> bonne histoire dans la main.
+
+_WwwelchiorRegardezBranche
+> Oh! Regardez dans sa main! La BRANCHE!
+
+_WwwelchiorVeutPasNegocier
+> Tu niaises! Il fait genre trois fois ta\
+> taille! On va lui faire tomber sa table!
+
+_WwwelchiorGoutSang
+> À tous les coups je peux t'assurer qu'il\
+> s'agit du goût du sang.
+
+_WwwelchiorDeclarationPasCorrecte
+> Ah non mais ça c'est pas correct comme\
+> déclaration. Detah y'était pas très gentil,\
+> mais là tu le dénigres tout simplement.
+
+_WwwelchiorPasConvaincuParProta
+> M-mh. M-mh. Tu dis ça, mais tantôt on verra\
+> bien c'est qui le Vrai Murder Hobo.
+
+_WwwelchiorEtLesBlaguesDeShitDuProtagoniste
+> Des angles? Genre aigu, droit et obtus?\
+> \
+> Comme à la maternelle?
+
+_WwwelchiorSansParlerDesCotes
+> Sans parler des côtés!
+
+_WwwelchiorCestSonCriDeGuerre
+> C'est son cri de guerre!
+
+_WwwelchiorCriDeGuerre
+> CriDeGuerre
+
+_WwwelchiorSnarkProtagonisteSelfCentered
+> Décidement tu exhibes toutes les qualités\
+> d'un protagoniste.
+
+_WwwelchiorNeReculeJamais
+> Le Prince des Ténèbres ne recule jamais\
+> devant un combat!
+
+_WwwelchiorLeWindoBougePas
+> De toute façon la grosse fenêtre elle bouge\
+> pas de son coin.
+
+_WwwelchiorTaitTemps
+> Y'était temps!
+
+_WwwelchiorComprendPasPlusGaboue
+> Vous pensez vraiment que j'y comprends plus\
+> au Gaboué? J'ai entendu les légendes...\
+> mais c'est tout.
+
+_WwwelchiorAdversairesDuGaboue
+> Le mythe annonce que ce sont des\
+> adversaires redoutables! Le Gaboué est\
+> simplement aiguillé au danger qu'ils\
+> posent.
+
+_WwwelchiorPasLaBronche
+> Oh non de dieu!\
+> Mais... Mais...\
+> Sa BRANCHE!
+
+_WwwelchiorPossessionsPrecieusesDuPecheur
+> À tout les coups le Pêcheur Senior a été\
+> enterré avec ses possessions précieuses!
+
+_WwwelchiorLesMortsCaSenFiche
+> Non mais de toute façon les morts c'est pas\
+> dérangé si on prend leurs choses.
+
+_WwwelchiorPoudreFantomeVautCher
+> La poudre de fantôme ça vaut cher!
+
+_WwwelchiorPasExactementVrai
+> \}C'est pas exactement vrai...\{
+
+_WwwelchiorTombesPasTouristiques1
+> Les tombes pas touristiques c'est\
+> typiquement pas très accueillant.
+
+_WwwelchiorTombesPasTouristiques2
+> Des fois y'a des quêtes, et c'est comme un\
+> genre de parc d'attractions!
+
+_WwwelchiorUneBelleAttitude
+> Ah! Ça c'est une belle amélioration\
+> d'attitude!
+
+_WwwelchiorNeSavaisPasConnaissais
+> Je ne savais pas que tu les connaissais!
+
+_WwwelchiorReitere
+> Personne Véritable réitérait seulement sa\
+> dévotion à vous aider dans votre problème\
+> de pas-dans-votre-cour!
+
+_WwwelchiorPasConvaicuQuete
+> Pfff, ça dit vouloir assouvir une faim\
+> Cosmique, puis voilà que ça accepte d'aider\
+> avec une histoire de voisinage...
+
+_WwwelchiorMurderHoboFaible
+> Je ne suis pas sûr que tu es très\
+> convaincant dans le rôle du Murder Hobo en\
+> fait. Ça prend les reins plus solides.\
+> Un petit coup de poing sur ta tête et...
+
+_WwwelchiorVaMurderHoboiser
+> Bon tout ça c'est drôle, et je m'excuse,\
+> mais l'Équilibre Cosmique ne sera pas\
+> rétabli si ça continue comme ça.
+
+_WwwelchiorPasDeTemoin
+> Si on déclare qu'ils étaient déjà en train\
+> de faire un repos des yeux éternel à notre\
+> arrivée, je suis sûr que personne ne nous\
+> questionnera.
+
+_WwwelchiorPointPondre
+> On oserait point pondre une telle idée...
+
+_WwwelchiorOffusqueTenebresCossin
+> Voyons! On lance pas des accusations comme\
+> ça!\
+> Tu penses que les Ténèbres perdent leur\
+> temps avec Cossin!?
+
+_WwwelchiorTempererAttentesProta
+> Oui, on a trouvé le Protagoniste!\
+> \
+> Bon par contre y faut tempérer les\
+> attentes...
+
+_WwwelchiorBalthaNum4
+> Normalement ça aurait été ton quatrième\
+> Personnage Secondaire, mais là comme tu\
+> peux observer il est occupé à faire je sais\
+> pas trop quoi...
+
+_WwwelchiorCanneLevitation
+> Ce serait pas plutôt les forêts, les\
+> montagnes et les déserts?
+
+_WwwelchiorLanceLancement
+> Il faut l'excuser un peu, là d'où y vient,\
+> les oiseaux terrorisent tout les chemins et\
+> les villages.\
+> C'est horrible.
+
+_WwwelchiorBonsoirBonjourette
+> Ah c'est vous la fameuse Bonjourette!\
+> \
+> Oui ton père nous a beaucoup parlé de toi\
+> et il se repose bien les yeux en ce moment!
+
+_WwwelchiorRefuseBonjourette
+> \}Écoutes comment voulais-tu que je sache qu'elle existe pour vrai?\{\
+> \
+> \}Si y'a aucune quête ou mouvement rattachée à elle, lui mentir c'est la plus\
+> grande gentillesse qu'on puisse lui faire en ce moment!\{
+
+_WwwelchiorFaisMoiConfiance
+> \}Fais moi confiance! Y'a pas de problème.\{
+
+_WwwelchiorPetitDoigtArme
+> Mon petit doigt me dit de le mettre sur mon\
+> arme et d'inviter ses compagnons.
+
+_WwwelchiorFlashMobDeDanse
+> C'est pas trop pire, c'est comme un flash\
+> mob de danse!
+
+_WwwelchiorImaginesLaPlatitude
+> T'imagines la platitude du reste du Monde\
+> si c'est la Montagne?
+
+_WwwelchiorWohMisterNaifCestAmbuscade
+> Tu fais exprès d'incarner la naïveté en ce\
+> moment? C'est clairement une ambuscade!
+
+_WwwelchiorTheorieProposesParis
+> Avec une théorie pareille je te proposes\
+> qu'on prenne un paris!
+
+_WwwelchiorTristheroisme
+> Niveau héroïsme c'était un Moment,\
+> quand même...
+
+_WwwelchiorEhoLAppropriation
+> Pèses pas trop vite sur l'accélérateur de\
+> l'appropriation des accomplissements de\
+> toute l'équipe tout de même.
+
+_WwwelchiorInventeurVaBien
+> L'inventeur va très bien, il dort en bas.\
+> Mais... je ne sais pas pour toi.
+
+_WwwelchiorCaillouMouvant
+> Pourtant moi je trouve ça charmand.\
+> On devrait continuer voir ce qu'il y a plus\
+> loin!
+
+_WwwelchiorNuancePasSiGrande
+> La nuance est moins grande qu'on le\
+> penserait.
+
+_WwwelchiorPasLesTenebres
+> C'est pas pour les Ténèbres en tout cas,\
+> sinon j'en aurais entendu parler.
+
+_WwwelchiorExcusePasForte
+> Niveau excuse c'est pas fort. Je pense\
+> qu'ils mentent.
+
+_WwwelchiorVictwereBandits
+> La Noirceur c'est rien comparé aux\
+> Ténèbres.\
+> \
+> Garanti que ce ne sera pas un problème.
+
+_WwwelchiorTeaseRochePleinDeShit
+> Des fois les légendes c'est vraiment juste\
+> ça par contre.\
+> Des légendes.
+
+_WwwelchiorSoupconneMindFlayer
+> \}Donnes-y trois minutes, ça va être révélé que c'est un contrôle de l'esprit\
+> et elle a implanté des souvenirs pour lui dérober le Bonjour!\{
+
+_WwwelchiorBienvenueEntouragePrinceTenebres
+> Bienvenue dans l'entourage du Prince des\
+> Ténèbres!
+
+_WwwelchiorVoitRocheSurPage
+> Mmmh, moi je vois une roche sur la page.
+
+_WwwelchiorLegendeRoche
+> Tu es sûr? Regarde là, la petite légende:\
+> \
+> "Roche ignagna"
+
+_WwwelchiorTeaseDescriptionRoche
+> Oh, et on va prendre le temps de lire la\
+> description?
+
+_WwwelchiorGaboue
+> Gaboué!
+
+_WwwelchiorPlanteGrosseDents
+> J'pense que Personne Véritable est un poil\
+> brisé là. Déjà c'est une plante, et ensuite\
+> elle a de grosses dents.\
+> Ça regarde mal.
+
+_WwwelchiorPasMalALAisePourUnConfus
+> T'es rendu pas mal à l'aise pour quelqu'un\
+> qui capotait y'a deux minutes.
+
+_WwwelchiorANePasConfondreAvecTenebres
+> À ne pas confondre avec les Ténèbres!
+
+_WwwelchiorParfaitementPtInterro
+> ...Parfaitement?
+
+_WwwelchiorIlAPasDitTenebres
+> Vous noterez qu'il n'a pas dit les\
+> Ténèbres!
+
+_WwwelchiorExpliqueQuePartiSidequester
+> Moi et Gabspart on n'a jamais été très bon\
+> à patienter dans un coin, alors on était\
+> parti au nord du temple.\
+> Il y a une grotte digne d'investigation.
+
+_WwwelchiorExpliqueLeRRRR
+> Le Royaume Rétabli des Roches\
+> Récalcitrantes.\
+> \
+> On est passé par là sur le chemin.
+
+_WwwelchiorIntroShackJesus1
+> Bah oui, c'est la maison de notre a-\.\.\^
+
+_WwwelchiorBonMatinManquantEvident
+> D'ailleurs, pourquoi on a prit le temps\
+> d'aller jusqu'à valider le poteau? Me\
+> semble que c'était clair dès qu'on est\
+> arrivé.
+
+_WwwelchiorMenaceChevalierNoir
+> La Noirceur? Ha!\
+> Approches-toi un peu que je, Wwwelchior,\
+> Prince des Ténèbres, te fasses tâter de mon\
+> épée!
+
+_WwwelchiorOnEstRenduCamarade
+> Ah c'est pas pire, on est rendu des\
+> camarades... C'est une promotion ou une\
+> démotion depuis Personnage Secondaire?
+
+_WwwelchiorPuzzleBonmatinPasDown1
+> Ah je reconnais le genre... Après c'est\
+> plus authentique ainsi!
+
+_WwwelchiorPuzzleBonmatinPasDown2
+> Marche un peu sur les tuiles et tu vas\
+> comprendre.
+
+_WwwelchiorPuzzleBonmatinPasDown3
+> Non mais pour lui c'est pas pareil...\
+> Le Protagonisme et tout ça, vois-tu.
+
+_WwwelchiorTuRalliesAGabspart
+> Ah tu te rallies à Gabspart?
+
+_WwwelchiorChangeurFormeReferencePourrie
+> Et puis un changeur de forme ça veut rien\
+> dire, je ferais pas trop attention à ce\
+> genre de référence.
+
+_WwwelchiorJustement
+> Justement.
+
+_WwwelchiorAlitereLeClone
+> Ressaisis-toi Personne Véritable! Ce n'est\
+> qu'un simulacre! Une copie corporelle\
+> corporative croustillante!
+
+_WwwelchiorTreveDeProcrastination
+> Trêve de procrastination! Je, Wwwelchior,\
+> le Prince des Ténèbres, pulvérise les\
+> fenêtres!
+
+_WwwelchiorBienDit
+> Ah enfin! Pour une fois c'est bien dit!
+
+_WwwelchiorExpliqueLaRaison
+> Tsk tsk tsk Personne Véritable, tu le sais\
+> bien qu'il faut pas abuser de ces choses-\
+> là. Un jour tu te dis "Ah juste une ptit\
+> disparition de mon problème"...
+
+_WwwelchiorExpliqueDangerTriche
+> Et puis paf tu te réveilles le lendemain\
+> à moitié à travers le plancher et il te\
+> reste genre, une âme de vivante!\
+> T'imagines l'ennui?
+
+_WwwelchiorExpliquerCouleurBetterave
+> C'est bon on a réussi à lui expliquer la\
+> couleur du jus de betterave!
+
+_WwwelchiorGere
+> Nan c'est correct, je gère!
+
+_WwwelchiorFouillerDansLeCoinChaudDangereux
+> Je suis sûr que si on fouille dans le coin\
+> on peut trouver quelque chose.\
+> De chaud.\
+> Et de dangereux.
+
+_WwwelchiorTeasePuzzle
+> Et en plus l'eau à l'entrée elle scintille!\
+> C'est tout spécial ça.
+
+### Gabspart
+
+_GabspartSelonLegende
+> Selon la légende...
+
+_GabspartSelonRepoGnagnagna
+> ... du Repositoire des Textes Gagnagna.\
+> \
+> Selon la légende, ce serait de l'autre côté\
+> de la Montagne qui entoure cette vallée.
+
+_GabspartDoncIlDit
+> Donc il dit:
+
+_GabspartTraduitGabouePingouin
+> > Lorsque jadis j'errais,\
+> > en quête de savoir.\
+> > Apprenti vorace,\
+> > du sage Pingouin.
+
+_GabspartTraduitGaboueScriptouilles
+> > Je ne su m'expliquer,\
+> > Jaillissent tabouéerre!\
+> > Préceptes profèrent,\
+> > toutes les Scriptouilles!
+
+_GabspartFautFaireAttentionAuxIncantations
+> Les Scriptouilles elles-mêmes, non.\
+> Mais les mots qu'elles incantent...\
+> Je m'y méfierais.
+
+_GabspartTaper
+> Ahha!
+
+_GabspartTouchePipiNeuf
+> Ça va aller, un p'tit Touche-Pipi et ce\
+> sera ok!
+
+_GabspartJeanJacquesMorts
+> Peut-être que c'est des vivants?
+
+_GabspartTrouveCommentPasserPorte
+> Wwwelchior, j'ai trouvé comment passer la\
+> porte. Le Repositoire des Textes Sacrés dit\
+> qu'il faut trouver la fille du prêtre, pour\
+> qu'il renoue ses liens avec elle et qu'il -
+
+_GabspartPasContent
+> PasContent
+
+_GabspartWwwelchior
+> Wwwelchior.
+
+_GabspartMaisLaFilleDuPretre
+> Mais...\
+> \
+> La fille du prêtre...
+
+_GabspartHeyLeProtagoniste
+> Hey t'as trouvé le Protagoniste!
+
+_GabspartPasConvaincuDeLaSolution
+> *Une* solution peut-être.\
+> *La* solution je suis pas convaincu.
+
+_GabspartChercheSaFinDePhrase
+> Comment dire...\
+> Huh...\
+> On -\
+> Mmmmh.
+
+_GabspartOnNeVientPasDIci
+> On ne vient pas d'ici. J'irai pas en détail\
+> comme les tripes de ce pauvre prêtre par\
+> terre, mais on est coincé ici.
+
+_GabspartOnNeVientPAsDIciForRealThisTimeProd2
+> "Ici" comme dans ce monde.\
+> On vient du Brun. C'est huh... Un autre\
+> Plan d'Existence.
+
+_GabspartOnNeVentPasDIciForRealThisTimeProd3
+> C'est pas trop clair comment on s'est\
+> retrouvé ici, on est en train de chercher à\
+> comprendre, mais le Repositoire des Textes\
+> Sacrés donne pas tout le backstory.
+
+_GabspartHandWavingDuWiki
+> Heh, pas besoin de savoir c'est quoi.\
+> On l'utilise seulement si vous devenez\
+> coincé.
+
+_GabspartOnVaAiderBonjour
+> Mais en tout les cas on va vous aider à\
+> trouver votre Bonjour - J'pense bien que\
+> le pêcheur vous a donné la quête? Après ça\
+> on pourra regarder pour le Bon Matin.
+
+_GabspartAh
+> Ah!
+
+_GabspartChapitre1
+> "Chapitre 1:\
+> Le Protagoniste obtient le Bonjour"\
+> \
+> Vous voyez?
+
+_GabspartOuEstBalthathig
+> Il est où Balthathig?
+
+_GabspartFuckBalthathig
+> Bon, on l'attendra pas alors.
+
+_GabspartNonFaussitude
+> Ah ça c'est pas faux.\
+> C'est d'une pas-faussité à en retordre la\
+> véracité dudit Protagoniste.
+
+_GabspartWikiTempleBonjour
+> Je dis ça de même pour rien, mais mettons\
+> que, y'a 3 leviers au total, et qu'y\
+> faudrait tout les mettre vers le bas, puis\
+> ensuite tout les mettre vers le haut.
+
+_GabspartRuineLeGameplay
+> Je sais, je sais, ça ruine le gameplay.\
+> Mais c'est pour le mieux en fait.
+
+_GabspartCestDansLeWikiAlorsCaSertARien
+> Oui et c'est même indiqué dans le\
+> Repositoire des Textes Sacrés alors il n'y\
+> a rien que vous pouvez faire pour nous en\
+> empêcher!
+
+_GabspartExpliquerPlotArmor
+> Toute tentative de nous arrêter se résoudra\
+> en explication à coup de Plot Armor!
+
+_GabspartCaVaPersonneVeritable
+> Ça va Personne Véritable?
+
+_GabspartPourCeQueCaChange
+> Et puis à ce point-ci, pour ce que ça\
+> change...
+
+_GabspartEncoreCheminProtagoniste
+> Non non, c'est encore sur le Chemin du\
+> Protagoniste alors tout va bien.
+
+_GabspartTuVeuxPasLaTraduction
+> Tu veux pas la traduction de ce que Gaboué\
+> a réellement dit?
+
+_GabspartOhNon
+> Oh non.
+
+_GabspartNonJeRefuse
+> Non non non, je refuse!
+
+_GabspartMalDeTete
+> C'est fini, je vais avoir un mal de tête\
+> pour toute la journée...
+
+_GabspartPasLeMonopole
+> Non non, c'est bon, j'ai pas le monopole.
+
+_GabspartReactionProta
+> Ça fait changement de sa réaction quand on\
+> a rencontré la Première Bonjoure, huh...
+
+_GabspartHuuh
+> Huuuuuuh...
+
+_GabspartPlusieursMurderHobos
+> En tant que groupe, les actions de l'un\
+> parlent pour les autres, hein.\
+> Et puis en plus tu as déjà de l'avance\
+> là-dessus.
+
+_GabspartTraduitGaboueVictwere
+> > Victwere Victwere Victwere Victwere\
+> > Victwere Victwere Victwere Victwere\
+> > Victwere Victwere Victwere Victwere\
+> > Victwere Victwere Victwere Victwere
+
+_GabspartPasMalSurLHeure
+> Pas mal sûr qu'il est l'heure.
+
+_GabspartRespectGameplay
+> Quand même, ça prend un peu de respect pour\
+> les modalités du gameplay!
+
+_GabspartDesFoisChangeurForme
+> Si ça avait été dans un placard ça aurait\
+> été moins certain.\
+> \
+> Des fois que c'est un changeur de forme...
+
+_GabspartAEcouteGaboueLui
+> Il me semble que Gaboué a été très clair.
+
+_GabspartLaSituationObtuse
+> C'est toute la situation qui est obtuse,\
+> mais non je pense que Personne Véritable\
+> est juste confus.
+
+_GabspartAEcouteGaboue2
+> Je sais pas pour toi mais je vois ni chemin\
+> par dessus, ni chemin par dessous.
+
+_GabspartVaTraduireQueTuLeVeuilleOuNon
+> Silence!\
+> J'veux rien entendre!\
+> \
+> Donc il dit:
+
+_GabspartGaboue1
+> Gaboué!
+
+_GabspartCriDeGuerre
+> CriDeGuerre
+
+_GabspartRencheritLeProtagonisme
+> Non mais ça fait ça être le protagoniste,\
+> ça monte à la tête et ça veut tout le\
+> mérite.
+
+_GabspartCertes
+> Certes...
+
+_GabspartCetaitNotreCombatCestCa
+> C'était \{notre\} combat c'est ça?
+
+_GabspartVoirQueYaLesFinsDePhrases
+> Bin non! Voir que y'a les Fins de Phrases\
+> drette ici comme ça!\
+> Depuis le temps que je... huh je veux dire,\
+> depuis le temps que Gaboué les cherche!
+
+_GabspartCaAPasToujoursEteAinsi
+> Disons seulement que ça n'a pas toujours\
+> été ainsi.
+
+_GabspartLivreVautOr
+> Dans tous les cas je te garantis que ça\
+> vaut de l'or ce petit livre-là.
+
+_GabspartOnSaitJamaisQuandOnPerdFinsDePhrases
+> On sait jamais quand est-ce qu'on se\
+> retrouve pris de stupeur par manque de\
+> complétude phrasique.
+
+_GabspartCordeADesUsages
+> L'entrée sur la Corde Auto-Portante dans\
+> le Repositoire des Textes Sacrés est pas\
+> tout à fait vide, alors c'est pas le pire\
+> cadeau.
+
+_GabspartLeGere
+> Tu t'y prends tout croche. laisses-moi\
+> faire.
+
+_GabspartVaTraduire
+> Oui parfait, donc il dit:
+
+_GabspartTraduitGaboueChasserDetah
+> > J'étais dans la forêt,\
+> > comme l'envie me prend.\
+> > Chassant la tradition,\
+> > idée fondamentale.
+
+_GabspartTraduitGaboueWindoSurgit
+> > Jusqu'à ce qu'un malfrat\
+> > surgit en guet-apens!\
+> > L'horreure encadrée,\
+> > vitreuse et de métal!
+
+_GabspartTraduitGabouePeutPasPasser
+> > Ne pouvant passer ni,\
+> > par dessus, par dessous.\
+> > Comme dans le proverbe,\
+> > Je pris donc le côté.
+
+_GabspartFautPatienter
+> Ah mais il faut un peu de patience avec le\
+> Gaboué!
+
+_GabspartGggaboue6
+> G-g-g-aboué?
+
+_GabspartGaboueDot
+> Gaboué.
+
+_GabspartAOublieQueProtagonisteSuck
+> Ah oui désolé, j'avais oublié un instant\
+> votre imbertitude.
+
+_GabspartTristeMaisDoitContinuer
+> La Barbe de l'âme voyons donc!\
+> Vous n'êtes que des philistins.\
+> \
+> Enfin bon, donc il a continué ainsi:
+
+_GabspartTraduitGaboueOracleSurgit
+> > Poursuivant mon chemin,\
+> > j'ouïe un marabout.\
+> > Décret prophétique\
+> > du besoin exploité!
+
+_GabspartEtDoncOnContinue
+> Oui merci, et il n'avait pas terminé:
+
+_GabspartTraduitGaboueTroisiemePeripetie
+> > Pourchassé, apeuré\
+> > je me trouvai ainsi.\
+> > Que devant moi jaillit,\
+> > Donc ainsi présenté:
+
+_GabspartTraduitGaboueDetahSurgit
+> > Le renseignement qui,\
+> > servant de point d'appui.\
+> > Réceptacle de l'esprit,\
+> > Le susnommé DETAH.
+
+_GabspartTraduitGabouePeutPasPasserCote
+> > Ne pouvant passer ni,\
+> > par dessus, par dessous.\
+> > Et ne pouvant passer\
+> > pas même de côté.
+
+_GabspartTraduitGabouePerdu
+> > Et alors que malheur,\
+> > ma douce, mon bambou.\
+> > Elle me fut dérobée,\
+> > outreusement volée.
+
+_GabspartExpliqueQuete
+> Voila! Et il va nous laisser passer si on\
+> accepte de l'aider à la retrouver.
+
+_GabspartCestUnBaton
+> Non c'est pas pareil, c'est juste un baton\
+> ça.
+
+_GabspartSaufsSiVivants
+> Sauf s'ils sonts vivants.
+
+_GabspartTuEsSurBonneIdee
+> Attends, tu es sûr que c'est une bonne idée\
+> de -
+
+_GabspartFautEpicerPromenadeForet
+> C'est important d'épicer un peu les\
+> promenades dans la forêt!
+
+_GabspartFantomeTraumatisant
+> Non mais tu t'imagines le traumatisme!\
+> Son père est mort et enterré, et paf un\
+> matin un fantôme se pointe pour lui\
+> demander s'il veut bruncher?
+
+_GabspartToiLeNonGeologue
+> C'est toi le non-géologue.
+
+_GabspartPresumesSante
+> T'en présumes des choses sur sa santé...
+
+_GabspartOminousPasGrave
+> Ah oui c'est vrai quand même, mais je suis\
+> sûr que ce n'est pas grave.
+
+_GabspartSaitLire
+> Oooh, je pourrais te lire des passages si\
+> tu veux!
+
+_GabspartDommageManque
+> Dommage, tu ne sais pas ce que tu manques.
+
+_GabspartVergiliusVariaaaaaaaaaaaaaaaaaaa
+> \S[3]Arma virumque cano, Troiae qui primus ab oris\
+> Italiam, fato profugus, Laviniaque venit litora,\
+> multum ille et terris iactatus et alto vi superum\
+> saevae memorem Iunonis ob iram; 5multa quoque et\
+> bello passus, dum conderet urbem, inferretque\
+> deos Latio, genus unde Latinum, Albanique patres,\
+> atque altae moenia Romae.
+
+_GabspartAutrePassage
+> Oh attends, il y a un autre passage que je\
+> veux lire!
+
+_GabspartGeliusVariaaaaaaaaaaaaaaaaaaa
+> \S[2]Exemplum ex Auli Gelli librum primum, capitulum 9\
+> \
+> Is autem qui tacebat quae dicebantur ab aliis\
+> audiebat, neque percontari, si parum\
+> intellexerat, commentari quae audierat fas erat;\
+> sed non minus quisquam tacuit quam biennium: hi\
+> prorsus appellabantur intra tempus tacendi\
+> audiendique ἀκουστικοί. Ast ubi res didicerant\
+> rerum omnium difficillimas, tacere audireque,\
+> atque esse iam coeperant silentio eruditi cui\
+> erat nomen ἐχεμυθία, tum verba facere et\
+> quaerere, quaeque audissent scribere, et quae\
+> ipsi opinarentur expromere potestas erat; [6] hi\
+> dicebantur in eo tempore μαθηματικοί, ab his\
+> scilicet artibus quas iam discere atque meditari\
+> inceptaverant: quoniam geometriam, gnomonicam,\
+> musicam ceterasque item disciplinas altiores\
+> μαθήματα veteres Graeci appellabant; vulgus\
+> autem, quos gentilicio vocabulo “Chaldaeos”\
+> dicere oportet, “mathematicos” dicit.
+
+_GabspartCestBeau
+> C'est beau, hein?
+
+_GabspartCestBon
+> C'est bon, c'est bon.
+
+_GabspartDensificationDetah
+> Ces jours-ci, on arrête pas la\
+> densification du Detah tu sais.
+
+_GabspartQuestionRhetoriqueHermite
+> Oh j'espère que c'est rhétorique comme\
+> question, Personne Véritable est un peu\
+> hermite vous savez.
+
+_GabspartQuestionRhetoriqueHermite2
+> T'étais au courant que le pont est cassé\
+> avant d'embarquer dans ton aventure\
+> cosmique?
+
+_GabspartPasRapport
+> Hein? Je vois pas le rapport.
+
+_GabspartOffusqueCossin
+> Oui Gaboué!\
+> Voir que t'insinues que Gaboué et cette...\
+> chose sont pareils.
+
+_GabspartSassLettres
+> Oui et tu en entends des lettres, toi?
+
+_GabspartResponsabilite
+> Ah non mais tu prends les décisions hein,\
+> tu as toute la responsabilité sur les\
+> épaules.
+
+_GabspartBonBonk
+> C'était un bon BONK tout de même.
+
+_GabspartMetsPasGaboueSituation
+> Ah mais mets-le pas dans une posture de\
+> même!
+
+_GabspartSiTenteGaboue
+> Bon, si ça lui tente.\
+> Donc il dit:
+
+_GabspartTraduitGaboueDefenseProtagoniste1
+> Quel immonde acte, cet excès de rage...\
+> Votre pauvre mari, injustement tué...\
+> Mais la violence de ses décisions,\
+> ont précipité sa malheureuse fin!
+
+_GabspartTraduitGaboueDefenseProtagoniste2
+> Observez la Centralité de cet homme:\
+> Bien évidemment c'est un Protagoniste!\
+> Par sa nature même, ces comportements\
+> l'oblige à répondre violence par violence!
+
+_GabspartPasFierDuMeurtre
+> En tout cas je pense qu'on a maintenant\
+> confirmé que vous êtes du même calibre.\
+> Pour quelqu'un qui parlait d'être un\
+> Protagoniste...
+
+_GabspartDesillusionProta
+> Mmmmmmmmh. Je suis sûr que ça va bien finir\
+> comme manière de voir les choses.
+
+_GabspartPartirRemarque
+> On devrait partir avant que quelqu'un\
+> remarque ce qu'on vient de faire.
+
+_GabspartCouverColere
+> Surtout que couver de la colère ça peut\
+> être dangereux des fois...
+
+_GabspartNonProtagonismeFaitRien
+> C'est un classique en fait. Ici Cossin\
+> n'est pas Protagoniste, alors il ne\
+> faudrait pas qu'il s'occupe de ses\
+> problèmes lui-même.
+
+_GabspartTrouveDemandeMotivationTardive
+> C'est *maintenant* que tu demandes à avoir\
+> des motivations?
+
+_GabspartBalthathigBrun
+> C'est Balthathig!\
+> J'aurais cru qu'il avait la tronche\
+> suffisament Brune pour que tu le réalises.
+
+_GabspartChandailPers
+> Je ne pense pas que tu as convaincu\
+> Personne Véritable de grand chose là...
+
+_GabspartCanneLevitation
+> Je pense que tu surestimes grandement la\
+> taille du Monde.\
+> \
+> Le M majuscule c'est pour aider l'ego.
+
+_GabspartExpliqueSainteDoree
+> C'est normal ça, c'est une Sainte Dorée\
+> tirée d'un autre plan d'existence adjacent\
+> au Brun. Ça fait partie du processus\
+> d'enchantement de Balthathig...
+
+_GabspartBouclierVert
+> Donnes-y une chance, c'est le même matériau\
+> que mon armure! C'est une roche volcanique\
+> légère super résiliente!
+
+_GabspartVaPasPlusProtegerVert
+> Écoutes, moi je fais juste te relayer\
+> l'info que je connais. Pas obligé de faire\
+> une montée de lait chaque fois que\
+> l'Univers décide de faire autrement...
+
+_GabspartSassMontagne
+> D'ailleurs on n'est pas monté très haut...\
+> Faudrait qu'on se reparle de la définition\
+> de montagne après qu'on ait terminé.
+
+_GabspartPasBesoinRepoPourTeDireBlonde
+> J'ai même pas besoin de consulter le\
+> repositoire pour te dire que ça ressemble à\
+> la Blonde de Cossin Lette..
+
+_GabspartCaVaBienAller
+> Je suis sûr que tu vas bien aller!
+
+_GabspartCaillouMouvant
+> Tu veux la vraie réponse ou la réponse\
+> diplomatique?
+
+_GabspartDefendEnchant
+> En fait si tu voulais faire tes propres\
+> enchantements c'est assez bon comme\
+> sélection.
+
+_GabspartSiTuBrun
+> Pas vraiment, mais mettons que tu venais\
+> du Brun, là tu pourrais!
+
+_GabspartFouillerCabane
+> Mettons qu'on oublie pas de fouiller leur\
+> cabane par contre?
+
+_GabspartCaFaitChangementConnaitQQun
+> \}Ça fait vraiment changement de nos autres rencontres,\
+> c'est vraiment inusité qu'il connait quelqu'un...\{
+
+_GabspartConnaitLeMotGeologue
+> Oui je confirme que c'est pas trop pire à\
+> se rappeler.
+
+_GabspartWhatIfLaDescriptionEtaitLatine
+> On sait jamais hein, si ça avait été du\
+> latin...
+
+_GabspartEssayeMettreDansTaPoche
+> Est-ce que tu as essayé de la mettre dans\
+> ta poche?\
+> \
+> Des fois c'est surprenant!
+
+_GabspartVaYRevenir
+> Je te donnerais une réponse, mais je pense\
+> plutôt que je vais y revenir.
+
+_GabspartNonNonTuVasAvoirPeur
+> Non? Allons allons, il serait où le plaisir\
+> si tu le savais?
+
+_GabspartVaAvoirMalALaTeteRoches1
+> Au plus vite. Pas certain que ma tête va\
+> survivre si on reste une minute de plus\
+> avec les roches finalement...\
+> Ça vient vite les mals de têtes.
+
+_GabspartVaAvoirMalALaTeteRoches2
+> Ça sonnait drôle à l'écrit dans les\
+> Textes Sacrés, mais une fois que tu le\
+> vis, c'est pas pareil.
+
+_GabspartPedantContinuite1
+> J'veux pas trop faire mon pédant...\
+> \
+> Mais c'est pas un peu un bris de\
+> continuité?
+
+_GabspartPedantContinuite2
+> Admettons que je connais de source sûre\
+> qu'Excalibarre devrait plutôt être dans\
+> la possession d'une sphère bleue pas trop\
+> belle?
+
+_GabspartPedantContinuite3
+> Non non, ça m'est juste passé par la tête\
+> comme ça.\
+> Pas que je te recommande de rapporter\
+> Excalibarre à ladite sphère bleue.
+
+_GabspartPedantContinuite4
+> Parce que bon, elle peut même pas s'en\
+> servir... C'est difficile utiliser une épée\
+> quand on n'a pas de bras.
+
+_GabspartMaisLeDrama
+> Que veux-tu, ça fait plus dramatique qu'on\
+> ait rien dit.\
+> Et puis en plus ça aurait rien changé.\
+> Les Textes Sacrés ça niaise pas.
+
+_GabspartIntroShackJesus1
+> Tuht-tuht!\
+> \
+> Faut pas spoiler Personne Véritable.
+
+_GabspartIntroShackJesus2
+> Dans ce cas-ci pas tant. Enfin, pas\
+> directement.
+
+_GabspartVoitProtagonisteFaireDuDeni
+> Ma réponse va changer quelque chose? Si je\
+> dis "non il faut agir" tu vas me faire du\
+> gros déni?
+
+_GabspartExpliqueQuEchangerCestUnPlanDeMarde
+> Déjà. Et aussi ça ne marchera pas. T'as pas\
+> entendu? Il veut toutes les salutations.\
+> Ça inclut Bon Matin.
+
+_GabspartPlusQueVocabulaireDansBonjour
+> Il a parlé du Temps, alors je m'imagine\
+> qu'il y a plus que du vocabulaire de scellé\
+> dans les Salutations...
+
+_GabspartCeciEstUneEmotion
+> Dans ce cas-ci ce serait plus une émotion\
+> je pense.
+
+_GabspartNonMaisAttendsUnPeu
+> Non mais attend un peu...
+
+_GabspartPuzzleBonmatinPasDown1
 > Merde.
 
-_ProtagonistePasPretPourPlancher
-> C'est surtout que je n'avais pas à réalisé\
-> que ça aurait autant d'ampleur.
-
-_ProtagonistePasPretPourPlancher2
-> Par contre je ne comprends vraiment pas\
-> pourquoi y'a ce genre de plancher maudit\
-> dans le sous-sol d'un Temple?
-
-_ProtagonisteMystereElucide
-> Ça élucide le mystère.
-
-_ProtagonistePresentePartitionMatinale
-> Allons, regardes ce qu'on a déniché en haut!
-
-_ProtagonisteHumOk
-> Hum, ok?
-
-_ProtagonisteIndiceBonMatin1
-> Bon! On est bien dans le fameux Temple du\
-> Bon Matin.
-
-_ProtagonisteIndiceBonMatin2
-> La place a déjà vécu de meilleurs jours par\
-> contre...\
-> Voyons si on peut trouver le Bon Matin,\
-> mais ça augure mal.
-
-_ProtagonisteAutel
-> L'autel!
-
-_ProtagonisteBonMatinManquant
-> C'est exactement ce qu'on pensait.\
+_GabspartPuzzleBonmatinPasDown2
+> Regardes par terre!\
 > \
-> Le Bon Matin n'y est plus.
-
-_ProtagonisteBonMatinManquant2
-> Faut bien investiguer si on veut avoir une\
-> idée où il pourrait bien être...
-
-_ProtagonisteAlloOnPeutVousAider
-> Allo? On peut vous aider?
-
-_ProtagonisteVeutEchangeBonjour
-> Un instant vous deux! Donc vous avez le\
-> Bon Matin? Moi j'ai seulement besoin du\
-> Bon Matin. On a ramassé le Bonjour, mais\
-> c'est par principe.
-
-_ProtagonisteVeutEchangeBonjour2
-> Je suis prêt à échanger le Bonjour contre\
-> le Bon Matin, et comme ça on peut repartir\
-> chacun de son côté, et personne n'a besoin\
-> de se faire péter la face.
-
-_ProtagonistePasGrandSucces
-> Bon... C'est pas notre plus grand succès.\
-> \
-> Vous avez une idée pourquoi il pense que\
-> perdre le Bonjour ça va nous arrêter?
-
-_ProtagonisteSpeechHero1
-> En tout les cas ce fourbe va regretter de\
-> nous avoir laissé en vie!\
-> Maintenant je comprend ma faim cosmique!\
-> C'est un appel! Pour héroïser la situation!
-
-_ProtagonisteSpeechHero2
-> Allons camarades! Nous devons trouver les\
-> autres salutations avant qu'il ne soit trop\
-> tard!
-
-_ProtagonisteCactus
-> Ouch! C'est piquant!
-
-_ProtagonisteCestSuspicieux
-> ... C'est suspicieux quand même.
-
-_ProtagonisteJesusHermite1
-> ... Bonjour!? Vous avez dit bonjour!\
-> \
-> Bon matin?
-
-_ProtagonisteJesusHermite2
-> Non mais vous comprenez pas! Bon c'est sur\
-> vous êtes un hermite... Même à ça!
-
-_ProtagonisteJesusHermite3
-> Vous êtes la première personne autre que\
-> nous quatre qui ne semble pas affecté par\
-> le fait qu'on a retiré le Bonjour du Temple.
-
-_ProtagonisteJesusHermite4
-> Ah c'est bien une réponse d'hermite...\
-> Genre j'ai une seule question pis c'est\
-> tout - C'est quoi l'histoire des\
-> salutations?
-
-_ProtagonisteJesusHermite5
-> Ok...
-
-_ProtagonisteJesusHermite6
-> À plus tard?
-
-_ProtagonisteIntroShackJesus1
-> Eh beh. Y'a quelqu'un qui vit dans le coin?
-
-_ProtagonisteIntroShackJesus2
-> Vraiment? C'est pas mal sinistre quand tu\
-> fais ça.
-
-_ProtagonisteIntroShackJesus3
-> C'est pire!
-
-_ProtagonisteQuelHorribleSon
-> Quel horrible son...
-
-_ProtagonisteAuraitVouluEtreAverti
-> Parlant de danger, ça aurait été apprécié\
-> que vous nous avertissiez qu'on serait\
-> attaqué par le Chevalier Noir!
-
-_ProtagonisteDecuDesBruns
-> Donc vous êtes Brun vous aussi...\
-> Et quatres vétérans du ... Brun(?) n'ont\
-> pas pu l'arrêter?
-
-_ProtagonisteTskTskTsk
-> Tsk tsk tsk.
-
-_ProtagonisteVousAuraiezPuMexpliquerJesus
-> Et vous ne m'avez rien dit? Même quand on\
-> est arrivé ici vous avez attendu pour\
-> m'indiquer qu'on arrivait chez votre ami?
-
-_ProtagonistePisLaVousGlandez
-> Donc c'est quoi, vous avez fui puis vous\
-> attendez patiemment la fin du Temps?\
-> Maintenant qu'on est là vous allez venir\
-> nous aider?
-
-_ProtagonisteLeRRRR
-> Le RRRR?
-
-_ProtagonisteVaNecessiterGeologue
-> Oh... Va falloir aller récupérer la\
-> Géologue alors.\
-> À tous les coups elle est restée dans\
-> l'entrée du passage.
-
-_ProtagonisteVeutPasRecetteBMAlt
-> Bof, ça n'a pas vraiment d'intérêt...\
-> \
-> Il y a le Bon Matin Laitue Tomate, et le\
-> reste c'est juste une perte d'un Bon Matin.
-
-### Rip
-
-_RipFinsDePhrases
-> ci-git\
-> Les Fins de Phrases\
-> 814 BC - 1993 AD\
-> abandonnées et laissées pour mort
-
-_RipDarkGeorgina
-> ci-git\
-> Dark Georgina\
-> 2022 AD - 2022 AD\
-> le Côté Obscur de la Phrase finira toujours par trahir
-
-_RipIllisible
-> L'écriture de la tombe n'est plus lisible.
-
-### Porte
-
-_PorteBarree
-> La porte est barrée.
-
-### Pecheur
-
-_PecheurBMTPasCa
-> Bonjour.\
-> \
-> Des Bon Matins? Non, j'ai pas ça.
-
-_PecheurQueteMontagneux
-> Oui voilà, si vous voulez des Bonjours,\
-> veuillez vous rendre au temple du Bonjour,\
-> le long du passage montagneux.
-
-_PecheurDesChosesDoitSavoir
-> Ah oui c'est ça, si vous voulez avoir un\
-> Bon Matin, ça va vous prendre le Bonjour.\
-> \
-> Y'a des choses que j'me dois de savoir.
-
-_PecheurUneQuete
-> Woh là!\
-> \
-> Vous pensez vraiment que j'ai plus qu'une\
-> quête à donner? Houste!
-
-_PecheurAutreQuete
-> Bonsoir.\
-> \
-> Vous avez trouvé une autre quête?\
-> Pas pire, pas pire.
-
-_PecheurARealiseMoules
-> Il est venu à mon attention récemment que\
-> c'était des moules que je pêchais au\
-> Village.
-
-_PecheurAPasDeCanneAPeche
-> Et bon, à date... c'est pas vargeux.\
-> À chaque fois les poissons me glissent des\
-> doigts! Je comprends pas, pourtant c'était\
-> jamais un problème au Village.
-
-_PecheurProtagonisteEstUnHermite
-> C'est pas vraiment mon problème si vous\
-> êtes un hermite, et qu'en plusieurs années\
-> vous n'avez jamais été foutu d'apprendre à\
-> connaître votre voisin.
-
-_PecheurHint
-> Ah si seulement j'avais une meilleure\
-> manière d'attraper des poissons!\
-> Popa aurait su, lui...
-
-_PecheurAJamaisVuCannePeche
-> Oh. Un baton avec une corde? Je vois pas\
-> trop ça sert à quoi.
-
-_PecheurOffreCorde
-> Je... vous remercie donc infiniment?\
-> Et je vous offre...\
-> Cette Corde Auto-Portante!?\
-> \}j'avais ça moi?\{
-
-_PecheurALeManuelInstructions
-> Bonsoir. Oui oui, j'ai le manuel\
-> d'instructions et à date ça a l'air de\
-> mieux fonctionner.
-
-_PecheurTristeHutte
-> Bonsoir. Finalement cette hutte est vraiment en mauvais\
-> état, je suis pas convaincu que je vais rester\
-> longtemps.
-
-_PecheurChercheHuh
-> Mais si vous chercher des, huuuuh...
-
-_PecheurAhAttendez
-> Ah attendez...
-
-_PecheurPartiPecher
-> "Parti pour la pêche, je reviendrai plus tard"
-
-_PecheurHuuuh
-> Huuuh...
-
-_PecheurAhBenCaline
-> Ah ben caline!
-
-_PecheurPoissonFrais
-> Poisson frais!\
-> Nous le pêchons, et vous le mangez!
-
-### Narrateur
-
-_NarrateurPecheurINFORMATIONSPROTAGONISTES
-> Le pêcheur sort un petit bout de papier griffoné de sa\
-> poche. Vous pouvez à peine distinguer qu'il est écrit\
-> sur le haut "Informations pour Protagonistes".
-
-_NarrateurQuelquesNotesParTerre
-> Il y a quelques notes par terre là où le pêcheur se\
-> tenait.
-
-_NarrateurInfoPourProta
-> "INFORMATIONS POUR PROTA-\
-> \
-> Non ça c'est pas intéressant.
-
-_NarrateurBoitePoissons
-> La boîte est à demie-remplie des Fameux Poissons du\
-> Monde. Leur grande caractéristique c'est qu'ils ont\
-> évolutivement appris à ne pas se sacrer en bas du\
-> Précipice.
-
-_NarrateurPuitMoche
-> L'odeur de l'eau est vaguement nauséabonde.\
-> \
-> Il semblerait donc que puiser l'eau à deux mètres du\
-> cimetière n'est pas une très bonne idée.
-
-_NarrateurEpouvantailStupide
-> Un épouvantail.\
-> Y'a l'air un peu stupide.
-
-_NarrateurBonhommeDeRadis
-> Traditionnellement on utilise des carottes pour le nez\
-> du bonhomme de neige.\
-> Ici les yeux et le nez ont été savament remplacés par\
-> des radis.
-
-_NarrateurPancarteVillageResteDuMonde
-> La pancarte lit...\
-> BIENVENUE À CE VILLAGE\
-> Et il y a une direction vers le haut...\
-> LE RESTE DU MONDE
-
-_NarrateurPancarteVillageTempleBonjour
-> La pancarte lit...\
-> BIENVENUE À CE VILLAGE\
-> Et il y a une direction vers le droite...\
-> LE TEMPLE DU BONJOUR
-
-_NarrateurBoisCoupe
-> Bien que vous passez une temps fou à regarder de près\
-> ce bois coupé, vous ne trouvez toujours rien de\
-> pertinent.
-
-_NarrateurBoisCoupe2
-> Non, même après un autre passage ça reste du bois\
-> coupé.
-
-_NarrateurDejaUnRadis
-> C'est à ce moment-ci que vous réalisez qu'en fait, vous\
-> avez déjà un radis de plus dans la poche.
-
-_NarrateurBarilCouvercle
-> Le couvercle du baril a une poignée et est exactement\
-> de la bonne taille pour en faire un bouclier.\
-> \
-> Prendre le couvercle?
-
-_NarrateurBarilCasque
-> Ah dans le Barril il y a...\
-> Un casque?\
-> C'est hum, c'est pratique, mais c'est pas clair\
-> pourquoi c'est dans ce baril.
-
-_NarrateurDesRadisEtDesPatates
-> Des radis et des patates.\
-> La tradition régionale, quoi.
-
-_NarrateurStatuePremiereBonjour
-> PREMIERE DU BONJOUR\
-> \
-> La douce lueur de son visage est comme quand le regard\
-> se fixe sur le Soleil à midi
-
-_NarrateurElixirMagie
-> Un élixir de magie!\
-> Lorsque bu, l'Univers se prend soudainement l'envie\
-> d'ajouter 5pt de magie à la personne!
-
-_NarrateurSocleBonMatin
-> Le socle est plutôt endommagé et poussiéreux, et il ne\
-> reste que quelques débris de ce qui se trouvait par\
-> dessus autrefois. La plaque est à peine lisible:\
-> BON MATIN
-
-_NarrateurVieuxRadisOreilles
-> Il semblerait que le Vieux a des radis plein les\
-> oreilles.
-
-_NarrateurFiolePoussiere
-> En fouillant un peu plus vous voyez une petit fiole\
-> qui brille sous la poussière!
-
-_NarrateurElixirChair
-> Un élixir de chair!\
-> L'inventeur clame que ça goûte 5pt de poulet.\
-> Va falloir l'essayer pour comprendre ce que ça\
-> implique.
-
-_NarrateurForgeronDague
-> La forgeronne vous tend une dague.\
-> L'arme Canonique des Protagonistes débutants.
-
-_NarrateurEnclume
-> Ça paraît pas tant, mais c'est une enclume.\
-> Je vous le jure.
-
-_NarrateurUnMarteau
-> Un marteau!\
-> \
-> C'est comme une massue, mais en plus raffiné.
-
-_NarrateurUnSeulMarteau
-> Bien que vous êtes certains avoir volé deux marteaux\
-> à la forgeronne, vous observez qu'il n'y en a qu'un\
-> seul dans vos mains, et aucun sur le mur.
-
-_NarrateurBouteillesColorees
-> Une petite collection de bouteilles colorées.\
-> \
-> \
-> Voila.
-
-_NarrateurEntraillesRat
-> En fouillant dans les entrailles du trenchcat,\
-> vous remarquez quelque chose qui brille.\
-> \
-> Typique.
-
-_NarrateurDague
-> Une dague!\
-> L'arme Canonique des Protagonistes débutants.
-
-_NarrateurCiGitLesPatates
-> Ci-git\
-> \
-> Les patates.
-
-_NarrateurDuThe
-> Du thé.\
-> Ou de la tisane?\
-> \
-> Pas clair...
-
-_NarrateurPasReponse
-> Y'a des questions comme ça que vous n'avez pas besoin\
-> de la réponse.
-
-_NarrateurMauvaisOutils
-> Bien que vous soyez tout excité à l'idée de pouvoir\
-> acquérir sans frais de l'équipement, une investigation\
-> en détail des outils vous révèle qu'ils sont tous de\
-> mauvaise qualité, et ne vous seraient d'aucune utilité.
-
-_NarrateurChariotMine
-> Un chariot de mine.\
-> Malgré la folle envie de vous embarquer dans une\
-> séquence à obstacles que vous ressentez, vous décidez\
-> de laisser le chariot tranquille.
-
-_NarrateurDuFerCa
-> Vous n'êtez pas géologue.\
-> Mais à tout les coups c'est du fer ça.
-
-_NarrateurDesEpicesDuLard
-> Des épices, un peu de lard, des conserves.\
-> Quelques livres inintéressants.\
-> \
-> Mais vous remarquez...
-
-_NarrateurLeMystereEntre24Et18
-> LE MYSTÈRE DE CE QU'IL Y A ENTRE LES NOMBRES\
-> XXIV et XVIII\
-> Bizarre, typiquement on met le plus petit nombre en\
-> premier.
-
-_NarrateurLeMystereEntre24Et12
-> LE MYSTÈRE DE CE QU'IL Y A ENTRE LES NOMBRES\
-> XXIV et XII\
-> Bizarre, typiquement on met le plus petit nombre en\
-> premier.
-
-_NarrateurCaisseRavagee
-> Bien que la caisse ravagée par le temps et l'humidité,\
-> il se rend à votre nez une belle odeur de rouille.
-
-_NarrateurPioche
-> Une pioche!\
-> Pointue et solide. Les roches tremblent.
-
-_NarrateurMineRoulePlus
-> Clairement, les choses ne roulent plus dans cette mine.\
-> L'état des lieux dégringole.\
-> Pas besoin de creuser la question.\
-> Mea concidit.
-
-_NarrateurPierreTravailleeImplementPointu
-> La pierre ici a été travaillée à coup d'implément\
-> pointu.\
-> Vous n'êtes toujours pas géologue, mais il semble qu'il\
-> y avait un minerai de fer ici.
-
-_NarrateurPetitTasRoches
-> Vous n'êtes pas géologue, mais à tout les coups c'est\
-> un petit tas de roches ça.
-
-_NarrateurStalagmite
-> Une stalagmite. Comme une stalactite mais sur le\
-> plancher.
-
-_NarrateurCaisseDuTemple
-> La caisse du Temple. C'est beaucoup d'or pour un lieu\
-> religieux.\
-> \
-> En fait, pas tant.
-
-_NarrateurPlaqueBonjour
-> BONJOUR ET BIENVENUE AU TEMPLE DU BONJOUR\
-> \
-> POUR TOUT VOS BESOINS DE BONJOURITUDE, VEUILLEZ VOUS\
-> RÉFÉRER AU COMPTOIR
-
-_NarrateurBONJOURETVOUS
-> LE BONJOUR ET VOUS\
-> Le début d'une grande aventure du milieu de la journée
-
-_Narrateur10ETAPESFACILES
-> 10 ÉTAPES FACILES POUR DEVENIR RICHE\
-> Vous ne croirez pas la troisième!
-
-_NarrateurBonjours
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR\
-> BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR BONJOUR
-
-_NarrateurCartesPostalesBonjour
-> Des cartes postales.\
-> L'image c'est un gros BONJOUR mal écrit à la main.\
-> Il y a une petite étiquette de prix, mais c'est plus\
-> cher qu'une épingle à cheveux.
-
-_NarrateurHorlogeBonjour
-> En investiguant l'horloge vous réalisez qu'il n'y a pas\
-> d'aiguilles en fait.\
-> Il y a juste deux traits peints qui pointent vers midi.
-
-_NarrateurChandailBonjour
-> Un chandail écrit BONJOUR dessus...\
-> \
-> Ça fait un peu désespéré.
-
-_NarrateurBoiteChandailsBonjours
-> La boîte est remplie de chandails avec BONJOUR d'écrit\
-> dessus. Bien que c'est pareil à celui qui se trouve\
-> dans le coffre juste à côté, vous décidez de laisser la\
-> boîte tranquille.
-
-_NarrateurBraises
-> Mmmh. Des braises caractéristiques d'une poêle en fonte\
-> sur laquelle on aurait cuit des oeufs brouillés.
-
-_NarrateurLampeHuileEteinte
-> Une lampe a huile, mais éteinte.\
-> Pas de génie inclus.
-
-_NarrateurFeuilleterPhotosCachees
-> Ah non en fait si vous feuilletez un peu, vous\
-> remarquez qu'il ya des photos cachées entre les pages.
-
-_NarrateurCoquinBonjoursSuggestifs
-> Oh c'est coquin.\
-> Il s'agit d'images suggestives de Bonjours.\
-> \
-> Ce n'est pas clair comment ça fonctionne.
-
-_NarrateurLettrePretre
-> Bonjour Bonjourette,\
-> Malheureusement avec l'hiver je ne peux pas quitter le\
-> Temple mais j'ai très hâte de pouvoir te revoir ma\
-> petite.
-
-_NarrateurInvestigationSacsSucre
-> Ah non, après avoir fait une investigation détaillée,\
-> vous réalisez que c'est des sacs de sucre.\
-> \
-> Woo.
-
-_NarrateurVictuailles
-> Des victuailles!\
-> C'est comestible!
-
-_NarrateurDuCharbonCa
-> Vous n'êtes pas géologue.\
-> Mais à tout les coups c'est du charbon ça.
-
-_NarrateurBoiteSansInteret
-> Une boîte sans intérêt.\
-> \
-> \
-> Pour l'instant.
-
-_NarrateurTombePecheurSenior
-> ci-git\
-> Le Pêcheur Senior\
-> Sauvagement arraché à la vie par la Grande Innondation\
-> de la-petite-rivière-de-la-forêt
-
-_NarrateurEauCoule
-> Vous ne voyez pas grand chose en bas du puits, mais en\
-> tendant l'oreille vous entendez comme le son de l'eau\
-> qui coule.
-
-_NarrateurRienVu
-> Bien que votre vue sur les environs est nettement\
-> meilleure depuis ici, vous avez la drôle d'impression\
-> de ne rien pouvoir voir de nouveau.
-
-_NarrateurRadeau
-> Une palette de bois?\
-> Ah, il y a radeau d'écrit dessus.\
-> \
-> Un radeau!
-
-_NarrateurBaseDeDetah
-> La pancarte lit:\
-> \
-> \Shake\{BASE DE DETAH\}
-
-_NarrateurPattePoulet
-> Une patte de poulet!\
-> \
-> Un peu comme celles de lapin, mais en pas pareil.
-
-_NarrateurPuisFine
-> Au fond du puits vous entrevoyez un peu d'eau.\
-> Pas d'odeur nauséabonde.
-
-_NarrateurPuitsVieille
-> Vous voyez un peu d'eau dans le fond, mais surtout,\
-> en tendant l'oreille...\
-> Vous entendez le son d'un ronflement?
-
-_NarrateurCorde
-> Une Corde Auto-Portante!\
-> Elle permet de monter et de descendre à des endroits\
-> spécifiques et désormais identifiés!\
-> Non, ce n'est pas une corde à usage général.
-
-_NarrateurMurInvisible
-> Bien que vous tentiez de toute votre volonté d'avancer\
-> dans cette direction, une Force Mystérieuse vous\
-> retient.\
-> Il y a un mot qui trotte dans votre tête: Bonjour.
-
-_NarrateurPlatEchoue
-> C'est... dur à dire c'était quoi l'intention, ici on\
-> voit un plat bien échoué.
-
-_NarrateurFameuseRecette
-> La fameuse recette:\
-> Bon Matin\
-> Laitue\
-> Tomate
-
-_NarrateurRecetteBacon
-> Les autres papiers semblent désigner plutôt comment\
-> abattre et dépecer un porc, en particulier la coupe du\
-> ventre pour ensuite le faire fûmer.
-
-_NarrateurAlphabits
-> En fouillant plus en détail, vous trouvez aussi une\
-> boîte contenant de petites céréales en formes de\
-> lettres.\
-> Il ne reste plus de B, O, N, M, A, T, I.
-
-_NarrateurBonneIdeeNettoyer
-> D'habitude c'est une bonne idée de nettoyer son espace\
-> après avoir cuisiné.
-
-_NarrateurInvestigationProtagoniste
-> Suite à l'investigation détaillée de l'endroit, il vous\
-> devient rapidement impossible d'ignorer le fait que\
-> clairement Personne Véritable n'a pas un problème de\
-> provisions, et que cette quête est superflue.
-
-_NarrateurPlusSimpleLeBLT
-> Ce serait pas mal plus simple s'il se contentait du\
-> BLT.
-
-_NarrateurNonBranche
-> Contrairement à ce que vous penseriez, il ne s'agit\
-> pas de branches.
-
-_NarrateurBoiteGaboue
-> Une boîte supicieusement vide.\
-> \
-> Vous pouvez voir de la poussière dans le fond laissant\
-> une trace en forme de branche.
-
-_NarrateurFoyerAbandonne
-> Avec une pile de poussière aussi impressionnante, le\
-> foyer n'a probablement pas été utilisé depuis très\
-> longtemps.
-
-_NarrateurComprendsPasPoissons
-> Je sais pas pourquoi on fait des histoires\
-> sur ces "POISSONS" alors.
-
-_NarrateurPotPoissonsVide
-> ...\
-> Malheureusement le pot est vide, et il ne reste qu'une\
-> couche de graisse poussiéreuse dans le fond.\
-> Si vous me laissiez finir, vous l'auriez su.
-
-_NarrateurPasGeologueRoche
-> Vous n'êtes pas géologue.\
-> Mais c'est une roche, ça.
-
-_NarrateurImplementPointuInsuffisant
-> Vous n'êtez toujours pas géologue.\
-> \
-> Mais sinon vous auriez aussi su que les impléments\
-> pointus ne sont pas suffisants.
-
-_NarrateurCuirrasseRouillee
-> Une Cuirasse Rouillée!\
-> Oubliée, mais pas encore tout à fait inutilisable.
-
-_NarrateurMousseVerte
-> Mmmmh. De la mousse verte - Le goût vous rappelle\
-> vaguement celui de la Laitue.
-
-_NarrateurParoiCuillere
-> Vous n'êtes pas géologue, mais à tout les coups la\
-> paroi ici a été travaillée à coup de petit implément\
-> rond.
-
-_NarrateurLivresMoisis
-> C'était des livres. Maintenant c'est plus du carton\
-> moisi qu'autre chose. Quelque chose, quelque chose,\
-> stocker des livres dans une cave.
-
-_NarrateurBiscuitsSecs1
-> Des biscuits secs. Pas vraiment de quoi éviter des\
-> carences alimentaires.
-
-_NarrateurSqueletteNonIndentifiable
-> Le squelette n'est plus identifiable.\
-> Pas de dents, rien.
-
-_NarrateurEcriteauDarkGeorgina
-> Il y a un petit écriteau:\
-> \
-> "L'ÉTERNEL DARK GEORGINA"
-
-_NarrateurLectureDangereuse
-> Vous êtes soudain pris de l'horrible réalisation que ce\
-> n'est pas forcément une bonne idée de laisser Gabspart\
-> lire les passages.
-
-_NarrateurVinPlombe
-> Une jarre de vin.\
-> Mais vous ne voulez pas en boire, le vin a un drôle de\
-> goût. Un certain aplomb sucré.
-
-_NarrateurFermePancarte
-> La pancarte lit...\
-> BIENVENUE DANS LE LIEU CHAMPÊTRE\
-> Et il y a une direction vers le haut...\
-> LA VILLE
-
-_NarrateurSpotFeuCamp
-> Un bon endroit pour faire un feu de camp.\
-> \
-> Si vous aviez de quoi partir un feu.
-
-_NarrateurChouLaitue
-> Du chou? De la laitue?\
-> \
-> Pas clair...
-
-_NarrateurDorure
-> La belle dorure du blé. Oh. De l'orge?\
-> \
-> La belle dorure des céréales.
-
-_NarrateurEpouvantailNavet
-> Un épouvantail bien habillé. La tête en navet est une\
-> belle touche.
-
-_NarrateurOraclePartieForet
-> Il y a une note sur la porte:\
-> Si vous avez besoin du futur maintenant, je suis partie\
-> dans la forêt.
-
-_NarrateurPancarteVille
-> La pancarte lit...\
-> BIENVENUE DANS LA VILLE\
-> Et il y a une direction vers le bas...\
-> LE LIEU CHAMPÊTRE
-
-_NarrateurPoeleCuillereCouteau
-> Une poêle, deux cuillères et un couteau!\
-> \
-> Y'a moyen d'argumenter qu'un couteau et une dague c'est\
-> la même chose.
-
-_NarrateurSacGrain
-> Un sac de grain.\
-> \
-> Quel type de grain?\
-> L'Histoire ne le dit pas.
-
-_NarrateurEnFaitRecette
-> Vous vous apprêter à le lire, lorsque vous réalisez\
-> qu'en fait il s'agit d'un livre de recette.
-
-_NarrateurRecettePouletFour
-> POULET AU FOUR\
-> Ingrédient: Un poulet\
-> Outils: Un four\
-> Étapes: Mettre le poulet au four. Retirer lorsque cuît.
-
-_NarrateurUnSeulMarteau2
-> Bien que vous êtes certains avoir volé deux marteaux\
-> aux fermiers, vous observez qu'il n'y en a qu'un seul\
-> dans vos mains, et aucun sur le mur.
-
-_NarrateurCailloux1
-> ... Vous fouillez dans le sac, mais vous n'y trouvez\
-> que des petits cailloux inutiles.
-
-_NarrateurCailloux2
-> Des cailloux! C'est... huh.. vous pouvez les lancer.\
-> Des fois ça assomme.
-
-_NarrateurProtolixir
-> Un Protolixir de Chair!\
-> Ça goûte le proto-poulet!\
-> \
-> Il y a un effet, probablement.
-
-_NarrateurMaterielLouche
-> Du matériel louche.\
-> Ça sent plutôt le poulet.
-
-_NarrateurGrandChaudronPoulet
-> Un grand, grand, grand chaudron.\
-> Ça sent plutôt le poulet.
-
-_NarrateurFiolesPoulet
-> Une panoplie de fioles vides.\
-> Ça sent plutôt le poulet.
-
-_NarrateurBoisPoulet
-> Du bois coupé.\
-> Ça sent plutôt le poulet.
-
-_NarrateurVolParchemins
-> Vous pourriez tenter de voler ces parchemins, mais vous\
-> n'allez pas le faire.
-
-_NarrateurPecheurRevirePapier
-> Le pêcheur revire le papier.
-
-_NarrateurUneDesNotes
-> Ah mais vous voyez une des notes:
-
-_NarrateurExcellentsEnGrillade
-> Excellents en grillade.
-
-_NarrateurCadranSolaireXVIII
-> Curieusement, le cadran solaire va de XVIII à XXIV.
-
-_NarrateurCadranSolaire
-> Curieusement, le cadran solaire va de XII à XXIV.
-
-_NarrateurGabspartPapierPoche
-> Gabspart sort de sa poche un petit papier griffoné.
-
-_NarrateurBarilVide
-> Le baril est vide.
-
-_NarrateurSacFarine
-> Un sac de farine. Vous vous attendiez à quoi?
-
-_NarrateurPileDeSacs
-> Ah c't'une pile de sacs ça.
-
-_NarrateurUnLivreAvecUneChansonnette
-> Un livre avec une Chansonnette dedans!
-
-_NarrateurLecturesPremiere
-> Ah les lectures de la Première -
+> C'est pire que le Temple du Bonjour...
 
-_NarrateurResteNonDignifie
-> Le reste n'est pas plus dignifié.
+_GabspartPuzzleBonmatinPasDown3
+> Écoutes, je veux pas trop ruiner ton...\
+> expérience, mais si je vais me retirer de\
+> la situation, c'est bon? T'as pas besoin de\
+> mon aide pour ce qui suit de toute façon.
 
-_NarrateurPileParchemins
-> Une belle pile de parchemins.
+_GabspartPuzzleBonmatinPasDown4
+> Et SI tu as besoin de mon aide, vient me\
+> voir, je vais te régler ça.
 
-_NarrateurDuBeauPapier
-> C'est hum, c'est du beau papier ça.
+_GabspartRentrePasLa
+> Une seconde! Moi je rentre pas là.
 
-_NarrateurLivresCopies
-> Les livres sont tous des copies -
+_GabspartLePlaisirAEte
+> C'est fini? Tout le plaisir a été et là on\
+> peut repartir?
 
-_NarrateurObtenuBonjour
-> Vous avez obtenu le Bonjour!
+_GabspartPresentePartitionMatinale
+> Ah une partition! Exactement ce qui nous\
+> manquait c'est sûr!
 
-_NarrateurLettreTable
-> Ah il y a une lettre sur la table:
+_GabspartOffrePartitionMatinale
+> Bon! Maintenant que tu vois la vérité, je\
+> peux t'offrir ceci:
 
-_NarrateurLettreSigneePretre
-> C'est signé "Le Prêtre"
+_GabspartOffrePartitionMatinale2
+> Va niaisoter ça sur l'orgue en haut, tu vas\
+> voir.\
+> Mais, ça reste entre nous, hein?
 
-_NarrateurSacsFarine
-> Des sacs de farine.
+_GabspartPouletsPasCommeCa
+> Mettons que, typiquement, les poulets ça\
+> se comporte pas comme ça.
 
-_NarrateurVieuxMaterielUsage
-> Il n'y a que du vieux matériel usagé.
+_GabspartWindoAUnModusOperandi
+> Ça commence comme ça, mais le Windô a tout\
+> un modus opérandi! Au début ça va bien...
 
-_NarrateurPasAbuserVictuailles
-> Non non, faudrait pas abuser des victuailles.
+_GabspartDonnesYUneSeconde
+> Donnes-y une seconde...
 
-_NarrateurMitainesFour
-> Des... Mitaines de Four?
+_GabspartVoilaCaCommence
+> Et voilà. Ça commence.
 
-_NarrateurUnLivreAvecLesFinsDePhrases
-> Un livre avec les Fins de Phrases dedans!
+_GabspartSeSentGenereux
+> Bon, par contre mettons qu'on se tape pas\
+> de faire tout le tour du monde pour un\
+> petit lit?
 
-_NarrateurPecheurSortPapier
-> Le pêcheur sort un petit bout de papier de sa poche.
+_GabspartTuVeuxPasLeSavoir
+> Non mais tu veux même pas le savoir, ça te\
+> mettrais juste en colère...
 
-_NarrateurPotChambre
-> Ah... ça sent vaguement l'ammoniac.
+_GabspartToujoursOption
+> C'est presque toujours une option, hein.
 
-_NarrateurGardeMangerPain
-> Le garde-manger est rempli de pain.
+_GabspartSouffreManquePatience
+> Il souffre juste un peu de manque de\
+> patience.
 
-_NarrateurPorcFumeAil
-> Du ventre de porc fûmé et de l'ail.
+_GabspartTraduitGaboueImmolation
+> Tâchant de terrasser,\
+> turbide tourbière...\
+> T'imposes d'administrer:\
+> Combustion statutaire!
 
-_NarrateurMoutarde
-> Des graines de moutarde.
+_GabspartDefendBouteille
+> ...Mmmh? Non mais elle est spéciale la\
+> bouteille! Regardes-là avec son...\
+> couvercle et ses parois en verre!
 
-_NarrateurHuileOlive
-> Une jarre d'huile d'olive.
+_GabspartRRR1
+> Hélas non. Ça date plus l'emplacement en\
+> fait. C'est un relicat de l'époque où\
+> c'était le ROYAUME des ROCHES\
+> RÉCALCITRANTES.
 
-_NarrateurLaitueTomate
-> Des têtes de laitue et des tomates.
+_GabspartRRR2
+> C'est pas moi qui va t'éclairer sur ces\
+> nuances-là.
 
-_NarrateurPotPoissons
-> Un pot écrit "POISSONS" dessus.
+### Gaboue
 
-_NarrateurCanneAPeche
-> Une canne à pêche!
+_GaboueGaboue1
+> Gaboué!
 
-_NarrateurGabouePasSiFort
-> Non, même Gaboué n'a pas ce genre de force.
+_GaboueGaboue111
+> Gaboué!
 
-_NarrateurSquelette
-> Un squelette. Une vision macabre du futur.
+_GaboueDotDotDot
+> Gaboué...
 
-_NarrateurBlblbl
-> Blblblblblblblbl.
+_GaboueEnAMarre
+> Gaboué.
 
-_NarrateurLampeAHuile
-> C'est une lampe à huile.
+_GaboueGaboue1ForRealThisTimeProd2
+> Gaboué!
 
-_NarrateurJarreHuileLanterne
-> Une jarre d'huile à lanterne.
+_GaboueGrosGaboue1
+> GABOUÉ!
 
-_NarrateurBiscuitsSecs2
-> Non, vous n'avez pas besoin des biscuits secs.
+_GaboueGaboue6
+> Gaboué:
 
-_NarrateurTasDeCendres
-> Un petit tas de cendres.
+_GaboueGaboue1Again
+> Gaboué!
 
-_NarrateurOdeurPetrole
-> Et une légère odeur d'huile à lampe.
+_Gaboue61
+> Gaboué?!
 
-_NarrateurCestUnePlanteCa
-> C'est une plante ça.
+### Detah
 
-_NarrateurEtaitChien
-> C'était\.\. le meilleur ami de l'Homme.
+_DetahHehe
+> He he...
 
-_NarrateurDroleEndroitStatue
-> Drôle d'endroit pour une statue.
+_DetahBoast
+> Hey ho! Si vous pensez que ça va changer\
+> quelque chose! Ma base est même ACID! Vous\
+> n'avez aucune chance!
 
-_NarrateurPasTresHumble
-> Pas très humble.
+_DetahVaVousBriser
+> Suffit! Je vais vous briser!
 
-_NarrateurBroche
-> Une petite broche en bois. Le vernis est noirci et usé.
+### Geologue
 
-_NarrateurDesCarottes
-> Des carottes!
+_GeologueVaTraduireRoches
+> Vous entendez? Tendez-bien l'oreille, on\
+> peut entendre le doux chuchotement des\
+> roches.\
+> Ah je vais même vous le traduire...
 
-_NarrateurVigne1
-> Une vigne bien remplie.
+_GeologueVaSeTenirLoin
+> Mais huh, malgré ma folle confiance en vous\
+> je vais me tenir un peu éloignée, c'est\
+> bon?
 
-_NarrateurVigne2
-> ... Bien observé.
+_GeologueTraduitChuchottements
+> Ah en fait je peux vous traduire les\
+> chuchottements.
 
-_NarrateurPetiteCle
-> Une petite clé!
+_GeologueEnFaitPapierMache
+> ... En fait non, c'est du papier mâché ça.
 
-_NarrateurProtaFichePers
-> Le Protagoniste sort sa fiche de personnage.
+_GeologueVoyonsLeRRRR
+> Voyons! Le Royaume Rétabli des Roches\
+> Récalcitrantes.\
+> Vous n'avez pas eu de cours de géologie?
 
-_NarrateurBouclierVert
-> Vous avez trouvé un Bouclier de Vert!
+_GeologueOnPeutYAller
+> Bon, on va pouvoir y aller, donc.
 
-_NarrateurBiereUtilise
-> Une bière en cours d'utilisation.
+_GeologueCaFaitLongtemps
+> Personne Véritable, Gaboué!\
+> Ça fait longtemps!
 
-_NarrateurDuPain
-> Du pain! C'est équivalent à des victuailles.
-
-_NarrateurEauTrouble
-> De l'eau trouble. Vous êtes tenté d'y goûter...
-
-_NarrateurBonneDecision
-> Mais vous décidez de prendre une bonne décision.
-
-_NarrateurPotChambreFermier
-> Le fond du sceau est un peu jaunâtre.
-
-_NarrateurRobeFleurie
-> Une belle robe fleurie!
-
-_NarrateurLivreIntimeResident
-> Le journal intime d'un des résidents.
-
-_NarrateurBabioles
-> Des babioles sans valeur.
-
-_NarrateurUneBoite
-> Une boîte.
-
-_NarrateurCarottesOrange
-> Des carottes, l'Essence même du Orange.
-
-_NarrateurCollierBreloque
-> Un collier sans intérêt. Une breloque.
-
-_NarrateurNervositeNouvelle
-> Personne Véritable ressent soudainement une nervosité\
-> nouvelle.
-
-_NarrateurBonjour
-> Bonjour, je suis Guillaume Noël-Martel
-
-_NarrateurApprisAdrenaline
-> Vous avez appris l'Adrénaline!\
-> Permet de prendre trois actions le prochain tour!
-
-_NarrateurAdrenalineStamina
-> L'Adrénaline utilise du stamina -\
-> Vous pouvez en reprendre durant les combats en\
-> attaquant ou en vous défendant.\
-> Mais se défendre est bien plus reposant.
-
-_NarrateurCouverts
-> Des couverts.
-
-_NarrateurAssortimentLegumes
-> Un assortiment varié de légumes.
-
-_NarrateurBoiteMoules
-> Des moules.
-
-_Narrateur100g
-> 100 pièces d'or!
-
-_NarrateurNoteBandits1
-> La note lit:\
-> VOTRE VIE MANQUE DE PIQUANT?\
-> VOUS TROUVEZ QUE VOUS AVEZ TROP D'EMPATHIE POUR LE\
-> COMMUN DES MORTELS?
-
-_NarrateurAutreCote
-> Et il y a un autre côté:
-
-_NarrateurNoteBandits2
-> REJOIGNEZ JEAN-JACQUES ET\
-> LEUR BANDE DE JOYEUX COMPAGNONS!\
-> VOUS POUVEZ NOUS TROUVER DANS LE BOISÉ SUR\
-> LA PETITE ÎLE.
-
-_NarrateurStatueMaire1
-> Une statue au profile dignifié.\
-> Jusqu'à ce que vous remarquiez qu'elle a été défigurée\
-> crûdement au plâtre afin de changer les traits.
-
-_NarrateurStatueMaire2
-> Il y a une petite plaque qui a été clouée par dessus\
-> l'écriteau qui était directement inscrit sur la pierre:
-
-_NarrateurStatueMaire3
-> LE SEUL ET UNIQUE\
-> NOTRE MAIRE\
-> SA GRANDEUR DÉMOCRATIQUE RESPLENDIE ET\
-> PROTÈGE NOTRE ROYAUME
-
-_NarrateurTabouretMunicipal
-> Un tabouret à caractère municipal.
-
-_NarrateurBoisMalEmpile
-> Du bois, mais mal empilé.
-
-_NarrateurSceauEau
-> Un sceau d'eau.\
-> Au bout d'un moment à regarder dedans\
-> vous y apercevez une pâle copie de Narcisse.\
-> Il vous prend une étrange envie de tomber dedans.
-
-_NarrateurFoyerSuie
-> Il n'y a pas de feu mais, il y a bien de la suie dans\
-> le fond, si jamais vos mains se prenaient une crise\
-> existentielle de propreté.
-
-_NarrateurToileFameuse1
-> Une toile fameuse.
-
-_NarrateurToileFameuse2
-> Mmmmh...\
-> \
-> Non les notes ne disent pas laquelle.
-
-_NarrateurCouvertes
-> Des couvertes. Bien pliées quand même.
-
-_NarrateurTrouveChaiseMunicipale
-> Vous avez trouvé la Chaise Municipale!
-
-_NarrateurNoShit
-> Wow. Phiou. Impossible.
-
-_NarrateurAncienneChaiseMunicipale
-> L'ancienne chaise municipale.\
-> \
-> Le velour est un peu sale, mais rien qui ne peut pas\
-> être nettoyé.
-
-_NarrateurNotePortePont
-> Il y a une note sur la porte:\
-> Partie réparer le pont. Pour toute commande, veuillez\
-> d'abord convaincre le maire de ne pas continuellement\
-> commander des chaises.
-
-_NarrateurPasGeologueBloqueEscaliers
-> Vous n'êtez pas géologue.\
-> Mais une grosse pile de roches ça bloque les escaliers.
-
-_NarrateurPasGeologueBloqueEchelle
-> Vous n'êtez pas géologue.\
-> Mais une grosse pile de roches ça bloque l'échelle.
-
-_NarrateurRocheDiorite
-> Vous n'êtes pas géologue.\
-> Mais c'est de la diorite, ça.
-
-_NarrateurPyrrite
-> Vous n'êtes pas géologue.\
-> Mais c'est une pile de pyrite de fer, ça.
-
-_NarrateurPileJaunatre
-> Vous n'êtes pas géologue.\
-> Mais c'est une pile jaunâtre, ça.
-
-_NarrateurCordeReguliere
-> De la corde.\
-> \
-> Bien régulière.\
-> On peut corder avec ça.
-
-_NarrateurNonGeologueRocheAdjacentNonRoche
-> En tant que non-géologue, vous observez que c'est\
-> plutôt inhabituel pour une roche.\
-> D'habitude ça implique que c'est roche-adjacent.\
-> Voir même que c'est une non-roche.
-
-_NarrateurCaillouMouvant1
-> Ah.\
-> Donc à quel point on est perdus?\
-> Genre si on est rendu dans le royaume des\
-> caillous-mouvants ça va mal finir.
-
-_NarrateurCaillouMouvant2
-> Non mais là ça s'empire!
-
-_NarrateurCaillouMouvant3
-> En fait c'est vexant... On est si méchants\
-> que ça?
-
-_NarrateurCaillouMouvant4
-> Pas nécessaire, je pense que tu viens de me\
-> donner la réponse diplomatique...
-
-_NarrateurDormirQ
-> Dormir?
-
-_NarrateurRocheEcrouleeActivement
-> Oui on peut voir ici que la roche a été partiellement\
-> écroulée.
-
-_NarrateurFormationPasNaturelle
-> Vous n'êtes pas géologue, mais à tout les coups ce\
-> n'est pas une formation naturelle ça.
-
-_NarrateurTellDontShowLeVieuuuux
-> Et ainsi ils traversèrent le Village.\
-> Gambadèrent entre les arbres du Bois du Gaboué.\
-> Dansèrent sur le Pont-qui-n'est-plus-cassé.\
-> Finalement, ils arrivèrent au Fameux Lieu Champêtre...
-
-_NarrateurVieuxGlisseRadisCossin1
-> Le Vieux glisse un radis dans la poche de Cossin.\
-> \
-> Mais Cossin n'a pas de poche, alors il le glisse dans\
-> sa bouche.
-
-_NarrateurVieuxGlisseRadisCossin2
-> Puis un autre.
-
-_NarrateurVieuxGlisseRadisCossin3
-> Et un dernier pour bien faire.
-
-_NarrateurTellDontShowCossiiiiin
-> Et ainsi ils froliquèrent depuis le Lieu Champêtre.\
-> Dansèrent sur le Pont-de-la-cassure-passée.\
-> Maraudèrent à travers le Bois Du Gaboué.\
-> Finalement, ils arrivèrent au pied de la Montagne.
-
-_NarrateurTemplateItem
-> TEMPLATE D'ITEM
-
-_NarrateurRocheCouleurLouche
-> Vous n'êtes pas géologue, mais la couleur de cette\
-> roche est très curieuse...
-
-_NarrateurRocheCouleurLouche2
-> Vous n'êtes pas géologue, mais les roches qui changent\
-> de couleur quand on les active c'est plutôt anormal.
-
-_NarrateurBandanaNinja
-> Vous remarquez parmis les cendres des ninjas, qu'il\
-> reste un bandana!\
-> Un bandana vraiment très edgy. Tellement tranchant que\
-> vous agissez deux fois, mais sans vous défendre.
-
-_NarrateurDommageCarioleVide
-> Dommage. Le marchand a complètement vidé sa cariole.
-
-_NarrateurMaisSiVousRevirezPapier
-> Mais si vous revirez le papier...
-
-_NarrateurUnCoffre
-> Un coffre!\
-> \
-> Mais honnêtement il est très quétaine. Un peu lette\
-> dirait-on.
-
-_NarrateurCollectionBoites
-> Une belle collection de boîtes.
-
-_NarrateurCollectionLivresTropEdgy
-> La collection de livres est entièrement composée de\
-> sujets trop edgy pour que vous puissiez les lire.
-
-_NarrateurChoixBouteillesDecevant
-> Le choix des bouteilles est plutôt décevant.\
-> En fouillant de manière très assidue, vous finissez\
-> par trouver une bouteille dont le cépage est\
-> acceptable.
-
-_NarrateurBreuvageFermente
-> Un breuvage fermenté!
-
-_NarrateurBouteillesImbuvables
-> Une collection de bouteilles complètement imbuvable.
-
-_NarrateurRegardezAutreMoitieBouteilles
-> Cette partie-ci de la collection de bouteilles est\
-> vraiment imbuvable, mais si vous essayez avec l'autre\
-> moitié...
-
-_NarrateurExcalibarreNote1
-> Note:\
-> \
-> Certaines des propriétés d'Excalibarre peuvent avoir\
-> été exagérées.
-
-_NarrateurExcalibarreNote2
-> Toute perte de gameplay engendrée par Excalibarre n'est\
-> pas la responsabilité du Monde, et aucun remboursement\
-> ne sera donné.
-
-_NarrateurExcalibarreNote3
-> Pour toute plainte concernant l'impact d'Excalibarre\
-> sur l'équilibre cosmique, veuillez vous référer au\
-> Bureau des Plaintes, situé en un endroit profond de\
-> votre être.
-
-_NarrateurStatueVedge
-> Une statue sans rien de remarquable ou d'excitant.
-
-_NarrateurCossinSortChaussure
-> Cossin Lette sort de sa chaussure une petite fiole!
-
-_NarrateurTactiqueGagnante
-> Un livre avec une tactique gagnante dedans!\
-> Tournoyer pour gagner!\
-> En tournoyant vous tapez tous les enemis!
-
-_NarrateurFinsDePhrases
-> L'aboutissement\
-> la résolution tant recherchée\
-> des discours\
-> sommairement achevés
-
-_NarrateurPepitePyrite
-> Vous prenez une petite pépite.
-
-_NarrateurPasGeologuePileDeTerre
-> Vous n'êtes pas géologue.\
-> Mais c'est une pile de terre, ça.
-
-_NarrateurFioleCraquesParoi
-> Cachée dans les craques de la paroi, vous trouvez une\
-> petite fiole que vous n'auriez jamais trouvée sans une\
-> bonne main d'applaudissement.
-
-_NarrateurFioleCraquesParoiDejaTrouvee
-> Cependant. Vous avez déjà trouvé la fiole en question.
-
-_NarrateurStalagmitePasDeBras
-> Rien ne se passe. Les stalagmites n'ont pas de bras, et\
-> encore moins de radis.
-
-_NarrateurPancartePont1
-> C'est bien, avoir une pancarte pour y mettre de l'info,\
-> mais comme elle fait face à la rivière, et qu'un arbre\
-> est dans le chemin de l'autre côté...
-
-_NarrateurPancartePont2
-> Faudrait faire un peu d'effort pour s'enligner avec la\
-> pancarte, tout de même.
-
-_NarrateurPancartePont3
-> La pancarte lit:\
-> \
-> LE PONT
-
-_NarrateurPancartePont4
-> Qui l'eu cru.
-
-_NarrateurTombeJeanJacques
-> Ci gisait et giseront:\
-> \
-> Jean et Jacques\
-> Tristes victimes de leur antagonisme.
-
-_NarrateurPasGeologuePasBougerRoche
-> Vous n'êtez pas géologue.\
-> \
-> Mais, il vous est impossible de bouger cette roche.
-
-_NarrateurPersVerDecideFouillerPile
-> Personne Véritable décide soudainement de fouiller dans\
-> la pile.\
-> \
-> Et il parlait de bulle personnelle...
-
-_NarrateurRochePrendPause
-> Vous n'êtes pas géologue, mais la roche ici prend une\
-> petite pause.
-
-_NarrateurLireSurEcriteau
-> On peut lire sur l'écriteau...
-
-_NarrateurBienvenueAuRRRR
-> \
-> BIENVENUE AU\
-> ROYAUME RÉTABLI des ROCHES RÉCALCITRANTES
-
-_NarrateurBarrilBreuvageFermente
-> Ah et dans le baril il y a du vin! Il est encore bon,\
-> probablement.\
-> \
-> Du breuvage fermenté!
-
-_NarrateurDeuxPoilsDeBarbeEtDeuxBieres
-> Deux poils de barbes et deux bières!
-
-_NarrateurTombeIncomplete
-> Il semblerait que l'enterrement de ce 'dividu n'a pas\
-> pu être terminé.
-
-_NarrateurTombeIncomplete2
-> D'ailleurs vous remarquez à côté du squelette...
-
-_NarrateurPelleMortuaire
-> Une Pelle Mortuaire!\
-> Contrairement à une pelle tout usage, cette pelle\
-> ne fonctionne que pour les lieux de repos éternels.
-
-_NarrateurCiGitMonseigneurBonMatin
-> ci-git\
-> Monseigneur Du-Bon-Soleil-Mais-Seulement-L'Avant-Midi\
-> 1969 AD - 2022 AD\
-> La perte d'un proche était trop dévastatrice.
-
-_NarrateurPetiteClePoussiereuse
-> Une petite clé de sous-sol!\
-> Elle est un peu poussiéreuse mais c'est comme ça que\
-> vous savez qu'elle est pour un sous-sol.
-
-_NarrateurCiGitEsperanceDubemelte
-> ci-git\
-> Espérance Dubemelte\
-> 1981 AD - 2015 AD\
-> Hélas, nous a quittée juste avant l'Invention
-
-_NarrateurCiGitJeanDesmatins
-> ci-git\
-> Jean Desmatins\
-> 1999 AD - 2022 AD\
-> Une autre Victime de la Noirceur
-
-_NarrateurCiGitMarieLeveeSoleil
-> ci-git\
-> Marie-Levée Soleil\
-> 1964 AD - 2022 AD\
-> Une autre Victime de la Noirceur
-
-_NarrateurCiGitBobinoTournedreau
-> ci-git\
-> Bobino Tournedeau-Cest-Du-Bacon-Oui\
-> 1987 AD - 2022 AD\
-> Une autre Victime de la Noirceur
-
-_NarrateurCiGitQuestionMark
-> ci-git\
-> ???
-
-_NarrateurTombeNonIdentifiee
-> La tombe n'est pas identifiée.
-
-_NarrateurNePasMangerCesChampignonsYaDingus
-> Une petite voix dans votre tête vous dit que manger ces\
-> champignons ne terminera pas bien.\
-> \
-> Ma voix.
-
-_NarrateurNePasMangerCesChampignonsYaDingus2
-> Vous êtes certain de ça? Même les petits doigts pensent\
-> que manger des champignons au pif c'est une mauvaise\
-> idée.
-
-_NarrateurBatisseEcroulee
-> Ah c'est une bâtisse écroulée ça.
-
-_NarrateurMurEcroule
-> Ah c'est un mur écroulé ça.
-
-_NarrateurDommagePotsCasses
-> Que c'est dommage les pots cassés... Vous ne pourrez\
-> même pas les briser vous même afin d'y trouver le doux\
-> nectar-de-pot-cassé.
-
-_NarrateurBibliothequeTombeeTrou
-> On peut voir ici que la bibliothèque tenait entièrement\
-> grâce à la présence d'un non-trou dans le bas du mur\
-> derrière.\
-> Hélas l'apparation du trou l'a fait tomber.
-
-_NarrateurTableQualiteStandardAuberge
-> Une table de qualité standard pour une auberge.
-
-_NarrateurNiPlatreurNiCharpentierMaisTrou
-> Vous n'êtes pas plâtreur. Ou charpentier.\
-> \
-> Mais c'est un trou ça.
-
-_NarrateurNiPlatreurNiCharpentierMaisCraque
-> Vous n'êtes pas plâtreur. Ou charpentier.\
+_GeologueCaFaitLongtemps2
+> On ne s'est pas vu depuis la dernière fois\
+> que je suis passée par le Bois du Gaboué...\
 > \
-> Mais c'est une craque ça.
-
-_NarrateurTristeVisionDesCendres
-> La triste vision des cendres complètement refroidies du\
-> foyer.\
-> \
-> C'est pas facile partir un nouveau feu.
-
-_NarrateurCadranSolaireBonMatin
-> Installer un cadran solaire à l'intérieur c'est une\
-> drôle d'idée.
-
-_NarrateurCadranSolaireBonMatin2
-> Ah. Dans ce cas-ci, toutes les heures sont identiques?\
-> Il y a simplement "A.M." partout, et au centre du\
-> cadran on peut lire:
-
-_NarrateurToujoursMatinQqPart
-> \
-> IL EST BIEN TOUJOURS\
-> LE MATIN QUELQUE PART
-
-_NarrateurHorlogeBonMatin
-> L'horloge ne semble plus fonctionner...\
-> \
-> En fait, il n'y a même pas d'aiguilles sur l'horloge.\
-> Au centre du cadran, on peut simplement lire:
-
-_NarrateurFournaiseAutreFuel
-> C'est une fournaise, mais il n'y a nul part pour y\
-> mettre du bois ou du charbon, elle doit être alimentée\
-> d'une autre manière.
-
-_NarrateurValveOuverte
-> La valve est ouverte.
-
-_NarrateurPorteSansPoignee
-> La porte est fermée, et la poignée est en fait peinte\
-> sur la porte.\
-> \
-> La porte ne peut être ouverte manuellement.
-
-_NarrateurPartitionMatinale
-> Une partition matinale!
-
-_NarrateurPetiteBoiteCartesPostales
-> Une petite boîte pleine de cartes postales.
-
-_NarrateurCartePostaleBonMatin
-> Un produit dérivé du Temple du Bon Matin!\
-> Il y a un BON MATIN mal écrit dessus.
-
-_NarrateurBonMatins
-> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
-> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
-> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN\
-> BON MATIN BON MATIN BON MATIN BON MATIN BON MATIN
+> et la cassure du pont ça date de Matusalem.
 
-_NarrateurPasConfondreMatinBon
-> À ne pas confondre avec MATIN BON.
+_GeologueCommentAllezVous
+> Comment allez-vous?
 
-_NarrateurParcheminBonMatin
-> Un parchemin du Bon Matin!\
-> Un bel exercice calligraphique.
+_GeologueCeciExpliqueCela
+> Ça explique pourquoi tu es sorti de chez\
+> vous...\
+> J'ai huh, pas trop de travail en ce moment,\
+> tu as des besoins géologiques?
 
-_NarrateurLettreInachevee
-> Une lettre inachevée.\
-> \
-> Le contenu ne fait pas partie de cette histoire.
-
-_NarrateurCabinetEncres
-> Un cabinet rempli d'encres et de matériel pour écrire\
-> sur des parchemins et des cartes postales.
-
-_NarrateurBoitePapier
-> Oh. C'est beaucoup de parchmins et de papier blanc, ça.
-
-_NarrateurCouverturesMoelleuses
-> Des couvertures bien moelleuses pour se protéger des\
-> nuits désertiques.\
-> \
-> Vous n'avez pas besoin du confort.
-
-_NarrateurTitresLivresMatin
-> Vous survolez rapidement les titres:\
-> "Le secret d'une bonne journée"\
-> "Le Matin et vous"\
-> "À quelle heure se coucher pour optimiser"
-
-_NarrateurBoiteLivresMatin
-> Une boîte de livres.\
-> Il y a surtout des autobiographies du Grand Prophète\
-> Le-Matin-C'est-Bien-Mais-Deux-Minutes-Jme-Fais-Un-Café.\
-> Ses amis l'appelaient LMCBMDMJFUC.
-
-_NarrateurVictuaillesRancies
-> Vous seriez vraiment tenté de prendre des victuailles,\
-> si seulement elles n'étaient pas rancies.
-
-_NarrateurFoyerFroid
-> Ça fait un bout quand même que le feu n'a pas été\
-> allumé. Le foyer est complêtement froid.
-
-_NarrateurJarreHuileOliveRance
-> Une jarre d'huile d'olive, avec un profil rance bien\
-> présent.
-
-_NarrateurObjetsContondants
-> Des objets contondants.
-
-_NarrateurMmhCetait
-> Mmmh...\
-> \
-> C'était.
+_GeologueBonAllonsY
+> Bon, allons-y.
 
-_NarrateurPileDeBoitesNonInvestiguee
-> Normalement vous investigueriez la pile de boîtes,\
-> mais pas cette fois-ci.
+_GeologueMarmonneursPersSec
+> Et ces deux marmonneurs c'est des\
+> Personnages Secondaires, c'est ça?
 
-_NarrateurBoiteChandelles
-> Une boîte de chandelles. Pratique pour les moments\
-> glauques.
+_GeologueSePresente
+> Enchantée.\
+> Vous pouvez m'appeler Géologue, ça fait\
+> plus simple.
 
-_NarrateurPileTerreConfus
-> Une belle pile de terre. C'est pour... huh...\
-> Ok?
+### Roche
 
-_NarrateurBoiteTuilesFlechees
-> Une boîte contenant des tuiles flêchées.
+_RocheOui
+> Oui!
 
-_NarrateurGrosCylindreMetal
-> C't'un gros cylindre de métal, ça.
+_RocheOui2
+> Super!
 
-_NarrateurBiscuit
-> Un biscuit!\
-> Terrible. Il est aux raisins.
+_RocheOui3
+> Affirmatif!
 
-_NarrateurChevalierNoirPrendBonjour
-> Le Chevalier Noir prend le Bonjour!
+_RocheOui4
+> Par ici!
 
-_NarrateurBonMatinSocleVide
-> Le socle vide du Bon Matin. Une vision d'horreur.
+_RocheNon
+> Non!
 
-_NarrateurAtreFoyer
-> Ah c't'un âtre de foyer, ça.
+_RocheNon2
+> Pas ici!
 
-_NarrateurBoiteChoses
-> Une boîte de choses. Quelles choses? Ces choses-là\
-> qu'on met dans des boîtes.
+_RocheNon3
+> Ailleurs!
 
-_NarrateurPileBoisSecCharpenterieMenuiserie
-> Du bois coupé. Bien sec. Pratique pour faire de la\
-> menuiserie. Ou de la charpenterie.
-
-_NarrateurProjetMysterieux
-> Un projet difficile à comprendre. Ou une mauvaise idée.\
-> \
-> Certains diraient un ramassi de bois.
-
-_NarrateurCoffreRivetClous
-> Des clous et des rivets. Rien que vous devriez prendre\
-> avec vous.
-
-_NarrateurMurJesusCouteau
-> Sur le mur il y a des couteaux à bois - Leur apparence\
-> est trompeuse.\
-> Et par dessus des marteaux et des maillets.
-
-_NarrateurMurJesusCouteau2
-> Mais l'angle fait que ça vous ferait trop chier d'aller\
-> les voler, alors ce n'est pas une option.
-
-_NarrateurGogosses
-> Des gogosses.
-
-_NarrateurSalamiNutritionne
-> Du salami. À tous les coups ça nutritionne.
-
-_NarrateurCureAvaitLaCle
-> Une petite voix dans votre tête vous dit que ça serait\
-> probablement le curé qui avait la clé.
-
-_NarrateurBibliothequeTuilesMagicoportantes
-> Vous survolez rapidement les titres:\
-> "Installation simple de tuiles magico-portantes"\
-> "Comment convaincre un moine que les tuiles magico-\
-> portantes du temple sont nécessaires"
-
-_NarrateurPamphletsMatinaux1
-> La bibliothèque semble complètement remplie de\
-> pamphlets de messes matinales.
-
-_NarrateurPamphletsMatinaux2
-> Ah. C'est des recettes pour cuisiner le Bon Matin.
-
-_NarrateurLivresNonMatinaux
-> De la lecture non-matinale complètement dénuée\
-> d'intérêt.\
-> Le mieux que vous trouviez c'est un livre titré\
-> "Le Brunch: Comment décréter que c'est encore le matin"
-
-_NarrateurTitresLivresMonseigneur1
-> Les lectures personnelles du Monseigneur:
-
-_NarrateurTitresLivresMonseigneur2
-> Comment financer votre achat impulsif de tuiles\
-> magico-portantes:\
-> Aviez-vous considéré que les achats pour un lieu de\
-> culte sont déductibles d'impôts?
-
-_NarrateurTitresLivresMonseigneur3
-> L'orgue Tout-doux:\
-> Manuel d'instruction et de maintenance.
-
-_NarrateurPileDeBoitesNonInvestiguee2
-> Bon, un petit coup d'oeil ça ne ferait pas de mal...\
-> Oh.\
-> Des plus petites boîtes.\
-> Vous n'avez pas ce genre de patience.
-
-_NarrateurTabouretsPliables
-> Des tabourets pliables.\
-> \
-> Au cas où il y aurait une foule subitte qui nécessite\
-> un Matin.
-
-_NarrateurBoitesDeRechanges
-> La pile des boîtes de rechanges.\
-> \
-> Au cas où il y manquerait des boîtes quelques part.
-
-### Bucheron
-
-_BucheronOuaisNonTempleBonjour
-> Ouais non le vieux temple du Bonjour on n'y\
-> va plus vraiment.\
-> Depuis que le vieux prêtre est viré sénile,\
-> y pense qu'à ses radis...
-
-_BucheronYaUnBout
-> Y'a un bout, un drôle de bonhomme est passé\
-> pour nous dire de rediriger les... confus\
-> vers là-bas.
-
-_BucheronBonsMatins
-> Des Bon Matins?\
-> Pour ce genre de questions, faut se référer\
-> au Pêcheur.
-
-_BucheronVousAvezAimeLeTemple
-> Bonsoir.\
-> \
-> Vous avez bien aimé le Temple? Y sont un\
-> peu spéciaux mais sinon y sont bin gentils.
-
-_BucheronVousAvezDuMonde
-> Ah, je vois que vous avez rencontré du\
-> monde.
-
-_BucheronOccupe
-> Ok... Je suis un peu occupée là, si ça vous\
-> dérange pas.
-
-_BucheronVousEtesPedant
-> Non mais lâchez-moi, vous êtes pédant ou\
-> quoi?\
-> J'ai dis que j'étais occupée.
+_RocheNon4
+> Négatif!
 
 ### Vieux
+
+_VieuxExcelsior
+> Excelsior!\
+> \
+> Moi qui croyait ne jamais voir le jour...
+
+_VieuxSenVient
+> Oui oui, j'ai juste besoin de préparer mes\
+> affaires, donnez-moi un instant...
 
 _VieuxOnguents
 > Ah oui vous faites dur!\
 > J'ai des onguents pas loin, attendez.
+
+_VieuxMaintenantChercherCossin
+> MaintenantChercherCossin
 
 _VieuxVousDitNePasAvoirBonMatni
 > Je vous dit que je n'ai pas de Bons Matins!\
@@ -4153,11 +5535,20 @@ _VieuxAConstruitSaMaison
 > ma maison? Les jeunes de nos jours prennent\
 > tout pour acquis!
 
+_VieuxCossinParage
+> CossinParage
+
 _VieuxToutCesRadis
 > J'ai tout ces radis qui s'accumulent et\
 > rien à faire avec!\
 > \
 > Vous savez, c'est dangereux là dehors.
+
+_VieuxVousRadis
+> Vous voulez-un radis?
+
+_VieuxTantPisPareil
+> Tant pis, je vous le donne pareil!
 
 _VieuxBonsoirs
 > Un Bon Matin?\
@@ -4213,6 +5604,9 @@ _VieuxPontCasseConnu
 > C'est bien connu que le Pont est cassé!\
 > Mais le Maire de la Ville n'y fait rien...
 
+_VieuxIlYaDes
+> Il y a des -
+
 _VieuxDessins
 > Il y a toutes sortes de beaux petits griboullis sur les\
 > papiers devant le Vieux.\
@@ -4243,29 +5637,32 @@ _VieuxSacFarine
 > \
 > C'est pas tant excitant en fait.
 
-_VieuxMaintenantChercherCossin
-> MaintenantChercherCossin
+_VieuxPrenezPasTropTempsFaitFrette
+> Prenez pas trop votre temps, y fait frette!
 
-_VieuxCossinParage
-> CossinParage
+_VieuxOuchArthrite
+> Ouch! Owie! Mon arthrite...
 
-_VieuxVousRadis
-> Vous voulez-un radis?
+_VieuxAlorsTrouveBlonde
+> Alors, vous avez trouvé la Blonde de\
+> Cossin Lette?
 
-_VieuxTantPisPareil
-> Tant pis, je vous le donne pareil!
+_VieuxOnAEntenduAlarme
+> Non? On a entendu une alarme rouge-bientôt-\
+> brun-foncé, mais avec un Protagoniste c'est\
+> plutôt commun.
 
-_VieuxIlYaDes
-> Il y a des -
+_VieuxViteALaBase
+> Il n'y a pas un instant à perdre! Vous\
+> devez vite vous y rendre avant qu'il ne\
+> soit trop tard!
 
-_VieuxExcelsior
-> Excelsior!\
-> \
-> Moi qui croyait ne jamais voir le jour...
+_VieuxTeaseEndroitDeShit
+> Un endroit mystérieux et familier.
 
-_VieuxSenVient
-> Oui oui, j'ai juste besoin de préparer mes\
-> affaires, donnez-moi un instant...
+_VieuxOhNoOuEstLePlaisir
+> Oh vous n'avez aucun plaisir! Elle est\
+> partie où la belle attitude de tantôt?
 
 _VieuxCossinVraimentToi
 > Cossin Lette! C'est vraiment toi!
@@ -4275,6 +5672,10 @@ _VieuxCossinTellementLongtempsToutLeDanger
 > tout les dangers que tu as eu à faire face!\
 > \
 > Tiens, j'ai apporté de quoi t'aider!
+
+_VieuxCossinJamaisVisite
+> Mais Cossin, pourquoi n'es-tu jamais venu\
+> me visiter?
 
 _VieuxTraduitCossinAttendBlondePiqueNique
 > Oh quel malheur!\
@@ -4313,1340 +5714,20 @@ _VieuxExpliquePasDeBraisme
 > Cossin Lette n'a pas de bras, et ne peut\
 > même pas se servir de son épée.
 
-_VieuxCossinJamaisVisite
-> Mais Cossin, pourquoi n'es-tu jamais venu\
-> me visiter?
-
 _VieuxParfaitCossinVaMontrerChemin
 > Parfait donc! Cossin va nous montrer le\
 > chemin.
 
-_VieuxPrenezPasTropTempsFaitFrette
-> Prenez pas trop votre temps, y fait frette!
-
-_VieuxOuchArthrite
-> Ouch! Owie! Mon arthrite...
-
-_VieuxAlorsTrouveBlonde
-> Alors, vous avez trouvé la Blonde de\
-> Cossin Lette?
-
-_VieuxOnAEntenduAlarme
-> Non? On a entendu une alarme rouge-bientôt-\
-> brun-foncé, mais avec un Protagoniste c'est\
-> plutôt commun.
-
-_VieuxViteALaBase
-> Il n'y a pas un instant à perdre! Vous\
-> devez vite vous y rendre avant qu'il ne\
-> soit trop tard!
-
-_VieuxTeaseEndroitDeShit
-> Un endroit mystérieux et familier.
-
-_VieuxOhNoOuEstLePlaisir
-> Oh vous n'avez aucun plaisir! Elle est\
-> partie où la belle attitude de tantôt?
-
-### Radis
-
-_RadisDansLaPoche
-> Le Vieux vous glisse un radis dans la poche.
-
-### Horloge
-
-_HorlogeBougePas
-> Les aiguilles de l'horloge ne bougent pas.
-
-### Boite
-
-_BoiteRadis
-> La boîte est complètement remplie de radis.
-
-### Pretre
-
-_PretreBonjour
-> Bonjour. Malheureusement, le temple est\
-> actuellement fermé.\
-> Mais si vous revenez demain midi, nous\
-> seront ouvert pour le Bonjour.
-
-_PretreQuEstCeQueVousFaitesIci
-> Bonjour. Mais qu'est-ce que vous faites\
-> ici? Le Temple est actuellement fermé.\
-> Si vous revenez demain midi, nous\
-> seront ouvert pour le Bonjour.
-
-_PretrePasMort
-> PasMort
-
-_PretreMal
-> Mal
-
-_PretreSuicide
-> Première! La douce lueur de ton visage\
-> était comme quand le regard se fixait sur\
-> le Soleil à midi!\
-> Mais maintenant, je ne vois que noirceur!
-
-### Wwwelchior
-
-_WwwelchiorEtesSurPasFaireRentrer
-> Vous êtes sûr que vous pouvez pas me faire\
-> rentrer *maintenant*?
-
-_WwwelchiorOhAllo
-> Oh allo!\
-> \
-> ...\
-> Votre face me dit quelque chose.
-
-_WwwelchiorVousAvezTraitsProtagoniste
-> En fait vous avez les traits d'un\
-> Protagoniste!\
-> Ça doit être vous que le Repositoire des\
-> Textes Sacrés mentionnait!
-
-_WwwelchiorNEstPasLeMurderHobo
-> Aaaah.\
-> Non vous devez comprendre, je ne suis pas\
-> le vrai Murder Hobo.
-
-_WwwelchiorProhpetiePasChamboulee
-> De toute façon il n'y a eu aucune mention\
-> de prophécie chamboulée alors ça veut dire\
-> que le prêtre n'était pas important.
-
-_WwwelchiorATrouveLaCle
-> Non c'est correct Gabspart! Regardes j'ai\
-> trouvé la clé sur lui.
-
-_WwwelchiorRefuseLeMurderHoboisme
-> Peut-être qu'elle n'aura rien de\
-> nouveau à dire sur le sujet! Même qu'on l'a\
-> jamais rencontrée alors c'est pas\
-> impossible qu'elle n'existe même pas -
-
-_WwwelchiorAToutFait
-> Oui!\
-> J'ai tout fait!\
-> J'ai trouvé la solution à la porte ET le\
-> Protagoniste!
-
-_WwwelchiorOnEstVosPersSec
-> Vous êtes Protagoniste? Bien voila, on est\
-> vos Personnages Secondaires.
-
-_WwwelchiorAucuneIdeeOuEstBalthathig
-> Aucune idée. Il m'a dit que c'était\
-> "Vraiment important" que je trouve la\
-> solution tout seul, et ensuite il est juste\
-> parti.
-
-_WwwelchiorQqchoseAProposCados
-> Quelque chose à propos d'aller chercher des\
-> "cadeaux".
-
-_WwwelchiorFilleBonjourette
-> Non mais clairement sa fille peut pas\
-> l'aimer s'il lui a donné un nom comme\
-> "Bonjourette".
-
-_WwwelchiorVeutSouleverPasMurderHobo
-> J'aimerais juste soulever que cette fois-ci\
-> j'ai rien incité, hein.
-
-_WwwelchiorAhJeSaisQuoiFaireBis
-> C'est correct Protagoniste, je sais quoi\
-> faire!
-
-_WwwelchiorPasBesoinDeMagie
-> Pas besoin de beaucoup de magie pour\
-> reproduire cette situation...
-
-_WwwelchiorPogneTour1
-> Enfin bon, c'est faux, il était pas affamé\
-> le Protagoniste!
-
-_WwwelchiorPogneTour3
-> Attends! C'est même pas ton tour!\
-> Parce que vois-tu, le Protagoniste perdu,\
-> il devint tellement perdu, qu'il se pris\
-> une soif de violence!
-
-_WwwelchiorPogneTour4
-> Ah c'est dommage, je pense que j'avais une\
-> bonne histoire dans la main.
-
-_WwwelchiorVeutPasNegocier
-> Tu niaises! Il fait genre trois fois ta\
-> taille! On va lui faire tomber sa table!
-
-_WwwelchiorGoutSang
-> À tous les coups je peux t'assurer qu'il\
-> s'agit du goût du sang.
-
-_WwwelchiorDeclarationPasCorrecte
-> Ah non mais ça c'est pas correct comme\
-> déclaration. Detah y'était pas très gentil,\
-> mais là tu le dénigres tout simplement.
-
-_WwwelchiorPasConvaincuParProta
-> M-mh. M-mh. Tu dis ça, mais tantôt on verra\
-> bien c'est qui le Vrai Murder Hobo.
-
-_WwwelchiorEtLesBlaguesDeShitDuProtagoniste
-> Des angles? Genre aigu, droit et obtus?\
-> \
-> Comme à la maternelle?
-
-_WwwelchiorSnarkProtagonisteSelfCentered
-> Décidement tu exhibes toutes les qualités\
-> d'un protagoniste.
-
-_WwwelchiorNeReculeJamais
-> Le Prince des Ténèbres ne recule jamais\
-> devant un combat!
-
-_WwwelchiorLeWindoBougePas
-> De toute façon la grosse fenêtre elle bouge\
-> pas de son coin.
-
-_WwwelchiorComprendPasPlusGaboue
-> Vous pensez vraiment que j'y comprends plus\
-> au Gaboué? J'ai entendu les légendes...\
-> mais c'est tout.
-
-_WwwelchiorAdversairesDuGaboue
-> Le mythe annonce que ce sont des\
-> adversaires redoutables! Le Gaboué est\
-> simplement aiguillé au danger qu'ils\
-> posent.
-
-_WwwelchiorPasLaBronche
-> Oh non de dieu!\
-> Mais... Mais...\
-> Sa BRANCHE!
-
-_WwwelchiorPossessionsPrecieusesDuPecheur
-> À tout les coups le Pêcheur Senior a été\
-> enterré avec ses possessions précieuses!
-
-_WwwelchiorLesMortsCaSenFiche
-> Non mais de toute façon les morts c'est pas\
-> dérangé si on prend leurs choses.
-
-_WwwelchiorTombesPasTouristiques1
-> Les tombes pas touristiques c'est\
-> typiquement pas très accueillant.
-
-_WwwelchiorTombesPasTouristiques2
-> Des fois y'a des quêtes, et c'est comme un\
-> genre de parc d'attractions!
-
-_WwwelchiorReitere
-> Personne Véritable réitérait seulement sa\
-> dévotion à vous aider dans votre problème\
-> de pas-dans-votre-cour!
-
-_WwwelchiorPasConvaicuQuete
-> Pfff, ça dit vouloir assouvir une faim\
-> Cosmique, puis voilà que ça accepte d'aider\
-> avec une histoire de voisinage...
-
-_WwwelchiorMurderHoboFaible
-> Je ne suis pas sûr que tu es très\
-> convaincant dans le rôle du Murder Hobo en\
-> fait. Ça prend les reins plus solides.\
-> Un petit coup de poing sur ta tête et...
-
-_WwwelchiorVaMurderHoboiser
-> Bon tout ça c'est drôle, et je m'excuse,\
-> mais l'Équilibre Cosmique ne sera pas\
-> rétabli si ça continue comme ça.
-
-_WwwelchiorPasDeTemoin
-> Si on déclare qu'ils étaient déjà en train\
-> de faire un repos des yeux éternel à notre\
-> arrivée, je suis sûr que personne ne nous\
-> questionnera.
-
-_WwwelchiorTempererAttentesProta
-> Oui, on a trouvé le Protagoniste!\
-> \
-> Bon par contre y faut tempérer les\
-> attentes...
-
-_WwwelchiorBalthaNum4
-> Normalement ça aurait été ton quatrième\
-> Personnage Secondaire, mais là comme tu\
-> peux observer il est occupé à faire je sais\
-> pas trop quoi...
-
-_WwwelchiorCanneLevitation
-> Ce serait pas plutôt les forêts, les\
-> montagnes et les déserts?
-
-_WwwelchiorLanceLancement
-> Il faut l'excuser un peu, là d'où y vient,\
-> les oiseaux terrorisent tout les chemins et\
-> les villages.\
-> C'est horrible.
-
-_WwwelchiorTristheroisme
-> Niveau héroïsme c'était un Moment,\
-> quand même...
-
-_WwwelchiorInventeurVaBien
-> L'inventeur va très bien, il dort en bas.\
-> Mais... je ne sais pas pour toi.
-
-_WwwelchiorDotDotDot
-> . . .
-
-_WwwelchiorOnYVa
-> On y va?
-
-_WwwelchiorAccueil
-> Oui, on a reçu tout un accueil!
-
-_WwwelchiorPrinceDesTenebres
-> PrinceDesTenebres
-
-_WwwelchiorAhCestUnProtagonisteCa
-> Ah c'est bien un Protagoniste ça.
-
-_WwwelchiorAhJeSaisQuoiFaire
-> Ah je sais c'est quoi qui faut faire!
-
-_WwwelchiorFinDePhrasesNonRequises
-> Fin de phrases non requises!
-
-_WwwelchiorCartesPasStandard
-> Au moins c'est pas les cartes standards...
-
-_WwwelchiorVousPataugez
-> Ah mais vous pataugez là!
-
-_WwwelchiorPogneTour2
-> Il était perdu!
-
-_WwwelchiorRegardezBranche
-> Oh! Regardez dans sa main! La BRANCHE!
-
-_WwwelchiorSansParlerDesCotes
-> Sans parler des côtés!
-
-_WwwelchiorCestSonCriDeGuerre
-> C'est son cri de guerre!
-
-_WwwelchiorCriDeGuerre
-> CriDeGuerre
-
-_WwwelchiorTaitTemps
-> Y'était temps!
-
-_WwwelchiorPoudreFantomeVautCher
-> La poudre de fantôme ça vaut cher!
-
-_WwwelchiorPasExactementVrai
-> \}C'est pas exactement vrai...\{
-
-_WwwelchiorPointPondre
-> On oserait point pondre une telle idée...
-
-_WwwelchiorChangeurFormeReferencePourrie
-> Et puis un changeur de forme ça veut rien\
-> dire, je ferais pas trop attention à ce\
-> genre de référence.
-
-_WwwelchiorJustement
-> Justement.
-
-_WwwelchiorAlitereLeClone
-> Ressaisis-toi Personne Véritable! Ce n'est\
-> qu'un simulacre! Une copie corporelle\
-> corporative croustillante!
-
-_WwwelchiorTreveDeProcrastination
-> Trêve de procrastination! Je, Wwwelchior,\
-> le Prince des Ténèbres, pulvérise les\
-> fenêtres!
-
-_WwwelchiorBienDit
-> Ah enfin! Pour une fois c'est bien dit!
-
-_WwwelchiorExpliqueLaRaison
-> Tsk tsk tsk Personne Véritable, tu le sais\
-> bien qu'il faut pas abuser de ces choses-\
-> là. Un jour tu te dis "Ah juste une ptit\
-> disparition de mon problème"...
-
-_WwwelchiorExpliqueDangerTriche
-> Et puis paf tu te réveilles le lendemain\
-> à moitié à travers le plancher et il te\
-> reste genre, une âme de vivante!\
-> T'imagines l'ennui?
-
-_WwwelchiorExpliquerCouleurBetterave
-> C'est bon on a réussi à lui expliquer la\
-> couleur du jus de betterave!
-
-_WwwelchiorTempleAttrapeTouriste
-> Ce serait un peu absurde non? Le temple\
-> n'était qu'une attrape-touriste!
-
-_WwwelchiorMmmPensif
-> Mmmmh...
-
-_WwwelchiorDoitBienYAvoirTempleBonMatin
-> Forcément il doit bien y avoir un Temple du\
-> Bon Matin, non?
-
-_WwwelchiorPensaisQueProtagonisteSaurait
-> Je pensais que tu vivais dans cette forêt?
-
-_WwwelchiorLesLegendesCEstLong
-> C'est vrai que ça prend un moment à se\
-> former les légendes...
-
-_WwwelchiorCEtaitMechantCommentaire
-> Effectivement, c'était juste méchant comme\
-> commentaire.
-
-_WwwelchiorNeVeutPasTransaction
-> Assurément tu ne veux rien échanger avec un\
-> Detah qui veut faire une transaction!
-
-_WwwelchiorBienDaccord
-> C'est bien dit ça! Et dire que tu voulais\
-> t'asseoir pour une tasse de thé!
-
-_WwwelchiorTableEspace
-> Tant qu'il lui reste de l'espace, il peut\
-> en faire autant qu'il veut!
-
-_WwwelchiorDetahDangereux
-> Justement! Devines pourquoi le Detah est\
-> dangereux!
-
-_WwwelchiorBonsoirBonjourette
-> Ah c'est vous la fameuse Bonjourette!\
-> \
-> Oui ton père nous a beaucoup parlé de toi\
-> et il se repose bien les yeux en ce moment!
-
-_WwwelchiorRefuseBonjourette
-> \}Écoutes comment voulais-tu que je sache qu'elle existe pour vrai?\{\
-> \
-> \}Si y'a aucune quête ou mouvement rattachée à elle, lui mentir c'est la plus\
-> grande gentillesse qu'on puisse lui faire en ce moment!\{
-
-_WwwelchiorFaisMoiConfiance
-> \}Fais moi confiance! Y'a pas de problème.\{
-
-_WwwelchiorJeanJacquesMorts
-> Ou un personnage sinistre les a ressuscité\
-> afin de remplir son sombre dessein!
-
-_WwwelchiorEhoLAppropriation
-> Pèses pas trop vite sur l'accélérateur de\
-> l'appropriation des accomplissements de\
-> toute l'équipe tout de même.
-
-_WwwelchiorNuancePasSiGrande
-> La nuance est moins grande qu'on le\
-> penserait.
-
-_WwwelchiorPasLesTenebres
-> C'est pas pour les Ténèbres en tout cas,\
-> sinon j'en aurais entendu parler.
-
-_WwwelchiorExcusePasForte
-> Niveau excuse c'est pas fort. Je pense\
-> qu'ils mentent.
-
-_WwwelchiorVictwereBandits
-> La Noirceur c'est rien comparé aux\
-> Ténèbres.\
-> \
-> Garanti que ce ne sera pas un problème.
-
-_WwwelchiorNeSavaisPasConnaissais
-> Je ne savais pas que tu les connaissais!
-
-_WwwelchiorVoitRocheSurPage
-> Mmmh, moi je vois une roche sur la page.
-
-_WwwelchiorLegendeRoche
-> Tu es sûr? Regarde là, la petite légende:\
-> \
-> "Roche ignagna"
-
-_WwwelchiorTeaseDescriptionRoche
-> Oh, et on va prendre le temps de lire la\
-> description?
-
-_WwwelchiorSoupconneMindFlayer
-> \}Donnes-y trois minutes, ça va être révélé que c'est un contrôle de l'esprit\
-> et elle a implanté des souvenirs pour lui dérober le Bonjour!\{
-
-_WwwelchiorBienvenueEntouragePrinceTenebres
-> Bienvenue dans l'entourage du Prince des\
-> Ténèbres!
-
-_WwwelchiorCaillouMouvant
-> Pourtant moi je trouve ça charmand.\
-> On devrait continuer voir ce qu'il y a plus\
-> loin!
-
-_WwwelchiorWooPersVerConnaitKkun
-> Wooo regardez-moi ça Personne Véritable qui\
-> connait "quelqu'un"!
-
-_WwwelchiorBeurresPasTropOnEst4
-> Beurres-en pas trop, on est quatre tout de\
-> même.
-
-_WwwelchiorOffusqueTenebresCossin
-> Voyons! On lance pas des accusations comme\
-> ça!\
-> Tu penses que les Ténèbres perdent leur\
-> temps avec Cossin!?
-
-_WwwelchiorPetitDoigtArme
-> Mon petit doigt me dit de le mettre sur mon\
-> arme et d'inviter ses compagnons.
-
-_WwwelchiorImaginesLaPlatitude
-> T'imagines la platitude du reste du Monde\
-> si c'est la Montagne?
-
-_WwwelchiorWohMisterNaifCestAmbuscade
-> Tu fais exprès d'incarner la naïveté en ce\
-> moment? C'est clairement une ambuscade!
-
-_WwwelchiorTheorieProposesParis
-> Avec une théorie pareille je te proposes\
-> qu'on prenne un paris!
-
-_WwwelchiorFlashMobDeDanse
-> C'est pas trop pire, c'est comme un flash\
-> mob de danse!
-
-_WwwelchiorUneBelleAttitude
-> Ah! Ça c'est une belle amélioration\
-> d'attitude!
-
-_WwwelchiorTaper
-> Ahha!
-
-_WwwelchiorTeaseRochePleinDeShit
-> Des fois les légendes c'est vraiment juste\
-> ça par contre.\
-> Des légendes.
-
-_WwwelchiorGaboue
-> Gaboué!
-
-_WwwelchiorPlanteGrosseDents
-> J'pense que Personne Véritable est un poil\
-> brisé là. Déjà c'est une plante, et ensuite\
-> elle a de grosses dents.\
-> Ça regarde mal.
-
-_WwwelchiorGere
-> Nan c'est correct, je gère!
-
-_WwwelchiorPasMalALAisePourUnConfus
-> T'es rendu pas mal à l'aise pour quelqu'un\
-> qui capotait y'a deux minutes.
-
-_WwwelchiorANePasConfondreAvecTenebres
-> À ne pas confondre avec les Ténèbres!
-
-_WwwelchiorParfaitementPtInterro
-> ...Parfaitement?
-
-_WwwelchiorPuzzleBonmatinPasDown1
-> Ah je reconnais le genre... Après c'est\
-> plus authentique ainsi!
-
-_WwwelchiorPuzzleBonmatinPasDown2
-> Marche un peu sur les tuiles et tu vas\
-> comprendre.
-
-_WwwelchiorPuzzleBonmatinPasDown3
-> Non mais pour lui c'est pas pareil...\
-> Le Protagonisme et tout ça, vois-tu.
-
-_WwwelchiorTuRalliesAGabspart
-> Ah tu te rallies à Gabspart?
-
-_WwwelchiorBonMatinManquantEvident
-> D'ailleurs, pourquoi on a prit le temps\
-> d'aller jusqu'à valider le poteau? Me\
-> semble que c'était clair dès qu'on est\
-> arrivé.
-
-_WwwelchiorMenaceChevalierNoir
-> La Noirceur? Ha!\
-> Approches-toi un peu que je, Wwwelchior,\
-> Prince des Ténèbres, te fasses tâter de mon\
-> épée!
-
-_WwwelchiorOnEstRenduCamarade
-> Ah c'est pas pire, on est rendu des\
-> camarades... C'est une promotion ou une\
-> démotion depuis Personnage Secondaire?
-
-_WwwelchiorIlAPasDitTenebres
-> Vous noterez qu'il n'a pas dit les\
-> Ténèbres!
-
-_WwwelchiorIntroShackJesus1
-> Bah oui, c'est la maison de notre a-\.\.\^
-
-_WwwelchiorExpliqueQuePartiSidequester
-> Moi et Gabspart on n'a jamais été très bon\
-> à patienter dans un coin, alors on était\
-> parti au nord du temple.\
-> Il y a une grotte digne d'investigation.
-
-_WwwelchiorExpliqueLeRRRR
-> Le Royaume Rétabli des Roches\
-> Récalcitrantes.\
-> \
-> On est passé par là sur le chemin.
-
-### Gabspart
-
-_GabspartTrouveCommentPasserPorte
-> Wwwelchior, j'ai trouvé comment passer la\
-> porte. Le Repositoire des Textes Sacrés dit\
-> qu'il faut trouver la fille du prêtre, pour\
-> qu'il renoue ses liens avec elle et qu'il -
-
-_GabspartMaisLaFilleDuPretre
-> Mais...\
-> \
-> La fille du prêtre...
-
-_GabspartPasConvaincuDeLaSolution
-> *Une* solution peut-être.\
-> *La* solution je suis pas convaincu.
-
-_GabspartChercheSaFinDePhrase
-> Comment dire...\
-> Huh...\
-> On -\
-> Mmmmh.
-
-_GabspartOnNeVientPasDIci
-> On ne vient pas d'ici. J'irai pas en détail\
-> comme les tripes de ce pauvre prêtre par\
-> terre, mais on est coincé ici.
-
-_GabspartOnNeVientPAsDIciForRealThisTimeProd2
-> "Ici" comme dans ce monde.\
-> On vient du Brun. C'est huh... Un autre\
-> Plan d'Existence.
-
-_GabspartOnNeVentPasDIciForRealThisTimeProd3
-> C'est pas trop clair comment on s'est\
-> retrouvé ici, on est en train de chercher à\
-> comprendre, mais le Repositoire des Textes\
-> Sacrés donne pas tout le backstory.
-
-_GabspartHandWavingDuWiki
-> Heh, pas besoin de savoir c'est quoi.\
-> On l'utilise seulement si vous devenez\
-> coincé.
-
-_GabspartOnVaAiderBonjour
-> Mais en tout les cas on va vous aider à\
-> trouver votre Bonjour - J'pense bien que\
-> le pêcheur vous a donné la quête? Après ça\
-> on pourra regarder pour le Bon Matin.
-
-_GabspartChapitre1
-> "Chapitre 1:\
-> Le Protagoniste obtient le Bonjour"\
-> \
-> Vous voyez?
-
-_GabspartNonFaussitude
-> Ah ça c'est pas faux.\
-> C'est d'une pas-faussité à en retordre la\
-> véracité dudit Protagoniste.
-
-_GabspartWikiTempleBonjour
-> Je dis ça de même pour rien, mais mettons\
-> que, y'a 3 leviers au total, et qu'y\
-> faudrait tout les mettre vers le bas, puis\
-> ensuite tout les mettre vers le haut.
-
-_GabspartRuineLeGameplay
-> Je sais, je sais, ça ruine le gameplay.\
-> Mais c'est pour le mieux en fait.
-
-_GabspartCestDansLeWikiAlorsCaSertARien
-> Oui et c'est même indiqué dans le\
-> Repositoire des Textes Sacrés alors il n'y\
-> a rien que vous pouvez faire pour nous en\
-> empêcher!
-
-_GabspartExpliquerPlotArmor
-> Toute tentative de nous arrêter se résoudra\
-> en explication à coup de Plot Armor!
-
-_GabspartPourCeQueCaChange
-> Et puis à ce point-ci, pour ce que ça\
-> change...
-
-_GabspartEncoreCheminProtagoniste
-> Non non, c'est encore sur le Chemin du\
-> Protagoniste alors tout va bien.
-
-_GabspartTuVeuxPasLaTraduction
-> Tu veux pas la traduction de ce que Gaboué\
-> a réellement dit?
-
-_GabspartMalDeTete
-> C'est fini, je vais avoir un mal de tête\
-> pour toute la journée...
-
-_GabspartReactionProta
-> Ça fait changement de sa réaction quand on\
-> a rencontré la Première Bonjoure, huh...
-
-_GabspartPlusieursMurderHobos
-> En tant que groupe, les actions de l'un\
-> parlent pour les autres, hein.\
-> Et puis en plus tu as déjà de l'avance\
-> là-dessus.
-
-_GabspartTraduitGaboueVictwere
-> > Victwere Victwere Victwere Victwere\
-> > Victwere Victwere Victwere Victwere\
-> > Victwere Victwere Victwere Victwere\
-> > Victwere Victwere Victwere Victwere
-
-_GabspartRespectGameplay
-> Quand même, ça prend un peu de respect pour\
-> les modalités du gameplay!
-
-_GabspartDesFoisChangeurForme
-> Si ça avait été dans un placard ça aurait\
-> été moins certain.\
-> \
-> Des fois que c'est un changeur de forme...
-
-_GabspartLaSituationObtuse
-> C'est toute la situation qui est obtuse,\
-> mais non je pense que Personne Véritable\
-> est juste confus.
-
-_GabspartAEcouteGaboue2
-> Je sais pas pour toi mais je vois ni chemin\
-> par dessus, ni chemin par dessous.
-
-_GabspartVaTraduireQueTuLeVeuilleOuNon
-> Silence!\
-> J'veux rien entendre!\
-> \
-> Donc il dit:
-
-_GabspartRencheritLeProtagonisme
-> Non mais ça fait ça être le protagoniste,\
-> ça monte à la tête et ça veut tout le\
-> mérite.
-
-_GabspartVoirQueYaLesFinsDePhrases
-> Bin non! Voir que y'a les Fins de Phrases\
-> drette ici comme ça!\
-> Depuis le temps que je... huh je veux dire,\
-> depuis le temps que Gaboué les cherche!
-
-_GabspartCaAPasToujoursEteAinsi
-> Disons seulement que ça n'a pas toujours\
-> été ainsi.
-
-_GabspartLivreVautOr
-> Dans tous les cas je te garantis que ça\
-> vaut de l'or ce petit livre-là.
-
-_GabspartOnSaitJamaisQuandOnPerdFinsDePhrases
-> On sait jamais quand est-ce qu'on se\
-> retrouve pris de stupeur par manque de\
-> complétude phrasique.
-
-_GabspartCordeADesUsages
-> L'entrée sur la Corde Auto-Portante dans\
-> le Repositoire des Textes Sacrés est pas\
-> tout à fait vide, alors c'est pas le pire\
-> cadeau.
-
-_GabspartLeGere
-> Tu t'y prends tout croche. laisses-moi\
-> faire.
-
-_GabspartTraduitGaboueChasserDetah
-> > J'étais dans la forêt,\
-> > comme l'envie me prend.\
-> > Chassant la tradition,\
-> > idée fondamentale.
-
-_GabspartTraduitGaboueWindoSurgit
-> > Jusqu'à ce qu'un malfrat\
-> > surgit en guet-apens!\
-> > L'horreure encadrée,\
-> > vitreuse et de métal!
-
-_GabspartTraduitGabouePeutPasPasser
-> > Ne pouvant passer ni,\
-> > par dessus, par dessous.\
-> > Comme dans le proverbe,\
-> > Je pris donc le côté.
-
-_GabspartFautPatienter
-> Ah mais il faut un peu de patience avec le\
-> Gaboué!
-
-_GabspartAOublieQueProtagonisteSuck
-> Ah oui désolé, j'avais oublié un instant\
-> votre imbertitude.
-
-_GabspartTristeMaisDoitContinuer
-> La Barbe de l'âme voyons donc!\
-> Vous n'êtes que des philistins.\
-> \
-> Enfin bon, donc il a continué ainsi:
-
-_GabspartTraduitGaboueOracleSurgit
-> > Poursuivant mon chemin,\
-> > j'ouïe un marabout.\
-> > Décret prophétique\
-> > du besoin exploité!
-
-_GabspartTraduitGaboueTroisiemePeripetie
-> > Pourchassé, apeuré\
-> > je me trouvai ainsi.\
-> > Que devant moi jaillit,\
-> > Donc ainsi présenté:
-
-_GabspartTraduitGaboueDetahSurgit
-> > Le renseignement qui,\
-> > servant de point d'appui.\
-> > Réceptacle de l'esprit,\
-> > Le susnommé DETAH.
-
-_GabspartTraduitGabouePeutPasPasserCote
-> > Ne pouvant passer ni,\
-> > par dessus, par dessous.\
-> > Et ne pouvant passer\
-> > pas même de côté.
-
-_GabspartTraduitGabouePerdu
-> > Et alors que malheur,\
-> > ma douce, mon bambou.\
-> > Elle me fut dérobée,\
-> > outreusement volée.
-
-_GabspartExpliqueQuete
-> Voila! Et il va nous laisser passer si on\
-> accepte de l'aider à la retrouver.
-
-_GabspartCestUnBaton
-> Non c'est pas pareil, c'est juste un baton\
-> ça.
-
-_GabspartTuEsSurBonneIdee
-> Attends, tu es sûr que c'est une bonne idée\
-> de -
-
-_GabspartFautEpicerPromenadeForet
-> C'est important d'épicer un peu les\
-> promenades dans la forêt!
-
-_GabspartFantomeTraumatisant
-> Non mais tu t'imagines le traumatisme!\
-> Son père est mort et enterré, et paf un\
-> matin un fantôme se pointe pour lui\
-> demander s'il veut bruncher?
-
-_GabspartOminousPasGrave
-> Ah oui c'est vrai quand même, mais je suis\
-> sûr que ce n'est pas grave.
-
-_GabspartSaitLire
-> Oooh, je pourrais te lire des passages si\
-> tu veux!
-
-_GabspartAutrePassage
-> Oh attends, il y a un autre passage que je\
-> veux lire!
-
-_GabspartDensificationDetah
-> Ces jours-ci, on arrête pas la\
-> densification du Detah tu sais.
-
-_GabspartOffusqueCossin
-> Oui Gaboué!\
-> Voir que t'insinues que Gaboué et cette...\
-> chose sont pareils.
-
-_GabspartResponsabilite
-> Ah non mais tu prends les décisions hein,\
-> tu as toute la responsabilité sur les\
-> épaules.
-
-_GabspartMetsPasGaboueSituation
-> Ah mais mets-le pas dans une posture de\
-> même!
-
-_GabspartSiTenteGaboue
-> Bon, si ça lui tente.\
-> Donc il dit:
-
-_GabspartPasFierDuMeurtre
-> En tout cas je pense qu'on a maintenant\
-> confirmé que vous êtes du même calibre.\
-> Pour quelqu'un qui parlait d'être un\
-> Protagoniste...
-
-_GabspartDesillusionProta
-> Mmmmmmmmh. Je suis sûr que ça va bien finir\
-> comme manière de voir les choses.
-
-_GabspartPartirRemarque
-> On devrait partir avant que quelqu'un\
-> remarque ce qu'on vient de faire.
-
-_GabspartCouverColere
-> Surtout que couver de la colère ça peut\
-> être dangereux des fois...
-
-_GabspartBalthathigBrun
-> C'est Balthathig!\
-> J'aurais cru qu'il avait la tronche\
-> suffisament Brune pour que tu le réalises.
-
-_GabspartChandailPers
-> Je ne pense pas que tu as convaincu\
-> Personne Véritable de grand chose là...
-
-_GabspartCanneLevitation
-> Je pense que tu surestimes grandement la\
-> taille du Monde.\
-> \
-> Le M majuscule c'est pour aider l'ego.
-
-_GabspartExpliqueSainteDoree
-> C'est normal ça, c'est une Sainte Dorée\
-> tirée d'un autre plan d'existence adjacent\
-> au Brun. Ça fait partie du processus\
-> d'enchantement de Balthathig...
-
-_GabspartBouclierVert
-> Donnes-y une chance, c'est le même matériau\
-> que mon armure! C'est une roche volcanique\
-> légère super résiliente!
-
-_GabspartVaPasPlusProtegerVert
-> Écoutes, moi je fais juste te relayer\
-> l'info que je connais. Pas obligé de faire\
-> une montée de lait chaque fois que\
-> l'Univers décide de faire autrement...
-
-_GabspartDefendEnchant
-> En fait si tu voulais faire tes propres\
-> enchantements c'est assez bon comme\
-> sélection.
-
-_GabspartSiTuBrun
-> Pas vraiment, mais mettons que tu venais\
-> du Brun, là tu pourrais!
-
-_GabspartPasContent
-> PasContent
-
-_GabspartWwwelchior
-> Wwwelchior.
-
-_GabspartHeyLeProtagoniste
-> Hey t'as trouvé le Protagoniste!
-
-_GabspartAh
-> Ah!
-
-_GabspartOuEstBalthathig
-> Il est où Balthathig?
-
-_GabspartFuckBalthathig
-> Bon, on l'attendra pas alors.
-
-_GabspartCaVaPersonneVeritable
-> Ça va Personne Véritable?
-
-_GabspartOhNon
-> Oh non.
-
-_GabspartNonJeRefuse
-> Non non non, je refuse!
-
-_GabspartPasLeMonopole
-> Non non, c'est bon, j'ai pas le monopole.
-
-_GabspartHuuh
-> Huuuuuuh...
-
-_GabspartDoncIlDit
-> Donc il dit:
-
-_GabspartPasMalSurLHeure
-> Pas mal sûr qu'il est l'heure.
-
-_GabspartAEcouteGaboueLui
-> Il me semble que Gaboué a été très clair.
-
-_GabspartGaboue1
-> Gaboué!
-
-_GabspartCriDeGuerre
-> CriDeGuerre
-
-_GabspartCertes
-> Certes...
-
-_GabspartCetaitNotreCombatCestCa
-> C'était \{notre\} combat c'est ça?
-
-_GabspartVaTraduire
-> Oui parfait, donc il dit:
-
-_GabspartGggaboue6
-> G-g-g-aboué?
-
-_GabspartGaboueDot
-> Gaboué.
-
-_GabspartEtDoncOnContinue
-> Oui merci, et il n'avait pas terminé:
-
-_GabspartSaufsSiVivants
-> Sauf s'ils sonts vivants.
-
-_GabspartToiLeNonGeologue
-> C'est toi le non-géologue.
-
-_GabspartPresumesSante
-> T'en présumes des choses sur sa santé...
-
-_GabspartDommageManque
-> Dommage, tu ne sais pas ce que tu manques.
-
-_GabspartVergiliusVariaaaaaaaaaaaaaaaaaaa
-> \S[3]Arma virumque cano, Troiae qui primus ab oris\
-> Italiam, fato profugus, Laviniaque venit litora,\
-> multum ille et terris iactatus et alto vi superum\
-> saevae memorem Iunonis ob iram; 5multa quoque et\
-> bello passus, dum conderet urbem, inferretque\
-> deos Latio, genus unde Latinum, Albanique patres,\
-> atque altae moenia Romae.
-
-_GabspartGeliusVariaaaaaaaaaaaaaaaaaaa
-> \S[2]Exemplum ex Auli Gelli librum primum, capitulum 9\
-> \
-> Is autem qui tacebat quae dicebantur ab aliis\
-> audiebat, neque percontari, si parum\
-> intellexerat, commentari quae audierat fas erat;\
-> sed non minus quisquam tacuit quam biennium: hi\
-> prorsus appellabantur intra tempus tacendi\
-> audiendique ἀκουστικοί. Ast ubi res didicerant\
-> rerum omnium difficillimas, tacere audireque,\
-> atque esse iam coeperant silentio eruditi cui\
-> erat nomen ἐχεμυθία, tum verba facere et\
-> quaerere, quaeque audissent scribere, et quae\
-> ipsi opinarentur expromere potestas erat; [6] hi\
-> dicebantur in eo tempore μαθηματικοί, ab his\
-> scilicet artibus quas iam discere atque meditari\
-> inceptaverant: quoniam geometriam, gnomonicam,\
-> musicam ceterasque item disciplinas altiores\
-> μαθήματα veteres Graeci appellabant; vulgus\
-> autem, quos gentilicio vocabulo “Chaldaeos”\
-> dicere oportet, “mathematicos” dicit.
-
-_GabspartCestBeau
-> C'est beau, hein?
-
-_GabspartCestBon
-> C'est bon, c'est bon.
-
-_GabspartPasRapport
-> Hein? Je vois pas le rapport.
-
-_GabspartSassLettres
-> Oui et tu en entends des lettres, toi?
-
-_GabspartBonBonk
-> C'était un bon BONK tout de même.
-
-_GabspartCaVaBienAller
-> Je suis sûr que tu vas bien aller!
-
-_GabspartPouletsPasCommeCa
-> Mettons que, typiquement, les poulets ça\
-> se comporte pas comme ça.
-
-_GabspartWindoAUnModusOperandi
-> Ça commence comme ça, mais le Windô a tout\
-> un modus opérandi! Au début ça va bien...
-
-_GabspartDonnesYUneSeconde
-> Donnes-y une seconde...
-
-_GabspartVoilaCaCommence
-> Et voilà. Ça commence.
-
-_GabspartSeSentGenereux
-> Bon, par contre mettons qu'on se tape pas\
-> de faire tout le tour du monde pour un\
-> petit lit?
-
-_GabspartTuVeuxPasLeSavoir
-> Non mais tu veux même pas le savoir, ça te\
-> mettrais juste en colère...
-
-_GabspartToujoursOption
-> C'est presque toujours une option, hein.
-
-_GabspartSelonLegende
-> Selon la légende...
-
-_GabspartSelonRepoGnagnagna
-> ... du Repositoire des Textes Gagnagna.\
-> \
-> Selon la légende, ce serait de l'autre côté\
-> de la Montagne qui entoure cette vallée.
-
-_GabspartTraduitGabouePingouin
-> > Lorsque jadis j'errais,\
-> > en quête de savoir.\
-> > Apprenti vorace,\
-> > du sage Pingouin.
-
-_GabspartTraduitGaboueScriptouilles
-> > Je ne su m'expliquer,\
-> > Jaillissent tabouéerre!\
-> > Préceptes profèrent,\
-> > toutes les Scriptouilles!
-
-_GabspartFautFaireAttentionAuxIncantations
-> Les Scriptouilles elles-mêmes, non.\
-> Mais les mots qu'elles incantent...\
-> Je m'y méfierais.
-
-_GabspartTouchePipiNeuf
-> Ça va aller, un p'tit Touche-Pipi et ce\
-> sera ok!
-
-_GabspartJeanJacquesMorts
-> Peut-être que c'est des vivants?
-
-_GabspartFouillerCabane
-> Mettons qu'on oublie pas de fouiller leur\
-> cabane par contre?
-
-_GabspartEssayeMettreDansTaPoche
-> Est-ce que tu as essayé de la mettre dans\
-> ta poche?\
-> \
-> Des fois c'est surprenant!
-
-_GabspartQuestionRhetoriqueHermite
-> Oh j'espère que c'est rhétorique comme\
-> question, Personne Véritable est un peu\
-> hermite vous savez.
-
-_GabspartQuestionRhetoriqueHermite2
-> T'étais au courant que le pont est cassé\
-> avant d'embarquer dans ton aventure\
-> cosmique?
-
-_GabspartWhatIfLaDescriptionEtaitLatine
-> On sait jamais hein, si ça avait été du\
-> latin...
-
-_GabspartCaFaitChangementConnaitQQun
-> \}Ça fait vraiment changement de nos autres rencontres,\
-> c'est vraiment inusité qu'il connait quelqu'un...\{
-
-_GabspartConnaitLeMotGeologue
-> Oui je confirme que c'est pas trop pire à\
-> se rappeler.
-
-_GabspartCaillouMouvant
-> Tu veux la vraie réponse ou la réponse\
-> diplomatique?
-
-_GabspartNonProtagonismeFaitRien
-> C'est un classique en fait. Ici Cossin\
-> n'est pas Protagoniste, alors il ne\
-> faudrait pas qu'il s'occupe de ses\
-> problèmes lui-même.
-
-_GabspartTrouveDemandeMotivationTardive
-> C'est *maintenant* que tu demandes à avoir\
-> des motivations?
-
-_GabspartSassMontagne
-> D'ailleurs on n'est pas monté très haut...\
-> Faudrait qu'on se reparle de la définition\
-> de montagne après qu'on ait terminé.
-
-_GabspartPasBesoinRepoPourTeDireBlonde
-> J'ai même pas besoin de consulter le\
-> repositoire pour te dire que ça ressemble à\
-> la Blonde de Cossin Lette..
-
-_GabspartPedantContinuite1
-> J'veux pas trop faire mon pédant...\
-> \
-> Mais c'est pas un peu un bris de\
-> continuité?
-
-_GabspartPedantContinuite2
-> Admettons que je connais de source sûre\
-> qu'Excalibarre devrait plutôt être dans\
-> la possession d'une sphère bleue pas trop\
-> belle?
-
-_GabspartPedantContinuite3
-> Non non, ça m'est juste passé par la tête\
-> comme ça.\
-> Pas que je te recommande de rapporter\
-> Excalibarre à ladite sphère bleue.
-
-_GabspartPedantContinuite4
-> Parce que bon, elle peut même pas s'en\
-> servir... C'est difficile utiliser une épée\
-> quand on n'a pas de bras.
-
-_GabspartTraduitGaboueDefenseProtagoniste1
-> Quel immonde acte, cet excès de rage...\
-> Votre pauvre mari, injustement tué...\
-> Mais la violence de ses décisions,\
-> ont précipité sa malheureuse fin!
-
-_GabspartTraduitGaboueDefenseProtagoniste2
-> Observez la Centralité de cet homme:\
-> Bien évidemment c'est un Protagoniste!\
-> Par sa nature même, ces comportements\
-> l'oblige à répondre violence par violence!
-
-_GabspartTaper
-> Ahha!
-
-_GabspartNonNonTuVasAvoirPeur
-> Non? Allons allons, il serait où le plaisir\
-> si tu le savais?
-
-_GabspartSouffreManquePatience
-> Il souffre juste un peu de manque de\
-> patience.
-
-_GabspartVaAvoirMalALaTeteRoches1
-> Au plus vite. Pas certain que ma tête va\
-> survivre si on reste une minute de plus\
-> avec les roches finalement...\
-> Ça vient vite les mals de têtes.
-
-_GabspartVaAvoirMalALaTeteRoches2
-> Ça sonnait drôle à l'écrit dans les\
-> Textes Sacrés, mais une fois que tu le\
-> vis, c'est pas pareil.
-
-_GabspartVaYRevenir
-> Je te donnerais une réponse, mais je pense\
-> plutôt que je vais y revenir.
-
-_GabspartVoitProtagonisteFaireDuDeni
-> Ma réponse va changer quelque chose? Si je\
-> dis "non il faut agir" tu vas me faire du\
-> gros déni?
-
-_GabspartPuzzleBonmatinPasDown1
-> Merde.
-
-_GabspartPuzzleBonmatinPasDown2
-> Regardes par terre!\
-> \
-> C'est pire que le Temple du Bonjour...
-
-_GabspartPuzzleBonmatinPasDown3
-> Écoutes, je veux pas trop ruiner ton...\
-> expérience, mais si je vais me retirer de\
-> la situation, c'est bon? T'as pas besoin de\
-> mon aide pour ce qui suit de toute façon.
-
-_GabspartPuzzleBonmatinPasDown4
-> Et SI tu as besoin de mon aide, vient me\
-> voir, je vais te régler ça.
-
-_GabspartRentrePasLa
-> Une seconde! Moi je rentre pas là.
-
-_GabspartLePlaisirAEte
-> C'est fini? Tout le plaisir a été et là on\
-> peut repartir?
-
-_GabspartPresentePartitionMatinale
-> Ah une partition! Exactement ce qui nous\
-> manquait c'est sûr!
-
-_GabspartOffrePartitionMatinale
-> Bon! Maintenant que tu vois la vérité, je\
-> peux t'offrir ceci:
-
-_GabspartOffrePartitionMatinale2
-> Va niaisoter ça sur l'orgue en haut, tu vas\
-> voir.\
-> Mais, ça reste entre nous, hein?
-
-_GabspartExpliqueQuEchangerCestUnPlanDeMarde
-> Déjà. Et aussi ça ne marchera pas. T'as pas\
-> entendu? Il veut toutes les salutations.\
-> Ça inclut Bon Matin.
-
-_GabspartPlusQueVocabulaireDansBonjour
-> Il a parlé du Temps, alors je m'imagine\
-> qu'il y a plus que du vocabulaire de scellé\
-> dans les Salutations...
-
-_GabspartCeciEstUneEmotion
-> Dans ce cas-ci ce serait plus une émotion\
-> je pense.
-
-_GabspartIntroShackJesus1
-> Tuht-tuht!\
-> \
-> Faut pas spoiler Personne Véritable.
-
-_GabspartIntroShackJesus2
-> Dans ce cas-ci pas tant. Enfin, pas\
-> directement.
-
-_GabspartNonMaisAttendsUnPeu
-> Non mais attend un peu...
-
-_GabspartMaisLeDrama
-> Que veux-tu, ça fait plus dramatique qu'on\
-> ait rien dit.\
-> Et puis en plus ça aurait rien changé.\
-> Les Textes Sacrés ça niaise pas.
-
 ### Jacques
+
+_JacquesRestePersonne
+> Hein? Quoi? Y reste personne!?
+
+_JacquesOhJoyeuxCompagnons
+> Oh joyeux compagnons!
+
+_JacquesMaisVousEtes
+> Mais vous êtes...
 
 _JacquesJeanTuVoisTuCa
 > Jean tu vois-tu ça?\
@@ -5667,42 +5748,6 @@ _JacquesTuMeNiaises
 _JacquesCesChezNous
 > C'est chez nous ça! Vous pensez que vous\
 > allez où comme ça?
-
-_JacquesMaisVousEtes
-> Mais vous êtes...
-
-_JacquesAllaitDevenirBanditGrandChemin
-> Nooooooon Jeaaaaaaan!\
-> On allait devenir des bandits de\
-> grand chemin!
-
-_JacquesMamanJetaisMechant
-> Dit... à ma maman...\
-> \
-> \
-> Que j'étais méchaaant...
-
-_JacquesOhJoyeuxCompagnons
-> Oh joyeux compagnons!
-
-_JacquesRestePersonne
-> Hein? Quoi? Y reste personne!?
-
-_JacquesSeulRegret
-> Mon seul regret...\
-> \
-> Est d'avoir été floué par ce\
-> Chevalier Noir!
-
-_JacquesNonJeanMechants
-> Jean! Tu peux pas mourrir encore, on était\
-> sensé être devenus les Méchants!
-
-_JacquesAssurerChevalierNoir
-> Impossible! Pourtant on s'était fait\
-> assurer par le Chevalier Noir que...\
-> \
-> Oh.
 
 _JacquesVisite
 > Jean! Ouvres les yeux! On a de la visite!
@@ -5726,10 +5771,41 @@ _JacquesChevalierNoirSombresDesseins
 _JacquesVousAllezPerir
 > Ça change rien! Vous allez périr!
 
+_JacquesAllaitDevenirBanditGrandChemin
+> Nooooooon Jeaaaaaaan!\
+> On allait devenir des bandits de\
+> grand chemin!
+
+_JacquesMamanJetaisMechant
+> Dit... à ma maman...\
+> \
+> \
+> Que j'étais méchaaant...
+
 _JacquesDesavantageNumerique
 > T'inquiètes je gère!
 
+_JacquesSeulRegret
+> Mon seul regret...\
+> \
+> Est d'avoir été floué par ce\
+> Chevalier Noir!
+
+_JacquesNonJeanMechants
+> Jean! Tu peux pas mourrir encore, on était\
+> sensé être devenus les Méchants!
+
+_JacquesAssurerChevalierNoir
+> Impossible! Pourtant on s'était fait\
+> assurer par le Chevalier Noir que...\
+> \
+> Oh.
+
 ### Jean
+
+_JeanRestePersonne
+> J'te l'avais dit qu'y fallait pas ralentir\
+> sur l'embauche!
 
 _JeanAirCaracteristique
 > Huh. Vous avez comme un air\
@@ -5743,27 +5819,6 @@ _JeanCouleurJusDeBetterave
 > Non mais si y'a rien ça donne pas grand\
 > chose de lui expliquer la couleur du jus de\
 > betterave...
-
-_JeanJaaaacques
-> Jaaaaaacques!\
-> On allait devenir des bandits de grands\
-> chemin!
-
-_JeanRestePersonne
-> J'te l'avais dit qu'y fallait pas ralentir\
-> sur l'embauche!
-
-_JeanNonJacquesPasEncore
-> Non Jacques! Pas encore!
-
-_JeanFinalementReve
-> On avait finalement réalisé notre rêve de\
-> devenir bandits de grand chemin! De devenir\
-> les Méchants!
-
-_JeanPeripetie
-> Je... je crois qu'on est seulement une\
-> péripétie...
 
 _JeanBosquetTantPasTropProche
 > \}Non mais le bosquet est un endroit public, je m'étais dis que tant qu'ils\
@@ -5781,870 +5836,26 @@ _JeanMamanSauve
 > pas mort et que sa maman nous a retrouvé\
 > et nous a sauvé!
 
+_JeanJaaaacques
+> Jaaaaaacques!\
+> On allait devenir des bandits de grands\
+> chemin!
+
 _JeanDesavantageNumerique
 > Huuuh\
 > Jacques on est en désavantage numérique!
 
-### Forgeron
-
-_ForgeronMerciRats
-> Oh milles merci de m'avoir débarassé de ces\
-> rats!\
-> Un trenchcat? Vous me dites n'importe quoi.
-
-_ForgeronProtagonisteFaible
-> Ah oui si vous êtes mal en point comme ça\
-> après vous être mesuré à des rats...\
-> J'ai tu l'air d'un médecin? Vous allez\
-> devoir faire plus attention.
-
-_ForgeronDemandeService
-> Vous êtes un Protagoniste, oui?\
-> J'ai une offre pour vous - Je vous refile\
-> cette dague, et en échange vous me rendez\
-> un service.
-
-_ForgeronYaDesRats
-> Y'a des rats qui sont en train de manger\
-> mes patates, c'est horrible!\
-> Comme je ne suis pas un Protagoniste je ne\
-> peux pas vraiment aller le faire moi-même.
-
-_ForgeronBonjourNoHelp
-> Le Temple du Bonjour?\
-> Oui vous avez bien la gueule. Mais je peux\
-> pas faire grand chose pour vous.
-
-_ForgeronAPerduTrenchcat
-> Ah si vous voyez un chat rôder, je n'ai\
-> pas encore revu mon chat aujourd'hui!\
-> Au moins vous vous êtes occupé de mon\
-> problème de rats...
-
-_ForgeronBeauChat
-> Vous avez vu mon beau chat?\
-> Y'a fait fuir tout les rats!
-
-_ForgeronDautresRats
-> Vous avez pas d'autres rats à fouetter?
-
-_ForgeronEnBasLesRats
-> Hey ho! EN BAS les rats!
-
-_ForgeronMarteaux
-> Heille c'est mes marteaux ça!
-
-_ForgeronCommune
-> Heille c'est pas une commune icitte!
-
-### Msieur
-
-_MsieurPasContentFrette
-> Ah criss vous avez fais rentrer le frette!
-
-_MsieurPasContentPastouche
-> Pas touche!
-
-### Enfant
-
-_EnfantPasParlerEtrangers
-> Ma maman m'a dit de pas parler aux\
-> étrangers!
-
-_EnfantTeVoisPas
-> TeVoisPas
-
-_EnfantTeVois
-> Hey j'te vois!
-
-### Mineur
-
-_MineurHey
-> Hey.\
-> Vous avez peut-être vu, mais techniquement\
-> c'est une mine de fer icitte.
-
-_MineurPlusDeJob
-> Mais j'n'ai plus vraiment de job ces\
-> temps-ci.\
-> Depuis l'éboulement en bas j'n'ai plus\
-> accès à ma pioche.
-
-_MineurAhUnePelle
-> Ah une pelle? Non ça c'est pour les\
-> faibles, moi j'utilise mes mains c'est bien\
-> plus efficace.
-
-_MineurAhOuiCriss
-> Ah oui criss vous avez tuez Jean-Jacques?!\
-> Quelle bande de taouins...\
-> Y'ont pas très bien pris le fait qu'on a\
-> perdu notre seule pioche.
-
-_MineurEntreVousEtMoi
-> Pis entre vous et moi, c'est plus un petit\
-> passage montagneux qu'un grand chemin.
-
-_MineurSiSeulementUnePioche
-> Si seulement\|\
-> ...\|\
-> J'avais une pioche!
-
-_MineurAhSiSeulement
-> Aaaaaah si seulement j'avais une pioche...
-
-_MineurVousDite
-> Vous dites?
-
-_MineurPetiteGene
-> Une petite gêne quand même!
-
-### Premiere
-
-_PremiereBruitEnHaut
-> Ah c'est curieux, pourquoi y'a du bruit en\
-> haut?
-
-_PremiereQueFouttezVous
-> Mais qu'est-ce que vous pensez que vous\
-> faites-là!
-
-_PremierePauvresFous
-> Pauvres fous! Si vous prenez le Bonjour,\
-> des choses terribles se produiront!
-
-_PremiereToutLesMoines
-> Non mais pas littéralement!\
-> Je veux tout les moines!
-
-_PremiereSontOuLesAutres
-> Ils sont où les autres?\
-> \
-> Non laissez faire, je sais que c'est demain\
-> qu'on ouvre.
-
-_PremierePasIntimide
-> Ha. Si vous pensez que ça m'intimide...
-
-_PremiereUnMoine
-> Un moine! Je veux un moine!
-
-_PremiereVousPete
-> On vous pète!
-
-_PremiereMemePasLeTempsDeMurPorteur
-> Nooooooooon!\
-> Je n'ai même pas eu le temps de devenir un\
-> mur porteur!
-
-### Gaboue
-
-_GaboueDotDotDot
-> Gaboué...
-
-_GaboueEnAMarre
-> Gaboué.
-
-_GaboueGaboue111
-> Gaboué!
-
-_GaboueGaboue1
-> Gaboué!
-
-_GaboueGaboue1ForRealThisTimeProd2
-> Gaboué!
-
-_GaboueGrosGaboue1
-> GABOUÉ!
-
-_GaboueGaboue6
-> Gaboué:
-
-_GaboueGaboue1Again
-> Gaboué!
-
-_Gaboue61
-> Gaboué?!
-
-### Oracle
-
-_OracleDotDotDotNon
-> ...\
-> \
-> Non.
-
-_OracleTraversezPont
-> Traversez le pont, vous allez voir ça va\
-> pas prendre long.
-
-_OracleCompteCartes
-> Donc on est cinq? Onze moins cinq ça fait\
-> six.\
-> \
-> Donc prenez chacuns ces six cartes.
-
-_OracleCarteDePlus
-> Et je vous donne aussi à chacun cette\
-> autre carte de plus.
-
-_OracleIlEtaitUneFois
-> On pourrait dire. Tenez je vais commencer\
-> pour que vous voyez comment ça fonctionne.\
-> \
-> Donc voyez, Il Était Une Fois...
-
-_OraclePatauge
-> Huh?\
-> \
-> Mmmh des fois... Des fois le... attendez...
-
-_OracleIlEtaitUneFois2
-> Non non, ça s'en vient! Vous m'arrêtez à\
-> tout bout de champ!\
-> Oui donc, Il Était Une Fois un\
-> protagoniste...
-
-_OracleAffame
-> Affamé! Tiens vous voyez, y'a une mise en\
-> situation et tout...
-
-_OracleProtagonistesPasPacifiques
-> Oui, ça a du sens... Les Protagonistes\
-> perdus c'est pas très pacifique d'habitude.
-
-_OraclePreditQuiproquos
-> Non mais, si vous voulez pas, vous voulez\
-> pas.\
-> Je vous prédis de nombreux quiproquos, avec\
-> toute cette... aggression qui vous habite.
-
-_OracleEau
-> Donc vous tenter d'abord de me trucider et\
-> puis maintenant vous venez insulter ma\
-> demeure?\
-> Vous en avez du culot.
-
-_OraclePoserVosQuestions
-> Enfin bon, vous pouvez venir me poser vos\
-> questions je suppose.
-
-_OracleSiVousVoulezPas
-> Après, si vous voulez pas, vous voulez pas.
-
-_OracleBon
-> Bon.
-
-_OracleUnProtagoniste
-> Un Protagoniste!
-
-_OracleCeSeraPlusCourt
-> Ah c'est pas grave, ça sera plus court.
-
-_OraclePigeUneCarte
-> Ah, je pige une carte donc...
-
-_OracleFinfinaud
-> Si vous êtes pour faire le finfinaud, y'a\
-> la porte drette derrière vous.\
-> Moi je vous donne la chance de croire que\
-> vous avez le libre arbitre.
-
-_OracleSavoirIntro
-> Alors qu'est-ce que vous voudriez \Shakesavoir?
-
-_OraclePasVoyante
-> Vous allumez pas si vite, huh?\
-> \
-> Je suis oracle, pas voyante.\
-> Je sais des choses, c'est tout.
-
-_OraclePasPedante
-> Assez de pédanterie.\
-> Je comprends que ce que vous avez besoin\
-> c'est de la guidance.
-
-_OraclePriereOuAller
-> Oh Choses-Dont-Il-Faut-Que-Je-Saches,\
-> entendez ma prière!\
-> \
-> Zwip zwip! Doubibi doubibi!
-
-_OracleVoitVoit
-> Je vois... je vois...
-
-_OracleQuestionRepondue
-> Bon ça répond à votre question?
-
-_OracleDoubibi
-> Doubibi
-
-_OracleZwip
-> Zwip
-
-_OracleTwado
-> Twado
-
-_OracleLaPorte
-> Je vous avais averti.
-
-### Detaaa
-
-_Detaaah
-> DETAAAAAAAAAAAH!
-
-### Deta
-
-_Detah
-> h
-
-### Poulet
-
-_PouletMettonsTuViensReverifier
-> Mettons, tu reviens vérifier si je suis\
-> pas un changeur de forme, juste pour voir.
-
-_PouletEnGarde
-> En garde!
-
-_PouletCestSeulementLaTuRealises
-> C'est seulement là là que tu le réalises?
-
-### Fantome
-
-_FantomeMonReposEternel
-> \ShakeMais qu'est-ce que vous foutez ici!\
-> Mon repos éternel!\
-> Il éternel plus très fort là.
-
-_FantomePasConvaincu
-> \ShakeC'est pas très convaincant là, vous croisez\
-> mon fils qui pêche pas bien, puis vous vous\
-> pointez à ma tombe autour de mon cercueil?
-
-_FantomeVousPouvezAvoirCannePeche
-> \ShakeBon, de toute façon elle ne me sert plus.\
-> Vous pouvez bien prendre ma canne à pêche.
-
-_FantomeGaboue
-> \ShakeGaboué.
-
-_FantomeSamediProchain
-> \ShakeSamedi prochain, c'est un bon moment?
-
-_FantomeNon
-> \ShakeNon!
-
-### Vieille
-
-_VieilleVisiteurs
-> \shake<0.1,0.1,0.5,0.5>Bonsoir\
-> C'est rare que j'ai des visiteurs!
-
-_VieilleArthrite
-> \shake<0.1,0.1,0.5,0.5>Hein? Non non, mon arthrite va très bien,\
-> merci.
-
-_VieilleEvitageContenu
-> \shake<0.1,0.1,0.5,0.5>Ça sent l'évitage de contenu un peu, vous\
-> trouvez pas?
-
-_VieilleFenetresOracleParDessous
-> \shake<0.1,0.1,0.5,0.5>Des fois les fenêtres et les oracles on\
-> peut vraiment passer par dessous.
-
-_VieilleGaboueDejaVerifie
-> \shake<0.1,0.1,0.5,0.5>Non. Gaboué l'a déjà vérifié.\
-> Il n'y a plus de génie ici.
-
-_VieilleFaireAttentionGenie
-> \shake<0.1,0.1,0.5,0.5>Il faut faire attention avec les génies.\
-> Des fois on demande un peu de paix et on\
-> devient un hermite...
-
-_VieilleImmole
-> \shake<0.1,0.1,0.5,0.5>Vous allez rallumer la lampe ou je dois\
-> vous immoler?
-
-### Dark
-
-_DarkGeorginaSiPresDuBut
-> J'étais si près du but! Mais drame!\
-> Ils trouvèrent la finalité que j'eusse\
-> caché, et me terrassèrent d'une grande\
-> déclaration grandiloquente!
-
-_DarkGeorginaNeMeDerangezPlus
-> Non ne me dérangez pas plus! Je suis occupé\
-> à être éternellement salé!
-
-_DarkGeorginaAuraSaVengeance
-> Vous aussi? Nooooon!\
-> Je refuuuuuuse!\
-> Dark Georgina aura sa vengeance!
-
-_DarkGeorginaFinsDePhrases
-> Non...\
-> Pas encore...\
-> Mes...\
-> Mes fins...!
-
-_DarkGeorginaEstEternel
-> Ha! Vous pouvez courrir mais je suis\
-> éternel!
-
-_DarkGeorginaAEuSaVengeance
-> Hahahaha!\
-> J'ai eu ma vengeance!\
-> Huh? Vous tuer? Non non, vous pouvez partir\
-> maintenant.
-
-_DarkGeorginaRaaaaaaa
-> Raaaaaaa!
-
-_DarkGeorginaJeSuisEternel
-> Je suis éterneeeeel!
-
-_DarkGeorginaHaha
-> GeorginaHaha
-
-_DarkGeorginaGniaha
-> Gniaha!
-
-### Informateur
-
-_InformateurPontCasse2
-> Huh? Je sais pas moi je suis juste là pour\
-> disséminer l'information.
-
-_InformateurPontCasse1
-> Comme vous pouvez voir, le pont est cassé.
-
-### Marchand
-
-_MarchandFacheuxCassure
-> C'est très facheux cette cassure.\
-> J'étais sensé apporter ces belles\
-> victuailles au Village l'autre côté de la\
-> Forêt, mais là je suis complètement coincé!
-
-_MarchandRacheter
-> Ah mais seriez-vous prêt à me les racheter?\
-> Je vous ferai un bon prix!\
-> Seulement 10 pièces d'or pour le lot de 5!
-
-_MarchandEpingleCheveux
-> Une épingle à cheveux!? Sûrement, vous êtes\
-> un farceur!\
-> Vos cheveux ne sont même pas long!
-
-_MarchandOffreSerieuse
-> Revenez me voir lorsque vous aurez une\
-> offre plus sérieuse!
-
-_MarchandMerciDonation
-> Merci merci pour votre généreuse donation!
-
-_MarchandDiantre
-> Diantre! Que vais-je faire!?
-
-_MarchandBonsoirBonsoirAider
-> Bonsoir bonsoir! Comment puis-je vous\
-> aider?
-
-_MarchandSeulementPourFaireBeau
-> Mmmh? Non, c'est seulement pour faire beau.
-
-_MarchandVousAllezAcheter
-> Donc vous allez acheter quelque chose?
-
-_MarchandYaha
-> Ya-ha!
-
-### Fermiere
-
-_FermiereRespireBien2
-> Je ne sais pas c'est quand la\
-> dernière fois que j'ai pu sentir autre\
-> chose que le poulet.
-
-_FermiereRemercieModerement
-> Je vous remercie modérément!\
-> Voici une broche qui a été dans ma famille\
-> depuis des générations!
-
-_FermiereFichuPoulet
-> Aaaaaaah!\
-> Ce fichu Monsieur Poulet!
-
-_FermiereAllergies
-> Avec ses... expérimentations, mes allergies\
-> n'arrêtent plus!\
-> \
-> Regardez cette fûmée Pouléienne!
-
-_FermiereAllergies2
-> Vous dites ça parce que vous êtes juste\
-> de passage! Mais ça sent comme ça à toutes\
-> les heures de la journée!
-
-_FermiereTuerGerard
-> Vous avez tué un pauvre homme désarmé!\
-> Mon Gérard! Vous allez payer!
-
-_FermiereAutodefense
-> De l'autodéfense complètement démesurée,\
-> oui!
-
-_FermiereOminous
-> C'est pas ce que je m'inquièterais le plus\
-> à votre place. Le garde est encore occupé\
-> avec le pont pour une raison qui m'échappe.\
-> Alors je prends les choses dans mes mains.
-
-_FermiereSuffit
-> Suffit! Ou je vous y mets aussi.\
-> \
-> J'aurai ma vengeance servie\
-> chaudement!
-
-_FermiereVengeance
-> Mais c'est insuffisant! Vous êtes un\
-> meurtrier et vous allez payer!
-
-_FermiereRespireBien
-> Haaa! On respire bien!
-
-_FermiereBonsoir
-> Bonsoir. Il fait beau, hein?
-
-_FermierePuParlerInventeur
-> Vous avez pu lui parler?
-
-_FermiereVousDites
-> Vous dites?
-
-_FermiereGerardNon
-> Gérard! Noooon!
-
-### Fillette
-
-_FilletteCossin
-> Chut! Faut pas trop faire de bruit, sinon\
-> le cossin bleu va me voir!
-
-_FilletteEnnui
-> Je m'ennuie!
-
-### Fermier
-
-_FermierPoulet1
-> Si on me parle une fois de plus de poulet,\
-> je vous jure je vais vous éplumer!\
-> \
-> Oh vous n'êtes pas mon épouse! Bonsoir!
-
-_FermierPoulet2
-> Non mais! Je vais pas tolérer qu'on me\
-> niaise comme ça!
-
-_FermierPouletRoti
-> Dites... à mon épouse... qu'en fait\
-> j'aimais l'odeur du poulet roti!
-
-_FermierBiere
-> Une bonne bière rafraîchissante après une\
-> longue journée ça calme bien les nerfs tout\
-> de même.
-
-_FermierLaissezMoi
-> ... Laissez moi.
-
-_FermierCaVousApprendra
-> Ha! Ça vous apprendra!
-
-_FermierSonPain
-> Hey ho, mon pain!
-
-_FermierSaPoele
-> Hey ho, mes outils de cuisine!
-
-_FermierPilerPieds
-> Je refuse de me laisser piler sur les pieds\
-> une seconde de plus, aaaaaah!
-
-_FermierFatigueLaisserTranquille
-> Haaa... Haaa... Je vais vous apprendre à\
-> laisser tranquille les gens!
-
-_FermierAuraJamaisDeRespect
-> Ouch... Je... Je n'aurai donc jamais de\
-> respect...
-
-### Balthathig
-
-_BalthathigForcementProta
-> Forcément.\
-> \
-> C'est plutôt normal en fait, sinon on\
-> aurait pris un autre Protagoniste.
-
-_BalthathigQuelquesMinutes
-> Vous devez seulement me donner quelques\
-> minutes encore, vous allez voir quand\
-> j'aurai terminé, j'aurai plein de babioles\
-> intéressantes pour vous!
-
-_BalthathigRevenezCadeaux
-> C'est bien vrai, quatre c'est un bon nombre\
-> arbitraire.\
-> Bon vous reviendrez me voir, j'aurai des\
-> cadeaux.
-
-_BalthathigChefDOeuvre
-> Regardez-moi ça mon nouveau chef-d'oeuvre!\
-> C'est utile et pas trop puissant!
-
-_BalthathigYVousManqueAcrobatics
-> Euuuh... Non mais si vous avez des talents\
-> d'Acrobatie, vous pourriez aller tellement\
-> loin je suis sûr!
-
-_BalthathigBottesSautillage
-> Pour amplifier encore plus le\
-> UIUI of Travel, des Bottes de Sautillage!
-
-_BalthathigManqueAcrobatieProd2
-> Discu-quoi? Nonon, vous allez voir, quand\
-> votre Acrobatie sera un peu plus haute,\
-> vous allez filer à gaucher et à droite du\
-> Monde!
-
-_BalthathigChandailPers
-> Le Chandail de Personnalité! Avec ça les\
-> gens vous traiteront un poil mieux!\
-> Imaginez les bons prix que les vendeurs\
-> vous feront!
-
-_BalthathigChandailPers2
-> Non non, la Personnalité c'est un talent!\
-> Et ce chandail fournit simplement un bonus\
-> à la personne qui le porte! Super pratique!
-
-_BalthathigUIUIOfFatigue
-> Ok ok, je sais que mes dernières inventions\
-> ne vous ont pas tout à fait convaincu,\
-> alors je vous présente le UIUI of Fatigue!
-
-_BalthathigUIUIOfFatigue2
-> Avec ça vous n'aurez plus jamais à devoir\
-> attendre plusieurs heures avant chaque\
-> combat! Votre fatigue sera toujours au\
-> maximum!
-
-_BalthathigUIUIOfFatigue3
-> Huuuuuh...\
-> \
-> Si vous le dites!
-
-_BalthathigCanneLevitation
-> Donc, ce prochain là vous allez l'adorer!\
-> Avec ça vous aller pouvoir aller n'importe\
-> où!\
-> La Canne de Lévitation!
-
-_BalthathigUIUIOfVitalite
-> Donc, j'ai l'heureux plésir de vous\
-> présenter le UIUI of Vitalité!\
-> À vous l'immortalité! Enfin, du moment\
-> que vous ne prenez pas de dégâts trop vite.
-
-_BalthathigOuiVoila
-> ...\
-> ...\
-> ...\
-> Oui voilà.
-
-_BalthathigUIUIOfFeu
-> Si jamais vous aviez une envie pressente\
-> d'immoler des gens! Même pas besoin d'y\
-> mettre vos points de magie!\
-> Le UIUI of Feu!
-
-_BalthathigUIUIOfFeu2
-> Rien du tout! Seulement qu'il faut donner\
-> un peu de temps pour que l'enchantement se\
-> recharge entre les usages!
-
-_BalthathigUIUIOfFeu3
-> Quelque chose comme une fois par combat je\
-> dirais.
-
-_BalthathigRobeDurete
-> La Robe de Dureté!\
-> Avec ça fini les problèmes de poid de votre\
-> inventaire!\
-> C'est comme si vous portiez une armure!
-
-_BalthathigDiademeLumiere
-> Le Diadème de Lumière!\
-> Vos amis n'auront plus jamais à vous\
-> demander d'augmenter le gamma!
-
-_BalthathigLanceLancement
-> L'arme qu'il vous manquait pour finalement\
-> pouvoir trucider ces maudits oiseaux!\
-> La Lance de Lancement!\
-> Une lance! Mais que vous pouvez lancer!
-
-_BalthathigLanceLancement2
-> Je suis certain que sans le titre vous\
-> n'auriez jamais eu l'idée de la lancer par\
-> contre!
-
-_BalthathigRevenez
-> Vous allez devoir revenir, j'ai encore\
-> besoin de quelques minutes...
-
-_BalthathigOhCestVous
-> Oh c'est vous!
-
-_BalthathigGameplay
-> Pour le gameplay, c'est évident!
-
-_BalthathigFameuxUIUIOfTravel
-> Mon fameux UIUI of Travel!
-
-_BalthathigLaissezMoiPasse
-> LaissezMoiPasse
-
-### Enchanteure
-
-_EnchanteureBonsoir
-> Bonsoir, que puis-je faire pour vous?
-
-### Inventeur
-
-_InventeurBonsoir
-> Bonsoir! Vous allez devoir m'excuser, je\
-> suis très occupé!\
-> \
-> Un poulet n'attend pas l'autre!
-
-_InventeurSentezNormal
-> Vous vous sentez normal?\
-> Parfait, parfait!
-
-_InventeurProtolixirDejaBu
-> Bon en fait je m'imagine que c'est du\
-> pareil au même... Comme vous avez déjà bu\
-> mon Protolixir, il est impératif que\
-> j'effectue quelques tests!
-
-_InventeurEndormi
-> Donc bougez pas trop, vous allez devoir\
-> être endormi...
-
-_InventeurRiche
-> Oui oui! C'est ma stratégie publicitaire\
-> voyez-vous! Tout les aventuriers du Monde\
-> seront complètement accros à mon produit!\
-> Je serai riche! Riiiiiche!
-
-_InventeurBuvezProtolixir
-> Seulement...\
-> Vous devez boire mon Protolixir!
-
-_InventeurVoisinePerdue
-> Raaaaaa... Elle n'a aucune idée de\
-> l'importance de mes recherches!\
-> \}C'est pas parce que tout ses rêves concernent des poulets que je vais\
-> ralentir...\{
-
-_InventeurNouvelleVersion
-> Je suis en train de concocter une nouvelle\
-> version de mon élixir! Si vous acceptez de\
-> le tester pour moi ça m'avancera d'au moins\
-> une journée dans mes recherches! Ou deux!
-
-_InventeurPause
-> Alors je pourrai faire une petite pause\
-> afin de satisfaire ma voisine!
-
-_InventeurOh
-> Oh.
-
-_InventeurProposition
-> Ah en fait j'ai une proposition!
-
-### Detah
-
-_DetahBoast
-> Hey ho! Si vous pensez que ça va changer\
-> quelque chose! Ma base est même ACID! Vous\
-> n'avez aucune chance!
-
-_DetahVaVousBriser
-> Suffit! Je vais vous briser!
-
-_DetahHehe
-> He he...
-
-### Bonjourette
-
-_BonjouretteBonsoir
-> Bonsoir!\
-> Oh que je m'ennuie de mon papa...\
-> Il fait partie du Temple du... aaaah...\
-> Vous savez le Temple près du Village?
-
-_BonjouretteAventurier
-> Vous ressemblez à un Aventurier!\
-> Si vous passez par là vous allez revenir me\
-> donner des nouvelles, oui?
-
-_BonjouretteMerciNouvelles
-> Oh? C'est drôlement spécifique a dire.\
-> Mais merci pour les nouvelles!
-
-_BonjouretteCaVa
-> Ça va messieurs?
-
-_BonjouretteHatePapa
-> Si vous le dites.\
-> J'ai tellement hâte de revoir mon papa!
-
-### Merebonjourette
-
-_MerebonjouretteBonsoir
-> Bonsoir. Ça aurait été bien de cogner avant\
-> de rentrer.\
-> Enfin, pauvre Bonjourette qui attend encore\
-> la prochaine visite de son père...
-
-_MerebonjouretteVousPensezFaireQuoi
-> Vous pensez faire quoi vous là?
-
-### Mrtheun
-
-_MrtheunHeille
-> Heille mon thé! Vous savez pas c'est quoi\
-> la vapeur?
-
-_MrtheunBonsoir
-> Bonsoir. Vraiment une belle soirée pour\
-> profiter de l'air! Y'a tellement de soleil,\
-> c'est comme si on était le dîner.
-
-### Mrthedeux
-
-_MrthedeuxBonsoir
-> Bonsoir.
-
-### Inconnu
-
-_InconnuSortez
-> Woh vous allez vraiment rentrer chez un\
-> inconnu comme ça!?
+_JeanNonJacquesPasEncore
+> Non Jacques! Pas encore!
+
+_JeanFinalementReve
+> On avait finalement réalisé notre rêve de\
+> devenir bandits de grand chemin! De devenir\
+> les Méchants!
+
+_JeanPeripetie
+> Je... je crois qu'on est seulement une\
+> péripétie...
 
 ### Tournoyeur
 
@@ -6698,354 +5909,26 @@ _PretresseDevraitDemanderOr
 > tout votre or, mais vous avez l'air d'en\
 > avoir plus besoin que moi...
 
-### Mmmtriste
-
-_MmmtristeBonsoir
-> Bonsoir.\
-> J'essaye de manger mon souper. Si vous\
-> voudriez me laisser tranquille ça\
-> m'arrangerais.
-
-### Mmetriste
-
-_MmetristePuces
-> Non mais vous avez pas besoin des puces...
-
-### Marin
-
-_MarinMouvementBosquet
-> Mmmh, c'est drôle. C'est comme s'il y avait\
-> du mouvement dans le bosquet de l'autre\
-> côté de la rivière.
-
-_MarinBosquetteur
-> Dans une autre vie j'étais bosquetteur,\
-> voyez-vous.
-
-### Maire
-
-_MairePrenezPlace
-> Garçon! Si vous voulez rencontrer le roi -\
-> je veux dire le maire - vous devez prendre\
-> une place assise et attendre votre tour!
-
-_MaireDomainePrive
-> Woh woh! Garçon! Les domaines privés du\
-> maire ne vous sont pas accessibles!
-
-_MaireProchainGueux
-> Que le prochain gueux s'avance!
-
-_MaireMerciBonsoir
-> Merci bonsoir!\
-> Veuillez évacuez immédiatement les lieux\
-> de la demeure du maire!
-
-_MaireVisiteAventuriers
-> Ah! Que vaut cette visite d'aventuriers\
-> au conseil de ville?
-
-_MairePont1
-> Oui il est vrai, c'est dramatique.\
-> Le Garde a déjà été envoyé s'assurer que\
-> personne ne tente de traverser le pont sans\
-> le savoir.
-
-_MairePont2
-> Hélas! La charpentière, Mme. Dubois, est\
-> déjà occupée à travailler sur la chaise de\
-> remplacement pour le conseil de ville.
-
-_MairePont3
-> Elle avait déjà complété la chaise, mais\
-> hélas d'horribles malfrats la lui ont\
-> dérobée pendant qu'elle était en route pour\
-> la livrer!
-
-_MairePont4
-> Ah! Il s'agit d'un vulgaire tabouret!\
-> \
-> Regardez comme le vernis est usé, et les\
-> ornementations sont désuettes!
-
-_MairePont5
-> La chaise, garçon! La chaise!\
-> Enfin bon, la mairie consent à rediriger\
-> les efforts de la charpentière à ce\
-> moment-là.
-
-_MaireBandits1
-> Ils ont été vu la dernière fois dans les\
-> champs entre la Ville et le Lieu Champêtre.\
-> Vous pouvez fouiller par là.
-
-_MaireBandits2
-> Terrible, je sais! Et en plus ils ont\
-> dérobé la nouvelle chaise du conseil\
-> municipal!
-
-_MaireBandits3
-> Comment pouvez-vous venir ici avec de si\
-> terribles nouvelles!? Personne ici ne\
-> possède de bateau, nous sommes donc perdus.
-
-_MaireBellePieceOr
-> Une belle pièce d'or avec le visage du\
-> maire dessus?
-
-_MaireQuAttendezVous
-> Oh!\
-> \
-> Qu'attendez-vous? Venez remplacer ce vieux\
-> divan pourri!
-
-_MaireAncienneCotePorte
-> Oh, l'ancienne? Vous pouvez la laisser à\
-> côté de la porte.
-
-_MaireDifferenceExtraordinaire
-> La différence est extraordinaire, non?\
-> \
-> La nouvelle chaise est en bien meilleur\
-> état!
-
-_MaireEnvoyerCharpentierePontConsent
-> La mairie consent qu'on puisse envoyer la\
-> charpentière réparer le pont, oui.
-
-### Charpentiere
-
-_CharpentiereOccupee
-> Raaaa je suis très occupé en ce moment si\
-> vous vouliez arrêter de me déranger.\
-> Je dois tout refaire à cause de ces satanés\
-> bandits...
-
-_CharpentiereBanditsPartiels
-> Il était temps que j'aie des bonnes\
-> nouvelles! Vous n'avez pas idée du temps\
-> que ça ve me sauver si vous récupérer la\
-> chaise qu'il m'ont volé.
-
-_CharpentiereDotDotDot
-> . . .
-
-_CharpentiereDoitRefaireChaise
-> Hélas oui, c'est terrible! Le maire peut\
-> vous donner les détails, mais ils m'ont\
-> volé la nouvelle chaise du conseil\
-> municipal, alors je dois la refaire.
-
-_CharpentierePasFinitProcessus
-> Non mais il est pas finit! Vous devez faire\
-> confiance au processus.
-
-_CharpentiereNonPasFouiller
-> Vous n'êtes pas subtil. J'apprécierais que\
-> vous ne fouillez pas chez moi, merci.
-
-_CharpentiereMaCorde
-> Oui, et c'est MA corde.
-
-_CharpentiereGrouillerMaire
-> Phiou! Grouillez vous de l'amener au maire,\
-> donc!
-
-_CharpentiereNiasentPasPontCasse
-> Bon... Ils niaisaient pas quand ils\
-> disaient que le pont est cassé. Je vois pas\
-> trop comment il peut manquer tout un gros\
-> morceau comme ça? Vous le savez?
-
-_CharpentiereAvecGaboueToutPossible
-> Avec Gaboué ça va être pas pire je pense.
-
-_CharpentiereOnATermine
-> Phiou, voilà on a terminé!
-
-_CharpentiereEncoreLeSoir
-> Pourtant il est encore le soir? Y peut pas\
-> s'être passé plus que quelques minutes!
-
-_CharpentiereDevinezEngage
-> Devinez qui l'a engagé? Indice: Le conseil\
-> municipal l'aime beaucoup!
-
-_CharpentiereRentreChezElle
-> \}Je suis crevée, moi je rentre chez nous!\{
-
-_CharpentiereOnSyMet
-> On s'y met, donc?
-
-### Recruteur
-
-_RecruteurBonsoirSombresDesseins
-> Bonsoir! Je vois que vous avez le type!\
-> Si vous voulez qu'on discute de votre\
-> engagement au près de sombres desseins,\
-> veuillez prendre place.
-
-_RecruteurContrat1
-> Bonsoir! Avez-vous déjà trouvé que votre\
-> quotidien manque atrocement de piquant? Que\
-> vous passez trop de temps à vous soucier\
-> d'autrui?
-
-_RecruteurContrat2
-> Il est temps qu'autrui se soucie de vous!\
-> Engagez-vous dès maintenant dans les\
-> services d'un sombre dessein pour un futur\
-> noir prochain!
-
-_RecruteurContrat3
-> C'est très simple, il suffit de signer là,\
-> là, là et là!
-
-_RecruteurContrat4
-> Allons allons, l'encre est entièrement\
-> insuffisante pour signer ce genre de\
-> contrat, il vous faut du sang!
-
-_RecruteurImpactPlanetaire
-> Oh non! Bien plus intéressant que ça!\
-> \
-> On parle d'un impact planétaire!
-
-_RecruteurNoInspectContrat
-> Non non, ne portez pas trop attention au\
-> contrat.\
-> Veuillez plutôt vous asseoir afin qu'on\
-> puisse discuter de votre recrutement!
-
-### Barman
-
-_BarmanBonsoir
-> Bonsoir, que puis-je faire pour vous?
-
-_BarmanRoger1
-> Roger? Voyons, c'est mon meilleur client!\
-> Il est là pratiquement tout les jours!
-
-_BarmanRoger2
-> Faites attention à ce que vous dites! Si\
-> vous continuez à parler en mal comme ça de\
-> Roger, je vais devoir vous demander de\
-> quitter mon établissement!
-
-### Rando
-
-_RandoLegumes
-> Bonsoir!\
-> Est-ce que vous allez vous laisser tempter\
-> par mes légumes frais? J'ai des patates,\
-> des radis, des carottes! De tout, quoi!
-
-### Garde
-
-_GardeCirculez
-> Vous bloquez la voie publique, circulez!
-
-### Geologue
-
-_GeologueCaFaitLongtemps
-> Personne Véritable, Gaboué!\
-> Ça fait longtemps!
-
-_GeologueCaFaitLongtemps2
-> On ne s'est pas vu depuis la dernière fois\
-> que je suis passée par le Bois du Gaboué...\
-> \
-> et la cassure du pont ça date de Matusalem.
-
-_GeologueCommentAllezVous
-> Comment allez-vous?
-
-_GeologueCeciExpliqueCela
-> Ça explique pourquoi tu es sorti de chez\
-> vous...\
-> J'ai huh, pas trop de travail en ce moment,\
-> tu as des besoins géologiques?
-
-_GeologueBonAllonsY
-> Bon, allons-y.
-
-_GeologueMarmonneursPersSec
-> Et ces deux marmonneurs c'est des\
-> Personnages Secondaires, c'est ça?
-
-_GeologueSePresente
-> Enchantée.\
-> Vous pouvez m'appeler Géologue, ça fait\
-> plus simple.
-
-_GeologueVaTraduireRoches
-> Vous entendez? Tendez-bien l'oreille, on\
-> peut entendre le doux chuchotement des\
-> roches.\
-> Ah je vais même vous le traduire...
-
-_GeologueVaSeTenirLoin
-> Mais huh, malgré ma folle confiance en vous\
-> je vais me tenir un peu éloignée, c'est\
-> bon?
-
-_GeologueOnPeutYAller
-> Bon, on va pouvoir y aller, donc.
-
-_GeologueTraduitChuchottements
-> Ah en fait je peux vous traduire les\
-> chuchottements.
-
-_GeologueEnFaitPapierMache
-> ... En fait non, c'est du papier mâché ça.
-
-_GeologueVoyonsLeRRRR
-> Voyons! Le Royaume Rétabli des Roches\
-> Récalcitrantes.\
-> Vous n'avez pas eu de cours de géologie?
-
-### Roche
-
-_RocheOui
-> Oui!
-
-_RocheNon
-> Non!
-
-_RocheOui2
-> Super!
-
-_RocheOui3
-> Affirmatif!
-
-_RocheOui4
-> Par ici!
-
-_RocheNon2
-> Pas ici!
-
-_RocheNon3
-> Ailleurs!
-
-_RocheNon4
-> Négatif!
-
-### Blonde
-
-_BlondeOhMonCossin
-> Oh mon petit Cossin...
-
-_BlondeALAide
-> À l'aide! Ce coffre est vraiment très beau et doré,\
-> mais après 10 ans c'est un peu à l'étroit!
-
-_BlondeMerci
-> Merci infiniment pour votre aide!
-
-_BlondeCossinMaTrouve
-> Oh Cossin, tu m'as retrouvé!
-
 ### Ninja
+
+_NinjaEpeeTape
+> Gnieh coupant!
+
+_NinjaShurikenTape
+> Gnieh tournoyant!
+
+_NinjaNunchakuTape
+> Gnieh tapant!
+
+_NinjaNePasOublierCheminBase
+> Ne pas oublier: Le chemin vers la base\
+> secrète passe derrière le Temple louche\
+> avec les monsieurs qui disent qu'ils sont\
+> ouvert demain!
+
+_NinjaViteAvantBrunFonce
+> Aaaaah vite avant que ça devienne\
+> brun-foncé!
 
 _NinjaGniahTombePiege
 > Gniah!\
@@ -7057,6 +5940,12 @@ _NinjaCaFaitRienPersonneNousSurvit
 > Ça fait rien, personne ne survit à une\
 > rencontre avec les Ninjas!
 
+_NinjaViteAlarme
+> Aaaah! Impossible!\
+> \
+> Vite!\
+> Il faut sonner l'alarme!
+
 _NinjaEssayezPasAmadouer
 > Essayez pas de nous amadouer! Vous allez\
 > périr!
@@ -7064,43 +5953,96 @@ _NinjaEssayezPasAmadouer
 _NinjaGnieh
 > Gnieh!
 
-_NinjaEpeeTape
-> Gnieh coupant!
-
-_NinjaShurikenTape
-> Gnieh tournoyant!
-
-_NinjaNunchakuTape
-> Gnieh tapant!
-
-_NinjaViteAlarme
-> Aaaah! Impossible!\
-> \
-> Vite!\
-> Il faut sonner l'alarme!
-
-_NinjaViteAvantBrunFonce
-> Aaaaah vite avant que ça devienne\
-> brun-foncé!
-
-_NinjaNePasOublierCheminBase
-> Ne pas oublier: Le chemin vers la base\
-> secrète passe derrière le Temple louche\
-> avec les monsieurs qui disent qu'ils sont\
-> ouvert demain!
-
-### Alarme
-
-_AlarmeCodeRougeBrun
-> ATTENTION À TOUS LES NINJAS\
-> JE RÉPÈTE\
-> ATTENTION À TOUS LES NINJAS\
-> CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG
-
 ### Bum
 
 _BumCrissFaitFrette
 > Criss qui fait frette!
+
+### Dark
+
+_DarkGeorginaGniaha
+> Gniaha!
+
+_DarkGeorginaRaaaaaaa
+> Raaaaaaa!
+
+_DarkGeorginaSiPresDuBut
+> J'étais si près du but! Mais drame!\
+> Ils trouvèrent la finalité que j'eusse\
+> caché, et me terrassèrent d'une grande\
+> déclaration grandiloquente!
+
+_DarkGeorginaNeMeDerangezPlus
+> Non ne me dérangez pas plus! Je suis occupé\
+> à être éternellement salé!
+
+_DarkGeorginaAuraSaVengeance
+> Vous aussi? Nooooon!\
+> Je refuuuuuuse!\
+> Dark Georgina aura sa vengeance!
+
+_DarkGeorginaFinsDePhrases
+> Non...\
+> Pas encore...\
+> Mes...\
+> Mes fins...!
+
+_DarkGeorginaEstEternel
+> Ha! Vous pouvez courrir mais je suis\
+> éternel!
+
+_DarkGeorginaAEuSaVengeance
+> Hahahaha!\
+> J'ai eu ma vengeance!\
+> Huh? Vous tuer? Non non, vous pouvez partir\
+> maintenant.
+
+_DarkGeorginaJeSuisEternel
+> Je suis éterneeeeel!
+
+_DarkGeorginaHaha
+> GeorginaHaha
+
+### Marchand
+
+_MarchandYaha
+> Ya-ha!
+
+_MarchandFacheuxCassure
+> C'est très facheux cette cassure.\
+> J'étais sensé apporter ces belles\
+> victuailles au Village l'autre côté de la\
+> Forêt, mais là je suis complètement coincé!
+
+_MarchandRacheter
+> Ah mais seriez-vous prêt à me les racheter?\
+> Je vous ferai un bon prix!\
+> Seulement 10 pièces d'or pour le lot de 5!
+
+_MarchandMerciDonation
+> Merci merci pour votre généreuse donation!
+
+_MarchandEpingleCheveux
+> Une épingle à cheveux!? Sûrement, vous êtes\
+> un farceur!\
+> Vos cheveux ne sont même pas long!
+
+_MarchandOffreSerieuse
+> Revenez me voir lorsque vous aurez une\
+> offre plus sérieuse!
+
+_MarchandDiantre
+> Diantre! Que vais-je faire!?
+
+_MarchandBonsoirBonsoirAider
+> Bonsoir bonsoir! Comment puis-je vous\
+> aider?
+
+_MarchandSeulementPourFaireBeau
+> Mmmh? Non, c'est seulement pour faire beau.
+
+_MarchandVousAllezAcheter
+> Donc vous allez acheter quelque chose?
 
 ### Windo
 
@@ -7113,105 +6055,261 @@ _WindoExtend
 _WindoExtinguish
 > EXTINGUISH
 
-### Grossepilecaillouxgris
+### Chevaliernoir
 
-_GrossepilecaillouxgrisOhMaGloire
-> Contemplez! Oh ma Gloire! Ma Grandeur!\
+_ChevaliernoirTaper
+> Ahha!
+
+_ChevaliernoirHahahaPiege
+> Hahahaha!\
 > \
-> Ignorez toute médisance que certains amas\
-> moins brillants s'obstinent à répandre!
+> Vous êtes tombés dans mon piège!
 
-_GrossepilecaillouxgrisProvisions
-> Vous avez besoin de provisions pour votre\
-> voyage?
+_ChevaliernoirMonologueBonMatin1
+> Je n'aurais pas cru avoir de la\
+> compétition dans ma Quête. Vous m'avez\
+> peut-être battu pour l'obtention du\
+> Bonjour...
 
-### Petitepilecaillouxgris
+_ChevaliernoirMonologueBonMatin2
+> Mais vous avez commis une grave erreure en\
+> laissant le prêtre vivre! Dès qu'il m'a\
+> décrit la bande qui a profané le Temple,\
+> j'ai su que vous finiriez par passer ici!
 
-_PetitepilecaillouxgrisCeQuiCompteCestMaPepite
-> Ouarf. Mon voisin ne s'arrête jamais de\
-> parler comme quoi il est le plus grand et\
-> bla bla bla. Regardez ma petite pépite.\
-> C'est ça qui compte.
+_ChevaliernoirMonologueBonMatin3
+> Un Protagoniste... Ça fait longtemps.
 
-_PetitepilecaillouxgrisVousPete
-> J'vous pète! Attendez un instant que je\
-> sois forgée en objet contondant ou\
-> tranchant! Vous ne rirez plus lorsque je\
-> serais constituée!
+_ChevaliernoirMonologueBonMatin4
+> Ne faites pas l'idiot! Je sais que vous\
+> êtes ici afin de tenter de m'arrêter!\
+> MAIS. JE. TRIOMPHERAI.
 
-_PetitepilecaillouxgrisOnMaOublie
-> Les autres qui sont passé par ici restaient\
-> jamais longtemps, mais là ça commence à\
-> faire un moment que quelqu'un a passé par\
-> ici pour nous ramasser...
+_ChevaliernoirMonologueBonMatin5
+> Lorsque j'aurai toutes les salutations,\
+> alors le Temps sera à moi.
 
-_PetitepilecaillouxgrisCharbonTousseu2
-> Aller à l'école pendant des millions\
-> d'années pour finir en bOnJoUr...
+_ChevaliernoirMonologueBonMatin6
+> Et la Noirceur dominera le Monde!
 
-_PetitepilecaillouxgrisCharbonTousseu1
-> Ach ach! Dans mon temps, les insectes y\
-> faisaient des mètres! Des mètres!
+_ChevaliernoirMonologueBonMatin7
+> Amusant. Est-ce que vous pensez que votre\
+> Plot Armor sera suffisant?\
+> Ou serez-vous une perte tragique?
 
-### Grossepilecaillouxjaunes
+_ChevaliernoirMonologueBonMatin8
+> Gaboué a raison!\
+> Vous êtes mou pour un Protagoniste... Je\
+> vous parle de domination et vous me\
+> proposez immédiatement un échange?
 
-_GrossepilecaillouxjaunesPlusGrandPiece
-> Griseux pense qu'elle est la pile suprême,\
-> mais c'est faux.\
-> Je suis le plus grand amas de cette pièce!
+_ChevaliernoirMonologueBonMatin9
+> Le Bonjour ET le Bon Matin seront à moi!\
+> Protagoniste de pacotille! En garde!
 
-_GrossepilecaillouxjaunesPresenteSaFille
-> Oh j'ai l'heureux plaisir de vous présenter\
-> ma fille, petite-pile-de-terrette!\
+_ChevaliernoirMonologueBonMatinWin
+> Gah!\
 > \
-> Dis allo mon amas-tini!
+> Impressionant...\
+> Ça mérite un biscuit je suppose.
 
-_GrossepilecaillouxjaunesSiPresLumiere
-> Aaaah je suis si près de la lumière!\
-> Si seulement j'avais un peu de soleil et\
-> d'eau, au moins j'aurais de la compagnie...
+_ChevaliernoirMonologueBonMatinFuite
+> Vous pensez pouvoir m'échapper!?
 
-_GrossepilecaillouxjaunesCestBienLaCompagnie
-> C'est bien avoir de la compagnie, mais\
-> l'autre là, si y pouvait se terre 15\
-> secondes sur ses jeux de mots...
+_ChevaliernoirMonologueBonMatinPerte
+> Hahaha! Misérables!
 
-_GrossepilecaillouxjaunesSiSeulementOnPouvaitSerieux
-> Mon voisin devrait vraiment s'arrêter de se\
-> morfondre afin qu'on puisse se tailler un\
-> avis sur les sujets durs comme le roc de\
-> notre époque mœderne.
+_ChevaliernoirRire
+> HA HA HA HA!
 
-_GrossepilecaillouxjaunesEpouseCouloir
-> Regardez comme j'épouse parfaitement ce\
-> couloir!\
-> C'est comme si mon déménagement avait été\
-> prévu!
+_ChevaliernoirCeciEstAMoi
+> Alors je vais prendre ce qui est à moi de\
+> droit.
 
-_GrossepilecaillouxjaunesCache
-> Ah merde vous avez trouvé ma cachette.
+_ChevaliernoirCeciEstAMoi2
+> Et j'espère que vous avez compris de ne\
+> plus vous mettre sur mon chemin?\
+> \
+> Sans le Bonjour vous n'êtes plus rien!
+
+_ChevaliernoirProtaKill
+> Ha! Protagoniste mon cul!
+
+_ChevaliernoirWwwelchiorKill
+> Ha! Tâtage d'épée mon cul!
+
+_ChevaliernoirGabspartKill
+> Ha! Mon cul vous pète!
+
+_ChevaliernoirGaboueKill
+> Pardonnes-moi Gaboué...
+
+### Rip
+
+_RipFinsDePhrases
+> ci-git\
+> Les Fins de Phrases\
+> 814 BC - 1993 AD\
+> abandonnées et laissées pour mort
+
+_RipIllisible
+> L'écriture de la tombe n'est plus lisible.
+
+_RipDarkGeorgina
+> ci-git\
+> Dark Georgina\
+> 2022 AD - 2022 AD\
+> le Côté Obscur de la Phrase finira toujours par trahir
+
+### Porte
+
+_PorteBarree
+> La porte est barrée.
+
+### Pecheur
+
+_PecheurBMTPasCa
+> Bonjour.\
+> \
+> Des Bon Matins? Non, j'ai pas ça.
+
+_PecheurChercheHuh
+> Mais si vous chercher des, huuuuh...
+
+_PecheurQueteMontagneux
+> Oui voilà, si vous voulez des Bonjours,\
+> veuillez vous rendre au temple du Bonjour,\
+> le long du passage montagneux.
+
+_PecheurAhAttendez
+> Ah attendez...
+
+_PecheurDesChosesDoitSavoir
+> Ah oui c'est ça, si vous voulez avoir un\
+> Bon Matin, ça va vous prendre le Bonjour.\
+> \
+> Y'a des choses que j'me dois de savoir.
+
+_PecheurUneQuete
+> Woh là!\
+> \
+> Vous pensez vraiment que j'ai plus qu'une\
+> quête à donner? Houste!
+
+_PecheurPartiPecher
+> "Parti pour la pêche, je reviendrai plus tard"
+
+_PecheurAutreQuete
+> Bonsoir.\
+> \
+> Vous avez trouvé une autre quête?\
+> Pas pire, pas pire.
+
+_PecheurARealiseMoules
+> Il est venu à mon attention récemment que\
+> c'était des moules que je pêchais au\
+> Village.
+
+_PecheurAPasDeCanneAPeche
+> Et bon, à date... c'est pas vargeux.\
+> À chaque fois les poissons me glissent des\
+> doigts! Je comprends pas, pourtant c'était\
+> jamais un problème au Village.
+
+_PecheurProtagonisteEstUnHermite
+> C'est pas vraiment mon problème si vous\
+> êtes un hermite, et qu'en plusieurs années\
+> vous n'avez jamais été foutu d'apprendre à\
+> connaître votre voisin.
+
+_PecheurHint
+> Ah si seulement j'avais une meilleure\
+> manière d'attraper des poissons!\
+> Popa aurait su, lui...
+
+_PecheurAJamaisVuCannePeche
+> Oh. Un baton avec une corde? Je vois pas\
+> trop ça sert à quoi.
+
+_PecheurHuuuh
+> Huuuh...
+
+_PecheurAhBenCaline
+> Ah ben caline!
+
+_PecheurOffreCorde
+> Je... vous remercie donc infiniment?\
+> Et je vous offre...\
+> Cette Corde Auto-Portante!?\
+> \}j'avais ça moi?\{
+
+_PecheurALeManuelInstructions
+> Bonsoir. Oui oui, j'ai le manuel\
+> d'instructions et à date ça a l'air de\
+> mieux fonctionner.
+
+_PecheurTristeHutte
+> Bonsoir. Finalement cette hutte est vraiment en mauvais\
+> état, je suis pas convaincu que je vais rester\
+> longtemps.
+
+_PecheurPoissonFrais
+> Poisson frais!\
+> Nous le pêchons, et vous le mangez!
+
+### Bucheron
+
+_BucheronOuaisNonTempleBonjour
+> Ouais non le vieux temple du Bonjour on n'y\
+> va plus vraiment.\
+> Depuis que le vieux prêtre est viré sénile,\
+> y pense qu'à ses radis...
+
+_BucheronYaUnBout
+> Y'a un bout, un drôle de bonhomme est passé\
+> pour nous dire de rediriger les... confus\
+> vers là-bas.
+
+_BucheronBonsMatins
+> Des Bon Matins?\
+> Pour ce genre de questions, faut se référer\
+> au Pêcheur.
+
+_BucheronVousAvezAimeLeTemple
+> Bonsoir.\
+> \
+> Vous avez bien aimé le Temple? Y sont un\
+> peu spéciaux mais sinon y sont bin gentils.
+
+_BucheronVousAvezDuMonde
+> Ah, je vois que vous avez rencontré du\
+> monde.
+
+_BucheronOccupe
+> Ok... Je suis un peu occupée là, si ça vous\
+> dérange pas.
+
+_BucheronVousEtesPedant
+> Non mais lâchez-moi, vous êtes pédant ou\
+> quoi?\
+> J'ai dis que j'étais occupée.
+
+### Blonde
+
+_BlondeCossinMaTrouve
+> Oh Cossin, tu m'as retrouvé!
+
+_BlondeMerci
+> Merci infiniment pour votre aide!
+
+_BlondeOhMonCossin
+> Oh mon petit Cossin...
+
+_BlondeALAide
+> À l'aide! Ce coffre est vraiment très beau et doré,\
+> mais après 10 ans c'est un peu à l'étroit!
 
 ### Petiterochegrise
-
-_PetiterochegriseCaCraque
-> Ah merde. Je pense que mon temps ici est\
-> compté. Ça craque sous moi.\
-> Si je disparait, dites à l'autre à côté que\
-> ce qui est mieux c'est la dureté.
-
-_PetiterochegriseJeSuisUneRocheBeepBoop
-> Beep boop.\
-> \
-> Je suis une roche. Vous pouvez procéder.
-
-_PetiterochegriseJalouTuseul
-> Ici c'est le pire coin de la pièce...\
-> Je suis toute seule loin des autres.\
-> Au moins j'ai la compagnie des livres.\
-> Coucou les livres!
-
-_PetiterochegrisePasDeReponse
-> Il n'y a jamais de réponse...
 
 _PetiterochegriseAchoo
 > ...\
@@ -7319,30 +6417,6 @@ _PetiterochegrisePapillonHivernal
 _PetiterochegriseCornue
 > Je corne bien, non?
 
-_PetiterochegriseCestFouLaPatience
-> Ils sont impressionants ces ninjas tout de\
-> même.\
-> C'est pas facile préparer une ambuscade\
-> pendant 10 ans.
-
-_PetiterochegriseDurDetre
-> Être dure ou ne pas être dure.\
-> C'est tout un poid de question.
-
-_PetiterochegriseZipZipZip
-> Les ninjas ça court vite, mais ils n'ont\
-> rien de comparable à ma masse volumique!
-
-_PetiterochegriseOffertParRRRR
-> Ce chemin vous est offert gracieuseté du\
-> Royaume Rétabli des Roches Récalcitrantes.\
-> Pour tout vos besoins de façonnage, faites\
-> appel au RRRR.
-
-_PetiterochegriseBonnePromenda
-> Salut. J'espère que vous passez une bonne\
-> promenade.
-
 _PetiterochegriseCacheeDuVent
 > Phiou. Ça m'a tout pris, mais je pense que\
 > finalement je suis à l'abri du vent...
@@ -7367,7 +6441,33 @@ _PetiterochegriseVousVoulezJouerACacheCache
 
 _PetiterochegriseLoyer
 > Vous n'avez pas idée du loyer que je dois\
-> payer pour habiter ici...
+> payer pour habiter ici...\
+> \
+> J'aurais dû rester dans le RRRR.
+
+_PetiterochegriseDurDetre
+> Être dure ou ne pas être dure.\
+> C'est tout un poid de question.
+
+_PetiterochegriseZipZipZip
+> Les ninjas ça court vite, mais ils n'ont\
+> rien de comparable à ma masse volumique!
+
+_PetiterochegriseOffertParRRRR
+> Ce chemin vous est offert gracieuseté du\
+> Royaume Rétabli des Roches Récalcitrantes.\
+> Pour tout vos besoins de façonnage, faites\
+> appel au RRRR.
+
+_PetiterochegriseBonnePromenda
+> Salut. J'espère que vous passez une bonne\
+> promenade.
+
+_PetiterochegriseCestFouLaPatience
+> Ils sont impressionants ces ninjas tout de\
+> même.\
+> C'est pas facile préparer une ambuscade\
+> pendant 10 ans.
 
 _PetiterochegriseBosquetteuse
 > Les bosquets c'est vraiment pas pareil sans\
@@ -7386,57 +6486,257 @@ _PetiterochegriseLaLegendeVeutQue
 > La Légende veut qu'il y a un trésor caché\
 > dans ce bosquet.
 
+_PetiterochegriseJalouTuseul
+> Ici c'est le pire coin de la pièce...\
+> Je suis toute seule loin des autres.\
+> Au moins j'ai la compagnie des livres.\
+> Coucou les livres!
+
+_PetiterochegrisePasDeReponse
+> Il n'y a jamais de réponse...
+
+_PetiterochegriseJeSuisUneRocheBeepBoop
+> Beep boop.\
+> \
+> Je suis une roche. Vous pouvez procéder.
+
+_PetiterochegriseCaCraque
+> Ah merde. Je pense que mon temps ici est\
+> compté. Ça craque sous moi.\
+> Si je disparait, dites à l'autre à côté que\
+> ce qui est mieux c'est la dureté.
+
 _PetiterochegriseWowVraimentFort
 > Wow vous êtes vraiment fort! Vous avez\
 > découpé cette plante comme on écrase un\
 > insecte lorsqu'on tombe de côté après un\
 > vent un peu trop fort!
 
-### Petitepilecaillouxjaunes
+### Radis
 
-_PetitepilecaillouxjaunesHeyHeyOr
-> Hey hey, approches. Viens voir.\
+_RadisDansLaPoche
+> Le Vieux vous glisse un radis dans la poche.
+
+### Horloge
+
+_HorlogeBougePas
+> Les aiguilles de l'horloge ne bougent pas.
+
+### Boite
+
+_BoiteRadis
+> La boîte est complètement remplie de radis.
+
+### Pretre
+
+_PretrePasMort
+> PasMort
+
+_PretreBonjour
+> Bonjour. Malheureusement, le temple est\
+> actuellement fermé.\
+> Mais si vous revenez demain midi, nous\
+> seront ouvert pour le Bonjour.
+
+_PretreMal
+> Mal
+
+_PretreQuEstCeQueVousFaitesIci
+> Bonjour. Mais qu'est-ce que vous faites\
+> ici? Le Temple est actuellement fermé.\
+> Si vous revenez demain midi, nous\
+> seront ouvert pour le Bonjour.
+
+_PretreSuicide
+> Première! La douce lueur de ton visage\
+> était comme quand le regard se fixait sur\
+> le Soleil à midi!\
+> Mais maintenant, je ne vois que noirceur!
+
+### Forgeron
+
+_ForgeronDautresRats
+> Vous avez pas d'autres rats à fouetter?
+
+_ForgeronMerciRats
+> Oh milles merci de m'avoir débarassé de ces\
+> rats!\
+> Un trenchcat? Vous me dites n'importe quoi.
+
+_ForgeronProtagonisteFaible
+> Ah oui si vous êtes mal en point comme ça\
+> après vous être mesuré à des rats...\
+> J'ai tu l'air d'un médecin? Vous allez\
+> devoir faire plus attention.
+
+_ForgeronEnBasLesRats
+> Hey ho! EN BAS les rats!
+
+_ForgeronDemandeService
+> Vous êtes un Protagoniste, oui?\
+> J'ai une offre pour vous - Je vous refile\
+> cette dague, et en échange vous me rendez\
+> un service.
+
+_ForgeronYaDesRats
+> Y'a des rats qui sont en train de manger\
+> mes patates, c'est horrible!\
+> Comme je ne suis pas un Protagoniste je ne\
+> peux pas vraiment aller le faire moi-même.
+
+_ForgeronBonjourNoHelp
+> Le Temple du Bonjour?\
+> Oui vous avez bien la gueule. Mais je peux\
+> pas faire grand chose pour vous.
+
+_ForgeronMarteaux
+> Heille c'est mes marteaux ça!
+
+_ForgeronCommune
+> Heille c'est pas une commune icitte!
+
+_ForgeronAPerduTrenchcat
+> Ah si vous voyez un chat rôder, je n'ai\
+> pas encore revu mon chat aujourd'hui!\
+> Au moins vous vous êtes occupé de mon\
+> problème de rats...
+
+_ForgeronBeauChat
+> Vous avez vu mon beau chat?\
+> Y'a fait fuir tout les rats!
+
+### Msieur
+
+_MsieurPasContentFrette
+> Ah criss vous avez fais rentrer le frette!
+
+_MsieurPasContentPastouche
+> Pas touche!
+
+### Enfant
+
+_EnfantTeVoisPas
+> TeVoisPas
+
+_EnfantPasParlerEtrangers
+> Ma maman m'a dit de pas parler aux\
+> étrangers!
+
+_EnfantTeVois
+> Hey j'te vois!
+
+### Petitepilecaillouxgris
+
+_PetitepilecaillouxgrisVousPete
+> J'vous pète! Attendez un instant que je\
+> sois forgée en objet contondant ou\
+> tranchant! Vous ne rirez plus lorsque je\
+> serais constituée!
+
+_PetitepilecaillouxgrisOnMaOublie
+> Les autres qui sont passé par ici restaient\
+> jamais longtemps, mais là ça commence à\
+> faire un moment que quelqu'un a passé par\
+> ici pour nous ramasser...
+
+_PetitepilecaillouxgrisCharbonTousseu2
+> Aller à l'école pendant des millions\
+> d'années pour finir en bOnJoUr...
+
+_PetitepilecaillouxgrisCharbonTousseu1
+> Ach ach! Dans mon temps, les insectes y\
+> faisaient des mètres! Des mètres!
+
+_PetitepilecaillouxgrisCeQuiCompteCestMaPepite
+> Ouarf. Mon voisin ne s'arrête jamais de\
+> parler comme quoi il est le plus grand et\
+> bla bla bla. Regardez ma petite pépite.\
+> C'est ça qui compte.
+
+### Mineur
+
+_MineurHey
+> Hey.\
+> Vous avez peut-être vu, mais techniquement\
+> c'est une mine de fer icitte.
+
+_MineurPlusDeJob
+> Mais j'n'ai plus vraiment de job ces\
+> temps-ci.\
+> Depuis l'éboulement en bas j'n'ai plus\
+> accès à ma pioche.
+
+_MineurAhUnePelle
+> Ah une pelle? Non ça c'est pour les\
+> faibles, moi j'utilise mes mains c'est bien\
+> plus efficace.
+
+_MineurAhSiSeulement
+> Aaaaaah si seulement j'avais une pioche...
+
+_MineurVousDite
+> Vous dites?
+
+_MineurAhOuiCriss
+> Ah oui criss vous avez tuez Jean-Jacques?!\
+> Quelle bande de taouins...\
+> Y'ont pas très bien pris le fait qu'on a\
+> perdu notre seule pioche.
+
+_MineurEntreVousEtMoi
+> Pis entre vous et moi, c'est plus un petit\
+> passage montagneux qu'un grand chemin.
+
+_MineurPetiteGene
+> Une petite gêne quand même!
+
+_MineurSiSeulementUnePioche
+> Si seulement\|\
+> ...\|\
+> J'avais une pioche!
+
+### Grossepilecaillouxjaunes
+
+_GrossepilecaillouxjaunesPresenteSaFille
+> Oh j'ai l'heureux plaisir de vous présenter\
+> ma fille, petite-pile-de-terrette!\
 > \
-> Tu veux un peu d'or? J'ai plein d'or!
+> Dis allo mon amas-tini!
 
-_PetitepilecaillouxjaunesAaaahMonMoi
-> Aaaaah non n'approchez pas!\
-> \
-> Mon moi!
+_GrossepilecaillouxjaunesSiPresLumiere
+> Aaaah je suis si près de la lumière!\
+> Si seulement j'avais un peu de soleil et\
+> d'eau, au moins j'aurais de la compagnie...
 
-_PetitepilecaillouxjaunesAaahJeTombe
-> Aaaaaah je tooooombe!\
-> \
-> Pardon je suis un peu lente à comprendre.
+_GrossepilecaillouxjaunesCestBienLaCompagnie
+> C'est bien avoir de la compagnie, mais\
+> l'autre là, si y pouvait se terre 15\
+> secondes sur ses jeux de mots...
 
-_PetitepilecaillouxjaunesDecuNouvelleDemeure
-> Sur le coup j'étais contente hein, nouvelle\
-> demeure, nouveaux amis.\
-> Mais en fait non, l'autre à côté c'est\
-> juste un arbre mort.
+_GrossepilecaillouxjaunesSiSeulementOnPouvaitSerieux
+> Mon voisin devrait vraiment s'arrêter de se\
+> morfondre afin qu'on puisse se tailler un\
+> avis sur les sujets durs comme le roc de\
+> notre époque mœderne.
 
-_PetitepilecaillouxjaunesSemiGardeCorps
-> Il est pas pire mon déguisement, hein?\
-> Je vous laisse deviner c'est quoi!\
-> ... ... ...\
-> Me semble c'est clair: Un garde-corps!
+_GrossepilecaillouxjaunesEpouseCouloir
+> Regardez comme j'épouse parfaitement ce\
+> couloir!\
+> C'est comme si mon déménagement avait été\
+> prévu!
+
+_GrossepilecaillouxjaunesCache
+> Ah merde vous avez trouvé ma cachette.
+
+_GrossepilecaillouxjaunesPlusGrandPiece
+> Griseux pense qu'elle est la pile suprême,\
+> mais c'est faux.\
+> Je suis le plus grand amas de cette pièce!
 
 ### Paroigrisebrisee
 
-_ParoigrisebriseeAhMerdeJeSuisAnemique
-> Aaaaah merde, moi qui était si fière de mon\
-> taux de fer...\
-> Voila que je suis anémique.
-
-_ParoigrisebriseeLaDouleurNePartJamais
-> Vous savez, on perd un être cher, et même\
-> si la douleur initiale fini par s'estomper,\
-> jamais elle ne disparaît complètement.
-
-_ParoigrisebriseeOuchOwiieOwowow
-> Ouch. Owie. Ow ow ow.\
-> \
-> Mon bas-de-paroi!
+_ParoigrisebriseeJeSuisLibre
+> Je suis liiiiiibre!
 
 _ParoigrisebriseeMonSecret
 > Vous savez c'est quoi mon secret pour ne\
@@ -7447,36 +6747,26 @@ _ParoigrisebriseeMonSecret
 _ParoigrisebriseeAhmerde
 > Ah merde...
 
-_ParoigrisebriseeFichusNouveaux
-> Ah ces fichus nouveaux voisins qui pensent\
-> qu'ils peuvent prendre toute la place!\
-> \
-> M'a leur montrer, vous allez voir...
-
 _ParoigrisebriseeLumiereNaturelle
 > Ça fait du bien un peu de lumière naturelle\
 > quand même.\
 > Pas trop par contre, les rayons UV c'est\
 > pas bon pour mon teint.
 
-_ParoigrisebriseeJeSuisLibre
-> Je suis liiiiiibre!
-
-_ParoigrisebriseeNonReviens
-> Non reviens mon cher! Je te jure que je\
-> peux changer!
-
-_ParoigrisebriseeSalutBubye
-> Salut. Ça va bien? Bubye.
-
-_ParoigrisebriseeCestCommeCaLesGensFont
-> C'est pas comme ça que ça fonctionne quand\
-> on rencontre quelqu'un?
+_ParoigrisebriseeFichusNouveaux
+> Ah ces fichus nouveaux voisins qui pensent\
+> qu'ils peuvent prendre toute la place!\
+> \
+> M'a leur montrer, vous allez voir...
 
 _ParoigrisebriseeBandeTouristes
 > Bande de touristes. Vous êtes ici pour\
 > "voir le Monde" c'est ça?\
 > Bah y'a rien ici! Vous pouvez partir!
+
+_ParoigrisebriseeNonReviens
+> Non reviens mon cher! Je te jure que je\
+> peux changer!
 
 _ParoigrisebriseeVousEtesGagnant
 > Bravo! Vous êtes exactement notre troisième\
@@ -7486,6 +6776,28 @@ _ParoigrisebriseeVousEtesGagnant
 _ParoigrisebriseeVousEtesGagnant2
 > Voici votre récompense, cette fiole qui\
 > goûte peut-être le poulet!
+
+_ParoigrisebriseeSalutBubye
+> Salut. Ça va bien? Bubye.
+
+_ParoigrisebriseeCestCommeCaLesGensFont
+> C'est pas comme ça que ça fonctionne quand\
+> on rencontre quelqu'un?
+
+_ParoigrisebriseeOuchOwiieOwowow
+> Ouch. Owie. Ow ow ow.\
+> \
+> Mon bas-de-paroi!
+
+_ParoigrisebriseeLaDouleurNePartJamais
+> Vous savez, on perd un être cher, et même\
+> si la douleur initiale fini par s'estomper,\
+> jamais elle ne disparaît complètement.
+
+_ParoigrisebriseeAhMerdeJeSuisAnemique
+> Aaaaah merde, moi qui était si fière de mon\
+> taux de fer...\
+> Voila que je suis anémique.
 
 _ParoigrisebriseeDormirCestBien
 > Vous avez l'air un peu fatigué. Vous êtes\
@@ -7504,6 +6816,35 @@ _ParoigrisebriseeMalDeTete
 > Vous avez où j'ai mis mon front? Je ne le\
 > trouve plus...
 
+### Petitepilecaillouxjaunes
+
+_PetitepilecaillouxjaunesAaahJeTombe
+> Aaaaaah je tooooombe!\
+> \
+> Pardon je suis un peu lente à comprendre.
+
+_PetitepilecaillouxjaunesDecuNouvelleDemeure
+> Sur le coup j'étais contente hein, nouvelle\
+> demeure, nouveaux amis.\
+> Mais en fait non, l'autre à côté c'est\
+> juste un arbre mort.
+
+_PetitepilecaillouxjaunesSemiGardeCorps
+> Il est pas pire mon déguisement, hein?\
+> Je vous laisse deviner c'est quoi!\
+> ... ... ...\
+> Me semble c'est clair: Un garde-corps!
+
+_PetitepilecaillouxjaunesHeyHeyOr
+> Hey hey, approches. Viens voir.\
+> \
+> Tu veux un peu d'or? J'ai plein d'or!
+
+_PetitepilecaillouxjaunesAaaahMonMoi
+> Aaaaah non n'approchez pas!\
+> \
+> Mon moi!
+
 ### Petitestalagmitejaune
 
 _PetitestalagmitejauneOnSemmerde
@@ -7517,16 +6858,16 @@ _PetitestalagmitejauneLeRRRREstRenduPetit
 > gâché...\
 > Maintenant c'est le RRRR.
 
-_PetitestalagmitejauneGrosDeni
-> LALALALALA\
-> Tout va très bien.\
-> Regardez comme mon ami est calme!
-
 _PetitestalagmitejauneAttentionRiviere
 > Non! N'allez pas sur la petite rivière!\
 > Ceux qui descendent le long de la rivière\
 > ne reviennent jamais.\
 > Tout mes amis les caillous...
+
+_PetitestalagmitejauneGrosDeni
+> LALALALALA\
+> Tout va très bien.\
+> Regardez comme mon ami est calme!
 
 ### Grossestalagmitejaune
 
@@ -7542,6 +6883,26 @@ _GrossestalagmitejauneUnJourJeRejoindraiMaman
 > pourrai finalement rejoindre maman au\
 > plafond!
 
+_GrossestalagmitejauneVousPouvezMeFrotter
+> Vous pouvez me frotter, moi.
+
+_GrossestalagmitejauneLatineBien
+> Oleum meum est vere rancidum.
+
+_GrossestalagmitejauneLeRRRRAllo
+> Le RRRR a le plus grand plaisir de vous\
+> accueillir!
+
+_GrossestalagmitejauneNonPasIciAilleurs
+> Non!\
+> Pas ici!\
+> Ailleurs!
+
+_GrossestalagmitejauneImmigrante
+> Ça parait pas vu que ça fait longtemps,\
+> mais en fait j'ai immigré ici. Je viens pas\
+> du coin, je viens du nord.
+
 _GrossestalagmitejauneSuplice
 > Je suis complètement tannée de ce suplice\
 > éternel de la goutte!\
@@ -7554,31 +6915,1041 @@ _GrossestalagmitejauneAutreVie
 > Mais il y a eu un gros ressèrement économique\
 > et j'ai dû me réorienter.
 
-_GrossestalagmitejauneVousPouvezMeFrotter
-> Vous pouvez me frotter, moi.
-
-_GrossestalagmitejauneLatineBien
-> Oleum meum est vere rancidum.
-
-_GrossestalagmitejauneNonPasIciAilleurs
-> Non!\
-> Pas ici!\
-> Ailleurs!
-
-_GrossestalagmitejauneLeRRRRAllo
-> Le RRRR a le plus grand plaisir de vous\
-> accueillir!
-
-_GrossestalagmitejauneImmigrante
-> Ça parait pas vu que ça fait longtemps,\
-> mais en fait j'ai immigré ici. Je viens pas\
-> du coin, je viens du nord.
-
 _GrossestalagmitejauneStupeurDePeur
 > . . .\
 > . . .\
 > . . .\
 > AAAAAAAAAAAAAAAAA
+
+### Premiere
+
+_PremiereBruitEnHaut
+> Ah c'est curieux, pourquoi y'a du bruit en\
+> haut?
+
+_PremiereQueFouttezVous
+> Mais qu'est-ce que vous pensez que vous\
+> faites-là!
+
+_PremierePauvresFous
+> Pauvres fous! Si vous prenez le Bonjour,\
+> des choses terribles se produiront!
+
+_PremierePasIntimide
+> Ha. Si vous pensez que ça m'intimide...
+
+_PremiereUnMoine
+> Un moine! Je veux un moine!
+
+_PremiereToutLesMoines
+> Non mais pas littéralement!\
+> Je veux tout les moines!
+
+_PremiereSontOuLesAutres
+> Ils sont où les autres?\
+> \
+> Non laissez faire, je sais que c'est demain\
+> qu'on ouvre.
+
+_PremiereVousPete
+> On vous pète!
+
+_PremiereMemePasLeTempsDeMurPorteur
+> Nooooooooon!\
+> Je n'ai même pas eu le temps de devenir un\
+> mur porteur!
+
+### Oracle
+
+_OracleDotDotDotNon
+> ...\
+> \
+> Non.
+
+_OracleTraversezPont
+> Traversez le pont, vous allez voir ça va\
+> pas prendre long.
+
+_OracleSiVousVoulezPas
+> Après, si vous voulez pas, vous voulez pas.
+
+_OracleBon
+> Bon.
+
+_OracleCompteCartes
+> Donc on est cinq? Onze moins cinq ça fait\
+> six.\
+> \
+> Donc prenez chacuns ces six cartes.
+
+_OracleCarteDePlus
+> Et je vous donne aussi à chacun cette\
+> autre carte de plus.
+
+_OracleIlEtaitUneFois
+> On pourrait dire. Tenez je vais commencer\
+> pour que vous voyez comment ça fonctionne.\
+> \
+> Donc voyez, Il Était Une Fois...
+
+_OracleUnProtagoniste
+> Un Protagoniste!
+
+_OraclePatauge
+> Huh?\
+> \
+> Mmmh des fois... Des fois le... attendez...
+
+_OracleIlEtaitUneFois2
+> Non non, ça s'en vient! Vous m'arrêtez à\
+> tout bout de champ!\
+> Oui donc, Il Était Une Fois un\
+> protagoniste...
+
+_OracleAffame
+> Affamé! Tiens vous voyez, y'a une mise en\
+> situation et tout...
+
+_OracleCeSeraPlusCourt
+> Ah c'est pas grave, ça sera plus court.
+
+_OraclePigeUneCarte
+> Ah, je pige une carte donc...
+
+_OracleProtagonistesPasPacifiques
+> Oui, ça a du sens... Les Protagonistes\
+> perdus c'est pas très pacifique d'habitude.
+
+_OraclePreditQuiproquos
+> Non mais, si vous voulez pas, vous voulez\
+> pas.\
+> Je vous prédis de nombreux quiproquos, avec\
+> toute cette... aggression qui vous habite.
+
+_OracleEau
+> Donc vous tenter d'abord de me trucider et\
+> puis maintenant vous venez insulter ma\
+> demeure?\
+> Vous en avez du culot.
+
+_OraclePoserVosQuestions
+> Enfin bon, vous pouvez venir me poser vos\
+> questions je suppose.
+
+_OracleSavoirIntro
+> Alors qu'est-ce que vous voudriez \Shakesavoir?
+
+_OraclePasVoyante
+> Vous allumez pas si vite, huh?\
+> \
+> Je suis oracle, pas voyante.\
+> Je sais des choses, c'est tout.
+
+_OraclePasPedante
+> Assez de pédanterie.\
+> Je comprends que ce que vous avez besoin\
+> c'est de la guidance.
+
+_OracleFinfinaud
+> Si vous êtes pour faire le finfinaud, y'a\
+> la porte drette derrière vous.\
+> Moi je vous donne la chance de croire que\
+> vous avez le libre arbitre.
+
+_OracleLaPorte
+> Je vous avais averti.
+
+_OraclePriereOuAller
+> Oh Choses-Dont-Il-Faut-Que-Je-Saches,\
+> entendez ma prière!\
+> \
+> Zwip zwip! Doubibi doubibi!
+
+_OracleVoitVoit
+> Je vois... je vois...
+
+_OracleDoubibi
+> Doubibi
+
+_OracleZwip
+> Zwip
+
+_OracleTwado
+> Twado
+
+_OracleQuestionRepondue
+> Bon ça répond à votre question?
+
+### Detaaa
+
+_Detaaah
+> DETAAAAAAAAAAAH!
+
+### Deta
+
+_Detah
+> h
+
+### Poulet
+
+_PouletMettonsTuViensReverifier
+> Mettons, tu reviens vérifier si je suis\
+> pas un changeur de forme, juste pour voir.
+
+_PouletEnGarde
+> En garde!
+
+_PouletCestSeulementLaTuRealises
+> C'est seulement là là que tu le réalises?
+
+### Fantome
+
+_FantomeGaboue
+> \ShakeGaboué.
+
+_FantomeMonReposEternel
+> \ShakeMais qu'est-ce que vous foutez ici!\
+> Mon repos éternel!\
+> Il éternel plus très fort là.
+
+_FantomePasConvaincu
+> \ShakeC'est pas très convaincant là, vous croisez\
+> mon fils qui pêche pas bien, puis vous vous\
+> pointez à ma tombe autour de mon cercueil?
+
+_FantomeVousPouvezAvoirCannePeche
+> \ShakeBon, de toute façon elle ne me sert plus.\
+> Vous pouvez bien prendre ma canne à pêche.
+
+_FantomeSamediProchain
+> \ShakeSamedi prochain, c'est un bon moment?
+
+_FantomeNon
+> \ShakeNon!
+
+### Rocherondejaune
+
+_RocherondejauneRinserYeux
+> Woh là. Arrêtez de vous rinser les yeux sur\
+> mes belles rondeurs.
+
+### Paroibrunebrisee
+
+_ParoibrunebriseeIgnobleDouleur
+> Quelle ignoble douleur que j'ai souffert!\
+> Un suplice qui n'en finissait plus!\
+> AAAAAAA-
+
+_ParoibrunebriseeAVuLeDernierVoleur
+> Petite suggestion d'un estropié à un autre:\
+> Si vous ne voulez pas finir comme l'autre\
+> blancheau là par terre, n'essayez pas de\
+> voler la vieille.
+
+_ParoibrunebriseeAVuLeDernierVoleur2
+> Il n'a pas fait cinq mètres avant de perdre\
+> soudainement toute envie de rester en un\
+> seul morceau!
+
+_ParoibrunebriseeVousVoulezPoussiere
+> Vous voulez pas un peu de poussière? Comme\
+> ça vous aurez toujours quelque chose pour\
+> vous rappeler de moi!
+
+_ParoibrunebriseePasFacilePosture
+> Pas facile d'avoir une bonne posture...
+
+_ParoibrunebriseeHeyMerciCompagnie
+> Hey merci de m'avoir apporté de la\
+> compagnie!
+
+_ParoibrunebriseeSiSeulementBouger
+> Je suis un peu jalouse quand même, moi je\
+> fais pas ça bouger.
+
+_ParoibrunebriseeAccesUniversel
+> Vraiment, je pense que je vais devoir\
+> demander à la prochaine réunion syndicale\
+> qu'on ajoute une politique pour faciliter\
+> l'accès universel.
+
+_ParoibrunebriseeAccesUniversel2
+> Vous avez pas idée de combien de temps ça\
+> me prend chaque jour pour venir me poster\
+> ici pour mon travail.
+
+_ParoibrunebriseeVeutPasDeChlorophylle1
+> Non j'en veux pas de vos foutus suppléments\
+> en clorophylle! Je suis très bien capable\
+> de m'écrouler toute seule.
+
+_ParoibrunebriseeVeutPasDeChlorophylle2
+> Oh vous n'êtes pas une plante.\
+> Depuis qu'elles ont emménagé tout fout le\
+> camp ici...
+
+_ParoibrunebriseeVousAvezPasPression
+> Vous avez pas un petit peu de pression à me\
+> refiler? Ça me prendrait quelque chose pour\
+> refusionner tout ces bouts que je perds...\
+> Ou sinon un peu de lave? Juste un peu!
+
+_ParoibrunebriseeLaPetiteRondeTerrible
+> Ma seule suggestion c'est d'éviter à tout\
+> prix la petit ronde verte là-bas.
+
+### Vieille
+
+_VieilleVisiteurs
+> \shake<0.1,0.1,0.5,0.5>Bonsoir\
+> C'est rare que j'ai des visiteurs!
+
+_VieilleArthrite
+> \shake<0.1,0.1,0.5,0.5>Hein? Non non, mon arthrite va très bien,\
+> merci.
+
+_VieilleEvitageContenu
+> \shake<0.1,0.1,0.5,0.5>Ça sent l'évitage de contenu un peu, vous\
+> trouvez pas?
+
+_VieilleFenetresOracleParDessous
+> \shake<0.1,0.1,0.5,0.5>Des fois les fenêtres et les oracles on\
+> peut vraiment passer par dessous.
+
+_VieilleGaboueDejaVerifie
+> \shake<0.1,0.1,0.5,0.5>Non. Gaboué l'a déjà vérifié.\
+> Il n'y a plus de génie ici.
+
+_VieilleFaireAttentionGenie
+> \shake<0.1,0.1,0.5,0.5>Il faut faire attention avec les génies.\
+> Des fois on demande un peu de paix et on\
+> devient un hermite...
+
+_VieilleImmole
+> \shake<0.1,0.1,0.5,0.5>Vous allez rallumer la lampe ou je dois\
+> vous immoler?
+
+### Informateur
+
+_InformateurPontCasse1
+> Comme vous pouvez voir, le pont est cassé.
+
+_InformateurPontCasse2
+> Huh? Je sais pas moi je suis juste là pour\
+> disséminer l'information.
+
+### Charpentiere
+
+_CharpentiereNiasentPasPontCasse
+> Bon... Ils niaisaient pas quand ils\
+> disaient que le pont est cassé. Je vois pas\
+> trop comment il peut manquer tout un gros\
+> morceau comme ça? Vous le savez?
+
+_CharpentiereAvecGaboueToutPossible
+> Avec Gaboué ça va être pas pire je pense.
+
+_CharpentiereOnSyMet
+> On s'y met, donc?
+
+_CharpentiereOccupee
+> Raaaa je suis très occupé en ce moment si\
+> vous vouliez arrêter de me déranger.\
+> Je dois tout refaire à cause de ces satanés\
+> bandits...
+
+_CharpentiereGrouillerMaire
+> Phiou! Grouillez vous de l'amener au maire,\
+> donc!
+
+_CharpentiereBanditsPartiels
+> Il était temps que j'aie des bonnes\
+> nouvelles! Vous n'avez pas idée du temps\
+> que ça ve me sauver si vous récupérer la\
+> chaise qu'il m'ont volé.
+
+_CharpentiereDotDotDot
+> . . .
+
+_CharpentiereDoitRefaireChaise
+> Hélas oui, c'est terrible! Le maire peut\
+> vous donner les détails, mais ils m'ont\
+> volé la nouvelle chaise du conseil\
+> municipal, alors je dois la refaire.
+
+_CharpentierePasFinitProcessus
+> Non mais il est pas finit! Vous devez faire\
+> confiance au processus.
+
+_CharpentiereMaCorde
+> Oui, et c'est MA corde.
+
+_CharpentiereNonPasFouiller
+> Vous n'êtes pas subtil. J'apprécierais que\
+> vous ne fouillez pas chez moi, merci.
+
+_CharpentiereOnATermine
+> Phiou, voilà on a terminé!
+
+_CharpentiereEncoreLeSoir
+> Pourtant il est encore le soir? Y peut pas\
+> s'être passé plus que quelques minutes!
+
+_CharpentiereDevinezEngage
+> Devinez qui l'a engagé? Indice: Le conseil\
+> municipal l'aime beaucoup!
+
+_CharpentiereRentreChezElle
+> \}Je suis crevée, moi je rentre chez nous!\{
+
+### Fermiere
+
+_FermiereRespireBien
+> Haaa! On respire bien!
+
+_FermiereRespireBien2
+> Je ne sais pas c'est quand la\
+> dernière fois que j'ai pu sentir autre\
+> chose que le poulet.
+
+_FermiereRemercieModerement
+> Je vous remercie modérément!\
+> Voici une broche qui a été dans ma famille\
+> depuis des générations!
+
+_FermiereBonsoir
+> Bonsoir. Il fait beau, hein?
+
+_FermiereFichuPoulet
+> Aaaaaaah!\
+> Ce fichu Monsieur Poulet!
+
+_FermierePuParlerInventeur
+> Vous avez pu lui parler?
+
+_FermiereVousDites
+> Vous dites?
+
+_FermiereAllergies
+> Avec ses... expérimentations, mes allergies\
+> n'arrêtent plus!\
+> \
+> Regardez cette fûmée Pouléienne!
+
+_FermiereAllergies2
+> Vous dites ça parce que vous êtes juste\
+> de passage! Mais ça sent comme ça à toutes\
+> les heures de la journée!
+
+_FermiereTuerGerard
+> Vous avez tué un pauvre homme désarmé!\
+> Mon Gérard! Vous allez payer!
+
+_FermiereAutodefense
+> De l'autodéfense complètement démesurée,\
+> oui!
+
+_FermiereOminous
+> C'est pas ce que je m'inquièterais le plus\
+> à votre place. Le garde est encore occupé\
+> avec le pont pour une raison qui m'échappe.\
+> Alors je prends les choses dans mes mains.
+
+_FermiereSuffit
+> Suffit! Ou je vous y mets aussi.\
+> \
+> J'aurai ma vengeance servie\
+> chaudement!
+
+_FermiereVengeance
+> Mais c'est insuffisant! Vous êtes un\
+> meurtrier et vous allez payer!
+
+_FermiereGerardNon
+> Gérard! Noooon!
+
+### Fillette
+
+_FilletteCossin
+> Chut! Faut pas trop faire de bruit, sinon\
+> le cossin bleu va me voir!
+
+_FilletteEnnui
+> Je m'ennuie!
+
+### Fermier
+
+_FermierPoulet1
+> Si on me parle une fois de plus de poulet,\
+> je vous jure je vais vous éplumer!\
+> \
+> Oh vous n'êtes pas mon épouse! Bonsoir!
+
+_FermierPoulet2
+> Non mais! Je vais pas tolérer qu'on me\
+> niaise comme ça!
+
+_FermierLaissezMoi
+> ... Laissez moi.
+
+_FermierPouletRoti
+> Dites... à mon épouse... qu'en fait\
+> j'aimais l'odeur du poulet roti!
+
+_FermierCaVousApprendra
+> Ha! Ça vous apprendra!
+
+_FermierBiere
+> Une bonne bière rafraîchissante après une\
+> longue journée ça calme bien les nerfs tout\
+> de même.
+
+_FermierSonPain
+> Hey ho, mon pain!
+
+_FermierSaPoele
+> Hey ho, mes outils de cuisine!
+
+_FermierPilerPieds
+> Je refuse de me laisser piler sur les pieds\
+> une seconde de plus, aaaaaah!
+
+_FermierFatigueLaisserTranquille
+> Haaa... Haaa... Je vais vous apprendre à\
+> laisser tranquille les gens!
+
+_FermierAuraJamaisDeRespect
+> Ouch... Je... Je n'aurai donc jamais de\
+> respect...
+
+### Inconnu
+
+_InconnuSortez
+> Woh vous allez vraiment rentrer chez un\
+> inconnu comme ça!?
+
+### Balthathig
+
+_BalthathigOhCestVous
+> Oh c'est vous!
+
+_BalthathigForcementProta
+> Forcément.\
+> \
+> C'est plutôt normal en fait, sinon on\
+> aurait pris un autre Protagoniste.
+
+_BalthathigQuelquesMinutes
+> Vous devez seulement me donner quelques\
+> minutes encore, vous allez voir quand\
+> j'aurai terminé, j'aurai plein de babioles\
+> intéressantes pour vous!
+
+_BalthathigGameplay
+> Pour le gameplay, c'est évident!
+
+_BalthathigRevenezCadeaux
+> C'est bien vrai, quatre c'est un bon nombre\
+> arbitraire.\
+> Bon vous reviendrez me voir, j'aurai des\
+> cadeaux.
+
+_BalthathigChefDOeuvre
+> Regardez-moi ça mon nouveau chef-d'oeuvre!\
+> C'est utile et pas trop puissant!
+
+_BalthathigFameuxUIUIOfTravel
+> Mon fameux UIUI of Travel!
+
+_BalthathigYVousManqueAcrobatics
+> Euuuh... Non mais si vous avez des talents\
+> d'Acrobatie, vous pourriez aller tellement\
+> loin je suis sûr!
+
+_BalthathigBottesSautillage
+> Pour amplifier encore plus le\
+> UIUI of Travel, des Bottes de Sautillage!
+
+_BalthathigManqueAcrobatieProd2
+> Discu-quoi? Nonon, vous allez voir, quand\
+> votre Acrobatie sera un peu plus haute,\
+> vous allez filer à gaucher et à droite du\
+> Monde!
+
+_BalthathigChandailPers
+> Le Chandail de Personnalité! Avec ça les\
+> gens vous traiteront un poil mieux!\
+> Imaginez les bons prix que les vendeurs\
+> vous feront!
+
+_BalthathigChandailPers2
+> Non non, la Personnalité c'est un talent!\
+> Et ce chandail fournit simplement un bonus\
+> à la personne qui le porte! Super pratique!
+
+_BalthathigUIUIOfFatigue
+> Ok ok, je sais que mes dernières inventions\
+> ne vous ont pas tout à fait convaincu,\
+> alors je vous présente le UIUI of Fatigue!
+
+_BalthathigUIUIOfFatigue2
+> Avec ça vous n'aurez plus jamais à devoir\
+> attendre plusieurs heures avant chaque\
+> combat! Votre fatigue sera toujours au\
+> maximum!
+
+_BalthathigUIUIOfFatigue3
+> Huuuuuh...\
+> \
+> Si vous le dites!
+
+_BalthathigCanneLevitation
+> Donc, ce prochain là vous allez l'adorer!\
+> Avec ça vous aller pouvoir aller n'importe\
+> où!\
+> La Canne de Lévitation!
+
+_BalthathigUIUIOfVitalite
+> Donc, j'ai l'heureux plésir de vous\
+> présenter le UIUI of Vitalité!\
+> À vous l'immortalité! Enfin, du moment\
+> que vous ne prenez pas de dégâts trop vite.
+
+_BalthathigOuiVoila
+> ...\
+> ...\
+> ...\
+> Oui voilà.
+
+_BalthathigUIUIOfFeu
+> Si jamais vous aviez une envie pressente\
+> d'immoler des gens! Même pas besoin d'y\
+> mettre vos points de magie!\
+> Le UIUI of Feu!
+
+_BalthathigUIUIOfFeu2
+> Rien du tout! Seulement qu'il faut donner\
+> un peu de temps pour que l'enchantement se\
+> recharge entre les usages!
+
+_BalthathigUIUIOfFeu3
+> Quelque chose comme une fois par combat je\
+> dirais.
+
+_BalthathigRobeDurete
+> La Robe de Dureté!\
+> Avec ça fini les problèmes de poid de votre\
+> inventaire!\
+> C'est comme si vous portiez une armure!
+
+_BalthathigDiademeLumiere
+> Le Diadème de Lumière!\
+> Vos amis n'auront plus jamais à vous\
+> demander d'augmenter le gamma!
+
+_BalthathigLanceLancement
+> L'arme qu'il vous manquait pour finalement\
+> pouvoir trucider ces maudits oiseaux!\
+> La Lance de Lancement!\
+> Une lance! Mais que vous pouvez lancer!
+
+_BalthathigLanceLancement2
+> Je suis certain que sans le titre vous\
+> n'auriez jamais eu l'idée de la lancer par\
+> contre!
+
+_BalthathigRevenez
+> Vous allez devoir revenir, j'ai encore\
+> besoin de quelques minutes...
+
+_BalthathigLaissezMoiPasse
+> LaissezMoiPasse
+
+### Bonjourette
+
+_BonjouretteBonsoir
+> Bonsoir!\
+> Oh que je m'ennuie de mon papa...\
+> Il fait partie du Temple du... aaaah...\
+> Vous savez le Temple près du Village?
+
+_BonjouretteAventurier
+> Vous ressemblez à un Aventurier!\
+> Si vous passez par là vous allez revenir me\
+> donner des nouvelles, oui?
+
+_BonjouretteMerciNouvelles
+> Oh? C'est drôlement spécifique a dire.\
+> Mais merci pour les nouvelles!
+
+_BonjouretteCaVa
+> Ça va messieurs?
+
+_BonjouretteHatePapa
+> Si vous le dites.\
+> J'ai tellement hâte de revoir mon papa!
+
+### Rando
+
+_RandoLegumes
+> Bonsoir!\
+> Est-ce que vous allez vous laisser tempter\
+> par mes légumes frais? J'ai des patates,\
+> des radis, des carottes! De tout, quoi!
+
+### Mrtheun
+
+_MrtheunHeille
+> Heille mon thé! Vous savez pas c'est quoi\
+> la vapeur?
+
+_MrtheunBonsoir
+> Bonsoir. Vraiment une belle soirée pour\
+> profiter de l'air! Y'a tellement de soleil,\
+> c'est comme si on était le dîner.
+
+### Mrthedeux
+
+_MrthedeuxBonsoir
+> Bonsoir.
+
+### Marin
+
+_MarinMouvementBosquet
+> Mmmh, c'est drôle. C'est comme s'il y avait\
+> du mouvement dans le bosquet de l'autre\
+> côté de la rivière.
+
+_MarinBosquetteur
+> Dans une autre vie j'étais bosquetteur,\
+> voyez-vous.
+
+### Alarme
+
+_AlarmeCodeRougeBrun
+> ATTENTION À TOUS LES NINJAS\
+> JE RÉPÈTE\
+> ATTENTION À TOUS LES NINJAS\
+> CODE ROUGE-QUI-VA-DEVENIR-BRUN-FONCÉ-DANS-PAS-LONG
+
+### Inventeur
+
+_InventeurBonsoir
+> Bonsoir! Vous allez devoir m'excuser, je\
+> suis très occupé!\
+> \
+> Un poulet n'attend pas l'autre!
+
+_InventeurOh
+> Oh.
+
+_InventeurSentezNormal
+> Vous vous sentez normal?\
+> Parfait, parfait!
+
+_InventeurProtolixirDejaBu
+> Bon en fait je m'imagine que c'est du\
+> pareil au même... Comme vous avez déjà bu\
+> mon Protolixir, il est impératif que\
+> j'effectue quelques tests!
+
+_InventeurEndormi
+> Donc bougez pas trop, vous allez devoir\
+> être endormi...
+
+_InventeurRiche
+> Oui oui! C'est ma stratégie publicitaire\
+> voyez-vous! Tout les aventuriers du Monde\
+> seront complètement accros à mon produit!\
+> Je serai riche! Riiiiiche!
+
+_InventeurBuvezProtolixir
+> Seulement...\
+> Vous devez boire mon Protolixir!
+
+_InventeurVoisinePerdue
+> Raaaaaa... Elle n'a aucune idée de\
+> l'importance de mes recherches!\
+> \}C'est pas parce que tout ses rêves concernent des poulets que je vais\
+> ralentir...\{
+
+_InventeurProposition
+> Ah en fait j'ai une proposition!
+
+_InventeurNouvelleVersion
+> Je suis en train de concocter une nouvelle\
+> version de mon élixir! Si vous acceptez de\
+> le tester pour moi ça m'avancera d'au moins\
+> une journée dans mes recherches! Ou deux!
+
+_InventeurPause
+> Alors je pourrai faire une petite pause\
+> afin de satisfaire ma voisine!
+
+### Grossestalagmitegrise
+
+_GrossestalagmitegriseOhSiSeule
+> Ooooh! Allo! Wow! C'est si rare qu'on vient\
+> me dire coucou.\
+> \
+> Vous voulez un radis?
+
+_GrossestalagmitegriseDommage
+> Tant pis! C'est dommage...
+
+_GrossestalagmitegrisePstDerriereLaChute
+> Psssst.\
+> Jetez un coup d'oeil derrière la chute.
+
+_GrossestalagmitegriseDitesVousVoulezJouerCartes
+> Dites vous voulez jouer aux cartes?\
+> \
+> Donnez-moi un instant je dois juste\
+> développer un bras et une main.
+
+_GrossestalagmitegriseJeGarde
+> Je garde.
+
+### Petitestalagmitegrise
+
+_PetitestalagmitegriseVoyeurs
+> Je veux pas trop vous faire peur, mais vous\
+> êtes observés.
+
+_PetitestalagmitegriseGrotaVaNousProteger
+> Sous l'oeil sage de Grota, c'est certain\
+> que nous allons être en sécurité!
+
+### Enchanteure
+
+_EnchanteureBonsoir
+> Bonsoir, que puis-je faire pour vous?
+
+### Merebonjourette
+
+_MerebonjouretteBonsoir
+> Bonsoir. Ça aurait été bien de cogner avant\
+> de rentrer.\
+> Enfin, pauvre Bonjourette qui attend encore\
+> la prochaine visite de son père...
+
+_MerebonjouretteVousPensezFaireQuoi
+> Vous pensez faire quoi vous là?
+
+### Mmmtriste
+
+_MmmtristeBonsoir
+> Bonsoir.\
+> J'essaye de manger mon souper. Si vous\
+> voudriez me laisser tranquille ça\
+> m'arrangerais.
+
+### Mmetriste
+
+_MmetristePuces
+> Non mais vous avez pas besoin des puces...
+
+### Recruteur
+
+_RecruteurBonsoirSombresDesseins
+> Bonsoir! Je vois que vous avez le type!\
+> Si vous voulez qu'on discute de votre\
+> engagement au près de sombres desseins,\
+> veuillez prendre place.
+
+_RecruteurContrat1
+> Bonsoir! Avez-vous déjà trouvé que votre\
+> quotidien manque atrocement de piquant? Que\
+> vous passez trop de temps à vous soucier\
+> d'autrui?
+
+_RecruteurContrat2
+> Il est temps qu'autrui se soucie de vous!\
+> Engagez-vous dès maintenant dans les\
+> services d'un sombre dessein pour un futur\
+> noir prochain!
+
+_RecruteurContrat3
+> C'est très simple, il suffit de signer là,\
+> là, là et là!
+
+_RecruteurContrat4
+> Allons allons, l'encre est entièrement\
+> insuffisante pour signer ce genre de\
+> contrat, il vous faut du sang!
+
+_RecruteurImpactPlanetaire
+> Oh non! Bien plus intéressant que ça!\
+> \
+> On parle d'un impact planétaire!
+
+_RecruteurNoInspectContrat
+> Non non, ne portez pas trop attention au\
+> contrat.\
+> Veuillez plutôt vous asseoir afin qu'on\
+> puisse discuter de votre recrutement!
+
+### Barman
+
+_BarmanBonsoir
+> Bonsoir, que puis-je faire pour vous?
+
+_BarmanRoger1
+> Roger? Voyons, c'est mon meilleur client!\
+> Il est là pratiquement tout les jours!
+
+_BarmanRoger2
+> Faites attention à ce que vous dites! Si\
+> vous continuez à parler en mal comme ça de\
+> Roger, je vais devoir vous demander de\
+> quitter mon établissement!
+
+### Maire
+
+_MairePrenezPlace
+> Garçon! Si vous voulez rencontrer le roi -\
+> je veux dire le maire - vous devez prendre\
+> une place assise et attendre votre tour!
+
+_MaireDomainePrive
+> Woh woh! Garçon! Les domaines privés du\
+> maire ne vous sont pas accessibles!
+
+_MaireProchainGueux
+> Que le prochain gueux s'avance!
+
+_MaireVisiteAventuriers
+> Ah! Que vaut cette visite d'aventuriers\
+> au conseil de ville?
+
+_MaireBellePieceOr
+> Une belle pièce d'or avec le visage du\
+> maire dessus?
+
+_MaireQuAttendezVous
+> Oh!\
+> \
+> Qu'attendez-vous? Venez remplacer ce vieux\
+> divan pourri!
+
+_MaireAncienneCotePorte
+> Oh, l'ancienne? Vous pouvez la laisser à\
+> côté de la porte.
+
+_MaireDifferenceExtraordinaire
+> La différence est extraordinaire, non?\
+> \
+> La nouvelle chaise est en bien meilleur\
+> état!
+
+_MaireEnvoyerCharpentierePontConsent
+> La mairie consent qu'on puisse envoyer la\
+> charpentière réparer le pont, oui.
+
+_MairePont1
+> Oui il est vrai, c'est dramatique.\
+> Le Garde a déjà été envoyé s'assurer que\
+> personne ne tente de traverser le pont sans\
+> le savoir.
+
+_MairePont2
+> Hélas! La charpentière, Mme. Dubois, est\
+> déjà occupée à travailler sur la chaise de\
+> remplacement pour le conseil de ville.
+
+_MairePont3
+> Elle avait déjà complété la chaise, mais\
+> hélas d'horribles malfrats la lui ont\
+> dérobée pendant qu'elle était en route pour\
+> la livrer!
+
+_MairePont4
+> Ah! Il s'agit d'un vulgaire tabouret!\
+> \
+> Regardez comme le vernis est usé, et les\
+> ornementations sont désuettes!
+
+_MairePont5
+> La chaise, garçon! La chaise!\
+> Enfin bon, la mairie consent à rediriger\
+> les efforts de la charpentière à ce\
+> moment-là.
+
+_MaireBandits1
+> Ils ont été vu la dernière fois dans les\
+> champs entre la Ville et le Lieu Champêtre.\
+> Vous pouvez fouiller par là.
+
+_MaireBandits2
+> Terrible, je sais! Et en plus ils ont\
+> dérobé la nouvelle chaise du conseil\
+> municipal!
+
+_MaireBandits3
+> Comment pouvez-vous venir ici avec de si\
+> terribles nouvelles!? Personne ici ne\
+> possède de bateau, nous sommes donc perdus.
+
+_MaireMerciBonsoir
+> Merci bonsoir!\
+> Veuillez évacuez immédiatement les lieux\
+> de la demeure du maire!
+
+### Grossepilecaillouxgris
+
+_GrossepilecaillouxgrisOhMaGloire
+> Contemplez! Oh ma Gloire! Ma Grandeur!\
+> \
+> Ignorez toute médisance que certains amas\
+> moins brillants s'obstinent à répandre!
+
+_GrossepilecaillouxgrisProvisions
+> Vous avez besoin de provisions pour votre\
+> voyage?
+
+### Garde
+
+_GardeCirculez
+> Vous bloquez la voie publique, circulez!
+
+### Petitestalagmiteverte
+
+_PetitestalagmiteverteBraaains
+> Braaaaaiiiiiins
+
+_PetitestalagmiteverteRegardesRacines
+> Regardes maman mes belles racines!
+
+_PetitestalagmiteverteMauvaiseBlague
+> Vous savez ce que la roche verte dit à la\
+> roche brune?\
+> Pierre qui roule n'amasse pas mousse!\
+> Ohho! Ahha! Ouhhou!
+
+_PetitestalagmitevertePerdue
+> Je suis perdue!
+
+### Grossestalagmiteverte
+
+_GrossestalagmitevertePousseChlorophylle
+> Vous voulez-pas un peu de chlorophylle?\
+> 9/10 docteurs le recommandent!
+
+_GrossestalagmiteverteBonneQualite
+> Cette "Chlorophylle" de "Plante" est\
+> vraiment de bonne qualité!\
+> Cette cave est d'une propreté exemplaire!
+
+_GrossestalagmiteverteMesAmisLesPlantes
+> Mes amis les plantes sont vraiment les plus\
+> gentils. J'adore mes amis les plantes.\
+> J'ai toujours adoré mes amis les plantes.\
+> Vous voulez rejoindre mes amis les plantes?
+
+_GrossestalagmiteverteDrip
+> Drip drip drip.\
+> Les gouttes tombent.\
+> PLIC PLIC PLIC.
 
 ### Grosninja
 
@@ -7626,273 +7997,6 @@ _GrosnarrateurExcalibarre4
 _GrosnarrateurExcalibarre5
 > \
 > kilomètres!
-
-### Paroibrunebrisee
-
-_ParoibrunebriseeIgnobleDouleur
-> Quelle ignoble douleur que j'ai souffert!\
-> Un suplice qui n'en finissait plus!\
-> AAAAAAA-
-
-_ParoibrunebriseeAVuLeDernierVoleur
-> Petite suggestion d'un estropié à un autre:\
-> Si vous ne voulez pas finir comme l'autre\
-> blancheau là par terre, n'essayez pas de\
-> voler la vieille.
-
-_ParoibrunebriseeAVuLeDernierVoleur2
-> Il n'a pas fait cinq mètres avant de perdre\
-> soudainement toute envie de rester en un\
-> seul morceau!
-
-_ParoibrunebriseePasFacilePosture
-> Pas facile d'avoir une bonne posture...
-
-_ParoibrunebriseeVousVoulezPoussiere
-> Vous voulez pas un peu de poussière? Comme\
-> ça vous aurez toujours quelque chose pour\
-> vous rappeler de moi!
-
-_ParoibrunebriseeHeyMerciCompagnie
-> Hey merci de m'avoir apporté de la\
-> compagnie!
-
-_ParoibrunebriseeSiSeulementBouger
-> Je suis un peu jalouse quand même, moi je\
-> fais pas ça bouger.
-
-_ParoibrunebriseeAccesUniversel
-> Vraiment, je pense que je vais devoir\
-> demander à la prochaine réunion syndicale\
-> qu'on ajoute une politique pour faciliter\
-> l'accès universel.
-
-_ParoibrunebriseeAccesUniversel2
-> Vous avez pas idée de combien de temps ça\
-> me prend chaque jour pour venir me poster\
-> ici pour mon travail.
-
-_ParoibrunebriseeVeutPasDeChlorophylle1
-> Non j'en veux pas de vos foutus suppléments\
-> en clorophylle! Je suis très bien capable\
-> de m'écrouler toute seule.
-
-_ParoibrunebriseeVeutPasDeChlorophylle2
-> Oh vous n'êtes pas une plante.\
-> Depuis qu'elles ont emménagé tout fout le\
-> camp ici...
-
-_ParoibrunebriseeVousAvezPasPression
-> Vous avez pas un petit peu de pression à me\
-> refiler? Ça me prendrait quelque chose pour\
-> refusionner tout ces bouts que je perds...\
-> Ou sinon un peu de lave? Juste un peu!
-
-_ParoibrunebriseeLaPetiteRondeTerrible
-> Ma seule suggestion c'est d'éviter à tout\
-> prix la petit ronde verte là-bas.
-
-### Rocherondejaune
-
-_RocherondejauneRinserYeux
-> Woh là. Arrêtez de vous rinser les yeux sur\
-> mes belles rondeurs.
-
-### Paroibrunebrise
-
-_Paroibrunebrisee
-> Le RRRR a le plus grand plaisir de vous\
-> accueillir!
-
-### Grossestalagmitegrise
-
-_GrossestalagmitegrisePstDerriereLaChute
-> Psssst.\
-> Jetez un coup d'oeil derrière la chute.
-
-_GrossestalagmitegriseOhSiSeule
-> Ooooh! Allo! Wow! C'est si rare qu'on vient\
-> me dire coucou.\
-> \
-> Vous voulez un radis?
-
-_GrossestalagmitegriseDommage
-> Tant pis! C'est dommage...
-
-_GrossestalagmitegriseJeGarde
-> Je garde.
-
-_GrossestalagmitegriseDitesVousVoulezJouerCartes
-> Dites vous voulez jouer aux cartes?\
-> \
-> Donnez-moi un instant je dois juste\
-> développer un bras et une main.
-
-### Petitestalagmitegrise
-
-_PetitestalagmitegriseVoyeurs
-> Je veux pas trop vous faire peur, mais vous\
-> êtes observés.
-
-_PetitestalagmitegriseGrotaVaNousProteger
-> Sous l'oeil sage de Grota, c'est certain\
-> que nous allons être en sécurité!
-
-### Petitestalagmiteverte
-
-_PetitestalagmiteverteBraaains
-> Braaaaaiiiiiins
-
-_PetitestalagmiteverteRegardesRacines
-> Regardes maman mes belles racines!
-
-_PetitestalagmitevertePerdue
-> Je suis perdue!
-
-_PetitestalagmiteverteMauvaiseBlague
-> Vous savez ce que la roche verte dit à la\
-> roche brune?\
-> Pierre qui roule n'amasse pas mousse!\
-> Ohho! Ahha! Ouhhou!
-
-### Grossestalagmiteverte
-
-_GrossestalagmiteverteMesAmisLesPlantes
-> Mes amis les plantes sont vraiment les plus\
-> gentils. J'adore mes amis les plantes.\
-> J'ai toujours adoré mes amis les plantes.\
-> Vous voulez rejoindre mes amis les plantes?
-
-_GrossestalagmitevertePousseChlorophylle
-> Vous voulez-pas un peu de chlorophylle?\
-> 9/10 docteurs le recommandent!
-
-_GrossestalagmiteverteBonneQualite
-> Cette "Chlorophylle" de "Plante" est\
-> vraiment de bonne qualité!\
-> Cette cave est d'une propreté exemplaire!
-
-_GrossestalagmiteverteDrip
-> Drip drip drip.\
-> Les gouttes tombent.\
-> PLIC PLIC PLIC.
-
-### Gasbpart
-
-_GasbpartWtfProtaCluelessDuPoteauBonMatin
-> Non mais si tu as pas deviné je veux même\
-> pas mettre l'effort de t'expliquer...
-
-### Chevaliernoir
-
-_ChevaliernoirHahahaPiege
-> Hahahaha!\
-> \
-> Vous êtes tombés dans mon piège!
-
-_ChevaliernoirMonologueBonMatin1
-> Je n'aurais pas cru avoir de la\
-> compétition dans ma Quête. Vous m'avez\
-> peut-être battu pour l'obtention du\
-> Bonjour...
-
-_ChevaliernoirMonologueBonMatin2
-> Mais vous avez commis une grave erreure en\
-> laissant le prêtre vivre! Dès qu'il m'a\
-> décrit la bande qui a profané le Temple,\
-> j'ai su que vous finiriez par passer ici!
-
-_ChevaliernoirMonologueBonMatin3
-> Un Protagoniste... Ça fait longtemps.
-
-_ChevaliernoirMonologueBonMatin4
-> Ne faites pas l'idiot! Je sais que vous\
-> êtes ici afin de tenter de m'arrêter!\
-> MAIS. JE. TRIOMPHERAI.
-
-_ChevaliernoirMonologueBonMatin5
-> Lorsque j'aurai toutes les salutations,\
-> alors le Temps sera à moi.
-
-_ChevaliernoirMonologueBonMatin6
-> Et la Noirceur dominera le Monde!
-
-_ChevaliernoirMonologueBonMatin7
-> Amusant. Est-ce que vous pensez que votre\
-> Plot Armor sera suffisant?\
-> Ou serez-vous une perte tragique?
-
-_ChevaliernoirMonologueBonMatin8
-> Gaboué a raison!\
-> Vous êtes mou pour un Protagoniste... Je\
-> vous parle de domination et vous me\
-> proposez immédiatement un échange?
-
-_ChevaliernoirMonologueBonMatin9
-> Le Bonjour ET le Bon Matin seront à moi!\
-> Protagoniste de pacotille! En garde!
-
-_ChevaliernoirMonologueBonMatinWin
-> Gah!\
-> \
-> Impressionant...\
-> Ça mérite un biscuit je suppose.
-
-_ChevaliernoirMonologueBonMatinFuite
-> Vous pensez pouvoir m'échapper!?
-
-_ChevaliernoirMonologueBonMatinPerte
-> Hahaha! Misérables!
-
-_ChevaliernoirRire
-> HA HA HA HA!
-
-_ChevaliernoirCeciEstAMoi
-> Alors je vais prendre ce qui est à moi de\
-> droit.
-
-_ChevaliernoirCeciEstAMoi2
-> Et j'espère que vous avez compris de ne\
-> plus vous mettre sur mon chemin?\
-> \
-> Sans le Bonjour vous n'êtes plus rien!
-
-_ChevaliernoirTaper
-> Ahha!
-
-_ChevaliernoirProtaKill
-> Ha! Protagoniste mon cul!
-
-_ChevaliernoirWwwelchiorKill
-> Ha! Tâtage d'épée mon cul!
-
-_ChevaliernoirGabspartKill
-> Ha! Mon cul vous pète!
-
-_ChevaliernoirGaboueKill
-> Pardonnes-moi Gaboué...
-
-### Petiterochebrune
-
-_PetiterochebruneTODO
-> TODO
-
-_PetiterochebruneVacancePlage
-> Aaaah! Ne faites pas trop de bruit!\
-> J'ai travaillé dur dur dur pendant des\
-> années afin de me payer ces vacances sur\
-> la plage!
-
-_PetiterochebruneCactus
-> Ces fichus cactus pense qu'ils peuvent\
-> m'intimider avec leurs piquants.\
-> Ha!\
-> Regardez comme je suis solide!
-
-_PetiterochebruneOh
-> Oh.\
-> \
-> Merde.
 
 ### Jesus
 
@@ -8009,3 +8113,31 @@ _JesusBonneChance
 > Personne Véritable.\
 > \
 > Bonne chance.
+
+### Petiterochebrune
+
+_PetiterochebruneCactus
+> Ces fichus cactus pense qu'ils peuvent\
+> m'intimider avec leurs piquants.\
+> Ha!\
+> Regardez comme je suis solide!
+
+_PetiterochebruneOh
+> Oh.\
+> \
+> Merde.
+
+_PetiterochebruneTODO
+> TODO
+
+_PetiterochebruneVacancePlage
+> Aaaah! Ne faites pas trop de bruit!\
+> J'ai travaillé dur dur dur pendant des\
+> années afin de me payer ces vacances sur\
+> la plage!
+
+### Gasbpart
+
+_GasbpartWtfProtaCluelessDuPoteauBonMatin
+> Non mais si tu as pas deviné je veux même\
+> pas mettre l'effort de t'expliquer...

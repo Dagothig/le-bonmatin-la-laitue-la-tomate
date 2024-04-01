@@ -1745,8 +1745,7 @@ function eval_fn_expr(expr, args) {
         })
 })();
 
-// Display target in log
-(function () {
+{ // Display target in log
     Window_BattleLog.prototype.startAction = function (subject, action, targets) {
         var item = action.item();
         this.push('clear');
@@ -1772,7 +1771,30 @@ function eval_fn_expr(expr, args) {
     };
 
     override(Window_BattleLog.prototype,
-        function waitForNewLine() {});
+        function waitForNewLine() {},
+        function messageSpeed() {
+            return 0;
+        },
+        function displayCurrentState(_, subject) {
+            var stateText = subject.mostImportantStateText();
+            if (stateText) {
+                this.push('addText', subject.name() + stateText);
+                this.push('wait');
+                //this.push('clear');
+            }
+        },
+        function displayAutoAffectedStatus(_, target) {
+            if (target.result().isStatusAffected()) {
+                this.displayAffectedStatus(target, null);
+                //this.push('clear');
+            }
+        });
+
+    const effecting = ["appear", "disappear", "bossCollapse"];
+    override(Sprite_Enemy.prototype,
+        function isEffecting() {
+            return effecting.includes(this._effectType);
+        })
 
     override(Window_BattleStatus.prototype,
         function noop(_) {},
@@ -1798,7 +1820,7 @@ function eval_fn_expr(expr, args) {
             this.changeTextColor(this.normalColor());
             this.drawText(actor.atk, x + width - valueWidth, y, valueWidth, "right");
         });
-})();
+}
 
 // Tapocher lés fenêtres
 (function () {
@@ -2051,8 +2073,8 @@ function eval_fn_expr(expr, args) {
                 item._customPerformActionStart.call(action, this);
             }
         },
-        function onTurnEnd(regenerateAll) {
-            regenerateAll.call(this);
+        function onTurnEnd(onTurnEnd) {
+            onTurnEnd.call(this);
             for (const state of this.states()) {
                 state._customEOT && state._customEOT.call(this);
             }
@@ -3176,6 +3198,7 @@ Input.keyMapper[68] = "right"; // d
     override(Game_BattlerBase.prototype,
         function initialize(initialize) {
             initialize.call(this);
+            this.hpChange = 0;
             this.mpChange = 0;
             this.tpChange = 0;
         },
@@ -3192,6 +3215,11 @@ Input.keyMapper[68] = "right"; // d
         });
 
     override(Game_Battler.prototype,
+        function gainHp(gainHp, value) {
+            const hp = this.hp;
+            gainHp.call(this, value);
+            this.hpChange += (this.hp - hp);
+        },
         // Fuck silent tp
         function gainSilentTp(_, value) {
             this.gainTp(value);
@@ -3223,19 +3251,21 @@ Input.keyMapper[68] = "right"; // d
 
     function setupDamagePopup(setupDamagePopup) {
         let mpChange = this._battler.mpChange;
-        if (this._battler.isDamagePopupRequested()) {
+        let hpChange = this._battler.hpChange;
+        if (hpChange) {
             const result = this._battler.result();
             if (result.hpAffected) {
                 const sprite = new Sprite_BarChange();
                 sprite.x = this.x;
                 sprite.y = this.y;
                 sprite.setup(
-                    result.startHp || 0,
-                    result.endHp || 0,
+                    this._battler.hp - hpChange,
+                    this._battler.hp,
                     this._battler.mhp,
                     20, 21);
                 this._damages.push(sprite);
                 this.parent.addChild(sprite);
+                this._battler.hpChange = 0;
             }
             mpChange += result.mpDamage;
         }
@@ -3279,20 +3309,6 @@ Input.keyMapper[68] = "right"; // d
     override(Window_BattleLog.prototype,
         // Don't display tp changes in log
         function displayTpDamage() {});
-})();
-
-// Event sprite control
-(function() {
-    override(Game_CharacterBase.prototype,
-        function screenX(screenX) {
-            return screenX.call(this) + (this._offsetX || 0);
-        },
-        function screenY(screenY) {
-            return screenY.call(this) + (this._offsetY || 0);
-        },
-        function screenZ(screenZ) {
-            return screenZ.call(this) + (this._offsetZ || 0);
-        });
 })();
 
 // Checkpoints
@@ -3887,49 +3903,78 @@ Input.keyMapper[68] = "right"; // d
         });
 })();
 
-// Smaller overworld sprites
-(function () {
+{ // Position and sizing for sprites
     override(Game_CharacterBase.prototype,
         function sizeFactor() {
             return 1;
         },
+        function rotation() {
+            return this._rotation || 0;
+        },
         function realMoveSpeed(realMoveSpeed) {
             return realMoveSpeed.call(this) * ((this.sizeFactor() || 1) + 1) / 2;
+        },
+        function screenX(screenX) {
+            return screenX.call(this) + (this._offsetX || 0);
+        },
+        function screenY(screenY) {
+            return screenY.call(this) + (this._offsetY || 0);
+        },
+        function screenZ(screenZ) {
+            return screenZ.call(this) + (this._offsetZ || 0);
         });
 
     override(Game_Player.prototype,
         function sizeFactor() {
-            return $dataMap.playerScale;
+            return this._scale || $dataMap.playerScale;
         });
 
     override(Game_Follower.prototype,
         function sizeFactor() {
-            return $dataMap.playerScale;
+            return this._scale || $dataMap.playerScale;
         });
 
     override(Game_Vehicle.prototype,
         function sizeFactor() {
-            return $dataMap.playerScale;
+            return this._scale || $dataMap.playerScale;
+        });
+
+    override(Game_Event.prototype,
+        function initialize(initialize, mapId, eventId) {
+            initialize.call(this, mapId, eventId);
+            const event = this.event();
+            const meta = event && event.meta;
+            if (meta) {
+                this._scale = meta.scale && parseFloat(meta.scale);
+                this._offsetX = meta.offsetX && parseFloat(meta.offsetX);
+                this._offsetY = meta.offsetY && parseFloat(meta.offsetY);
+                this._offsetZ = meta.offsetZ && parseFloat(meta.offsetZ);
+            }
+        },
+        function sizeFactor() {
+            return this._scale || 1;
         });
 
     override(Sprite_Character.prototype,
-        function setCharacter(setCharacter, character) {
-            setCharacter.call(this, character);
-            const event = character.event && character.event();
-            this.scale.x = this.scale.y =
-                parseFloat(event && event.meta && event.meta.scale) ||
-                character.sizeFactor();
+        function initialize(initialize, character) {
+            initialize.call(this, character);
+        },
+        function update(update) {
+            update.call(this);
+            this.scale.x = this.scale.y = this._character.sizeFactor();
+            this.rotation = this._character.rotation();
+            if (this.rotation) {
+                this.anchor.y = 0.5;
+                this.y -= (this.height * this.scale.y) * 0.5;
+            }
         });
 
     override(Sprite_BasicShadow.prototype,
-        function setCharacter(setCharacter, character) {
-            setCharacter.call(this, character);
-            const event = character.event && character.event();
-            this.scale.x = this.scale.y =
-                parseFloat(event && event.meta && event.meta.scale) ||
-                character.sizeFactor();
+        function update(update) {
+            this.scale.x = this.scale.y = this._character.sizeFactor();
+            update.call(this);
         });
-})();
+}
 
 // Event contextual plugin commands
 (function () {
@@ -5015,10 +5060,111 @@ Input.keyMapper[68] = "right"; // d
         });
 }
 
-// Gameover
-{
+
+{ // Gameover
     override(Scene_Gameover.prototype,
         function isTriggered(isTriggered) {
             return isTriggered.call(this) || !AudioManager._meBuffer;
+        });
+}
+
+{ // Tileset tile info
+    const tileRegexp = /tile-(\w+)-(\d+)-(\d+)/;
+    const pageToIdx = { A: 0, B: 1, C: 2, D: 3, E: 4 };
+    const tileEffects = { burn: 1 };
+    const TILE_EFFECT_COMMON_EVENT_ID = 43;
+
+    override(DataManager,
+        function onLoad(onLoad, object) {
+            onLoad.call(this, object);
+            if (object === $dataTilesets) {
+                for (const tileset of $dataTilesets) {
+                    if (!tileset) continue;
+                    tileset.addTileInfo = {};
+                    const meta = tileset.meta || {};
+                    for (const key in meta) {
+                        const tileMatch = key.match(tileRegexp);
+                        if (tileMatch) {
+                            const page = pageToIdx[tileMatch[1]] || 0;
+                            const tx = parseInt(tileMatch[2]) || 0;
+                            const ty = parseInt(tileMatch[3]) || 0;
+                            tileset.addTileInfo[tx + ty * 8 + page * 256] = tileEffects[meta[key]];
+                        }
+                    }
+                }
+            }
+        });
+
+    override(Game_Map.prototype,
+        function triggerCommonEvent(_, commonEventId) {
+            const list = $dataCommonEvents[commonEventId].list;
+            if (this._interpreter.isRunning()) {
+                this._interpreter._list.push.apply(this._interpreter._list, list);
+            } else {
+                this._interpreter.setup(list);
+            }
+        });
+
+    override(Game_Party.prototype,
+        function onPlayerWalk(onPlayerWalk) {
+            onPlayerWalk.call(this);
+
+            const addTileInfo = $gameMap.tileset().addTileInfo;
+            !this._tileCounters && (this._tileCounters = []);
+            const effects = [];
+            for (let i = 0; i < 4; i++) {
+                let tileId = $gameMap.tileId($gamePlayer.x, $gamePlayer.y, i);
+                if (tileId >= 2048)
+                    tileId = Math.floor((tileId - 2048) / 48);
+                const tx = tileId % 8;
+                const ty = Math.floor((tileId % 256) / 8);
+                let page = i < 2 ? 0 : 1 + Math.floor(tileId / 256);
+
+                const effect = addTileInfo[tx + ty * 8 + page * 256];
+                if (effect) {
+                    effects[effect] = true;
+                    $gvars.TMP_A = effect;
+                    $gvars.TMP_B = this._tileCounters[effect] || 0;
+                    $gameMap.triggerCommonEvent(TILE_EFFECT_COMMON_EVENT_ID);
+                }
+            }
+
+            for (let i = 0, n = Math.max(effects.length, this._tileCounters.length); i < n; i++) {
+                this._tileCounters[i] = effects[i] ? (this._tileCounters[i] || 0) + 1 : 0;
+            }
+        });
+}
+
+
+{ // Map state overlays
+    override(Game_Player.prototype,
+        function actor() {
+            return $gameParty.leader();
+        });
+
+    override(Game_Vehicle.prototype,
+        function actor() {
+            return $gamePlayer.vehicle() === this ? $gamePlayer.actor() : null;
         })
+
+    override(Sprite_Character.prototype,
+        function update(update) {
+            update.call(this);
+
+            if (!this._character)
+                return;
+            if (this._character.actor) {
+                if (!this._stateSprite) {
+                    this._stateSprite = new Sprite_StateOverlay();
+                    this.parent.addChild(this._stateSprite);
+                }
+                this._stateSprite.setup(this._character.actor());
+                this._stateSprite.x = this.x;
+                this._stateSprite.y = this.y + this.height;
+                this._stateSprite.opacity = this.visible ? 255 : 0;
+            } else {
+                this.parent.removeChild(this._stateSprite);
+                delete this._stateSprite;
+            }
+        });
 }
