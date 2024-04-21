@@ -15757,6 +15757,11 @@
         ]
       },
       {
+        "code": 115,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 108,
         "indent": 0,
         "parameters": [
@@ -15767,7 +15772,7 @@
         "code": 118,
         "indent": 0,
         "parameters": [
-          "1"
+          "0"
         ]
       },
       {
@@ -16291,7 +16296,7 @@
         "code": 401,
         "indent": 0,
         "parameters": [
-          "immune à la chaleur."
+          "ininflammable. Même votre radeau!"
         ]
       },
       {
@@ -16326,6 +16331,294 @@
       }
     ],
     "name": "Vider bouteille d'eau",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 45,
+    "list": [
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Paper",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _ProtagonistePamphlet"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\"Vous vous sentez seule? Vous trouver que "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "vos voisins ne respectent pas pour vos "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "sédiments? Joignez le RRRR!\""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Hein? Le RRRR? Mes sédiments?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _GabspartPamphlet"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Oh. T'es pas le public cible, c'est OK."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Pamphlet du RRRR",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 46,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          8,
+          12
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          5,
+          -1,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          3,
+          3,
+          0,
+          3,
+          5,
+          -1,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "const dir = $gamePlayer.direction();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "const landOk = $gameMap.isPassable($gvars.TMP_B, $gvars.TMP_C, dir);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gvars.TMP_B = $gameMap.roundXWithDirection($gvars.TMP_B, dir);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gvars.TMP_C = $gameMap.roundYWithDirection($gvars.TMP_C, dir)"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "const waterOk = $gameMap.isBoatPassable($gvars.TMP_B, $gvars.TMP_C);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gvars.TMP_D = landOk && waterOk ? 1 : 0;"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          4,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Item3",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 202,
+        "indent": 2,
+        "parameters": [
+          0,
+          1,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "code": 206,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 2,
+        "parameters": [
+          6,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Action sur tuile vide",
     "switchId": 1,
     "trigger": 0
   }

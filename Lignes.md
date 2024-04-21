@@ -348,6 +348,9 @@ Slash3
 Recovery
 > Recovery
 
+Item3
+> Item3
+
 ### Narrateur
 
 _NarrateurBonjours
@@ -1794,13 +1797,13 @@ _NarrateurToutLeMondeMouille
 > Tout le monde est mouillé!\
 > \
 > Comme c'est bien connu, être mouillé rend complêtement\
-> immune à la chaleur.
+> ininflammable. Même votre radeau!
 
 _NarrateurBouteilleEau
 > Une bouteille d'eau!\
 > Vous pouvez vous la verser sur la tête et pouf tout le\
 > monde est mouillé. Comme c'est bien connu, être mouillé\
-> rend immune à la chaleur.
+> rend ininflammable. Même votre radeau!
 
 _NarrateurRemplirBouteilleEau
 > Remplir une bouteille d'eau?
@@ -1832,6 +1835,13 @@ _NarrateurArmurerieSecreteRRR
 
 _NarrateurEauJaillissanteScintille
 > De l'eau jaillissante qui scintille.
+
+_NarrateurPasGeologueDroleEndroitStalagmite
+> Vous n'êtes pas géologue.\
+> Mais c'est un drôle d'endroit pour une stalagmite, ça.
+
+_NarrateurPamphletPoches
+> Un pamphlet se matérialise dans vos poches!
 
 ### Protagoniste
 
@@ -4072,7 +4082,7 @@ _ProtagonisteStatueBorgne
 > Il est un peu borgne maintenant.
 
 _ProtagonisteEtVoila
-> Et voila! On pourait presque appeler ça une\
+> Et voila! On pourrait presque appeler ça une\
 > énigme.\
 > \
 > Faut juste plisser fort des yeux.
@@ -4087,6 +4097,12 @@ _ProtagonisteRRR1
 _ProtagonisteRRR2
 > Dans le genre que ça a été abandonné?\
 > Pourtant je vois des roches partout!
+
+_ProtagonistePamphlet
+> "Vous vous sentez seule? Vous trouver que\
+> vos voisins ne respectent pas pour vos\
+> sédiments? Joignez le RRRR!"\
+> Hein? Le RRRR? Mes sédiments?
 
 ### Wwwelchior
 
@@ -5378,6 +5394,9 @@ _GabspartRRR1
 _GabspartRRR2
 > C'est pas moi qui va t'éclairer sur ces\
 > nuances-là.
+
+_GabspartPamphlet
+> Oh. T'es pas le public cible, c'est OK.
 
 ### Gaboue
 
@@ -6733,6 +6752,12 @@ _GrossepilecaillouxjaunesPlusGrandPiece
 > mais c'est faux.\
 > Je suis le plus grand amas de cette pièce!
 
+_GrossepilecaillouxjaunesPeutPasRentrer
+> Je voulais venir visiter mon amie, mais la\
+> maison est complètement pleine...\
+> Je n'aurais pas crue qu'il y aurait autant\
+> de traffic!
+
 ### Paroigrisebrisee
 
 _ParoigrisebriseeJeSuisLibre
@@ -7709,6 +7734,12 @@ _GrossestalagmitegriseDitesVousVoulezJouerCartes
 
 _GrossestalagmitegriseJeGarde
 > Je garde.
+
+_GrossestalagmitegrisePamphletRRRR
+> Bonsoir, je suis représentante du RRRR.\
+> Toutes les roches sont les bienvenues\
+> maintenant que le royaume est rétabli.\
+> Vous voulez un pamphlet?
 
 ### Petitestalagmitegrise
 

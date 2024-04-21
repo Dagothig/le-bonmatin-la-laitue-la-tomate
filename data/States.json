@@ -1365,6 +1365,6 @@
     "removeByRestriction": false,
     "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 15
+    "stepsToRemove": 18
   }
 ]

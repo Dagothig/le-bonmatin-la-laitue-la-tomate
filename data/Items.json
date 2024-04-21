@@ -1138,5 +1138,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 38,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous vous sentez seule? Vous trouver que vos voisins\nne respectent pas pour vos sédiments? Joignez le RRRR!",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 45,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 193,
+    "itypeId": 1,
+    "name": "Pamphlet du RRRR",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

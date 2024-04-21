@@ -332,6 +332,7 @@ function eval_fn_expr(expr, args) {
     var eotRegexp = /\<<aaa_eot ([\s\S]*?)\>>/;
     var actionRegexp = /\<<aaa_action ([\s\S]*?)\>>/;
     var actionsRegexp = /\<<aaa_actions ([\s\S]*?)\>>/;
+    var conditionRegexp = /\<<aaa_condition ([\s\S]*?)\>>/;
     var performActionStartRegexp = /\<<aaa_performActionStart ([\s\S]*?)\>>/;
     var startRegexp = /\<<aaa_start ([\s\S]*?)\>>/;
     var setupRegexp = /\<<aaa_setup ([\s\S]*?)\>>/;
@@ -485,6 +486,8 @@ function eval_fn_expr(expr, args) {
                     skill._customPerformActionStart = performActionStartMatch && performActionStartMatch[1] && eval_fn_expr(performActionStartMatch[1], "battler");
                     const startMatch = note.match(startRegexp);
                     skill._customStart = startMatch && startMatch[1] && eval_fn_expr(startMatch[1]);
+                    const conditionMatch = note.match(conditionRegexp);
+                    skill._customCondition = conditionMatch && conditionMatch[1] && eval_fn_expr(conditionMatch[1]);
                 }
                 break;
             case $dataActors:
@@ -5069,10 +5072,31 @@ Input.keyMapper[68] = "right"; // d
 }
 
 { // Tileset tile info
-    const tileRegexp = /tile-(\w+)-(\d+)-(\d+)/;
+    const tileRegexp = /tile-(\w+)-(\d+)-(\d+)-(\w+)/;
     const pageToIdx = { A: 0, B: 1, C: 2, D: 3, E: 4 };
-    const tileEffects = { burn: 1 };
+    const tileEffects = { burn: 0, shiftX: 1, shiftY: 2, length: 3 };
+    const tileEffectsCommonEvents = {
+        [tileEffects.burn]: true
+    };
     const TILE_EFFECT_COMMON_EVENT_ID = 43;
+
+    function getTileEffects(addTileInfo, x, y) {
+        let effects = []
+        for (let i = 0; i < 4; i++) {
+            let tileId = $gameMap.tileId(x, y, i);
+            if (tileId >= 2048)
+                tileId = Math.floor((tileId - 2048) / 48);
+            const tx = tileId % 8;
+            const ty = Math.floor((tileId % 256) / 8);
+            let page = i < 2 ? 0 : 1 + Math.floor(tileId / 256);
+
+            const tileEffects = addTileInfo[tx + ty * 8 + page * 256];
+            if (tileEffects)
+                for (const effect of tileEffects)
+                    effect && (effects[effect[0]] = effect);
+        }
+        return effects;
+    }
 
     override(DataManager,
         function onLoad(onLoad, object) {
@@ -5088,7 +5112,16 @@ Input.keyMapper[68] = "right"; // d
                             const page = pageToIdx[tileMatch[1]] || 0;
                             const tx = parseInt(tileMatch[2]) || 0;
                             const ty = parseInt(tileMatch[3]) || 0;
-                            tileset.addTileInfo[tx + ty * 8 + page * 256] = tileEffects[meta[key]];
+                            const tileEffect = tileEffects[tileMatch[4]];
+                            const value = meta[key].split ? meta[key].split(":") : [1];
+                            if (!tileMatch[4] in tileEffects) {
+                                console.warn("Unknown tile effect", key, meta[key], "in tileset", tileset);
+                            }
+                            for (let i = 0; i < value.length; i++)
+                                value[i] = parseFloat(value[i]);
+                            value.unshift(tileEffect);
+                            const idx = tx + ty * 8 + page * 256;
+                            (tileset.addTileInfo[idx] || (tileset.addTileInfo[idx] = [])).push(value);
                         }
                     }
                 }
@@ -5111,27 +5144,46 @@ Input.keyMapper[68] = "right"; // d
 
             const addTileInfo = $gameMap.tileset().addTileInfo;
             !this._tileCounters && (this._tileCounters = []);
-            const effects = [];
-            for (let i = 0; i < 4; i++) {
-                let tileId = $gameMap.tileId($gamePlayer.x, $gamePlayer.y, i);
-                if (tileId >= 2048)
-                    tileId = Math.floor((tileId - 2048) / 48);
-                const tx = tileId % 8;
-                const ty = Math.floor((tileId % 256) / 8);
-                let page = i < 2 ? 0 : 1 + Math.floor(tileId / 256);
-
-                const effect = addTileInfo[tx + ty * 8 + page * 256];
-                if (effect) {
-                    effects[effect] = true;
-                    $gvars.TMP_A = effect;
-                    $gvars.TMP_B = this._tileCounters[effect] || 0;
+            const effects = getTileEffects(addTileInfo, $gamePlayer.x, $gamePlayer.y);
+            for (let i = 0; i < tileEffects.length; i++) {
+                const effect = effects[i];
+                if (effect && tileEffectsCommonEvents[effect[0]]) {
+                    $gvars.TMP_A = i
+                    $gvars.TMP_B = this._tileCounters[i] || 0;
                     $gameMap.triggerCommonEvent(TILE_EFFECT_COMMON_EVENT_ID);
                 }
+                this._tileCounters[i] = effect ? (this._tileCounters[i] || 0) + 1 : 0;
             }
+        });
 
-            for (let i = 0, n = Math.max(effects.length, this._tileCounters.length); i < n; i++) {
-                this._tileCounters[i] = effects[i] ? (this._tileCounters[i] || 0) + 1 : 0;
-            }
+    override(Game_CharacterBase.prototype,
+        function updateMove(updateMove) {
+            updateMove.call(this);
+
+            const addTileInfo = $gameMap.tileset().addTileInfo;
+
+            const tx1 = Math.floor(this._realX);
+            const tx2 = Math.ceil(this._realX);
+            const ty1 = Math.floor(this._realY);
+            const ty2 = Math.ceil(this._realY);
+            const r = Math.sqrt(Math.pow(this._realX - tx1, 2) + Math.pow(this._realY - ty1, 2));
+
+            const t1Effects = getTileEffects(addTileInfo, tx1, ty1);
+            const t1ShiftX = (t1Effects[tileEffects.shiftX] ? t1Effects[tileEffects.shiftX][1] : 0) * (1 - r);
+            const t1ShiftY = (t1Effects[tileEffects.shiftY] ? t1Effects[tileEffects.shiftY][1] : 0) * (1 - r);
+
+            const t2Effects = getTileEffects(addTileInfo, tx2, ty2);
+            const t2ShiftX = (t2Effects[tileEffects.shiftX] ? t2Effects[tileEffects.shiftX][1] : 0) * r;
+            const t2ShiftY = (t2Effects[tileEffects.shiftY] ? t2Effects[tileEffects.shiftY][1] : 0) * r;
+
+            this._shiftX = t1ShiftX + t2ShiftX;
+            this._shiftY = t1ShiftY + t2ShiftY;
+        },
+        function screenX(screenX) {
+            return screenX.call(this) + (this._shiftX || 0);
+        },
+        function screenY(screenY) {
+            return screenY.call(this) + (this._shiftY || 0);
         });
 }
 
@@ -5166,5 +5218,49 @@ Input.keyMapper[68] = "right"; // d
                 this.parent.removeChild(this._stateSprite);
                 delete this._stateSprite;
             }
+        });
+}
+
+{ // Trigger raft on empty action
+    const EMPTY_TILE_ACTION_COMMON_EVENT_ID = 46;
+
+    override(Game_Player.prototype,
+        function checkEventTriggerThere(checkEventTriggerThere, triggers) {
+            checkEventTriggerThere.call(this, triggers);
+
+            if (this.canStartLocalEvents() &&
+                triggers.includes(0) &&
+                !$gameMap.setupStartingEvent()
+            ) {
+                const direction = this.direction();
+                $gvars.TMP_A = $gameMap.roundXWithDirection(this.x, direction);
+                $gvars.TMP_B = $gameMap.roundYWithDirection(this.y, direction);
+                $gameMap.triggerCommonEvent(EMPTY_TILE_ACTION_COMMON_EVENT_ID);
+            }
+        });
+}
+
+{ // Bake escape into skills
+    const PARTY_ESCAPE_SKILL_ID = 84;
+    override(Game_Actor.prototype,
+        function skills(skills) {
+            const list = skills.call(this);
+            list.unshift($dataSkills[PARTY_ESCAPE_SKILL_ID]);
+            return list;
+        });
+
+    override(Game_BattlerBase.prototype,
+        function meetsSkillConditions(meetsSkillConditions, skill) {
+            return meetsSkillConditions.call(this, skill) &&
+                (!skill._customCondition || skill._customCondition.call(this));
+        });
+
+    override(Scene_Battle.prototype,
+        function startPartyCommandSelection(startPartyCommandSelection) {
+            this.refreshStatus();
+            this._statusWindow.deselect();
+            this._statusWindow.open();
+            this._actorCommandWindow.close();
+            this.commandFight();
         });
 }
