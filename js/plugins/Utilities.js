@@ -5264,3 +5264,42 @@ Input.keyMapper[68] = "right"; // d
             this.commandFight();
         });
 }
+
+{ // Fade parallax
+    override(Game_Map.prototype,
+        function changeParallax(changeParallax, name, loopX, loopY, sx, sy, duration) {
+            const changedName = this._parallaxName && name !== this._parallaxName;
+            changeParallax.call(this, name, loopX, loopY, sx, sy);
+            this.parallaxSwitchDuration = Number.isFinite(duration) ? duration : changedName ? 60 : 0;
+        });
+
+    override(Spriteset_Map.prototype,
+        function updateParallax(updateParallax) {
+            if ($gameMap.parallaxSwitchDuration) {
+                const oldParallax = this._parallax;
+                oldParallax.fadeoutDelta = 255 / $gameMap.parallaxSwitchDuration;
+
+                this._parallax = new TilingSprite();
+                this._parallax.move(0, 0, Graphics.width, Graphics.height);
+                this._baseSprite.addChildAt(
+                    this._parallax,
+                    this._baseSprite.getChildIndex(oldParallax));
+                delete this._parallaxName;
+                delete $gameMap.parallaxSwitchDuration;
+            }
+
+            updateParallax.call(this);
+        });
+
+    override(TilingSprite.prototype,
+        function update(update) {
+            update.call(this);
+
+            if (this.fadeoutDelta) {
+                this.opacity -= this.fadeoutDelta;
+                if (this.opacity <= 0) {
+                    this.parent.removeChild(this);
+                }
+            }
+        });
+}
