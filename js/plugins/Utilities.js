@@ -2462,12 +2462,12 @@ function eval_fn_expr(expr, args) {
 
         function isBoatPassable(isBoatPassable, x, y) {
             var regionId = this.regionId(x, y);
-            return regionId === 16 || regionId !== 17 && isBoatPassable.call(this, x, y);
+            return regionId !== 17 && isBoatPassable.call(this, x, y);
         },
 
         function isShipPassable(isShipPassable, x, y) {
             var regionId = this.regionId(x, y);
-            return regionId === 16 || regionId !== 17 && isShipPassable.call(this, x, y);
+            return regionId !== 17 && isShipPassable.call(this, x, y);
         },
 
         function isAirshipLandOk(isAirshipLandOk, x, y) {
@@ -5265,7 +5265,7 @@ Input.keyMapper[68] = "right"; // d
         });
 }
 
-{ // Fade parallax
+{ // Crossfade parallax
     override(Game_Map.prototype,
         function changeParallax(changeParallax, name, loopX, loopY, sx, sy, duration) {
             const changedName = this._parallaxName && name !== this._parallaxName;

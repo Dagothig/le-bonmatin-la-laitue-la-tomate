@@ -1866,79 +1866,11 @@
               "parameters": []
             },
             {
-              "code": 221,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 250,
+              "code": 117,
               "indent": 1,
               "parameters": [
-                {
-                  "name": "Beep3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                47
               ]
-            },
-            {
-              "code": 230,
-              "indent": 1,
-              "parameters": [
-                30
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Water1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 1,
-              "parameters": [
-                30
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Heal3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 314,
-              "indent": 1,
-              "parameters": [
-                0,
-                0
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 1,
-              "parameters": [
-                90
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 250,

@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 113,
+  "editMapId": 109,
   "elements": [
     "",
     "Physical",
@@ -408,7 +408,9 @@
     "ORGAN_SUCCESS",
     "MUR_VERT",
     "LIVRE_IMMOLATION",
-    "STATUE_GEMMES_SUS"
+    "STATUE_GEMMES_SUS",
+    "TEMPLE_BONSOIR_PORTE",
+    "TEMPLE_BONSOIR_PORTE_2"
   ],
   "terms": {
     "basic": [
@@ -650,7 +652,7 @@
     "JESUS_CUTSCENE",
     "TMP_DU_TBNK"
   ],
-  "versionId": 15164647,
+  "versionId": 88825768,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

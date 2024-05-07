@@ -1609,26 +1609,11 @@ _ProtagonisteNouvelleDemeure
 _ProtagonisteUnPeuEtroit
 > C'est un peu à l'étroit tout de même...
 
-_ProtagonisteAUnMauvaisPressentiment
-> J'ai un mauvais pressentiment...\
-> C'est vraiment glissant par ici!
-
 _ProtagonisteEtMaintenantQuoi
 > C'est beau, et maintenant on fait quoi?
 
 _ProtagonisteOhNonDotDotDot
 > Oh non...
-
-_ProtagonisteSiSeulementGeologue
-> Si seulement on avait ma bonne amie la\
-> Géologue avec nous...\
-> Elle serait de bon conseil!
-
-_ProtagonisteSiSiALaVilleMeme
-> Si si, même qu'elle habite à la Ville!\
-> Bon, on s'est rencontré que lorsqu'elle\
-> était en visite au Bois du Gaboué...\
-> Mais pareil!
 
 _ProtagonisteBivouaquer
 > Oh pratique! Un lit pour bivouaquer.
@@ -2263,6 +2248,59 @@ _ProtagonistePamphlet
 > sédiments? Joignez le RRRR!"\
 > Hein? Le RRRR? Mes sédiments?
 
+_ProtagonisteKosseca
+> Kosséça.
+
+_ProtagonisteEstUnTiCul
+> Non mais justement, le Gaboué me prédate!\
+> Tu penses que ça date d'hier qu'il est sur\
+> son pont à proférer des "GABOUÉ"?
+
+_ProtagonisteDemeureConfus
+> Bon par contre ça clarifie rien à ce qu'on\
+> a devant nous là.
+
+_ProtagonisteVeutPasLaSoupeDeMot
+> ... le Sage Pingouin?\
+> \
+> ... les Scriptouilles?
+
+_ProtagonisteVeutPasLaSoupeDeMotPt2
+> À quel point Gaboué fait juste déblatérer\
+> une soupe de mots en fait?\
+> \}En plus ça rimait pas à la fin...\{
+
+_ProtagonisteLesScriptouillesCEstDangereux6
+> Bon, je m'excuse.\
+> \
+> Pis huh... ces "Scriptouilles" c'est\
+> dangereux?
+
+_ProtagonisteOffreMercantile
+> ... Quoi? Tu veux nous faire une offre\
+> mercantile?
+
+_ProtagonisteAUnMauvaisPressentiment
+> J'ai un mauvais pressentiment...\
+> C'est vraiment glissant par ici!
+
+_ProtagonisteSiSeulementGeologue
+> Si seulement on avait ma bonne amie la\
+> Géologue avec nous...\
+> Elle serait de bon conseil!
+
+_ProtagonisteSiSiALaVilleMeme
+> Si si, même qu'elle habite à la Ville!\
+> Bon, on s'est rencontré que lorsqu'elle\
+> était en visite au Bois du Gaboué...\
+> Mais pareil!
+
+_ProtagonisteProcedure
+> ... Une procédure?\
+> Y nous niaise. Quant à faire je peux bien\
+> lui expliquer la procédure de comment on va\
+> lui péter sa face!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2707,6 +2745,23 @@ _GabspartRRR2
 _GabspartPamphlet
 > Oh. T'es pas le public cible, c'est OK.
 
+_GabspartTraduitGabouePingouin
+> > Lorsque jadis j'errais,\
+> > en quête de savoir.\
+> > Apprenti vorace,\
+> > du sage Pingouin.
+
+_GabspartTraduitGaboueScriptouilles
+> > Je ne su m'expliquer,\
+> > Jaillissent tabouéerre!\
+> > Préceptes profèrent,\
+> > toutes les Scriptouilles!
+
+_GabspartFautFaireAttentionAuxIncantations
+> Les Scriptouilles elles-mêmes, non.\
+> Mais les mots qu'elles incantent...\
+> Je m'y méfierais.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -2842,10 +2897,6 @@ _WwwelchiorCaillouMouvant
 > On devrait continuer voir ce qu'il y a plus\
 > loin!
 
-_WwwelchiorWooPersVerConnaitKkun
-> Wooo regardez-moi ça Personne Véritable qui\
-> connait "quelqu'un"!
-
 _WwwelchiorBeurresPasTropOnEst4
 > Beurres-en pas trop, on est quatre tout de\
 > même.
@@ -2971,6 +3022,25 @@ _WwwelchiorTeasePuzzle
 > Et en plus l'eau à l'entrée elle scintille!\
 > C'est tout spécial ça.
 
+_WwwelchiorPensaisQueProtagonisteSaurait
+> Je pensais que tu vivais dans cette forêt?
+
+_WwwelchiorLesLegendesCEstLong
+> C'est vrai que ça prend un moment à se\
+> former les légendes...
+
+_WwwelchiorCEtaitMechantCommentaire
+> Effectivement, c'était juste méchant comme\
+> commentaire.
+
+_WwwelchiorNeVeutPasTransaction
+> Assurément tu ne veux rien échanger avec un\
+> Detah qui veut faire une transaction!
+
+_WwwelchiorWooPersVerConnaitKkun
+> Wooo regardez-moi ça Personne Véritable qui\
+> connait "quelqu'un"!
+
 ### Fantome
 
 ### Vieille
@@ -3034,6 +3104,9 @@ _OracleLaPorte
 ### Windo
 
 ### Detah
+
+_DetahHehe
+> He he...
 
 ### Informateur
 
@@ -3877,17 +3950,6 @@ _GeologueSePresente
 > Vous pouvez m'appeler Géologue, ça fait\
 > plus simple.
 
-_GeologueVaTraduireRoches
-> Vous entendez? Tendez-bien l'oreille, on\
-> peut entendre le doux chuchotement des\
-> roches.\
-> Ah je vais même vous le traduire...
-
-_GeologueVaSeTenirLoin
-> Mais huh, malgré ma folle confiance en vous\
-> je vais me tenir un peu éloignée, c'est\
-> bon?
-
 _GeologueOnPeutYAller
 > Bon, on va pouvoir y aller, donc.
 
@@ -3902,6 +3964,17 @@ _GeologueVoyonsLeRRRR
 > Voyons! Le Royaume Rétabli des Roches\
 > Récalcitrantes.\
 > Vous n'avez pas eu de cours de géologie?
+
+_GeologueVaTraduireRoches
+> Vous entendez? Tendez-bien l'oreille, on\
+> peut entendre le doux chuchotement des\
+> roches.\
+> Ah je vais même vous le traduire...
+
+_GeologueVaSeTenirLoin
+> Mais huh, malgré ma folle confiance en vous\
+> je vais me tenir un peu éloignée, c'est\
+> bon?
 
 ### Roche
 

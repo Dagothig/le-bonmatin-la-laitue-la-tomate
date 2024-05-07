@@ -1507,7 +1507,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -1684,7 +1684,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
