@@ -4819,8 +4819,7 @@ Input.keyMapper[68] = "right"; // d
         })
 })();
 
-// Organ minigame
-{
+{ // Organ minigame
     function Scene_Organ() {
         this.initialize.apply(this, arguments);
     }
@@ -5039,8 +5038,7 @@ Input.keyMapper[68] = "right"; // d
         });
 }
 
-// Ships are stepping
-{
+{ // Ships are stepping
     override(Game_Vehicle.prototype,
         function initMoveSpeed(initMoveSpeed) {
             initMoveSpeed.call(this);

@@ -32831,7 +32831,7 @@
     ],
     "mode": 1,
     "name": "Dungeon",
-    "note": "<tile-A-4-0-burn>\n<tile-A-6-0-burn>\n<tile-A-0-4-burn>",
+    "note": "<tile-A-4-0-burn>\n<tile-A-0-4-burn>",
     "tilesetNames": [
       "Dungeon_A1",
       "Dungeon_A2",
@@ -57464,7 +57464,7 @@
     ],
     "mode": 1,
     "name": "Dungeon Lite",
-    "note": "<tile-A-4-0-burn>\n<tile-A-6-0-burn>\n<tile-A-0-4-burn>",
+    "note": "<tile-A-4-0-burn>\n<tile-A-0-4-burn>",
     "tilesetNames": [
       "Dungeon_A1",
       "Dungeon_A2",
