@@ -979,7 +979,7 @@
     "order": 111,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 1144
+    "scrollY": 1136
   },
   {
     "id": 110,
@@ -1014,8 +1014,8 @@
     "name": "TEMPLE_DU_BONSOIR_RDC",
     "order": 112,
     "parentId": 109,
-    "scrollX": 821,
-    "scrollY": 696
+    "scrollX": 811,
+    "scrollY": 792
   },
   {
     "id": 114,
@@ -1024,7 +1024,7 @@
     "order": 113,
     "parentId": 109,
     "scrollX": 811,
-    "scrollY": 792
+    "scrollY": 456
   },
   {
     "id": 115,

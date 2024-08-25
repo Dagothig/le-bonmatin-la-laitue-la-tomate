@@ -2,8 +2,8 @@ function override(obj) {
     for (let i = 1; i < arguments.length; i++) {
         let fn = arguments[i];
         let original = obj[fn.name];
-        obj[fn.name] = function (a, b, c, d, e, f) {
-            return fn.call(this, original, a, b, c, d, e, f);
+        obj[fn.name] = function (a, b, c, d, e, f, g, h) {
+            return fn.call(this, original, a, b, c, d, e, f, g, h);
         }
     }
 }
@@ -5083,12 +5083,18 @@ Input.keyMapper[68] = "right"; // d
     function getTileEffects(addTileInfo, x, y) {
         let effects = []
         for (let i = 0; i < 4; i++) {
-            let tileId = $gameMap.tileId(x, y, i);
-            if (tileId >= 2048)
-                tileId = Math.floor((tileId - 2048) / 48);
-            const tx = tileId % 8;
-            const ty = Math.floor((tileId % 256) / 8);
-            let page = i < 2 ? 0 : 1 + Math.floor(tileId / 256);
+            const tileId = $gameMap.tileId(x, y, i);
+            let tx, ty, page;
+            if (Tilemap.isAutotile(tileId)) {
+                const kind = Tilemap.getAutotileKind(tileId);
+                page = 0;
+                tx = kind % 8;
+                ty = Math.floor(kind / 8);
+            } else {
+                page = Tilemap.isTileA5(tileId) ? 0 : (1 + Math.floor(tileId / 256));
+                tx = Math.floor(tileId / 128) % 2 * 8 + tileId % 8;
+                ty = Math.floor(tileId % 256 / 8) % 16;
+            }
 
             const tileEffects = addTileInfo[tx + ty * 8 + page * 256];
             if (tileEffects)
@@ -5267,9 +5273,9 @@ Input.keyMapper[68] = "right"; // d
 
 { // Crossfade parallax
     override(Game_Map.prototype,
-        function changeParallax(changeParallax, name, loopX, loopY, sx, sy, duration) {
+        function changeParallax(changeParallax, name, loopX, loopY, sx, sy, x, y, duration) {
             const changedName = this._parallaxName && name !== this._parallaxName;
-            changeParallax.call(this, name, loopX, loopY, sx, sy);
+            changeParallax.call(this, name, loopX, loopY, sx, sy, x, y, duration);
             this.parallaxSwitchDuration = Number.isFinite(duration) ? duration : changedName ? 60 : 0;
         });
 
