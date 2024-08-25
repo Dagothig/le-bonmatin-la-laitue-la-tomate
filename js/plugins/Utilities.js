@@ -5090,8 +5090,12 @@ Input.keyMapper[68] = "right"; // d
                 page = 0;
                 tx = kind % 8;
                 ty = Math.floor(kind / 8);
+            } else if (Tilemap.isTileA5(tileId)) {
+                page = 0;
+                tx = Math.floor(tileId / 128) % 2 * 8 + tileId % 8;
+                ty = 12 + Math.floor(tileId % 256 / 8) % 16;
             } else {
-                page = Tilemap.isTileA5(tileId) ? 0 : (1 + Math.floor(tileId / 256));
+                page = 1 + Math.floor(tileId / 256);
                 tx = Math.floor(tileId / 128) % 2 * 8 + tileId % 8;
                 ty = Math.floor(tileId % 256 / 8) % 16;
             }
