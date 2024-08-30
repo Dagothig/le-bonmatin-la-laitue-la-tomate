@@ -5233,18 +5233,25 @@ Input.keyMapper[68] = "right"; // d
     const EMPTY_TILE_ACTION_COMMON_EVENT_ID = 46;
 
     override(Game_Player.prototype,
-        function checkEventTriggerThere(checkEventTriggerThere, triggers) {
-            checkEventTriggerThere.call(this, triggers);
+        function checkEmptyTileTriggerThere(_) {
+            const direction = this.direction();
+            $gvars.TMP_A = $gameMap.roundXWithDirection(this.x, direction);
+            $gvars.TMP_B = $gameMap.roundYWithDirection(this.y, direction);
+            $gameMap.triggerCommonEvent(EMPTY_TILE_ACTION_COMMON_EVENT_ID);
+            return true;
+        },
 
-            if (this.canStartLocalEvents() &&
-                triggers.includes(0) &&
-                !$gameMap.setupStartingEvent()
-            ) {
-                const direction = this.direction();
-                $gvars.TMP_A = $gameMap.roundXWithDirection(this.x, direction);
-                $gvars.TMP_B = $gameMap.roundYWithDirection(this.y, direction);
-                $gameMap.triggerCommonEvent(EMPTY_TILE_ACTION_COMMON_EVENT_ID);
-            }
+        function triggerButtonAction(triggerButtonAction) {
+            return (
+                !triggerButtonAction.call(this) &&
+                Input.isTriggered("ok") &&
+                this.checkEmptyTileTriggerThere());
+        },
+        function triggerTouchActionD2(triggerTouchActionD2, x2, y2) {
+            return (
+                !triggerTouchActionD2.call(this, x2, y2) &&
+                TouchInput.isTriggered() &&
+                this.checkEmptyTileTriggerThere());
         });
 }
 
