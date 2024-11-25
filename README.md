@@ -26,14 +26,3 @@ Plop un serveur http sur la racine. Voilà c'est tout.
 
 C'est un midi d'hiver - Personne Véritable se pointe affamé(e?) au petit village.
 S'en suit du Contenu (tm) de Qualitay.
-
-### Shack d'Hermite
-
-Hermite cagoulé qui dit qu'on doit ouvrir les yeux
-
-Si le bon matin dérobé est découvert (chose évidente btw, le Protagoniste va chialer solidement sur ça - un bon rant), révèle que c'est Jésus-du-Brun, l'inventeur du Touche-Pipi, l'Originel Protagoniste: Mais y'a échoué pour cause de Chevalier Noir, alors voici un batô pis sauvez le monde vite avant que y'ait plus de temps AKA
-
-BIG LORE DUMP
-
-Jésus rejoint pas l'équipe parce que c'est Personne Véritable le Protagoniste
-Wwwelchior était pas au courant de Jésus-du-Brun avait échoué, mais Gabspart oui mais les spoilers woh y'a des limites.

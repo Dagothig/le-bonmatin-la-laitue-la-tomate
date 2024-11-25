@@ -464,7 +464,13 @@
     "id": 17,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      }
+    ],
     "iconIndex": 78,
     "maxTurns": 2,
     "message1": " est pointé du doigt!",
@@ -563,7 +569,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Prépare un sort",
-    "note": "<<aaa_removed {\n    aaa_anim(affected, \"wiggle\");\n    affected.makeActions();\n\n    for (const target of affected._targets || []) {\n      target._pointeCounter--;\n      if (target._pointeCounter <= 0) {\n        delete target._pointeCounter;\n        target.removeState(17);\n      }\n    }\n}>>",
+    "note": "<<aaa_removed {\n    aaa_anim(affected, \"wiggle\");\n    affected.makeActions();\n}>>",
     "overlay": 0,
     "priority": 40,
     "removeAtBattleEnd": true,

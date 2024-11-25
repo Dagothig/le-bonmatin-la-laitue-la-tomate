@@ -420,6 +420,7 @@ function eval_fn_expr(expr, args) {
                                 routeEntry.evalFn = eval_fn_expr("{\n" + routeEntry.parameters[0] + "\n}", "command, gc, params");
                     }
                 $dataMap.playerScale = Number.parseFloat($dataMap.meta.playerScale) || 1;
+                $dataMap.autoplayFn = $dataMap.meta.autoplay && eval_fn_expr($dataMap.meta.autoplay);
                 break;
             case $dataCommonEvents:
                 for (const event of $dataCommonEvents)
@@ -625,6 +626,10 @@ function eval_fn_expr(expr, args) {
                                 item.aaa_states.push(Number.parseInt(value));
                             }
                         }
+                    }
+                    // Weapons and armor can be used on self to equip.
+                    if (item) {
+                        item.scope = 11;
                     }
                 }
                 break;
@@ -2541,11 +2546,13 @@ function eval_fn_expr(expr, args) {
         },
 
         function zoomOnCharacter(_, character, scale, duration = 15) {
-            this.startZoom(
-                character && character.screenX() || 0,
-                character && (character.screenY() - 24) || 0,
-                scale,
-                duration);
+            const x = character && character.screenX() || 0;
+            const y = character && (character.screenY() - 24) || 0;
+            if (duration) {
+                this.startZoom(x, y, scale, duration);
+            } else {
+                this.setZoom(x, y, scale);
+            }
         },
 
         function zoomOnBattler(_, battler, scale, duration = 15) {
@@ -5316,5 +5323,346 @@ Input.keyMapper[68] = "right"; // d
                     this.parent.removeChild(this);
                 }
             }
+        });
+}
+
+
+{ // Autoplay on maps for stupid reasons
+    override(Scene_Map.prototype,
+        function start(start) {
+            start.call(this);
+            if ($dataMap.autoplayFn) {
+                $dataMap.autoplayFn();
+            }
+        }
+    )
+}
+
+{ // Nicer (? lol) menus
+    override(Scene_ItemBase.prototype,
+        function onActorOk(onActorOk) {
+            const item = this.item();
+            if (DataManager.isWeapon(item) || DataManager.isArmor(item)) {
+                const target = this.itemTargetActors()[0];
+                if (target && target.canEquip(item)) {
+                    const slotId = target.equipSlots().findIndex(typeId => typeId === item.etypeId);
+                    if (slotId >= 0) {
+                        SoundManager.playEquip();
+                        target.changeEquip(slotId, item);
+                        this.checkCommonEvent();
+                        this.checkGameover();
+                        this.onActorCancel();
+                        return;
+                    }
+                }
+                SoundManager.playBuzzer();
+            } else {
+                return onActorOk.call(this);
+            }
+        },
+        function useItem(useItem) {
+            useItem.call(this);
+            this._actorWindow.callUpdateHelp();
+        },
+        function createActorWindow() {
+            let x = 0, y = this._helpWindow.y + this._helpWindow.height;
+
+            this._itemName = new Window_ItemName(x, y);
+            y += this._itemName.height;
+
+            this._actorWindow = new Window_MenuSmallActor(x, y);
+            y += this._actorWindow.height;
+
+            this._actorStatus = new Window_MenuSmallStatus(x, y);
+            y += this._actorStatus.height;
+
+            this._actorEquipStatus = new Window_EquipStatus(x, y, true);
+            x += this._actorEquipStatus.width;
+
+            const w = Graphics.boxWidth - this._actorEquipStatus.width;
+            const h = this._actorEquipStatus.height;
+            this._actorEquipSlot = new Window_EquipSlot(x, y, w, h);
+
+            this._actorWindow.setHandler('ok', this.onActorOk.bind(this));
+            this._actorWindow.setHandler('cancel', this.onActorCancel.bind(this));
+
+            this._actorEquipSlot.setStatusWindow(this._actorEquipStatus);
+            this._itemName.hide();
+            this._actorWindow.hide();
+            this._actorStatus.hide();
+            this._actorEquipSlot.hide();
+            this._actorEquipStatus.hide();
+            this._actorWindow.setHelpWindows([
+                this._itemName,
+                this._actorStatus,
+                this._actorEquipSlot,
+                this._actorEquipStatus
+            ]);
+
+            this.addWindow(this._itemName);
+            this.addWindow(this._actorWindow);
+            this.addWindow(this._actorStatus);
+            this.addWindow(this._actorEquipSlot);
+            this.addWindow(this._actorEquipStatus);
+        });
+
+    override(Window_ItemList.prototype,
+        function isEnabled(isEnabled, item) {
+            return isEnabled.call(this, item) || DataManager.isWeapon(item) || DataManager.isArmor(item);
+        });
+
+    override(Window_EquipStatus.prototype,
+        function initialize(initialize, x, y, hideName) {
+            this._hideName = hideName;
+            initialize.call(this, x, y);
+        },
+        function numVisibleRows(numVisibleRows) {
+            return numVisibleRows.call(this) - (this._hideName ? 1 : 0);
+        },
+        function refresh() {
+            this.contents.clear();
+            if (this._actor) {
+                let offset = 0;
+                if (!this._hideName) {
+                    this.drawActorName(this._actor, this.textPadding(), 0);
+                    offset++;
+                }
+                for (var i = 0; i < 6; i++) {
+                    this.drawItem(0, this.lineHeight() * (offset + i), 2 + i);
+                }
+            }
+        });
+
+    function Window_ItemName() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_ItemName.prototype = Object.create(Window_Base.prototype);
+    Window_ItemName.prototype.constructor = Window_ItemName;
+
+    override(Window_ItemName.prototype,
+        function initialize(initialize, x, y, w) {
+            initialize.call(this, x, y,
+                w || Graphics.boxWidth,
+                this.lineHeight() + this.standardPadding() * 2);
+        },
+        function windowWidth() {
+            return this.width;
+        },
+        function windowHeight() {
+            return this.height;
+        },
+        function setItem(_, item) {
+            this._item = item;
+        },
+        function drawItemNumber(_, item, x, y, width) {
+            this.drawText(':', x, y, width - this.textWidth('00'), 'right');
+            this.drawText($gameParty.numItems(item), x, y, width, 'right');
+        },
+        function drawItemType(_, item, x, y, width) {
+            this.drawText(
+                DataManager.isWeapon(item) ? TextManager.weapon :
+                DataManager.isArmor(item) ? $dataSystem.equipTypes[item.etypeId] :
+                DataManager.isItem(item) ?
+                    item.itypeId === 1 ? TextManager.item :
+                    item.itypeId === 2 ? TextManager.keyItem :
+                    "???" :
+                "???",
+                x, y, width
+            )
+        },
+        function refresh() {
+            this.contents.clear();
+            if (this._item) {
+                const width = this.windowWidth() - this.padding * 2;
+                this.changePaintOpacity($gameParty.numItems(this._item) > 0);
+                this.drawItemType(this._item, 0, 0, this.textWidth("Accessoire "));
+                this.drawItemName(this._item, this.textWidth("Accessoire "), 0, width - this.textWidth('000'));
+                this.drawItemNumber(this._item, 0, 0, width);
+                this.changePaintOpacity(1);
+            }
+        });
+
+    function Window_MenuSmallActor() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_MenuSmallActor.prototype = Object.create(Window_Selectable.prototype);
+    Window_MenuSmallActor.prototype.constructor = Window_MenuSmallActor;
+
+    override(Window_MenuSmallActor.prototype,
+        function initialize(initialize, x, y, w) {
+            this._pendingIndex = -1;
+            this._helpWindows = [];
+            initialize.call(this, x, y,
+                w || Graphics.boxWidth,
+                this.itemHeight() + this.standardPadding() * 2);
+            this.refresh();
+        },
+        function show(show) {
+            show.call(this);
+            this.showHelpWindow();
+        },
+        function hide(hide) {
+            hide.call(this);
+            this.hideHelpWindow();
+        },
+        function windowWidth() {
+            return this.width;
+        },
+        function windowHeight() {
+            return this.height;
+        },
+        function itemHeight() {
+            return 48 + this.textPadding() * 2;
+        },
+        function maxCols() {
+            return 4;
+        },
+        function maxItems() {
+            return $gameParty.battleMembers().length;
+        },
+        function drawItem(_, index) {
+            this.drawItemBackground(index);
+            const actor = $gameParty.battleMembers()[index];
+            const rect = this.itemRect(index);
+            this.changePaintOpacity(this.isEnabled(index));
+            this.drawActorCharacter(actor,
+                rect.x + this.itemWidth() / 2,
+                rect.y + rect.height - this.textPadding());
+            this.changePaintOpacity(true);
+        },
+        function drawItemBackground(_, index) {
+            Window_MenuActor.prototype.drawItemBackground.call(this, index);
+        },
+        function processOk() {
+            Window_MenuActor.prototype.processOk.call(this);
+        },
+        function selectLast() {
+            Window_MenuActor.prototype.selectLast.call(this);
+        },
+        function isEnabled(_, index) {
+            const actor = $gameParty.battleMembers()[index];
+            return actor.canUse(this._item) || actor.canEquip(this._item);
+        },
+        function isCurrentItemEnabled() {
+            return this.isEnabled(this._index);
+        },
+        function selectForItem(_, item) {
+            Window_MenuActor.prototype.selectForItem.call(this, item);
+            this._item = item;
+            this.refresh();
+            this.callUpdateHelp();
+        },
+        function pendingIndex() {
+            return this._pendingIndex;
+        },
+        function setPendingIndex(_, index) {
+            const lastPendingIndex = this._pendingIndex;
+            this._pendingIndex = index;
+            this.redrawItem(this._pendingIndex);
+            this.redrawItem(lastPendingIndex);
+        },
+
+        function setHelpWindows(_, windows) {
+            this._helpWindows = windows;
+        },
+        function callUpdateHelp() {
+            if (this.active) {
+                this.updateHelp();
+            }
+        },
+        function updateHelp() {
+            const actor = $gameParty.battleMembers()[this._index];
+            let actorWithEquip = null;
+            if (actor && this._item && (DataManager.isWeapon(this._item) || DataManager.isArmor(this._item))) {
+                actorWithEquip = JsonEx.makeDeepCopy(actor);
+                const slotId = actor.equipSlots().findIndex(typeId => typeId === this._item.etypeId);
+                actorWithEquip.forceChangeEquip(slotId, this._item);
+            }
+            for (const window of this._helpWindows) {
+                window.setActor && window.setActor(actor);
+                window.setTempActor && window.setTempActor(actorWithEquip);
+                window.setItem && window.setItem(this._item);
+                window.refresh();
+            }
+        },
+        function showHelpWindow() {
+            for (const window of this._helpWindows) {
+                window.show();
+            }
+        },
+        function hideHelpWindow() {
+            for (const window of this._helpWindows) {
+                window.hide();
+            }
+        });
+
+    function Window_MenuSmallStatus() {
+        this.initialize.apply(this, arguments);
+    }
+
+    Window_MenuSmallStatus.prototype = Object.create(Window_Selectable.prototype);
+    Window_MenuSmallStatus.prototype.constructor = Window_MenuSmallStatus;
+
+    override(Window_MenuSmallStatus.prototype,
+        function initialize(_, x, y, w, h) {
+            Window_Selectable.prototype.initialize.call(this, x, y,
+                w || Graphics.boxWidth,
+                this.fittingHeight(1));
+        },
+        function windowWidth() {
+            return this.width;
+        },
+        function windowHeight() {
+            return this.height;
+        },
+        function setActor(_, actor) {
+            if (this._actor !== actor) {
+                this._actor = actor;
+                this.refresh();
+            }
+        },
+        function refresh() {
+            this.contents.clear();
+            if (this._actor) {
+                this.drawBasicArea(this.basicAreaRect(), this._actor);
+                this.drawGaugeArea(this.gaugeAreaRect(), this._actor);
+            }
+        },
+
+        function basicAreaRect() {
+            var rect = this.itemRectForText(0);
+            rect.width -= this.gaugeAreaWidth() + 15;
+            return rect;
+        },
+        function gaugeAreaRect() {
+            var rect = this.itemRectForText(0);
+            rect.x += rect.width - this.gaugeAreaWidth();
+            rect.width = this.gaugeAreaWidth();
+            return rect;
+        },
+        function gaugeAreaWidth() {
+            return 330;
+        },
+        function drawBasicArea(_, rect, actor) {
+            this.drawActorName(actor, rect.x + 0, rect.y, 150);
+            this.drawActorIcons(actor, rect.x + 156, rect.y, rect.width - 156);
+        },
+        function drawGaugeArea(_, rect, actor) {
+            if ($dataSystem.optDisplayTp) {
+                this.drawGaugeAreaWithTp(rect, actor);
+            } else {
+                this.drawGaugeAreaWithoutTp(rect, actor);
+            }
+        },
+        function drawGaugeAreaWithTp(_, rect, actor) {
+            this.drawActorHp(actor, rect.x + 0, rect.y, 108);
+            this.drawActorMp(actor, rect.x + 123, rect.y, 96);
+            this.drawActorTp(actor, rect.x + 234, rect.y, 96);
+        },
+        function drawGaugeAreaWithoutTp(_, rect, actor) {
+            this.drawActorHp(actor, rect.x + 0, rect.y, 201);
+            this.drawActorMp(actor, rect.x + 216, rect.y, 114);
         });
 }

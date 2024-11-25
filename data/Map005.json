@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 40,
-  "note": "<bgmFilter:farAway>\n<playerScale:0.75>",
+  "note": "<bgmFilter:farAway>\n<playerScale:0.75>\n<autoplay:{\n  $gameScreen.zoomOnPlayer(1 / 0.75, 0);\n  $gameScreen.resetZoom(30);\n}>",
   "parallaxLoopX": true,
   "parallaxLoopY": false,
   "parallaxName": "BlueSky",
@@ -9666,6 +9666,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
@@ -9989,6 +9996,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -10103,6 +10117,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -10291,6 +10312,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -10405,6 +10433,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -10521,6 +10556,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -10635,6 +10677,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -10751,6 +10800,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -10865,6 +10921,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -10981,6 +11044,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -11096,6 +11166,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -11210,6 +11287,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -11599,6 +11683,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -11987,6 +12078,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -12311,6 +12409,13 @@
               ]
             },
             {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                10
+              ]
+            },
+            {
               "code": 214,
               "indent": 0,
               "parameters": []
@@ -12375,6 +12480,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -12525,6 +12637,13 @@
                 6,
                 -1,
                 8
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                48
               ]
             },
             {
@@ -16649,6 +16768,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -16804,6 +16930,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -17002,6 +17135,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -17157,6 +17297,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -17608,6 +17755,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -17763,6 +17917,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -18482,6 +18643,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -18597,6 +18765,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -18711,6 +18886,13 @@
             "characterIndex": 1
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 205,
               "indent": 0,
@@ -19006,6 +19188,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                48
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
