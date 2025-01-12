@@ -42,8 +42,8 @@
     "name": "OVERWORLD",
     "order": 5,
     "parentId": 0,
-    "scrollX": 885,
-    "scrollY": 1129
+    "scrollX": 811,
+    "scrollY": 744
   },
   {
     "id": 6,
@@ -65,12 +65,12 @@
   },
   {
     "id": 8,
-    "expanded": false,
+    "expanded": true,
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 1456
+    "scrollY": 464
   },
   {
     "id": 9,
@@ -178,7 +178,7 @@
     "order": 24,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 928
+    "scrollY": 584
   },
   {
     "id": 21,
@@ -186,8 +186,8 @@
     "name": "SHRINE_1",
     "order": 25,
     "parentId": 8,
-    "scrollX": 491,
-    "scrollY": 477
+    "scrollX": 819,
+    "scrollY": 464
   },
   {
     "id": 22,
@@ -195,8 +195,8 @@
     "name": "SHRINE_2",
     "order": 26,
     "parentId": 8,
-    "scrollX": 893.4545454545455,
-    "scrollY": 520.3636363636364
+    "scrollX": 819,
+    "scrollY": 464
   },
   {
     "id": 23,
@@ -709,7 +709,7 @@
     "order": 4,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 464
   },
   {
     "id": 80,
@@ -925,7 +925,7 @@
     "order": 101,
     "parentId": 97,
     "scrollX": 821,
-    "scrollY": 827
+    "scrollY": 465
   },
   {
     "id": 104,
@@ -979,7 +979,7 @@
     "order": 111,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 784
+    "scrollY": 2016
   },
   {
     "id": 110,

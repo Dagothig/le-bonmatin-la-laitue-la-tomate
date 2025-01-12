@@ -5986,6 +5986,27 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.lightTint = 0xffffffff"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "SceneManager._scene._spriteset._globalLightTint.tint = 0xff242424;"
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
               "code": 223,
               "indent": 0,
               "parameters": [

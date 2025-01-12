@@ -5713,10 +5713,23 @@ nicer_menus: { // Nicer (? lol) menus
         });
 
     override(Sprite_Picture.prototype,
+        function updateBitmap(updateBitmap) {
+            updateBitmap.call(this);
+            const picture = this.picture();
+            this._event = picture && picture.name() === "Lens" ? $gamePlayer : null;
+        },
         function updatePosition(updatePosition) {
-            updatePosition.call(this);
-            this.x += (Graphics.width - Graphics.boxWidth) / 2;
-            this.y += (Graphics.height - Graphics.boxHeight) / 2;
+            if (this._event) {
+                this.x = (this._event.scrolledX() + 0.5) * $gameMap.tileWidth();
+                this.y = (this._event.scrolledY() + 0.5) * $gameMap.tileHeight();
+                this.anchor.x = 0.5;
+                this.anchor.y = 0.5;
+            } else {
+                updatePosition.call(this);
+                this.x = (Graphics.width - Graphics.boxWidth) / 2;
+                this.y = (Graphics.height - Graphics.boxHeight) / 2;
+            }
+
         });
 
     override(Spriteset_Base.prototype,
@@ -5782,4 +5795,78 @@ nicer_menus: { // Nicer (? lol) menus
         Graphics.height = h;
         SceneManager.onResize();
     });*/
+}
+
+{ // Lighting
+    override(Spriteset_Map.prototype,
+        function createLowerLayer(createLowerLayer) {
+            createLowerLayer.call(this);
+            this._time = 0;
+
+            this._lightingLayer = new Sprite();
+            const filter = new PIXI.filters.VoidFilter();
+            filter.blendMode = Graphics.BLEND_MULTIPLY;
+            this._lightingLayer.filters = [filter];
+
+            const white = new Bitmap(Graphics.width, Graphics.height);
+            white.fillAll("white");
+            this._globalLightTint = new Sprite(white);
+            this._lightingLayer.addChild(this._globalLightTint);
+
+            this._lightImg = ImageManager.loadSystem("Light512");
+            this._lights = [];
+
+            /*for (const event of $gameMap.events()) {
+                this.createEventLight(event);
+            }
+            for (const event of $gameMap.vehicles()) {
+                this.createEventLight(event);
+            }
+            $gamePlayer.followers().forEach(event => {
+                this.createEventLight(event);
+            });*/
+            this.createEventLight($gamePlayer);
+
+
+            this.addChild(this._lightingLayer);
+        },
+    function createEventLight(_, event) {
+        const light = new Sprite(this._lightImg);
+        light.blendMode = Graphics.BLEND_ADD;
+        light._timeOffset = (Math.random() * 1024)|0;
+        light.visible = false;
+        light.event = event;
+        this._lights.push(light);
+        this._lightingLayer.addChild(light);
+    },
+    function update(update) {
+        update.call(this);
+
+        this._time++;
+
+        for (const light of this._lights) {
+            const event = light.event;
+            const needsLight = event.lightTint || event.lightSize;
+            if (!needsLight) {
+                light.visible = false;
+                continue;
+            }
+            if (needsLight) {
+                light.visible = true;
+                light.x = (event.scrolledX() + 0.5) * $gameMap.tileWidth();
+                light.y = (event.scrolledY() + 0.5) * $gameMap.tileHeight();
+                light.anchor.x = 0.5;
+                light.anchor.y = 0.5;
+                light.rotation += Math.PI / 128;
+                light.tint = event.lightTint || 0xffffffff;
+                const time = this._time + light._timeOffset;
+                const lightScale = (event.lightSize || light.bitmap.width) / light.bitmap.width;
+                light.scale.x = light.scale.y =
+                    lightScale * (
+                    1 +
+                    0.1 + Math.sin(time / (Math.PI * 32)) * 0.05 +
+                    0.025 + Math.sin(time / (Math.PI * 3)) * 0.0125);
+            }
+        }
+    });
 }
