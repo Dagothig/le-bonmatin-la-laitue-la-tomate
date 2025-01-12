@@ -16736,5 +16736,568 @@
     "name": "Overworld zoom back",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 49,
+    "list": [
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Expects TMP_A to be map level"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          77,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "BONSOIR_PLAT_SETUP",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 50,
+    "list": [
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Expects TMP_A to be map level"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          0,
+          {
+            "list": [
+              {
+                "code": 44,
+                "parameters": [
+                  {
+                    "name": "Switch3",
+                    "volume": 90,
+                    "pitch": 100,
+                    "pan": 0
+                  }
+                ],
+                "indent": null
+              },
+              {
+                "code": 17,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  3
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  3
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  3
+                ],
+                "indent": null
+              },
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 44,
+            "parameters": [
+              {
+                "name": "Switch3",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              3
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              3
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              3
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          77,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Open2",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 225,
+        "indent": 0,
+        "parameters": [
+          1,
+          9,
+          20,
+          false
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Train",
+            "volume": 90,
+            "pitch": 120,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          77,
+          1,
+          1,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          8
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          7
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          6
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          5
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          76,
+          76,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          77,
+          77,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Hammer",
+            "volume": 90,
+            "pitch": 70,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Open2",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 225,
+        "indent": 0,
+        "parameters": [
+          3,
+          9,
+          4,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "BONSOIR_PLAT_SWITCH",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

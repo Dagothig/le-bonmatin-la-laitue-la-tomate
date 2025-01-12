@@ -4533,6 +4533,15 @@ _PetitestalagmitejauneAttentionRiviere
 > ne reviennent jamais.\
 > Tout mes amis les caillous...
 
+_PetitestalagmitejauneSentLePoulet
+> Je n'ai pas de nez. Mais si j'en avais un\
+> je pourrais vous dire que ça sent le\
+> poulet.
+
+_PetitestalagmitejauneNotreGrotte
+> Regardez-les là-bas! Qui se vautrent au\
+> milieu de l'étang! C'était notre grotte!
+
 ### Grossestalagmitejaune
 
 _GrossestalagmitejauneRegardesMaman
@@ -4584,6 +4593,17 @@ _GrossestalagmitejauneStupeurDePeur
 > . . .\
 > . . .\
 > AAAAAAAAAAAAAAAAA
+
+_GrossestalagmitejaunePauvreGertrude
+> Pauvre Gertrude... Elle a été sauvagement\
+> errodée par les plantes.
+
+_GrossestalagmitejaunePousse
+> Drip drip drip!\
+> Comme un champignon! Je pousse, je pousse!
+
+_GrossestalagmitejauneAaaa
+> Aaaaah! Les plantes, les plantes!
 
 ### Grosninja
 
@@ -4904,6 +4924,12 @@ _PetiterochebruneOh
 > Oh.\
 > \
 > Merde.
+
+_PetiterochebruneBienvenueNonplantaires
+> Bienvenue, bienvenue!\
+> Ça fait du bien de voir des figures\
+> non-plantaires... inplantaires?\
+> Quand Gertrude apprendra ça...
 
 ### Jesus
 

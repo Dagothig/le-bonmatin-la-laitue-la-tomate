@@ -1435,9 +1435,11 @@ function eval_fn_expr(expr, args) {
                     delete this._noEntry;
                 } else {
                     this.pushMoves([
+                        [OPACITY, 0],
                         [MOTION, "escape"],
                         [MOVE, 200, 50, 0],
                         [WAIT, this._actor.index() * 8],
+                        [OPACITY, 255],
                         [PARABOLA, 20, 0, -60, 12],
                         [PARABOLA, 0, 0, -10, 4]]);
                 }
@@ -1472,7 +1474,8 @@ function eval_fn_expr(expr, args) {
                     [MOTION, "walk"],
                     [PARABOLA, 70, 0, -10, 8],
                     [MOTION, "escape"],
-                    [PARABOLA, 300, 0, -50, 18]
+                    [PARABOLA, 300, 0, -50, 18],
+                    [OPACITY, 0]
                 ]);
             }
         },
@@ -1831,8 +1834,7 @@ function eval_fn_expr(expr, args) {
 }
 
 // Tapocher lés fenêtres
-(function () {
-
+{
     Window_MenuStatus.prototype.drawItemStatus = function (index) {
         var actor = $gameParty.members()[index];
         var rect = this.itemRect(index);
@@ -1992,7 +1994,7 @@ function eval_fn_expr(expr, args) {
             }
         });
 
-})();
+}
 
 // State ameliorations
 (function () {
@@ -3469,8 +3471,7 @@ Input.keyMapper[68] = "right"; // d
             });
 })();
 
-// Disable dash
-(function() {
+{ // Disable dash
     override(Game_Map.prototype,
         function isDashDisabled() {
             return true;
@@ -3484,7 +3485,7 @@ Input.keyMapper[68] = "right"; // d
         function isDashing(isDashing) {
             return isDashing.call(this) || this._forceDashing;
         });
-})();
+}
 
 // Savefilelist
 (function () {
@@ -3959,6 +3960,9 @@ Input.keyMapper[68] = "right"; // d
                 this._offsetX = meta.offsetX && parseFloat(meta.offsetX);
                 this._offsetY = meta.offsetY && parseFloat(meta.offsetY);
                 this._offsetZ = meta.offsetZ && parseFloat(meta.offsetZ);
+                this.locate(
+                    meta.x ? Number.parseInt(meta.x) : event.x,
+                    meta.y ? Number.parseInt(meta.y) : event.y);
             }
         },
         function sizeFactor() {
@@ -4408,7 +4412,7 @@ Input.keyMapper[68] = "right"; // d
 
     override(Window_HUD.prototype,
         function initialize(initialize) {
-            initialize.call(this, 0, Graphics.height - 160, Graphics.width, 160);
+            initialize.call(this, 0, Graphics.boxHeight - 160, Graphics.boxWidth, 160);
             this.opacity = 0;
             this.contentsOpacity = 0;
             this.step = 0;
@@ -4826,7 +4830,7 @@ Input.keyMapper[68] = "right"; // d
         })
 })();
 
-{ // Organ minigame
+organ: { // Organ minigame
     function Scene_Organ() {
         this.initialize.apply(this, arguments);
     }
@@ -5338,7 +5342,7 @@ Input.keyMapper[68] = "right"; // d
     )
 }
 
-{ // Nicer (? lol) menus
+nicer_menus: { // Nicer (? lol) menus
     override(Scene_ItemBase.prototype,
         function onActorOk(onActorOk) {
             const item = this.item();
@@ -5460,6 +5464,7 @@ Input.keyMapper[68] = "right"; // d
             this.drawText($gameParty.numItems(item), x, y, width, 'right');
         },
         function drawItemType(_, item, x, y, width) {
+            this.changeTextColor(this.systemColor());
             this.drawText(
                 DataManager.isWeapon(item) ? TextManager.weapon :
                 DataManager.isArmor(item) ? $dataSystem.equipTypes[item.etypeId] :
@@ -5468,8 +5473,8 @@ Input.keyMapper[68] = "right"; // d
                     item.itypeId === 2 ? TextManager.keyItem :
                     "???" :
                 "???",
-                x, y, width
-            )
+                x, y, width);
+            this.resetTextColor();
         },
         function refresh() {
             this.contents.clear();
@@ -5665,4 +5670,116 @@ Input.keyMapper[68] = "right"; // d
             this.drawActorHp(actor, rect.x + 0, rect.y, 201);
             this.drawActorMp(actor, rect.x + 216, rect.y, 114);
         });
+}
+
+{ // Dynamic window size
+    override(SceneManager,
+        function preferableRendererType() {
+            return "webgl";
+        },
+        function initGraphics(initGraphics) {
+            this._boxWidth = 816;
+            this._boxHeight = 624;
+            this._screenWidth = window.innerWidth;
+            this._screenHeight = window.innerHeight;
+            initGraphics.call(this);
+        },
+        /*function onResize(_) {
+            this._scene.onResize();
+        }*/);
+
+    override(Spriteset_Battle.prototype,
+        function createBattleField(createBattleField) {
+            createBattleField.call(this);
+            this._battleField.setFrame(0, 0, Graphics.width, Graphics.height);
+        },
+        function createBattleback(createBattleback) {
+            createBattleback.call(this);
+            const margin = 32;
+            const x = -margin;
+            const y = -margin;
+            const width = Graphics.boxWidth + margin * 2;
+            const height = Graphics.boxHeight + margin * 2;
+            this._back1Sprite.move(x, y, width, height);
+            this._back2Sprite.move(x, y, width, height);
+            this._backMask = new Sprite();
+            this._backMask.bitmap = ImageManager.loadSystem("BGMask");
+            this._back1Sprite.mask = this._backMask;
+            this._back2Sprite.mask = this._backMask;
+            this._backMask.transform = this._back1Sprite.transform;
+        },
+        function locateBattleback() {
+            // LOLNOPE
+        });
+
+    override(Sprite_Picture.prototype,
+        function updatePosition(updatePosition) {
+            updatePosition.call(this);
+            this.x += (Graphics.width - Graphics.boxWidth) / 2;
+            this.y += (Graphics.height - Graphics.boxHeight) / 2;
+        });
+
+    override(Spriteset_Base.prototype,
+        function createPictures(createPictures) {
+            createPictures.call(this);
+            this._pictureContainer.setFrame(0, 0, Graphics.width, Graphics.height);
+        });
+
+    override(Spriteset_Map.prototype,
+        function update(update) {
+            update.call(this);
+
+            const emptyX = Math.max($gameMap.screenTileX() - $gameMap.width(), 0);
+            const emptyY = Math.max($gameMap.screenTileY() - $gameMap.height(), 0);
+            const x = Math.ceil((emptyX / 2) * $gameMap.tileWidth());
+            const y = Math.ceil((emptyY / 2) * $gameMap.tileHeight());
+            const w = ($gameMap.screenTileX() - emptyX) * $gameMap.tileWidth();
+            const h = ($gameMap.screenTileY() - emptyY) * $gameMap.tileHeight();
+
+            if (this._parallax.bitmap) {
+                this._parallax.move(x, y, w, h)
+                this._parallax.origin.x += x;
+                this._parallax.origin.y += y;
+            }
+        });
+
+        // TODO AAAA
+    /*override(Scene_Base.prototype,
+        function onResize(_) {
+            const bw = Graphics.boxWidth;
+            const bh = Graphics.boxHeight;
+            const cx = (Graphics.width - bw) / 2;
+            const cy = (Graphics.height - bh) / 2;
+            SceneManager._scene._windowLayer.move(cx, cy, bw, bh);
+        });
+
+    override(Scene_Title.prototype,
+        function onResize(onResize) {
+            onResize.call(this);
+            const oldTitleSprite = this._gameTitleSprite;
+            this.createForeground();
+            this.swapChildren(this._gameTitleSprite, oldTitleSprite);
+            this.removeChild(oldTitleSprite);
+            this.centerSprite(this._backSprite1);
+            this.centerSprite(this._backSprite2);
+        });
+
+    override(Scene_Map.prototype,
+        function onResize(onResize) {
+            onResize.call(this);
+            const oldSpriteset = this._spriteset;
+            this.createSpriteset();
+            this.swapChildren(this._spriteset, oldSpriteset);
+            this.removeChild(oldSpriteset);
+        });
+
+    window.addEventListener("resize", () => {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        SceneManager._screenWidth = w;
+        SceneManager._screenHeight = h;
+        Graphics.width = w;
+        Graphics.height = h;
+        SceneManager.onResize();
+    });*/
 }

@@ -22368,6 +22368,28 @@
               "parameters": []
             },
             {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Item1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 1,
+              "parameters": [
+                38,
+                0,
+                0,
+                1
+              ]
+            },
+            {
               "code": 356,
               "indent": 1,
               "parameters": [

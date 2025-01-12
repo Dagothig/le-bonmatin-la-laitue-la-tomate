@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 8,
+  "editMapId": 6,
   "elements": [
     "",
     "Physical",
@@ -340,8 +340,8 @@
     }
   ],
   "startMapId": 12,
-  "startX": 10,
-  "startY": 5,
+  "startX": 6,
+  "startY": 7,
   "switches": [
     "",
     "BONJOUR",
@@ -479,7 +479,7 @@
       "bgsVolume": "Volume ambiance",
       "buffAdd": "Le %2 de %1 a augmenté!",
       "buffRemove": "Le %2 de %1 est de retour à la normale!",
-      "commandRemember": "Préselect dernière cmd",
+      "commandRemember": "Souvenir commande",
       "counterAttack": "%1 contre-attaque!",
       "criticalToActor": "Drette dans la jugulaire!!",
       "criticalToEnemy": "Drette dans la jugulaire!!",
@@ -650,9 +650,11 @@
     "BONMATIN_FOURNAISE",
     "BONMATIN_CUTSCENE",
     "JESUS_CUTSCENE",
-    "TMP_DU_TBNK"
+    "TMP_DU_TBNK",
+    "BONSOIR_PLAT_ANIM",
+    "BONSOIR_PLAT_NIVEAU"
   ],
-  "versionId": 53809430,
+  "versionId": 90027677,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,
