@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -1364,7 +1364,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {

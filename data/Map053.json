@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dim>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -1491,6 +1491,25 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light fire"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "trigger action"
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -1575,7 +1594,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -2834,7 +2853,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {

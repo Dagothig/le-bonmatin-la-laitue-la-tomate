@@ -13854,55 +13854,10 @@
               ]
             },
             {
-              "code": 111,
+              "code": 235,
               "indent": 2,
               "parameters": [
-                12,
-                "($gameScreen.picture(1) && $gameScreen.picture(1).name()) !== \"Lens\""
-              ]
-            },
-            {
-              "code": 231,
-              "indent": 3,
-              "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 232,
-              "indent": 2,
-              "parameters": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                92,
-                2,
-                30,
-                false
+                1
               ]
             },
             {
@@ -14019,21 +13974,10 @@
               ]
             },
             {
-              "code": 232,
+              "code": 235,
               "indent": 1,
               "parameters": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                0,
-                2,
-                30,
-                false
+                1
               ]
             },
             {

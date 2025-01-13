@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 23,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -2419,6 +2419,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -2483,6 +2490,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -2562,6 +2576,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -2626,6 +2647,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -2705,6 +2733,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -2769,6 +2804,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -2848,6 +2890,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -2912,6 +2961,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -2991,6 +3047,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3055,6 +3118,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -3134,6 +3204,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3198,6 +3275,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 128"
               ]
             },
             {
@@ -3277,6 +3361,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3341,6 +3432,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 256"
               ]
             },
             {
@@ -3420,6 +3518,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3484,6 +3589,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 256"
               ]
             },
             {
@@ -3563,6 +3675,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3627,6 +3746,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 256"
               ]
             },
             {
@@ -3714,19 +3840,10 @@
               "parameters": []
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
+                1
               ]
             },
             {
@@ -3797,6 +3914,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light none"
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -3861,6 +3985,13 @@
               "indent": 0,
               "parameters": [
                 "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light purple 256"
               ]
             },
             {

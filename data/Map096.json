@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "",
+  "note": "<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -957,7 +957,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -973,8 +972,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -989,9 +986,6 @@
     0,
     0,
     0,
-    5,
-    5,
-    5,
     0,
     0,
     0,
@@ -1006,8 +1000,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -1023,7 +1015,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -1077,7 +1068,16 @@
     0,
     0,
     0,
-    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -1416,19 +1416,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
+                1
               ]
             },
             {
@@ -1512,19 +1503,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
+                1
               ]
             },
             {
@@ -1565,7 +1547,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -1705,7 +1687,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "",
+      "note": "<light:white,48>",
       "pages": [
         {
           "conditions": {
@@ -1905,6 +1887,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -1927,7 +1914,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -2211,6 +2198,32 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light fire"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "trigger action"
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -2288,7 +2301,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -2447,10 +2460,36 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 1,
+            "pattern": 0,
             "characterIndex": 7
           },
           "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light fire"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "trigger action"
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -2529,13 +2568,72 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
       "x": 9,
       "y": 4
     },
-    null
+    {
+      "id": 8,
+      "name": "EV008",
+      "note": "<x:8><y:4><light:tome>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 3
+    }
   ]
 }

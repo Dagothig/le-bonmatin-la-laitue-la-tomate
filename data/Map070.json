@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 17,
-  "note": "<bgSy:0.5>",
+  "note": "<bgSy:0.5>\n<light:cloudy>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "CloudySky1",
@@ -2159,19 +2159,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                128,
-                2
+                1
               ]
             },
             {

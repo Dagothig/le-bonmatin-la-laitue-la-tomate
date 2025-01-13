@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 52,
-  "note": "",
+  "note": "<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -5526,7 +5526,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5549,17 +5548,14 @@
     0,
     0,
     0,
-    5,
     0,
     0,
-    5,
     0,
     0,
     0,
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5575,7 +5571,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5585,7 +5580,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5601,7 +5595,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5611,7 +5604,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5627,7 +5619,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5637,7 +5628,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5653,7 +5643,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5663,7 +5652,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5679,7 +5667,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5705,7 +5692,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5730,8 +5716,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5740,7 +5724,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5756,8 +5739,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5766,7 +5747,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5782,7 +5762,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5792,7 +5771,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5834,8 +5812,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5860,8 +5836,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5886,7 +5860,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -5938,8 +5911,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5964,8 +5935,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -5990,7 +5959,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6042,8 +6010,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6068,8 +6034,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6094,7 +6058,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6146,8 +6109,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6172,8 +6133,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6198,7 +6157,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6250,8 +6208,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6276,8 +6232,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6302,7 +6256,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6354,8 +6307,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6380,8 +6331,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6406,7 +6355,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6458,8 +6406,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6484,8 +6430,6 @@
     0,
     0,
     0,
-    5,
-    5,
     0,
     0,
     0,
@@ -6510,7 +6454,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6618,7 +6561,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6644,7 +6586,6 @@
     0,
     0,
     0,
-    5,
     0,
     0,
     0,
@@ -6670,7 +6611,66 @@
     0,
     0,
     0,
-    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -8377,7 +8377,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<light>",
       "pages": [
         {
           "conditions": {
@@ -8544,25 +8544,16 @@
               ]
             },
             {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
               "code": 214,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 231,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
-              ]
             },
             {
               "code": 0,
@@ -8597,7 +8588,7 @@
     {
       "id": 4,
       "name": "EV004",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -8712,7 +8703,7 @@
     {
       "id": 5,
       "name": "EV005",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -8735,7 +8726,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -8827,7 +8818,7 @@
     {
       "id": 6,
       "name": "EV006",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -8942,7 +8933,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -8965,7 +8956,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -9057,7 +9048,7 @@
     {
       "id": 8,
       "name": "EV008",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9080,7 +9071,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -9172,7 +9163,7 @@
     {
       "id": 9,
       "name": "EV009",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9195,7 +9186,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -9287,7 +9278,7 @@
     {
       "id": 10,
       "name": "EV010",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9402,7 +9393,7 @@
     {
       "id": 11,
       "name": "EV011",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9517,7 +9508,7 @@
     {
       "id": 12,
       "name": "EV012",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9632,7 +9623,7 @@
     {
       "id": 13,
       "name": "EV013",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9747,7 +9738,7 @@
     {
       "id": 14,
       "name": "EV014",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9862,7 +9853,7 @@
     {
       "id": 15,
       "name": "EV015",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -9977,7 +9968,7 @@
     {
       "id": 16,
       "name": "EV016",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10000,7 +9991,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10092,7 +10083,7 @@
     {
       "id": 17,
       "name": "EV017",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10115,7 +10106,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10207,7 +10198,7 @@
     {
       "id": 18,
       "name": "EV018",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10230,7 +10221,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10322,7 +10313,7 @@
     {
       "id": 19,
       "name": "EV019",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10345,7 +10336,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10437,7 +10428,7 @@
     {
       "id": 20,
       "name": "EV020",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10460,7 +10451,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10552,7 +10543,7 @@
     {
       "id": 21,
       "name": "EV021",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10575,7 +10566,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10667,7 +10658,7 @@
     {
       "id": 22,
       "name": "EV022",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10690,7 +10681,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -10782,7 +10773,7 @@
     {
       "id": 23,
       "name": "EV023",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -10805,7 +10796,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -14400,7 +14391,7 @@
     {
       "id": 27,
       "name": "EV027",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14460,7 +14451,7 @@
     {
       "id": 28,
       "name": "EV028",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14483,7 +14474,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -14575,7 +14566,7 @@
     {
       "id": 29,
       "name": "EV029",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14598,7 +14589,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -14690,7 +14681,7 @@
     {
       "id": 30,
       "name": "EV030",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14713,7 +14704,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -14805,7 +14796,7 @@
     {
       "id": 31,
       "name": "EV031",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14828,7 +14819,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -14920,7 +14911,7 @@
     {
       "id": 32,
       "name": "EV032",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -14943,7 +14934,7 @@
             "tileId": 0,
             "characterName": "!Other2",
             "direction": 2,
-            "pattern": 2,
+            "pattern": 1,
             "characterIndex": 7
           },
           "list": [
@@ -20594,7 +20585,7 @@
     {
       "id": 74,
       "name": "EV074",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -20709,7 +20700,7 @@
     {
       "id": 75,
       "name": "EV075",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -20824,7 +20815,7 @@
     {
       "id": 76,
       "name": "EV076",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -20939,7 +20930,7 @@
     {
       "id": 77,
       "name": "EV077",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21054,7 +21045,7 @@
     {
       "id": 78,
       "name": "EV078",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21169,7 +21160,7 @@
     {
       "id": 79,
       "name": "EV079",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21284,7 +21275,7 @@
     {
       "id": 80,
       "name": "EV080",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21399,7 +21390,7 @@
     {
       "id": 81,
       "name": "EV081",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21514,7 +21505,7 @@
     {
       "id": 82,
       "name": "EV082",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21629,7 +21620,7 @@
     {
       "id": 83,
       "name": "EV083",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21744,7 +21735,7 @@
     {
       "id": 84,
       "name": "EV084",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -21859,7 +21850,7 @@
     {
       "id": 85,
       "name": "EV085",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {

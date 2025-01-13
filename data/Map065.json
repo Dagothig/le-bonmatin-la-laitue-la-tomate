@@ -21110,37 +21110,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 232,
-              "indent": 0,
-              "parameters": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2,
-                999,
-                false
+                "map_light shaded 999"
               ]
             },
             {
@@ -22917,28 +22890,10 @@
               ]
             },
             {
-              "code": 232,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                0,
-                2,
-                15,
-                true
-              ]
-            },
-            {
-              "code": 235,
-              "indent": 0,
-              "parameters": [
-                1
+                "map_light none 15"
               ]
             },
             {

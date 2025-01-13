@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<fgName:Fog>\n<fgLoopX:1>\n<fgLoopY:1>\n<fgSx:0.5>\n<fgSx:0.25>\n<fgBlendMode:MULTIPLY>\n<fgAlpha:0.1>",
+  "note": "<fgName:Fog>\n<fgLoopX:1>\n<fgLoopY:1>\n<fgSx:0.5>\n<fgSx:0.25>\n<fgBlendMode:MULTIPLY>\n<fgAlpha:0.1>\n<light:cloudy>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -4413,19 +4413,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                128,
-                2
+                1
               ]
             },
             {

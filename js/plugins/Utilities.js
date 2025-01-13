@@ -5805,22 +5805,41 @@ nicer_menus: { // Nicer (? lol) menus
     const tints = {
         white: 0xffffffff,
         fire: 0xffff8800,
+        gold: 0xffffaa22,
+        purple: 0xffff00ff,
         dark: 0xff242424,
         dim: 0xff424242,
-        shaded: 0xff696969
+        shaded: 0xff696969,
+        cloudy: 0xffaaaaaa,
+        tome: 0xff0088ff
     };
+    const playerDefautLightSize = {
+        shaded: 800,
+        cloudy: 1024
+    };
+
     const defaultLightSize = 256;
 
     override(Game_Interpreter.prototype,
         function pluginCommand(pluginCommand, command, args) {
             pluginCommand.call(this, command, args);
             if (command === "map_light") {
-                $gameMap.lightTint = args[0];
+                if (args[0] === "none") {
+                    $gameMap.lightTint = "white";
+                } else {
+                    $gameMap.lightTint = args[0];
+                }
                 $gameMap.lightTransition = Number.parseInt(args[1]) || 0;
             } else if (command === "light") {
                 const event = $gameMap.event(this.eventId());
-                event.lightTint = tints[args[0].trim()] || tints.white;
-                event.lightSize = Number.parseInt(args[1]) || defaultLightSize;
+                const tintName = args[0].trim();
+                if (tintName === "none") {
+                    delete event.lightTint;
+                    delete event.lightSize;
+                } else {
+                    event.lightTint = tints[tintName] || tints.white;
+                    event.lightSize = Number.parseInt(args[1]) || defaultLightSize;
+                }
             }
         });
 
@@ -5834,7 +5853,8 @@ nicer_menus: { // Nicer (? lol) menus
     override(Game_Player.prototype,
         function refresh(refresh) {
             refresh.call(this);
-            this.lightSize = defaultLightSize;
+            const mapTint = $dataMap.meta && $dataMap.meta.light;
+            this.lightSize = playerDefautLightSize[mapTint] || defaultLightSize;
             this.lightTint = tints.white;
         });
 
@@ -5844,7 +5864,7 @@ nicer_menus: { // Nicer (? lol) menus
             const event = this.event();
             if (event.meta && event.meta.light) {
                 const split = event.meta.light.split ? event.meta.light.split(",") : [];
-                this.lightTint = tints[split[0].trim()] || tints.white;
+                this.lightTint = tints[(split[0] || "").trim()] || tints.white;
                 this.lightSize = Number.parseInt(split[1]) || defaultLightSize;
             }
         });
@@ -5907,7 +5927,7 @@ nicer_menus: { // Nicer (? lol) menus
 
         for (const light of this._lights) {
             const event = light.event;
-            if (!event.lightTint) {
+            if (!event.lightTint || (event.page ? !event.page() : !event.characterName())) {
                 light.visible = false;
                 continue;
             }

@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 65,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -28194,19 +28194,10 @@
           },
           "list": [
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
+                1
               ]
             },
             {

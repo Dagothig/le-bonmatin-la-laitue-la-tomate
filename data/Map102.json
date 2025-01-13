@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 30,
-  "note": "",
+  "note": "<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -6158,7 +6158,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -6332,7 +6332,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -7346,7 +7346,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -7461,7 +7461,7 @@
     {
       "id": 8,
       "name": "EV008",
-      "note": "",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -7691,7 +7691,7 @@
     {
       "id": 10,
       "name": "EV010",
-      "note": "",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -8167,7 +8167,7 @@
     {
       "id": 13,
       "name": "PlanteQuiReste",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -8618,6 +8618,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -8640,7 +8645,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -9057,7 +9062,7 @@
     {
       "id": 15,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -9450,6 +9455,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -9472,7 +9482,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -10514,7 +10524,7 @@
     {
       "id": 22,
       "name": "PlanteQuiPart1",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -10600,6 +10610,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -10622,7 +10637,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -10632,7 +10647,7 @@
     {
       "id": 23,
       "name": "PlanteQuiPart2",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -10718,6 +10733,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -10740,7 +10760,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],

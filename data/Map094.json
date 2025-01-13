@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 39,
-  "note": "",
+  "note": "<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -8054,7 +8054,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<light>",
       "pages": [
         {
           "conditions": {
@@ -8536,7 +8536,7 @@
     {
       "id": 3,
       "name": "Granrogri",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -8871,7 +8871,7 @@
     {
       "id": 4,
       "name": "Granrobrun",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -9199,7 +9199,7 @@
     {
       "id": 5,
       "name": "Minirigri",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -9520,7 +9520,7 @@
     {
       "id": 6,
       "name": "Miniribri",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -9855,7 +9855,7 @@
     {
       "id": 7,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -9951,6 +9951,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -9973,7 +9978,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -9983,7 +9988,7 @@
     {
       "id": 8,
       "name": "Piligri",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -10318,7 +10323,7 @@
     {
       "id": 9,
       "name": "Miligri",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -11084,19 +11089,10 @@
               ]
             },
             {
-              "code": 231,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
+                1
               ]
             },
             {
@@ -17439,7 +17435,7 @@
     {
       "id": 13,
       "name": "Grota1",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -17636,7 +17632,7 @@
     {
       "id": 14,
       "name": "Grota2",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -17893,7 +17889,7 @@
     {
       "id": 16,
       "name": "EV016",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -18498,7 +18494,7 @@
     {
       "id": 18,
       "name": "EV018",
-      "note": "",
+      "note": "<light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -18992,6 +18988,13 @@
               "code": 356,
               "indent": 0,
               "parameters": [
+                "map_light dim 120"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
                 "se _ProtagonisteVerdureEtAirFrais"
               ]
             },
@@ -19112,6 +19115,13 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "map_light dim 120"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19134,7 +19144,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
@@ -19144,7 +19154,7 @@
     {
       "id": 22,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -19537,6 +19547,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19559,7 +19574,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -20861,7 +20876,7 @@
     {
       "id": 32,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -21254,6 +21269,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -21276,7 +21296,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -21286,7 +21306,7 @@
     {
       "id": 33,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -21679,6 +21699,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -21701,7 +21726,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -21711,7 +21736,7 @@
     {
       "id": 34,
       "name": "Plante",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded,128>",
       "pages": [
         {
           "conditions": {
@@ -22104,6 +22129,11 @@
           },
           "list": [
             {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -22126,7 +22156,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
@@ -22512,6 +22542,231 @@
       ],
       "x": 28,
       "y": 3
+    },
+    {
+      "id": 37,
+      "name": "EV037",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  64
+                ],
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 30,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 2,
+          "stepAnime": true,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "aaa_condition"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "aaa_map_switch(\"Fissure\") >= 2"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 26
+    },
+    null,
+    {
+      "id": 39,
+      "name": "EV039",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "map_light dark 120"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 26,
+      "y": 25
     }
   ]
 }

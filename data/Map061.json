@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 25,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -4965,7 +4965,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -5080,7 +5080,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -5247,25 +5247,16 @@
               ]
             },
             {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
               "code": 214,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 231,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
-              ]
             },
             {
               "code": 0,
@@ -5472,7 +5463,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "",
+      "note": "<light>",
       "pages": [
         {
           "conditions": {
