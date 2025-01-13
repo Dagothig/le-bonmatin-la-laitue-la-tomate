@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<fgName:Fog>\n<fgLoopX:1>\n<fgLoopY:1>\n<fgSx:0.5>\n<fgSx:0.25>\n<fgBlendMode:MULTIPLY>\n<fgAlpha:0.3>\n<bgmFilter:insideAway>",
+  "note": "<fgName:Fog>\n<fgLoopX:1>\n<fgLoopY:1>\n<fgSx:0.5>\n<fgSx:0.25>\n<fgBlendMode:MULTIPLY>\n<fgAlpha:0.3>\n<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -2005,7 +2005,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -2065,7 +2065,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -2125,7 +2125,7 @@
     {
       "id": 4,
       "name": "EV004",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
@@ -2988,25 +2988,16 @@
               ]
             },
             {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
               "code": 214,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 231,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
-              ]
             },
             {
               "code": 0,
@@ -3236,7 +3227,7 @@
     {
       "id": 14,
       "name": "EV014",
-      "note": "",
+      "note": "<light>",
       "pages": [
         {
           "conditions": {

@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dim>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -88,9 +88,9 @@
     0,
     0,
     6112,
-    1567,
+    6474,
     6270,
-    1567,
+    6474,
     6124,
     6795,
     6785,
@@ -751,11 +751,9 @@
     0,
     0,
     0,
-    493,
+    491,
     0,
-    492,
-    0,
-    0,
+    490,
     0,
     0,
     0,
@@ -768,9 +766,11 @@
     0,
     0,
     0,
-    509,
+    0,
+    0,
+    507,
     139,
-    508,
+    506,
     0,
     120,
     124,
@@ -1560,6 +1560,32 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "aaa_run_once"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "light fire"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "trigger action"
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -1644,7 +1670,7 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         },
         {

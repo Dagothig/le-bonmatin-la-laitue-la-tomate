@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 27,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -5970,36 +5970,6 @@
           },
           "list": [
             {
-              "code": 231,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Lens",
-                0,
-                0,
-                0,
-                0,
-                100,
-                100,
-                255,
-                2
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gamePlayer.lightTint = 0xffffffff"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 0,
-              "parameters": [
-                "SceneManager._scene._spriteset._globalLightTint.tint = 0xff242424;"
-              ]
-            },
-            {
               "code": 235,
               "indent": 0,
               "parameters": [
@@ -6062,7 +6032,7 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 4,
+          "trigger": 3,
           "walkAnime": true
         }
       ],
@@ -15716,6 +15686,7 @@
       ],
       "x": 16,
       "y": 17
-    }
+    },
+    null
   ]
 }

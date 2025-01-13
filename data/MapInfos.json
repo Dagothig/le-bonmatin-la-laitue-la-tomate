@@ -2,21 +2,21 @@
   null,
   {
     "id": 1,
-    "expanded": false,
+    "expanded": true,
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 885,
-    "scrollY": 769
+    "scrollX": 811,
+    "scrollY": 574.5
   },
   {
     "id": 2,
-    "expanded": false,
+    "expanded": true,
     "name": "CHEZ_VIEUX",
     "order": 7,
     "parentId": 1,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 462.5
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
     "order": 5,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 744
+    "scrollY": 1104.5
   },
   {
     "id": 6,
@@ -52,7 +52,7 @@
     "order": 1,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 462.5
   },
   {
     "id": 7,
@@ -65,12 +65,12 @@
   },
   {
     "id": 8,
-    "expanded": true,
+    "expanded": false,
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 464
+    "scrollY": 464.5
   },
   {
     "id": 9,
@@ -97,7 +97,7 @@
     "order": 13,
     "parentId": 1,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 462.5
   },
   {
     "id": 12,
@@ -124,7 +124,7 @@
     "order": 12,
     "parentId": 1,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 15,
@@ -178,7 +178,7 @@
     "order": 24,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 584
+    "scrollY": 584.5
   },
   {
     "id": 21,
@@ -205,7 +205,7 @@
     "order": 23,
     "parentId": 8,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 24,
@@ -493,7 +493,7 @@
     "order": 2,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 56,
@@ -709,7 +709,7 @@
     "order": 4,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 80,
@@ -866,12 +866,12 @@
   },
   {
     "id": 97,
-    "expanded": true,
+    "expanded": false,
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 769
+    "scrollY": 881.5
   },
   {
     "id": 98,
@@ -889,7 +889,7 @@
     "order": 105,
     "parentId": 97,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 100,
@@ -907,7 +907,7 @@
     "order": 100,
     "parentId": 97,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 102,
@@ -925,7 +925,7 @@
     "order": 101,
     "parentId": 97,
     "scrollX": 821,
-    "scrollY": 465
+    "scrollY": 474.5
   },
   {
     "id": 104,
@@ -934,7 +934,7 @@
     "order": 102,
     "parentId": 97,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 105,
@@ -942,8 +942,8 @@
     "name": "SHRINE_B1",
     "order": 104,
     "parentId": 97,
-    "scrollX": 885,
-    "scrollY": 1464
+    "scrollX": 811,
+    "scrollY": 481.5
   },
   {
     "id": 106,
@@ -952,7 +952,7 @@
     "order": 103,
     "parentId": 97,
     "scrollX": 819,
-    "scrollY": 477
+    "scrollY": 462.5
   },
   {
     "id": 107,
@@ -965,21 +965,21 @@
   },
   {
     "id": 108,
-    "expanded": true,
+    "expanded": false,
     "name": "GROTTE",
     "order": 108,
     "parentId": 0,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 109,
-    "expanded": true,
+    "expanded": false,
     "name": "TEMPLE_DU_BONSOIR",
     "order": 111,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 2016
+    "scrollY": 2016.5
   },
   {
     "id": 110,
@@ -997,7 +997,7 @@
     "order": 109,
     "parentId": 108,
     "scrollX": 821,
-    "scrollY": 1416
+    "scrollY": 1409.5
   },
   {
     "id": 112,
@@ -1006,7 +1006,7 @@
     "order": 110,
     "parentId": 108,
     "scrollX": 821,
-    "scrollY": 2016
+    "scrollY": 2016.5
   },
   {
     "id": 113,
@@ -1024,7 +1024,7 @@
     "order": 113,
     "parentId": 109,
     "scrollX": 811,
-    "scrollY": 456
+    "scrollY": 462.5
   },
   {
     "id": 115,

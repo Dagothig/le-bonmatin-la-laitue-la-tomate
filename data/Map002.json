@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<bgmFilter:insideAway>",
+  "note": "<bgmFilter:insideAway>\n<light:dim>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -6481,7 +6481,7 @@
     {
       "id": 11,
       "name": " ",
-      "note": "",
+      "note": "<light:fire>",
       "pages": [
         {
           "conditions": {
