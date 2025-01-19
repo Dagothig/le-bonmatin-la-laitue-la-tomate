@@ -1862,6 +1862,13 @@ _NarrateurJusteUneStatue
 > de nez, vous alertant à une interaction imminente, mais\
 > il semblerait que cette fois-ci c'est juste une statue.
 
+_NarrateurAutelPasCoupe
+> Un autel.\
+> Lui y'er pas coupé en deux par contre.
+
+_NarrateurColonneCassee
+> Une colonne cassée, est-ce que ça devient une poutre?
+
 ### Protagoniste
 
 _ProtagonisteCommeBonjourDisparu
@@ -4173,6 +4180,9 @@ _ProtagonisteLancenotQuiDort6
 _ProtagonisteLancenotQuiDort7
 > Non mais la lance c'est bon, pas besoin de\
 > me pointer \^
+
+_ProtagonisteNarrateurAutelPasCoupe
+> Merci, cette remarque élucide tout...
 
 ### Wwwelchior
 

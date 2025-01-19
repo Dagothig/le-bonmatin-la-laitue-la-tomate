@@ -866,12 +866,12 @@
   },
   {
     "id": 97,
-    "expanded": false,
+    "expanded": true,
     "name": "RUINE",
     "order": 99,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 880
+    "scrollY": 784
   },
   {
     "id": 98,
@@ -965,7 +965,7 @@
   },
   {
     "id": 108,
-    "expanded": false,
+    "expanded": true,
     "name": "GROTTE",
     "order": 106,
     "parentId": 0,
@@ -979,7 +979,7 @@
     "order": 111,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 464
+    "scrollY": 824
   },
   {
     "id": 110,
@@ -1014,8 +1014,8 @@
     "name": "TEMPLE_DU_BONSOIR_RDC",
     "order": 113,
     "parentId": 109,
-    "scrollX": 811,
-    "scrollY": 552
+    "scrollX": 821,
+    "scrollY": 784
   },
   {
     "id": 114,
@@ -1024,7 +1024,7 @@
     "order": 112,
     "parentId": 109,
     "scrollX": 811,
-    "scrollY": 792
+    "scrollY": 492
   },
   {
     "id": 115,
