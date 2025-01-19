@@ -1307,9 +1307,10 @@ function eval_fn_expr(expr, args) {
                 return actor.traitsPi(Game_BattlerBase.TRAIT_SPARAM, sparamId);
             });
             this._cloneActions = actor.skills()
-                // No chicken fo u!
                 // TODO lol
-                .filter(skill => skill.id !== 58)
+                .filter(skill =>
+                    skill.id !== 58 && // No chicken fo u!
+                    skill.id !== 84) // Le fight qui s'arrête pour raisons d'échappement c'est un concept
                 .map(skill => ({
                     conditionParam1: 0,
                     conditionParam2: 0,
@@ -1800,6 +1801,7 @@ function eval_fn_expr(expr, args) {
 
     override(Window_BattleLog.prototype,
         function waitForNewLine() {},
+        function refresh() {},
         function messageSpeed() {
             return 0;
         },
@@ -3932,6 +3934,13 @@ Input.keyMapper[68] = "right"; // d
 })();
 
 { // Position and sizing for sprites
+    const EVENT_TINTS = {
+        red: 0x00ff8888,
+        green: 0x0088ff88,
+        blue: 0xff00ffff,
+        yellow: 0x00ffff88
+    };
+
     override(Game_CharacterBase.prototype,
         function sizeFactor() {
             return 1;
@@ -3977,6 +3986,7 @@ Input.keyMapper[68] = "right"; // d
                 this._offsetX = meta.offsetX && parseFloat(meta.offsetX);
                 this._offsetY = meta.offsetY && parseFloat(meta.offsetY);
                 this._offsetZ = meta.offsetZ && parseFloat(meta.offsetZ);
+                this.tint = meta.tint && EVENT_TINTS[meta.tint] || undefined;
                 this.locate(
                     meta.x ? Number.parseInt(meta.x) : event.x,
                     meta.y ? Number.parseInt(meta.y) : event.y);
@@ -5349,9 +5359,9 @@ organ: { // Organ minigame
 
 
 { // Autoplay on maps for stupid reasons
-    override(Scene_Map.prototype,
-        function start(start) {
-            start.call(this);
+    override(Game_Player.prototype,
+        function clearTransferInfo(clearTransferInfo) {
+            clearTransferInfo.call(this);
             if ($dataMap.autoplayFn) {
                 $dataMap.autoplayFn();
             }
@@ -5760,6 +5770,18 @@ nicer_menus: { // Nicer (? lol) menus
             }
         });
 
+    override(Spriteset_Battle.prototype,
+        function createBackground(createBackground) {
+            createBackground.call(this);
+            this._backgroundSprite.anchor.x = 0.5;
+            this._backgroundSprite.anchor.y = 0.5;
+            this._backgroundSprite.position.x = Graphics.width / 2;
+            this._backgroundSprite.position.y = Graphics.height / 2;
+            this._backgroundSprite.scale.x = 3;
+            this._backgroundSprite.scale.y = 3;
+            this._backgroundSprite.filters = [new PIXI.filters.BlurFilter()];
+        });
+
         // TODO AAAA
     /*override(Scene_Base.prototype,
         function onResize(_) {
@@ -5788,17 +5810,18 @@ nicer_menus: { // Nicer (? lol) menus
             this.createSpriteset();
             this.swapChildren(this._spriteset, oldSpriteset);
             this.removeChild(oldSpriteset);
-        });
+        });*/
 
-    window.addEventListener("resize", () => {
-        const w = window.innerWidth;
-        const h = window.innerHeight;
-        SceneManager._screenWidth = w;
-        SceneManager._screenHeight = h;
-        Graphics.width = w;
-        Graphics.height = h;
-        SceneManager.onResize();
-    });*/
+    /*override(Graphics,
+        function _onWindowResize(_onWindowResize) {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            SceneManager._screenWidth = w;
+            SceneManager._screenHeight = h;
+            this.width = w;
+            this.height = h;
+            _onWindowResize.call(this);
+        });*/
 }
 
 { // Lighting
@@ -5816,6 +5839,18 @@ nicer_menus: { // Nicer (? lol) menus
     const playerDefautLightSize = {
         shaded: 800,
         cloudy: 1024
+    };
+    const lightImgs = {
+        default: {
+            img: ImageManager.loadSystem("Light512"),
+            offsetX: 0,
+            offsetY: 0
+        },
+        cone: {
+            img: ImageManager.loadSystem("LightCone512"),
+            offsetX: 0,
+            offsetY: 128,
+        }
     };
 
     const defaultLightSize = 256;
@@ -5866,6 +5901,7 @@ nicer_menus: { // Nicer (? lol) menus
                 const split = event.meta.light.split ? event.meta.light.split(",") : [];
                 this.lightTint = tints[(split[0] || "").trim()] || tints.white;
                 this.lightSize = Number.parseInt(split[1]) || defaultLightSize;
+                this.lightType = split[2];
             }
         });
 
@@ -5885,7 +5921,6 @@ nicer_menus: { // Nicer (? lol) menus
             this._globalLightTint.tint = tints[$dataMap.meta && $dataMap.meta.light || "white"];
             this._lightingLayer.addChild(this._globalLightTint);
 
-            this._lightImg = ImageManager.loadSystem("Light512");
             this._lights = [];
 
             for (const event of $gameMap.events()) {
@@ -5902,7 +5937,7 @@ nicer_menus: { // Nicer (? lol) menus
             this.addChild(this._lightingLayer);
         },
     function createEventLight(_, event) {
-        const light = new Sprite(this._lightImg);
+        const light = new Sprite(lightImgs.default.img);
         light.blendMode = Graphics.BLEND_ADD;
         light._timeOffset = (Math.random() * 1024)|0;
         light.visible = false;
@@ -5931,14 +5966,18 @@ nicer_menus: { // Nicer (? lol) menus
                 light.visible = false;
                 continue;
             }
+            const lightImg = lightImgs[event.lightType] || lightImgs.default;
+            const time = this._time + light._timeOffset;
+            const lightScale = event.lightSize / light.bitmap.width;
+            if (light.bitmap !== lightImg.img) {
+                light.bitmap = lightImg.img;
+            }
             light.visible = true;
-            light.x = (event.scrolledX() + 0.5) * $gameMap.tileWidth();
-            light.y = (event.scrolledY() + 0.5) * $gameMap.tileHeight();
+            light.x = event.screenX() + lightImg.offsetX * lightScale;
+            light.y = event.screenY() + lightImg.offsetY * lightScale;
             light.anchor.x = 0.5;
             light.anchor.y = 0.5;
             light.tint = event.lightTint;
-            const time = this._time + light._timeOffset;
-            const lightScale = event.lightSize / light.bitmap.width;
             light.scale.x = light.scale.y =
                 lightScale * (
                 1 +

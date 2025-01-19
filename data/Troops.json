@@ -7867,5 +7867,119 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 28,
+    "members": [
+      {
+        "enemyId": 17,
+        "x": 321,
+        "y": 415,
+        "hidden": false
+      }
+    ],
+    "name": "Tournoyeur V2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "members": [
+      {
+        "enemyId": 18,
+        "x": 336,
+        "y": 397,
+        "hidden": false
+      }
+    ],
+    "name": "Couteleur V2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "members": [
+      {
+        "enemyId": 19,
+        "x": 306,
+        "y": 400,
+        "hidden": false
+      }
+    ],
+    "name": "Lancenot V2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

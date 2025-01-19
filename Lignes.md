@@ -351,6 +351,12 @@ Recovery
 Item3
 > Item3
 
+Sword3
+> Sword3
+
+SenAller
+> Allons camarades! Fuyons!
+
 ### Narrateur
 
 _NarrateurBonjours
@@ -1842,6 +1848,19 @@ _NarrateurPasGeologueDroleEndroitStalagmite
 
 _NarrateurPamphletPoches
 > Un pamphlet se matérialise dans vos poches!
+
+_NarrateurGlauque
+> Glauque.
+
+_NarrateurFeuRecent
+> En fouillant un peu dans les entrailles, vous\
+> remarquez quelques embres.\
+> Le feu a été allumé il n'y a pas si longtemps.
+
+_NarrateurJusteUneStatue
+> Normalement ce genre de statue ferait lever vos poils\
+> de nez, vous alertant à une interaction imminente, mais\
+> il semblerait que cette fois-ci c'est juste une statue.
 
 ### Protagoniste
 
@@ -4104,6 +4123,57 @@ _ProtagonisteProcedure
 > lui expliquer la procédure de comment on va\
 > lui péter sa face!
 
+_ProtagonisteAbandonAncestral
+> Ah c'est tout glauque ici...\
+> Et tout poussiéreux!\
+> Regardez-moi ça, y'a même des indications\
+> claires d'abandon ancestral!
+
+_ProtagonisteAbandonAncestral2
+> En tout cas je rentre pas là.
+
+_ProtagonistePourVrai6
+> ... Pour vrai?
+
+_ProtagonisteCoffreVide
+> Le coffre est vide!\
+> \
+> Absolument horrible. Ma journée est ruinée.
+
+_ProtagonistePretresseBonsoir1
+> Les bandits c'est pas -\^
+
+_ProtagonistePretresseBonsoir2
+> C'est à dire -\^
+
+_ProtagonisteRantPuzz3
+> C'est moi où les gens qui ont batis les\
+> temples se fouttent de nous?
+
+_ProtagonisteRantPuzz4
+> C'est quoi ça, l'ascenseur de la stupeur?\
+> On optimise pour que le monde tombe par le\
+> trou béant que ça crée au milieu de toutes\
+> les pièces de la tour?
+
+_ProtagonisteRantPuzz5
+> Pis regardez moi ça la quantité de codes de\
+> couleurs pour des raisons inutiles!
+
+_ProtagonisteLancenotQuiDort1
+> Bonjour! Vous allez bien?
+
+_ProtagonisteLancenotQuiDort4
+> Au pif comme ça, Jean-Jacques ont grimpé la\
+> tour sans toi.
+
+_ProtagonisteLancenotQuiDort6
+> Je suis Personne Véritable!
+
+_ProtagonisteLancenotQuiDort7
+> Non mais la lance c'est bon, pas besoin de\
+> me pointer \^
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -4646,6 +4716,14 @@ _WwwelchiorNeVeutPasTransaction
 _WwwelchiorWooPersVerConnaitKkun
 > Wooo regardez-moi ça Personne Véritable qui\
 > connait "quelqu'un"!
+
+_WwwelchiorAbandonAncestral
+> Ah dommage...\
+> J'aurais bien été curieux de savoir c'est\
+> quoi "Une indication d'abandon ancestral".
+
+_WwwelchiorProtagonisteRantPuzz1
+> Ça va?
 
 ### Gabspart
 
@@ -5398,6 +5476,15 @@ _GabspartFautFaireAttentionAuxIncantations
 > Mais les mots qu'elles incantent...\
 > Je m'y méfierais.
 
+_GabspartCestADire
+> C'est à dire?
+
+_GabspartProtagonisteRantPuzz2
+> Honnêtement je partage le sentiment.
+
+_GabspartCouteleurPasContent2
+> Je dirais plus moisi...
+
 ### Gaboue
 
 _GaboueGaboue1
@@ -5898,6 +5985,23 @@ _TournoyeurVotreVie
 > Regardez-moi ça le finfinaud! Je vois que\
 > vous avez choisi votre vie, donc.
 
+_TournoyeurGeronimo
+> Géronimooooo!\^
+
+_TournoyeurHaVousAiTrouve
+> Ha! Je vous ai trouvé!\
+> Le Chevalier Noir a dit à Jean-Jacques de\
+> nous dire qu'il y a une grosse prime sur\
+> votre tête!
+
+_TournoyeurMortVivantInsouciant
+> La dernière fois j'étais jeune et\
+> insoucient, mais cette fois-ci je suis\
+> mort-vivant et insoucient!
+
+_TournoyeurRevenezVites
+> Ok, mais revenez vite!
+
 ### Couteleur
 
 _CouteleurAppear
@@ -5906,6 +6010,23 @@ _CouteleurAppear
 _CouteleurFlick
 > Flick!
 
+_CouteleurPasContent1
+> Heille c'est vraiment de la merde ici...
+
+_CouteleurPasContent2
+> D'abord Joséphine nous déclare qu'elle en\
+> a marre et qu'elle reste à l'entrée, puis\
+> là je suis foutue de rester derrière parce\
+> que tourner la manivelle ça ferme la porte.
+
+_CouteleurPasContent3
+> Là je suis énnervée alors j'vous coupe!
+
+_CouteleurPasContent4
+> ...Ok je vous laisse partir.\
+> Mais c'est juste une pause.\
+> J'vous coupe pareil tantôt.
+
 ### Lancenot
 
 _LancenotAppear
@@ -5913,6 +6034,22 @@ _LancenotAppear
 
 _LancenotSwish
 > Swish!
+
+_LancenotQuiDort2
+> Hey! Moi je faisais une sieste là!
+
+_LancenotQuiDort3
+> Bah y sont où les autres? Je fais une\
+> petite sieste de rien du tout et y'a plus\
+> personne!
+
+_LancenotQuiDort5
+> Mmmh... c'est quoi ton nom à toi?\
+> Tu tronches connu.
+
+_LancenotQuiDort8
+> Bon, je suis un peu fatigué. Je vais me\
+> reposer les yeux deux minutes, c'est bon?
 
 ### Pretresse
 
@@ -5927,6 +6064,34 @@ _PretresseDevraitDemanderOr
 > Jacques dit que je devrais vous demander\
 > tout votre or, mais vous avez l'air d'en\
 > avoir plus besoin que moi...
+
+_PretresseBonsoir1
+> Loués soient les Dieux!\
+> Vous êtez un Protagoniste, n'est-ce pas?
+
+_PretresseBonsoir2
+> Oui c'est ça. J'ai fais une grave erreur!\
+> J'ai rejoins ces "bandits de grand chemin"\
+> parce que je pensais m'embarquer dans une\
+> grande aventure...
+
+_PretresseBonsoir3
+> Mais au lieu de cambrioler des payens afin\
+> de les faire payer pour leur âme, il se\
+> trouve qu'on est employés à faire de\
+> l'archéologie!
+
+_PretresseBonsoir4
+> Absolument terrible... Je serais partie sur\
+> le champ mais il semblerait que j'ai moi-\
+> même vendue mon âme dans le processus de\
+> recrutement.
+
+_PretresseBonsoir5
+> À ce qu'il parait je devrais vous arrêter,\
+> mais tout ce que je sais faire c'est\
+> guérir.\
+> Vous voulez une petite guérison?
 
 ### Ninja
 

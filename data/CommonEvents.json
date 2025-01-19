@@ -11683,6 +11683,35 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se SenAller"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Allons camarades! Fuyons!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -17289,6 +17318,297 @@
           4,
           false
         ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          2,
+          "A",
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "_ProtagonistePasContent",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 1,
+        "parameters": [
+          -1,
+          5,
+          true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _WwwelchiorProtagonisteRantPuzz1"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Ça va?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _GabspartProtagonisteRantPuzz2"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Honnêtement je partage le sentiment."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteRantPuzz3"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "C'est moi où les gens qui ont batis les "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "temples se fouttent de nous?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteRantPuzz4"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "C'est quoi ça, l'ascenseur de la stupeur?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "On optimise pour que le monde tombe par le "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "trou béant que ça crée au milieu de toutes "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "les pièces de la tour?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _ProtagonisteRantPuzz5"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Pis regardez moi ça la quantité de codes de"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "couleurs pour des raisons inutiles!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 123,
+        "indent": 1,
+        "parameters": [
+          "A",
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,

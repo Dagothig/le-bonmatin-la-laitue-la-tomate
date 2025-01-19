@@ -3104,7 +3104,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "S'en aller",
-    "note": "<<aaa_condition BattleManager.canEscape()>>\n<<aaa_action {\n  target.performActionEnd();\n  BattleManager.processEscape();\n}>>",
+    "note": "<<aaa_condition BattleManager.canEscape()>>\n<<aaa_action {\n  AudioManager.playSe(\"SenAller\")\n  target.performActionEnd();\n  BattleManager.processEscape();\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
