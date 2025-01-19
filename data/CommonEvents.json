@@ -8051,18 +8051,6 @@
         ]
       },
       {
-        "code": 311,
-        "indent": 0,
-        "parameters": [
-          0,
-          1,
-          1,
-          0,
-          10,
-          false
-        ]
-      },
-      {
         "code": 211,
         "indent": 0,
         "parameters": [
@@ -8070,8 +8058,28 @@
         ]
       },
       {
-        "code": 250,
+        "code": 111,
         "indent": 0,
+        "parameters": [
+          12,
+          "!$gameParty.members().some(m => m.hasArmor($dataArmors[31]))"
+        ]
+      },
+      {
+        "code": 311,
+        "indent": 1,
+        "parameters": [
+          0,
+          0,
+          1,
+          0,
+          10,
+          false
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
         "parameters": [
           {
             "name": "_Protagoniste10Douleurs",
@@ -8083,7 +8091,7 @@
       },
       {
         "code": 101,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           "UIUI",
           1,
@@ -8093,20 +8101,30 @@
       },
       {
         "code": 401,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           "Ah saperstifice!"
         ]
       },
       {
         "code": 401,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           "Je dois bien m'être fait... 10 douleurs!"
         ]
       },
       {
         "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
         "indent": 0,
         "parameters": []
       },
@@ -16850,6 +16868,17 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          1,
+          1
+        ]
+      },
+      {
         "code": 205,
         "indent": 0,
         "parameters": [
@@ -17019,7 +17048,7 @@
           1,
           77,
           1,
-          1,
+          78,
           0
         ]
       },
@@ -17079,7 +17108,7 @@
           1,
           77,
           1,
-          1,
+          78,
           4
         ]
       },
@@ -17277,7 +17306,7 @@
           77,
           0,
           1,
-          1
+          78
         ]
       },
       {
@@ -17323,8 +17352,8 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          2,
-          "A",
+          0,
+          69,
           1
         ]
       },
@@ -17593,10 +17622,11 @@
         ]
       },
       {
-        "code": 123,
+        "code": 121,
         "indent": 1,
         "parameters": [
-          "A",
+          69,
+          69,
           0
         ]
       },

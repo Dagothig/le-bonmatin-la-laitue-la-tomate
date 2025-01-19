@@ -710,5 +710,26 @@
       0
     ],
     "price": 50
+  },
+  {
+    "id": 31,
+    "atypeId": 3,
+    "description": "Ces bottes au style retentissant protègent contre \nabsolument certains dégâts de chute.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 141,
+    "name": "Bottes de Tombée",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 30
   }
 ]

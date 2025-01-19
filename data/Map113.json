@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 26,
-  "note": "<light:cloudy>",
+  "note": "<light:shaded>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -5342,7 +5342,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "",
+      "note": "<light:64>",
       "pages": [
         {
           "conditions": {
@@ -6037,7 +6037,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "<offsetX:-12><offsetY:24>",
+      "note": "<offsetX:-12><offsetY:24><light:64>",
       "pages": [
         {
           "conditions": {
@@ -6097,7 +6097,7 @@
     {
       "id": 8,
       "name": "EV008",
-      "note": "<offsetX:12><offsetY:24>",
+      "note": "<offsetX:12><offsetY:24><light:64>",
       "pages": [
         {
           "conditions": {
@@ -6157,7 +6157,7 @@
     {
       "id": 9,
       "name": "EV009",
-      "note": "<offsetY:0>",
+      "note": "<offsetY:0><light:64>",
       "pages": [
         {
           "conditions": {
@@ -6217,7 +6217,7 @@
     {
       "id": 10,
       "name": "EV010",
-      "note": "<offsetY:0>",
+      "note": "<offsetY:0><light:64>",
       "pages": [
         {
           "conditions": {
@@ -9536,7 +9536,7 @@
     {
       "id": 30,
       "name": "EV030",
-      "note": "<shadow>",
+      "note": "<shadow><light:shaded>",
       "pages": [
         {
           "conditions": {

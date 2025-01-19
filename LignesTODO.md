@@ -906,6 +906,15 @@ _NarrateurAutelPasCoupe
 _NarrateurColonneCassee
 > Une colonne cassée, est-ce que ça devient une poutre?
 
+_NarrateurBottesTombee
+> Oh mais regardez sur ses pieds!\
+> Des bottes de tombée!\
+> Ces bottes au style retentissant protègent contre\
+> absolument certains dégâts de chute.
+
+_NarrateurObtenuBonsoir
+> Vous avez obtenu le Bonsoir!
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit

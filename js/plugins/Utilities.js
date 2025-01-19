@@ -3937,8 +3937,15 @@ Input.keyMapper[68] = "right"; // d
     const EVENT_TINTS = {
         red: 0x00ff8888,
         green: 0x0088ff88,
-        blue: 0xff00ffff,
+        blue: 0xff66bbff,
         yellow: 0x00ffff88
+    };
+
+    const BLEND_MODES = {
+        add: Graphics.BLEND_ADD,
+        multiply: Graphics.BLEND_MULTIPLY,
+        screen: Graphics.BLEND_SCREEN,
+        normal: Graphics.BLEND_NORMAL,
     };
 
     override(Game_CharacterBase.prototype,
@@ -3990,6 +3997,7 @@ Input.keyMapper[68] = "right"; // d
                 this.locate(
                     meta.x ? Number.parseInt(meta.x) : event.x,
                     meta.y ? Number.parseInt(meta.y) : event.y);
+                this.setBlendMode(BLEND_MODES[meta.blendMode] || BLEND_MODES.normal);
             }
         },
         function sizeFactor() {

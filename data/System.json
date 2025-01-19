@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 113,
+  "editMapId": 117,
   "elements": [
     "",
     "Physical",
@@ -411,7 +411,9 @@
     "STATUE_GEMMES_SUS",
     "TEMPLE_BONSOIR_PORTE",
     "TEMPLE_BONSOIR_PORTE_2",
-    "TOURNOYEUR_MORT"
+    "TOURNOYEUR_MORT",
+    "TEMPLE_BONSOIR_SWITCH_RANT",
+    "BONSOIR"
   ],
   "terms": {
     "basic": [
@@ -653,9 +655,10 @@
     "JESUS_CUTSCENE",
     "TMP_DU_TBNK",
     "BONSOIR_PLAT_ANIM",
-    "BONSOIR_PLAT_NIVEAU"
+    "BONSOIR_PLAT_NIVEAU",
+    "BONSOIR_PLAT_NIVEAU_TMP"
   ],
-  "versionId": 28039844,
+  "versionId": 87938323,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,
