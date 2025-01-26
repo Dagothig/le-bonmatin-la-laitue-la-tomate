@@ -17,6 +17,7 @@
 * Thème combat du Chevalier Noir
 * Grotte du repos (version alt dans le creux plein de lave?)
 * Temple du Bonsoir (version alt pour l'extérieur?)
+* Temple du Bonsoir combat Recruteur
 
 ## Rouler sans RPG Maker MV
 

@@ -2384,6 +2384,31 @@ _ProtagonisteLancenotQuiDort7
 _ProtagonisteNarrateurAutelPasCoupe
 > Merci, cette remarque élucide tout...
 
+_ProtagonisteBonsoir1
+> Allo?\^
+
+_ProtagonisteBonsoir2
+> Vous voulez pas jaser?\
+> Juste un petit peu?\
+> Pour la diplomatie!\^
+
+_ProtagonisteBonsoirSePatch
+> Vous me foutez tous la trouille!\
+> Bubye!
+
+_ProtagonisteBonsoir3
+> Non mais, donnez-nous une minute...
+
+_ProtagonisteBonsoirBandits1
+> Oh vous êtes tous bleux.\
+> \
+> Mmmmh, est-ce que ça va?
+
+_ProtagonisteBonsoirBandits2
+> C'est bon, c'est bon.\
+> \
+> On vous pète!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -3768,6 +3793,15 @@ _JacquesVousAllezPerir
 _JacquesDesavantageNumerique
 > T'inquiètes je gère!
 
+_JacquesBonsoir1
+> J'te vois pas te brûler les mains avec\
+> nous! Le Bonsoir est chaud! Et dangereux!\
+> Si seulement on avait une sorte de gant...
+
+_JacquesBonsoir2
+> Heille! C'est nos bandits! Vous avez pas le\
+> droit de les commander comme ça!
+
 ### Jean
 
 _JeanRestePersonne
@@ -3805,6 +3839,11 @@ _JeanMamanSauve
 _JeanDesavantageNumerique
 > Huuuh\
 > Jacques on est en désavantage numérique!
+
+_JeanBonsoir1
+> Ou plus comme une mitaine? Une mitaine qui\
+> serait faite pour manipuler des objets\
+> chauds...
 
 ### Pretresse
 
@@ -4066,6 +4105,38 @@ _RecruteurNoInspectContrat
 > contrat.\
 > Veuillez plutôt vous asseoir afin qu'on\
 > puisse discuter de votre recrutement!
+
+_RecruteurViteViteBonsoir
+> Vite vite! Avant qu'ils n'arrivent.
+
+_RecruteurBonsoir1
+> Jean-Jacques! Crétins!\
+> \
+> Ils sont arrivés! Vite ramassez le Bonsoir!
+
+_RecruteurBonsoir2
+> On n'a plus le temps pour ces balivernes!
+
+_RecruteurBonsoir3
+> Bandits de-la-tour-du-Bonsoir! Je vous\
+> convoque pour remplir le sombre dessein\
+> de vos maîtres!
+
+_RecruteurBonsoir4
+> HA!\
+> Ça vous apprendra à ne pas lire vos\
+> contrats sanglants!
+
+_RecruteurBonsoir5
+> \shake<1,1,0.1,0.1>\C[5]Lorem ipsum dolor sit amet, consectetur adip\
+> iscing elit. Mauris sollicitudin convallis n\
+> isi, condimentum pharetra ipsum condimentum n\
+> ec. Vestibulum at orci imperdiet, tincidunt v\^
+
+_RecruteurBonsoir6
+> Inutiles! Tous inutiles! Jean-Jacques!\
+> \
+> Il est l'Heure.
 
 ### Barman
 

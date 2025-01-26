@@ -656,9 +656,10 @@
     "TMP_DU_TBNK",
     "BONSOIR_PLAT_ANIM",
     "BONSOIR_PLAT_NIVEAU",
-    "BONSOIR_PLAT_NIVEAU_TMP"
+    "BONSOIR_PLAT_NIVEAU_TMP",
+    "BONSOIR_BTL"
   ],
-  "versionId": 87938323,
+  "versionId": 857707,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

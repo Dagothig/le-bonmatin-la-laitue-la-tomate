@@ -7873,8 +7873,8 @@
     "members": [
       {
         "enemyId": 17,
-        "x": 321,
-        "y": 415,
+        "x": 375,
+        "y": 406,
         "hidden": false
       }
     ],
@@ -7911,8 +7911,8 @@
     "members": [
       {
         "enemyId": 18,
-        "x": 336,
-        "y": 397,
+        "x": 390,
+        "y": 409,
         "hidden": false
       }
     ],
@@ -7949,12 +7949,211 @@
     "members": [
       {
         "enemyId": 19,
-        "x": 306,
-        "y": 400,
+        "x": 384,
+        "y": 403,
         "hidden": false
       }
     ],
     "name": "Lancenot V2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "members": [
+      {
+        "enemyId": 38,
+        "x": 359,
+        "y": 280,
+        "hidden": false
+      },
+      {
+        "enemyId": 37,
+        "x": 417,
+        "y": 355,
+        "hidden": false
+      },
+      {
+        "enemyId": 39,
+        "x": 259,
+        "y": 399,
+        "hidden": false
+      },
+      {
+        "enemyId": 42,
+        "x": 156,
+        "y": 322,
+        "hidden": false
+      }
+    ],
+    "name": "Bandits de Grand Chemin V2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteBonsoirBandits1"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Oh vous êtes tous bleux."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              ""
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Mmmmh, est-ce que ça va?"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _ProtagonisteBonsoirBandits2"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "UIUI",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "C'est bon, c'est bon."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              ""
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "On vous pète!"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "members": [
+      {
+        "enemyId": 36,
+        "x": 168,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 41,
+        "x": 294,
+        "y": 352,
+        "hidden": false
+      },
+      {
+        "enemyId": 40,
+        "x": 408,
+        "y": 408,
+        "hidden": false
+      }
+    ],
+    "name": "Recruteur",
     "pages": [
       {
         "conditions": {

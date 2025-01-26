@@ -2535,12 +2535,18 @@ function eval_fn_expr(expr, args) {
         });
 
     const hurtSe = ["Ouch", "Owie", "JAiMal", "Bouhouhou"];
+
+    override(Game_CharacterBase.prototype,
+        function ouchie(_) {
+            AudioManager.playSe({ name: "Damage3", volume: 50, pitch: 90 + Math.random() * 20 });
+            setTimeout(() => AudioManager.playSe(hurtSe[(Math.random() * hurtSe.length)|0]), 50);
+        });
+
     override(Game_Actor.prototype,
         function performMapDamage(performMapDamage) {
             const steps = $gameParty.steps();
             if (steps !== window._lastHurtSteps) {
-                AudioManager.playSe({ name: "Damage3", volume: 50, pitch: 90 + Math.random() * 20 });
-                setTimeout(() => AudioManager.playSe(hurtSe[(Math.random() * hurtSe.length)|0]), 50);
+                this.ouchie();
                 window._lastHurtSteps = steps;
             }
             performMapDamage.call(this);
@@ -3994,6 +4000,7 @@ Input.keyMapper[68] = "right"; // d
                 this._offsetY = meta.offsetY && parseFloat(meta.offsetY);
                 this._offsetZ = meta.offsetZ && parseFloat(meta.offsetZ);
                 this.tint = meta.tint && EVENT_TINTS[meta.tint] || undefined;
+                this.hue = meta.hue && parseFloat(meta.hue) || undefined;
                 this.locate(
                     meta.x ? Number.parseInt(meta.x) : event.x,
                     meta.y ? Number.parseInt(meta.y) : event.y);
@@ -4016,6 +4023,15 @@ Input.keyMapper[68] = "right"; // d
                 this.anchor.y = 0.5;
                 this.y -= (this.height * this.scale.y) * 0.5;
             }
+        },
+        function setTileBitmap(_) {
+            const hue = this._character.hue;
+            this.bitmap = this.tilesetBitmap(this._tileId, hue);
+        },
+        function setCharacterBitmap(_) {
+            const hue = this._character.hue;
+            this.bitmap = ImageManager.loadCharacter(this._characterName, hue);
+            this._isBigCharacter = ImageManager.isBigCharacter(this._characterName, hue);
         });
 
     override(Sprite_BasicShadow.prototype,
@@ -5788,6 +5804,16 @@ nicer_menus: { // Nicer (? lol) menus
             this._backgroundSprite.scale.x = 3;
             this._backgroundSprite.scale.y = 3;
             this._backgroundSprite.filters = [new PIXI.filters.BlurFilter()];
+        });
+
+    override(Sprite_Animation.prototype,
+        function updatePosition(updatePosition) {
+            if (this._animation.position === 3) {
+                this.x = Graphics.boxWidth / 2;
+                this.y = Graphics.boxHeight / 2;
+            } else {
+                updatePosition.call(this);
+            }
         });
 
         // TODO AAAA
