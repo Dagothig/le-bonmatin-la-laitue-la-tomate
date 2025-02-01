@@ -9,6 +9,7 @@
 * Barre hp enemis par dessus UI (?)
 * Supporter d'afficher plusieurs types de dégâts en même temps
 * Finaliser Jean-Jacques-Recruteur MKIII
+* Post-bonsoir
 
 ### Musique
 
