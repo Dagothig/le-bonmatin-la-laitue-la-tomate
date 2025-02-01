@@ -19135,8 +19135,8 @@
             "tileId": 0,
             "characterName": "!Chest",
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 6
+            "pattern": 1,
+            "characterIndex": 0
           },
           "list": [
             {
@@ -19351,13 +19351,14 @@
               ]
             },
             {
-              "code": 126,
+              "code": 127,
               "indent": 0,
               "parameters": [
+                16,
+                0,
+                0,
                 1,
-                0,
-                0,
-                1
+                false
               ]
             },
             {
@@ -19373,15 +19374,10 @@
               ]
             },
             {
-              "code": 250,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "_NarrateurElixirChair",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "se _NarrateurBatonStyle"
               ]
             },
             {
@@ -19398,28 +19394,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Un élixir de chair!"
+                "Un grand baton, bien stylé, avec une grosse gemme"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "L'inventeur clame que ça goûte 5pt de poulet."
+                "au bout."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Va falloir l'essayer pour comprendre ce que ça "
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "implique."
+                "Ça permet de lancer des boules de feu, ça."
               ]
             },
             {

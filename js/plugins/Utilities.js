@@ -6020,3 +6020,9 @@ nicer_menus: { // Nicer (? lol) menus
         }
     });
 }
+
+// Lutin
+const ACCEPTED_LUTIN_NAMES = [
+    "tigaboué",
+    "tigaboue"
+];

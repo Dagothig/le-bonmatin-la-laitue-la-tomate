@@ -731,5 +731,68 @@
       0
     ],
     "price": 30
+  },
+  {
+    "id": 32,
+    "atypeId": 2,
+    "description": "Un gros casque. LE gros casque. La visibilité est \nnulle par contre. Faut pas bouger vite.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 132,
+    "name": "Heaume",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 33,
+    "atypeId": 1,
+    "description": "Un grand chapeau. Avec ça, il va seulement vous \nmanquer des grandes robes.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 133,
+    "name": "Grand chapeau",
+    "note": "",
+    "params": [
+      0,
+      10,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 34,
+    "atypeId": 0,
+    "description": "Stylée. Ou pas? En tout cas les étoiles c'est une\ndécision.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 138,
+    "name": "Grande robe",
+    "note": "",
+    "params": [
+      0,
+      20,
+      0,
+      1,
+      0,
+      2,
+      -5,
+      0
+    ],
+    "price": 0
   }
 ]

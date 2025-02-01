@@ -519,5 +519,43 @@
     ],
     "price": 0,
     "wtypeId": 4
+  },
+  {
+    "id": 16,
+    "animationId": 1,
+    "description": "Un grand baton, bien stylé, avec une grosse gemme\nau bout. Ça permet de lancer des boules de feu, ça.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 60,
+        "value": 1
+      }
+    ],
+    "iconIndex": 101,
+    "name": "Baton stylé",
+    "note": "",
+    "params": [
+      0,
+      10,
+      12,
+      0,
+      10,
+      0,
+      -5,
+      0
+    ],
+    "price": 50,
+    "wtypeId": 6
   }
 ]

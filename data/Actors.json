@@ -283,5 +283,28 @@
     "nickname": "Cossin Lette",
     "note": "",
     "profile": ""
+  },
+  {
+    "id": 11,
+    "battlerName": "",
+    "characterIndex": 0,
+    "characterName": "",
+    "classId": 1,
+    "equips": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "faceIndex": 3,
+    "faceName": "UIUI6",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "",
+    "nickname": "",
+    "note": "",
+    "profile": ""
   }
 ]

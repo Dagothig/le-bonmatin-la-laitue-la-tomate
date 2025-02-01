@@ -2736,7 +2736,7 @@
     ],
     "gold": 0,
     "name": "Recruteur",
-    "note": "",
+    "note": "<<aaa_icon 86 10>>",
     "params": [
       200,
       0,

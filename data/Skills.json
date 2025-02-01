@@ -3152,5 +3152,35 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 86,
+    "animationId": 174,
+    "damage": {
+      "critical": false,
+      "elementId": 2,
+      "formula": "25 + a.mat - b.mdf * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "Pew pew pew! Invoque une boule de feu pour \n25pt de dégâts.",
+    "effects": [],
+    "hitType": 2,
+    "iconIndex": 64,
+    "message1": " lance une boule de feu!",
+    "message2": "",
+    "mpCost": 25,
+    "name": "Boule de feu",
+    "note": "",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

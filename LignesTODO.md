@@ -915,6 +915,47 @@ _NarrateurBottesTombee
 _NarrateurObtenuBonsoir
 > Vous avez obtenu le Bonsoir!
 
+_NarrateurLivreAvecPointageDuDoigt
+> Un livre avec du pointage de doigt dedans!\
+> La stratégie ultime pour rediriger l'attention!
+
+_NarrateurVictuaillesLutin
+> Oh. Les victuailles du lutin.\
+> \
+> C'est très humide en dessous d'un arbre. Le parfum de\
+> la tite mousse de fond de frigo est très fort.
+
+_NarrateurHeaume
+> Un heaume!\
+> Un gros casque. LE gros casque. La visibilité est\
+> nulle par contre. Faut pas bouger vite.
+
+_NarrateurBatonStyle
+> Un grand baton, bien stylé, avec une grosse gemme\
+> au bout.\
+> \
+> Ça permet de lancer des boules de feu, ça.
+
+_NarrateurGrandChapeau
+> Un grand chapeau. Avec ça, il va seulement vous\
+> manquer des grandes robes.
+
+_NarrateurGrandeRobe
+> Une grande robe!\
+> Stylée. Ou pas? En tout cas les étoiles c'est une\
+> décision.
+
+_NarrateurVieuxSacs
+> Ouf. Ça c'est des vieux sacs.
+
+_NarrateurSacSable
+> Mmmmmh. Non le sac de sable c'est pas intéressant.
+
+_NarrateurBarilBrise
+> Des fois y'a des couvercles sur les barils.\
+> Des fois c'est TON couvercle.\
+> Pas cette fois-ci.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2409,6 +2450,29 @@ _ProtagonisteBonsoirBandits2
 > \
 > On vous pète!
 
+_ProtagonisteOkay
+> Okay...
+
+_ProtagonisteDouteHypothese
+> Vois-tu, j'ai comme un doute sur ton\
+> hypothèse.\
+> \
+> Mais bon, ton nom c'est...
+
+_ProtagonistePetitGaboue
+> Ohn! C'est un petit Gaboué!
+
+_ProtagonisteVousVousConnaissez
+> Vous vous connaissez?
+
+_ProtagonisteGrosArbre
+> Je sais pas... Vous avez un gros arbre?\
+> \
+> \}Un Tigaboué...\{
+
+_ProtagonisteAutodefenseMk2
+> Cette fois-ci, l'auto-défense, ça compte?
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2879,6 +2943,17 @@ _GabspartProtagonisteRantPuzz2
 _GabspartCouteleurPasContent2
 > Je dirais plus moisi...
 
+_GabspartNon
+> Non.
+
+_GabspartConsultesTextesSacrePourJeanJacques
+> Je sais pas mais huh, mettons donnes moi\
+> une seconde...
+
+_GabspartConsultesTextesSacrePourJeanJacques2
+> Pas mal sûr que c'est bien la dernière fois\
+> qu'on entend parler d'eux...
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -3165,6 +3240,14 @@ _WwwelchiorAbandonAncestral
 
 _WwwelchiorProtagonisteRantPuzz1
 > Ça va?
+
+_WwwelchiorSait
+> Je sais!
+
+_WwwelchiorCestUnLutin
+> À tous les coups c'est un lutin!\
+> Si on devine son nom, y'aura pas le choix\
+> de nous laisser rentrer chez eux!
 
 ### Fantome
 
@@ -3802,6 +3885,11 @@ _JacquesBonsoir2
 > Heille! C'est nos bandits! Vous avez pas le\
 > droit de les commander comme ça!
 
+_JacquesBonsoir3
+> Jean... Je t'avais dis...\
+> \
+> De paqueter des mitaines...
+
 ### Jean
 
 _JeanRestePersonne
@@ -4137,6 +4225,11 @@ _RecruteurBonsoir6
 > Inutiles! Tous inutiles! Jean-Jacques!\
 > \
 > Il est l'Heure.
+
+_RecruteurBonsoir7
+> Aaaaaaaaaah!\
+> Mais c'est... impossible!\
+> La Noirceur... je... je vois la Noirceur!
 
 ### Barman
 
@@ -5298,3 +5391,31 @@ _JesusBonneChance
 > Personne Véritable.\
 > \
 > Bonne chance.
+
+### Lutin
+
+_LutinCestChezMoiCa
+> Hey! Non! C'est chez moi ça!
+
+_LutinInquietNom
+> Wow! C'est un peu inquiétant quand même que\
+> vous avez trouvé mon nom...
+
+_LutinPouvezRentrer
+> Vous pouvez rentrer je m'imagine.
+
+_LutinPremierNe
+> Même pas proche! Si les choses étaient\
+> différentes, j'aurais eu votre premier né!
+
+_LutinVoisPasLaRessemblance
+> Vraiment? Je vois pas la ressemblance...
+
+_LutinVoisPasLaRessemblance2
+> Enfin, ce "Gaboué" doit se réjouir d'être\
+> comparé à une personne si favorable!
+
+_LutinPartez
+> Mais peu importe! Qu'est-ce qui vous emmène\
+> à visiter ma demeure? Ne tardez pas ici ou\
+> je devrai vous châtier!
