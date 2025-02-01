@@ -3171,7 +3171,7 @@
     "message2": "",
     "mpCost": 25,
     "name": "Boule de feu",
-    "note": "",
+    "note": "<<aaa_performActionStart {\n    AudioManager.playSe(\"Pewpewpew\");\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

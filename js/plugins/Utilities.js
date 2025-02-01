@@ -2546,7 +2546,7 @@ function eval_fn_expr(expr, args) {
         function performMapDamage(performMapDamage) {
             const steps = $gameParty.steps();
             if (steps !== window._lastHurtSteps) {
-                this.ouchie();
+                Game_CharacterBase.prototype.ouchie.call(this);
                 window._lastHurtSteps = steps;
             }
             performMapDamage.call(this);
