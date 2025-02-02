@@ -5424,9 +5424,8 @@ nicer_menus: { // Nicer (? lol) menus
             const bitmap = ImageManager.loadSvActor(name);
             const pw = bitmap.width / (3* 3);
             const ph = bitmap.height / 6;
-            const idx = animated ? (this._animIdx % 3) : 0;
-            const sx = (2 * 3 + idx) * pw;
-            const sy = 1 * ph;
+            const sx = (animated ? (2 * 3 + (this._animIdx % 3)) : 0) * pw;
+            const sy = (animated ? 1 : 4) * ph;
             const shiftY = battlerShifts[name] || 0;
             this.contents.blt(bitmap, sx, sy, pw, ph, x - pw / 2, y - ph + shiftY);
         },);
