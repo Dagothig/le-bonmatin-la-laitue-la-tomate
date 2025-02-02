@@ -10,6 +10,8 @@
 * Supporter d'afficher plusieurs types de dégâts en même temps
 * Finaliser Jean-Jacques-Recruteur MKIII
 * Post-bonsoir
+* LE VERT
+* Cossin DODO?
 
 ### Musique
 

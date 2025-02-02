@@ -4288,6 +4288,10 @@ _ProtagonisteGrosArbre
 _ProtagonisteAutodefenseMk2
 > Cette fois-ci, l'auto-défense, ça compte?
 
+_ProtagonisteLachesLeRepo
+> Ça t'arrives de pas regarder le Repositoire\
+> des Textes Sacrés?
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -5617,6 +5621,16 @@ _GabspartConsultesTextesSacrePourJeanJacques
 _GabspartConsultesTextesSacrePourJeanJacques2
 > Pas mal sûr que c'est bien la dernière fois\
 > qu'on entend parler d'eux...
+
+_GabspartAtItAgain1
+> Avant que tu touches à ça, juste pour qu'on\
+> soit clair, enlever le Bonsoir ça va avoir\
+> des Conséquences.
+
+_GabspartAtItAgain2
+> C'est pas ça la question. Je veux juste que\
+> tu sois conscient, considérant ce qui s'est\
+> passé après le Bonjour...
 
 ### Gaboue
 
@@ -7970,10 +7984,18 @@ _MrtheunBonsoir
 > profiter de l'air! Y'a tellement de soleil,\
 > c'est comme si on était le dîner.
 
+_MrtheunBonnuit
+> Bonnuit. Vraiment une belle nuit pour\
+> profiter de l'air! Y'a tellement de soleil,\
+> c'est comme si on était le dîner.
+
 ### Mrthedeux
 
 _MrthedeuxBonsoir
 > Bonsoir.
+
+_MrthedeuxBonnuit
+> Bonnuit.
 
 ### Marin
 
@@ -8208,6 +8230,9 @@ _BarmanRoger2
 > vous continuez à parler en mal comme ça de\
 > Roger, je vais devoir vous demander de\
 > quitter mon établissement!
+
+_BarmanBonnuit
+> Bonnuit, que puis-je faire pour vous?
 
 ### Maire
 

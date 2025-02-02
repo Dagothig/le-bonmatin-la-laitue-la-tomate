@@ -1828,6 +1828,10 @@ function eval_fn_expr(expr, args) {
 
     override(Window_BattleStatus.prototype,
         function noop(_) {},
+        function drawBasicArea(_, rect, actor) {
+            this.drawActorNickname(actor, rect.x + 0, rect.y, 150);
+            this.drawActorIcons(actor, rect.x + 156, rect.y, rect.width - 156);
+        },
         function drawGaugeArea(drawGaugeArea, rect, actor) {
             if (actor._gauges) {
                 let x = 0;
@@ -1959,16 +1963,6 @@ function eval_fn_expr(expr, args) {
                 .join("");
             drawGauge.call(this, x, y, width, rate, color1, curColor);
         });
-
-    Window_EquipStatus.prototype.refresh = function () {
-        this.contents.clear();
-        if (this._actor) {
-            this.drawActorName(this._actor, this.textPadding(), 0, 270);
-            for (var i = 0; i < 6; i++) {
-                this.drawItem(0, this.lineHeight() * (1 + i), 2 + i);
-            }
-        }
-    };
 
     override(Window_Message.prototype,
         function startMessage(startMessage) {
@@ -5394,6 +5388,58 @@ organ: { // Organ minigame
 }
 
 nicer_menus: { // Nicer (? lol) menus
+    // Animated characters
+    // ...
+    const idxmap = [1,2,1,0];
+    const battlerShifts = {
+        Goblin_Normal: 4
+    };
+
+    override(Window_Base.prototype,
+        function initialize(initialize, ...args) {
+            initialize.call(this, ...args);
+            this._animState = 0;
+        },
+        function update(update) {
+            this._animState++;
+            this._animIdx = (this._animState / 15)|0;
+            update.call(this);
+        },
+        function drawCharacter(_, characterName, characterIndex, x, y, animated) {
+            const bitmap = ImageManager.loadCharacter(characterName);
+            const big = ImageManager.isBigCharacter(characterName);
+            const pw = bitmap.width / (big ? 3 : 12);
+            const ph = bitmap.height / (big ? 4 : 8);
+            const n = characterIndex;
+            const idx = animated ? idxmap[this._animIdx % idxmap.length] : 1;
+            const sx = (n % 4 * 3 + idx) * pw;
+            const sy = (Math.floor(n / 4) * 4) * ph;
+            this.contents.blt(bitmap, sx, sy, pw, ph, x - pw / 2, y - ph);
+        },
+        function drawActorCharacter(_, actor, x, y, animated) {
+            this.drawCharacter(actor.characterName(), actor.characterIndex(), x, y, animated);
+        },
+        function drawActorBattler(_, actor, x, y, animated) {
+            const name = actor.battlerName()
+            const bitmap = ImageManager.loadSvActor(name);
+            const pw = bitmap.width / (3* 3);
+            const ph = bitmap.height / 6;
+            const idx = animated ? (this._animIdx % 3) : 0;
+            const sx = (2 * 3 + idx) * pw;
+            const sy = 1 * ph;
+            const shiftY = battlerShifts[name] || 0;
+            this.contents.blt(bitmap, sx, sy, pw, ph, x - pw / 2, y - ph + shiftY);
+        },);
+
+    override(Window_Selectable.prototype,
+        function update(update) {
+            const previousAnimIdx = this._animIdx;
+            update.call(this);
+            if (previousAnimIdx !== this._animIdx) {
+                this.refresh();
+            }
+        });
+
     override(Scene_ItemBase.prototype,
         function onActorOk(onActorOk) {
             const item = this.item();
@@ -5479,7 +5525,7 @@ nicer_menus: { // Nicer (? lol) menus
             if (this._actor) {
                 let offset = 0;
                 if (!this._hideName) {
-                    this.drawActorName(this._actor, this.textPadding(), 0);
+                    this.drawActorName(this._actor, this.textPadding(), 0, 270);
                     offset++;
                 }
                 for (var i = 0; i < 6; i++) {
@@ -5570,7 +5616,23 @@ nicer_menus: { // Nicer (? lol) menus
             return this.height;
         },
         function itemHeight() {
-            return 48 + this.textPadding() * 2;
+            return 64;
+        },
+        function contentsHeight() {
+            return this.itemHeight() + this.standardPadding() * 2;
+        },
+        function _refreshContents() {
+            this._windowContentsSprite.move(this.padding, 0);
+        },
+        function _updateContents() {
+            const w = this._width - this._padding * 2;
+            const h = this.contentsHeight();
+            if (w > 0 && h > 0) {
+                this._windowContentsSprite.setFrame(this.origin.x, this.origin.y, w, h);
+                this._windowContentsSprite.visible = this.isOpen();
+            } else {
+                this._windowContentsSprite.visible = false;
+            }
         },
         function maxCols() {
             return 4;
@@ -5583,9 +5645,10 @@ nicer_menus: { // Nicer (? lol) menus
             const actor = $gameParty.battleMembers()[index];
             const rect = this.itemRect(index);
             this.changePaintOpacity(this.isEnabled(index));
-            this.drawActorCharacter(actor,
+            this.drawActorBattler(actor,
                 rect.x + this.itemWidth() / 2,
-                rect.y + rect.height - this.textPadding());
+                this.contentsHeight() - this.padding,
+                this.isEnabled(index));
             this.changePaintOpacity(true);
         },
         function drawItemBackground(_, index) {
@@ -5702,7 +5765,7 @@ nicer_menus: { // Nicer (? lol) menus
             return 330;
         },
         function drawBasicArea(_, rect, actor) {
-            this.drawActorName(actor, rect.x + 0, rect.y, 150);
+            this.drawActorNickname(actor, rect.x + 0, rect.y, 150);
             this.drawActorIcons(actor, rect.x + 156, rect.y, rect.width - 156);
         },
         function drawGaugeArea(_, rect, actor) {
@@ -5720,6 +5783,11 @@ nicer_menus: { // Nicer (? lol) menus
         function drawGaugeAreaWithoutTp(_, rect, actor) {
             this.drawActorHp(actor, rect.x + 0, rect.y, 201);
             this.drawActorMp(actor, rect.x + 216, rect.y, 114);
+        });
+
+    override(Game_Actor.prototype,
+        function nickname() {
+            return this.actor().nickname;
         });
 }
 
