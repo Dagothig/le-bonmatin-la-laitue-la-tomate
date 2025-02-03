@@ -6037,55 +6037,55 @@ nicer_menus: { // Nicer (? lol) menus
 
             this.addChild(this._lightingLayer);
         },
-    function createEventLight(_, event) {
-        const light = new Sprite(lightImgs.default.img);
-        light.blendMode = Graphics.BLEND_ADD;
-        light._timeOffset = (Math.random() * 1024)|0;
-        light.visible = false;
-        light.event = event;
-        this._lights.push(light);
-        this._lightingLayer.addChild(light);
-    },
-    function update(update) {
-        update.call(this);
+        function createEventLight(_, event) {
+            const light = new Sprite(lightImgs.default.img);
+            light.blendMode = Graphics.BLEND_ADD;
+            light._timeOffset = (Math.random() * 1024)|0;
+            light.visible = false;
+            light.event = event;
+            this._lights.push(light);
+            this._lightingLayer.addChild(light);
+        },
+        function update(update) {
+            update.call(this);
 
-        this._time++;
+            this._time++;
 
-        globalMapTint: if ($gameMap.lightTint !== undefined) {
-            const tint = tints[$gameMap.lightTint];
-            if (this._globalLightTint.tint === tint) {
-                break globalMapTint;
+            globalMapTint: if ($gameMap.lightTint !== undefined) {
+                const tint = tints[$gameMap.lightTint];
+                if (this._globalLightTint.tint === tint) {
+                    break globalMapTint;
+                }
+                const part = 1 / ($gameMap.lightTransition + 1);
+                $gameMap.lightTransition = Math.max($gameMap.lightTransition - 1, 0);
+                this._globalLightTint.tint = tintLerp(this._globalLightTint.tint, tint, part);
             }
-            const part = 1 / ($gameMap.lightTransition + 1);
-            $gameMap.lightTransition = Math.max($gameMap.lightTransition - 1, 0);
-            this._globalLightTint.tint = tintLerp(this._globalLightTint.tint, tint, part);
-        }
 
-        for (const light of this._lights) {
-            const event = light.event;
-            if (!event.lightTint || (event.page ? !event.page() : !event.characterName())) {
-                light.visible = false;
-                continue;
+            for (const light of this._lights) {
+                const event = light.event;
+                if (!event.lightTint || (event.page ? !event.page() : !event.characterName())) {
+                    light.visible = false;
+                    continue;
+                }
+                const lightImg = lightImgs[event.lightType] || lightImgs.default;
+                const time = this._time + light._timeOffset;
+                const lightScale = event.lightSize / light.bitmap.width;
+                if (light.bitmap !== lightImg.img) {
+                    light.bitmap = lightImg.img;
+                }
+                light.visible = true;
+                light.x = event.screenX() + lightImg.offsetX * lightScale;
+                light.y = event.screenY() + lightImg.offsetY * lightScale;
+                light.anchor.x = 0.5;
+                light.anchor.y = 0.5;
+                light.tint = event.lightTint;
+                light.scale.x = light.scale.y =
+                    lightScale * (
+                    1 +
+                    0.1 + Math.sin(time / (Math.PI * 32)) * 0.05 +
+                    0.025 + Math.sin(time / (Math.PI * 3)) * 0.0125);
             }
-            const lightImg = lightImgs[event.lightType] || lightImgs.default;
-            const time = this._time + light._timeOffset;
-            const lightScale = event.lightSize / light.bitmap.width;
-            if (light.bitmap !== lightImg.img) {
-                light.bitmap = lightImg.img;
-            }
-            light.visible = true;
-            light.x = event.screenX() + lightImg.offsetX * lightScale;
-            light.y = event.screenY() + lightImg.offsetY * lightScale;
-            light.anchor.x = 0.5;
-            light.anchor.y = 0.5;
-            light.tint = event.lightTint;
-            light.scale.x = light.scale.y =
-                lightScale * (
-                1 +
-                0.1 + Math.sin(time / (Math.PI * 32)) * 0.05 +
-                0.025 + Math.sin(time / (Math.PI * 3)) * 0.0125);
-        }
-    });
+        });
 }
 
 // Lutin
@@ -6093,3 +6093,55 @@ const ACCEPTED_LUTIN_NAMES = [
     "tigaboué",
     "tigaboue"
 ];
+
+{ // Gameover
+    const Acolors = [
+        [255, 255, 255],
+        [255, 128, 128],
+        [255, 0, 0],
+        [180, 0, 0],
+        [90, 0, 0],
+    ];
+
+    override(Scene_Gameover.prototype,
+        function initialize(initialize) {
+            initialize.call(this);
+            this.time = 0;
+        },
+        function createBackground(_) {
+            this.As = Acolors.map((color, i) => {
+                const bitmap = ImageManager.loadSystem("A", i);
+                bitmap.addLoadListener(() =>
+                    bitmap.adjustTone(
+                        color[0] - 255,
+                        color[1] - 255,
+                        color[2] - 255));
+                return bitmap;
+            });
+            this.aaaSprite = new Sprite();
+            this.aaaSprite.bitmap = new Bitmap(Graphics.width, Graphics.height);
+            this.addChild(this.aaaSprite);
+        },
+        function update(update) {
+            const shake = Math.pow(this.time, (1/1.75));
+            while (Math.random() < 0.85) {
+                const A = this.As[(Math.random() * this.As.length)|0];
+                const scale = (0.25 + Math.random() * shake / 20);
+                const w = A.width * scale;
+                const h = A.height * scale;
+                const bitmap = this.aaaSprite.bitmap;
+                bitmap.blt(
+                    A,
+                    0, 0,
+                    A.width, A.height,
+                    Math.random() * Graphics.width - w / 2,
+                    Math.random() * Graphics.height - h / 2,
+                    w,
+                    h);
+            }
+            this.aaaSprite.x = (Math.random() - 0.5) * shake;
+            this.aaaSprite.y = (Math.random() - 0.5) * shake;
+            this.time++;
+            update.call(this);
+        });
+}

@@ -6319,14 +6319,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "J'te vois pas te brûler les mains avec "
+                "Roger, j'te vois pas te brûler les mains "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "nous! Le Bonsoir est chaud! Et dangereux!"
+                "avec nous! "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Le Bonsoir est chaud! Et dangereux!"
               ]
             },
             {

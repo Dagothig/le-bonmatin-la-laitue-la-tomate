@@ -6055,8 +6055,9 @@ _JacquesAssurerChevalierNoir
 > Oh.
 
 _JacquesBonsoir1
-> J'te vois pas te brûler les mains avec\
-> nous! Le Bonsoir est chaud! Et dangereux!\
+> Roger, j'te vois pas te brûler les mains\
+> avec nous!\
+> Le Bonsoir est chaud! Et dangereux!\
 > Si seulement on avait une sorte de gant...
 
 _JacquesBonsoir2
@@ -8096,6 +8097,12 @@ _GrossestalagmitegriseJeGarde
 
 _GrossestalagmitegrisePamphletRRRR
 > Bonsoir, je suis représentante du RRRR.\
+> Toutes les roches sont les bienvenues\
+> maintenant que le royaume est rétabli.\
+> Vous voulez un pamphlet?
+
+_GrossestalagmitegrisePamphletRRRRAlt
+> Bonnuit, je suis représentante du RRRR.\
 > Toutes les roches sont les bienvenues\
 > maintenant que le royaume est rétabli.\
 > Vous voulez un pamphlet?
