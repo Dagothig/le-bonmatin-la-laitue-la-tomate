@@ -3541,14 +3541,7 @@
               "code": 655,
               "indent": 3,
               "parameters": [
-                "  [80, 6, 30, \"UPPERRIGHT\"]"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 3,
-              "parameters": [
-                "];"
+                "  [80, 6, 30]];"
               ]
             },
             {
@@ -4352,55 +4345,6 @@
                   "indent": null
                 }
               ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "window.oracleStep[3] === \"UPPERRIGHT\""
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 3,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 8,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": true,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 3,
-              "parameters": [
-                {
-                  "code": 8,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
             },
             {
               "code": 355,
