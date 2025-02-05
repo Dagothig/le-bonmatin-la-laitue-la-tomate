@@ -4,6 +4,7 @@ const timestamps = [["Init", new Date()]];
 const fs = require("fs/promises");
 const os = require("os");
 const { spawnSync } = require("child_process");
+const $markov = require("./markov");
 
 Object.assign(Array.prototype, {
     toObject() {
@@ -282,9 +283,18 @@ const sectionsByNameToLinesMD = sectionsByName =>
     timestamps.push(["Compter et catégoriser les lignes", new Date()]);
 
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
-    if (knownLinesText !== newKnownLinesText) {
+    if (knownLinesText !== newKnownLinesText || true) {
         console.log("Writing lines");
+
+        const linesData = Object.entries(knownLinesByName)
+            .filter(([name]) => name !== "SFX")
+            .flatMap(([_, lines]) =>
+                Object.entries(lines).map(([key, text]) =>
+                    text.join(" ")));
+        const $markovOutput = $markov(linesData)
+
         await fs.writeFile("Lignes.md", newKnownLinesText);
+        await fs.writeFile("data/Markov.json", JSON.stringify(await $markovOutput, null, 2));
     }
 
     const newTodosText = sectionsByNameToLinesMD(todosByName);

@@ -409,7 +409,9 @@ function eval_fn_expr(expr, args) {
         }
     }
 
-    DataManager._databaseFiles.push({ name: "$dataWalkthrough", src: "Walkthrough.json" });
+    DataManager._databaseFiles.push(
+        { name: "$dataWalkthrough", src: "Walkthrough.json" },
+        { name: "$dataMarkov", src: "Markov.json" });
 
     var original_onLoad = DataManager.onLoad;
     DataManager.onLoad = function (object) {
@@ -6144,4 +6146,32 @@ const ACCEPTED_LUTIN_NAMES = [
             this.time++;
             update.call(this);
         });
+}
+
+{ // Markov
+    const punctuationRegexp = /[,\.\!\?:]+/g;
+    const sentenceEndRegexp = /[\.\!\?]/;
+
+    function capitalize(str) {
+        return str[0].toUpperCase() + str.substring(1);
+    }
+
+    function generateText(minWordCount = 20, maxWordCount = 80) {
+        let text = "", previous = ".", capitalizeNext = true;
+        for (let i = 0; i < maxWordCount; i++) {
+            const { sum, choices } = $dataMarkov[previous];
+            const value = (Math.random() * sum)|0;
+            previous = choices.find(choice => choice.value >= value).word;
+            text = text
+                + (previous.match(punctuationRegexp) ? "" : " ")
+                + (capitalizeNext ? capitalize(previous) : previous);
+            capitalizeNext = previous.match(sentenceEndRegexp);
+            if (capitalizeNext && i >= minWordCount) {
+                return text.trim();
+            }
+        }
+        return text.trim() + "...";
+    }
+
+    window.generateText = generateText;
 }
