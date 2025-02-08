@@ -6205,7 +6205,24 @@ const ACCEPTED_LUTIN_NAMES = [
         return antecedentsCache[word] = antecedentsMaps;
     }
 
+    // When used, the replacement list will become the word.
+    const wordMap = {
+        yo: ["allo", "salut"],
+        bonnuit: ["bonjour", "bonsoir"]
+    }
+
     function generateTextByAntecedent(searchedWords) {
+        const replacements = {};
+        for (let i = 0; i < searchedWords.length; i++) {
+            const word = searchedWords[i];
+            if (word in wordMap) {
+                searchedWords[i] = wordMap[word].random();
+                for (const replaced of wordMap[word]) {
+                    replacements[replaced] = word;
+                }
+            }
+        }
+
         let start = generateWord(".");
         while (start.match(punctuationRegexp)) {
             start = generateWord(".");
@@ -6232,6 +6249,14 @@ const ACCEPTED_LUTIN_NAMES = [
         while (!words.last().match(sentenceEndRegexp)) {
             words.push(generateWord(words.last()));
         }
+
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            if (word in replacements) {
+                words[i] = replacements[word];
+            }
+        }
+
         return formatText(words);
     }
 
@@ -6324,7 +6349,11 @@ const ACCEPTED_LUTIN_NAMES = [
                 lastValidCut = i;
             }
         }
-        lines.push(text.substring(lastCut));
+        lines.push(text.substring(lastCut, lastValidCut));
+        const lastLine = text.substring(lastValidCut).trim();
+        if (lastLine) {
+            lines.push(lastLine);
+        }
         return lines;
     }
 
@@ -6335,11 +6364,12 @@ const ACCEPTED_LUTIN_NAMES = [
         function pluginCommand(pluginCommand, command, args) {
             pluginCommand.call(this, command, args);
             if (command === "markov") {
+                const [faceImg, faceIdx, bg = 0, posType = 2] = args.shift().split(",");
                 const text = generateTextByAntecedent(args);
                 const lines = cutTextForDialog(text);
-                $gameMessage.setFaceImage("UIUI5", 6);
-                $gameMessage.setBackground(0);
-                $gameMessage.setPositionType(2);
+                $gameMessage.setFaceImage(faceImg, faceIdx);
+                $gameMessage.setBackground(bg);
+                $gameMessage.setPositionType(posType);
                 for (const line of lines) {
                     $gameMessage.add(line);
                 }

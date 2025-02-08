@@ -303,7 +303,11 @@ const sectionsByNameToLinesMD = sectionsByName =>
         await fs.writeFile("data/Markov.json", JSON.stringify(markovOutput, null, 2));
 
         const wordFiles = await $wordFiles;
-        const audioWords = words.filter(word => !word.match(punctuationRegexp)).distinct();
+        const audioWords = words
+            // Sneaky add.
+            .concat(["yo", "bonnuit"])
+            .filter(word => !word.match(punctuationRegexp))
+            .distinct();
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
         const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[1]));
         for (const word of missingWords) {
