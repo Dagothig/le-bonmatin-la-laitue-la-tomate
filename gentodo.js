@@ -302,7 +302,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
         await fs.writeFile("Lignes.md", newKnownLinesText);
         await fs.writeFile("data/Markov.json", JSON.stringify(markovOutput, null, 2));
 
-        /*const wordFiles = await $wordFiles;
+        const wordFiles = await $wordFiles;
         const audioWords = words.filter(word => !word.match(punctuationRegexp)).distinct();
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
         const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[1]));
@@ -311,17 +311,17 @@ const sectionsByNameToLinesMD = sectionsByName =>
             const fp = "./audio/word/" + word + ".ogg";
             const espeak = spawnSync(
                 "espeak",
-                ["-v", "fr-fr", "-s", 250, "-w", "tmp.wav", word],
+                ["-v", "fr-fr", "-s", 200, "-w", "tmp.wav", word],
                 { stdio: "inherit" });
             await new Promise(res => setTimeout(res, 10));
             const ffmpeg = spawnSync(
                 "ffmpeg",
-                ["-i", "tmp.wav", "-y", fp, "-v", "error"],
+                ["-i", "tmp.wav", "-filter:a", "speechnorm=e=12.5:r=0.0001:l=1", "-ab", "16k", "-ar", "22050", "-y", fp, "-v", "error"],
                 { stdio: "inherit" });
             await new Promise(res => setTimeout(res, 10));
         }
 
-        for (const file of obsoleteWordFiles) {
+        /*for (const file of obsoleteWordFiles) {
             console.log("Removed " + file);
             await fs.unlink("audio/word/" + file);
         }*/

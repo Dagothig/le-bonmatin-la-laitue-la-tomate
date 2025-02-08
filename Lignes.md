@@ -5775,7 +5775,8 @@ _VieuxOnguents
 > J'ai des onguents pas loin, attendez.
 
 _VieuxMaintenantChercherCossin
-> MaintenantChercherCossin
+> Bon, et maintenant retournez chercher le\
+> Cossin!
 
 _VieuxVousDitNePasAvoirBonMatni
 > Je vous dit que je n'ai pas de Bons Matins!\

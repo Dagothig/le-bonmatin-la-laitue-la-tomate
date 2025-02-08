@@ -2,7 +2,7 @@
   null,
   {
     "id": 1,
-    "expanded": false,
+    "expanded": true,
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,

@@ -1,3 +1,5 @@
+"use strict";
+
 function override(obj) {
     for (let i = 1; i < arguments.length; i++) {
         let fn = arguments[i];
@@ -472,7 +474,7 @@ function eval_fn_expr(expr, args) {
                     const overlayMatch = note.match(overlayRegexp);
                     overlayMatch && (state.overlay = parseInt(overlayMatch[1]) || 0);
                     state.params = [0,0,0,0,0,0,0,0];
-                    for (key in state && state.meta) {
+                    for (const key in state && state.meta) {
                         const value = state.meta[key];
                         if (key.startsWith("stat-")) {
                             const name = key.substring(5);
@@ -634,7 +636,7 @@ function eval_fn_expr(expr, args) {
                     if (item && item.meta) {
                         item.aaa_stats = {};
                         item.aaa_states = [];
-                        for (key in item && item.meta) {
+                        for (const key in item && item.meta) {
                             const value = item.meta[key];
                             if (key.startsWith("stat-")) {
                                 const name = key.substring(5);
@@ -1973,7 +1975,9 @@ function eval_fn_expr(expr, args) {
         function startMessage(startMessage) {
             startMessage.call(this);
             this._softWaitCount = 0;
-        },
+        });
+
+    override(Window_Base.prototype,
         function processCharacter(processCharacter, textState) {
             if (this._softWaitCount > 0) {
                 this._softWaitCount--;
@@ -2262,7 +2266,7 @@ function eval_fn_expr(expr, args) {
         function _createContext(_createContext) {
             _createContext.call(this);
 
-            impulseResponse = ( duration, decay, reverse ) => {
+            const impulseResponse = ( duration, decay, reverse ) => {
                 let sampleRate = this._context.sampleRate;
                 let length = sampleRate * duration;
                 let impulse = this._context.createBuffer(2, length, sampleRate);
@@ -6238,6 +6242,25 @@ const ACCEPTED_LUTIN_NAMES = [
         return word;
     }
 
+    window.$testWords = async function $testWords() {
+        const keys = Object.keys($dataMarkov);
+        const batchSize = 50;
+        for (let i = 0; i < keys.length; i += batchSize) {
+            const $promises = [];
+            for (let j = i; j < i + batchSize && j < keys.length; j++) {
+                const key = keys[j];
+                if (!key.match(punctuationRegexp)) {
+                    $promises.push(fetch(AudioManager._path + "word/" + encodeURIComponent(key) + ".ogg"));
+                } else {
+                    console.log("Skipped", key);
+                }
+            }
+            await Promise.all($promises);
+            console.log((((i + 1) / keys.length * 100)|0) + "%");
+        }
+        console.log("Done!");
+    }
+
     /* unused
     function generateText(searchedWords, maxWordCount = 300) {
         let text = "", previous = ".", capitalizeNext = true;
@@ -6265,10 +6288,11 @@ const ACCEPTED_LUTIN_NAMES = [
 
     function formatText(words) {
         let text = "", capitalizeNext = true;
-        for (const word of words) {
-            text = text
-                + (word.match(punctuationRegexp) ? "" : " ")
-                + (capitalizeNext ? capitalize(word) : word);
+        for (let word of words) {
+            const isPunctuation = word.match(punctuationRegexp);
+            word = capitalizeNext ? capitalize(word) : word;
+            word = isPunctuation ? word : "\\word<" + word + ">";
+            text = text + (isPunctuation ? "" : " ") + word;
             capitalizeNext = word.match(sentenceEndRegexp);
         }
         return text.trim()
@@ -6277,12 +6301,30 @@ const ACCEPTED_LUTIN_NAMES = [
     const dialogTextCap = 43;
     function cutTextForDialog(text) {
         const lines = [];
-        for (let i = 0; i < text.length;) {
-            let j = i + dialogTextCap;
-            for (; j < text.length && text[j] !== " " && text[j] !== "-"; j--);
-            lines.push(text.substring(i, j));
-            i = j + 1;
+        let lastValidCut = 0, lastValidCarCount = 0, lastCut = 0;
+        for (let i = 0, carCount = 0; i < text.length; i++, carCount++) {
+            while (text[i] === "\\" && text.slice(i + 1, i + 5) === "word") {
+                i += 5;
+                const arr = /^\<[^\<\>]+\>/.exec(text.slice(i));
+                if (arr) {
+                    i += arr[0].length;
+                    carCount += arr[0].length - 2;
+                }
+            }
+            if ((text[i] === " " || text[i] === "-")) {
+                if (carCount > dialogTextCap) {
+                    lines.push(text.substring(lastCut, lastValidCut));
+                    lastCut = lastValidCut;
+                    carCount -= lastValidCarCount;
+                    if (text[i] === " ") {
+                        lastCut++;
+                    }
+                }
+                lastValidCarCount = carCount;
+                lastValidCut = i;
+            }
         }
+        lines.push(text.substring(lastCut));
         return lines;
     }
 
@@ -6303,5 +6345,91 @@ const ACCEPTED_LUTIN_NAMES = [
                 }
                 this.setWaitMode('message');
             }
+        });
+
+    let currentBuffer;
+    const wordStack = [];
+
+    function stopWord() {
+        currentBuffer && currentBuffer.stop();
+        wordStack.length = 0;
+    }
+
+    function dequeWord() {
+        currentBuffer = wordStack.shift();
+        if (currentBuffer) {
+            if (currentBuffer.isReady()) {
+                setTimeout(dequeWord, currentBuffer._loadedTime * 1000 * 0.8 - 180);
+            } else {
+                currentBuffer.addLoadListener(() =>
+                    setTimeout(dequeWord, currentBuffer._loadedTime * 1000 * 0.8 - 180));
+            }
+            currentBuffer.play(false);
+        }
+    }
+
+    function sayWord(word) {
+        if (!word) {
+            return;
+        }
+
+        const wordBuffer = AudioManager.createBuffer('word', word.toLowerCase());
+        const pitch = Math.random() * 10 + 95;
+        AudioManager.updateBufferParameters(
+            wordBuffer,
+            AudioManager._speechVolume,
+            { volume: 90, pitch, pan: Math.random() * 20 - 10 });
+        wordStack.push(wordBuffer);
+
+        if (currentBuffer) {
+            return;
+        } else {
+            dequeWord();
+        }
+    }
+
+    override(Window_Base.prototype,
+        function obtainEscapeCode(obtainEscapeCode, textState) {
+            textState.index++;
+            if (textState.text.slice(textState.index, textState.index + 4).match(/word/i)) {
+                textState.index += 4;
+                return "word";
+            } else {
+                textState.index--;
+                return obtainEscapeCode.call(this, textState);
+            }
+        },
+        function processEscapeCharacter(processEscapeCharacter, code, textState) {
+            switch (code) {
+                case "word":
+                    const arr = /^\<[^\<\>]+\>/.exec(textState.text.slice(textState.index));
+                    const word = arr[0].substring(1, arr[0].length - 1);
+                    sayWord(word);
+                    textState.index++;
+                    textState.skipIndex = textState.index + word.length;
+                    break;
+                default:
+                    return processEscapeCharacter.call(this, code, textState);
+            }
+        },
+        function processCharacter(processCharacter, textState) {
+            if (textState.skipIndex) {
+            }
+            if (textState.skipIndex && textState.index === textState.skipIndex) {
+                textState.index++;
+                delete textState.skipIndex;
+                return;
+            }
+            processCharacter.call(this, textState);
+        });
+
+    override(Window_Message.prototype,
+        function newPage(newPage, textState) {
+            stopWord();
+            newPage.call(this, textState);
+        },
+        function terminateMessage(terminateMessage) {
+            stopWord();
+            terminateMessage.call(this);
         });
 }

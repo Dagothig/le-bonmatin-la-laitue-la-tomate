@@ -8,7 +8,10 @@ const endsWithPunctuation = /[\,\.\!\?\:]$/;
 
 function getWords(lines) {
     return lines.flatMap(line => {
-        line = line.toLowerCase().replaceAll(commandsRegexp, "");
+        line = line.toLowerCase()
+            .replaceAll(commandsRegexp, "")
+            // Lol
+            .replaceAll("9/10", "9 sur 10");
         if (!line.match(endsWithPunctuation)) {
             line += ".";
         }

@@ -1873,6 +1873,15 @@
               ]
             },
             {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                23,
+                23,
+                0
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -1882,15 +1891,6 @@
                   "pitch": 100,
                   "pan": 0
                 }
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                23,
-                23,
-                0
               ]
             },
             {
