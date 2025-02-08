@@ -253,6 +253,9 @@ override(Array.prototype,
     },
     function random() {
         return this[(Math.random() * (this.length - 1)) | 0];
+    },
+    function last() {
+        return this[this.length - 1];
     });
 
 (function () {
@@ -770,7 +773,7 @@ function eval_fn_expr(expr, args) {
     window.$tileShadowColor = new Float32Array(defaultShadowColor);
 
     override(Game_Interpreter.prototype,
-        function pluginCommand(pluginCommand,command, args) {
+        function pluginCommand(pluginCommand, command, args) {
             pluginCommand.call(this, command, args);
             if (command === "aaa_anim") {
                 aaa_anim($gameTroop.members()[parseInt(args[0]) || 0], args[1], args[2]);
@@ -6149,29 +6152,156 @@ const ACCEPTED_LUTIN_NAMES = [
 }
 
 { // Markov
-    const punctuationRegexp = /[,\.\!\?:]+/g;
+    const punctuationRegexp = /[\,\.\!\?\:]+/g;
     const sentenceEndRegexp = /[\.\!\?]/;
+    const valueKey = 0;
+    const wordKey = 1;
+    const backValueKey = 2;
+    const backWordKey = 3;
 
     function capitalize(str) {
         return str[0].toUpperCase() + str.substring(1);
     }
 
-    function generateText(minWordCount = 20, maxWordCount = 80) {
+    function getAntecedents(word, depth = 0, chain = [word], chains = [], odds = 1) {
+        const sum = $dataMarkov[word][backValueKey];
+        let previousValue = -1;
+        for (const [value, subword] of $dataMarkov[word][backWordKey]) {
+            const subchain = [subword, ...chain];
+            const subodds = odds * ((value - previousValue) / sum);
+            previousValue = value;
+            chains.push([subodds, subchain]);
+            if (depth > 0) {
+                getAntecedents(subword, depth - 1, subchain, chains, subodds);
+            }
+        }
+        return chains;
+    }
+
+    const antecedentsCache = {};
+
+    function getAntecedentsMap(word) {
+        if (word in antecedentsCache) {
+            return antecedentsCache[word];
+        }
+        const antecedentsMaps = {}
+        for (const antecedent of getAntecedents(word)) {
+            const odds = antecedent[valueKey];
+            const chain = antecedent[wordKey];
+            const lead = chain[0];
+            let entryForLead;
+            if (!antecedentsMaps[lead]) {
+                entryForLead = antecedentsMaps[lead] = [0, []];
+            } else {
+                entryForLead = antecedentsMaps[lead];
+            }
+            entryForLead[valueKey] += odds;
+            entryForLead[wordKey].push([entryForLead[valueKey], chain]);
+        }
+        return antecedentsCache[word] = antecedentsMaps;
+    }
+
+    function generateTextByAntecedent(searchedWords) {
+        let start = generateWord(".");
+        while (start.match(punctuationRegexp)) {
+            start = generateWord(".");
+        }
+        const words = [start];
+        for (let i = 0; i < searchedWords.length; i++) {
+            const antecedents = getAntecedentsMap(searchedWords[i]);
+            let last, j;
+            for (
+                j = 0, last = words.last();
+                j < 50 && !(last in antecedents);
+                j++, words.push(last = generateWord(last))
+            );
+            const entry = antecedents[last];
+            if (!entry) {
+                words.push("...", searchedWords[i].toUpperCase(), "!");
+            } else {
+                const value = Math.random() * entry[valueKey];
+                const chain = entry[wordKey].find(entry => entry[valueKey] >= value)[wordKey];
+                words.pop();
+                words.push(...chain);
+            }
+        }
+        while (!words.last().match(sentenceEndRegexp)) {
+            words.push(generateWord(words.last()));
+        }
+        return formatText(words);
+    }
+
+    function generateWord(previous = ".") {
+        const [sum, choices] = $dataMarkov[previous];
+        const value = (Math.random() * sum)|0;
+        const word = choices.find(choice => choice[valueKey] >= value)[wordKey];
+        return word;
+    }
+
+    /* unused
+    function generateText(searchedWords, maxWordCount = 300) {
         let text = "", previous = ".", capitalizeNext = true;
+        for (let i = 0; i < searchedWords; i++) {
+            searchedWords[i] = searchedWords[i].toLowerCase();
+        }
         for (let i = 0; i < maxWordCount; i++) {
-            const { sum, choices } = $dataMarkov[previous];
+            const [sum, choices] = $dataMarkov[previous];
             const value = (Math.random() * sum)|0;
-            previous = choices.find(choice => choice.value >= value).word;
+            previous = choices.find(choice => choice[valueKey] >= value)[wordKey];
             text = text
                 + (previous.match(punctuationRegexp) ? "" : " ")
                 + (capitalizeNext ? capitalize(previous) : previous);
             capitalizeNext = previous.match(sentenceEndRegexp);
-            if (capitalizeNext && i >= minWordCount) {
+            if (searchedWords.length > 0 && searchedWords[0] === previous) {
+                searchedWords.shift();
+            }
+            if (capitalizeNext && !searchedWords.length) {
                 return text.trim();
             }
         }
-        return text.trim() + "...";
+        return text.trim() + "... " + searchedWords.map(word => word.toUpperCase() + "!").join(" ");
+    }
+    window.generateText = generateText;*/
+
+    function formatText(words) {
+        let text = "", capitalizeNext = true;
+        for (const word of words) {
+            text = text
+                + (word.match(punctuationRegexp) ? "" : " ")
+                + (capitalizeNext ? capitalize(word) : word);
+            capitalizeNext = word.match(sentenceEndRegexp);
+        }
+        return text.trim()
     }
 
-    window.generateText = generateText;
+    const dialogTextCap = 43;
+    function cutTextForDialog(text) {
+        const lines = [];
+        for (let i = 0; i < text.length;) {
+            let j = i + dialogTextCap;
+            for (; j < text.length && text[j] !== " " && text[j] !== "-"; j--);
+            lines.push(text.substring(i, j));
+            i = j + 1;
+        }
+        return lines;
+    }
+
+    window.getAntecedentsMap = getAntecedentsMap;
+    window.generateTextByAntecedent = generateTextByAntecedent;
+
+    override(Game_Interpreter.prototype,
+        function pluginCommand(pluginCommand, command, args) {
+            pluginCommand.call(this, command, args);
+            if (command === "markov") {
+                const text = generateTextByAntecedent(args);
+                const lines = cutTextForDialog(text);
+                $gameMessage.setFaceImage("UIUI5", 6);
+                $gameMessage.setBackground(0);
+                $gameMessage.setPositionType(2);
+                for (const line of lines) {
+                    $gameMessage.add(line);
+                }
+                this.setWaitMode('message');
+            }
+        });
 }

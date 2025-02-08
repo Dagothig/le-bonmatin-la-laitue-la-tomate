@@ -6,8 +6,8 @@
     "name": "VILLAGE",
     "order": 6,
     "parentId": 0,
-    "scrollX": 884,
-    "scrollY": 469
+    "scrollX": 1109,
+    "scrollY": 1399
   },
   {
     "id": 2,
@@ -105,8 +105,8 @@
     "name": "START_SCREEN",
     "order": 3,
     "parentId": 0,
-    "scrollX": 816,
-    "scrollY": 640
+    "scrollX": 819,
+    "scrollY": 464
   },
   {
     "id": 13,
@@ -583,7 +583,7 @@
     "order": 77,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 771
+    "scrollY": 464
   },
   {
     "id": 66,
@@ -974,7 +974,7 @@
   },
   {
     "id": 109,
-    "expanded": true,
+    "expanded": false,
     "name": "TEMPLE_DU_BONSOIR",
     "order": 111,
     "parentId": 0,

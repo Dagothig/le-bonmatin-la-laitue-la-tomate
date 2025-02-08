@@ -956,6 +956,12 @@ _NarrateurBarilBrise
 > Des fois c'est TON couvercle.\
 > Pas cette fois-ci.
 
+_NarrateurPancarteVillageTempleBonjour
+> La pancarte lit...\
+> BIENVENUE À CE VILLAGE\
+> Et il y a une direction vers la droite...\
+> LE TEMPLE DU BONJOUR
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit

@@ -4,7 +4,7 @@ const timestamps = [["Init", new Date()]];
 const fs = require("fs/promises");
 const os = require("os");
 const { spawnSync } = require("child_process");
-const $markov = require("./markov");
+const { getWords, markov, punctuationRegexp } = require("./markov");
 
 Object.assign(Array.prototype, {
     toObject() {
@@ -13,6 +13,9 @@ Object.assign(Array.prototype, {
     remove(x) {
         const idx = this.findIndex(y => x === y);
         this.splice(idx, 1);
+    },
+    distinct() {
+        return Array.from(new Set(this));
     }
 });
 
@@ -63,10 +66,12 @@ const sectionsByNameToLinesMD = sectionsByName =>
 
 (async () => {
     const $audioFiles = fs.readdir("audio/se");
+    const $wordFiles = fs.readdir("audio/word");
     const $knownLinesText = fs.readFile("Lignes.md");
     const $todosText = fs.readFile("LignesTODO.md");
     const $dataFiles = fs.readdir("data").then(data =>
         Promise.all(data
+            .filter(data => data !== "Markov.json")
             .map(async f => [f, (await fs.readFile("data/" + f)).toString()])));
 
     const audioFiles = (await $audioFiles).map(f => [f, true]).toObject();
@@ -291,10 +296,35 @@ const sectionsByNameToLinesMD = sectionsByName =>
             .flatMap(([_, lines]) =>
                 Object.entries(lines).map(([key, text]) =>
                     text.join(" ")));
-        const $markovOutput = $markov(linesData)
+        const words = getWords(linesData);
+        const markovOutput = markov(words)
 
         await fs.writeFile("Lignes.md", newKnownLinesText);
-        await fs.writeFile("data/Markov.json", JSON.stringify(await $markovOutput, null, 2));
+        await fs.writeFile("data/Markov.json", JSON.stringify(markovOutput, null, 2));
+
+        /*const wordFiles = await $wordFiles;
+        const audioWords = words.filter(word => !word.match(punctuationRegexp)).distinct();
+        const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
+        const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[1]));
+        for (const word of missingWords) {
+            console.log("Generated " + word);
+            const fp = "./audio/word/" + word + ".ogg";
+            const espeak = spawnSync(
+                "espeak",
+                ["-v", "fr-fr", "-s", 250, "-w", "tmp.wav", word],
+                { stdio: "inherit" });
+            await new Promise(res => setTimeout(res, 10));
+            const ffmpeg = spawnSync(
+                "ffmpeg",
+                ["-i", "tmp.wav", "-y", fp, "-v", "error"],
+                { stdio: "inherit" });
+            await new Promise(res => setTimeout(res, 10));
+        }
+
+        for (const file of obsoleteWordFiles) {
+            console.log("Removed " + file);
+            await fs.unlink("audio/word/" + file);
+        }*/
     }
 
     const newTodosText = sectionsByNameToLinesMD(todosByName);

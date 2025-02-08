@@ -1,14 +1,14 @@
-function getWords(part) {
+function getWordsForPart(part) {
     return part.split(" ").filter(word => word);
 }
 
 const commandsRegexp = /\\shake(<.*>)?|\\{|\\}|\\\^|\\.\[.\]|"|>/g;
-const punctuationRegexp = /[,\.\!\?:]+/g;
-const endsWithPunctuation = /[,\.\!\?:]$/;
+const punctuationRegexp = /[\,\.\!\?\:]+/g;
+const endsWithPunctuation = /[\,\.\!\?\:]$/;
 
-module.exports = async function $markov(lines) {
-    const words = lines.flatMap(line => {
-        line = line.replaceAll(commandsRegexp, "");
+function getWords(lines) {
+    return lines.flatMap(line => {
+        line = line.toLowerCase().replaceAll(commandsRegexp, "");
         if (!line.match(endsWithPunctuation)) {
             line += ".";
         }
@@ -19,17 +19,21 @@ module.exports = async function $markov(lines) {
             const sep = match[0];
             const part = line.substring(lastIndex, match.index);
             lastIndex = match.index + sep.length;
-            result.push(...getWords(part), sep);
+            result.push(...getWordsForPart(part), sep);
         };
         if (!result.length) {
-            result.push(...getWords(line));
+            result.push(...getWordsForPart(line));
         }
         return result;
     });
+}
 
+function markov(words) {
     const occurences = {};
+    const backOccurences = {};
     for (const word of words) {
-        occurences[word] = {}
+        occurences[word] = {};
+        backOccurences[word] = {};
     }
 
     let previous = ".";
@@ -38,15 +42,38 @@ module.exports = async function $markov(lines) {
         previous = word;
     }
 
+    for (const word in occurences) {
+        for (const subword in occurences[word]) {
+            backOccurences[subword][word] = (backOccurences[subword][word] || 0) + occurences[word][subword];
+        }
+    }
+
     const markov = Object.fromEntries(Object.entries(occurences).map(([word, choices]) => {
-        const out = { sum: 0, choices: [] };
+        const choicesKey = 1;
+        const valueKey = 0;
+        const backChoicesKey = 3;
+        const backValueKey = 2;
+        const out = [0, [], 0, []];
         for (const subword in choices) {
             const occurence = choices[subword];
-            out.sum += occurence;
-            out.choices.push({ word: subword, value: out.sum - 1 });
+            out[valueKey] += occurence;
+            out[choicesKey].push([out[valueKey] - 1, subword]);
+        }
+        for (const subword in backOccurences[word]) {
+            const occurence = backOccurences[word][subword];
+            out[backValueKey] += occurence;
+            out[backChoicesKey].push([out[backValueKey] - 1, subword]);
         }
         return [word, out];
     }));
 
     return markov;
 }
+
+module.exports = {
+    getWords,
+    markov,
+    commandsRegexp,
+    punctuationRegexp,
+    endsWithPunctuation
+};

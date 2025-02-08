@@ -464,7 +464,7 @@ _NarrateurPancarteVillageResteDuMonde
 _NarrateurPancarteVillageTempleBonjour
 > La pancarte lit...\
 > BIENVENUE À CE VILLAGE\
-> Et il y a une direction vers le droite...\
+> Et il y a une direction vers la droite...\
 > LE TEMPLE DU BONJOUR
 
 _NarrateurBoisCoupe
