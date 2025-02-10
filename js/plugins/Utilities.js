@@ -3150,7 +3150,7 @@ Input.keyMapper[68] = "right"; // d
 
     override(Game_Action.prototype,
         function targetsForFriends(targetsForFriends) {
-            targets = targetsForFriends.call(this);
+            const targets = targetsForFriends.call(this);
             if (this.item().meta.scope === "except_self") {
                 targets.remove(this.subject());
                 if (this.isForOne() && !targets.length) {
@@ -3454,6 +3454,7 @@ Input.keyMapper[68] = "right"; // d
             },
             function makeCommandList() {
                 for (const name of [
+                    "templates",
                     "jean-jacques",
                     "temple-du-bonjour",
                     "premiere-du-bonjour",

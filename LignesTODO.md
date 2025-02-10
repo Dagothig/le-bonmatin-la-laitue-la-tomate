@@ -2974,6 +2974,16 @@ _GabspartAtItAgain2
 > tu sois conscient, considérant ce qui s'est\
 > passé après le Bonjour...
 
+_GabspartVeutRefuserLoremIpsum
+> Non! J't'arrêtes tout de suite! C'est pas\
+> sérieux comme sort!\
+> Si on est pour sortir du vieux latin\
+> pourri, j'en exige du vrai!
+
+_GabspartVeutRefuserLoremIpsum2
+> Philistin mon cul.\
+> \}Mater tua Philisthaea est. Catulus magicae.\{
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -3268,6 +3278,11 @@ _WwwelchiorCestUnLutin
 > À tous les coups c'est un lutin!\
 > Si on devine son nom, y'aura pas le choix\
 > de nous laisser rentrer chez eux!
+
+_WwwelchiorTenebresCestMieux
+> De toute façon, y'était temps que quelqu'un\
+> leur explique que la Noirceur ça a rien à\
+> voir à côté des Ténèbres.
 
 ### Fantome
 
@@ -4246,9 +4261,7 @@ _RecruteurBonsoir4
 
 _RecruteurBonsoir5
 > \shake<1,1,0.1,0.1>\C[5]Lorem ipsum dolor sit amet, consectetur adip\
-> iscing elit. Mauris sollicitudin convallis n\
-> isi, condimentum pharetra ipsum condimentum n\
-> ec. Vestibulum at orci imperdiet, tincidunt v\^
+> iscing elit. Mauris sollici\^
 
 _RecruteurBonsoir6
 > Inutiles! Tous inutiles! Jean-Jacques!\
@@ -4259,6 +4272,18 @@ _RecruteurBonsoir7
 > Aaaaaaaaaah!\
 > Mais c'est... impossible!\
 > La Noirceur... je... je vois la Noirceur!
+
+_RecruteurVaLoremIpsumer
+> SILENCE! Roger-de-la-noirceur-terrible ne\
+> se laissera pas silencé par un philistin de\
+> la sorte! Vous ne connaissez pas encore mon\
+> couroux.
+
+_RecruteurBonsoir5Prise2
+> \shake<1,1,0.1,0.1>\C[5]Lorem ipsum dolor sit amet, consectetur adip\
+> iscing elit. Mauris sollicitudin convallis n\
+> isi, condimentum pharetra ipsum condimentum n\
+> ec. Vestibulum at orci imperdiet, tincidunt v\^
 
 ### Barman
 

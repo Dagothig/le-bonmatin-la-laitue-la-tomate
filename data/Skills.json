@@ -3182,5 +3182,35 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 87,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Faire du menuage à un moment parfaitement acceptable.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 210,
+    "message1": " fait du menuage!",
+    "message2": "Tout le monde prenez un pause!",
+    "mpCost": 0,
+    "name": "Menuer",
+    "note": "<<aaa_anim self wiggle>>\n<<aaa_action {\n    $gameParty.setMenuActor(target);\n    SceneManager.push(Scene_Equip);\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

@@ -92,7 +92,7 @@
   },
   {
     "id": 11,
-    "expanded": false,
+    "expanded": true,
     "name": "CHEZ_FORGERON",
     "order": 13,
     "parentId": 1,
@@ -974,7 +974,7 @@
   },
   {
     "id": 109,
-    "expanded": false,
+    "expanded": true,
     "name": "TEMPLE_DU_BONSOIR",
     "order": 111,
     "parentId": 0,
