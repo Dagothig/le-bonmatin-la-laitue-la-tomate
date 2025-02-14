@@ -4,9 +4,9 @@
   "battleback1Name": "",
   "battleback2Name": "",
   "bgm": {
-    "name": "la_chanson_du_todo",
+    "name": "village_vide",
     "pan": 0,
-    "pitch": 50,
+    "pitch": 100,
     "volume": 90
   },
   "bgs": {

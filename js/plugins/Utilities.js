@@ -5801,6 +5801,59 @@ nicer_menus: { // Nicer (? lol) menus
 }
 
 { // Dynamic window size
+    override(Graphics,
+        function _onWindowResize(_onWindowResize) {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            SceneManager._screenWidth = w;
+            SceneManager._screenHeight = h;
+            this.width = w;
+            this.height = h;
+            _onWindowResize.call(this);
+            SceneManager.onResize();
+            $gamePlayer.center($gamePlayer.x, $gamePlayer.y);
+        });
+
+    override(Scene_Base.prototype,
+        function onResize(_) {
+            const bw = Graphics.boxWidth;
+            const bh = Graphics.boxHeight;
+            const cx = Math.floor((Graphics.width - bw) / 2);
+            const cy = Math.floor((Graphics.height - bh) / 2);
+            SceneManager._scene._windowLayer.move(cx, cy, bw, bh);
+        },
+        function createWindowLayer(createWindowLayer) {
+            createWindowLayer.call(this);
+            this._windowLayer.x = Math.floor(this._windowLayer.x);
+            this._windowLayer.y = Math.floor(this._windowLayer.y);
+        });
+
+    override(Scene_Title.prototype,
+        function onResize(onResize) {
+            onResize.call(this);
+            const oldTitleSprite = this._gameTitleSprite;
+            this.createForeground();
+            this.swapChildren(this._gameTitleSprite, oldTitleSprite);
+            this.removeChild(oldTitleSprite);
+            this.centerSprite(this._backSprite1);
+            this.centerSprite(this._backSprite2);
+        });
+
+    override(Scene_Map.prototype,
+        function onResize(onResize) {
+            onResize.call(this);
+            const oldSpriteset = this._spriteset;
+            this.createSpriteset();
+            this.swapChildren(this._spriteset, oldSpriteset);
+            this.removeChild(oldSpriteset);
+        });
+
+    override(Scene_Battle.prototype,
+        function onResize(onResize) {
+            onResize.call(this);
+            this._spriteset.onResize();
+        });
+
     override(SceneManager,
         function preferableRendererType() {
             return "webgl";
@@ -5812,9 +5865,31 @@ nicer_menus: { // Nicer (? lol) menus
             this._screenHeight = window.innerHeight;
             initGraphics.call(this);
         },
-        /*function onResize(_) {
+        function onResize(_) {
             this._scene.onResize();
-        }*/);
+        });
+
+    override(Sprite_Picture.prototype,
+        function updatePosition(updatePosition) {
+            updatePosition.call(this);
+            this.x += (Graphics.width - Graphics.boxWidth) / 2;
+            this.y += (Graphics.height - Graphics.boxHeight) / 2;
+        });
+
+    override(Spriteset_Base.prototype,
+        function createPictures(createPictures) {
+            createPictures.call(this);
+            this._pictureContainer.setFrame(0, 0, Graphics.width, Graphics.height);
+        },
+        function onResize() {
+            this.setFrame(0, 0, Graphics.width, Graphics.height);
+            this._baseSprite.setFrame(0, 0, Graphics.width, Graphics.height);
+
+            const margin = 48;
+            const width = Graphics.width + margin * 2;
+            const height = Graphics.height + margin * 2;
+            this._baseSprite.filterArea = new Rectangle(-margin, -margin, width, height);
+        });
 
     override(Spriteset_Battle.prototype,
         function createBattleField(createBattleField) {
@@ -5838,19 +5913,35 @@ nicer_menus: { // Nicer (? lol) menus
         },
         function locateBattleback() {
             // LOLNOPE
-        });
+        },
+        function createBackground(createBackground) {
+            createBackground.call(this);
+            this._backgroundSprite.anchor.x = 0.5;
+            this._backgroundSprite.anchor.y = 0.5;
+            this._backgroundSprite.position.x = Graphics.width / 2;
+            this._backgroundSprite.position.y = Graphics.height / 2;
+            this._backgroundSprite.scale.x = 3;
+            this._backgroundSprite.scale.y = 3;
+            this._backgroundSprite.filters = [new PIXI.filters.BlurFilter()];
+        },
+        function onResize(onResize) {
+            onResize.call(this);
 
-    override(Sprite_Picture.prototype,
-        function updatePosition(updatePosition) {
-            updatePosition.call(this);
-            this.x += (Graphics.width - Graphics.boxWidth) / 2;
-            this.y += (Graphics.height - Graphics.boxHeight) / 2;
-        });
+            const boxDeltaX = (Graphics.width - Graphics.boxWidth) / 2;
+            const boxDeltaY = (Graphics.height - Graphics.boxHeight) / 2;
 
-    override(Spriteset_Base.prototype,
-        function createPictures(createPictures) {
-            createPictures.call(this);
-            this._pictureContainer.setFrame(0, 0, Graphics.width, Graphics.height);
+            this._battleField.x = boxDeltaX;
+            this._battleField.y = boxDeltaY;
+            this._battleField.setFrame(0, 0, Graphics.width, Graphics.height);
+            this._backgroundSprite.position.x = Graphics.width / 2;
+            this._backgroundSprite.position.y = Graphics.height / 2;
+
+            // This is sketch mais j'men crisssssss
+            this._backMask = new Sprite();
+            this._backMask.bitmap = ImageManager.loadSystem("BGMask");
+            this._back1Sprite.mask = this._backMask;
+            this._back2Sprite.mask = this._backMask;
+            this._backMask.transform = this._back1Sprite.transform;
         });
 
     override(Spriteset_Map.prototype,
@@ -5871,18 +5962,6 @@ nicer_menus: { // Nicer (? lol) menus
             }
         });
 
-    override(Spriteset_Battle.prototype,
-        function createBackground(createBackground) {
-            createBackground.call(this);
-            this._backgroundSprite.anchor.x = 0.5;
-            this._backgroundSprite.anchor.y = 0.5;
-            this._backgroundSprite.position.x = Graphics.width / 2;
-            this._backgroundSprite.position.y = Graphics.height / 2;
-            this._backgroundSprite.scale.x = 3;
-            this._backgroundSprite.scale.y = 3;
-            this._backgroundSprite.filters = [new PIXI.filters.BlurFilter()];
-        });
-
     override(Sprite_Animation.prototype,
         function updatePosition(updatePosition) {
             if (this._animation.position === 3) {
@@ -5892,47 +5971,6 @@ nicer_menus: { // Nicer (? lol) menus
                 updatePosition.call(this);
             }
         });
-
-        // TODO AAAA
-    /*override(Scene_Base.prototype,
-        function onResize(_) {
-            const bw = Graphics.boxWidth;
-            const bh = Graphics.boxHeight;
-            const cx = (Graphics.width - bw) / 2;
-            const cy = (Graphics.height - bh) / 2;
-            SceneManager._scene._windowLayer.move(cx, cy, bw, bh);
-        });
-
-    override(Scene_Title.prototype,
-        function onResize(onResize) {
-            onResize.call(this);
-            const oldTitleSprite = this._gameTitleSprite;
-            this.createForeground();
-            this.swapChildren(this._gameTitleSprite, oldTitleSprite);
-            this.removeChild(oldTitleSprite);
-            this.centerSprite(this._backSprite1);
-            this.centerSprite(this._backSprite2);
-        });
-
-    override(Scene_Map.prototype,
-        function onResize(onResize) {
-            onResize.call(this);
-            const oldSpriteset = this._spriteset;
-            this.createSpriteset();
-            this.swapChildren(this._spriteset, oldSpriteset);
-            this.removeChild(oldSpriteset);
-        });*/
-
-    /*override(Graphics,
-        function _onWindowResize(_onWindowResize) {
-            const w = window.innerWidth;
-            const h = window.innerHeight;
-            SceneManager._screenWidth = w;
-            SceneManager._screenHeight = h;
-            this.width = w;
-            this.height = h;
-            _onWindowResize.call(this);
-        });*/
 }
 
 { // Lighting

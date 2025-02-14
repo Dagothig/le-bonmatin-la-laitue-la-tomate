@@ -17475,7 +17475,7 @@
     },
     {
       "id": 13,
-      "name": "Grota1",
+      "name": "Grota2",
       "note": "<light:shaded,128>",
       "pages": [
         {
@@ -17504,140 +17504,10 @@
           },
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                4,
-                8,
-                0
-              ]
-            },
-            {
               "code": 117,
-              "indent": 1,
-              "parameters": [
-                29
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "se _GrossepilecaillouxgrisProvisions"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI5",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Vous avez besoin de provisions pour votre"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "voyage?"
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Earth2",
-                  "volume": 90,
-                  "pitch": 50,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI5",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 302,
               "indent": 0,
               "parameters": [
-                0,
-                11,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 0,
-              "parameters": [
-                0,
-                13,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 0,
-              "parameters": [
-                0,
-                24,
-                0,
-                0
+                51
               ]
             },
             {
@@ -17701,140 +17571,10 @@
           },
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                4,
-                8,
-                0
-              ]
-            },
-            {
               "code": 117,
-              "indent": 1,
-              "parameters": [
-                29
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "se _GrossepilecaillouxgrisProvisions"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI5",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Vous avez besoin de provisions pour votre"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "voyage?"
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Earth2",
-                  "volume": 90,
-                  "pitch": 50,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI5",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 302,
               "indent": 0,
               "parameters": [
-                0,
-                11,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 0,
-              "parameters": [
-                0,
-                13,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 0,
-              "parameters": [
-                0,
-                24,
-                0,
-                0
+                51
               ]
             },
             {

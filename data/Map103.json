@@ -4,9 +4,9 @@
   "battleback1Name": "Cobblestones5",
   "battleback2Name": "Temple",
   "bgm": {
-    "name": "temple_du_bonjour",
+    "name": "village_vide",
     "pan": 0,
-    "pitch": 50,
+    "pitch": 100,
     "volume": 90
   },
   "bgs": {
@@ -10340,9 +10340,9 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "temple_du_bonjour",
+                  "name": "village_vide",
                   "volume": 90,
-                  "pitch": 50,
+                  "pitch": 100,
                   "pan": 0
                 }
               ]

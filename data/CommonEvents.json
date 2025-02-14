@@ -17707,5 +17707,691 @@
     "name": "BONSOIR_PLAT_SWITCH",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 51,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          8,
+          0
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          29
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          80,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GrossepilecaillouxgrisPouvoirComprendre"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Aaaah! Nous allons donc pouvoir se "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "comprendre..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Personne Véritable, le RRRR a besoin de"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "votre aide."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GrossepilecaillouxgrisRRRRAssailli"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Nous sommes assailli de toute part par la"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "menace plantaire! Le royaume a été rétabli,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "mais ça ne suffira pas."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GrossepilecaillouxgrisQqunExterieur"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Il nous faut quelqu'un de l'extérieur pour "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "halter la menace à la source directement."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _ProtagonisteLeSoleil"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "... Le soleil?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _WwwelchiorConnaitLesTenebresQuiPeuventAider"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Ah je connais quelqu'un qui peut nous aider"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "avec ça!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _ProtagonisteTenebresCtunePersonne"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Les Ténèbres c'est une personne?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GabspartWwwelchiorYPersonnifieQuiYVeut"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Peu importe, Wwwelchior y personnifie qui y"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "veut, honnêtement."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GrossepilecaillouxgrisAllezAuGouffre"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Allons allons! Moins stupide que ça quand"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "même: Les plantes aggressivent proviennent "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "du gouffre du fond du passage."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Vous l'avez peut-être vu."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _ProtagonisteVeutPas"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Oui mais j'ai pas spécialement envie de m'y"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "aventurer..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _GrossepilecaillouxgrisIlLeFaut"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Mais il le faut!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          0,
+          71,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "se _GrossepilecaillouxgrisHintHintSud"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Cependant... je craigne que vous n'êtes pas"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "encore prêts."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Vous devriez visiter le bout sud du Monde "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "avec la Géologue."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "se _ProtagonisteVousAussiYaDesTrucsQueVousSavez"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Vous aussi il y a des choses que vous vous"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "devez de savoir?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "se _GrossepilecaillouxgrisADesContacts"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "J'ai des contacts qui résident dans des"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Lieux Supérieurs, oui."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _GrossepilecaillouxgrisProvisions"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Vous avez besoin de provisions pour votre"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "voyage?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Earth2",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 302,
+        "indent": 0,
+        "parameters": [
+          0,
+          11,
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 0,
+        "parameters": [
+          0,
+          13,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 0,
+        "parameters": [
+          0,
+          24,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Dialogue Grota",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

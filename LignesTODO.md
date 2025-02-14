@@ -962,6 +962,11 @@ _NarrateurPancarteVillageTempleBonjour
 > Et il y a une direction vers la droite...\
 > LE TEMPLE DU BONJOUR
 
+_NarrateurRochemite
+> Une roche. Comme une stalagmite. Comme une stalactite\
+> mais sur le plancher. Mais en fait non: C'est juste une\
+> roche.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2483,6 +2488,25 @@ _ProtagonisteLachesLeRepo
 > Ça t'arrives de pas regarder le Repositoire\
 > des Textes Sacrés?
 
+_ProtagonisteDotDotDotEvidemment
+> ...\
+> ...\
+> Évidemment!
+
+_ProtagonisteLeSoleil
+> ... Le soleil?
+
+_ProtagonisteTenebresCtunePersonne
+> Les Ténèbres c'est une personne?
+
+_ProtagonisteVeutPas
+> Oui mais j'ai pas spécialement envie de m'y\
+> aventurer...
+
+_ProtagonisteVousAussiYaDesTrucsQueVousSavez
+> Vous aussi il y a des choses que vous vous\
+> devez de savoir?
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2984,6 +3008,10 @@ _GabspartVeutRefuserLoremIpsum2
 > Philistin mon cul.\
 > \}Mater tua Philisthaea est. Catulus magicae.\{
 
+_GabspartWwwelchiorYPersonnifieQuiYVeut
+> Peu importe, Wwwelchior y personnifie qui y\
+> veut, honnêtement.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -3283,6 +3311,10 @@ _WwwelchiorTenebresCestMieux
 > De toute façon, y'était temps que quelqu'un\
 > leur explique que la Noirceur ça a rien à\
 > voir à côté des Ténèbres.
+
+_WwwelchiorConnaitLesTenebresQuiPeuventAider
+> Ah je connais quelqu'un qui peut nous aider\
+> avec ça!
 
 ### Fantome
 
@@ -4375,6 +4407,11 @@ _GeologueVaSeTenirLoin
 > je vais me tenir un peu éloignée, c'est\
 > bon?
 
+_GeologueOnPeutYAller2
+> Si jamais vous voulez que je vous suive au\
+> bout du passage, va falloir trouver un\
+> autre moyen de s'y rendre.
+
 ### Roche
 
 _RocheOui
@@ -4526,6 +4563,40 @@ _GrossepilecaillouxgrisOhMaGloire
 _GrossepilecaillouxgrisProvisions
 > Vous avez besoin de provisions pour votre\
 > voyage?
+
+_GrossepilecaillouxgrisPouvoirComprendre
+> Aaaah! Nous allons donc pouvoir se\
+> comprendre...\
+> Personne Véritable, le RRRR a besoin de\
+> votre aide.
+
+_GrossepilecaillouxgrisRRRRAssailli
+> Nous sommes assailli de toute part par la\
+> menace plantaire! Le royaume a été rétabli,\
+> mais ça ne suffira pas.
+
+_GrossepilecaillouxgrisQqunExterieur
+> Il nous faut quelqu'un de l'extérieur pour\
+> halter la menace à la source directement.
+
+_GrossepilecaillouxgrisAllezAuGouffre
+> Allons allons! Moins stupide que ça quand\
+> même: Les plantes aggressivent proviennent\
+> du gouffre du fond du passage.\
+> Vous l'avez peut-être vu.
+
+_GrossepilecaillouxgrisIlLeFaut
+> Mais il le faut!
+
+_GrossepilecaillouxgrisHintHintSud
+> Cependant... je craigne que vous n'êtes pas\
+> encore prêts.\
+> Vous devriez visiter le bout sud du Monde\
+> avec la Géologue.
+
+_GrossepilecaillouxgrisADesContacts
+> J'ai des contacts qui résident dans des\
+> Lieux Supérieurs, oui.
 
 ### Petitepilecaillouxgris
 
@@ -5169,6 +5240,18 @@ _GrossestalagmitegrisePamphletRRRRAlt
 > Toutes les roches sont les bienvenues\
 > maintenant que le royaume est rétabli.\
 > Vous voulez un pamphlet?
+
+_GrossestalagmitegriseTempleduBonsoirANouveau1
+> Ha! Voir. Ça faisait un bail que y'avait\
+> plus personne qui bougeait ici, surtout\
+> depuis que l'autre là avec ses bottes est\
+> tombé. Mauvais chutte ça.
+
+_GrossestalagmitegriseTempleduBonsoirANouveau2
+> Mais là pouf! C'est fou y'a eu toute une\
+> bande... on aurait dit une troupe de cirque\
+> qui est passée, et là vous. Est-ce que vous\
+> allez relancer le culte du Bonsoir?
 
 ### Petitestalagmitegrise
 
