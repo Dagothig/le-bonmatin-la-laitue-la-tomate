@@ -569,7 +569,7 @@
   },
   {
     "id": 64,
-    "expanded": true,
+    "expanded": false,
     "name": "PONT",
     "order": 75,
     "parentId": 0,
@@ -596,7 +596,7 @@
   },
   {
     "id": 67,
-    "expanded": true,
+    "expanded": false,
     "name": "MONTAGNE",
     "order": 66,
     "parentId": 0,
@@ -965,7 +965,7 @@
   },
   {
     "id": 108,
-    "expanded": true,
+    "expanded": false,
     "name": "GROTTE",
     "order": 99,
     "parentId": 0,

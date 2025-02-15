@@ -1734,22 +1734,6 @@ function eval_fn_expr(expr, args) {
         });
 })();
 
-// Sprite props
-(function() {
-    override(Sprite_Character.prototype,
-        function updateOther(updateOther) {
-            updateOther.call(this);
-            if (this._character.tint !== undefined) {
-                this.tint = this._character.tint;
-            }
-            if (this._character.visuals) {
-                for (const prop in this._character.visuals) {
-                    this[prop] = this._character.visuals[prop];
-                }
-            }
-        });
-})();
-
 // Ding!
 (function () {
     var original_actionApply = Game_Action.prototype.apply;
@@ -3482,7 +3466,9 @@ Input.keyMapper[68] = "right"; // d
                     "puzzle-tuiles-2",
                     "chevalier-noir-reveal",
                     "jesus",
-                    "grotte"
+                    "grotte",
+                    "mur-vert",
+                    "temple-du-bonsoir"
                 ]) {
                     const capitalized = Array.from(name);
                     capitalized[0] = capitalized[0].toUpperCase();
@@ -3957,6 +3943,44 @@ Input.keyMapper[68] = "right"; // d
         screen: Graphics.BLEND_SCREEN,
         normal: Graphics.BLEND_NORMAL,
     };
+
+    override(Sprite_Character.prototype,
+        function updateOther(updateOther) {
+            updateOther.call(this);
+            tint: {
+                if (this._character.tint !== undefined) {
+                    this.tint = this._character.tint;
+                    break tint;
+                }
+                const actor = this._character.actor && this._character.actor();
+                if (actor) {
+                    for (const state of actor.states()) {
+                        if (state.meta && state.meta.tint) {
+                            this.tint = EVENT_TINTS[state.meta.tint];
+                            break tint;
+                        }
+                    }
+                }
+                this.tint = 0xFFFFFF;
+            }
+            if (this._character.visuals) {
+                for (const prop in this._character.visuals) {
+                    this[prop] = this._character.visuals[prop];
+                }
+            }
+        });
+
+    override(Sprite_Actor.prototype,
+        function update(update) {
+            update.call(this);
+            if (this._actor && this._mainSprite) {
+                for (const state of this._actor.states()) {
+                    if (state.meta && state.meta.tint) {
+                        this._mainSprite.tint = EVENT_TINTS[state.meta.tint];
+                    }
+                }
+            }
+        })
 
     override(Game_CharacterBase.prototype,
         function sizeFactor() {

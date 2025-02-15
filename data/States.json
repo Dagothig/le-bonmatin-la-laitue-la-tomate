@@ -377,9 +377,9 @@
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 200
   },
   {
     "id": 14,
@@ -1298,7 +1298,13 @@
     "id": 45,
     "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.08
+      }
+    ],
     "iconIndex": 236,
     "maxTurns": 10,
     "message1": " est tout vert!",
@@ -1308,15 +1314,15 @@
     "minTurns": 8,
     "motion": 0,
     "name": "Vert",
-    "note": "",
+    "note": "<tint:green>",
     "overlay": 0,
     "priority": 50,
-    "removeAtBattleEnd": true,
+    "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 200
   },
   {
     "id": 46,
