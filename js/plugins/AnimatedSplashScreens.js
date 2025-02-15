@@ -159,6 +159,14 @@ function Scene_SplashScreens() {
         });
     };
 
+    Scene_SplashScreens.prototype.onResize = function() {
+        for (const step of this._steps) {
+            if (step[0] === "img") {
+                centerSprite(step[1]);
+            }
+        }
+    };
+
     Scene_SplashScreens.prototype.start = function() {
         Scene_Base.prototype.start.call(this);
         SceneManager.clearStack();

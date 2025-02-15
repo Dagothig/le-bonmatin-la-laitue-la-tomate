@@ -5801,7 +5801,18 @@ nicer_menus: { // Nicer (? lol) menus
 }
 
 { // Dynamic window size
+
     override(Graphics,
+        function _setupEventHandlers() {
+            window.addEventListener('resize', () => {
+                clearTimeout(this._onWindowResizeTimeoutId);
+                this._onWindowResizeTimeoutId = setTimeout(this._onWindowResize.bind(this), 100);
+            });
+            document.addEventListener('keydown', this._onKeyDown.bind(this));
+            document.addEventListener('keydown', this._onTouchEnd.bind(this));
+            document.addEventListener('mousedown', this._onTouchEnd.bind(this));
+            document.addEventListener('touchend', this._onTouchEnd.bind(this));
+        },
         function _onWindowResize(_onWindowResize) {
             const w = window.innerWidth;
             const h = window.innerHeight;
@@ -5811,16 +5822,35 @@ nicer_menus: { // Nicer (? lol) menus
             this.height = h;
             _onWindowResize.call(this);
             SceneManager.onResize();
-            $gamePlayer.center($gamePlayer.x, $gamePlayer.y);
+            if ($gamePlayer && $gameMap && $dataMap) {
+                $gamePlayer.center($gamePlayer.x, $gamePlayer.y);
+            }
         });
+
+        override(SceneManager,
+            function preferableRendererType() {
+                return "webgl";
+            },
+            function initGraphics(initGraphics) {
+                this._boxWidth = 816;
+                this._boxHeight = 624;
+                this._screenWidth = window.innerWidth;
+                this._screenHeight = window.innerHeight;
+                initGraphics.call(this);
+            },
+            function onResize(_) {
+                this._scene.onResize();
+            });
 
     override(Scene_Base.prototype,
         function onResize(_) {
-            const bw = Graphics.boxWidth;
-            const bh = Graphics.boxHeight;
-            const cx = Math.floor((Graphics.width - bw) / 2);
-            const cy = Math.floor((Graphics.height - bh) / 2);
-            SceneManager._scene._windowLayer.move(cx, cy, bw, bh);
+            if (this._windowLayer) {
+                const bw = Graphics.boxWidth;
+                const bh = Graphics.boxHeight;
+                const cx = Math.floor((Graphics.width - bw) / 2);
+                const cy = Math.floor((Graphics.height - bh) / 2);
+                this._windowLayer.move(cx, cy, bw, bh);
+            }
         },
         function createWindowLayer(createWindowLayer) {
             createWindowLayer.call(this);
@@ -5831,42 +5861,37 @@ nicer_menus: { // Nicer (? lol) menus
     override(Scene_Title.prototype,
         function onResize(onResize) {
             onResize.call(this);
-            const oldTitleSprite = this._gameTitleSprite;
-            this.createForeground();
-            this.swapChildren(this._gameTitleSprite, oldTitleSprite);
-            this.removeChild(oldTitleSprite);
-            this.centerSprite(this._backSprite1);
-            this.centerSprite(this._backSprite2);
+            if (this._gameTitleSprite) {
+                const oldTitleSprite = this._gameTitleSprite;
+                this.createForeground();
+                this.swapChildren(this._gameTitleSprite, oldTitleSprite);
+                this.removeChild(oldTitleSprite);
+            }
+            if (this._backSprite1) {
+                this.centerSprite(this._backSprite1);
+            }
+            if (this._backSprite2) {
+                this.centerSprite(this._backSprite2);
+            }
         });
 
     override(Scene_Map.prototype,
         function onResize(onResize) {
             onResize.call(this);
-            const oldSpriteset = this._spriteset;
-            this.createSpriteset();
-            this.swapChildren(this._spriteset, oldSpriteset);
-            this.removeChild(oldSpriteset);
+            if (this._spriteset) {
+                const oldSpriteset = this._spriteset;
+                this.createSpriteset();
+                this.swapChildren(this._spriteset, oldSpriteset);
+                this.removeChild(oldSpriteset);
+            }
         });
 
     override(Scene_Battle.prototype,
         function onResize(onResize) {
             onResize.call(this);
-            this._spriteset.onResize();
-        });
-
-    override(SceneManager,
-        function preferableRendererType() {
-            return "webgl";
-        },
-        function initGraphics(initGraphics) {
-            this._boxWidth = 816;
-            this._boxHeight = 624;
-            this._screenWidth = window.innerWidth;
-            this._screenHeight = window.innerHeight;
-            initGraphics.call(this);
-        },
-        function onResize(_) {
-            this._scene.onResize();
+            if (this._spriteset) {
+                this._spriteset.onResize();
+            }
         });
 
     override(Sprite_Picture.prototype,
@@ -5883,12 +5908,13 @@ nicer_menus: { // Nicer (? lol) menus
         },
         function onResize() {
             this.setFrame(0, 0, Graphics.width, Graphics.height);
-            this._baseSprite.setFrame(0, 0, Graphics.width, Graphics.height);
-
-            const margin = 48;
-            const width = Graphics.width + margin * 2;
-            const height = Graphics.height + margin * 2;
-            this._baseSprite.filterArea = new Rectangle(-margin, -margin, width, height);
+            if (this._baseSprite) {
+                this._baseSprite.setFrame(0, 0, Graphics.width, Graphics.height);
+                const margin = 48;
+                const width = Graphics.width + margin * 2;
+                const height = Graphics.height + margin * 2;
+                this._baseSprite.filterArea = new Rectangle(-margin, -margin, width, height);
+            }
         });
 
     override(Spriteset_Battle.prototype,
@@ -5930,18 +5956,23 @@ nicer_menus: { // Nicer (? lol) menus
             const boxDeltaX = (Graphics.width - Graphics.boxWidth) / 2;
             const boxDeltaY = (Graphics.height - Graphics.boxHeight) / 2;
 
-            this._battleField.x = boxDeltaX;
-            this._battleField.y = boxDeltaY;
-            this._battleField.setFrame(0, 0, Graphics.width, Graphics.height);
-            this._backgroundSprite.position.x = Graphics.width / 2;
-            this._backgroundSprite.position.y = Graphics.height / 2;
-
-            // This is sketch mais j'men crisssssss
-            this._backMask = new Sprite();
-            this._backMask.bitmap = ImageManager.loadSystem("BGMask");
-            this._back1Sprite.mask = this._backMask;
-            this._back2Sprite.mask = this._backMask;
-            this._backMask.transform = this._back1Sprite.transform;
+            if (this._battleField) {
+                this._battleField.x = boxDeltaX;
+                this._battleField.y = boxDeltaY;
+                this._battleField.setFrame(0, 0, Graphics.width, Graphics.height);
+            }
+            if (this._backgroundSprite) {
+                this._backgroundSprite.position.x = Graphics.width / 2;
+                this._backgroundSprite.position.y = Graphics.height / 2;
+            }
+            if (this._backMask) {
+                // This is sketch mais j'men crisssssss
+                this._backMask = new Sprite();
+                this._backMask.bitmap = ImageManager.loadSystem("BGMask");
+                this._back1Sprite.mask = this._backMask;
+                this._back2Sprite.mask = this._backMask;
+                this._backMask.transform = this._back1Sprite.transform;
+            }
         });
 
     override(Spriteset_Map.prototype,
