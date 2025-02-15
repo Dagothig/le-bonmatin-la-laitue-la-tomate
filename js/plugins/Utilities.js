@@ -5125,6 +5125,26 @@ organ: { // Organ minigame
                 updateAnimationCount.call(this);
             }
         });
+
+    const shipLocations = {
+        5: [1, 1], // overworld
+        98: [16, 13], // port isolé
+        8: [25, 27], // temple du bonjour
+        1: [21, 29], // village
+        65: [14, 33], // champêtre
+        64: [15, 29], // pont
+        92: [15, 29], // pont réparé
+        86: [10, 29], // bosquet
+    };
+
+    override(Game_Character.prototype,
+        function moveToShip() {
+            const ship = $gameMap.vehicles()[1];
+            const mapId = ship._mapId;
+            this.setTransparent(mapId === 5);
+            const location = shipLocations[mapId];
+            location && this.setPosition(location[0], location[1]);
+        });
 }
 
 
@@ -6200,6 +6220,12 @@ const ACCEPTED_LUTIN_NAMES = [
             this.aaaSprite = new Sprite();
             this.aaaSprite.bitmap = new Bitmap(Graphics.width, Graphics.height);
             this.addChild(this.aaaSprite);
+        },
+        function onResize(onResize) {
+            onResize.call(this);
+            if (this.aaaSprite) {
+                this.aaaSprite.bitmap = new Bitmap(Graphics.width, Graphics.height);
+            }
         },
         function update(update) {
             const shake = Math.pow(this.time, (1/1.75));

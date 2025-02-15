@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 40,
-  "note": "<bgmFilter:farAway>\n<playerScale:0.75>\n<autoplay:{\n  $gameScreen.zoomOnPlayer(1 / 0.75, 0);\n  $gameScreen.resetZoom(30);\n}>",
+  "note": "<bgmFilter:farAway>\n<playerScale:0.75>\n<autoplay:{\n  $gameScreen.zoomOnPlayer(1 / 0.75, 0);\n  $gameScreen.resetZoom(30);\n  $gameMap.event($gameMap.eventsByName.Ship).moveToShip()\n}>",
   "parallaxLoopX": true,
   "parallaxLoopY": false,
   "parallaxName": "BlueSky",
@@ -20483,6 +20483,66 @@
       ],
       "x": 3,
       "y": 32
+    },
+    {
+      "id": 59,
+      "name": "Ship",
+      "note": "<scale:0.75>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Vehicle",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 14,
+      "y": 14
     }
   ]
 }
