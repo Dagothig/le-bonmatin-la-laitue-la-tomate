@@ -363,6 +363,12 @@ Darkness4
 Pewpewpew
 > Pewpewpew
 
+Souffler
+> Un instant! Je souffle un peu.
+
+HeilleTuDors
+> Heille! Tu dors!
+
 ### Narrateur
 
 _NarrateurBonjours
@@ -1929,6 +1935,13 @@ _NarrateurRochemite
 > Une roche. Comme une stalagmite. Comme une stalactite\
 > mais sur le plancher. Mais en fait non: C'est juste une\
 > roche.
+
+_NarrateurLitPerche
+> Un lit dangereusement perché!
+
+_NarrateurBuissonBarbu
+> Un buisson barbu!\
+> Ça fait 4 poils de barbe, ça!
 
 ### Protagoniste
 
@@ -8297,6 +8310,9 @@ _RecruteurBonsoir5Prise2
 > iscing elit. Mauris sollicitudin convallis n\
 > isi, condimentum pharetra ipsum condimentum n\
 > ec. Vestibulum at orci imperdiet, tincidunt v\^
+
+_RecruteurContratSanglant
+> N'oubliez pas votre contrat sanglant!
 
 ### Barman
 

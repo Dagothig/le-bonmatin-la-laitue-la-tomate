@@ -967,6 +967,13 @@ _NarrateurRochemite
 > mais sur le plancher. Mais en fait non: C'est juste une\
 > roche.
 
+_NarrateurLitPerche
+> Un lit dangereusement perché!
+
+_NarrateurBuissonBarbu
+> Un buisson barbu!\
+> Ça fait 4 poils de barbe, ça!
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -4317,6 +4324,9 @@ _RecruteurBonsoir5Prise2
 > isi, condimentum pharetra ipsum condimentum n\
 > ec. Vestibulum at orci imperdiet, tincidunt v\^
 
+_RecruteurContratSanglant
+> N'oubliez pas votre contrat sanglant!
+
 ### Barman
 
 _BarmanBonsoir
@@ -4551,6 +4561,12 @@ SenAller
 
 Pewpewpew
 > Pewpewpew
+
+Souffler
+> Un instant! Je souffle un peu.
+
+HeilleTuDors
+> Heille! Tu dors!
 
 ### Grossepilecaillouxgris
 

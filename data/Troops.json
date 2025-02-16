@@ -7872,9 +7872,9 @@
     "id": 28,
     "members": [
       {
-        "enemyId": 17,
-        "x": 375,
-        "y": 406,
+        "enemyId": 37,
+        "x": 372,
+        "y": 418,
         "hidden": false
       }
     ],
@@ -7910,8 +7910,8 @@
     "id": 29,
     "members": [
       {
-        "enemyId": 18,
-        "x": 390,
+        "enemyId": 38,
+        "x": 381,
         "y": 409,
         "hidden": false
       }
@@ -7948,9 +7948,9 @@
     "id": 30,
     "members": [
       {
-        "enemyId": 19,
-        "x": 384,
-        "y": 403,
+        "enemyId": 39,
+        "x": 405,
+        "y": 397,
         "hidden": false
       }
     ],
@@ -8028,6 +8028,15 @@
           "turnValid": true
         },
         "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              -1,
+              0,
+              48
+            ]
+          },
           {
             "code": 356,
             "indent": 0,
@@ -8168,9 +8177,18 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              3
+            ]
+          },
           {
             "code": 0,
             "indent": 0,

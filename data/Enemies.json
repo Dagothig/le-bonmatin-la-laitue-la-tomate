@@ -1276,7 +1276,7 @@
     ],
     "gold": 10,
     "name": "Tournoyeur",
-    "note": "<<aaa_icon 89 13>>\n<<aaa_setup {\n  this._appear = \"_TournoyeurAppear\";\n  this._taper = \"_TournoyeurBedingBedang\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 89 13>>\n<<aaa_setup {\n  this._appear = \"_TournoyeurAppear\";\n  this._taper = \"_TournoyeurBedingBedang\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
       100,
       0,
@@ -1357,7 +1357,7 @@
     ],
     "gold": 10,
     "name": "Couteleur",
-    "note": "<<aaa_icon 77 19>>\n<<aaa_setup {\n  this._appear = \"_CouteleurAppear\";\n  this._taper = \"_CouteleurFlick\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n  this._defenselessActions = [\n    { rating: 1, skillId: 17 },\n    { rating: 3, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  this._baseActions = [\n    { rating: 3, skillId: 17 },\n    { rating: 1, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const defenseless = this.opponentsUnit().members().find(m => m.isStateAffected(40));\n  return this.gogoGadgetActions(defenseless ? \n    this._defenselessActions : \n    this._baseActions);\n}>>",
+    "note": "<<aaa_icon 77 19>>\n<<aaa_setup {\n  this._appear = \"_CouteleurAppear\";\n  this._taper = \"_CouteleurFlick\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n  this._defenselessActions = [\n    { rating: 1, skillId: 17 },\n    { rating: 3, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  this._baseActions = [\n    { rating: 3, skillId: 17 },\n    { rating: 1, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const defenseless = this.opponentsUnit().members().find(m => m.isStateAffected(40));\n  return this.gogoGadgetActions(defenseless ? \n    this._defenselessActions : \n    this._baseActions);\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
       100,
       0,
@@ -1426,7 +1426,7 @@
     ],
     "gold": 10,
     "name": "Lancenot",
-    "note": "<<aaa_icon 115 53>>\n<<aaa_setup {\n  this._appear = \"_LancenotAppear\";\n  this._taper = \"_LancenotSwish\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 115 53>>\n<<aaa_setup {\n  this._appear = \"_LancenotAppear\";\n  this._taper = \"_LancenotSwish\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
       100,
       0,
@@ -1688,7 +1688,7 @@
     ],
     "gold": 10,
     "name": "Prêtresse",
-    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const actions = [\n    { skillId: 40, rating: 4 },\n    { skillId: 3, rating: 5 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  if (this.friendsUnit().members().find(m => m.isAlive() && m.hp + 40 <= m.mhp)) {\n    actions.push({ skillId: 29, rating: 7 });\n  }\n  return this.gogoGadgetActions(actions);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const actions = [\n    { skillId: 40, rating: 4 },\n    { skillId: 3, rating: 5 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  if (this.friendsUnit().members().find(m => m.isAlive() && m.hp + 40 <= m.mhp)) {\n    actions.push({ skillId: 29, rating: 7 });\n  }\n  return this.gogoGadgetActions(actions);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
       100,
       100,
@@ -2690,6 +2690,13 @@
         "conditionType": 0,
         "rating": 5,
         "skillId": 23
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 91
       }
     ],
     "battlerHue": 0,
@@ -2755,18 +2762,18 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 5,
-        "skillId": 64
+        "rating": 9,
+        "skillId": 71
       },
       {
-        "conditionParam1": 38,
+        "conditionParam1": 0,
         "conditionParam2": 0,
-        "conditionType": 4,
-        "rating": 9,
-        "skillId": 65
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 88
       }
     ],
-    "battlerHue": 180,
+    "battlerHue": 0,
     "battlerName": "Rogue",
     "dropItems": [
       {
@@ -2805,11 +2812,11 @@
     ],
     "gold": 10,
     "name": "Tournoyeuuur",
-    "note": "<<aaa_icon 89 13>>\n<<aaa_setup {\n  this._appear = \"_TournoyeurAppear\";\n  this._taper = \"_TournoyeurBedingBedang\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 89 13>>\n<<aaa_setup {\n  this._appear = \"_TournoyeurAppear\";\n  this._taper = \"_TournoyeurBedingBedang\";\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
-      200,
+      180,
       0,
-      40,
+      30,
       14,
       10,
       5,
@@ -2825,17 +2832,17 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 17
+        "skillId": 48
       },
       {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 48
+        "skillId": 88
       }
     ],
-    "battlerHue": 180,
+    "battlerHue": 0,
     "battlerName": "Actor1_6",
     "dropItems": [
       {
@@ -2884,11 +2891,11 @@
     ],
     "gold": 10,
     "name": "Couteleuuur",
-    "note": "<<aaa_icon 77 19>>\n<<aaa_setup {\n  this._appear = \"_CouteleurAppear\";\n  this._taper = \"_CouteleurFlick\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n  this._defenselessActions = [\n    { rating: 1, skillId: 17 },\n    { rating: 3, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  this._baseActions = [\n    { rating: 3, skillId: 17 },\n    { rating: 1, skillId: 48 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const defenseless = this.opponentsUnit().members().find(m => m.isStateAffected(40));\n  return this.gogoGadgetActions(defenseless ? \n    this._defenselessActions : \n    this._baseActions);\n}>>",
+    "note": "<<aaa_icon 77 19>>\n<<aaa_setup {\n  this._appear = \"_CouteleurAppear\";\n  this._taper = \"_CouteleurFlick\";\n}>>\n<<aaa_actions {\n  return this.gogoGadgetActions([\n    { rating: 9, skillId: 48 },\n    { rating: 5, skillId: 88 },\n  ], true);\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
-      200,
+      180,
       0,
-      24,
+      22,
       12,
       10,
       5,
@@ -2904,10 +2911,17 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 66
+        "skillId": 89
+      },
+      {
+        "conditionParam1": 49,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 9,
+        "skillId": 90
       }
     ],
-    "battlerHue": 180,
+    "battlerHue": 0,
     "battlerName": "Actor3_5",
     "dropItems": [
       {
@@ -2942,20 +2956,15 @@
         "code": 31,
         "dataId": 1,
         "value": 0
-      },
-      {
-        "code": 61,
-        "dataId": 0,
-        "value": 1
       }
     ],
     "gold": 10,
     "name": "Lancenooot",
-    "note": "<<aaa_icon 115 53>>\n<<aaa_setup {\n  this._appear = \"_LancenotAppear\";\n  this._taper = \"_LancenotSwish\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 115 53>>\n<<aaa_setup {\n  this._appear = \"_LancenotAppear\";\n  this._taper = \"_LancenotSwish\";\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
-      200,
+      180,
       0,
-      26,
+      40,
       13,
       10,
       5,
@@ -3127,11 +3136,11 @@
     ],
     "gold": 30,
     "name": "Jean++",
-    "note": "<<aaa_icon 82 57>>\n<<aaa_actions {\n  const acts = [];\n  const sleeping = this.friendsUnit().members().find(m => m.isStateAffected(10));\n  if (sleeping) {\n    acts.push({ skillId: 4 });\n  }\n  let arrowState = \n    this.isStateAffected(28) ? 2 :\n    this.isStateAffected(27) ? 1 :\n    0;\n  for (let i = acts.length; i < this.numActions(); i++) {\n    switch (arrowState) {\n      case 2:\n        acts.push({ skillId: 18 });\n        arrowState = 0;\n        break;\n      case 1: \n        acts.push({ skillId: 16 });\n        arrowState = 2;\n        break;\n      case 0: \n        acts.push({ skillId: 15 });\n        arrowState = 1;\n        break;\n    }\n  }\n  return acts;\n}>>",
+    "note": "<<aaa_icon 82 57>>\n<<aaa_actions {\n  const acts = [];\n  const sleeping = this.friendsUnit().members().find(m => m.isStateAffected(10));\n  if (sleeping) {\n    acts.push({ skillId: 4 });\n  }\n  let fleche = this.isStateAffected(27);\n  let vise = this.isStateAffected(28);\n  for (let i = acts.length; i < this.numActions(); i++) {\n    if (vise) {\n      acts.push({ skillId: 18 });\n      vise = false;\n    } else if (fleche) {\n      acts.push({ skillId: 16 });\n      fleche = false;\n      vise = true;\n    } else {\n      acts.push({ skillId: 15 });\n      fleche = true;\n    }\n  }\n  return acts;\n}>>",
     "params": [
       200,
       0,
-      55,
+      70,
       12,
       10,
       5,
@@ -3146,32 +3155,32 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 5,
+        "rating": 1,
         "skillId": 40
       },
       {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 5,
-        "skillId": 3
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 5,
-        "skillId": 29
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 5,
+        "rating": 4,
         "skillId": 41
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 39
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 42
       }
     ],
-    "battlerHue": 180,
+    "battlerHue": 0,
     "battlerName": "Actor2_4",
     "dropItems": [
       {
@@ -3215,9 +3224,9 @@
     ],
     "gold": 10,
     "name": "Prêtreeesse",
-    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>\n<<aaa_actions {\n  const actions = [\n    { skillId: 40, rating: 4 },\n    { skillId: 3, rating: 5 },\n    {\n      conditionParam1: 0,\n      conditionParam2: 0.25,\n      conditionType: 2,\n      rating: 7,\n      skillId: 6\n    }\n  ];\n  if (this.friendsUnit().members().find(m => m.isAlive() && m.hp + 40 <= m.mhp)) {\n    actions.push({ skillId: 29, rating: 7 });\n  }\n  return this.gogoGadgetActions(actions);\n}>>\n<<aaa_escape {\n  $btl.men = $btl.men || [];\n  $btl.men.push(this);\n}>>",
+    "note": "<<aaa_icon 74 6>>\n<<aaa_setup {\n  this._appear = \"_PretresseAppear\";\n  this._taper = \"_PretresseTape\";\n}>>\n<<aaa_death {\n  AudioManager.playSe(\"Mort\");\n}>>",
     "params": [
-      200,
+      180,
       150,
       25,
       12,

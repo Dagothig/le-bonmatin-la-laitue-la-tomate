@@ -136,7 +136,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Bine",
-    "note": "<kind:buff>\n<<aaa_anim self lunge>>\n<<aaa_performActionStart {\n    AudioManager.playSe(this.subject()._taper || \"Ahha\");\n}>>\n<<aaa_targets {\n  if (!this.subject().isEnemy()) {\n    return null;\n  }\n  const sleeping = this.subject().friendsUnit().members().filter(m => m.isStateAffected(10));  \n  return sleeping.length ? \n    [sleeping[(sleeping.length * Math.random())|0]] :\n    null;\n}>>",
+    "note": "<kind:buff>\n<<aaa_anim self lunge>>\n<<aaa_performActionStart {\n  const sideSign = this.subject() instanceof Game_Actor ? -1 : 1;\n  this.subject().pushMoves([\n    [SE, { name: \"HeilleTuDors\" }],\n    [WAIT, 60],\n    [SE, { name: this.subject()._taper || \"Ahha\" }],\n    [PARABOLA, sideSign * 20, 0, -10, 8],\n    [MOVE, 0, 0, 3]\n  ]);\n}>>\n<<aaa_targets {\n  if (!this.subject().isEnemy()) {\n    return null;\n  }\n  const sleeping = this.subject().friendsUnit().members().filter(m => m.isStateAffected(10));  \n  return sleeping.length ? \n    [sleeping[(sleeping.length * Math.random())|0]] :\n    null;\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -544,6 +544,12 @@
         "dataId": 28,
         "value1": 1,
         "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 27,
+        "value1": 1,
+        "value2": 0
       }
     ],
     "hitType": 0,
@@ -626,7 +632,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Tir flèche",
-    "note": "<<aaa_anim self lunge>>",
+    "note": "<<aaa_anim self lunge>>\n<<aaa_action {\n  this.subject().removeState(28);\n}>>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1395,7 +1401,7 @@
       }
     ],
     "hitType": 2,
-    "iconIndex": 79,
+    "iconIndex": 92,
     "message1": " invoque les mots interdits!",
     "message2": "sudo rm -rf \"/home/%2\"",
     "mpCost": 0,
@@ -3037,7 +3043,7 @@
     "message2": "",
     "mpCost": 25,
     "name": "Secret du Vert",
-    "note": "<kind:buff>",
+    "note": "<kind:heal>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3198,7 +3204,7 @@
     "hitType": 0,
     "iconIndex": 210,
     "message1": " fait du menuage!",
-    "message2": "Tout le monde prenez un pause!",
+    "message2": "Tout le monde prenez une pause!",
     "mpCost": 0,
     "name": "Menuer",
     "note": "<<aaa_anim self wiggle>>\n<<aaa_action {\n    $gameParty.setMenuActor(target);\n    SceneManager.push(Scene_Equip);\n}>>",
@@ -3207,6 +3213,159 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 88,
+    "animationId": 195,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 75,
+    "message1": " souffle un peu!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Souffler",
+    "note": "<kind:heal>\n<<aaa_anim self reset>>\n<<aaa_performActionStart {\n  AudioManager.playSe(\"Souffler\")\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 100
+  },
+  {
+    "id": 89,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 17,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 75,
+    "message1": " fait un grand saut! Hop!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Grand saut",
+    "note": "<kind:cc>\n<<aaa_performActionStart {\n  const sideSign = this.subject() instanceof Game_Actor ? -1 : 1;\n  this.subject().pushMoves([\n    [SE, { name: \"Wind2\" }],\n    [PARABOLA, sideSign * 120, -800, -800, 40], \n  ]);\n}>>\n<<aaa_action {\n  this.itemEffectAddState(this.subject(), {\n    \"code\":21,\n    \"dataId\":49,\n    \"value1\":1,\n    \"value2\":0\n  });\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 90,
+    "animationId": 194,
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.atk * a.lukVar - b.def * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 15,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 40,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 78,
+    "message1": " tombe des airs! Bataclan!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Tombe des airs",
+    "note": "<kind:cc>\n<<aaa_performActionStart {\n  const sideSign = this.subject() instanceof Game_Actor ? -1 : 1;\n  this.subject().removeState(49);\n  this.subject().pushMoves([\n    [SE, { name: \"Fall\" }],\n    [SE, { name: \"Wind1\" }],\n    [WAIT, 16],\n    [SE, { name: this.subject()._taper || \"Ahha\" }],\n    [MOVE, sideSign * 140, 0, 8], \n    [SE, { name: \"Break\" }],\n    [SE, { name: \"Sword2\" }],\n    [PARABOLA, 0, 0, -32, 10]\n  ]);\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 91,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "9999",
+      "type": 3,
+      "variance": 0
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 72,
+    "message1": " revivu!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Contrat Sanglant",
+    "note": "<kind:heal>\n<<aaa_performActionStart {\n  const sideSign = this.subject() instanceof Game_Actor ? -1 : 1;\n  this.subject().pushMoves([\n    [SE, { name: \"_RecruteurContratSanglant\" }],\n    [WAIT, 4],\n    [PARABOLA, sideSign * 10, -10, -20, 10],\n    [WAIT, 8],\n    [PARABOLA, sideSign * -15, 10, -30, 12],\n    [WAIT, 6],\n    [PARABOLA, sideSign * -30, 0, -10, 8],\n    [WAIT, 4],\n    [PARABOLA, 0, 0, -15, 10],\n    [ANIMATION, 196]\n  ]);\n}>>\n<<aaa_action {\n target.startAnimation(193, false, 0);\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 9,
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,

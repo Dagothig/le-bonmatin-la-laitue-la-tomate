@@ -359,7 +359,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.08
+        "value": 0.1
       }
     ],
     "iconIndex": 266,
@@ -465,6 +465,41 @@
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
       {
         "code": 23,
         "dataId": 0,
@@ -1302,7 +1337,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.08
+        "value": 0.1
       }
     ],
     "iconIndex": 236,
@@ -1378,5 +1413,69 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 18
+  },
+  {
+    "id": 48,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": " est tout de bleu!",
+    "message2": " est tout de bleu!",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Bleu",
+    "note": "<hue:180>",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 49,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 9.99
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 9.99
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.25
+      }
+    ],
+    "iconIndex": 5,
+    "maxTurns": 1,
+    "message1": " est dans les airs!",
+    "message2": " est dans les airs!",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Dans les airs",
+    "note": "",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

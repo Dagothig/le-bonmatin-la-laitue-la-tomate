@@ -43,7 +43,7 @@
     "order": 5,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 1032
+    "scrollY": 1332
   },
   {
     "id": 6,
@@ -974,12 +974,12 @@
   },
   {
     "id": 109,
-    "expanded": false,
+    "expanded": true,
     "name": "TEMPLE_DU_BONSOIR",
     "order": 111,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 2032
+    "scrollY": 1072
   },
   {
     "id": 110,
@@ -1042,7 +1042,7 @@
     "order": 115,
     "parentId": 109,
     "scrollX": 811,
-    "scrollY": 552
+    "scrollY": 484
   },
   {
     "id": 117,

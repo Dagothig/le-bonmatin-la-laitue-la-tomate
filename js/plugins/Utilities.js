@@ -180,7 +180,8 @@ var MOVE = "startMove",
     SE = "playSe",
     SHAKE = "gogoGadgetShake",
     OPACITY = "setOpacity",
-    FLIP = "flippendo";
+    FLIP = "flippendo",
+    ANIMATION = "startAnimationShorthand";
 
 function aaa_anim(target, anim, delay) {
     var sprite = SceneManager.battlerSprite(target);
@@ -945,6 +946,10 @@ function eval_fn_expr(expr, args) {
             this._moveType = null;
             this._movementDuration = duration;
         },
+        function startAnimationShorthand(_, animationId, delay) {
+            delay = delay || 0;
+            this.startAnimation($dataAnimations[animationId], false, delay);
+        },
         function playSe(_, se) {
             se.volume = se.volume || 90;
             se.pitch = se.pitch | 100;
@@ -1137,6 +1142,15 @@ function eval_fn_expr(expr, args) {
             return 100;
         });
 
+    window.CONDS = {
+        turn: 1,
+        hp: 2,
+        mp: 3,
+        state: 4,
+        partyLevel: 5,
+        switch: 6
+    };
+
     override(Game_Enemy.prototype,
         function onBattleStart(onBattleStart) {
             onBattleStart.call(this);
@@ -1178,12 +1192,13 @@ function eval_fn_expr(expr, args) {
                 return selectAllActions.call(this, actionList);
             }
         },
-        function gogoGadgetActions(_, actionList) {
+        function gogoGadgetActions(_, originalActionList, reuse = false) {
             let tp = this.tp;
             let mp = this.mp;
             const actions = [];
+            let actionList = originalActionList;
             for (let i = 0 ; i < this.numActions(); i++) {
-                actionList = actionList.filter(a =>
+                actionList = (reuse ? originalActionList : actionList).filter(a =>
                     this.meetsCondition(a) &&
                     tp >= this.skillTpCost($dataSkills[a.skillId]) &&
                     mp >= this.skillMpCost($dataSkills[a.skillId]));
@@ -1792,6 +1807,7 @@ function eval_fn_expr(expr, args) {
 
     override(Window_BattleLog.prototype,
         function waitForNewLine() {},
+        // Comment to reactivate battlelog
         function refresh() {},
         function messageSpeed() {
             return 0;
@@ -4005,6 +4021,15 @@ Input.keyMapper[68] = "right"; // d
     override(Game_Player.prototype,
         function sizeFactor() {
             return this._scale || $dataMap.playerScale;
+        });
+
+    override(Game_Enemy.prototype,
+        function battlerHue(battlerHue) {
+            for (const state of this.states()) {
+                if (state.meta && state.meta.hue)
+                    return state.meta.hue;
+            }
+            return battlerHue.call(this);
         });
 
     override(Game_Follower.prototype,

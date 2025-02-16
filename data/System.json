@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 5,
+  "editMapId": 109,
   "elements": [
     "",
     "Physical",
@@ -659,9 +659,10 @@
     "BONSOIR_PLAT_NIVEAU",
     "BONSOIR_PLAT_NIVEAU_TMP",
     "BONSOIR_BTL",
-    "QUETE_BONNUIT"
+    "QUETE_BONNUIT",
+    "DODO_DIR"
   ],
-  "versionId": 67222911,
+  "versionId": 30595460,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

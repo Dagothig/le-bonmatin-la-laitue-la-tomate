@@ -1835,8 +1835,8 @@
         "code": 122,
         "indent": 1,
         "parameters": [
-          1,
-          1,
+          81,
+          81,
           0,
           3,
           5,
@@ -2330,7 +2330,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this.setDirection($gvars.TMP_A)"
+                  "this.setDirection($gvars.DODO_DIR)"
                 ],
                 "indent": null
               },
@@ -2376,7 +2376,7 @@
           {
             "code": 45,
             "parameters": [
-              "this.setDirection($gvars.TMP_A)"
+              "this.setDirection($gvars.DODO_DIR)"
             ],
             "indent": null
           }
@@ -2541,8 +2541,8 @@
         "code": 122,
         "indent": 1,
         "parameters": [
-          1,
-          1,
+          81,
+          81,
           0,
           3,
           5,
@@ -3066,7 +3066,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this.setDirection($gvars.TMP_A)"
+                  "this.setDirection($gvars.DODO_DIR)"
                 ],
                 "indent": null
               },
@@ -3126,7 +3126,7 @@
           {
             "code": 45,
             "parameters": [
-              "this.setDirection($gvars.TMP_A)"
+              "this.setDirection($gvars.DODO_DIR)"
             ],
             "indent": null
           }
@@ -3291,8 +3291,8 @@
         "code": 122,
         "indent": 1,
         "parameters": [
-          1,
-          1,
+          81,
+          81,
           0,
           3,
           5,
@@ -3762,7 +3762,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this.setDirection($gvars.TMP_A)"
+                  "this.setDirection($gvars.DODO_DIR)"
                 ],
                 "indent": null
               },
@@ -3783,7 +3783,7 @@
           {
             "code": 45,
             "parameters": [
-              "this.setDirection($gvars.TMP_A)"
+              "this.setDirection($gvars.DODO_DIR)"
             ],
             "indent": null
           }
@@ -3915,8 +3915,8 @@
         "code": 122,
         "indent": 1,
         "parameters": [
-          1,
-          1,
+          81,
+          81,
           0,
           3,
           5,
@@ -4416,7 +4416,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this.setDirection($gvars.TMP_A)"
+                  "this.setDirection($gvars.DODO_DIR)"
                 ],
                 "indent": null
               },
@@ -4451,7 +4451,7 @@
           {
             "code": 45,
             "parameters": [
-              "this.setDirection($gvars.TMP_A)"
+              "this.setDirection($gvars.DODO_DIR)"
             ],
             "indent": null
           }
@@ -11762,6 +11762,35 @@
         "code": 356,
         "indent": 0,
         "parameters": [
+          "se _RecruteurContratSanglant"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Evil",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "N'oubliez pas votre contrat sanglant!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
           "se Pewpewpew"
         ]
       },
@@ -11780,6 +11809,64 @@
         "indent": 0,
         "parameters": [
           "Pewpewpew"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se Souffler"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Un instant! Je souffle un peu."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se HeilleTuDors"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Heille! Tu dors!"
         ]
       },
       {
