@@ -1943,6 +1943,11 @@ _NarrateurBuissonBarbu
 > Un buisson barbu!\
 > Ça fait 4 poils de barbe, ça!
 
+_NarrateurVeutPasBateau
+> En fait c'est pas une très bonne idée de rentrer le\
+> bateau ici.\
+> Vous devriez passer en radeau.
+
 ### Protagoniste
 
 _ProtagonisteCommeBonjourDisparu
@@ -8320,6 +8325,9 @@ _RecruteurTaper
 _RecruteurJoliSang
 > À moi! Le joli sang.
 
+_RecruteurAAA
+> Aaaaaaaaaaaaa-\^
+
 ### Barman
 
 _BarmanBonsoir
@@ -8474,6 +8482,9 @@ _GrossepilecaillouxgrisHintHintSud
 _GrossepilecaillouxgrisADesContacts
 > J'ai des contacts qui résident dans des\
 > Lieux Supérieurs, oui.
+
+_GrossepilecaillouxgrisViteMenacePlantaire
+> Vite, il faut halter la menace plantaire!
 
 ### Garde
 

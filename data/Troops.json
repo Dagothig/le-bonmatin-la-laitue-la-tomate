@@ -8190,27 +8190,6 @@
             ]
           },
           {
-            "code": 331,
-            "indent": 0,
-            "parameters": [
-              0,
-              1,
-              0,
-              999,
-              false
-            ]
-          },
-          {
-            "code": 339,
-            "indent": 0,
-            "parameters": [
-              0,
-              0,
-              92,
-              -1
-            ]
-          },
-          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -8321,6 +8300,35 @@
             "parameters": [
               "fin"
             ]
+          },
+          {
+            "code": 356,
+            "indent": 0,
+            "parameters": [
+              "se _RecruteurAAA"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil",
+              2,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Aaaaaaaaaaaaa-\\^"
+            ]
+          },
+          {
+            "code": 251,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 333,

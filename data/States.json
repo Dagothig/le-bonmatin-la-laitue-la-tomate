@@ -1187,7 +1187,7 @@
     "note": "<<aaa_apply {\n  target.startAnimation(180, false, 0);\n}>>",
     "overlay": 0,
     "priority": 50,
-    "removeAtBattleEnd": false,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,

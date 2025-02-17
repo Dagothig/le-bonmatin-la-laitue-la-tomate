@@ -6002,44 +6002,12 @@
         ]
       },
       {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          1
-        ]
-      },
-      {
-        "code": 337,
-        "indent": 1,
-        "parameters": [
-          0,
-          126,
-          false
-        ]
-      },
-      {
         "code": 333,
         "indent": 1,
         "parameters": [
           0,
           0,
           1
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          1
-        ]
-      },
-      {
-        "code": 337,
-        "indent": 1,
-        "parameters": [
-          1,
-          126,
-          false
         ]
       },
       {
@@ -6052,44 +6020,12 @@
         ]
       },
       {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          1
-        ]
-      },
-      {
-        "code": 337,
-        "indent": 1,
-        "parameters": [
-          2,
-          126,
-          false
-        ]
-      },
-      {
         "code": 333,
         "indent": 1,
         "parameters": [
           2,
           0,
           1
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          1
-        ]
-      },
-      {
-        "code": 337,
-        "indent": 1,
-        "parameters": [
-          3,
-          126,
-          false
         ]
       },
       {
@@ -17879,8 +17815,8 @@
           1,
           80,
           0,
-          0,
-          0
+          5,
+          4
         ]
       },
       {
@@ -18385,6 +18321,153 @@
       },
       {
         "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 117,
+        "indent": 3,
+        "parameters": [
+          12
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          5
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          80,
+          0,
+          10,
+          4
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 3,
+        "parameters": [
+          0,
+          71,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "se _GrossepilecaillouxgrisViteMenacePlantaire"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 4,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "Vite, il faut halter la menace plantaire!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "se _GrossepilecaillouxgrisHintHintSud"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 4,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "Cependant... je craigne que vous n'êtes pas"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "encore prêts."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "Vous devriez visiter le bout sud du Monde "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "avec la Géologue."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
         "indent": 3,
         "parameters": []
       },
