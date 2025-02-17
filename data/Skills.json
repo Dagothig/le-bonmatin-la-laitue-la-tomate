@@ -3154,7 +3154,7 @@
     "requiredWtypeId2": 0,
     "scope": 7,
     "speed": 50,
-    "stypeId": 0,
+    "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
