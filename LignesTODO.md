@@ -4327,6 +4327,12 @@ _RecruteurBonsoir5Prise2
 _RecruteurContratSanglant
 > N'oubliez pas votre contrat sanglant!
 
+_RecruteurTaper
+> J'te pète!
+
+_RecruteurJoliSang
+> À moi! Le joli sang.
+
 ### Barman
 
 _BarmanBonsoir

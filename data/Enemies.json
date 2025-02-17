@@ -2689,14 +2689,28 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 23
+        "skillId": 91
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
+        "skillId": 40
       },
       {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 91
+        "skillId": 39
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 23
       }
     ],
     "battlerHue": 0,
@@ -2743,15 +2757,15 @@
     ],
     "gold": 0,
     "name": "Recruteur",
-    "note": "<<aaa_icon 86 10>>",
+    "note": "<<aaa_icon 86 10>>\n<<aaa_setup {\n  this._taper = \"_RecruteurTaper\";\n}>>\n<<aaa_actions {\n  const acts = [];\n  const dead = $gameTroop.members().find(m => !m.isAlive());\n  if (dead && this.mp >= 25) {\n    acts.push({ skillId: 91 });\n  }\n  for (let i = acts.length; i < this.numActions(); i++) {\n    if (this.hp < this.mhp && this.mp >= 25) {\n      acts.push({ skillId: 42 });\n    } else if (this.mp >= 25) {\n      acts.push({ skillId: 39 });\n    } else {\n      acts.push({ skillId: 40 });\n    }\n  }\n  return acts;\n}>>",
     "params": [
       200,
-      0,
+      200,
+      15,
       10,
-      12,
-      10,
-      5,
-      10,
+      15,
+      15,
+      96,
       100
     ]
   },
