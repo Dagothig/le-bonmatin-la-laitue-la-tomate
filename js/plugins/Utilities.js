@@ -3484,7 +3484,8 @@ Input.keyMapper[68] = "right"; // d
                     "jesus",
                     "grotte",
                     "mur-vert",
-                    "temple-du-bonsoir"
+                    "temple-du-bonsoir-1",
+                    "temple-du-bonsoir-2"
                 ]) {
                     const capitalized = Array.from(name);
                     capitalized[0] = capitalized[0].toUpperCase();
