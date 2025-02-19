@@ -2,15 +2,13 @@
 
 ## TODO
 
-* Passage sous la montagne
-  * Roches & dialogues manquants
+* Roches & dialogues manquants
 * Updater Oracle
 * Hot reload
 * Barre hp enemis par dessus UI (?)
 * Supporter d'afficher plusieurs types de dégâts en même temps
-* Finaliser Jean-Jacques-Recruteur MKIII
 * Post-bonsoir
-* LE VERT
+* Les fights de plantes sont plaaaaates
 * Cossin DODO?
 
 ### Musique

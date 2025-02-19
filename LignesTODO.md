@@ -842,14 +842,11 @@ _NarrateurToutLeMondeMouille
 > Comme c'est bien connu, être mouillé rend complêtement\
 > ininflammable. Même votre radeau!
 
-_NarrateurBouteilleEau
-> Une bouteille d'eau!\
+_NarrateurRemplirBouteilleEau
+> Remplir une ou plusieurs bouteilles d'eau?\
 > Vous pouvez vous la verser sur la tête et pouf tout le\
 > monde est mouillé. Comme c'est bien connu, être mouillé\
 > rend ininflammable. Même votre radeau!
-
-_NarrateurRemplirBouteilleEau
-> Remplir une bouteille d'eau?
 
 _NarrateurBouteilleVide
 > Une bouteille vide!
@@ -978,6 +975,9 @@ _NarrateurVeutPasBateau
 > En fait c'est pas une très bonne idée de rentrer le\
 > bateau ici.\
 > Vous devriez passer en radeau.
+
+_NarrateurCestRempli
+> C'est rempli!
 
 ### Protagoniste
 
@@ -2518,6 +2518,12 @@ _ProtagonisteVeutPas
 _ProtagonisteVousAussiYaDesTrucsQueVousSavez
 > Vous aussi il y a des choses que vous vous\
 > devez de savoir?
+
+_ProtagonisteHissezLesVoiles
+> Hissez les voiles!
+
+_ProtagonisteATerreMoussaillons
+> À terre moussaillons!
 
 ### Vieux
 

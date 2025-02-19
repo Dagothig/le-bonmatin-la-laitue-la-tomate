@@ -2415,6 +2415,22 @@ function eval_fn_expr(expr, args) {
 
 // Vehicles
 (function () {
+    const getOnSounds = {
+        "ship": "_ProtagonisteHissezLesVoiles"
+    };
+
+    const getOffSounds = {
+        "ship": "_ProtagonisteATerreMoussaillons"
+    }
+
+    override(Game_Player.prototype,
+        function getOnVehicle(getOnVehicle) {
+            getOnVehicle.call(this);
+            if (this._vehicleGettingOn && getOnSounds[this._vehicleType]) {
+                AudioManager.playSe(getOnSounds[this._vehicleType]);
+            }
+        });
+
     override(Game_Vehicle.prototype,
         function initMoveSpeed(initMoveSpeed) {
             if (this.isBoat()) {
@@ -2446,6 +2462,9 @@ function eval_fn_expr(expr, args) {
             this.resetDirection();
             if (this.hasBgm()) {
                 $gameSystem.replayWalkingBgm();
+            }
+            if (getOffSounds[this._type]) {
+                AudioManager.playSe(getOffSounds[this._type]);
             }
         });
 

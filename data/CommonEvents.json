@@ -11176,6 +11176,64 @@
         "code": 356,
         "indent": 0,
         "parameters": [
+          "se _ProtagonisteHissezLesVoiles"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Hissez les voiles!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _ProtagonisteATerreMoussaillons"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "À terre moussaillons!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
           "se _WindoEmbrace"
         ]
       },
