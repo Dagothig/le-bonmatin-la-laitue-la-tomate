@@ -561,12 +561,12 @@
       "type": 1,
       "variance": 0
     },
-    "description": "Une petite roche. Dans le doute vous pouvez tenter de\nle lancer. Des fois ça assomme.",
+    "description": "Une petite roche. Dans le doute vous pouvez tenter de\nle lancer. Ça assomme.",
     "effects": [
       {
         "code": 21,
         "dataId": 15,
-        "value1": 0.9,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -1197,6 +1197,39 @@
     "itypeId": 1,
     "name": "Livre - Pointer du doigt",
     "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 40,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Rend quelqu'un tout Vert???",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 45,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 181,
+    "itypeId": 1,
+    "name": "Feuille verte",
+    "note": "",
     "occasion": 0,
     "price": 0,
     "repeats": 1,

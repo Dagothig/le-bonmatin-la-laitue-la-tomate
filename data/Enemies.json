@@ -2407,7 +2407,7 @@
     ],
     "gold": 0,
     "name": "Vert",
-    "note": "<<aaa_icon 0 48 48 48>>\n<<aaa_death {\n   this.transform(35);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
+    "note": "<<aaa_icon 0 48 48 48>>\n<<aaa_setup {\n  this._hue = this._hue || (Math.random() * 60 - 30);\n}>>\n<<aaa_death {\n   this.transform(35);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
     "params": [
       100,
       0,
@@ -2481,7 +2481,7 @@
     ],
     "gold": 0,
     "name": "Vert",
-    "note": "<<aaa_icon 0 0 48 48>>\n<<aaa_death {\n   this.transform(32);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
+    "note": "<<aaa_icon 0 0 48 48>>\n<<aaa_setup {\n  this._hue = this._hue || (Math.random() * 60 - 30);\n}>>\n<<aaa_death {\n   this.transform(32);\n   this.setHp(this.mhp);\n   $gameTroop.makeUniqueNames();\n}>>",
     "params": [
       100,
       0,
@@ -2500,13 +2500,6 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 2,
-        "skillId": 12
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
         "rating": 1,
         "skillId": 72
       },
@@ -2514,22 +2507,8 @@
         "conditionParam1": 42,
         "conditionParam2": 0,
         "conditionType": 4,
-        "rating": 6,
-        "skillId": 12
-      },
-      {
-        "conditionParam1": 42,
-        "conditionParam2": 0,
-        "conditionType": 4,
         "rating": 5,
         "skillId": 74
-      },
-      {
-        "conditionParam1": 43,
-        "conditionParam2": 0,
-        "conditionType": 4,
-        "rating": 9,
-        "skillId": 12
       },
       {
         "conditionParam1": 43,
@@ -2543,9 +2522,9 @@
     "battlerName": "Plant",
     "dropItems": [
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 1,
+        "dataId": 40,
+        "denominator": 1
       },
       {
         "dataId": 1,
@@ -2662,7 +2641,7 @@
     ],
     "gold": 0,
     "name": "Vert",
-    "note": "<<aaa_icon 0 48 48 48>>",
+    "note": "<<aaa_icon 0 48 48 48>>\n<<aaa_setup {\n  this._hue = this._hue || (Math.random() * 60 - 30);\n}>>",
     "params": [
       100,
       0,

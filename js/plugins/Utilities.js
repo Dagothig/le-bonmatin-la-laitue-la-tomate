@@ -3983,21 +3983,28 @@ Input.keyMapper[68] = "right"; // d
     override(Sprite_Character.prototype,
         function updateOther(updateOther) {
             updateOther.call(this);
+            let tint = 0xFFFFFF;
             tint: {
                 if (this._character.tint !== undefined) {
-                    this.tint = this._character.tint;
+                    tint = this._character.tint;
                     break tint;
                 }
                 const actor = this._character.actor && this._character.actor();
                 if (actor) {
                     for (const state of actor.states()) {
                         if (state.meta && state.meta.tint) {
-                            this.tint = EVENT_TINTS[state.meta.tint];
+                            tint = EVENT_TINTS[state.meta.tint];
                             break tint;
                         }
                     }
                 }
-                this.tint = 0xFFFFFF;
+            }
+            this.tint = tint;
+            if (this._upperBody) {
+                this._upperBody.tint = tint;
+            }
+            if (this._lowerBody) {
+                this._lowerBody.tint = tint;
             }
             if (this._character.visuals) {
                 for (const prop in this._character.visuals) {
@@ -4048,6 +4055,9 @@ Input.keyMapper[68] = "right"; // d
             for (const state of this.states()) {
                 if (state.meta && state.meta.hue)
                     return state.meta.hue;
+            }
+            if (this._hue) {
+                return this._hue;
             }
             return battlerHue.call(this);
         });
@@ -6373,7 +6383,8 @@ const ACCEPTED_LUTIN_NAMES = [
     // When used, the replacement list will become the word.
     const wordMap = {
         yo: ["allo", "salut"],
-        bonnuit: ["bonjour", "bonsoir"]
+        bonnuit: ["bonjour", "bonsoir"],
+        RRRR: ["rrrr"]
     }
 
     function generateTextByAntecedent(searchedWords) {
@@ -6626,5 +6637,12 @@ const ACCEPTED_LUTIN_NAMES = [
         function terminateMessage(terminateMessage) {
             stopWord();
             terminateMessage.call(this);
+        });
+}
+
+{ // Game unit questions
+    override(Game_Unit.prototype,
+        function isVert() {
+            return this.members().some(m => m.isStateAffected(45));
         });
 }

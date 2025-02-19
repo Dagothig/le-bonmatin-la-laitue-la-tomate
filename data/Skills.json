@@ -2754,6 +2754,12 @@
         "dataId": 43,
         "value1": 1,
         "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 50,
+        "value1": 1,
+        "value2": 0
       }
     ],
     "hitType": 0,
@@ -2811,7 +2817,7 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 2,
-    "speed": 0,
+    "speed": -50,
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,

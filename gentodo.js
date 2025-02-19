@@ -309,7 +309,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
             .filter(word => !word.match(punctuationRegexp))
             .distinct();
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
-        const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[1]));
+        const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[0]));
         for (const word of missingWords) {
             console.log("Generated " + word);
             const fp = "./audio/word/" + word + ".ogg";
@@ -325,10 +325,10 @@ const sectionsByNameToLinesMD = sectionsByName =>
             await new Promise(res => setTimeout(res, 10));
         }
 
-        /*for (const file of obsoleteWordFiles) {
+        for (const file of obsoleteWordFiles) {
             console.log("Removed " + file);
             await fs.unlink("audio/word/" + file);
-        }*/
+        }
     }
 
     const newTodosText = sectionsByNameToLinesMD(todosByName);
