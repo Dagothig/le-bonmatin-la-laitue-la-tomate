@@ -6501,6 +6501,7 @@ const ACCEPTED_LUTIN_NAMES = [
 
     const dialogTextCap = 43;
     function cutTextForDialog(text) {
+        text += " ";
         const lines = [];
         let lastValidCut = 0, lastValidCarCount = 0, lastCut = 0;
         for (let i = 0, carCount = 0; i < text.length; i++, carCount++) {

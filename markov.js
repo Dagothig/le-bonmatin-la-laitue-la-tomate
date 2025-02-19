@@ -2,7 +2,7 @@ function getWordsForPart(part) {
     return part.split(" ").filter(word => word);
 }
 
-const commandsRegexp = /\\shake(<.*>)?|\\{|\\}|\\\^|\\.\[.\]|"|>|\||\\/g;
+const commandsRegexp = /\\shake(<.*>)?|\\{|\\}|\\\^|\\.\[.\]|"|>|\||\\|\[|\]|\(|\)/g;
 const punctuationRegexp = /[\,\.\!\?\:]+/g;
 const endsWithPunctuation = /[\,\.\!\?\:]$/;
 
