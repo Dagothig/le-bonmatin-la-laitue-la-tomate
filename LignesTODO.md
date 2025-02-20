@@ -3832,6 +3832,11 @@ _InconnuSortez
 > Woh vous allez vraiment rentrer chez un\
 > inconnu comme ça!?
 
+_InconnuFermePourCoupures
+> Non non non! On est fermé pour... un temps\
+> indéterminé!\
+> Les coupures, voyez-vous.
+
 ### Tournoyeur
 
 _TournoyeurAppear

@@ -117,7 +117,6 @@ function aaa_fireplace(eventId, strength = 100) {
         volume: p * (vmax - vmin) + vmin,
         pitch: p * (pmax - pmin) + pmin,
     });
-    //$gameScreen._tone = $gameScreen._toneTarget = tmin.map((c, i) => c + p * (tmax[i] - tmin[i]));
 }
 
 function aaa_se(eventId, se) {
@@ -310,6 +309,16 @@ override(Array.prototype,
                 $gameMap.eventsXyNt(x, y).some(event =>
                     event.movementType !== FLYING &&
                     event._priorityType);
+        });
+
+    override(Game_Actor.prototype,
+        function addState(addState, stateId) {
+            addState.call(this, stateId);
+            $gameMap.requestRefresh();
+        },
+        function removeState(removeState, stateId) {
+            removeState.call(this, stateId);
+            $gameMap.requestRefresh();
         });
 
     override(Game_Player.prototype,
@@ -3352,16 +3361,61 @@ Input.keyMapper[68] = "right"; // d
     override(Sprite_EnemyActor.prototype,
         setupDamagePopup);
 
+    const digitDur = 90;
+    const digitDelay = 60;
+
     override(Sprite_Damage.prototype,
-        function setup(setup, target) {
+        function setup(_, target) {
+            this.count = 0;
             const result = target.result();
-            setup.call(this, target);
-            if (!result.missed && !result.evaded &&
-                !result.hpAffected &&
-                !result.mpDamage &&
-                target.isAlive() &&
-                result.tpDamage) {
+            if (result.critical) {
+                this.setupCriticalEffect();
+            }
+            if (result.missed || result.evaded) {
+                this.createMiss();
+                return;
+            }
+            if (result.hpAffected) {
+                this.createDigits(0, result.hpDamage);
+                this.count++;
+            }
+            if (target.isAlive() && result.mpDamage !== 0) {
+                this.createDigits(2, result.mpDamage);
+                this.count++;
+            }
+            if (target.isAlive() && result.tpDamage) {
                 this.createDigits(1, result.tpDamage);
+                this.count++;
+            }
+            this._duration = digitDur + this.count * digitDelay;
+        },
+        function createChildSprite(createChildSprite) {
+            const sprite = createChildSprite.call(this);
+            sprite.duration = this.count * digitDelay + digitDur;
+            sprite.delayX = this.count * 8;
+            sprite.delayY = this.count * 2;
+            return sprite;
+        },
+        function updateChild(updateChild, sprite) {
+            if (sprite.duration > digitDur) {
+                sprite.opacity = 0;
+            } else {
+                updateChild.call(this, sprite);
+                if (sprite.duration > 10) {
+                    sprite.opacity = 255;
+                } else {
+                    sprite.opacity = 255 * sprite.duration / 10;
+                }
+            }
+            sprite.y += sprite.delayY;
+            sprite.duration--;
+        },
+        function createDigits(createDigits, baseRow, value) {
+            let nextChild = this.children.length;
+            createDigits.call(this, baseRow, value);
+            for (let i = nextChild; i < this.children.length; i++) {
+                const sprite = this.children[i];
+                sprite.x += sprite.delayX;
             }
         });
 
@@ -5309,6 +5363,7 @@ organ: { // Organ minigame
             } else {
                 this._interpreter.setup(list);
             }
+            this._interpreter.update();
         });
 
     override(Game_Party.prototype,
@@ -6645,5 +6700,53 @@ const ACCEPTED_LUTIN_NAMES = [
     override(Game_Unit.prototype,
         function isVert() {
             return this.members().some(m => m.isStateAffected(45));
+        });
+}
+
+{ // EOT map damage popups
+    override(Game_Party.prototype,
+        function onPlayerWalk(onPlayerWalk) {
+            onPlayerWalk.call(this);
+            for (const actor of this.members()) {
+                const result = actor.result();
+                if (result.hpDamage || result.mpDamage || result.tpDamage) {
+                    actor.startDamagePopup();
+                }
+            }
+        });
+    override(Game_Actor.prototype,
+        function stepsForTurn() {
+            return 10;
+        });
+    override(Sprite_Character.prototype,
+        function initMembers(initMembers) {
+            initMembers.call(this);
+            this._damages = [];
+        },
+        function updateOther(updateOther) {
+            updateOther.call(this);
+            const character = this._character;
+            const actor = character && character.actor && character.actor();
+            if (actor && actor.isDamagePopupRequested()) {
+                const sprite = new Sprite_Damage();
+                sprite.scale.x = 0.5;
+                sprite.scale.y = 0.5;
+                sprite.setup(actor);
+                this._damages.push(sprite);
+                this.parent.addChild(sprite);
+                actor.clearDamagePopup();
+            }
+
+            if (this._damages.length > 0) {
+                for (let i = 0; i < this._damages.length; i++) {
+                    this._damages[i].update();
+                    this._damages[i].x = this.x;
+                    this._damages[i].y = this.y - 32;
+                }
+                if (!this._damages[0].isPlaying()) {
+                    this.parent.removeChild(this._damages[0]);
+                    this._damages.shift();
+                }
+            }
         });
 }
