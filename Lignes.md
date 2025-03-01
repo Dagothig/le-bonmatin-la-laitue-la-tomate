@@ -1948,6 +1948,16 @@ _NarrateurVeutPasBateau
 _NarrateurCestRempli
 > C'est rempli!
 
+_NarrateurFeuilleVerte
+> Une feuille verte!\
+> Rend quelqu'un tout Vert???
+
+_NarrateurVert6
+> Vert?
+
+_NarrateurLaPancarteLit
+> La pancarte lit:
+
 ### Protagoniste
 
 _ProtagonisteCommeBonjourDisparu
@@ -4339,6 +4349,10 @@ _ProtagonisteHissezLesVoiles
 
 _ProtagonisteATerreMoussaillons
 > À terre moussaillons!
+
+_ProtagonisteVertDescendreEnBas
+> Et pourtant je dis ça... mais je sais pas\
+> pourquoi, je vois du vert en bas et...
 
 ### Wwwelchior
 

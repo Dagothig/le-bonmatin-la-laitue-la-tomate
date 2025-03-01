@@ -6419,7 +6419,7 @@ const ACCEPTED_LUTIN_NAMES = [
             return antecedentsCache[word];
         }
         const antecedentsMaps = {}
-        for (const antecedent of getAntecedents(word)) {
+        for (const antecedent of getAntecedents(word, 1)) {
             const odds = antecedent[valueKey];
             const chain = antecedent[wordKey];
             const lead = chain[0];
@@ -6596,7 +6596,10 @@ const ACCEPTED_LUTIN_NAMES = [
         function pluginCommand(pluginCommand, command, args) {
             pluginCommand.call(this, command, args);
             if (command === "markov") {
-                const [faceImg, faceIdx, bg = 0, posType = 2] = args.shift().split(",");
+                let [faceImg, faceIdx, bg = 0, posType = 2] = args.shift().split(",");
+                faceIdx = parseInt(faceIdx) || 0;
+                bg = parseInt(bg) || 0;
+                posType = parseInt(posType) || 0;
                 const text = generateTextByAntecedent(args);
                 const lines = cutTextForDialog(text);
                 $gameMessage.setFaceImage(faceImg, faceIdx);
@@ -6747,6 +6750,99 @@ const ACCEPTED_LUTIN_NAMES = [
                     this.parent.removeChild(this._damages[0]);
                     this._damages.shift();
                 }
+            }
+        });
+}
+
+{ // Debug utilities
+    override(Scene_Map.prototype,
+        function isDebugCalled() {
+            return Input.isTriggered('debug')
+        });
+
+    override(Game_Player.prototype,
+        function isDebugThrough() {
+            return Input.isPressed('control');
+        });
+
+    override(Scene_Debug.prototype,
+        function helpText(helpText) {
+            if (this._rangeWindow.mode() === "map") {
+                return "Enter : Travel";
+            } else {
+                return helpText.call(this);
+            }
+        },
+        function createEditWindow(createEditWindow) {
+            createEditWindow.call(this);
+            this._editWindow.setHandler('map', () => {
+                this.popScene();
+                $gamePlayer.reserveTransfer(this._editWindow.currentId(), 0, 0);
+                $gamePlayer.requestMapReload();
+                if ($gameMap._interpreter.eventId() > 0) {
+                    $gameMap.unlockEvent($gameMap._interpreter.eventId());
+                    $gameMap._interpreter.clear();
+                }
+            });
+        });
+
+    override(Window_DebugRange.prototype,
+        function initialize(initialize, x, y) {
+            this._maxMaps = Math.ceil(($dataMapInfos.length - 1) / 10);
+            initialize.call(this, x, y);
+        },
+        function maxItems(maxItems) {
+            return maxItems.call(this) + this._maxMaps;
+        },
+        function drawItem(drawItem, index) {
+            const mapIndex = index - this._maxSwitches - this._maxVariables;
+            if (mapIndex < 0) {
+                drawItem.call(this, index);
+            } else {
+                const rect = this.itemRectForText(index);
+                const start = mapIndex * 10 + 1;
+                const end = start + 9;
+                const text = 'M [' + start.padZero(4) + '-' + end.padZero(4) + ']';
+                this.drawText(text, rect.x, rect.y, rect.width);
+            }
+        },
+        function mode(mode) {
+            const mapIndex = this.index() - this._maxSwitches - this._maxVariables;
+            if (mapIndex < 0) {
+                return mode.call(this);
+            } else {
+                return "map";
+            }
+        },
+        function topId(topId) {
+            const mapIndex = this.index() - this._maxSwitches - this._maxVariables;
+            if (mapIndex < 0) {
+                return topId.call(this);
+            } else {
+                return mapIndex * 10 + 1;
+            }
+        });
+
+    override(Window_DebugEdit.prototype,
+        function itemName(itemName, dataId) {
+            if (this._mode === "map") {
+                return $dataMapInfos[dataId] && $dataMapInfos[dataId].name;
+            } else {
+                return itemName.call(this, dataId);
+            }
+        },
+        function itemStatus(itemStatus, dataId) {
+            if (this._mode === "map") {
+                return "";
+            } else {
+                return itemStatus.call(this, dataId);
+            }
+        },
+        function update(update) {
+            if (this.active && this._mode === "map" && Input.isRepeated("ok")) {
+                this.callHandler('map');
+            } else {
+                update.call(this);
             }
         });
 }

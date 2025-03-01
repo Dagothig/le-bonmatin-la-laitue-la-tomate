@@ -4,7 +4,7 @@
   "battleback1Name": "",
   "battleback2Name": "",
   "bgm": {
-    "name": "village_vide",
+    "name": "temple_du_bon_matin",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 13,
-  "note": "<bgmFilter:insideAway>\n<light:dark>",
+  "note": "<light:dark>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
