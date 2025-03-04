@@ -1,10 +1,21 @@
 "use strict";
 
+//const overriden = new Map();
+
 function override(obj) {
     for (let i = 1; i < arguments.length; i++) {
         let fn = arguments[i];
         let original = obj[fn.name];
-        obj[fn.name] = function (a, b, c, d, e, f, g, h) {
+        /* For debugging override being a piece of shit.
+        if (original && original.name !== "overriden") {
+            if (overriden.has(original)) {
+                console.log(fn.name, overriden.get(original), "for", obj.constructor.name);
+                console.log(original.toString());
+            } else {
+                overriden.set(original, obj.constructor.name);
+            }
+        }*/
+        obj[fn.name] = function overriden (a, b, c, d, e, f, g, h) {
             return fn.call(this, original, a, b, c, d, e, f, g, h);
         }
     }
@@ -309,16 +320,6 @@ override(Array.prototype,
                 $gameMap.eventsXyNt(x, y).some(event =>
                     event.movementType !== FLYING &&
                     event._priorityType);
-        });
-
-    override(Game_Actor.prototype,
-        function addState(addState, stateId) {
-            addState.call(this, stateId);
-            $gameMap.requestRefresh();
-        },
-        function removeState(removeState, stateId) {
-            removeState.call(this, stateId);
-            $gameMap.requestRefresh();
         });
 
     override(Game_Player.prototype,
@@ -2122,6 +2123,15 @@ function eval_fn_expr(expr, args) {
         },
         function chargeTpByDamage() { });
 
+    override(Game_Actor.prototype,
+        function addState(addState, stateId) {
+            addState.call(this, stateId);
+            $gameMap.requestRefresh();
+        },
+        function removeState(removeState, stateId) {
+            removeState.call(this, stateId);
+            $gameMap.requestRefresh();
+        });
 
     override(BattleManager,
         function startAction(startAction) {
