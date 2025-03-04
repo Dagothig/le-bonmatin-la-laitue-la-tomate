@@ -3857,7 +3857,7 @@
     0,
     0,
     0,
-    0,
+    23,
     0,
     0,
     0,
@@ -13348,84 +13348,13 @@
           },
           "list": [
             {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "se _ProtagonisteRefuseDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Non mais moi je descends pas en bas."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "C'est juste pas une option."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 0,
-              "parameters": []
-            },
-            {
               "code": 111,
               "indent": 0,
               "parameters": [
-                12,
-                "$gameParty.isVert()"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "se _ProtagonisteVertDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI",
-                1,
                 0,
-                2
+                71,
+                0
               ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Et pourtant je dis ça... mais je sais pas"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "pourquoi, je vois du vert en bas et..."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 205,
@@ -13439,7 +13368,7 @@
                       "indent": null
                     },
                     {
-                      "code": 1,
+                      "code": 12,
                       "indent": null
                     },
                     {
@@ -13471,7 +13400,7 @@
               "indent": 1,
               "parameters": [
                 {
-                  "code": 1,
+                  "code": 12,
                   "indent": null
                 }
               ]
@@ -13547,6 +13476,102 @@
               "parameters": []
             },
             {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _ProtagonisteRefuseDescendreEnBas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Non mais moi je descends pas en bas."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "C'est juste pas une option."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "se _GabspartReviensAvecGeologue"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Je suis sûr que si on revenait avec la "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Géologue pis qu'on jasait avec la grosse "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "pile de cailloux gris tu verrais ça "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "différement."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 412,
               "indent": 0,
               "parameters": []
@@ -13574,541 +13599,15 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
       "x": 17,
       "y": 22
     },
-    {
-      "id": 28,
-      "name": "EV028",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "se _ProtagonisteRefuseDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Non mais moi je descends pas en bas."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "C'est juste pas une option."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                12,
-                "$gameParty.isVert()"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "se _ProtagonisteVertDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Et pourtant je dis ça... mais je sais pas"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "pourquoi, je vois du vert en bas et..."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 37,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 38,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 37,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 38,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                120,
-                46,
-                3,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 18,
-      "y": 21
-    },
-    {
-      "id": 29,
-      "name": "EV029",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "se _ProtagonisteRefuseDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Non mais moi je descends pas en bas."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "C'est juste pas une option."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                12,
-                "$gameParty.isVert()"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "se _ProtagonisteVertDescendreEnBas"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "UIUI",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Et pourtant je dis ça... mais je sais pas"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "pourquoi, je vois du vert en bas et..."
-              ]
-            },
-            {
-              "code": 251,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 37,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 38,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 37,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 38,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                120,
-                46,
-                3,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 19,
-      "y": 21
-    },
+    null,
+    null,
     {
       "id": 30,
       "name": "EV030",

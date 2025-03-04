@@ -65,12 +65,12 @@
   },
   {
     "id": 8,
-    "expanded": false,
+    "expanded": true,
     "name": "SHRINE_DU_BONJOUR",
     "order": 16,
     "parentId": 0,
     "scrollX": 811,
-    "scrollY": 462.5
+    "scrollY": 497.5
   },
   {
     "id": 9,
@@ -78,8 +78,8 @@
     "name": "PASSAGE_MONTAGNE",
     "order": 17,
     "parentId": 8,
-    "scrollX": 811,
-    "scrollY": 504
+    "scrollX": 1562,
+    "scrollY": 505.5
   },
   {
     "id": 10,
@@ -196,7 +196,7 @@
     "order": 26,
     "parentId": 8,
     "scrollX": 819,
-    "scrollY": 464
+    "scrollY": 462.5
   },
   {
     "id": 23,
@@ -844,7 +844,7 @@
     "order": 73,
     "parentId": 67,
     "scrollX": 816,
-    "scrollY": 640
+    "scrollY": 640.5
   },
   {
     "id": 95,
@@ -853,7 +853,7 @@
     "order": 27,
     "parentId": 8,
     "scrollX": 811,
-    "scrollY": 516
+    "scrollY": 462.5
   },
   {
     "id": 96,
@@ -987,8 +987,8 @@
     "name": "TEMPLE_DU_BONNUIT",
     "order": 117,
     "parentId": 0,
-    "scrollX": 819,
-    "scrollY": 462.5
+    "scrollX": 499,
+    "scrollY": 322.5
   },
   {
     "id": 111,
@@ -1057,7 +1057,7 @@
     "id": 118,
     "expanded": false,
     "name": "ARBRE",
-    "order": 124,
+    "order": 125,
     "parentId": 0,
     "scrollX": 819,
     "scrollY": 462.5
@@ -1066,7 +1066,7 @@
     "id": 119,
     "expanded": false,
     "name": "CHEZ_LUTIN",
-    "order": 125,
+    "order": 126,
     "parentId": 118,
     "scrollX": 819,
     "scrollY": 477
@@ -1077,41 +1077,41 @@
     "name": "SOUTERRAIN",
     "order": 118,
     "parentId": 110,
-    "scrollX": 946,
-    "scrollY": 454.5
+    "scrollX": 1135,
+    "scrollY": 596.5
   },
   {
     "id": 121,
     "expanded": false,
     "name": "BONNUIT_B1",
-    "order": 119,
+    "order": 120,
     "parentId": 110,
-    "scrollX": 819,
-    "scrollY": 462.5
+    "scrollX": 499,
+    "scrollY": 322.5
   },
   {
     "id": 122,
     "expanded": false,
     "name": "BONNUIT_RDC",
-    "order": 120,
+    "order": 121,
     "parentId": 110,
-    "scrollX": 819,
-    "scrollY": 462.5
+    "scrollX": 499,
+    "scrollY": 322.5
   },
   {
     "id": 123,
     "expanded": false,
     "name": "BONNUIT_F1",
-    "order": 121,
+    "order": 122,
     "parentId": 110,
-    "scrollX": 0,
-    "scrollY": 0
+    "scrollX": 499,
+    "scrollY": 322.5
   },
   {
     "id": 124,
     "expanded": false,
     "name": "BONNUIT_F2",
-    "order": 122,
+    "order": 123,
     "parentId": 110,
     "scrollX": 0,
     "scrollY": 0
@@ -1120,9 +1120,18 @@
     "id": 125,
     "expanded": true,
     "name": "BONNUIT_F3",
-    "order": 123,
+    "order": 124,
     "parentId": 110,
     "scrollX": 819,
     "scrollY": 462.5
+  },
+  {
+    "id": 126,
+    "expanded": false,
+    "name": "MACHINE_VERT",
+    "order": 119,
+    "parentId": 110,
+    "scrollX": 491,
+    "scrollY": 517.5
   }
 ]

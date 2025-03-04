@@ -18433,10 +18433,124 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "se _NarrateurGrossePileCaillouxPoche"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "La grosse pile de cailloux gris sort un papier de sa..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "poche?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 3,
+        "parameters": [
+          {
+            "name": "Paper",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 3,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "se _GrossepilecaillouxgrisNvmGogo"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "UIUI5",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Oh."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Désolé, je n'ai rien dis."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "Vous pouvez aller sauter dans le grand trou"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "directement. Chop chop."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 3,
+        "parameters": []
+      },
+      {
         "code": 117,
         "indent": 3,
         "parameters": [
           12
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 3,
+        "parameters": [
+          71,
+          71,
+          0
         ]
       },
       {
@@ -18515,53 +18629,24 @@
         ]
       },
       {
-        "code": 251,
-        "indent": 4,
-        "parameters": []
-      },
-      {
-        "code": 356,
+        "code": 401,
         "indent": 4,
         "parameters": [
-          "se _GrossepilecaillouxgrisHintHintSud"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "UIUI5",
-          1,
-          0,
-          2
+          ""
         ]
       },
       {
         "code": 401,
         "indent": 4,
         "parameters": [
-          "Cependant... je craigne que vous n'êtes pas"
+          "Allez sauter dans le trou!"
         ]
       },
       {
         "code": 401,
         "indent": 4,
         "parameters": [
-          "encore prêts."
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "Vous devriez visiter le bout sud du Monde "
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "avec la Géologue."
+          "Chop chop."
         ]
       },
       {

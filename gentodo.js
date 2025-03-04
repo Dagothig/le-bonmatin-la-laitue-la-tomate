@@ -64,6 +64,12 @@ const sectionsByNameToLinesMD = sectionsByName =>
     ])
     .join(os.EOL + os.EOL);
 
+const toNotify = [];
+function out(...parts) {
+    console.log(...parts);
+    toNotify.push(parts.join(" "));
+}
+
 (async () => {
     const $audioFiles = fs.readdir("audio/se");
     const $wordFiles = fs.readdir("audio/word");
@@ -206,7 +212,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
 
         const newText = JSON.stringify(json, null, 2).replace(/\n/g, os.EOL);
         if (newText !== text) {
-            console.log("Formatting", dataFile);
+            out("Formatting", dataFile);
             await fs.writeFile("data/" + dataFile, newText);
         }
     }
@@ -250,7 +256,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
     }
     const newWalkthroughText = JSON.stringify(walkthrough, null, 2).replace(/\n/g, os.EOL);
     if (walkthroughText !== newWalkthroughText) {
-        console.log("Updating walkthrough");
+        out("Updating walkthrough");
         await fs.writeFile("data/Walkthrough.json", newWalkthroughText);
     }
 
@@ -288,8 +294,8 @@ const sectionsByNameToLinesMD = sectionsByName =>
     timestamps.push(["Compter et catégoriser les lignes", new Date()]);
 
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
-    if (knownLinesText !== newKnownLinesText || true) {
-        console.log("Writing lines");
+    if (knownLinesText !== newKnownLinesText) {
+        out("Writing lines");
 
         const linesData = Object.entries(knownLinesByName)
             .filter(([name]) => name !== "SFX")
@@ -311,7 +317,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
         const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[0]));
         for (const word of missingWords) {
-            console.log("Generated " + word);
+            out("Generated " + word);
             const fp = "./audio/word/" + word + ".ogg";
             const espeak = spawnSync(
                 "espeak",
@@ -326,20 +332,20 @@ const sectionsByNameToLinesMD = sectionsByName =>
         }
 
         for (const file of obsoleteWordFiles) {
-            console.log("Removed " + file);
+            out("Removed " + file);
             await fs.unlink("audio/word/" + file);
         }
     }
 
     const newTodosText = sectionsByNameToLinesMD(todosByName);
     if (todosText !== newTodosText) {
-        console.log("Writing lines TODO");
+        out("Writing lines TODO");
         await fs.writeFile("LignesTODO.md", newTodosText);
     }
 
     for (const [file, content] of missingAudioFiles) {
-        console.log("Generated " + file);
-        console.log("  > " + content);
+        out("Generated " + file);
+        out("  > " + content);
         const fp = "./audio/se/" + file + ".ogg";
         const espeak = spawnSync(
             "espeak",
@@ -354,7 +360,7 @@ const sectionsByNameToLinesMD = sectionsByName =>
     }
 
     for (const [file] of obsoleteAudioFiles) {
-        console.log("Removed " + file);
+        out("Removed " + file);
         await fs.unlink("audio/se/" + file + ".ogg");
     }
 
@@ -382,4 +388,11 @@ const sectionsByNameToLinesMD = sectionsByName =>
         .join("\n"));
 
     console.log();
+
+    if (toNotify.length)
+        for (let i = 0; i < toNotify.length; i += 3)
+        spawnSync(
+            "notify-send",
+            ["-a", "BMLT", toNotify.slice(i, i + 3).join("\n")],
+            { stdio: "inherit" });
 })();

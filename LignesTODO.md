@@ -989,6 +989,10 @@ _NarrateurVert6
 _NarrateurLaPancarteLit
 > La pancarte lit:
 
+_NarrateurGrossePileCaillouxPoche
+> La grosse pile de cailloux gris sort un papier de sa...\
+> poche?
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2535,9 +2539,8 @@ _ProtagonisteHissezLesVoiles
 _ProtagonisteATerreMoussaillons
 > À terre moussaillons!
 
-_ProtagonisteVertDescendreEnBas
-> Et pourtant je dis ça... mais je sais pas\
-> pourquoi, je vois du vert en bas et...
+_ProtagonisteOnGrimpe
+> On grimpe!
 
 ### Vieux
 
@@ -3043,6 +3046,12 @@ _GabspartVeutRefuserLoremIpsum2
 _GabspartWwwelchiorYPersonnifieQuiYVeut
 > Peu importe, Wwwelchior y personnifie qui y\
 > veut, honnêtement.
+
+_GabspartReviensAvecGeologue
+> Je suis sûr que si on revenait avec la\
+> Géologue pis qu'on jasait avec la grosse\
+> pile de cailloux gris tu verrais ça\
+> différement.
 
 ### Wwwelchior
 
@@ -4654,7 +4663,16 @@ _GrossepilecaillouxgrisADesContacts
 > Lieux Supérieurs, oui.
 
 _GrossepilecaillouxgrisViteMenacePlantaire
-> Vite, il faut halter la menace plantaire!
+> Vite, il faut halter la menace plantaire!\
+> \
+> Allez sauter dans le trou!\
+> Chop chop.
+
+_GrossepilecaillouxgrisNvmGogo
+> Oh.\
+> Désolé, je n'ai rien dis.\
+> Vous pouvez aller sauter dans le grand trou\
+> directement. Chop chop.
 
 ### Petitepilecaillouxgris
 

@@ -10,6 +10,7 @@
 * Post-bonsoir
 * Les fights de plantes sont plaaaaates
 * Cossin DODO?
+* Le poulet est fucked
 
 ### Musique
 
