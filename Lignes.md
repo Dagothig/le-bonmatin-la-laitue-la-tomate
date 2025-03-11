@@ -4379,6 +4379,14 @@ _ProtagonisteBouchePateuse
 > J'ai la bouche un peu pâteuse.\
 > Et plusieurs questions.
 
+_ProtagonisteTocTocToc1
+> Ok, c'est bon, je peux faire ça.\
+> \
+> Qui est là?
+
+_ProtagonisteTocTocToc2
+> Roche qui?
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -7360,6 +7368,26 @@ _PetitestalagmitejauneNotreGrotte
 > Regardez-les là-bas! Qui se vautrent au\
 > milieu de l'étang! C'était notre grotte!
 
+_PetitestalagmitejauneAutreAnxieux
+> Vous pouvez pas calmer l'autre? Son stress\
+> m'érode tellement c'est un torrent.
+
+_PetitestalagmitejauneCaVaBenAller
+> Tout va bien aller.\
+> Je ne suis pas en file vers cette...\
+> Chose.\
+> Tout va bien aller.
+
+_PetitestalagmitejauneTocTocToc1
+> Toc toc toc.
+
+_PetitestalagmitejauneTocTocToc2
+> Roche.
+
+_PetitestalagmitejauneTocTocToc3
+> Roche qui roule n'amasse pas mousse, mais\
+> je roule paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas.
+
 ### Grossestalagmitejaune
 
 _GrossestalagmitejauneRegardesMaman
@@ -7422,6 +7450,13 @@ _GrossestalagmitejaunePousse
 
 _GrossestalagmitejauneAaaa
 > Aaaaah! Les plantes, les plantes!
+
+_GrossestalagmitejauneOhNonJeSuisProchain
+> Oh \shakenon\resetshake.\
+> Je suis la prochaine à passer!?
+
+_GrossestalagmitejauneHalp
+> Halp.
 
 ### Premiere
 
@@ -8576,6 +8611,14 @@ _PetitestalagmiteverteMauvaiseBlague
 _PetitestalagmitevertePerdue
 > Je suis perdue!
 
+_PetitestalagmiteverteVeutDuVert
+> Vous avez pas... un p'tit peu de vert?\
+> Allez... encore un peu!
+
+_PetitestalagmiteverteRochePateuse
+> Vous avez pas la roche un peu pâteuse,\
+> vous?
+
 ### Grossestalagmiteverte
 
 _GrossestalagmitevertePousseChlorophylle
@@ -8597,6 +8640,10 @@ _GrossestalagmiteverteDrip
 > Drip drip drip.\
 > Les gouttes tombent.\
 > PLIC PLIC PLIC.
+
+_GrossestalagmiteverteVertBonneQualite
+> Ce Vert de Machine Verte est vraiment de\
+> bonne qualité!
 
 ### Grosninja
 
