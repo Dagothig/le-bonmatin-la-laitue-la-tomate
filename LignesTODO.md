@@ -993,6 +993,13 @@ _NarrateurGrossePileCaillouxPoche
 > La grosse pile de cailloux gris sort un papier de sa...\
 > poche?
 
+_NarrateurToutVert
+> Vous êtes tout vert!
+
+_NarrateurCaPrendPorteOuverte
+> Sans la porte ouverte, ça ne donne pas grand chose\
+> d'embarquer.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2542,6 +2549,12 @@ _ProtagonisteATerreMoussaillons
 _ProtagonisteOnGrimpe
 > On grimpe!
 
+_ProtagonisteBouchePateuse
+> Mmmh.\
+> \
+> J'ai la bouche un peu pâteuse.\
+> Et plusieurs questions.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -3052,6 +3065,9 @@ _GabspartReviensAvecGeologue
 > Géologue pis qu'on jasait avec la grosse\
 > pile de cailloux gris tu verrais ça\
 > différement.
+
+_GabspartCaCestPourPlusTard
+> Nan, ça c'est pour plus tard.
 
 ### Wwwelchior
 

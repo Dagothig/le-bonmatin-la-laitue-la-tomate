@@ -4099,14 +4099,28 @@ Input.keyMapper[68] = "right"; // d
         function realMoveSpeed(realMoveSpeed) {
             return realMoveSpeed.call(this) * ((this.sizeFactor() || 1) + 1) / 2;
         },
+        function update(update) {
+            update.call(this);
+            if (this._shakeDur > 0) {
+                if (!(--this._shakeDur)) {
+                    this._shakeInt = 0;
+                }
+            }
+        },
         function screenX(screenX) {
-            return screenX.call(this) + (this._offsetX || 0);
+            const shake = this._shakeInt > 0 ? (Math.random() - 0.5) * this._shakeInt : 0;
+            return screenX.call(this) + (this._offsetX || 0) + shake;
         },
         function screenY(screenY) {
-            return screenY.call(this) + (this._offsetY || 0);
+            const shake = this._shakeInt > 0 ? (Math.random() - 0.5) * this._shakeInt : 0;
+            return screenY.call(this) + (this._offsetY || 0) + shake;
         },
         function screenZ(screenZ) {
             return screenZ.call(this) + (this._offsetZ || 0);
+        },
+        function shake(_, dur, int = 1) {
+            this._shakeDur = dur;
+            this._shakeInt = int * 2;
         });
 
     override(Game_Player.prototype,

@@ -369,6 +369,15 @@ Souffler
 HeilleTuDors
 > Heille! Tu dors!
 
+Open3
+> Open3
+
+Item2
+> Item2
+
+Pollen
+> Pollen
+
 ### Narrateur
 
 _NarrateurBonjours
@@ -1961,6 +1970,13 @@ _NarrateurLaPancarteLit
 _NarrateurGrossePileCaillouxPoche
 > La grosse pile de cailloux gris sort un papier de sa...\
 > poche?
+
+_NarrateurToutVert
+> Vous êtes tout vert!
+
+_NarrateurCaPrendPorteOuverte
+> Sans la porte ouverte, ça ne donne pas grand chose\
+> d'embarquer.
 
 ### Protagoniste
 
@@ -4357,6 +4373,12 @@ _ProtagonisteATerreMoussaillons
 _ProtagonisteOnGrimpe
 > On grimpe!
 
+_ProtagonisteBouchePateuse
+> Mmmh.\
+> \
+> J'ai la bouche un peu pâteuse.\
+> Et plusieurs questions.
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -5725,6 +5747,9 @@ _GabspartReviensAvecGeologue
 > Géologue pis qu'on jasait avec la grosse\
 > pile de cailloux gris tu verrais ça\
 > différement.
+
+_GabspartCaCestPourPlusTard
+> Nan, ça c'est pour plus tard.
 
 ### Gaboue
 
