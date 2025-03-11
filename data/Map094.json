@@ -244,7 +244,7 @@
     5927,
     6278,
     6284,
-    2850,
+    2836,
     2836,
     2817,
     2816,
@@ -1518,6 +1518,7 @@
     3965,
     0,
     0,
+    3150,
     0,
     0,
     0,
@@ -1569,8 +1570,7 @@
     0,
     0,
     0,
-    0,
-    0,
+    3150,
     0,
     0,
     0,
@@ -1611,7 +1611,7 @@
     0,
     0,
     0,
-    0,
+    3150,
     0,
     0,
     0,
@@ -1821,7 +1821,7 @@
     0,
     0,
     0,
-    0,
+    3150,
     3963,
     3949,
     3958,
@@ -1844,7 +1844,7 @@
     0,
     0,
     0,
-    0,
+    3150,
     3960,
     3930,
     3956,
@@ -23700,6 +23700,520 @@
       "x": 26,
       "y": 12
     },
-    null
+    {
+      "id": 43,
+      "name": "EV043",
+      "note": "<light>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door3",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNeSautePas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Non. Je saute pas."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  128
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 14
+    },
+    {
+      "id": 44,
+      "name": "EV044",
+      "note": "<light>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door3",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNeSautePas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Non. Je saute pas."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  128
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 7
+    },
+    {
+      "id": 45,
+      "name": "EV045",
+      "note": "<light>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door3",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNeSautePas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Non. Je saute pas."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  128
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 21,
+      "y": 13
+    },
+    {
+      "id": 46,
+      "name": "EV046",
+      "note": "<light>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door3",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNeSautePas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Non. Je saute pas."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  128
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 24,
+      "y": 4
+    },
+    {
+      "id": 47,
+      "name": "EV047",
+      "note": "<light><offsetY:24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door3",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "se _ProtagonisteNeSautePas"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "UIUI",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Non. Je saute pas."
+              ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 43,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 42,
+                "parameters": [
+                  128
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 6,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 6
+    }
   ]
 }

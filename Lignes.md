@@ -4387,6 +4387,9 @@ _ProtagonisteTocTocToc1
 _ProtagonisteTocTocToc2
 > Roche qui?
 
+_ProtagonisteNeSautePas
+> Non. Je saute pas.
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
