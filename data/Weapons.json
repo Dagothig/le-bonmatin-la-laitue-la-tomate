@@ -1,19 +1,561 @@
 [
-null,
-{"id":1,"animationId":6,"description":"Pointue et solide. Les roches tremblent.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":216,"name":"Pioche","note":"","params":[0,0,15,0,0,0,-10,0],"price":0,"wtypeId":4},
-{"id":2,"animationId":6,"description":"L'arme Canonique des Protagonistes débutants.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":96,"name":"Dague","note":"","params":[0,0,10,0,0,0,0,0],"price":25,"wtypeId":1},
-{"id":3,"animationId":6,"description":"L'arme Canonique.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":97,"name":"Épée","note":"","params":[0,0,15,0,0,0,0,0],"price":50,"wtypeId":2},
-{"id":4,"animationId":1,"description":"Un poid sur un baton. Pour taper fort.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":108,"name":"Massue","note":"","params":[0,0,12,0,0,0,-5,0],"price":30,"wtypeId":13},
-{"id":5,"animationId":1,"description":"Le Futur Prochain Déjà Vu.\nLe Précieux du Gaboué.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":43,"dataId":47,"value":1}],"iconIndex":110,"name":"Bronche","note":"","params":[0,0,25,0,0,0,0,0],"price":0,"wtypeId":14},
-{"id":6,"animationId":1,"description":"C'est pas pareil.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":110,"name":"Baton","note":"","params":[0,0,12,0,0,0,-5,0],"price":0,"wtypeId":14},
-{"id":7,"animationId":145,"description":"Un peu molle et croustillante.\n+25 MP Max.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":108,"name":"Patte de Poulet","note":"","params":[0,25,5,0,0,0,0,100],"price":0,"wtypeId":15},
-{"id":8,"animationId":1,"description":"C'est comme une massue, mais plus raffiné.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":108,"name":"Marteau","note":"","params":[0,0,13,0,0,0,-4,0],"price":40,"wtypeId":13},
-{"id":9,"animationId":142,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":76,"name":"Bec","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":16},
-{"id":10,"animationId":1,"description":"Fait léviter très légèrement le porteur.\nSinon c'est comme un baton.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":101,"name":"Canne de Lévitation","note":"<state:33>","params":[0,0,12,0,0,0,-5,0],"price":0,"wtypeId":6},
-{"id":11,"animationId":11,"description":"Une lance enchantée afin qu'elle puisse être lancée.\nIl est inscrit \"C'est pas toujours le cas?\"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":43,"dataId":62,"value":1}],"iconIndex":107,"name":"Lance de Lancement","note":"","params":[0,0,14,0,0,0,10,0],"price":0,"wtypeId":12},
-{"id":12,"animationId":6,"description":"Mettons qu'il vous faut compenser pour quelque chose. \nPrends deux mains, mais +5 def en posture défensive.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":54,"dataId":2,"value":1},{"code":23,"dataId":1,"value":0.05}],"iconIndex":97,"name":"Grosse Épée","note":"","params":[0,0,18,0,0,0,5,0],"price":60,"wtypeId":2},
-{"id":13,"animationId":11,"description":"Réellement juste un long baton pointu. Prends deux \nmains, mais c'est pratique pour empaler de loin.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":54,"dataId":2,"value":1}],"iconIndex":107,"name":"Lance","note":"","params":[0,0,15,0,0,0,25,0],"price":40,"wtypeId":12},
-{"id":14,"animationId":109,"description":"Cette épée magique confère une force inouie.\nAttention ça fait perdre beaucoup de gameplay.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":126,"name":"Excalibarre","note":"<skill_id:5>\n<stat-atk:9999>","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":17},
-{"id":15,"animationId":6,"description":"Contrairement à une pelle tout usage, cette pelle\nne fonctionne que pour les lieux de repos éternels.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":217,"name":"Pelle Mortuaire","note":"","params":[0,0,15,0,0,0,-10,0],"price":0,"wtypeId":4},
-{"id":16,"animationId":1,"description":"Un grand baton, bien stylé, avec une grosse gemme\nau bout. Ça permet de lancer des boules de feu, ça.","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":43,"dataId":86,"value":1}],"iconIndex":101,"name":"Baton stylé","note":"","params":[0,10,12,0,10,0,-5,0],"price":50,"wtypeId":6}
+  null,
+  {
+    "id": 1,
+    "animationId": 6,
+    "description": "Pointue et solide. Les roches tremblent.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 216,
+    "name": "Pioche",
+    "note": "",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      -10,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 4
+  },
+  {
+    "id": 2,
+    "animationId": 6,
+    "description": "L'arme Canonique des Protagonistes débutants.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 96,
+    "name": "Dague",
+    "note": "",
+    "params": [
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 25,
+    "wtypeId": 1
+  },
+  {
+    "id": 3,
+    "animationId": 6,
+    "description": "L'arme Canonique.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 97,
+    "name": "Épée",
+    "note": "",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50,
+    "wtypeId": 2
+  },
+  {
+    "id": 4,
+    "animationId": 1,
+    "description": "Un poid sur un baton. Pour taper fort.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 108,
+    "name": "Massue",
+    "note": "",
+    "params": [
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 30,
+    "wtypeId": 13
+  },
+  {
+    "id": 5,
+    "animationId": 1,
+    "description": "Le Futur Prochain Déjà Vu.\nLe Précieux du Gaboué.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 47,
+        "value": 1
+      }
+    ],
+    "iconIndex": 110,
+    "name": "Bronche",
+    "note": "",
+    "params": [
+      0,
+      0,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 14
+  },
+  {
+    "id": 6,
+    "animationId": 1,
+    "description": "C'est pas pareil.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 110,
+    "name": "Baton",
+    "note": "",
+    "params": [
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 14
+  },
+  {
+    "id": 7,
+    "animationId": 145,
+    "description": "Un peu molle et croustillante.\n+25 MP Max.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 108,
+    "name": "Patte de Poulet",
+    "note": "",
+    "params": [
+      0,
+      25,
+      5,
+      0,
+      0,
+      0,
+      0,
+      100
+    ],
+    "price": 0,
+    "wtypeId": 15
+  },
+  {
+    "id": 8,
+    "animationId": 1,
+    "description": "C'est comme une massue, mais plus raffiné.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 108,
+    "name": "Marteau",
+    "note": "",
+    "params": [
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      -4,
+      0
+    ],
+    "price": 40,
+    "wtypeId": 13
+  },
+  {
+    "id": 9,
+    "animationId": 142,
+    "description": "",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 76,
+    "name": "Bec",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 16
+  },
+  {
+    "id": 10,
+    "animationId": 1,
+    "description": "Fait léviter très légèrement le porteur.\nSinon c'est comme un baton.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 101,
+    "name": "Canne de Lévitation",
+    "note": "<state:33>",
+    "params": [
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 6
+  },
+  {
+    "id": 11,
+    "animationId": 11,
+    "description": "Une lance enchantée afin qu'elle puisse être lancée.\nIl est inscrit \"C'est pas toujours le cas?\"",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 62,
+        "value": 1
+      }
+    ],
+    "iconIndex": 107,
+    "name": "Lance de Lancement",
+    "note": "",
+    "params": [
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 12
+  },
+  {
+    "id": 12,
+    "animationId": 6,
+    "description": "Mettons qu'il vous faut compenser pour quelque chose. \nPrends deux mains, mais +5 def en posture défensive.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 97,
+    "name": "Grosse Épée",
+    "note": "",
+    "params": [
+      0,
+      0,
+      18,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    "price": 60,
+    "wtypeId": 2
+  },
+  {
+    "id": 13,
+    "animationId": 11,
+    "description": "Réellement juste un long baton pointu. Prends deux \nmains, mais c'est pratique pour empaler de loin.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      }
+    ],
+    "iconIndex": 107,
+    "name": "Lance",
+    "note": "",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      25,
+      0
+    ],
+    "price": 40,
+    "wtypeId": 12
+  },
+  {
+    "id": 14,
+    "animationId": 109,
+    "description": "Cette épée magique confère une force inouie.\nAttention ça fait perdre beaucoup de gameplay.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 126,
+    "name": "Excalibarre",
+    "note": "<skill_id:5>\n<stat-atk:9999>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 17
+  },
+  {
+    "id": 15,
+    "animationId": 6,
+    "description": "Contrairement à une pelle tout usage, cette pelle\nne fonctionne que pour les lieux de repos éternels.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      }
+    ],
+    "iconIndex": 217,
+    "name": "Pelle Mortuaire",
+    "note": "",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      -10,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 4
+  },
+  {
+    "id": 16,
+    "animationId": 1,
+    "description": "Un grand baton, bien stylé, avec une grosse gemme\nau bout. Ça permet de lancer des boules de feu, ça.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 86,
+        "value": 1
+      }
+    ],
+    "iconIndex": 101,
+    "name": "Baton stylé",
+    "note": "",
+    "params": [
+      0,
+      10,
+      12,
+      0,
+      10,
+      0,
+      -5,
+      0
+    ],
+    "price": 50,
+    "wtypeId": 6
+  }
 ]

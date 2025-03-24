@@ -1,43 +1,1241 @@
 [
-null,
-{"id":1,"animationId":121,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Ça goûte le poulet! Même que je dirais, 5pt de poulet!\n- L'inventeur, probablement","effects":[{"code":42,"dataId":0,"value1":5,"value2":0},{"code":11,"dataId":0,"value1":0,"value2":5}],"hitType":0,"iconIndex":178,"itypeId":1,"name":"Élixir de Chair","note":"<oracle:2>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":2,"animationId":121,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Quant tu le bois, le DM se prend une soudaine envie \nd'ajouter 5pt de magie à ton personnage.","effects":[{"code":42,"dataId":1,"value1":5,"value2":0},{"code":12,"dataId":0,"value1":0,"value2":5}],"hitType":0,"iconIndex":178,"itypeId":1,"name":"Élixir de Magie","note":"<oracle:2>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":3,"animationId":141,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"C'est un peu piquant sur la langue.","effects":[],"hitType":0,"iconIndex":256,"itypeId":1,"name":"Radis","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":4,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous allez apprendre l'Adrénaline!\nPermet de prendre trois actions le prochain tour!","effects":[{"code":43,"dataId":13,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Adrénaline","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":5,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous allez apprendre la Chansonnette!\nEndort un ennemi 3 à 5 tours.","effects":[{"code":43,"dataId":21,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Chansonnette","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":6,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Sur la clé il est inscrit \n\"Il est toujours midi quelque part\"","effects":[],"hitType":0,"iconIndex":195,"itypeId":2,"name":"Clé du Temple du Bonjour","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":7,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Bien que la plus populaire des salutations, les\nConnaisseurs savent qu'elle est inférieure.","effects":[],"hitType":0,"iconIndex":163,"itypeId":2,"name":"Bonjour","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":8,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Sur la clé il est inscrit \n\"Je suis number wan!\"","effects":[],"hitType":0,"iconIndex":195,"itypeId":2,"name":"Clé de la Première","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":9,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un produit dérivé du Temple du Bonjour.\nComplètement beurré de \"BONJOUR\"s.","effects":[{"code":44,"dataId":1,"value1":1,"value2":0}],"hitType":0,"iconIndex":191,"itypeId":1,"name":"Parchemin du Bonjour","note":"","occasion":0,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":10,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un produit dérivé du Temple du Bonjour.\nIl y a un BONJOUR mal écrit dessus.","effects":[{"code":44,"dataId":3,"value1":1,"value2":0}],"hitType":0,"iconIndex":192,"itypeId":1,"name":"Carte postale du Bonjour","note":"","occasion":0,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":11,"animationId":141,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"C'est comestible!","effects":[{"code":21,"dataId":13,"value1":1,"value2":0}],"hitType":0,"iconIndex":266,"itypeId":1,"name":"Victuailles","note":"","occasion":0,"price":4,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":12,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une palette de bois avec \"Radeau\" d'inscrit sur le \ncôté.","effects":[{"code":44,"dataId":4,"value1":1,"value2":0}],"hitType":0,"iconIndex":288,"itypeId":2,"name":"Radeau","note":"","occasion":2,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":13,"animationId":153,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"50","type":4,"variance":0},"description":"L'essence même des Arcanes. Malheureusement, ne goûte \npas aussi bon qu'un radis. Redonne 50 points de magie.","effects":[],"hitType":0,"iconIndex":185,"itypeId":1,"name":"Poil de Barbe","note":"","occasion":0,"price":20,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":14,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous allez apprendre les Fins de Phrases!\nRestaure l'état d'un allié et lui redonne foi en lui!","effects":[{"code":43,"dataId":41,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Fins de Phrases","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":15,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une canne à pêche. Rien de très spécial.","effects":[],"hitType":0,"iconIndex":292,"itypeId":2,"name":"Canne à Pêche","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":16,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Elle permet de monter et de descendre à des endroits\nspécifiques et identifiés! Pas pour usage général.","effects":[],"hitType":0,"iconIndex":215,"itypeId":2,"name":"Corde Auto-Portante","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":17,"animationId":121,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Ça goûte le proto-poulet! Il y a un effet, \nprobablement.","effects":[{"code":44,"dataId":21,"value1":1,"value2":0}],"hitType":0,"iconIndex":178,"itypeId":1,"name":"Protolixir de Chair","note":"","occasion":2,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":18,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Tâchée de sang.","effects":[],"hitType":0,"iconIndex":195,"itypeId":2,"name":"Clé du Fermier","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":19,"animationId":169,"consumable":true,"damage":{"critical":false,"elementId":1,"formula":"25 * a.lukVar - b.def * b.lukVar","type":1,"variance":0},"description":"Une petite roche. Dans le doute vous pouvez tenter de\nle lancer. Ça assomme.","effects":[{"code":21,"dataId":15,"value1":1,"value2":0}],"hitType":1,"iconIndex":305,"itypeId":1,"name":"Caillou","note":"","occasion":1,"price":0,"repeats":1,"scope":1,"speed":0,"successRate":75,"tpGain":0},
-{"id":20,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Pratique si jamais vous devez cuire un oeuf.","effects":[],"hitType":0,"iconIndex":247,"itypeId":1,"name":"Poêle","note":"","occasion":3,"price":10,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":21,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Pratique si jamais vous devez cuire un oeuf.","effects":[],"hitType":0,"iconIndex":247,"itypeId":1,"name":"Cuillère de bois","note":"","occasion":3,"price":4,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":22,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une Pierre d'Âme tellement grosse que vous pouvez y\nmettre une Sainte Dorée!","effects":[],"hitType":0,"iconIndex":300,"itypeId":1,"name":"Grande Pierre d'Âme","note":"","occasion":0,"price":200,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":23,"animationId":141,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"10","type":3,"variance":0},"description":"Du bon poisson frais!\nRedonne 10 points de vie en plus de nutritionner!","effects":[{"code":21,"dataId":13,"value1":1,"value2":0}],"hitType":0,"iconIndex":260,"itypeId":1,"name":"Moûles","note":"","occasion":0,"price":5,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":24,"animationId":141,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Parfois oublier les choses quelques jours ça aide.\nNutritionne, alcoolise, redonne 50 points de stamina.","effects":[{"code":21,"dataId":13,"value1":1,"value2":0},{"code":21,"dataId":41,"value1":1,"value2":0},{"code":13,"dataId":0,"value1":50,"value2":0}],"hitType":0,"iconIndex":275,"itypeId":1,"name":"Breuvage fermenté","note":"","occasion":0,"price":10,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":25,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Clairement un trône.","effects":[],"hitType":0,"iconIndex":306,"itypeId":2,"name":"Chaise Municipale","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":26,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un coffre pas très beau. Il doit bien y avoir un \nCossin qui serait intéressé.","effects":[],"hitType":0,"iconIndex":210,"itypeId":2,"name":"Coffre Lette","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":27,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous allez apprendre à tournoyer pour gagner!\nEn tournoyant vous tapez tous les enemis!","effects":[{"code":43,"dataId":71,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Tactique Gagnante","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":28,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"La clé est un peu poussiéreuse mais c'est comme ça\nque vous savez qu'elle est pour un sous-sol.","effects":[],"hitType":0,"iconIndex":195,"itypeId":2,"name":"Clé du sous-sol","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":29,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"","effects":[{"code":44,"dataId":35,"value1":1,"value2":0}],"hitType":0,"iconIndex":193,"itypeId":2,"name":"Partition Matinale","note":"","occasion":2,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":30,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un produit dérivé du Temple du Bon Matin.\nIl y a un BON MATIN mal écrit dessus.","effects":[{"code":44,"dataId":36,"value1":1,"value2":0}],"hitType":0,"iconIndex":192,"itypeId":1,"name":"Carte postale du Bon Matin","note":"","occasion":0,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":31,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un bel exercice calligraphique.","effects":[{"code":44,"dataId":37,"value1":1,"value2":0}],"hitType":0,"iconIndex":191,"itypeId":1,"name":"Parchemin du Bon Matin","note":"","occasion":0,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":32,"animationId":141,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Terrible. Il est aux raisins.","effects":[{"code":21,"dataId":13,"value1":1,"value2":0}],"hitType":0,"iconIndex":266,"itypeId":1,"name":"Biscuit","note":"","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":33,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un livre avec le Secret du Vert dedans!\nPour une santé éternelle!","effects":[{"code":43,"dataId":82,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Secret du Vert","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":34,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Un livre avec le Sortilège Dangereux dedans!\nC'est chaud! C'est dangereux!","effects":[{"code":43,"dataId":83,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Sort Dangereux","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":35,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une bouteille vide.","effects":[],"hitType":0,"iconIndex":227,"itypeId":1,"name":"Bouteille","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":36,"animationId":158,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une bouteille remplie d'eau.","effects":[{"code":44,"dataId":44,"value1":1,"value2":0},{"code":21,"dataId":47,"value1":1,"value2":0}],"hitType":0,"iconIndex":228,"itypeId":1,"name":"Bouteille d'eau","note":"","occasion":2,"price":0,"repeats":1,"scope":8,"speed":0,"successRate":100,"tpGain":0},
-{"id":37,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Une petite gemme suspicieuse.\nComme un genre d'oeil de verre.","effects":[],"hitType":0,"iconIndex":302,"itypeId":2,"name":"Gemme suspicieuse","note":"","occasion":3,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":38,"animationId":0,"consumable":false,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous vous sentez seule? Vous trouver que vos voisins\nne respectent pas pour vos sédiments? Joignez le RRRR!","effects":[{"code":44,"dataId":45,"value1":1,"value2":0}],"hitType":0,"iconIndex":193,"itypeId":1,"name":"Pamphlet du RRRR","note":"","occasion":2,"price":0,"repeats":1,"scope":0,"speed":0,"successRate":100,"tpGain":0},
-{"id":39,"animationId":134,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Vous allez apprendre à Pointer du doigt!\nLa stratégie ultime pour rediriger l'attention!","effects":[{"code":43,"dataId":85,"value1":1,"value2":0}],"hitType":0,"iconIndex":187,"itypeId":1,"name":"Livre - Pointer du doigt","note":"<oracle:1>","occasion":0,"price":0,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0},
-{"id":40,"animationId":0,"consumable":true,"damage":{"critical":false,"elementId":0,"formula":"0","type":0,"variance":20},"description":"Rend quelqu'un tout Vert???","effects":[{"code":21,"dataId":45,"value1":1,"value2":0}],"hitType":0,"iconIndex":181,"itypeId":1,"name":"Feuille verte","note":"","occasion":0,"price":10,"repeats":1,"scope":7,"speed":0,"successRate":100,"tpGain":0}
+  null,
+  {
+    "id": 1,
+    "animationId": 121,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Ça goûte le poulet! Même que je dirais, 5pt de poulet!\n- L'inventeur, probablement",
+    "effects": [
+      {
+        "code": 42,
+        "dataId": 0,
+        "value1": 5,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 5
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 178,
+    "itypeId": 1,
+    "name": "Élixir de Chair",
+    "note": "<oracle:2>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 2,
+    "animationId": 121,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Quant tu le bois, le DM se prend une soudaine envie \nd'ajouter 5pt de magie à ton personnage.",
+    "effects": [
+      {
+        "code": 42,
+        "dataId": 1,
+        "value1": 5,
+        "value2": 0
+      },
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 5
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 178,
+    "itypeId": 1,
+    "name": "Élixir de Magie",
+    "note": "<oracle:2>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 3,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "C'est un peu piquant sur la langue.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 256,
+    "itypeId": 1,
+    "name": "Radis",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 4,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre l'Adrénaline!\nPermet de prendre trois actions le prochain tour!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Adrénaline",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 5,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre la Chansonnette!\nEndort un ennemi 3 à 5 tours.",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 21,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Chansonnette",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 6,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Sur la clé il est inscrit \n\"Il est toujours midi quelque part\"",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 195,
+    "itypeId": 2,
+    "name": "Clé du Temple du Bonjour",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 7,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Bien que la plus populaire des salutations, les\nConnaisseurs savent qu'elle est inférieure.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 163,
+    "itypeId": 2,
+    "name": "Bonjour",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 8,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Sur la clé il est inscrit \n\"Je suis number wan!\"",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 195,
+    "itypeId": 2,
+    "name": "Clé de la Première",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 9,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un produit dérivé du Temple du Bonjour.\nComplètement beurré de \"BONJOUR\"s.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 191,
+    "itypeId": 1,
+    "name": "Parchemin du Bonjour",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 10,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un produit dérivé du Temple du Bonjour.\nIl y a un BONJOUR mal écrit dessus.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 3,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 192,
+    "itypeId": 1,
+    "name": "Carte postale du Bonjour",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 11,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "C'est comestible!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 266,
+    "itypeId": 1,
+    "name": "Victuailles",
+    "note": "",
+    "occasion": 0,
+    "price": 4,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 12,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une palette de bois avec \"Radeau\" d'inscrit sur le \ncôté.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 288,
+    "itypeId": 2,
+    "name": "Radeau",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 13,
+    "animationId": 153,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "50",
+      "type": 4,
+      "variance": 0
+    },
+    "description": "L'essence même des Arcanes. Malheureusement, ne goûte \npas aussi bon qu'un radis. Redonne 50 points de magie.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 185,
+    "itypeId": 1,
+    "name": "Poil de Barbe",
+    "note": "",
+    "occasion": 0,
+    "price": 20,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 14,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre les Fins de Phrases!\nRestaure l'état d'un allié et lui redonne foi en lui!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 41,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Fins de Phrases",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 15,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une canne à pêche. Rien de très spécial.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 292,
+    "itypeId": 2,
+    "name": "Canne à Pêche",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 16,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Elle permet de monter et de descendre à des endroits\nspécifiques et identifiés! Pas pour usage général.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 215,
+    "itypeId": 2,
+    "name": "Corde Auto-Portante",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 17,
+    "animationId": 121,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Ça goûte le proto-poulet! Il y a un effet, \nprobablement.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 21,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 178,
+    "itypeId": 1,
+    "name": "Protolixir de Chair",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 18,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Tâchée de sang.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 195,
+    "itypeId": 2,
+    "name": "Clé du Fermier",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 19,
+    "animationId": 169,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 1,
+      "formula": "25 * a.lukVar - b.def * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "Une petite roche. Dans le doute vous pouvez tenter de\nle lancer. Ça assomme.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 15,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 305,
+    "itypeId": 1,
+    "name": "Caillou",
+    "note": "",
+    "occasion": 1,
+    "price": 0,
+    "repeats": 1,
+    "scope": 1,
+    "speed": 0,
+    "successRate": 75,
+    "tpGain": 0
+  },
+  {
+    "id": 20,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Pratique si jamais vous devez cuire un oeuf.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 247,
+    "itypeId": 1,
+    "name": "Poêle",
+    "note": "",
+    "occasion": 3,
+    "price": 10,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 21,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Pratique si jamais vous devez cuire un oeuf.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 247,
+    "itypeId": 1,
+    "name": "Cuillère de bois",
+    "note": "",
+    "occasion": 3,
+    "price": 4,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 22,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une Pierre d'Âme tellement grosse que vous pouvez y\nmettre une Sainte Dorée!",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 300,
+    "itypeId": 1,
+    "name": "Grande Pierre d'Âme",
+    "note": "",
+    "occasion": 0,
+    "price": 200,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 23,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "10",
+      "type": 3,
+      "variance": 0
+    },
+    "description": "Du bon poisson frais!\nRedonne 10 points de vie en plus de nutritionner!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 260,
+    "itypeId": 1,
+    "name": "Moûles",
+    "note": "",
+    "occasion": 0,
+    "price": 5,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 24,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Parfois oublier les choses quelques jours ça aide.\nNutritionne, alcoolise, redonne 50 points de stamina.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 41,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 13,
+        "dataId": 0,
+        "value1": 50,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 275,
+    "itypeId": 1,
+    "name": "Breuvage fermenté",
+    "note": "",
+    "occasion": 0,
+    "price": 10,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 25,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Clairement un trône.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Chaise Municipale",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 26,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un coffre pas très beau. Il doit bien y avoir un \nCossin qui serait intéressé.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 210,
+    "itypeId": 2,
+    "name": "Coffre Lette",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 27,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre à tournoyer pour gagner!\nEn tournoyant vous tapez tous les enemis!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 71,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Tactique Gagnante",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 28,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "La clé est un peu poussiéreuse mais c'est comme ça\nque vous savez qu'elle est pour un sous-sol.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 195,
+    "itypeId": 2,
+    "name": "Clé du sous-sol",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 29,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 35,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 193,
+    "itypeId": 2,
+    "name": "Partition Matinale",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 30,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un produit dérivé du Temple du Bon Matin.\nIl y a un BON MATIN mal écrit dessus.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 36,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 192,
+    "itypeId": 1,
+    "name": "Carte postale du Bon Matin",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 31,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un bel exercice calligraphique.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 37,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 191,
+    "itypeId": 1,
+    "name": "Parchemin du Bon Matin",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 32,
+    "animationId": 141,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Terrible. Il est aux raisins.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 13,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 266,
+    "itypeId": 1,
+    "name": "Biscuit",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 33,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un livre avec le Secret du Vert dedans!\nPour une santé éternelle!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 82,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Secret du Vert",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 34,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un livre avec le Sortilège Dangereux dedans!\nC'est chaud! C'est dangereux!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 83,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Sort Dangereux",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 35,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une bouteille vide.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 227,
+    "itypeId": 1,
+    "name": "Bouteille",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 36,
+    "animationId": 158,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une bouteille remplie d'eau.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 44,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 47,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 228,
+    "itypeId": 1,
+    "name": "Bouteille d'eau",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 8,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 37,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une petite gemme suspicieuse.\nComme un genre d'oeil de verre.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 302,
+    "itypeId": 2,
+    "name": "Gemme suspicieuse",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 38,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous vous sentez seule? Vous trouver que vos voisins\nne respectent pas pour vos sédiments? Joignez le RRRR!",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 45,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 193,
+    "itypeId": 1,
+    "name": "Pamphlet du RRRR",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 39,
+    "animationId": 134,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Vous allez apprendre à Pointer du doigt!\nLa stratégie ultime pour rediriger l'attention!",
+    "effects": [
+      {
+        "code": 43,
+        "dataId": 85,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 1,
+    "name": "Livre - Pointer du doigt",
+    "note": "<oracle:1>",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 40,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Rend quelqu'un tout Vert???",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 45,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 181,
+    "itypeId": 1,
+    "name": "Feuille verte",
+    "note": "",
+    "occasion": 0,
+    "price": 10,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  }
 ]
