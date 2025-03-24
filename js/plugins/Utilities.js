@@ -4034,7 +4034,8 @@ Input.keyMapper[68] = "right"; // d
         red: 0x00ff8888,
         green: 0x0088ff88,
         blue: 0xff66bbff,
-        yellow: 0x00ffff88
+        yellow: 0x00ffff88,
+        brown: 0x00ffccaa,
     };
 
     const BLEND_MODES = {
@@ -4170,6 +4171,20 @@ Input.keyMapper[68] = "right"; // d
         },
         function sizeFactor() {
             return this._scale || 1;
+        });
+
+    override(Game_Map.prototype,
+        function isCounter(isCounter, x, y) {
+            if (isCounter.call(this, x, y)) {
+                return true;
+            }
+            for (const event of this.eventsXyNt(x, y)) {
+                const dataEvent = event.event();
+                if (dataEvent.meta && dataEvent.meta.counter) {
+                    return true;
+                }
+            }
+            return false;
         });
 
     override(Sprite_Character.prototype,
@@ -6192,7 +6207,8 @@ nicer_menus: { // Nicer (? lol) menus
         dim: 0xff424242,
         shaded: 0xff696969,
         cloudy: 0xffaaaaaa,
-        tome: 0xff0088ff
+        tome: 0xff0088ff,
+        black: 0x00000000
     };
     const playerDefautLightSize = {
         shaded: 800,
@@ -6208,6 +6224,11 @@ nicer_menus: { // Nicer (? lol) menus
             img: ImageManager.loadSystem("LightCone512"),
             offsetX: 0,
             offsetY: 128,
+        },
+        square: {
+            img: ImageManager.loadSystem("LightSquare512"),
+            offsetX: 0,
+            offsetY: 0,
         }
     };
 
@@ -6255,7 +6276,9 @@ nicer_menus: { // Nicer (? lol) menus
         function refresh(refresh) {
             refresh.call(this);
             const event = this.event();
-            if (event.meta && event.meta.light) {
+            if ((this.lightSize === null || this.lightSize === undefined) &&
+                event.meta && event.meta.light
+            ) {
                 const split = event.meta.light.split ? event.meta.light.split(",") : [];
                 this.lightTint = tints[(split[0] || "").trim()] || tints.white;
                 this.lightSize = Number.parseInt(split[1]) || defaultLightSize;
@@ -6869,4 +6892,23 @@ const ACCEPTED_LUTIN_NAMES = [
                 update.call(this);
             }
         });
+}
+
+{ // Bonnuit RDC
+    window.bonnuit_rdc_rooms = {
+        100: [3, 6],
+        101: [11, 6],
+        102: [19, 6],
+        103: [37, 6],
+        104: [45, 6],
+        105: [53, 6],
+        106: [3, 19],
+        107: [11, 19],
+        108: [19, 19],
+        109: [37, 19],
+        110: [45, 19],
+        111: [53, 19],
+        112: [27, 6],
+        113: [29, 19]
+    }
 }

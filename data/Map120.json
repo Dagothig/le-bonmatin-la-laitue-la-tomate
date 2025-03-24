@@ -583,8 +583,8 @@
     0,
     5923,
     5927,
-    6274,
-    6274,
+    6282,
+    6282,
     6278,
     1561,
     7632,
@@ -634,8 +634,8 @@
     5923,
     5927,
     6278,
-    6280,
-    6280,
+    2481,
+    2482,
     6284,
     2858,
     1560,
@@ -685,10 +685,10 @@
     5927,
     6278,
     6284,
-    2954,
-    2859,
-    2838,
-    2823,
+    2064,
+    2072,
+    2851,
+    2847,
     2861,
     5920,
     6282,
@@ -735,11 +735,11 @@
     5927,
     6278,
     6284,
-    2946,
-    2919,
-    2957,
-    2834,
-    2854,
+    2954,
+    2064,
+    2072,
+    2860,
+    2090,
     5923,
     5927,
     0,
@@ -786,12 +786,12 @@
     6278,
     6284,
     2946,
-    2917,
-    2950,
-    2851,
-    2855,
-    5923,
-    5927,
+    2938,
+    2064,
+    2050,
+    2068,
+    2074,
+    5920,
     6286,
     0,
     0,
@@ -838,11 +838,11 @@
     2955,
     2941,
     2950,
-    2850,
-    2842,
+    2088,
+    2056,
     5923,
+    5921,
     5927,
-    6286,
     0,
     0,
     0,
@@ -889,11 +889,11 @@
     2836,
     2836,
     2836,
-    2821,
-    2854,
+    2852,
+    2088,
     5920,
+    6282,
     6286,
-    0,
     0,
     0,
     0,
@@ -2013,7 +2013,7 @@
     0,
     0,
     0,
-    3963,
+    3955,
     3953,
     3959,
     0,
@@ -2064,7 +2064,7 @@
     0,
     0,
     0,
-    0,
+    3964,
     0,
     0,
     0,
@@ -4714,8 +4714,8 @@
     0,
     163,
     0,
-    0,
-    0,
+    35,
+    35,
     0,
     0,
     0,
@@ -5989,7 +5989,7 @@
     0,
     5,
     5,
-    5,
+    0,
     0,
     0,
     0,
@@ -12613,9 +12613,9 @@
               "indent": 0,
               "parameters": [
                 0,
-                120,
-                4,
-                5,
+                121,
+                7,
+                11,
                 0,
                 0
               ]
@@ -13539,8 +13539,126 @@
       "x": 28,
       "y": 18
     },
-    null,
-    null,
+    {
+      "id": 31,
+      "name": "EV031",
+      "note": "<offsetX:16>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 41,
+      "y": 12
+    },
+    {
+      "id": 32,
+      "name": "EV032",
+      "note": "<offsetX:-16>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 42,
+      "y": 12
+    },
     null,
     null,
     null,

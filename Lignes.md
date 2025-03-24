@@ -8018,7 +8018,7 @@ _BalthathigBottesSautillage
 _BalthathigManqueAcrobatieProd2
 > Discu-quoi? Nonon, vous allez voir, quand\
 > votre Acrobatie sera un peu plus haute,\
-> vous allez filer à gaucher et à droite du\
+> vous allez filer à gauche et à droite du\
 > Monde!
 
 _BalthathigChandailPers

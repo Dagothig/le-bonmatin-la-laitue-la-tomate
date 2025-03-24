@@ -18814,5 +18814,357 @@
     "name": "Dialogue Grota",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 52,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "const char = this.character();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "char.waitCount = char.waitCount || (((Math.random() * 4)|0) + 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "this.wait(char.waitCount);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "const char = this.character();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "let dst = $gameMap.distance("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  char._realX, char._realY,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gamePlayer._realX, $gamePlayer._realY);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (dst < 5) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  char.lightSize = 640;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "} else {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  char.lightSize = 0;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "this.wait(3 - char.waitCount);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Bonnuit RDC lumières",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 53,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          5,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          3,
+          5,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 285,
+        "indent": 0,
+        "parameters": [
+          3,
+          6,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          4,
+          "window.bonnuit_rdc_rooms[$gvars.TMP_C][0]"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          4,
+          "window.bonnuit_rdc_rooms[$gvars.TMP_C][1]"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          6,
+          -1,
+          2
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          2,
+          2,
+          2,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          6,
+          -1,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          1,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          6,
+          -1,
+          6
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          2,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          6,
+          -1,
+          8
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          2,
+          2,
+          1,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          4,
+          4,
+          0,
+          3,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          1,
+          4,
+          1,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 12,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 12,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Bonnuit RDC chemin",
+    "switchId": 1,
+    "trigger": 0
   }
 ]
