@@ -6169,15 +6169,41 @@ nicer_menus: { // Nicer (? lol) menus
         });
 
     override(Spriteset_Map.prototype,
+        function createParallax(createParallax) {
+            createParallax.call(this);
+            const bgExpand = $dataMap.meta.bgExpand || "";
+            this._parallax.expandLeft = bgExpand.includes("l");
+            this._parallax.expandTop = bgExpand.includes("t");
+            this._parallax.expandRight = bgExpand.includes("r");
+            this._parallax.expandBottom = bgExpand.includes("b");
+        },
         function update(update) {
             update.call(this);
 
             const emptyX = Math.max($gameMap.screenTileX() - $gameMap.width(), 0);
             const emptyY = Math.max($gameMap.screenTileY() - $gameMap.height(), 0);
-            const x = Math.ceil((emptyX / 2) * $gameMap.tileWidth());
-            const y = Math.ceil((emptyY / 2) * $gameMap.tileHeight());
-            const w = ($gameMap.screenTileX() - emptyX) * $gameMap.tileWidth();
-            const h = ($gameMap.screenTileY() - emptyY) * $gameMap.tileHeight();
+            let x = Math.ceil((emptyX / 2) * $gameMap.tileWidth());
+            let y = Math.ceil((emptyY / 2) * $gameMap.tileHeight());
+            let w = ($gameMap.screenTileX() - emptyX) * $gameMap.tileWidth();
+            let h = ($gameMap.screenTileY() - emptyY) * $gameMap.tileHeight();
+
+            if (this._parallax.expandRight) {
+                w += x;
+            }
+
+            if (this._parallax.expandLeft) {
+                w += x;
+                x = 0;
+            }
+
+            if (this._parallax.expandBottom) {
+                h += y;
+            }
+
+            if (this._parallax.expandTop) {
+                h += y;
+                y = 0;
+            }
 
             if (this._parallax.bitmap) {
                 this._parallax.move(x, y, w, h)

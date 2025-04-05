@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 52,
-  "note": "<bgmFilter:farAway>",
+  "note": "<bgmFilter:farAway>\n<bgExpand:t>",
   "parallaxLoopX": true,
   "parallaxLoopY": false,
   "parallaxName": "Sunset",

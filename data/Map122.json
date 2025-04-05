@@ -6831,7 +6831,7 @@
     0,
     5,
     0,
-    0,
+    5,
     0,
     5,
     0,
@@ -9086,7 +9086,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "<light:dim>",
+      "note": "",
       "pages": [
         {
           "conditions": {
@@ -9592,7 +9592,7 @@
     },
     {
       "id": 7,
-      "name": "EV007",
+      "name": "LumiereRuine1",
       "note": "<light:shaded,480,square>",
       "pages": [
         {
@@ -9652,7 +9652,7 @@
     },
     {
       "id": 8,
-      "name": "EV008",
+      "name": "LumiereRuine2",
       "note": "<light:white,480,square><offsetX:16><offsetY:-16><scale:0.5>",
       "pages": [
         {
@@ -9730,7 +9730,7 @@
     },
     {
       "id": 9,
-      "name": "EV009",
+      "name": "LumiereRuine4",
       "note": "<light:shaded,480,square>",
       "pages": [
         {
@@ -9790,7 +9790,7 @@
     },
     {
       "id": 10,
-      "name": "EV010",
+      "name": "LumiereRuine3",
       "note": "<light:white,480,square><offsetX:-16><offsetY:-16><scale:0.5>",
       "pages": [
         {
@@ -18753,6 +18753,223 @@
       ],
       "x": 49,
       "y": 15
+    },
+    {
+      "id": 95,
+      "name": "EV095",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameMap.event($gameMap.eventsByName.LumiereRuine1).lightSize ="
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameMap.event($gameMap.eventsByName.LumiereRuine2).lightSize ="
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameMap.event($gameMap.eventsByName.LumiereRuine3).lightSize ="
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameMap.event($gameMap.eventsByName.LumiereRuine4).lightSize ="
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.x >= 24 && $gamePlayer.x <= 32 ? 480 : 0;"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 12
+    },
+    {
+      "id": 96,
+      "name": "EV096",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                123,
+                12,
+                18,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 28,
+      "y": 1
     }
   ]
 }

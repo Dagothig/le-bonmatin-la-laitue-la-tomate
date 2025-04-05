@@ -19115,6 +19115,41 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "AudioManager.playSe({ "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  name: \"Wind4\", "
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  pitch: 80 + Math.random() * 40,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  pan: -50 + Math.random() * 100"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
         "code": 201,
         "indent": 0,
         "parameters": [

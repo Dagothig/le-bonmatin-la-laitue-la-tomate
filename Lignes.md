@@ -5762,6 +5762,12 @@ _GabspartReviensAvecGeologue
 _GabspartCaCestPourPlusTard
 > Nan, ça c'est pour plus tard.
 
+_GabspartHintPioche
+> Oh mais j'y pense.\
+> Mettons qu'on doit retourner au petit\
+> passage montagneux pour trouver un\
+> implément pointu?
+
 ### Gaboue
 
 _GaboueGaboue1
@@ -8800,7 +8806,7 @@ _JesusAllezFouillerBonsoir
 > l'investiguer.
 
 _JesusAllezFouillerBonnuit
-> Pour ce qui est du Temple du Bonne Nuit...\
+> Pour ce qui est du Temple du Bonnuit...\
 > La légende veut qu'il se trouve sous terre.\
 > Peut-être que le RRRR saurait quelque\
 > chose.
