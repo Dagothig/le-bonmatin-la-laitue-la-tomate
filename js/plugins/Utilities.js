@@ -4035,6 +4035,10 @@ Input.keyMapper[68] = "right"; // d
         green: 0x0088ff88,
         blue: 0xff66bbff,
         yellow: 0x00ffff88,
+        pure_red: 0x00ff0000,
+        pure_green: 0x0000ff00,
+        pure_blue: 0xff0000ff,
+        pure_yellow: 0x00ffff00,
         brown: 0x00ffccaa,
     };
 

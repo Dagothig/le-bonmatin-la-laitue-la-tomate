@@ -7218,7 +7218,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Switch1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -7702,7 +7702,7 @@
     {
       "id": 22,
       "name": "EV022",
-      "note": "<tint:yellow><light:128>",
+      "note": "<tint:pure_yellow><light:128>",
       "pages": [
         {
           "conditions": {
@@ -7723,10 +7723,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -7774,10 +7774,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -8037,10 +8037,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -8300,10 +8300,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -19917,6 +19917,10 @@
       ],
       "x": 11,
       "y": 10
-    }
+    },
+    null,
+    null,
+    null,
+    null
   ]
 }

@@ -6289,7 +6289,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Switch1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -15157,7 +15157,7 @@
     {
       "id": 24,
       "name": "EV024",
-      "note": "<tint:red><light:128>",
+      "note": "<tint:pure_red><light:128>",
       "pages": [
         {
           "conditions": {
@@ -15178,10 +15178,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -15441,10 +15441,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -15492,10 +15492,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -15543,10 +15543,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -15914,7 +15914,7 @@
     {
       "id": 27,
       "name": "EV027",
-      "note": "<tint:red><light:128>",
+      "note": "<tint:pure_red><light:128>",
       "pages": [
         {
           "conditions": {
@@ -15935,10 +15935,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16198,10 +16198,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16249,10 +16249,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16300,10 +16300,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16551,7 +16551,7 @@
     {
       "id": 28,
       "name": "EV028",
-      "note": "<tint:red><light:128>",
+      "note": "<tint:pure_red><light:128>",
       "pages": [
         {
           "conditions": {
@@ -16572,10 +16572,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16835,10 +16835,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16886,10 +16886,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -16937,10 +16937,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -17389,7 +17389,7 @@
           "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "!Switch1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 1
@@ -17638,7 +17638,7 @@
           "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "!Switch1",
+            "characterName": "!Switch4",
             "direction": 6,
             "pattern": 2,
             "characterIndex": 3
@@ -17995,7 +17995,7 @@
     {
       "id": 35,
       "name": "EV035",
-      "note": "<tint:blue><light:128>",
+      "note": "<tint:pure_blue><light:128>",
       "pages": [
         {
           "conditions": {
@@ -18016,10 +18016,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -18279,10 +18279,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -18330,10 +18330,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 2,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
@@ -18381,10 +18381,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Switch4",
             "direction": 8,
             "pattern": 0,
-            "characterIndex": 6
+            "characterIndex": 5
           },
           "list": [
             {
