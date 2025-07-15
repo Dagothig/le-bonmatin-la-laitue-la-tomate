@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 17,
-  "note": "<bgSy:0.5>\n<light:cloudy>",
+  "note": "<bgSy:0.5>\n<light:cloudy>\n<bgExpand:t>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "CloudySky1",
