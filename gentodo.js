@@ -294,7 +294,7 @@ function out(...parts) {
     timestamps.push(["Compter et catégoriser les lignes", new Date()]);
 
     const newKnownLinesText = sectionsByNameToLinesMD(knownLinesByName);
-    if (knownLinesText !== newKnownLinesText) {
+    if (knownLinesText !== newKnownLinesText || true) {
         out("Writing lines");
 
         const linesData = Object.entries(knownLinesByName)
@@ -311,7 +311,7 @@ function out(...parts) {
         const wordFiles = await $wordFiles;
         const audioWords = words
             // Sneaky add.
-            .concat(["yo", "bonnuit"])
+            .concat(["yo", "bonnuit", "fleur", "fleurs"])
             .filter(word => !word.match(punctuationRegexp))
             .distinct();
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));

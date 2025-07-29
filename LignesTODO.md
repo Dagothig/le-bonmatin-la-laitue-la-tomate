@@ -2566,6 +2566,51 @@ _ProtagonisteTocTocToc2
 _ProtagonisteNeSautePas
 > Non. Je saute pas.
 
+_ProtagonisteALesBrasPleins
+> Non mais j'ai les bras pleins.\
+> Je pars pas sans avoir déposé cette fleur.
+
+_ProtagonisteALesBrasPleinsPeutPas2Fleurs
+> Non mais j'ai les bras pleins.\
+> Prendre deux fleurs en même temps serait\
+> complètement absurde!
+
+_ProtagonisteVieuxBonnuitIntro1
+> Mmmh. Vous me dites quelque chose.\
+> Vous allez me dire que c'est dangereux\
+> là-dehors, et que j'ai besoin d'un radis,\
+> c'est ça?
+
+_ProtagonisteVieuxBonnuitIntro2
+> ...
+
+_ProtagonisteVieuxDeblatereSituation1
+> Bon par contre vous êtes la première\
+> personne qu'on rencontre ici qui peut\
+> peut-être nous aider...\
+> Surtout si vous habitez ici.
+
+_ProtagonisteVieuxDeblatereSituation2
+> Le Chevalier Noir tente d'obtenir le\
+> Bonnuit pour des raisons funestes!\
+> \
+> Et les plantes sont étranges!
+
+_ProtagonisteVieuxDeblatereSituation3
+> Elles tentent de... je sais pas trop,\
+> verdir les choses. C'est dramatique, le\
+> Royaume Rétabli des Roches Réclacitrantes\
+> se fait envahir!
+
+_ProtagonisteVieuxDeblatereSituation4
+> Puis là nous on a verdit ausi, mais\
+> finalement on est OK, c'est différent\
+> qu'avec les roches. MAIS, les plantes\
+> disent de drôles de choses.
+
+_ProtagonisteVieuxDeblatereSituation5
+> C'est flou.
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -2686,6 +2731,105 @@ _VieuxTeaseEndroitDeShit
 _VieuxOhNoOuEstLePlaisir
 > Oh vous n'avez aucun plaisir! Elle est\
 > partie où la belle attitude de tantôt?
+
+_VieuxFlashback1Anodin
+> Ça a commencé de manière anodine: Un petit\
+> pot de fleur par-ci, un bosquet par-là.\
+> \
+> Juste de quoi décorer l'espace...
+
+_VieuxBonnuitIntro1
+> Bonnuit. Qu'est-ce qui vous emmène dans mon\
+> humble demeure?\
+> \
+> Enfin, ce qu'il en reste.
+
+_VieuxBonnuitIntro2
+> Quoi? Jamais! C'est huh... une autre\
+> personne qui fait ça.
+
+_VieuxBonnuitIntro3
+> Oui, moi je suis... le Vieux Sage?\
+> ... du Temple du Bonnuit!\
+> Vous voyez... c'est huh...
+
+_VieuxBonnuitIntro4
+> Ce n'est pas dangereux là-dehors.\
+> \
+> Vous ne voulez-pas un radis?
+
+_VieuxBonnuitIntro5
+> Tant pis, je ne vous en donne pas pareil!
+
+_VieuxReflashback
+> Bonnuit. Vous vous rappelez?
+
+_VieuxFlashbackIntro
+> Oui!\
+> Je suis le Vieux Sage du Temple du Bonnuit!\
+> J'étais là, quand la menace plantaire\
+> arriva, le jour où les Hommes faillirent.
+
+_VieuxFlashback2Chevalier1
+> Puis, par une nuit d'une noirceur\
+> éclantante... Un individu mystérieux se\
+> présenta au Temple,\
+> avec un cadeau fabuleux.
+
+_VieuxFlashback2Chevalier2
+> Bonnuit. Heureusement, le temple est\
+> actuellement ouvert. Si vous rentrez\
+> maintenant, nous sommes ouverts pour le\
+> Bonnuit.
+
+_VieuxFlashback2Chevalier3
+> ... De l'engrais?
+
+_VieuxFlashback2Chevalier4
+> Vous devez comprendre, qu'il m'arrivait\
+> parfois de manger quelques feuilles par-ci,\
+> par-là.
+
+_VieuxFlashback3Pousse1
+> J'étais bien vert lorsque j'utilisa\
+> finalement l'engrais mystérieux...
+
+_VieuxFlashback3Pousse2
+> Gah!
+
+_VieuxBonnuitPlanPlantes1
+> Les plantes sont trop fortes... Pour les\
+> vaincre, ils vous faudrait une manière de\
+> couper leur apport solaire tout en haut du\
+> Temple. Une sorte de force ténébreuse...
+
+_VieuxBonnuitPlanPlantes2
+> Aussi je crois que les plantes à cet étage\
+> ont une drôle de fascination avec la\
+> décoration.
+
+_VieuxBonnuitPlanPlantes3
+> Je suis sûr que si vous placez les fleurs\
+> de manière satisfaisante elles vous\
+> laisseront passer.\
+> Bonne chance!
+
+_VieuxFlashback3Pousse3
+> Au début ce fut une belle découverte, les\
+> plantes décorèrent tout le Temple! Mais\
+> plus elles poussèrent, plus elles devinrent\
+> assoiffées.
+
+_VieuxFlashback3Pousse4
+> Au final tout le monde du Temple disparu.\
+> C'était vraiment trop graphique,\
+> je peux rien vous montrer.
+
+_VieuxFlashback3Pousse5
+> Je crois qu'elles me gardent par nostalgie\
+> ou je sais pas trop.\
+> \
+> En tout cas je suis le seul qui reste.
 
 ### Premiere
 
@@ -3389,6 +3533,12 @@ _WwwelchiorTenebresCestMieux
 _WwwelchiorConnaitLesTenebresQuiPeuventAider
 > Ah je connais quelqu'un qui peut nous aider\
 > avec ça!
+
+_WwwelchiorBonnuitPlanPlantes1
+> Je, Wwwelchior, Prince des Ténèbres,\
+> connait une chose ou deux sur le pouvoir\
+> des ténèbres. Grimpons le Temple, puis\
+> je m'occuperai de la Situation.
 
 ### Fantome
 
@@ -5544,6 +5694,23 @@ _ChevaliernoirGabspartKill
 
 _ChevaliernoirGaboueKill
 > Pardonnes-moi Gaboué...
+
+_ChevaliernoirFlashback2Engrais1
+> Bonnuit Vieux...\
+> Je veux dire, Sage du Temple.\
+> \
+> Je suis un individu! Mystérieux!
+
+_ChevaliernoirFlashback2Engrais2
+> C'est intéressant, toutes ces plantes\
+> décoratives dans un temple exclusivement\
+> visité la nuit.
+
+_ChevaliernoirFlashback2Engrais3
+> Je viens apporter une offrande que vous\
+> trouverez fort utile pour mieux faire\
+> pousser vos belles plantes.\
+> Faut pas oublier de les arroser aussi.
 
 ### Petiterochebrune
 

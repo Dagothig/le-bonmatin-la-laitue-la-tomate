@@ -18891,11 +18891,23 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "Move1",
+                  "name": "Move5",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
                 }
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
@@ -18909,6 +18921,11 @@
                 0,
                 0
               ]
+            },
+            {
+              "code": 251,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 205,
@@ -18927,7 +18944,7 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -18940,6 +18957,11 @@
                   "indent": null
                 }
               ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

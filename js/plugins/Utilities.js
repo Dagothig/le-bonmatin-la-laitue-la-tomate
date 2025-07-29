@@ -1873,8 +1873,8 @@ function eval_fn_expr(expr, args) {
         });
 }
 
-// Tapocher lés fenêtres
-{
+
+{ // Tapocher lés fenêtres
     Window_MenuStatus.prototype.drawItemStatus = function (index) {
         var actor = $gameParty.members()[index];
         var rect = this.itemRect(index);
@@ -2544,7 +2544,7 @@ function eval_fn_expr(expr, args) {
 
         function setupEvents(setupEvents) {
             setupEvents.call(this);
-            this.eventsByName = {};
+            this.eventsByName = { player: $gamePlayer };
             for (var i = 0; i < this._events.length; i++) {
                 var dataEvent = $dataMap.events[i];
                 if (dataEvent && dataEvent.name) {
@@ -5323,7 +5323,6 @@ organ: { // Organ minigame
         });
 }
 
-
 { // Gameover
     override(Scene_Gameover.prototype,
         function isTriggered(isTriggered) {
@@ -5428,9 +5427,7 @@ organ: { // Organ minigame
         });
 
     override(Game_CharacterBase.prototype,
-        function updateMove(updateMove) {
-            updateMove.call(this);
-
+        function updateShift() {
             const addTileInfo = $gameMap.tileset().addTileInfo;
 
             const tx1 = Math.floor(this._realX);
@@ -5450,6 +5447,14 @@ organ: { // Organ minigame
             this._shiftX = t1ShiftX + t2ShiftX;
             this._shiftY = t1ShiftY + t2ShiftY;
         },
+        function updateMove(updateMove) {
+            updateMove.call(this);
+            this.updateShift();
+        },
+        function locate(locate, x, y) {
+            locate.call(this, x, y);
+            this.updateShift();
+        },
         function screenX(screenX) {
             return screenX.call(this) + (this._shiftX || 0);
         },
@@ -5457,7 +5462,6 @@ organ: { // Organ minigame
             return screenY.call(this) + (this._shiftY || 0);
         });
 }
-
 
 { // Map state overlays
     override(Game_Player.prototype,
@@ -5581,7 +5585,6 @@ organ: { // Organ minigame
             }
         });
 }
-
 
 { // Autoplay on maps for stupid reasons
     override(Game_Player.prototype,
@@ -5998,7 +6001,6 @@ nicer_menus: { // Nicer (? lol) menus
 }
 
 { // Dynamic window size
-
     override(Graphics,
         function _setupEventHandlers() {
             window.addEventListener('resize', () => {
@@ -6941,4 +6943,95 @@ const ACCEPTED_LUTIN_NAMES = [
         112: [27, 6],
         113: [29, 19]
     }
+}
+
+{ // Attach event
+    const defaultAttachLocations = {
+        head: { x: 0, y: -24, z: 0.1 }
+    };
+
+    override(Game_Map.prototype,
+        function getCharacter(_, name) {
+            if (!name)
+                return null;
+            if (name.length) {
+                return this.event(this.eventsByName[name]);
+            }
+            return this.event(name);
+        });
+
+    override(Game_CharacterBase.prototype,
+        function attach(_, to, location) {
+            if (to) {
+                this._attachedTo = to;
+                this._attachedLocation = location;
+            } else {
+                this.detach();
+            }
+        },
+        function detach() {
+            delete this._attachedScreenX;
+            delete this._attachedScreenY;
+            delete this._attachedScreenZ;
+            delete this._attachedTo;
+            delete this._attachedLocation;
+        },
+        function getAttachLocation(_, location) {
+            return defaultAttachLocations[location];
+        },
+        function update(update) {
+            update.call(this);
+            if (this._attachedTo) {
+                const char = $gameMap.getCharacter(this._attachedTo);
+                const offset = char.getAttachLocation(this._attachedLocation);
+                if (!offset) {
+                    throw new Error("attach location " + this._attachedLocation + " does not exist");
+                }
+                this._attachedScreenX = char.screenX() + offset.x;
+                this._attachedScreenY = char.screenY() + offset.y;
+                this._attachedScreenZ = char.screenZ() + offset.z;
+                this._realX = char._realX;
+                this._realY = char._realY;
+                this._x = char._x;
+                this._y = char._y;
+            }
+        },
+        function screenX(screenX) {
+            if (this._attachedScreenX !== undefined && this._attachedScreenX !== null) {
+                return this._attachedScreenX;
+            }
+            return screenX.call(this);
+        },
+        function screenY(screenY) {
+            if (this._attachedScreenY !== undefined && this._attachedScreenY !== null) {
+                return this._attachedScreenY;
+            }
+            return screenY.call(this);
+        },
+        function screenZ(screenZ) {
+            if (this._attachedScreenZ !== undefined && this._attachedScreenZ !== null) {
+                return this._attachedScreenZ;
+            }
+            return screenZ.call(this);
+        });
+
+    override(Game_Interpreter.prototype,
+        function pluginCommand(pluginCommand, command, args) {
+            pluginCommand.call(this, command, args);
+            if (command === "attach") {
+                let [fromStr, toStr, location] = args;
+                if (fromStr === "self")
+                    fromStr = this.eventId();
+                if (toStr === "self")
+                    toStr = this.eventId();
+                const from = $gameMap.getCharacter(fromStr);
+                from.attach(toStr, location);
+            } else if (command === "detach") {
+                let [fromStr] = args;
+                if (fromStr === "self")
+                    fromStr = this.eventId();
+                const from = $gameMap.getCharacter(fromStr);
+                from.detach();
+            }
+        });
 }
