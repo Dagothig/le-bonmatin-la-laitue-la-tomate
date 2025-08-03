@@ -43,9 +43,9 @@
     7740,
     7720,
     7716,
-    7740,
-    7740,
     7750,
+    3984,
+    3992,
     7608,
     7596,
     7955,
@@ -60,9 +60,9 @@
     8106,
     7752,
     7750,
-    8106,
-    8106,
     8110,
+    3984,
+    3992,
     7963,
     7962,
     7961,
@@ -77,9 +77,9 @@
     3968,
     8107,
     8110,
-    3968,
-    3968,
-    3968,
+    4002,
+    3969,
+    3970,
     3968,
     3968,
     7584,
@@ -94,7 +94,7 @@
     5410,
     5414,
     3968,
-    3968,
+    3969,
     3968,
     3968,
     3968,
@@ -487,6 +487,7 @@
     0,
     0,
     0,
+    136,
     0,
     0,
     0,
@@ -503,8 +504,7 @@
     0,
     0,
     0,
-    0,
-    0,
+    165,
     0,
     0,
     0,
@@ -519,8 +519,8 @@
     137,
     0,
     0,
-    136,
-    137,
+    165,
+    0,
     0,
     137,
     136,
@@ -708,7 +708,7 @@
     0,
     0,
     0,
-    0,
+    157,
     176,
     0,
     0,
@@ -723,8 +723,8 @@
     129,
     0,
     0,
-    128,
-    129,
+    157,
+    0,
     128,
     129,
     128,
@@ -741,7 +741,7 @@
     129,
     128,
     129,
-    157,
+    0,
     136,
     128,
     129,
@@ -758,7 +758,7 @@
     0,
     157,
     137,
-    165,
+    0,
     0,
     136,
     157,
@@ -928,14 +928,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     5,
     0,
     0,
@@ -952,6 +944,14 @@
     0,
     0,
     0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     5,
     5,
     0,
@@ -961,7 +961,7 @@
     0,
     0,
     0,
-    0,
+    5,
     0,
     0,
     0,
@@ -4859,6 +4859,137 @@
       "x": 2,
       "y": 10
     },
-    null
+    {
+      "id": 11,
+      "name": "EV011",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "StepSnow1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                130,
+                8,
+                37,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 0
+    }
   ]
 }

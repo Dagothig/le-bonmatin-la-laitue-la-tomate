@@ -6248,12 +6248,12 @@ _VieuxBonnuitPlanPlantes3
 
 _VieuxFlashback3Pousse3
 > Au début ce fut une belle découverte, les\
-> plantes décorèrent tout le Temple! Mais\
-> plus elles poussèrent, plus elles devinrent\
-> assoiffées.
+> plantes nous aidèrent à décorer tout le\
+> Temple! Mais plus elles poussèrent, plus\
+> elles devinrent assoiffées.
 
 _VieuxFlashback3Pousse4
-> Au final tout le monde du Temple disparu.\
+> Au final tout le monde du Temple disparu...\
 > C'était vraiment trop graphique,\
 > je peux rien vous montrer.
 

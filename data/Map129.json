@@ -5926,6 +5926,34 @@
               ]
             },
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Earth3",
+                  "volume": 55,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                3,
+                136,
+                true
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
               "code": 212,
               "indent": 0,
               "parameters": [
@@ -6521,21 +6549,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "plantes décorèrent tout le Temple! Mais "
+                "plantes nous aidèrent à décorer tout le "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "plus elles poussèrent, plus elles devinrent "
+                "Temple! Mais plus elles poussèrent, plus "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "assoiffées."
+                "elles devinrent assoiffées."
               ]
             },
             {
@@ -6564,7 +6592,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Au final tout le monde du Temple disparu. "
+                "Au final tout le monde du Temple disparu..."
               ]
             },
             {

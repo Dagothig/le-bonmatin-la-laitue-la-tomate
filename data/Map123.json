@@ -8907,6 +8907,14 @@
               "code": 123,
               "indent": 1,
               "parameters": [
+                "B",
+                0
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
                 "C",
                 0
               ]
