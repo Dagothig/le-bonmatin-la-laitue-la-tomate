@@ -3666,6 +3666,7 @@ Input.keyMapper[68] = "right"; // d
             const id = index + 1;
             const valid = DataManager.isThisGameFile(id);
             const info = DataManager.loadSavefileInfo(id);
+            console.log(info);
             this.resetTextColor();
             this.changePaintOpacity(valid || this._mode !== "load");
 
@@ -3694,7 +3695,12 @@ Input.keyMapper[68] = "right"; // d
                 if (info.characters) {
                     for (let i = 0; i < info.characters.length; i++) {
                         let data = info.characters[i];
-                        this.drawCharacter(data[0], data[1], right + (i + 0.5) * 48, bottom);
+                        this.drawCharacter(
+                            data[0],
+                            data[1],
+                            right + (i + 0.5) * 48,
+                            bottom,
+                            index === this.index());
                     }
                 }
             }

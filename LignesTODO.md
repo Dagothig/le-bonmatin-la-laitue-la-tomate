@@ -1000,6 +1000,16 @@ _NarrateurCaPrendPorteOuverte
 > Sans la porte ouverte, ça ne donne pas grand chose\
 > d'embarquer.
 
+_NarrateurRacineCa
+> C'est une grosse racine, ça.\
+> \
+> Impossible à enjamber.
+
+_NarrateurRacineCa2
+> Une autre racine peut-être.\
+> \
+> Pas celle-ci.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2610,6 +2620,9 @@ _ProtagonisteVieuxDeblatereSituation4
 
 _ProtagonisteVieuxDeblatereSituation5
 > C'est flou.
+
+_ProtagonisteRacineCa
+> Pourtant je suis pas mal sûr que -\^
 
 ### Vieux
 
