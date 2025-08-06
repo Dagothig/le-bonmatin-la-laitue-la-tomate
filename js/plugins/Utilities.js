@@ -2544,7 +2544,7 @@ function eval_fn_expr(expr, args) {
 
         function setupEvents(setupEvents) {
             setupEvents.call(this);
-            this.eventsByName = { player: $gamePlayer };
+            this.eventsByName = {};
             for (var i = 0; i < this._events.length; i++) {
                 var dataEvent = $dataMap.events[i];
                 if (dataEvent && dataEvent.name) {
@@ -3666,7 +3666,6 @@ Input.keyMapper[68] = "right"; // d
             const id = index + 1;
             const valid = DataManager.isThisGameFile(id);
             const info = DataManager.loadSavefileInfo(id);
-            console.log(info);
             this.resetTextColor();
             this.changePaintOpacity(valid || this._mode !== "load");
 
@@ -6956,6 +6955,9 @@ attach_event: {
         function getCharacter(_, name) {
             if (!name)
                 return null;
+            if (name === "player") {
+                return $gamePlayer;
+            }
             if (name.length) {
                 return this.event(this.eventsByName[name]);
             }
