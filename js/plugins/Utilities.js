@@ -5329,14 +5329,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Gameover
-    override(Scene_Gameover.prototype,
-        function isTriggered(isTriggered) {
-            return isTriggered.call(this) || !AudioManager._meBuffer;
-        });
-}
-
-{ // Tileset tile info
+tileset_tile_info: {
     const tileRegexp = /tile-(\w+)-(\d+)-(\d+)-(\w+)/;
     const pageToIdx = { A: 0, B: 1, C: 2, D: 3, E: 4 };
     const tileEffects = { burn: 0, shiftX: 1, shiftY: 2, length: 3 };
@@ -5469,7 +5462,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Map state overlays
+map_state_overlays: {
     override(Game_Player.prototype,
         function actor() {
             return $gameParty.leader();
@@ -5502,7 +5495,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Trigger raft on empty action
+trigger_raft_on_empty_action: {
     const EMPTY_TILE_ACTION_COMMON_EVENT_ID = 46;
 
     override(Game_Player.prototype,
@@ -5528,7 +5521,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Bake escape into skills
+bake_escape_into_skills: {
     const PARTY_ESCAPE_SKILL_ID = 84;
     override(Game_Actor.prototype,
         function skills(skills) {
@@ -5553,7 +5546,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Crossfade parallax
+crossfade_parallax: {
     override(Game_Map.prototype,
         function changeParallax(changeParallax, name, loopX, loopY, sx, sy, x, y, duration) {
             const changedName = this._parallaxName && name !== this._parallaxName;
@@ -5592,7 +5585,7 @@ organ: { // Organ minigame
         });
 }
 
-{ // Autoplay on maps for stupid reasons
+autoplay_on_maps: { // For stupid reasons
     override(Game_Player.prototype,
         function clearTransferInfo(clearTransferInfo) {
             clearTransferInfo.call(this);
@@ -5603,7 +5596,7 @@ organ: { // Organ minigame
     )
 }
 
-nicer_menus: { // Nicer (? lol) menus
+nicer_menus: {
     // Animated characters
     // ...
     const idxmap = [1,2,1,0];
@@ -6006,7 +5999,7 @@ nicer_menus: { // Nicer (? lol) menus
         });
 }
 
-{ // Dynamic window size
+dynamic_window_size: {
     override(Graphics,
         function _setupEventHandlers() {
             window.addEventListener('resize', () => {
@@ -6235,7 +6228,7 @@ nicer_menus: { // Nicer (? lol) menus
         });
 }
 
-{ // Lighting
+lighting: {
     const tints = {
         white: 0xffffffff,
         fire: 0xffff8800,
@@ -6412,7 +6405,7 @@ const ACCEPTED_LUTIN_NAMES = [
     "tigaboue"
 ];
 
-{ // Gameover
+gameover: {
     const Acolors = [
         [255, 255, 255],
         [255, 128, 128],
@@ -6467,10 +6460,13 @@ const ACCEPTED_LUTIN_NAMES = [
             this.aaaSprite.y = (Math.random() - 0.5) * shake;
             this.time++;
             update.call(this);
+        },
+        function isTriggered(isTriggered) {
+            return isTriggered.call(this) || !AudioManager._meBuffer;
         });
 }
 
-{ // Markov
+markov: {
     const punctuationRegexp = /[\,\.\!\?\:]+/g;
     const sentenceEndRegexp = /[\.\!\?]/;
     const valueKey = 0;
@@ -6784,14 +6780,14 @@ const ACCEPTED_LUTIN_NAMES = [
         });
 }
 
-{ // Game unit questions
+game_unit_questions: {
     override(Game_Unit.prototype,
         function isVert() {
             return this.members().some(m => m.isStateAffected(45));
         });
 }
 
-{ // EOT map damage popups
+EOT_map_damage_popups: {
     override(Game_Party.prototype,
         function onPlayerWalk(onPlayerWalk) {
             onPlayerWalk.call(this);
@@ -6839,7 +6835,7 @@ const ACCEPTED_LUTIN_NAMES = [
         });
 }
 
-{ // Debug utilities
+debug_utilities: {
     override(Scene_Map.prototype,
         function isDebugCalled() {
             return Input.isTriggered('debug')
@@ -6932,7 +6928,7 @@ const ACCEPTED_LUTIN_NAMES = [
         });
 }
 
-{ // Bonnuit RDC
+bonnuit_RDC: {
     window.bonnuit_rdc_rooms = {
         100: [3, 6],
         101: [11, 6],
@@ -6951,7 +6947,7 @@ const ACCEPTED_LUTIN_NAMES = [
     }
 }
 
-{ // Attach event
+attach_event: {
     const defaultAttachLocations = {
         head: { x: 0, y: -24, z: 0.1 }
     };

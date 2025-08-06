@@ -1010,6 +1010,12 @@ _NarrateurRacineCa2
 > \
 > Pas celle-ci.
 
+_NarrateurSurPapierEcrit
+> Puis de l'autre côté:
+
+_NarrateurPasAutreCote
+> Il n'y a pas d'autre côté.
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
