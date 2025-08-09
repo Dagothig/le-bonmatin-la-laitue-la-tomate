@@ -11,7 +11,11 @@ const EMPTY = [];
 // Synonymes - quand on rencontre le mot, on recontre aussi les autres.
 const synonyms = {
     "plante": ["fleur"],
-    "plantes": ["fleurs"]
+    "plantes": ["fleurs"],
+    "bleu": ["bleue", "vert", "rouge", "mauve"],
+    "vert": ["verte", "rouge", "mauve"],
+    "rouge": ["bleu", "bleue", "vert", "verte", "mauve"],
+    "mauve": ["bleu", "bleue", "vert", "verte", "rouge"]
 };
 
 function getWords(lines) {

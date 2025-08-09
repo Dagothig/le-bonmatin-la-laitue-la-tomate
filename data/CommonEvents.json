@@ -20012,5 +20012,18 @@
     "name": "Papier Mystérieux Indice",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 58,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Calepin de notes verdoyant",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

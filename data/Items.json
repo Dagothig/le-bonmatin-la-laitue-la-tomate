@@ -1270,5 +1270,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 42,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un petit calepin de notes bien spécifiques.\nLes pages ont un beau filigrane vert.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 58,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 187,
+    "itypeId": 2,
+    "name": "Calepin de notes",
+    "note": "",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

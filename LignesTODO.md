@@ -2630,6 +2630,12 @@ _ProtagonisteVieuxDeblatereSituation5
 _ProtagonisteRacineCa
 > Pourtant je suis pas mal sûr que -\^
 
+_ProtagonisteBordelPlantaire1
+> Ohlala... c'est le bordel ici.
+
+_ProtagonisteBordelPlantaire2
+> Tu sais que ça pue les Textes Sacrés, ça?
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -3248,6 +3254,26 @@ _GabspartHintPioche
 > Mettons qu'on doit retourner au petit\
 > passage montagneux pour trouver un\
 > implément pointu?
+
+_GabspartTraduitGaboueBordelPlantaire
+> > Dans ce temple sacré,\
+> > sous la lune dorée:\
+> > Les fougères maladives\
+> > décorent et bâtardisent.
+
+_GabspartBordelPlantaire1
+> Ah aussi, tiens! Prends ce petit calepin de\
+> notes ancrées peu spécifiques.\
+> Pas que je le sais préemptivement, mais...
+
+_GabspartBordelPlantaire2
+> Si jamais y'a des indices Verts qui te sont\
+> donnés spécifiquement à cet étage, tu\
+> pourras les reconsulter directement d'un\
+> coup.
+
+_GabspartBordelPlantaire3
+> C'est pour le mieux.
 
 ### Wwwelchior
 

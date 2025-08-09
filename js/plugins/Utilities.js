@@ -837,11 +837,17 @@ function eval_fn_expr(expr, args) {
             } else if (command === "dash") {
                 $gamePlayer._forceDashing = args[0] === "force";
             } else if (command === "wait_route") {
-                this._character = $gameMap.event($gameMap.eventsByName[args[0]]);
+                if (args[0]) {
+                    this._character = $gameMap.event($gameMap.eventsByName[args[0]]);
+                }
                 this.setWaitMode("route");
             } else if (command === "swap_bgm") {
                 const pos = AudioManager._bgmBuffer ? AudioManager._bgmBuffer.seek() : 0;
                 AudioManager.playBgm(args[0], pos);
+            } else if (command === "start_scroll") {
+
+            } else if (command === "wait_scroll") {
+
             }
         },
         function jumpToLabel(_, labelName) {
