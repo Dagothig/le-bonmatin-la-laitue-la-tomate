@@ -7133,13 +7133,6 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "markov UIUI5,6 fleurs piédestaux"
-              ]
-            },
-            {
               "code": 111,
               "indent": 1,
               "parameters": [
@@ -10909,7 +10902,7 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -11078,7 +11071,7 @@
               {
                 "code": 15,
                 "parameters": [
-                  2
+                  9
                 ],
                 "indent": null
               },
@@ -11283,7 +11276,7 @@
               {
                 "code": 15,
                 "parameters": [
-                  5
+                  25
                 ],
                 "indent": null
               },
@@ -11347,7 +11340,7 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
+            "direction": 6,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -11502,7 +11495,7 @@
               {
                 "code": 15,
                 "parameters": [
-                  10
+                  21
                 ],
                 "indent": null
               },
@@ -11559,7 +11552,7 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -11714,7 +11707,7 @@
               {
                 "code": 15,
                 "parameters": [
-                  7
+                  17
                 ],
                 "indent": null
               },
@@ -11778,8 +11771,8 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
-            "pattern": 1,
+            "direction": 4,
+            "pattern": 0,
             "characterIndex": 3
           },
           "list": [
@@ -11938,6 +11931,13 @@
                 "indent": null
               },
               {
+                "code": 15,
+                "parameters": [
+                  22
+                ],
+                "indent": null
+              },
+              {
                 "code": 0,
                 "parameters": []
               }
@@ -11983,7 +11983,7 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -12136,13 +12136,6 @@
           "moveRoute": {
             "list": [
               {
-                "code": 15,
-                "parameters": [
-                  2
-                ],
-                "indent": null
-              },
-              {
                 "code": 45,
                 "parameters": [
                   "this.patrol(this.event().x, this.event().y, 4, 2.5, 0, 25, 3.75)"
@@ -12152,7 +12145,7 @@
               {
                 "code": 15,
                 "parameters": [
-                  8
+                  17
                 ],
                 "indent": null
               },
@@ -12202,7 +12195,7 @@
           "image": {
             "tileId": 0,
             "characterName": "ActorUIUI3",
-            "direction": 2,
+            "direction": 6,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -12355,6 +12348,232 @@
           "moveRoute": {
             "list": [
               {
+                "code": 15,
+                "parameters": [
+                  7
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this.patrol(this.event().x, this.event().y, 4, 2.5, 0, 25, 3.75)"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  13
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 24
+    },
+    {
+      "id": 18,
+      "name": "FleurJaune2",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "ActorUIUI3",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.isVert()"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "markov UIUI5,6 fleurs piédestaux"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Monster3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Monster3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "UIUI5",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 15,
+                "parameters": [
+                  10
+                ],
+                "indent": null
+              },
+              {
                 "code": 45,
                 "parameters": [
                   "this.patrol(this.event().x, this.event().y, 4, 2.5, 0, 25, 3.75)"
@@ -12386,8 +12605,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 24
+      "x": 15,
+      "y": 9
     }
   ]
 }
