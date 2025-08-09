@@ -6933,7 +6933,7 @@ debug_utilities: {
         });
 }
 
-bonnuit_RDC: {
+bonnuit: {
     window.bonnuit_rdc_rooms = {
         100: [3, 6],
         101: [11, 6],
@@ -6949,8 +6949,70 @@ bonnuit_RDC: {
         111: [53, 19],
         112: [27, 6],
         113: [29, 19]
+    };
+
+    const tags = {
+        haut: 0,
+        vivant: 1,
+        gazon: 2
+    };
+
+    const flowerSpots = [
+        { pos: [9,14], tags: [tags.haut, tags.vivant] },
+        { pos: [11, 9], tags: [] },
+        { pos: [5, 23], tags: [] },
+        { pos: [26, 12], tags: [tags.haut] },
+        { pos: [30, 7], tags: [] },
+        { pos: [29, 18], tags: [tags.vivant, tags.gzon] },
+    ];
+
+    const condTypes = {
+        tag: 0,
+        notTag: 1,
+        leftOf: 2,
+        above: 3
+    };
+
+    const bonnuit_flower_conds = [
+        ["FleurBleue", condTypes.tag, tags.gazon],
+        ["FleurMauve", condTypes.tag, tags.vivant],
+        ["FleurVerte", condTypes.notTag, tags.vivant],
+        ["FleurRouge", condTypes.tag, tags.haut],
+        ["FleurBleue", condTypes.leftOf, "FleurVerte"],
+        ["FleurVerte", condTypes.above, "FleurRouge"],
+        ["FleurMauve", condTypes.leftOf, "FleurRouge"],
+    ];
+
+    function checkCond(flowerName, condType, arg) {
+        const flower = $gameMap.event($gameMap.eventsByName[flowerName]);
+        const spot = flowerSpots.find(spot => flower.pos(spot.pos[0], spot.pos[1]));
+        if (!spot)
+            return false;
+        switch (condType) {
+            case condTypes.tag:
+                return spot.tags.includes(arg);
+            case condTypes.notTag:
+                return !spot.tags.includes(arg);
+            case condType.leftOf: {
+                const otherFlower = $gameMap.event($gameMap.eventsByName[arg]);
+                return flower.x < otherFlower.x;
+            }
+            case condType.above: {
+                const otherFlower = $gameMap.event($gameMap.eventsByName[arg]);
+                return flower.y < otherFlower.y;
+            }
+            default:
+                throw new Error("SHIT la condition est malformée");
+        }
     }
-}
+
+    window.bonnuit_check_conds  = function() {
+        for (const cond of bonnuit_flower_conds)
+            if (!checkCond(...cond))
+                return false;
+        return true;
+    }
+};
 
 attach_event: {
     const defaultAttachLocations = {

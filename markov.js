@@ -8,16 +8,6 @@ const endsWithPunctuation = /[\,\.\!\?\:]$/;
 
 const EMPTY = [];
 
-// Synonymes - quand on rencontre le mot, on recontre aussi les autres.
-const synonyms = {
-    "plante": ["fleur"],
-    "plantes": ["fleurs"],
-    "bleu": ["bleue", "vert", "rouge", "mauve"],
-    "vert": ["verte", "rouge", "mauve"],
-    "rouge": ["bleu", "bleue", "vert", "verte", "mauve"],
-    "mauve": ["bleu", "bleue", "vert", "verte", "rouge"]
-};
-
 function getWords(lines) {
     return lines.flatMap(line => {
         line = line.toLowerCase()
@@ -60,19 +50,6 @@ function markov(words) {
     for (const word in occurences) {
         for (const subword in occurences[word]) {
             backOccurences[subword][word] = (backOccurences[subword][word] || 0) + occurences[word][subword];
-        }
-    }
-
-    for (const word in synonyms) {
-        for (const synonym of synonyms[word]) {
-            occurences[synonym] = occurences[word];
-            backOccurences[synonym] = backOccurences[word];
-            for (const previous in backOccurences[word]) {
-                occurences[previous][synonym] = occurences[previous][word];
-            }
-            for (const subword in occurences[word]) {
-                backOccurences[subword][synonym] = backOccurences[subword][word];
-            }
         }
     }
 

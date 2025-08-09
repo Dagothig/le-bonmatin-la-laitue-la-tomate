@@ -1994,6 +1994,11 @@ _NarrateurSurPapierEcrit
 _NarrateurPasAutreCote
 > Il n'y a pas d'autre côté.
 
+_NarrateurMotsPlantes
+> Le gazon est mouillé. Surtout, on doit mettre les\
+> fleurs sur des piédestaux. Sinon leur emplacement est\
+> incorrect! Toutes les fleurs j'ai dit!
+
 ### Protagoniste
 
 _ProtagonisteCommeBonjourDisparu
@@ -6249,7 +6254,7 @@ _VieuxFlashbackIntro
 
 _VieuxFlashback2Chevalier1
 > Puis, par une nuit d'une noirceur\
-> éclantante... Un individu mystérieux se\
+> éclatante... Un individu mystérieux se\
 > présenta au Temple,\
 > avec un cadeau fabuleux.
 
