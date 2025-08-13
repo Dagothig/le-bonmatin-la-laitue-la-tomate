@@ -5521,12 +5521,11 @@ map_state_overlays: {
             if (this._character.actor) {
                 if (!this._stateSprite) {
                     this._stateSprite = new Sprite_StateOverlay();
-                    // After shadow and base.
-                    this.parent.addChildAt(this._stateSprite, 2);
+                    this.addChild(this._stateSprite);
                 }
                 this._stateSprite.setup(this._character.actor(), true);
-                this._stateSprite.baseX = this.x;
-                this._stateSprite.baseY = this.y + this.height;
+                this._stateSprite.baseX = 0;
+                this._stateSprite.baseY = this.height;
                 this._stateSprite.opacity = this.visible ? 255 : 0;
             } else {
                 this.parent.removeChild(this._stateSprite);

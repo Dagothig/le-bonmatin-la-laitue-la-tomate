@@ -1506,34 +1506,13 @@
     "id": 51,
     "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 7,
-        "value": 0.05
-      },
-      {
-        "code": 22,
-        "dataId": 9,
-        "value": 0.05
-      },
-      {
-        "code": 22,
-        "dataId": 8,
-        "value": 0.05
-      },
-      {
-        "code": 14,
-        "dataId": 45,
-        "value": 1
-      }
-    ],
+    "traits": [],
     "iconIndex": 237,
     "maxTurns": 10,
-    "message1": " est tout vert!",
-    "message2": " est tout vert!",
-    "message3": " est tout vert!",
-    "message4": " reprend un teint normal!",
+    "message1": " semble tout vert!",
+    "message2": " semble tout vert!",
+    "message3": " semble tout vert!",
+    "message4": " semble normal!",
     "minTurns": 8,
     "motion": 0,
     "name": "Pot de fleurisé",
