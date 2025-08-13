@@ -1997,7 +1997,64 @@ _NarrateurPasAutreCote
 _NarrateurMotsPlantes
 > Le gazon est mouillé. Surtout, on doit mettre les\
 > fleurs sur des piédestaux. Sinon leur emplacement est\
-> incorrect! Toutes les fleurs j'ai dit!
+> incorrect! Toutes les fleurs j'ai dit!\
+> La fleur rouge est en hauteur.
+
+_NarrateurMotsPlantes2
+> La fleur bleue est à l'ouest de la verte.\
+> La fleur verte est au nord de la rouge.\
+> La fleur mauve est à l'ouest de la rouge.\
+> La fleur verte est sur du pas vivant.
+
+_NarrateurMotsPlantes3
+> La fleur mauve est sur du vivant.\
+> La fleur bleue est sur du gazon.
+
+_NarrateurCalepinVide
+> Le calepin est vide.
+
+_NarrateurCalepin1Indice
+> Il reste un indice à trouver.
+
+_NarrateurCalepinNIndices
+> Il reste des indices (\V[2]) à trouver.
+
+_NarrateurPotsFleurs
+> Un pot de fleur inestimable, qui peut accessoriser\
+> n'importe quelle garde-robe.
+
+_NarrateurHermiteGlacon
+> Un glaçon.
+
+_NarrateurPotFleurs
+> Oh mais regardez par terre!\
+> Un pot de fleur inestimable, qui peut accessoriser\
+> n'importe quelle garde-robe. Wow, vous serez verts.
+
+_NarrateurCordeNonAutoPortante
+> Une corde non-auto-portante.\
+> \
+> Vous en n'avez pas besoin.
+
+_NarrateurCollectionBouteillesVides
+> Une collection de vieilles bouteilles.\
+> Elles sont essentiellement toutes vides.
+
+_NarrateurSacVideRadis
+> Un sac vide.\
+> \
+> Vous humez l'odeur inimitable des radis.
+
+_NarrateurJarreVide
+> Une grande jarre vide.
+
+_NarrateurPileBois
+> Une pile de bois.
+
+_NarrateurJournalHermite1
+> Un livre avec des notes écrites à la main...\
+> \
+> Un journal intime.
 
 ### Protagoniste
 
@@ -4465,6 +4522,13 @@ _ProtagonisteBordelPlantaire1
 _ProtagonisteBordelPlantaire2
 > Tu sais que ça pue les Textes Sacrés, ça?
 
+_ProtagonisteHermiteGlacon1
+> En forme de Vieux!
+
+_ProtagonisteHermiteGlacon2
+> Nonon, c'est la face du Vieux... regardes\
+> y'a un radis dans la main!
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -5868,6 +5932,14 @@ _GabspartBordelPlantaire2
 
 _GabspartBordelPlantaire3
 > C'est pour le mieux.
+
+_GabspartHermiteGlacon1
+> Mmmmmh.\
+> Moi je dis c'est un hermite.
+
+_GabspartHermiteGlacon2
+> J'te garantis que si on part pis on\
+> retourne au Village le Vieux y est encore.
 
 ### Gaboue
 

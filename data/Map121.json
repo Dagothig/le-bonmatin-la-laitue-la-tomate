@@ -148,8 +148,8 @@
     1590,
     1590,
     6123,
-    6117,
-    0,
+    6113,
+    6125,
     0,
     0,
     0,
@@ -164,9 +164,9 @@
     2884,
     2884,
     2900,
-    6479,
-    6112,
-    0,
+    6475,
+    6474,
+    6478,
     0,
     0,
     0,
@@ -182,8 +182,8 @@
     2892,
     2902,
     2371,
-    6112,
-    0,
+    2369,
+    2369,
     0,
     0,
     0,
@@ -199,8 +199,8 @@
     2371,
     2369,
     2375,
-    6112,
-    0,
+    6115,
+    6125,
     0,
     0,
     0,
@@ -217,7 +217,7 @@
     6113,
     6113,
     6119,
-    0,
+    6478,
     0,
     0,
     0,
@@ -3288,6 +3288,121 @@
       ],
       "x": 6,
       "y": 6
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "<light:dim>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                131,
+                1,
+                5,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 8
     }
   ]
 }

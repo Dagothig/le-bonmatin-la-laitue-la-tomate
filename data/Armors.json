@@ -794,5 +794,26 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 35,
+    "atypeId": 2,
+    "description": "Un pot de fleur inestimable, qui peut accessoriser\nn'importe quelle garde-robe. Wow, vous êtes verts.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 237,
+    "name": "Pot de fleurs",
+    "note": "<state:51>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

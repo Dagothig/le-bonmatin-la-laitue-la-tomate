@@ -1501,5 +1501,50 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 51,
+    "autoRemovalTiming": 1,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 9,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.05
+      },
+      {
+        "code": 14,
+        "dataId": 45,
+        "value": 1
+      }
+    ],
+    "iconIndex": 237,
+    "maxTurns": 10,
+    "message1": " est tout vert!",
+    "message2": " est tout vert!",
+    "message3": " est tout vert!",
+    "message4": " reprend un teint normal!",
+    "minTurns": 8,
+    "motion": 0,
+    "name": "Pot de fleurisé",
+    "note": "<tint:green>\n<overlay:14>\n<overlayMapOffset:0,-28>",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": true,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

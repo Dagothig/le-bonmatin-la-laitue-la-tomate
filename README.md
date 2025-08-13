@@ -7,6 +7,7 @@
 * Hot reload
 * Barre hp enemis par dessus UI (?)
 * Le poulet est fucked
+* Le diadème de lumière peut désormais faire quelque chose
 
 ### Musique
 

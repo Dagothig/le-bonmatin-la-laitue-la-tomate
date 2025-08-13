@@ -503,6 +503,13 @@ function eval_fn_expr(expr, args) {
                             }
                         }
                     }
+                    if (state.meta.overlay) {
+                        state.overlay = parseInt(state.meta.overlay);
+                    }
+                    if (state.meta.overlayMapOffset) {
+                        const [x, y] = state.meta.overlayMapOffset.split(",");
+                        state.overlayMapOffset = [parseInt(x), parseInt(y)];
+                    }
                     if (state.meta.counterSkillId) {
                         state.counterSkillId = parseInt(state.meta.counterSkillId);
                     }
@@ -1723,6 +1730,10 @@ function eval_fn_expr(expr, args) {
         });
 
     override(Sprite_StateOverlay.prototype,
+        function setup(setup, battler, forMap) {
+            setup.call(this, battler);
+            this._forMap = forMap;
+        },
         function updatePattern(_) {
             this._pattern++;
             this._pattern %= 8;
@@ -1732,13 +1743,20 @@ function eval_fn_expr(expr, args) {
             this._overlayCount--;
             if (!this._overlayCount) {
                 findOverlay: if (this._battler) {
-                    for (let i = 0, n = this._battler.statesCount(); i < n; i++) {
+                    const states = this._battler.states();
+                    for (let i = 0, n = states.length; i < n; i++) {
                         let stateIndex = ((this._overlayStateIndex || 0) + i + 1) % n;
-                        let stateId = this._battler._states[stateIndex];
-                        let state = $dataStates[stateId];
+                        let state = states[stateIndex];
                         if (state.overlay) {
                             this._overlayIndex = state.overlay;
                             this._overlayStateIndex = stateIndex;
+                            if (this._forMap && state.overlayMapOffset) {
+                                this._offsetX = state.overlayMapOffset[0];
+                                this._offsetY = state.overlayMapOffset[1];
+                            } else {
+                                delete this._offsetX;
+                                delete this._offsetY;
+                            }
                             break findOverlay;
                         }
                     }
@@ -1746,6 +1764,9 @@ function eval_fn_expr(expr, args) {
                 }
                 this._overlayCount = 60;
             }
+
+            this.x = (this.baseX || 0) + (this._offsetX || 0);
+            this.y = (this.baseY || 0) + (this._offsetY || 0);
         });
     /*override(Sprite_StateIcon.prototype,
         function update(update) {
@@ -3827,6 +3848,19 @@ Input.keyMapper[68] = "right"; // d
             }
             return base;
         },
+        function isStateAffected(isStateAffected, stateId) {
+            if (isStateAffected.call(this, stateId))
+                return true;
+            for (const trait of this.equips()) {
+                if (trait && trait.aaa_states) {
+                    for (const aaaStateId of trait.aaa_states) {
+                        if (aaaStateId === stateId)
+                            return true;
+                    }
+                }
+            }
+            return false;
+        },
         function changeEquip(changeEquip, slotId, item) {
             const lostStates = this.states();
             changeEquip.call(this, slotId, item);
@@ -5487,11 +5521,12 @@ map_state_overlays: {
             if (this._character.actor) {
                 if (!this._stateSprite) {
                     this._stateSprite = new Sprite_StateOverlay();
-                    this.parent.addChild(this._stateSprite);
+                    // After shadow and base.
+                    this.parent.addChildAt(this._stateSprite, 2);
                 }
-                this._stateSprite.setup(this._character.actor());
-                this._stateSprite.x = this.x;
-                this._stateSprite.y = this.y + this.height;
+                this._stateSprite.setup(this._character.actor(), true);
+                this._stateSprite.baseX = this.x;
+                this._stateSprite.baseY = this.y + this.height;
                 this._stateSprite.opacity = this.visible ? 255 : 0;
             } else {
                 this.parent.removeChild(this._stateSprite);
@@ -6788,7 +6823,9 @@ markov: {
 game_unit_questions: {
     override(Game_Unit.prototype,
         function isVert() {
-            return this.members().some(m => m.isStateAffected(45));
+            return this.members().some(m =>
+                m.isStateAffected(45) ||
+                m.isStateAffected(51));
         });
 }
 
@@ -6963,7 +7000,7 @@ bonnuit: {
         { pos: [5, 23], tags: [] },
         { pos: [26, 12], tags: [tags.haut] },
         { pos: [30, 7], tags: [] },
-        { pos: [29, 18], tags: [tags.vivant, tags.gzon] },
+        { pos: [29, 18], tags: [tags.vivant, tags.gazon] },
     ];
 
     const condTypes = {
@@ -6974,13 +7011,14 @@ bonnuit: {
     };
 
     const bonnuit_flower_conds = [
-        ["FleurBleue", condTypes.tag, tags.gazon],
-        ["FleurMauve", condTypes.tag, tags.vivant],
-        ["FleurVerte", condTypes.notTag, tags.vivant],
-        ["FleurRouge", condTypes.tag, tags.haut],
-        ["FleurBleue", condTypes.leftOf, "FleurVerte"],
-        ["FleurVerte", condTypes.above, "FleurRouge"],
-        ["FleurMauve", condTypes.leftOf, "FleurRouge"],
+        ["FleurBleue", condTypes.tag, tags.gazon], // 0
+        ["FleurMauve", condTypes.tag, tags.vivant], // 1
+        ["FleurVerte", condTypes.notTag, tags.vivant], // 2
+        ["FleurRouge", condTypes.tag, tags.haut], // 3
+        ["FleurBleue", condTypes.leftOf, "FleurVerte"], // 4
+        ["FleurVerte", condTypes.above, "FleurRouge"], // 5
+        ["FleurMauve", condTypes.leftOf, "FleurRouge"], // 6
+        // 7 -> piédestals
     ];
 
     function checkCond(flowerName, condType, arg) {
@@ -6993,11 +7031,11 @@ bonnuit: {
                 return spot.tags.includes(arg);
             case condTypes.notTag:
                 return !spot.tags.includes(arg);
-            case condType.leftOf: {
+            case condTypes.leftOf: {
                 const otherFlower = $gameMap.event($gameMap.eventsByName[arg]);
                 return flower.x < otherFlower.x;
             }
-            case condType.above: {
+            case condTypes.above: {
                 const otherFlower = $gameMap.event($gameMap.eventsByName[arg]);
                 return flower.y < otherFlower.y;
             }

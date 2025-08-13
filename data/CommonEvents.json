@@ -11965,6 +11965,99 @@
         ]
       },
       {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur rouge est en hauteur."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurMotsPlantes2"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur bleue est à l'ouest de la verte."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur verte est au nord de la rouge."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur mauve est à l'ouest de la rouge."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur verte est sur du pas vivant."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurMotsPlantes3"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur mauve est sur du vivant."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La fleur bleue est sur du gazon."
+        ]
+      },
+      {
         "code": 251,
         "indent": 0,
         "parameters": []
@@ -20060,12 +20153,541 @@
     "id": 58,
     "list": [
       {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gvars.INDICES_FLEURS & Math.pow(2, $gvars.TMP_A)"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          2,
+          2,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 2,
+        "parameters": [
+          59
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          1,
+          0,
+          8,
+          1
+        ]
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "se _NarrateurCalepinVide"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Le calepin est vide."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          2,
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _NarrateurCalepin1Indice"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Il reste un indice à trouver."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          2,
+          0,
+          7,
+          4
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          2,
+          2,
+          0,
+          4,
+          "8 - $gvars.TMP_B"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "se _NarrateurCalepinNIndices"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Il reste des indices (\\V[2]) à trouver."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
     "name": "Calepin de notes verdoyant",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 59,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          84,
+          84,
+          0,
+          4,
+          "$gvars.INDICES_FLEURS | Math.pow(2, $gvars.TMP_A)"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,1 bleue gazon"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,2 mauve vivante"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,0 verte pas vivant"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,3 rouge hauteur"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,1 bleue l'ouest verte"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,0 verte nord rouge"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI7,2 mauve l'ouest rouge"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          1,
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "markov UIUI5,6 fleurs piédestaux"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Indice Fleur",
     "switchId": 1,
     "trigger": 0
   }
