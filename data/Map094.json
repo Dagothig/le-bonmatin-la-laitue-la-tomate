@@ -11065,6 +11065,19 @@
           },
           "list": [
             {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                1,
+                1,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
@@ -11120,19 +11133,6 @@
               "code": 235,
               "indent": 0,
               "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                1,
-                1,
-                0,
-                3,
-                5,
-                -1,
                 1
               ]
             },
@@ -23721,7 +23721,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Door3",
@@ -23824,7 +23824,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Door3",
@@ -23927,7 +23927,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Door3",
@@ -24030,7 +24030,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Door3",
@@ -24133,7 +24133,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Door3",

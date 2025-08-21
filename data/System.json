@@ -125,7 +125,7 @@
     "pitch": 100,
     "volume": 90
   },
-  "editMapId": 131,
+  "editMapId": 125,
   "elements": [
     "",
     "Physical",
@@ -420,7 +420,8 @@
     "PONT_RDC_BONNUIT",
     "LUMIERE_RDC_BONNUIT",
     "BONSOIR_RACCOURCI",
-    "PLEIN_LES_BRAS"
+    "PLEIN_LES_BRAS",
+    "BONNUIT"
   ],
   "terms": {
     "basic": [
@@ -575,7 +576,7 @@
       "level": 1
     }
   ],
-  "testTroopId": 15,
+  "testTroopId": 33,
   "title1Name": "BMLT",
   "title2Name": "",
   "titleBgm": {
@@ -671,7 +672,7 @@
     "SAGE_FLASHBACK_Y",
     "INDICES_FLEURS"
   ],
-  "versionId": 19778631,
+  "versionId": 6537189,
   "victoryMe": {
     "name": "victwere_La prise de Calais (Hardis Françoys) - Guillaume Costeley",
     "pan": 0,

@@ -9,6 +9,7 @@ const endsWithPunctuation = /[\,\.\!\?\:]$/;
 const EMPTY = [];
 
 function getWords(lines) {
+    console.log(JSON.stringify(lines, null, 2));
     return lines.flatMap(line => {
         line = line.toLowerCase()
             .replaceAll(commandsRegexp, "")

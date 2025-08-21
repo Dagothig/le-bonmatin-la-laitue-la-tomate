@@ -12063,6 +12063,92 @@
         "parameters": []
       },
       {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurMotsPlantes3"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La bleue est à l'ouest de la verte."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La verte est au nord de la rouge."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La mauve est à l'ouest de la rouge."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La verte est sur du pas vivant."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurMotsPlantes4"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La mauve est sur du vivant."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "La bleue est sur du gazon."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []

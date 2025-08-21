@@ -1029,8 +1029,10 @@ _NarrateurMotsPlantes2
 > La fleur verte est sur du pas vivant.
 
 _NarrateurMotsPlantes3
-> La fleur mauve est sur du vivant.\
-> La fleur bleue est sur du gazon.
+> La bleue est à l'ouest de la verte.\
+> La verte est au nord de la rouge.\
+> La mauve est à l'ouest de la rouge.\
+> La verte est sur du pas vivant.
 
 _NarrateurCalepinVide
 > Le calepin est vide.
@@ -1040,10 +1042,6 @@ _NarrateurCalepin1Indice
 
 _NarrateurCalepinNIndices
 > Il reste des indices (\V[2]) à trouver.
-
-_NarrateurPotsFleurs
-> Un pot de fleur inestimable, qui peut accessoriser\
-> n'importe quelle garde-robe.
 
 _NarrateurHermiteGlacon
 > Un glaçon.
@@ -1073,10 +1071,9 @@ _NarrateurJarreVide
 _NarrateurPileBois
 > Une pile de bois.
 
-_NarrateurJournalHermite1
-> Un livre avec des notes écrites à la main...\
-> \
-> Un journal intime.
+_NarrateurMotsPlantes4
+> La mauve est sur du vivant.\
+> La bleue est sur du gazon.
 
 ### Protagoniste
 
@@ -2704,6 +2701,11 @@ _ProtagonisteHermiteGlacon1
 _ProtagonisteHermiteGlacon2
 > Nonon, c'est la face du Vieux... regardes\
 > y'a un radis dans la main!
+
+_ProtagonisteALesBrasPleinsPeutPasParlerSage
+> Non mais j'ai les bras pleins.\
+> Parler à un Vieux Sage en même temps serait\
+> complètement absurde!
 
 ### Vieux
 
@@ -5051,6 +5053,18 @@ _GrossepilecaillouxjaunesPeutPasRentrer
 > Je n'aurais pas crue qu'il y aurait autant\
 > de traffic!
 
+_GrossepilecaillouxjaunesAider1
+> Excellent! Vous n'êtes clairement pas une\
+> plante. Comme vous n'êtes pas une roche non\
+> plus, vous allez pouvoir vous infiltrer\
+> dans le Temple.
+
+_GrossepilecaillouxjaunesAider2
+> Pour procéder il va falloir que vous\
+> puissiez vous camoufler parmis les plantes.\
+> Écoutez-les, et chercher le bon moment pour\
+> faire votre coup.
+
 ### Petiterochegrise
 
 _PetiterochegriseCaCraque
@@ -5419,6 +5433,12 @@ _PetitestalagmitejauneTocTocToc3
 > Roche qui roule n'amasse pas mousse, mais\
 > je roule paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas.
 
+_PetitestalagmitejaunePauvreHermite
+> Ah, pauvre petit hermite.\
+> C'était notre dernier ami en cet endroit\
+> maudit.\
+> Hélas, il n'y a plus de radis...
+
 ### Grossestalagmitejaune
 
 _GrossestalagmitejauneRegardesMaman
@@ -5488,6 +5508,12 @@ _GrossestalagmitejauneOhNonJeSuisProchain
 
 _GrossestalagmitejauneHalp
 > Halp.
+
+_GrossestalagmitejauneQuiVaLa
+> Halte là! Qui va là?\
+> Vous entrez dans le refuge de la rébellion\
+> des roches!\
+> Nous ne nous laisserons pas verdir!
 
 ### Grosninja
 

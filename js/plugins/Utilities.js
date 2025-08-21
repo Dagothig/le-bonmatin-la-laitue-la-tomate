@@ -7086,7 +7086,8 @@ attach_event: {
             delete this._attachedLocation;
         },
         function getAttachLocation(_, location) {
-            return defaultAttachLocations[location];
+            return (this._attachLocations && this._attachLocations[location]) ||
+                defaultAttachLocations[location];
         },
         function update(update) {
             update.call(this);
@@ -7124,6 +7125,21 @@ attach_event: {
             return screenZ.call(this);
         });
 
+    override (Game_Event.prototype,
+        function refresh(refresh) {
+            refresh.call(this);
+            const event = this.event();
+            if (!this._attachLocations && event.meta && event.meta.attach) {
+                this._attachLocations = {};
+                const [location, x, y, z] = event.meta.attach.split(",");
+                this._attachLocations[location] = {
+                    x: parseFloat(x),
+                    y: parseFloat(y),
+                    z: parseFloat(z)
+                };
+            }
+        })
+
     override(Game_Interpreter.prototype,
         function pluginCommand(pluginCommand, command, args) {
             pluginCommand.call(this, command, args);
@@ -7141,6 +7157,32 @@ attach_event: {
                     fromStr = this.eventId();
                 const from = $gameMap.getCharacter(fromStr);
                 from.detach();
+            }
+        });
+}
+
+enemy_sprites_placement: {
+    override(Sprite_Battler.prototype,
+        function setBattler(setBattler, battler) {
+            const changed = this._battler !== battler;
+            setBattler.call(this, battler);
+            if (changed) {
+                const meta = battler?.enemy?.().meta?.offset;
+                if (meta) {
+                    // TODO - support x/y offsets
+                    const [x,y,z] = meta.split(",");
+                    this.z = parseFloat(z);
+                }
+            }
+        });
+    override(Spriteset_Battle.prototype,
+        function compareEnemySprite(_, a, b) {
+            const ay = a.y + (a.z || 0);
+            const by = b.y + (b.z || 0);
+            if (ay !== by) {
+                return ay - by;
+            } else {
+                return b.spriteId - a.spriteId;
             }
         });
 }

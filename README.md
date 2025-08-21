@@ -27,3 +27,25 @@ Plop un serveur http sur la racine. Voilà c'est tout.
 
 C'est un midi d'hiver - Personne Véritable se pointe affamé(e?) au petit village.
 S'en suit du Contenu (tm) de Qualitay.
+
+### Le troisième étage
+
+Ya tease de puzzle, mais Personne Véritable en a marre.
+
+Après l'auto-défense, c'est l'auto-offense.
+
+Le combat est une prémisse du combat contre la grosse plante.
+
+### LA GROSSE PLANTE
+
+Wwwelchior voit la grosse plante et le Bonnuit, disparait pour consulter le Conseil Des Ténèbres
+
+Il argumente qu'il doit péter une grosse plante
+
+Il obtient le pouvoir de couper toute la lumière, et de prévenir la regénération.
+
+Le combat fonctionne avec des parties du corps:
+
+Le coeur représente le pool d'hp total
+Les membres ont un hp limité, mais regénérer coute de l'hp au coeur
+Les membres ou le coeur peuvent se mettre à la lumière pour se regénérer
