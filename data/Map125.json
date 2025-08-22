@@ -1,8 +1,8 @@
 {
   "autoplayBgm": false,
   "autoplayBgs": false,
-  "battleback1Name": "Meadow",
-  "battleback2Name": "Forest",
+  "battleback1Name": "GrassMaze",
+  "battleback2Name": "GrassMaze",
   "bgm": {
     "name": "",
     "pan": 0,
@@ -23,7 +23,7 @@
   "note": "<bgExpand:ltr>",
   "parallaxLoopX": true,
   "parallaxLoopY": false,
-  "parallaxName": "BlueSky",
+  "parallaxName": "Sunset",
   "parallaxShow": true,
   "parallaxSx": 2,
   "parallaxSy": 0,
@@ -2777,10 +2777,10 @@
               "indent": 0,
               "parameters": [
                 [
+                  -10,
+                  -30,
                   0,
-                  0,
-                  0,
-                  0
+                  20
                 ],
                 1,
                 false
@@ -2801,6 +2801,31 @@
               "indent": 0,
               "parameters": [
                 "attach Bonnuit Grosmechant head"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "map_light shaded 120"
+              ]
+            },
+            {
+              "code": 284,
+              "indent": 0,
+              "parameters": [
+                "StarlitSky",
+                false,
+                false,
+                2,
+                0
               ]
             },
             {

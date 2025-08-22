@@ -3071,6 +3071,13 @@ Input.keyMapper[68] = "right"; // d
         function standardPadding() {
             return 8;
         },
+        function update(update) {
+            update.call(this);
+            if (this.needsRefresh) {
+                this.needsRefresh = false;
+                this.refresh();
+            }
+        },
         function refresh() {
             this.contents.clear();
 
@@ -3089,7 +3096,9 @@ Input.keyMapper[68] = "right"; // d
                         subx -= drawOffset;
                     }
 
-                    this.drawBattlerIcon(battler, subx, 0);
+                    if (!this.drawBattlerIcon(battler, subx, 0)) {
+                        this.needsRefresh = true;
+                    }
 
                     x += w + Window_Base._iconWidth - drawOffset + this.standardPadding();
                 }
@@ -3110,9 +3119,8 @@ Input.keyMapper[68] = "right"; // d
             } else {
                 bitmap = ImageManager.loadSvEnemy(battler.battlerName());
             }
-            // Lol.
             if (!bitmap.isReady()) {
-                bitmap.addLoadListener(() => this.drawBattlerIcon(battler, x, y));
+                return false;
             }
 
             if (Number.isFinite(data._iconX)) {
@@ -3146,6 +3154,7 @@ Input.keyMapper[68] = "right"; // d
             } else {
                 this.contents.blt(bitmap, sx, sy, sw, sh, x, y, w, h);
             }
+            return true;
         });
 
     override(BattleManager,
@@ -5601,6 +5610,10 @@ crossfade_parallax: {
 
                 this._parallax = new TilingSprite();
                 this._parallax.move(0, 0, Graphics.width, Graphics.height);
+                this._parallax.expandLeft = oldParallax.expandLeft;
+                this._parallax.expandTop = oldParallax.expandTop;
+                this._parallax.expandRight = oldParallax.expandRight;
+                this._parallax.expandBottom = oldParallax.expandBottom;
                 this._baseSprite.addChildAt(
                     this._parallax,
                     this._baseSprite.getChildIndex(oldParallax));

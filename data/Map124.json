@@ -23,7 +23,7 @@
   "note": "<bgExpand:ltr>",
   "parallaxLoopX": true,
   "parallaxLoopY": false,
-  "parallaxName": "BlueSky",
+  "parallaxName": "Sunset",
   "parallaxShow": true,
   "parallaxSx": 2,
   "parallaxSy": 0,
@@ -7814,10 +7814,10 @@
               "indent": 0,
               "parameters": [
                 [
+                  -10,
+                  -30,
                   0,
-                  0,
-                  0,
-                  0
+                  20
                 ],
                 1,
                 false

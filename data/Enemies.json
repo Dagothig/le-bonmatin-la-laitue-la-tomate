@@ -3240,7 +3240,7 @@
         "skillId": 1
       }
     ],
-    "battlerHue": 120,
+    "battlerHue": 0,
     "battlerName": "EvilgodHead",
     "dropItems": [
       {
@@ -3279,7 +3279,7 @@
     ],
     "gold": 0,
     "name": "Tête",
-    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n}>>\n<offset:0,0,5000>\n<<aaa_icon 358 0 64 64>>",
+    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n}>>\n<offset:0,0,5000>\n<<aaa_icon 350 0 92 92>>",
     "params": [
       100,
       0,
@@ -3293,15 +3293,7 @@
   },
   {
     "id": 44,
-    "actions": [
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 5,
-        "skillId": 2
-      }
-    ],
+    "actions": [],
     "battlerHue": 0,
     "battlerName": "Orb",
     "dropItems": [
@@ -3341,7 +3333,7 @@
     ],
     "gold": 0,
     "name": "Bonnuit",
-    "note": "<<aaa_tiling 48 48 [0,1,2] [3,3,3]>>\n<offset:0,0,9999>\n<<aaa_icon 0 0 48 48>>\n<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 2;\n  sprite.scale.y = 2;\n}>>",
+    "note": "<<aaa_tiling 48 48 [0,1,2] [3,3,3]>>\n<offset:0,0,9999>\n<<aaa_icon 0 0 48 48>>\n<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 2;\n  sprite.scale.y = 2;\n  this.canMove = this.isAlive = () => false;\n}>>",
     "params": [
       100,
       0,
@@ -3364,7 +3356,7 @@
         "skillId": 1
       }
     ],
-    "battlerHue": 120,
+    "battlerHue": 0,
     "battlerName": "EvilgodHeart",
     "dropItems": [
       {
@@ -3426,7 +3418,7 @@
         "skillId": 1
       }
     ],
-    "battlerHue": 120,
+    "battlerHue": 0,
     "battlerName": "EvilgodLeft",
     "dropItems": [
       {
@@ -3488,7 +3480,7 @@
         "skillId": 1
       }
     ],
-    "battlerHue": 120,
+    "battlerHue": 0,
     "battlerName": "EvilgodRight",
     "dropItems": [
       {
@@ -3541,15 +3533,7 @@
   },
   {
     "id": 48,
-    "actions": [
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 5,
-        "skillId": 2
-      }
-    ],
+    "actions": [],
     "battlerHue": 120,
     "battlerName": "EvilgodBase",
     "dropItems": [
@@ -3589,7 +3573,7 @@
     ],
     "gold": 0,
     "name": "Végétal Originel",
-    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n}>>\n<<aaa_icon 128 0 512 512>>",
+    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n  this.canMove = this.isAlive = () => false;\n}>>\n<<aaa_icon 330 110 256 256>>",
     "params": [
       100,
       0,
