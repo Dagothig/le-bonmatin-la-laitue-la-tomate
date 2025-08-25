@@ -3333,7 +3333,7 @@
     ],
     "gold": 0,
     "name": "Bonnuit",
-    "note": "<<aaa_tiling 48 48 [0,1,2] [3,3,3]>>\n<offset:0,0,9999>\n<<aaa_icon 0 0 48 48>>\n<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 2;\n  sprite.scale.y = 2;\n  this.canMove = this.isAlive = () => false;\n}>>",
+    "note": "<<aaa_tiling 48 48 [0,1,2] [3,3,3]>>\n<offset:0,0,9999>\n<<aaa_icon 0 0 48 48>>\n<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 2;\n  sprite.scale.y = 2;\n  this.canMove = () => false;\n}>>",
     "params": [
       100,
       0,
@@ -3569,11 +3569,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "gold": 0,
     "name": "Végétal Originel",
-    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n  this.canMove = this.isAlive = () => false;\n}>>\n<<aaa_icon 330 110 256 256>>",
+    "note": "<<aaa_setup {\n  let sprite = SceneManager.battlerSprite(this);\n  sprite.scale.x = 0.8;\n  sprite.scale.y = 0.8;\n  this.canMove = () => false;\n}>>\n<<aaa_icon 330 110 256 256>>",
     "params": [
       100,
       0,
