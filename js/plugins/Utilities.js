@@ -3371,7 +3371,7 @@ Input.keyMapper[68] = "right"; // d
             if (result.hpAffected) {
                 const sprite = new Sprite_BarChange();
                 sprite.x = this.x;
-                sprite.y = this.y;
+                sprite.y = this.y.clamp(0, 430);
                 sprite.setup(
                     this._battler.hp - hpChange,
                     this._battler.hp,
@@ -5028,7 +5028,7 @@ Input.keyMapper[68] = "right"; // d
 
     override(Game_BattlerBase.prototype,
         function smartyPantsAction(_, action) {
-            const enemies = this.opponentsUnit().aliveMembers();
+            const enemies = this.opponentsUnit().targettableMembers();
 
             cc.length = buff.length = debuff.length = attack.length = heal.length = fancy.length = 0;
             action: for (const act of this._actionPatterns) {
@@ -7196,6 +7196,36 @@ enemy_sprites_placement: {
                 return ay - by;
             } else {
                 return b.spriteId - a.spriteId;
+            }
+        });
+}
+
+enemy_tags: {
+    override(Game_BattlerBase.prototype,
+        function isAlive(isAlive) {
+            return isAlive.call(this) && !this._isUnalive;
+        },
+        function restriction(restriction) {
+            return this._baseRestriction || restriction.call(this);
+        });
+
+    override(Game_Enemy.prototype,
+        function setup(setup, enemyId, x, y) {
+            setup.call(this, enemyId, x, y);
+            const enemy = $dataEnemies[enemyId];
+            enemy?.meta?.unalive && (this._isUnalive = true);
+            enemy?.meta?.immobile && (this._baseRestriction = 4);
+        },
+        function transform(transform, enemyId) {
+            transform.call(this, enemyId);
+        });
+
+    override(Sprite_Enemy.prototype,
+        function initVisibility(initVisibility) {
+            initVisibility.call(this);
+            if (!this._appeared && this._enemy._isUnalive) {
+                this._appeared = true;
+                this.opacity = 255;
             }
         });
 }
