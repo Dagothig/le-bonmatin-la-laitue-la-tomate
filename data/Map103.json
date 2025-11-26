@@ -8771,6 +8771,18 @@
               "parameters": []
             },
             {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "chevalier_noir",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -9114,6 +9126,18 @@
               "code": 604,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "concorde16bit",
+                  "volume": 100,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
               "code": 205,
