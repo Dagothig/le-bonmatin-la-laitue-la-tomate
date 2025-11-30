@@ -7057,9 +7057,9 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "windo",
+                  "name": "chevalier_noir_dialogue",
                   "volume": 90,
-                  "pitch": 50,
+                  "pitch": 100,
                   "pan": 0
                 }
               ]
@@ -10383,7 +10383,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "village_vide",
+                  "name": "temple_du_bon_matin",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0

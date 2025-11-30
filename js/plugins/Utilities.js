@@ -5028,7 +5028,7 @@ Input.keyMapper[68] = "right"; // d
 
     override(Game_BattlerBase.prototype,
         function smartyPantsAction(_, action) {
-            const enemies = this.opponentsUnit().targettableMembers();
+            const enemies = this.opponentsUnit().aliveMembers();
 
             cc.length = buff.length = debuff.length = attack.length = heal.length = fancy.length = 0;
             action: for (const act of this._actionPatterns) {
@@ -5310,14 +5310,15 @@ organ: { // Organ minigame
                     pitch: this.audioNote[4] * 100
                 });
                 this.audioBuffer.play(true);
-                if (this.audioNote[3] % 12 === code[this.codeIndex]) {
+                const noteCode = this.audioNote[3] % 12;
+                if (noteCode === code[this.codeIndex]) {
                     this.codeIndex++;
                     if (this.codeIndex === code.length) {
                         this.success = true;
                         this.globalOffsetYTarget = 300;
                     }
                 } else {
-                    this.codeIndex = 0;
+                    this.codeIndex = noteCode === code[0] ? 1 : 0;
                 }
             }
             if (!this.pressed && this.audioNote !== null) {
