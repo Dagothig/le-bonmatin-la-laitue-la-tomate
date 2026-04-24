@@ -1303,5 +1303,83 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 43,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un barril Important, qui doit aller quelque part.\nPeut-être dans le Temple du Bonnuit?",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Barril Significatif",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 44,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Une échelle Importante, qui doit aller quelque part.\nPeut-être dans le Temple du Bonnuit?",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Échelle Significative",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 45,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Un tabouret Important, qui doit aller quelque part.\nPeut-être dans le Temple du Bonnuit?",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Tabouret Significatif",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

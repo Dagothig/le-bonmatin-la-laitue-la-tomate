@@ -8433,15 +8433,19 @@
             "code": 111,
             "indent": 0,
             "parameters": [
-              5,
+              12,
+              "$gameTroop.byName(\"Bonnuit\").isAppeared"
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 1,
+            "parameters": [
               0,
-              0
+              1,
+              82,
+              -2
             ]
-          },
-          {
-            "code": 115,
-            "indent": 1,
-            "parameters": []
           },
           {
             "code": 0,
@@ -8449,71 +8453,26 @@
             "parameters": []
           },
           {
-            "code": 412,
+            "code": 411,
             "indent": 0,
             "parameters": []
           },
           {
-            "code": 111,
-            "indent": 0,
+            "code": 101,
+            "indent": 1,
             "parameters": [
-              5,
-              2,
-              0
+              "",
+              0,
+              0,
+              2
             ]
           },
           {
-            "code": 115,
+            "code": 401,
             "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
-            "code": 111,
-            "indent": 0,
             "parameters": [
-              5,
-              3,
-              0
+              "PAS BONNUIT."
             ]
-          },
-          {
-            "code": 115,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              5,
-              4,
-              0
-            ]
-          },
-          {
-            "code": 115,
-            "indent": 1,
-            "parameters": []
           },
           {
             "code": 0,

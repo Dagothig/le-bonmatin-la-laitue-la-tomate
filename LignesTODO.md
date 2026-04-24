@@ -1075,6 +1075,18 @@ _NarrateurMotsPlantes4
 > La mauve est sur du vivant.\
 > La bleue est sur du gazon.
 
+_NarrateurTabouretSignificatif
+> Un tabouret Important!\
+> Il doit bien aller quelque part?
+
+_NarrateurEchelleSignificative
+> Une échelle Importante!\
+> Elle doit bien aller quelque part?
+
+_NarrateurBarrilSignficatif
+> Un barril Important!\
+> Il doit bien aller quelque part?
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2707,6 +2719,30 @@ _ProtagonisteALesBrasPleinsPeutPasParlerSage
 > Parler à un Vieux Sage en même temps serait\
 > complètement absurde!
 
+_ProtagonisteBonPullup
+> Bon.\
+> \
+> Y'a quelqu'un qui sait faire un pull-up?
+
+_ProtagonisteVoitLeNon
+> Je vois, donc la réponse c'est non...
+
+_ProtagonisteEstPasCapab
+> En tout cas moi je suis pas capable.\
+> \
+> Peut-être votre fameux UIUI of Travel?
+
+_ProtagonisteAutresIdees
+> Vous avez d'autres idées?
+
+_ProtagonistePasPourProchainEtage
+> Pis ça aussi c'est pas pour monter au\
+> prochain étage?
+
+_ProtagonisteBarrilPouvoirMonter
+> Parfait! C'est assez haut on va pouvoir\
+> l'utiliser pour monter au prochain étage!
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -3354,6 +3390,21 @@ _GabspartHermiteGlacon2
 > J'te garantis que si on part pis on\
 > retourne au Village le Vieux y est encore.
 
+_GabspartTuVeuxDireLitteral
+> Jusqu'ici tu as vu beaucoup de pièces avec\
+> autre chose qu'un plafond métaphorique?
+
+_GabspartTabouret
+> Ça prendrait un tabouret!
+
+_GabspartPrecisement
+> Précisément.
+
+_GabspartCaPrendTabouret
+> J'ai dis. Que ça prend. Un tabouret.\
+> \
+> Faut pas niaiser avec les Textes Sacrés.
+
 ### Wwwelchior
 
 _WwwelchiorTristheroisme
@@ -3663,6 +3714,10 @@ _WwwelchiorBonnuitPlanPlantes1
 > connait une chose ou deux sur le pouvoir\
 > des ténèbres. Grimpons le Temple, puis\
 > je m'occuperai de la Situation.
+
+_WwwelchiorUIUICaSauteTropHaut
+> Nan, tu vas sauter trop haut et te casser\
+> la tête sur le plafond métaphorique!
 
 ### Fantome
 
@@ -6031,3 +6086,11 @@ _LutinPartez
 > Mais peu importe! Qu'est-ce qui vous emmène\
 > à visiter ma demeure? Ne tardez pas ici ou\
 > je devrai vous châtier!
+
+### Protagniste
+
+_ProtagnisteSentMomentDangereux
+> *Snif-snif*\
+> \
+> Ça sent le moment dangereux.\
+> Nous sommes tous prêts?

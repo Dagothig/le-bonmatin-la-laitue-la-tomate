@@ -3366,7 +3366,7 @@ Input.keyMapper[68] = "right"; // d
     function setupDamagePopup(setupDamagePopup) {
         let mpChange = this._battler.mpChange;
         let hpChange = this._battler.hpChange;
-        if (hpChange) {
+        if (hpChange && this._battler.mhp) {
             const result = this._battler.result();
             if (result.hpAffected) {
                 const sprite = new Sprite_BarChange();
@@ -3384,7 +3384,7 @@ Input.keyMapper[68] = "right"; // d
             mpChange += result.mpDamage;
         }
 
-        if (mpChange) {
+        if (mpChange && this._battler.mmp) {
             const sprite = new Sprite_BarChange();
             sprite.x = this.x;
             sprite.y = this.y + sprite._height;
@@ -4405,6 +4405,16 @@ Input.keyMapper[68] = "right"; // d
             } else {
                 setupChoices.call(this, params);
             }
+        },
+        // Control self switch
+        function command123() {
+            const char = this.character();
+            const eventId = (char && char.eventId) ? char.eventId() : this._eventId;
+            if (eventId > 0) {
+                var key = [this._mapId, eventId, this._params[0]];
+                $gameSelfSwitches.setValue(key, this._params[1] === 0);
+            }
+            return true;
         });
 
     override(Game_Follower.prototype,
@@ -7202,6 +7212,15 @@ enemy_sprites_placement: {
 }
 
 enemy_tags: {
+    override(Game_Troop.prototype,
+        function byName(_, name) {
+            for (const enemy of this._enemies) {
+                if (enemy.enemy().name === name) {
+                    return enemy;
+                }
+            }
+        });
+
     override(Game_BattlerBase.prototype,
         function isAlive(isAlive) {
             return isAlive.call(this) && !this._isUnalive;
