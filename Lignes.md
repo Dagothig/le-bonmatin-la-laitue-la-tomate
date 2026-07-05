@@ -378,6 +378,9 @@ Item2
 Pollen
 > Pollen
 
+Saint3
+> Saint3
+
 ### Narrateur
 
 _NarrateurBonjours
@@ -2064,6 +2067,15 @@ _NarrateurEchelleSignificative
 _NarrateurBarrilSignficatif
 > Un barril Important!\
 > Il doit bien aller quelque part?
+
+_NarrateurObtenuBonnuit
+> Vous avez obtenu le Bonnuit!
+
+_NarrateurRadisRadisRadis
+> Le Vieux glisse un radis dans votre poche.\
+> Puis un autre.\
+> Puis encore un autre.\
+> Puis... enfin, vous voyez le genre.
 
 ### Protagoniste
 
@@ -4567,6 +4579,28 @@ _ProtagonisteBarrilPouvoirMonter
 > Parfait! C'est assez haut on va pouvoir\
 > l'utiliser pour monter au prochain étage!
 
+_ProtagonisteCamaradesBonnuit
+> Camarades! Regardez au-dessus! Le Bonnuit!
+
+_ProtagonisteBonDoncOnPete
+> Bon, donc on le pète!
+
+_ProtagonisteVousEtesIncoherents
+> Impossible! Vous êtes trop incohérents!
+
+_ProtagonisteOnPeteProchaineFois
+> Bon, on va vous péter, mais la prochaine\
+> fois, OK?
+
+_ProtagonisteMenacePlantaireFinie
+> Et là on a réglé la menace plantaire, on\
+> est tous d'accord? Le fait qu'y reste\
+> pleins des plantes mi-débiles un peu\
+> partout ce sera pas un enjeu?
+
+_ProtagonisteVousAvezPasRecompense
+> Vous avez pas une petite récompense?
+
 ### Wwwelchior
 
 _WwwelchiorTempleAttrapeTouriste
@@ -5144,6 +5178,16 @@ _WwwelchiorBonnuitPlanPlantes1
 _WwwelchiorUIUICaSauteTropHaut
 > Nan, tu vas sauter trop haut et te casser\
 > la tête sur le plafond métaphorique!
+
+_WwwelchiorAmasAmical
+> Peut-être, mais je pense pas que c'est un\
+> amas amical!
+
+_WwwelchiorMenacePlantaireFinie
+> C'est sûr.\
+> Aucun doute.\
+> ...\
+> Les plantes ça repousse pas.
 
 ### Gabspart
 
@@ -5998,6 +6042,21 @@ _GabspartCaPrendTabouret
 > \
 > Faut pas niaiser avec les Textes Sacrés.
 
+_GabspartAmasAmical
+> Les vrais amis, c'est les amas de cailloux\
+> qu'on a rencontré sur le chemin.
+
+_GabspartTraduitGabouePognesBonnuit
+> > Vous êtes épris de doutes;\
+> > Je ne vis que d'ennuis!\
+> > J'vous prie d'arrêter toute,\
+> > Enpoignez le Bonnuit!
+
+_GabspartAtItAgainBonnuit1
+> Avant que tu touches à ça, juste pour qu'on\
+> soit clair, enlever le Bonnuit ça va avoir\
+> des Conséquences.
+
 ### Gaboue
 
 _GaboueGaboue1
@@ -6441,6 +6500,15 @@ _VieuxFlashback3Pousse5
 > ou je sais pas trop.\
 > \
 > En tout cas je suis le seul qui reste.
+
+_VieuxBonnuitMerci1
+> Mmmh... Oui je le sens.\
+> Vous avez réussi à vaincre l'amas végétal\
+> qui est la source de tout ce bazaar.\
+> Je vous suis éternellement reconnaissant.
+
+_VieuxBonnuitMerci2
+> Bon, si vous insistez...
 
 ### Jacques
 
@@ -9256,3 +9324,11 @@ _ProtagnisteSentMomentDangereux
 > \
 > Ça sent le moment dangereux.\
 > Nous sommes tous prêts?
+
+### Amas
+
+_AmasMenace
+> MALOTRUS! PAR LE POUVOIR DE LA LUEUR DU\
+> SOIR QUI EST ÉTONAMMENT CELLE DES PLANTES,\
+> JE VOUS ÉCRASERAI!\
+> AU NOM DE LA NOIRCEUR!

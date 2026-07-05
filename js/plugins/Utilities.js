@@ -7249,3 +7249,16 @@ enemy_tags: {
             }
         });
 }
+
+skip_blend_color: {
+    // Same as original, but without the blend color that fucking kills performance.
+    // The engine does some really stupid shit I don't want to deal with (or rewrite).
+    Sprite_Enemy.prototype.updateBossCollapse = function() {
+        this._shake = this._effectDuration % 2 * 4 - 2;
+        this.blendMode = Graphics.BLEND_ADD;
+        this.opacity *= this._effectDuration / (this._effectDuration + 1);
+        if (this._effectDuration % 20 === 19) {
+            SoundManager.playBossCollapse2();
+        }
+    };
+}
