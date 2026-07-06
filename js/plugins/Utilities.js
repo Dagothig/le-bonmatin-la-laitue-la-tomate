@@ -855,6 +855,10 @@ function eval_fn_expr(expr, args) {
 
             } else if (command === "wait_scroll") {
 
+            } else if (command === "bgmFilter") {
+                AudioManager._currentBgm.filters =
+                AudioManager._bgmBuffer.filters =
+                    args[0];
             }
         },
         function jumpToLabel(_, labelName) {
