@@ -6,6 +6,9 @@ const commandsRegexp = /\\shake(<.*>)?|\\{|\\}|\\\^|\\.\[.\]|"|>|\||\\|\[|\]|\(|
 const punctuationRegexp = /[\,\.\!\?\:]+/g;
 const endsWithPunctuation = /[\,\.\!\?\:]$/;
 
+const reservedNames = ["con", "prn", "aux", "nul"];
+const invalidCharactersRegexp = /\*/g;
+
 const EMPTY = [];
 
 function getWords(lines) {
@@ -75,10 +78,17 @@ function markov(words) {
     return markov;
 }
 
+function getSafeWord(word) {
+    word = reservedNames.includes(word) ? "_" + word : word;
+    word = word.replaceAll(invalidCharactersRegexp, "_");
+    return word;
+}
+
 module.exports = {
     getWords,
     markov,
     commandsRegexp,
     punctuationRegexp,
-    endsWithPunctuation
+    endsWithPunctuation,
+    getSafeWord
 };

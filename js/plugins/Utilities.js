@@ -6541,6 +6541,9 @@ markov: {
     const backValueKey = 2;
     const backWordKey = 3;
 
+    const reservedNames = ["con", "prn", "aux", "nul"];
+    const invalidCharactersRegexp = /\*/g;
+
     function capitalize(str) {
         return str[0].toUpperCase() + str.substring(1);
     }
@@ -6588,6 +6591,12 @@ markov: {
         yo: ["allo", "salut"],
         bonnuit: ["bonjour", "bonsoir"],
         RRRR: ["rrrr"]
+    }
+
+    function getSafeWord(word) {
+        word = reservedNames.includes(word) ? "_" + word : word;
+        word = word.replaceAll(invalidCharactersRegexp, "_");
+        return word;
     }
 
     function generateTextByAntecedent(searchedWords) {
@@ -6654,7 +6663,8 @@ markov: {
             for (let j = i; j < i + batchSize && j < keys.length; j++) {
                 const key = keys[j];
                 if (!key.match(punctuationRegexp)) {
-                    $promises.push(fetch(AudioManager._path + "word/" + encodeURIComponent(key) + ".ogg"));
+                    const filename = encodeURIComponent(getSafeWord(key));
+                    $promises.push(fetch(AudioManager._path + "word/" + filename + ".ogg"));
                 } else {
                     console.log("Skipped", key);
                 }
@@ -6786,6 +6796,7 @@ markov: {
             return;
         }
 
+        word = getSafeWord(word);
         const wordBuffer = AudioManager.createBuffer('word', word.toLowerCase());
         const pitch = Math.random() * 10 + 95;
         AudioManager.updateBufferParameters(

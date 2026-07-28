@@ -4,7 +4,7 @@ const timestamps = [["Init", new Date()]];
 const fs = require("fs/promises");
 const os = require("os");
 const { spawnSync } = require("child_process");
-const { getWords, markov, punctuationRegexp } = require("./markov");
+const { getWords, markov, punctuationRegexp, getSafeWord } = require("./markov");
 
 Object.assign(Array.prototype, {
     toObject() {
@@ -313,7 +313,8 @@ function out(...parts) {
             // Sneaky add.
             .concat(["yo", "bonnuit", "fleur", "fleurs"])
             .filter(word => !word.match(punctuationRegexp))
-            .distinct();
+            .distinct()
+            .map(getSafeWord);
         const missingWords = audioWords.filter(word => !wordFiles.includes(word + ".ogg"));
         const obsoleteWordFiles = wordFiles.filter(word => !audioWords.includes(word.split(".")[0]));
         for (const word of missingWords) {
