@@ -20855,5 +20855,475 @@
     "name": "Check Bonsoir+Bonnuit",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 61,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          4,
+          3,
+          94
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorArbrePhoto"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Vous avez-vu? "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "L'arbre fait de la photosynthèse!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"acting\");"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _ProtagonisteDotDotDotEt"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "... Et?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorArbreRepousse"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Ben tu as vu comme il repousse "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "continuellement? On passera pas à travers"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "comme ça!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"done\");"
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 0,
+        "parameters": [
+          -1,
+          8,
+          true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _ProtagonisteTuDisParceQue"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Donc tu dis ça parce que..."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party.Wwwelchior.setActionState(\"jump\");"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorPouvoirSecret"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Je, Wwwelchior, Prince Des Ténèbres, doit"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "révéler mon pouvoir secret!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorRevelePlusTot"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Je l'aurais révéler plus tôt, mais chaque"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "fois que je m'en sers, je deviens plus "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "ténébreux."
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorVousComprenez"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Vous comprenez bien, j'espère?"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party[\"Personne Véritable\"].setActionState(\"done\");"
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 0,
+        "parameters": [
+          -1,
+          5,
+          false
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _WwwelchiorSoyezAveugles"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "UIUI",
+          7,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Enfin bref! "
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Soyez aveuglés par les ténèbres!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "C'est la fin de cette photosynthèse!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$btl.party[\"Wwwelchior\"].setActionState(\"done\");"
+        ]
+      },
+      {
+        "code": 318,
+        "indent": 0,
+        "parameters": [
+          0,
+          4,
+          0,
+          94
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "SceneManager.battlerSprite($btl.party.Wwwelchior).startAnimationShorthand(134, 0)"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "se _NarrateurWwwelchiorPouvoirTenebres"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Wwwelchior a appris le Pouvoir des Ténèbres!"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Mystérieux. Arrête toute regénération!"
+        ]
+      },
+      {
+        "code": 251,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 339,
+        "indent": 0,
+        "parameters": [
+          1,
+          4,
+          94,
+          -2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Souvenir des ténèbres",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

@@ -8,6 +8,7 @@
 * Barre hp enemis par dessus UI (?)
 * Le poulet est fucked
 * Le diadème de lumière peut désormais faire quelque chose
+* Le movespeed???
 
 ### Musique
 
@@ -35,6 +36,23 @@ Ya tease de puzzle, mais Personne Véritable en a marre.
 Après l'auto-défense, c'est l'auto-offense.
 
 Le combat est une prémisse du combat contre la grosse plante.
+
+Les plantes:
+* Trois phases normal / défensif (poison) / aggressif -> tu veux timer ton moment pour empêcher leur offense (y sont faible quand y font de l'offense)
+* Y donnent du poison
+
+Les arbres:
+* Y font de la photosynthèse (heal, assez pour être un enjeu?)
+* Les ténèbres ça shut down le heal
+* Y peuvent stun
+
+
+L'amas végétal:
+* Y'a de quoi qui donne du poison
+* Y'a de quoi de phasé
+* Ya de quoi qui fait du CC
+* Y font de la photosynthèse
+* Les ténèbres ça shut down le heal
 
 ### LA GROSSE PLANTE
 

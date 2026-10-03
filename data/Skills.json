@@ -2817,7 +2817,7 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 2,
-    "speed": -50,
+    "speed": -25,
     "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
@@ -3402,6 +3402,86 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 8,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 93,
+    "animationId": 1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * a.lukVar - b.def * b.lukVar",
+      "type": 1,
+      "variance": 0
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 15,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 78,
+    "message1": " donne un coup de branche",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Branche",
+    "note": "<kind:cc>\n<<aaa_anim self lunge>>\n<<aaa_performActionStart {\n    AudioManager.playSe(this.subject()._taper || \"Ahha\");\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 94,
+    "animationId": 104,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "10 + a.mat - b.mdf",
+      "type": 5,
+      "variance": 0
+    },
+    "description": "Mystérieux. Arrête toute regénération.\n10 + M. Atk points de vie à toutes les cibles.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 53,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 161,
+    "message1": " invoque les ténèbres!",
+    "message2": "",
+    "mpCost": 25,
+    "name": "Pouvoir des Ténèbres",
+    "note": "<kind:debuff>\n<<aaa_performActionStart {\n    this.subject().startAnimation(120, false, 0);\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,

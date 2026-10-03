@@ -1096,6 +1096,10 @@ _NarrateurRadisRadisRadis
 > Puis encore un autre.\
 > Puis... enfin, vous voyez le genre.
 
+_NarrateurWwwelchiorPouvoirTenebres
+> Wwwelchior a appris le Pouvoir des Ténèbres!\
+> Mystérieux. Arrête toute regénération!
+
 ### Protagoniste
 
 _ProtagonisteChercheDoncIlDit
@@ -2774,6 +2778,15 @@ _ProtagonisteMenacePlantaireFinie
 _ProtagonisteVousAvezPasRecompense
 > Vous avez pas une petite récompense?
 
+_ProtagonisteArbrePasAmical
+> Woh, lui y bouge et y'er pas amical!
+
+_ProtagonisteDotDotDotEt
+> ... Et?
+
+_ProtagonisteTuDisParceQue
+> Donc tu dis ça parce que...
+
 ### Vieux
 
 _VieuxJamaisOubli
@@ -3783,6 +3796,35 @@ _WwwelchiorMenacePlantaireFinie
 > Aucun doute.\
 > ...\
 > Les plantes ça repousse pas.
+
+_WwwelchiorArbrePhoto
+> Vous avez-vu?\
+> L'arbre fait de la photosynthèse!
+
+_WwwelchiorArbreRepousse
+> Ben tu as vu comme il repousse\
+> continuellement? On passera pas à travers\
+> comme ça!
+
+_WwwelchiorPouvoirSecret
+> Je, Wwwelchior, Prince Des Ténèbres, doit\
+> révéler mon pouvoir secret!
+
+_WwwelchiorRevelePlusTot
+> Je l'aurais révéler plus tôt, mais chaque\
+> fois que je m'en sers, je deviens plus\
+> ténébreux.
+
+_WwwelchiorVousComprenez
+> ...\
+> ...\
+> ...\
+> Vous comprenez bien, j'espère?
+
+_WwwelchiorSoyezAveugles
+> Enfin bref!\
+> Soyez aveuglés par les ténèbres!\
+> C'est la fin de cette photosynthèse!
 
 ### Fantome
 

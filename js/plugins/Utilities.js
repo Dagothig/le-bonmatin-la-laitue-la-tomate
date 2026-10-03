@@ -470,6 +470,7 @@ function eval_fn_expr(expr, args) {
                 for (const state of object) {
                     if (!state)
                         continue;
+                    state._healFactor = 1;
                     const note = state && state.note || "";
                     const extStr = (note.match(aaaExtend) || [])[1];
                     const ext = JSON.parse(extStr || "{}");
@@ -500,6 +501,13 @@ function eval_fn_expr(expr, args) {
                             const code = Game_BattlerBase[key];
                             if (isFinite(code)) {
                                 state.traits.push({ code: code, value: num });
+                            }
+                        }
+
+                        if (key === "heal-factor") {
+                            const num = Number.parseFloat(value);
+                            if (isFinite(num)) {
+                                state._healFactor = num;
                             }
                         }
                     }
@@ -3895,10 +3903,22 @@ Input.keyMapper[68] = "right"; // d
             }
         });
 
+    Object.defineProperty(Game_Battler.prototype, "healFactor", {
+        configurable: true,
+        get() {
+            let healFactor = 1;
+            for (const stateId of this._states) {
+                const state = $dataStates[stateId];
+                healFactor = healFactor * state._healFactor;;
+            }
+            return healFactor;
+        }
+    });
+
     override(Game_Battler.prototype,
         function regenerateHp(_) {
             const value = Math.max(
-                Math.floor(this.mhp * this.hrg + this.hsrg),
+                Math.floor((this.mhp * this.hrg + this.hsrg) * this.healFactor),
                 -this.maxSlipDamage());
             value !== 0 && this.gainHp(value);
         },

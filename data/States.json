@@ -1525,5 +1525,59 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 52,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.35
+      }
+    ],
+    "iconIndex": 182,
+    "maxTurns": 1,
+    "message1": " déploie ses feuilles!",
+    "message2": " déploie ses feuilles!",
+    "message3": " photosynthétise",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Photosynthèse",
+    "note": "<<aaa_overlay 15>>",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 53,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 161,
+    "maxTurns": 3,
+    "message1": " est obscruci",
+    "message2": " est obscurci",
+    "message3": " est obscurci",
+    "message4": "",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Ténèbres",
+    "note": "<heal-factor:0>",
+    "overlay": 9,
+    "priority": 50,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

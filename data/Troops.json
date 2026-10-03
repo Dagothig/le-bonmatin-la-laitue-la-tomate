@@ -8499,5 +8499,101 @@
         "span": 1
       }
     ]
+  },
+  {
+    "id": 34,
+    "members": [
+      {
+        "enemyId": 49,
+        "x": 408,
+        "y": 403,
+        "hidden": false
+      }
+    ],
+    "name": "Arbre A",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 117,
+            "indent": 0,
+            "parameters": [
+              61
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "members": [
+      {
+        "enemyId": 49,
+        "x": 333,
+        "y": 382,
+        "hidden": false
+      },
+      {
+        "enemyId": 34,
+        "x": 387,
+        "y": 436,
+        "hidden": false
+      }
+    ],
+    "name": "Arbre B",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 117,
+            "indent": 0,
+            "parameters": [
+              61
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
