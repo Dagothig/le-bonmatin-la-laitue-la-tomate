@@ -2959,6 +2959,22 @@ const BONMATIN_SWS = {
             this.moveSpeed() !== wanderSpeed && this.setMoveSpeed(wanderSpeed);
             return this.moveRandom();
         });
+
+    override(Game_Event.prototype,
+        function initialize(initialize, mapId, eventId) {
+            initialize.call(this, mapId, eventId);
+            const event = this.event();
+
+            if (event.meta && event.meta.patternType) {
+                const values = event.meta.patternType.split(",").map(x => parseInt(x)).filter(x => x >= 0);
+                this.setPatternType(values);
+            }
+            if (event.meta && event.meta.animationWaitMultiplier) {
+                const value = parseFloat(event.meta.animationWaitMultiplier);
+                value && (this._animationWaitMultiplier = value);
+            }
+        }
+    )
 })();
 
 Input.keyMapper[87] = "up"; // w

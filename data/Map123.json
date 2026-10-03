@@ -13501,7 +13501,7 @@
     {
       "id": 19,
       "name": "EV019",
-      "note": "",
+      "note": "<shadow Shadow2 14><patternType:0,1,2>",
       "pages": [
         {
           "conditions": {
@@ -13655,7 +13655,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 2,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {
@@ -13873,7 +13873,7 @@
     {
       "id": 20,
       "name": "EV020",
-      "note": "",
+      "note": "<shadow Shadow2 14><patternType:0,1,2>",
       "pages": [
         {
           "conditions": {
@@ -14027,7 +14027,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 2,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {

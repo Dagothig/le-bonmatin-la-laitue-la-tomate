@@ -11688,7 +11688,7 @@
     {
       "id": 17,
       "name": "EV017",
-      "note": "",
+      "note": "<shadow Shadow2 14><patternType:0,1,2>",
       "pages": [
         {
           "conditions": {
@@ -11842,7 +11842,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 2,
-          "walkAnime": false
+          "walkAnime": true
         },
         {
           "conditions": {

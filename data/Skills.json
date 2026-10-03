@@ -3474,7 +3474,7 @@
     "iconIndex": 161,
     "message1": " invoque les ténèbres!",
     "message2": "",
-    "mpCost": 25,
+    "mpCost": 0,
     "name": "Pouvoir des Ténèbres",
     "note": "<kind:debuff>\n<<aaa_performActionStart {\n    this.subject().startAnimation(120, false, 0);\n}>>",
     "occasion": 1,
@@ -3485,7 +3485,7 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 0,
+    "tpCost": 40,
     "tpGain": 0
   }
 ]
