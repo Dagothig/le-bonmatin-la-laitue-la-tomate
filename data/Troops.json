@@ -8430,51 +8430,55 @@
         },
         "list": [
           {
-            "code": 333,
+            "code": 111,
             "indent": 0,
             "parameters": [
+              5,
               0,
-              0,
+              1,
               1
             ]
           },
           {
-            "code": 333,
-            "indent": 0,
+            "code": 111,
+            "indent": 1,
             "parameters": [
+              5,
               2,
-              0,
+              1,
               1
             ]
           },
           {
-            "code": 333,
-            "indent": 0,
+            "code": 111,
+            "indent": 2,
             "parameters": [
+              5,
               3,
-              0,
+              1,
               1
             ]
           },
           {
-            "code": 333,
-            "indent": 0,
+            "code": 111,
+            "indent": 3,
             "parameters": [
+              5,
               4,
-              0,
+              1,
               1
             ]
           },
           {
             "code": 355,
-            "indent": 0,
+            "indent": 4,
             "parameters": [
               "$gameTroop.byName(\"Végétal Originel\")._isUnalive = false;"
             ]
           },
           {
             "code": 333,
-            "indent": 0,
+            "indent": 4,
             "parameters": [
               5,
               0,
@@ -8483,12 +8487,52 @@
           },
           {
             "code": 333,
-            "indent": 0,
+            "indent": 4,
             "parameters": [
               1,
               0,
               1
             ]
+          },
+          {
+            "code": 0,
+            "indent": 4,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 0,

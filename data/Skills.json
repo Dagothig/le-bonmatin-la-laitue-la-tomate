@@ -3485,7 +3485,155 @@
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
-    "tpCost": 40,
+    "tpCost": 25,
+    "tpGain": 0
+  },
+  {
+    "id": 95,
+    "animationId": 0,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "-9999",
+      "type": 5,
+      "variance": 0
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 84,
+    "message1": " regénère un membre!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Regénération",
+    "note": "<kind:heal>\n<<aaa_performActionStart {\n  this.subject().pushMoves([\n    [ANIMATION, 196]\n  ])\n}>>\n<<aaa_action {\n  target.startAnimation(46, false, 0);\n}>>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 9,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 96,
+    "animationId": 185,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 54,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 70,
+    "message1": " fait photosynthèser!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Photosynthèse",
+    "note": "<kind:heal>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 7,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 97,
+    "animationId": 55,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 44,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 71,
+    "message1": " lance une toile!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Jet de résine",
+    "note": "",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 98,
+    "animationId": 183,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 42,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 184,
+    "message1": " pousse vite vite vite!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Pousser des fleurs aggressivement",
+    "note": "<<aaa_performActionStart {\n  AudioManager.playSe(\"Monster3\");\n}>>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 7,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
     "tpGain": 0
   }
 ]

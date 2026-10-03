@@ -47,13 +47,6 @@ Les arbres:
 * Y peuvent stun
 
 
-L'amas végétal:
-* Y'a de quoi qui donne du poison
-* Y'a de quoi de phasé
-* Ya de quoi qui fait du CC
-* Y font de la photosynthèse
-* Les ténèbres ça shut down le heal
-
 ### LA GROSSE PLANTE
 
 Wwwelchior voit la grosse plante et le Bonnuit, disparait pour consulter le Conseil Des Ténèbres
@@ -67,3 +60,11 @@ Le combat fonctionne avec des parties du corps:
 Le coeur représente le pool d'hp total
 Les membres ont un hp limité, mais regénérer coute de l'hp au coeur
 Les membres ou le coeur peuvent se mettre à la lumière pour se regénérer
+
+
+L'amas végétal:
+* Y'a de quoi qui donne du poison
+* Y'a de quoi de phasé
+* Ya de quoi qui fait du CC
+* Y font de la photosynthèse
+* Les ténèbres ça shut down le heal
